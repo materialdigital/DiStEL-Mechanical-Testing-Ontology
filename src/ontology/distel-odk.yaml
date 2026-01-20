@@ -37,7 +37,7 @@ components:
     - filename: distel-mech-hardness.owl
     - filename: distel-mech-device.owl
     - filename: distel-mech-materials.owl
-    - filename: noes-shared.owl
+    - filename: distel-mech-shared.owl
 
 # Release
 primary_release: full
