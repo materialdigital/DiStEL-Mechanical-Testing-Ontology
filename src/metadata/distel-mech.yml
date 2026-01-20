@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/distel-mech
+
+idspace: DISTEL-MECH
+base_url: /obo/distel-mech
+
+products:
+- distel-mech.owl: https://raw.githubusercontent.com/materialdigital/DiStEL-Mechanical-Testing-Ontology/main/distel-mech.owl
+- distel-mech.obo: https://raw.githubusercontent.com/materialdigital/DiStEL-Mechanical-Testing-Ontology/main/distel-mech.obo
+
+term_browser: ontobee
+example_terms:
+- DISTEL-MECH_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/materialdigital/DiStEL-Mechanical-Testing-Ontology/v
+
+- prefix: /tracker/
+  replacement: https://github.com/materialdigital/DiStEL-Mechanical-Testing-Ontology/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/DISTEL-MECH?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/materialdigital/DiStEL-Mechanical-Testing-Ontology/main/
