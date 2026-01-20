@@ -35,7 +35,7 @@ components:
     - filename: distel-mech-tensile-test.owl
     - filename: distel-mech-fatigue.owl
     - filename: distel-mech-hardness.owl
-    - filename: distel-mech-device.owl
+    - filename: distel-mech-devices.owl
     - filename: distel-mech-materials.owl
     - filename: distel-mech-shared.owl
 
