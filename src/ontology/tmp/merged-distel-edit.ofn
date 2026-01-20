@@ -9,15 +9,6 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<https://w3id.org/pmd/distel.owl>
-Import(<https://w3id.org/pmd/distel/components/distel-mech-axioms-shared.owl>)
-Import(<https://w3id.org/pmd/distel/components/distel-mech-device.owl>)
-Import(<https://w3id.org/pmd/distel/components/distel-mech-fatigue.owl>)
-Import(<https://w3id.org/pmd/distel/components/distel-mech-hardness.owl>)
-Import(<https://w3id.org/pmd/distel/components/distel-mech-materials.owl>)
-Import(<https://w3id.org/pmd/distel/components/distel-mech-tensile-test.owl>)
-Import(<https://w3id.org/pmd/distel/components/imports-edit.owl>)
-Import(<https://w3id.org/pmd/distel/components/noes-shared.owl>)
-Import(<https://w3id.org/pmd/distel/imports/pmdco_import.owl>)
 Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "DiStEL Mechanical Testing Ontology")
