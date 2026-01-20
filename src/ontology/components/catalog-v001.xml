@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+<group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
+    <uri name="https://w3id.org/pmd/distel/imports/pmdco_import.owl" uri="../imports/pmdco_import.owl" />
+    <uri name="https://w3id.org/pmd/distel/imports/tto_import.owl" uri="../imports/tto_import.owl" />
+    <uri name="https://w3id.org/pmd/distel/imports/uo_import.owl" uri="../imports/uo_import.owl" />
+
+    <uri name="https://w3id.org/pmd/distel/components/imports-edit.owl" uri="imports-edit.owl" />
+    <uri name="https://w3id.org/pmd/distel/components/distel-mech-axioms-shared.owl" uri="distel-mech-axioms-shared.owl" />
+    <uri name="https://w3id.org/pmd/distel/components/distel-mech-shared.owl" uri="distel-mech-shared.owl" />
+
+    <uri name="https://w3id.org/pmd/distel/components/devices.owl" uri="distel-mech-devices.owl" />
+    <uri name="https://w3id.org/pmd/distel/components/materials.owl" uri="distel-mech-materials.owl" />
+    <uri name="https://w3id.org/pmd/distel/components/hardness.owl" uri="distel-mech-hardness.owl" />
+    <uri name="https://w3id.org/pmd/distel/components/tensile-test.owl" uri="distel-mech-tensile-test.owl" />
+    <uri name="https://w3id.org/pmd/distel/components/fatigue.owl" uri="distel-mech-fatigue.owl" />
+</group>
+</catalog>
