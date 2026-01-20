@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <group id="odk-managed-catalog" prefer="public">
+    <uri name="https://w3id.org/pmd/distel/imports/pmdco_import.owl" uri="imports/pmdco_import.owl"/>
+    <uri name="https://w3id.org/pmd/distel/components/imports-edit.owl" uri="components/imports-edit.owl"/>
+    <uri name="https://w3id.org/pmd/distel/components/distel-mech-axioms-shared.owl" uri="components/distel-mech-axioms-shared.owl"/>
+    <uri name="https://w3id.org/pmd/distel/components/distel-mech-tensile-test.owl" uri="components/distel-mech-tensile-test.owl"/>
+    <uri name="https://w3id.org/pmd/distel/components/distel-mech-fatigue.owl" uri="components/distel-mech-fatigue.owl"/>
+    <uri name="https://w3id.org/pmd/distel/components/distel-mech-hardness.owl" uri="components/distel-mech-hardness.owl"/>
+    <uri name="https://w3id.org/pmd/distel/components/distel-mech-device.owl" uri="components/distel-mech-device.owl"/>
+    <uri name="https://w3id.org/pmd/distel/components/distel-mech-materials.owl" uri="components/distel-mech-materials.owl"/>
+    <uri name="https://w3id.org/pmd/distel/components/noes-shared.owl" uri="components/noes-shared.owl"/>
+  </group>
+</catalog>
