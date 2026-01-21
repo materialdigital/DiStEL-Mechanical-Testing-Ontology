@@ -36,7 +36,7 @@ Declaration(AnnotationProperty(dcterms:title))
 
 AnnotationAssertion(rdfs:label dcterms:description "description")
 
-# Annotation Property: dcterms:license (dcterms:license)
+# Annotation Property: dcterms:license (license)
 
 AnnotationAssertion(rdfs:label dcterms:license "license")
 
