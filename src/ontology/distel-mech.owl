@@ -9,6 +9,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:doap="http://usefulinc.com/ns/doap#"
+     xmlns:qudt="http://qudt.org/schema/qudt/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
@@ -16,11 +17,11 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/pmd/distel-mech.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/distel/releases/2026-01-21/distel-mech.owl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/distel/releases/2026-01-22/distel-mech.owl"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>DiStEL Mechanical Testing Ontology</dcterms:title>
-        <owl:versionInfo>2026-01-21</owl:versionInfo>
+        <owl:versionInfo>2026-01-22</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -96,6 +97,30 @@
     
 
 
+    <!-- http://qudt.org/schema/qudt/dbpediaMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://qudt.org/schema/qudt/dbpediaMatch"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/expression -->
+
+    <owl:AnnotationProperty rdf:about="http://qudt.org/schema/qudt/expression"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/informativeReference -->
+
+    <owl:AnnotationProperty rdf:about="http://qudt.org/schema/qudt/informativeReference"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/wikidataMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://qudt.org/schema/qudt/wikidataMatch"/>
+    
+
+
     <!-- http://usefulinc.com/ns/doap#repository -->
 
     <owl:AnnotationProperty rdf:about="http://usefulinc.com/ns/doap#repository"/>
@@ -165,6 +190,29 @@
     <!-- https://w3id.org/pmd/co/symbol -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/pmd/co/symbol"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://qudt.org/schema/qudt/LatexString -->
+
+    <rdfs:Datatype rdf:about="http://qudt.org/schema/qudt/LatexString"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"/>
     
 
 
@@ -3026,8 +3074,7 @@ for now.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/UO_0000012 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000012">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000045"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_1000012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
     </owl:Class>
     
 
@@ -3035,7 +3082,7 @@ for now.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/UO_0000016 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000016">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_1000008"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
     </owl:Class>
     
 
@@ -3043,7 +3090,7 @@ for now.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/UO_0000027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000027">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_1000027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
     </owl:Class>
     
 
@@ -3051,24 +3098,8 @@ for now.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/UO_0000031 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000031">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_1000031"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_0000045 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000045">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
-        <obo:IAO_0000115>A unit which is one of a particular measure to which all measures of that type can be related.</obo:IAO_0000115>
-        <rdfs:label>base unit</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UO_0000045"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A unit which is one of a particular measure to which all measures of that type can be related.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>NIST:NIST</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -3083,7 +3114,7 @@ for now.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/UO_0000106 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000106">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_1000106"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
     </owl:Class>
     
 
@@ -3091,7 +3122,7 @@ for now.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/UO_0000163 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000163">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_1000163"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
     </owl:Class>
     
 
@@ -3104,26 +3135,10 @@ for now.</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/UO_0000190 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000190">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
-        <obo:IAO_0000115>A dimensionless unit which denotes an amount or magnitude of one quantity relative to another.</obo:IAO_0000115>
-        <rdfs:label>ratio unit</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UO_0000190"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A dimensionless unit which denotes an amount or magnitude of one quantity relative to another.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>Wikipedia:Wikipedia</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/UO_0010006 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0010006">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000190"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
         <obo:IAO_0000115>A dimensionless ratio unit which, given a pair of quantities a and b, for which b is a multiple of a, denotes b by giving the multiplier (coefficient) c for a to result in b.</obo:IAO_0000115>
         <rdfs:label>ratio</rdfs:label>
     </owl:Class>
@@ -3136,42 +3151,6 @@ for now.</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/UO_1000008 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_1000008">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
-        <rdfs:label>meter based unit</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_1000012 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_1000012">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
-        <rdfs:label>kelvin based unit</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_1000027 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_1000027">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
-        <rdfs:label>degree Celsius based unit</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_1000031 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_1000031">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
-        <rdfs:label>minute based unit</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/UO_1000076 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_1000076">
@@ -3181,19 +3160,10 @@ for now.</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/UO_1000106 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_1000106">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
-        <rdfs:label>hertz based unit</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/UO_1000163 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_1000163">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000190"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
         <rdfs:label>mass percentage based unit</rdfs:label>
     </owl:Class>
     
@@ -3204,6 +3174,57 @@ for now.</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_1000164">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
         <rdfs:label>mass volume percentage based unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/Concept -->
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt/Concept">
+        <rdfs:comment rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML">The root class for all QUDT concepts.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt"/>
+        <rdfs:label>QUDT Concept</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/DerivedUnit -->
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt/DerivedUnit">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt/Unit"/>
+        <qudt:dbpediaMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://dbpedia.org/resource/Category:SI_derived_units</qudt:dbpediaMatch>
+        <rdfs:comment rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML">A DerivedUnit is a type specification for units that are derived from other units.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt"/>
+        <rdfs:label>Derived Unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/Unit -->
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt/Unit">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt/Concept"/>
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt/Verifiable"/>
+        <dcterms:description rdf:datatype="http://qudt.org/schema/qudt/LatexString">
+  A unit of measure, or unit, is a particular quantity value that has been chosen as a scale for measuring other quantities the same kind (more generally of equivalent dimension). 
+  For example, the meter is a quantity of length that has been rigorously defined and standardized by the BIPM (International Board of Weights and Measures). 
+  Any measurement of the length can be expressed as a number multiplied by the unit meter. 
+  More formally, the value of a physical quantity Q with respect to a unit (U) is expressed as the scalar multiple of a real number (n) and U, as  $Q = nU$.
+  </dcterms:description>
+        <qudt:informativeReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://dbpedia.org/resource/Category:Units_of_measure</qudt:informativeReference>
+        <qudt:informativeReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.allmeasures.com/Fullconversion.asp</qudt:informativeReference>
+        <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt"/>
+        <rdfs:label>Unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/Verifiable -->
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt/Verifiable">
+        <rdfs:comment>An aspect class that holds properties that provide external knowledge and specifications of a given resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt"/>
+        <rdfs:label>Verifiable</rdfs:label>
     </owl:Class>
     
 
@@ -4014,10 +4035,20 @@ TODO: Check general class axiom and defintion altogether !!!</skos:definition>
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020003"/>
+                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000663"/>
                                     <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0050002"/>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_33521"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0025998"/>
+                                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0050002"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
                                     </owl:Restriction>
                                 </owl:intersectionOf>
                             </owl:Class>
@@ -6275,17 +6306,6 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0020200 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020200">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-        <rdfs:label xml:lang="en">force</rdfs:label>
-        <skos:definition xml:lang="en">Force is a reciprocal relation realized between two objects where the other object exerces the same force with opposite sign onto the first. Force may be responsible for changes in velocity and/or deformation of objects.</skos:definition>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/pmd/co/PMD_0020207 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020207">
@@ -6541,7 +6561,7 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
     <!-- https://w3id.org/pmd/co/PMD_0050000 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0050000">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020200"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000145"/>
         <rdfs:label xml:lang="en">bond</rdfs:label>
         <skos:definition xml:lang="en">A bond is a relational quality describing the force interaction between atoms.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
@@ -6901,6 +6921,136 @@ Note: The concept of parallel length is replaced by the concept of distance betw
     <!-- http://purl.obolibrary.org/obo/UO_0000164 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/UO_0000164"/>
+    
+
+
+    <!-- http://qudt.org/vocab/unit/HZ -->
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/vocab/unit/HZ">
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/DerivedUnit"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/Unit"/>
+        <dcterms:description rdf:datatype="http://qudt.org/schema/qudt/LatexString">
+  $\textit{Hertz}$ (symbol $Hz$) is the SI unit of frequency defined as the number of cycles per second of a periodic phenomenon. 
+  One of its most common uses is the description of the sine wave, particularly those used in radio and audio applications, such as the frequency of musical tones. 
+  The word $\bf{hertz}$ is named for Heinrich Rudolf Hertz, who was the first to conclusively prove the existence of electromagnetic waves.
+  </dcterms:description>
+        <qudt:dbpediaMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://dbpedia.org/resource/Hertz</qudt:dbpediaMatch>
+        <qudt:informativeReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://cdd.iec.ch/cdd/iec62720/iec62720.nsf/Units/0112-2---62720%23UAA170</qudt:informativeReference>
+        <qudt:wikidataMatch rdf:resource="http://www.wikidata.org/entity/Q39369"/>
+        <rdfs:isDefinedBy rdf:resource="http://qudt.org/vocab/unit"/>
+        <rdfs:label xml:lang="pl">Herc</rdfs:label>
+        <rdfs:label xml:lang="es">Hercio</rdfs:label>
+        <rdfs:label>Hertz</rdfs:label>
+        <rdfs:label xml:lang="cs">Hertz</rdfs:label>
+        <rdfs:label xml:lang="de">Hertz</rdfs:label>
+        <rdfs:label xml:lang="en">Hertz</rdfs:label>
+        <rdfs:label xml:lang="fr">Hertz</rdfs:label>
+        <rdfs:label xml:lang="hu">Hertz</rdfs:label>
+        <rdfs:label xml:lang="it">Hertz</rdfs:label>
+        <rdfs:label xml:lang="ms">Hertz</rdfs:label>
+        <rdfs:label xml:lang="pt">Hertz</rdfs:label>
+        <rdfs:label xml:lang="ro">Hertz</rdfs:label>
+        <rdfs:label xml:lang="sl">Hertz</rdfs:label>
+        <rdfs:label xml:lang="tr">Hertz</rdfs:label>
+        <rdfs:label xml:lang="la">Hertzium</rdfs:label>
+        <rdfs:label xml:lang="el">Χερτζ</rdfs:label>
+        <rdfs:label xml:lang="ru">Герц</rdfs:label>
+        <rdfs:label xml:lang="bg">Херц</rdfs:label>
+        <rdfs:label xml:lang="he">הרץ</rdfs:label>
+        <rdfs:label xml:lang="ar">هرتز</rdfs:label>
+        <rdfs:label xml:lang="fa">هرتز</rdfs:label>
+        <rdfs:label xml:lang="hi">हर्ट्ज</rdfs:label>
+        <rdfs:label xml:lang="ja">ヘルツ</rdfs:label>
+        <rdfs:label xml:lang="zh">赫兹</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://qudt.org/vocab/unit/K -->
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/vocab/unit/K">
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/Unit"/>
+        <dcterms:description rdf:datatype="http://qudt.org/schema/qudt/LatexString">
+  The unit $\textit{Kelvin}$ is the SI base unit of temperature, previously called the degree Kelvin. 
+  One kelvin represents the same temperature difference as one degree Celsius. 
+  In 1967 the General Conference on Weights and Measures defined the temperature of the triple point of water
+   (the temperature at which water exists simultaneously in the gaseous, liquid, and solid states) to be exactly 273.16 kelvins. 
+  Since this temperature is also equal to 0.01 u00b0C, the temperature in kelvins is always equal to 273.15 plus the temperature in degrees Celsius. 
+  The kelvin equals exactly 1.8 degrees Fahrenheit. 
+  The unit is named for the British mathematician and physicist William Thomson (1824-1907),
+   later known as Lord Kelvin after he was named Baron Kelvin of Largs.
+  </dcterms:description>
+        <qudt:dbpediaMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://dbpedia.org/resource/Kelvin</qudt:dbpediaMatch>
+        <qudt:informativeReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://en.wikipedia.org/wiki/Kelvin?oldid=495075694</qudt:informativeReference>
+        <qudt:informativeReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://cdd.iec.ch/cdd/iec62720/iec62720.nsf/Units/0112-2---62720%23UAA185</qudt:informativeReference>
+        <qudt:wikidataMatch rdf:resource="http://www.wikidata.org/entity/Q11579"/>
+        <rdfs:isDefinedBy rdf:resource="http://qudt.org/vocab/unit"/>
+        <rdfs:label>Kelvin</rdfs:label>
+        <rdfs:label xml:lang="cs">Kelvin</rdfs:label>
+        <rdfs:label xml:lang="de">Kelvin</rdfs:label>
+        <rdfs:label xml:lang="en">Kelvin</rdfs:label>
+        <rdfs:label xml:lang="es">Kelvin</rdfs:label>
+        <rdfs:label xml:lang="fr">Kelvin</rdfs:label>
+        <rdfs:label xml:lang="hu">Kelvin</rdfs:label>
+        <rdfs:label xml:lang="it">Kelvin</rdfs:label>
+        <rdfs:label xml:lang="la">Kelvin</rdfs:label>
+        <rdfs:label xml:lang="ms">Kelvin</rdfs:label>
+        <rdfs:label xml:lang="pt">Kelvin</rdfs:label>
+        <rdfs:label xml:lang="ro">Kelvin</rdfs:label>
+        <rdfs:label xml:lang="sl">Kelvin</rdfs:label>
+        <rdfs:label xml:lang="tr">Kelvin</rdfs:label>
+        <rdfs:label xml:lang="pl">Kelwin</rdfs:label>
+        <rdfs:label xml:lang="el">Κέλβιν</rdfs:label>
+        <rdfs:label xml:lang="bg">Келвин</rdfs:label>
+        <rdfs:label xml:lang="ru">Кельвин</rdfs:label>
+        <rdfs:label xml:lang="he">קלווין</rdfs:label>
+        <rdfs:label xml:lang="ar">كلفن</rdfs:label>
+        <rdfs:label xml:lang="fa">کلوین</rdfs:label>
+        <rdfs:label xml:lang="hi">कैल्विन</rdfs:label>
+        <rdfs:label xml:lang="ja">ケルビン</rdfs:label>
+        <rdfs:label xml:lang="zh">开尔文</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://qudt.org/vocab/unit/M2 -->
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/vocab/unit/M2">
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/DerivedUnit"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/Unit"/>
+        <dcterms:description rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML">The S I unit of area is the square metre.</dcterms:description>
+        <qudt:dbpediaMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://dbpedia.org/resource/Square_metre</qudt:dbpediaMatch>
+        <qudt:expression rdf:datatype="http://qudt.org/schema/qudt/LatexString">$sq-m$</qudt:expression>
+        <qudt:informativeReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://en.wikipedia.org/wiki/Square_metre?oldid=490945508</qudt:informativeReference>
+        <qudt:informativeReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://cdd.iec.ch/cdd/iec62720/iec62720.nsf/Units/0112-2---62720%23UAA744</qudt:informativeReference>
+        <qudt:wikidataMatch rdf:resource="http://www.wikidata.org/entity/Q25343"/>
+        <rdfs:isDefinedBy rdf:resource="http://qudt.org/vocab/unit"/>
+        <rdfs:label xml:lang="sl">Kvadratni Meter</rdfs:label>
+        <rdfs:label xml:lang="ms">Meter Persegi</rdfs:label>
+        <rdfs:label xml:lang="pl">Metr Kwadratowy</rdfs:label>
+        <rdfs:label xml:lang="tr">Metrekare</rdfs:label>
+        <rdfs:label xml:lang="es">Metro Cuadrado</rdfs:label>
+        <rdfs:label xml:lang="pt">Metro Quadrado</rdfs:label>
+        <rdfs:label xml:lang="it">Metro Quadrato</rdfs:label>
+        <rdfs:label xml:lang="ro">Metru Pătrat</rdfs:label>
+        <rdfs:label xml:lang="la">Metrum Quadratum</rdfs:label>
+        <rdfs:label xml:lang="fr">Mètre Carré</rdfs:label>
+        <rdfs:label xml:lang="hu">Négyzetméter</rdfs:label>
+        <rdfs:label xml:lang="de">Quadratmeter</rdfs:label>
+        <rdfs:label xml:lang="en-us">Square Meter</rdfs:label>
+        <rdfs:label>Square Metre</rdfs:label>
+        <rdfs:label xml:lang="en">Square Metre</rdfs:label>
+        <rdfs:label xml:lang="cs">Čtvereční Metr</rdfs:label>
+        <rdfs:label xml:lang="el">Τετραγωνικό Μέτρο</rdfs:label>
+        <rdfs:label xml:lang="bg">Квадратен Метър</rdfs:label>
+        <rdfs:label xml:lang="ru">Квадратный Метр</rdfs:label>
+        <rdfs:label xml:lang="he">מטר רבוע</rdfs:label>
+        <rdfs:label xml:lang="ar">متر مربع</rdfs:label>
+        <rdfs:label xml:lang="fa">متر مربع</rdfs:label>
+        <rdfs:label xml:lang="hi">वर्ग मीटर</rdfs:label>
+        <rdfs:label xml:lang="ja">平方メートル</rdfs:label>
+        <rdfs:label xml:lang="zh">平方米</rdfs:label>
+    </owl:NamedIndividual>
     
 
 

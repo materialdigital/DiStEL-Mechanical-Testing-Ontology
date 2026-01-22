@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                92e548a3836fcba506fa77128dea1893f6d6f527cb493074351881c70aafeab1
+CONFIG_HASH=                d2fe468ac83eda6e0a85d142c57b93717dec4fd2abba045fb5103dff8c1fb422
 
 
 # ----------------------------------------
@@ -187,7 +187,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  pmdco tto uo
+IMPORTS =  pmdco tto uo qudt
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -427,6 +427,12 @@ $(IMPORTDIR)/uo_import.owl: $(MIRRORDIR)/uo.owl
 	@echo "       This rule needs to be overwritten in distel-mech.Makefile!"
 	@false
 
+## Module for ontology: qudt (custom)
+$(IMPORTDIR)/qudt_import.owl: $(MIRRORDIR)/qudt.owl
+	@echo "ERROR: You have configured qudt as a custom module;"
+	@echo "       This rule needs to be overwritten in distel-mech.Makefile!"
+	@false
+
 endif # IMP=true
 
 .PHONY: refresh-imports
@@ -531,6 +537,13 @@ mirror-tto: | $(TMPDIR)
 .PRECIOUS: $(MIRRORDIR)/uo.owl
 mirror-uo: | $(TMPDIR)
 	$(ROBOT) convert -I https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/refs/heads/master/uo-full.owl -o $(TMPDIR)/$@.owl
+
+
+## ONTOLOGY: qudt
+.PHONY: mirror-qudt
+.PRECIOUS: $(MIRRORDIR)/qudt.owl
+mirror-qudt: | $(TMPDIR)
+	$(ROBOT) convert -I https://qudt.org/qudt-all -o $(TMPDIR)/$@.owl
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)

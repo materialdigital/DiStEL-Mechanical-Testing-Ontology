@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<https://w3id.org/pmd/distel/imports/pmdco_import.owl>
-<https://w3id.org/pmd/distel/releases/2026-01-21/imports/pmdco_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <https://w3id.org/pmd/co/releases/2026-01-21/pmdco.ttl>)
-Annotation(owl:versionInfo "2026-01-21")
+<https://w3id.org/pmd/distel/releases/2026-01-22/imports/pmdco_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <https://w3id.org/pmd/co/releases/2026-01-22/pmdco.ttl>)
+Annotation(owl:versionInfo "2026-01-22")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -301,7 +301,6 @@ Declaration(Class(<https://w3id.org/pmd/co/PMD_0020148>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020149>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020150>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020161>))
-Declaration(Class(<https://w3id.org/pmd/co/PMD_0020200>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020207>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025001>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025002>))
@@ -2431,7 +2430,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <https://w3id.o
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000852> "metal"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000852> "A metal is an engineered material representing a class of materials characterized by high electrical and thermal conductivity, ductility, and metallic bonding."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000852> "true"^^xsd:boolean)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0000852> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0020003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <https://w3id.org/pmd/co/PMD_0050002>)))))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000852> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000663> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_33521> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0025998> <https://w3id.org/pmd/co/PMD_0050002>)))))))
 
 # Class: <https://w3id.org/pmd/co/PMD_0000853> (crystallographic texture)
 
@@ -2529,7 +2528,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000952> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000952> <https://w3id.org/pmd/co/PMD_0000848>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "Struktur Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "structural property analyzing process"@en)
@@ -3344,13 +3343,6 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020161> "activity (
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020161> "Activity (a_X) is a relational property between a chemical species X and a non-ideal solution. a_X is a measure of the effective concentration of a chemical species X in the non-ideal solution, accounting for interactions between particles. It is defined as the product of the concentration and an activity coefficient, where the activity coefficient corrects for non-ideal behavior."@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020161> <http://purl.obolibrary.org/obo/BFO_0000145>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0020200> (force)
-
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020200> "force"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020200> "Force is a reciprocal relation realized between two objects where the other object exerces the same force with opposite sign onto the first. Force may be responsible for changes in velocity and/or deformation of objects."@en)
-AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020200> "true"^^xsd:boolean)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0020200> <http://purl.obolibrary.org/obo/BFO_0000017>)
-
 # Class: <https://w3id.org/pmd/co/PMD_0020207> (amount of substance)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020207> "amount of substance"@en)
@@ -3456,7 +3448,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0040001> <https://w3id.org/pmd/co/PMD_00
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0050000> "bond"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0050000> "A bond is a relational quality describing the force interaction between atoms."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0050000> "true"^^xsd:boolean)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0050000> <https://w3id.org/pmd/co/PMD_0020200>)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0050000> <http://purl.obolibrary.org/obo/BFO_0000145>)
 
 # Class: <https://w3id.org/pmd/co/PMD_0050002> (metallic bond)
 

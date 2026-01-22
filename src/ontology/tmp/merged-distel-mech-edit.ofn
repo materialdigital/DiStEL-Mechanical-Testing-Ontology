@@ -321,7 +321,6 @@ Declaration(Class(<https://w3id.org/pmd/co/PMD_0020149>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020150>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020161>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020199>))
-Declaration(Class(<https://w3id.org/pmd/co/PMD_0020200>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020207>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025001>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025002>))
@@ -2668,7 +2667,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> <https://w3id.org/pmd/co/PMD_00
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <https://w3id.org/pmd/co/PMD_0000522>))
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000522>))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000849> (mechanical property analyzing process)
+# Class: <https://w3id.org/pmd/co/PMD_0000849> (Mechanische Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000849> "Mechanische Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000849> "mechanical property analyzing process"@en)
@@ -2683,7 +2682,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <https://w3id.o
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000852> "metal"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000852> "A metal is an engineered material representing a class of materials characterized by high electrical and thermal conductivity, ductility, and metallic bonding."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000852> "true"^^xsd:boolean)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0000852> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0020003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <https://w3id.org/pmd/co/PMD_0050002>)))))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000852> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000663> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_33521> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0025998> <https://w3id.org/pmd/co/PMD_0050002>)))))))
 
 # Class: <https://w3id.org/pmd/co/PMD_0000853> (crystallographic texture)
 
@@ -3630,13 +3629,6 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0020199> "Section area or a surface area"@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020199> <https://w3id.org/pmd/co/PMD_0020132>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0020200> (force)
-
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020200> "force"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020200> "Force is a reciprocal relation realized between two objects where the other object exerces the same force with opposite sign onto the first. Force may be responsible for changes in velocity and/or deformation of objects."@en)
-AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020200> "true"^^xsd:boolean)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0020200> <http://purl.obolibrary.org/obo/BFO_0000017>)
-
 # Class: <https://w3id.org/pmd/co/PMD_0020207> (amount of substance)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020207> "amount of substance"@en)
@@ -3742,7 +3734,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0040001> <https://w3id.org/pmd/co/PMD_00
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0050000> "bond"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0050000> "A bond is a relational quality describing the force interaction between atoms."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0050000> "true"^^xsd:boolean)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0050000> <https://w3id.org/pmd/co/PMD_0020200>)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0050000> <http://purl.obolibrary.org/obo/BFO_0000145>)
 
 # Class: <https://w3id.org/pmd/co/PMD_0050002> (metallic bond)
 
@@ -3850,7 +3842,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000012> <https://www.merriam-webster.com/dictionary/cross%20section>)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000012> <https://w3id.org/pmd/co/PMD_0020199>)
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000017> (extensometer gauge length)
+# Class: <https://w3id.org/pmd/tto/TTO_0000017> (Extensometer-Messlänge)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000017> <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000017> "Extensometer-Messlänge"@de)
