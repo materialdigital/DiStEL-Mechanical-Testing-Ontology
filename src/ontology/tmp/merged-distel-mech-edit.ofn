@@ -147,14 +147,23 @@ Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000012>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000016>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000031>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000045>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000076>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000106>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000163>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000164>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000190>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0010006>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000008>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000012>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000031>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000076>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000106>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000163>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000164>))
+Declaration(Class(<http://qudt.org/schema/qudt/DerivedUnit>))
+Declaration(Class(<http://qudt.org/schema/qudt/Unit>))
 Declaration(Class(<https://w3id.org/pmd/DISTEL-MECH_0000000>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000000>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000001>))
@@ -427,6 +436,9 @@ Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000076>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000106>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000163>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000164>))
+Declaration(NamedIndividual(<http://qudt.org/vocab/unit/HZ>))
+Declaration(NamedIndividual(<http://qudt.org/vocab/unit/K>))
+Declaration(NamedIndividual(<http://qudt.org/vocab/unit/M2>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020006>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020007>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020008>))
@@ -466,6 +478,10 @@ Declaration(AnnotationProperty(dcterms:creator))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
+Declaration(AnnotationProperty(<http://qudt.org/schema/qudt/dbpediaMatch>))
+Declaration(AnnotationProperty(<http://qudt.org/schema/qudt/expression>))
+Declaration(AnnotationProperty(<http://qudt.org/schema/qudt/informativeReference>))
+Declaration(AnnotationProperty(<http://qudt.org/schema/qudt/wikidataMatch>))
 Declaration(AnnotationProperty(<http://usefulinc.com/ns/doap#repository>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
@@ -478,6 +494,8 @@ Declaration(AnnotationProperty(<https://w3id.org/pmd/co/PMD_0001032>))
 Declaration(AnnotationProperty(<https://w3id.org/pmd/co/PMD_0050117>))
 Declaration(AnnotationProperty(<https://w3id.org/pmd/co/definitionSource>))
 Declaration(AnnotationProperty(<https://w3id.org/pmd/co/symbol>))
+Declaration(Datatype(<http://qudt.org/schema/qudt/LatexString>))
+Declaration(Datatype(rdf:HTML))
 ############################
 #   Annotation Properties
 ############################
@@ -2163,7 +2181,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/UO_0000000> <http://purl.obolibrary.o
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "BIPM:BIPM") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "NIST:NIST") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0000012> "A thermodynamic temperature unit which is equal to the fraction 1/273.16 of the thermodynamic temperature of the triple point of water.")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000012> "K")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000012> "kelvin")
-SubClassOf(<http://purl.obolibrary.org/obo/UO_0000012> <http://purl.obolibrary.org/obo/UO_0000000>)
+SubClassOf(<http://purl.obolibrary.org/obo/UO_0000012> <http://purl.obolibrary.org/obo/UO_0000045>)
+SubClassOf(<http://purl.obolibrary.org/obo/UO_0000012> <http://purl.obolibrary.org/obo/UO_1000012>)
 
 # Class: <http://purl.obolibrary.org/obo/UO_0000016> (millimeter)
 
@@ -2171,21 +2190,27 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000016> "millimetre")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000016> "mm")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000016> "millimeter")
-SubClassOf(<http://purl.obolibrary.org/obo/UO_0000016> <http://purl.obolibrary.org/obo/UO_0000000>)
+SubClassOf(<http://purl.obolibrary.org/obo/UO_0000016> <http://purl.obolibrary.org/obo/UO_1000008>)
 
 # Class: <http://purl.obolibrary.org/obo/UO_0000027> (degree Celsius)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "NIST:NIST") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0000027> "A temperature unit which is equal to one kelvin degree. However, they have their zeros at different points. The centigrade scale has its zero at 273.15 K.")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000027> "C")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000027> "degree Celsius")
-SubClassOf(<http://purl.obolibrary.org/obo/UO_0000027> <http://purl.obolibrary.org/obo/UO_0000000>)
+SubClassOf(<http://purl.obolibrary.org/obo/UO_0000027> <http://purl.obolibrary.org/obo/UO_1000027>)
 
 # Class: <http://purl.obolibrary.org/obo/UO_0000031> (minute)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "Wikipedia:Wikipedia") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0000031> "A time unit which is equal to 60 seconds.")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000031> "min")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000031> "minute")
-SubClassOf(<http://purl.obolibrary.org/obo/UO_0000031> <http://purl.obolibrary.org/obo/UO_0000000>)
+SubClassOf(<http://purl.obolibrary.org/obo/UO_0000031> <http://purl.obolibrary.org/obo/UO_1000031>)
+
+# Class: <http://purl.obolibrary.org/obo/UO_0000045> (base unit)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "NIST:NIST") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0000045> "A unit which is one of a particular measure to which all measures of that type can be related.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000045> "base unit")
+SubClassOf(<http://purl.obolibrary.org/obo/UO_0000045> <http://purl.obolibrary.org/obo/UO_0000000>)
 
 # Class: <http://purl.obolibrary.org/obo/UO_0000076> (mole fraction)
 
@@ -2201,7 +2226,7 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000106> "Hz")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000106> "s^1")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000106> "hertz")
-SubClassOf(<http://purl.obolibrary.org/obo/UO_0000106> <http://purl.obolibrary.org/obo/UO_0000000>)
+SubClassOf(<http://purl.obolibrary.org/obo/UO_0000106> <http://purl.obolibrary.org/obo/UO_1000106>)
 
 # Class: <http://purl.obolibrary.org/obo/UO_0000163> (mass percentage)
 
@@ -2209,7 +2234,7 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000163> "w/w")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000163> "weight-weight percentage")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000163> "mass percentage")
-SubClassOf(<http://purl.obolibrary.org/obo/UO_0000163> <http://purl.obolibrary.org/obo/UO_0000000>)
+SubClassOf(<http://purl.obolibrary.org/obo/UO_0000163> <http://purl.obolibrary.org/obo/UO_1000163>)
 
 # Class: <http://purl.obolibrary.org/obo/UO_0000164> (mass volume percentage)
 
@@ -2219,26 +2244,80 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000164> "mass volume percentage")
 SubClassOf(<http://purl.obolibrary.org/obo/UO_0000164> <http://purl.obolibrary.org/obo/UO_1000164>)
 
+# Class: <http://purl.obolibrary.org/obo/UO_0000190> (ratio unit)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "Wikipedia:Wikipedia") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0000190> "A dimensionless unit which denotes an amount or magnitude of one quantity relative to another.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000190> "ratio unit")
+SubClassOf(<http://purl.obolibrary.org/obo/UO_0000190> <http://purl.obolibrary.org/obo/UO_0000000>)
+
 # Class: <http://purl.obolibrary.org/obo/UO_0010006> (ratio)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "UOB:LKSR") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0010006> "A dimensionless ratio unit which, given a pair of quantities a and b, for which b is a multiple of a, denotes b by giving the multiplier (coefficient) c for a to result in b.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0010006> "ratio")
-SubClassOf(<http://purl.obolibrary.org/obo/UO_0010006> <http://purl.obolibrary.org/obo/UO_0000000>)
+SubClassOf(<http://purl.obolibrary.org/obo/UO_0010006> <http://purl.obolibrary.org/obo/UO_0000190>)
+
+# Class: <http://purl.obolibrary.org/obo/UO_1000008> (meter based unit)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000008> "meter based unit")
+SubClassOf(<http://purl.obolibrary.org/obo/UO_1000008> <http://purl.obolibrary.org/obo/UO_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/UO_1000012> (kelvin based unit)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000012> "kelvin based unit")
+SubClassOf(<http://purl.obolibrary.org/obo/UO_1000012> <http://purl.obolibrary.org/obo/UO_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/UO_1000027> (degree Celsius based unit)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000027> "degree Celsius based unit")
+SubClassOf(<http://purl.obolibrary.org/obo/UO_1000027> <http://purl.obolibrary.org/obo/UO_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/UO_1000031> (minute based unit)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000031> "minute based unit")
+SubClassOf(<http://purl.obolibrary.org/obo/UO_1000031> <http://purl.obolibrary.org/obo/UO_0000000>)
 
 # Class: <http://purl.obolibrary.org/obo/UO_1000076> (mole fraction based unit)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000076> "mole fraction based unit")
 SubClassOf(<http://purl.obolibrary.org/obo/UO_1000076> <http://purl.obolibrary.org/obo/UO_0000000>)
 
+# Class: <http://purl.obolibrary.org/obo/UO_1000106> (hertz based unit)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000106> "hertz based unit")
+SubClassOf(<http://purl.obolibrary.org/obo/UO_1000106> <http://purl.obolibrary.org/obo/UO_0000000>)
+
 # Class: <http://purl.obolibrary.org/obo/UO_1000163> (mass percentage based unit)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000163> "mass percentage based unit")
 SubClassOf(<http://purl.obolibrary.org/obo/UO_1000163> <http://purl.obolibrary.org/obo/UO_0000000>)
+SubClassOf(<http://purl.obolibrary.org/obo/UO_1000163> <http://purl.obolibrary.org/obo/UO_0000190>)
 
 # Class: <http://purl.obolibrary.org/obo/UO_1000164> (mass volume percentage based unit)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000164> "mass volume percentage based unit")
 SubClassOf(<http://purl.obolibrary.org/obo/UO_1000164> <http://purl.obolibrary.org/obo/UO_0000000>)
+
+# Class: <http://qudt.org/schema/qudt/DerivedUnit> (Derived Unit)
+
+AnnotationAssertion(<http://qudt.org/schema/qudt/dbpediaMatch> <http://qudt.org/schema/qudt/DerivedUnit> "http://dbpedia.org/resource/Category:SI_derived_units"^^xsd:anyURI)
+AnnotationAssertion(rdfs:comment <http://qudt.org/schema/qudt/DerivedUnit> "A DerivedUnit is a type specification for units that are derived from other units."^^rdf:HTML)
+AnnotationAssertion(rdfs:isDefinedBy <http://qudt.org/schema/qudt/DerivedUnit> <http://qudt.org/schema/qudt>)
+AnnotationAssertion(rdfs:label <http://qudt.org/schema/qudt/DerivedUnit> "Derived Unit")
+SubClassOf(<http://qudt.org/schema/qudt/DerivedUnit> <http://qudt.org/schema/qudt/Unit>)
+
+# Class: <http://qudt.org/schema/qudt/Unit> (Unit)
+
+AnnotationAssertion(dcterms:description <http://qudt.org/schema/qudt/Unit> "
+  A unit of measure, or unit, is a particular quantity value that has been chosen as a scale for measuring other quantities the same kind (more generally of equivalent dimension). 
+  For example, the meter is a quantity of length that has been rigorously defined and standardized by the BIPM (International Board of Weights and Measures). 
+  Any measurement of the length can be expressed as a number multiplied by the unit meter. 
+  More formally, the value of a physical quantity Q with respect to a unit (U) is expressed as the scalar multiple of a real number (n) and U, as  $Q = nU$.
+  "^^<http://qudt.org/schema/qudt/LatexString>)
+AnnotationAssertion(<http://qudt.org/schema/qudt/informativeReference> <http://qudt.org/schema/qudt/Unit> "http://dbpedia.org/resource/Category:Units_of_measure"^^xsd:anyURI)
+AnnotationAssertion(<http://qudt.org/schema/qudt/informativeReference> <http://qudt.org/schema/qudt/Unit> "http://www.allmeasures.com/Fullconversion.asp"^^xsd:anyURI)
+AnnotationAssertion(rdfs:isDefinedBy <http://qudt.org/schema/qudt/Unit> <http://qudt.org/schema/qudt>)
+AnnotationAssertion(rdfs:label <http://qudt.org/schema/qudt/Unit> "Unit")
+SubClassOf(<http://qudt.org/schema/qudt/Unit> <http://purl.obolibrary.org/obo/IAO_0000003>)
 
 # Class: <https://w3id.org/pmd/DISTEL-MECH_0000000> (root node)
 
@@ -2621,7 +2700,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> <https://w3id.org/pmd/co/PMD_00
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <https://w3id.org/pmd/co/PMD_0000522>))
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000522>))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000849> (mechanical property analyzing process)
+# Class: <https://w3id.org/pmd/co/PMD_0000849> (Mechanische Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000849> "Mechanische Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000849> "mechanical property analyzing process"@en)
@@ -2742,7 +2821,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000952> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000952> <https://w3id.org/pmd/co/PMD_0000848>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "Struktur Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "structural property analyzing process"@en)
@@ -3796,7 +3875,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000012> <https://www.merriam-webster.com/dictionary/cross%20section>)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000012> <https://w3id.org/pmd/co/PMD_0020199>)
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000017> (Extensometer-Messlänge)
+# Class: <https://w3id.org/pmd/tto/TTO_0000017> (extensometer gauge length)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000017> <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000017> "Extensometer-Messlänge"@de)
@@ -3914,6 +3993,124 @@ SubClassOf(<https://w3id.org/pmd/tto/TTO_0000059> <https://w3id.org/pmd/tto/TTO_
 ############################
 #   Named Individuals
 ############################
+
+# Individual: <http://qudt.org/vocab/unit/HZ> (Hertz)
+
+AnnotationAssertion(dcterms:description <http://qudt.org/vocab/unit/HZ> "
+  $\\textit{Hertz}$ (symbol $Hz$) is the SI unit of frequency defined as the number of cycles per second of a periodic phenomenon. 
+  One of its most common uses is the description of the sine wave, particularly those used in radio and audio applications, such as the frequency of musical tones. 
+  The word $\\bf{hertz}$ is named for Heinrich Rudolf Hertz, who was the first to conclusively prove the existence of electromagnetic waves.
+  "^^<http://qudt.org/schema/qudt/LatexString>)
+AnnotationAssertion(<http://qudt.org/schema/qudt/dbpediaMatch> <http://qudt.org/vocab/unit/HZ> "http://dbpedia.org/resource/Hertz"^^xsd:anyURI)
+AnnotationAssertion(<http://qudt.org/schema/qudt/informativeReference> <http://qudt.org/vocab/unit/HZ> "https://cdd.iec.ch/cdd/iec62720/iec62720.nsf/Units/0112-2---62720%23UAA170"^^xsd:anyURI)
+AnnotationAssertion(<http://qudt.org/schema/qudt/wikidataMatch> <http://qudt.org/vocab/unit/HZ> <http://www.wikidata.org/entity/Q39369>)
+AnnotationAssertion(rdfs:isDefinedBy <http://qudt.org/vocab/unit/HZ> <http://qudt.org/vocab/unit>)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/HZ> "Herc"@pl)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/HZ> "Hercio"@es)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/HZ> "Hertz")
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/HZ> "Hertz"@cs)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/HZ> "Hertz"@de)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/HZ> "Hertz"@en)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/HZ> "Hertz"@fr)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/HZ> "Hertz"@hu)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/HZ> "Hertz"@it)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/HZ> "Hertz"@ms)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/HZ> "Hertz"@pt)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/HZ> "Hertz"@ro)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/HZ> "Hertz"@sl)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/HZ> "Hertz"@tr)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/HZ> "Hertzium"@la)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/HZ> "Χερτζ"@el)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/HZ> "Герц"@ru)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/HZ> "Херц"@bg)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/HZ> "הרץ"@he)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/HZ> "هرتز"@ar)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/HZ> "هرتز"@fa)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/HZ> "हर्ट्ज"@hi)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/HZ> "ヘルツ"@ja)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/HZ> "赫兹"@zh)
+ClassAssertion(<http://qudt.org/schema/qudt/DerivedUnit> <http://qudt.org/vocab/unit/HZ>)
+ClassAssertion(<http://qudt.org/schema/qudt/Unit> <http://qudt.org/vocab/unit/HZ>)
+
+# Individual: <http://qudt.org/vocab/unit/K> (Kelvin)
+
+AnnotationAssertion(dcterms:description <http://qudt.org/vocab/unit/K> "
+  The unit $\\textit{Kelvin}$ is the SI base unit of temperature, previously called the degree Kelvin. 
+  One kelvin represents the same temperature difference as one degree Celsius. 
+  In 1967 the General Conference on Weights and Measures defined the temperature of the triple point of water
+   (the temperature at which water exists simultaneously in the gaseous, liquid, and solid states) to be exactly 273.16 kelvins. 
+  Since this temperature is also equal to 0.01 u00b0C, the temperature in kelvins is always equal to 273.15 plus the temperature in degrees Celsius. 
+  The kelvin equals exactly 1.8 degrees Fahrenheit. 
+  The unit is named for the British mathematician and physicist William Thomson (1824-1907),
+   later known as Lord Kelvin after he was named Baron Kelvin of Largs.
+  "^^<http://qudt.org/schema/qudt/LatexString>)
+AnnotationAssertion(<http://qudt.org/schema/qudt/dbpediaMatch> <http://qudt.org/vocab/unit/K> "http://dbpedia.org/resource/Kelvin"^^xsd:anyURI)
+AnnotationAssertion(<http://qudt.org/schema/qudt/informativeReference> <http://qudt.org/vocab/unit/K> "http://en.wikipedia.org/wiki/Kelvin?oldid=495075694"^^xsd:anyURI)
+AnnotationAssertion(<http://qudt.org/schema/qudt/informativeReference> <http://qudt.org/vocab/unit/K> "https://cdd.iec.ch/cdd/iec62720/iec62720.nsf/Units/0112-2---62720%23UAA185"^^xsd:anyURI)
+AnnotationAssertion(<http://qudt.org/schema/qudt/wikidataMatch> <http://qudt.org/vocab/unit/K> <http://www.wikidata.org/entity/Q11579>)
+AnnotationAssertion(rdfs:isDefinedBy <http://qudt.org/vocab/unit/K> <http://qudt.org/vocab/unit>)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/K> "Kelvin")
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/K> "Kelvin"@cs)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/K> "Kelvin"@de)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/K> "Kelvin"@en)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/K> "Kelvin"@es)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/K> "Kelvin"@fr)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/K> "Kelvin"@hu)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/K> "Kelvin"@it)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/K> "Kelvin"@la)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/K> "Kelvin"@ms)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/K> "Kelvin"@pt)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/K> "Kelvin"@ro)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/K> "Kelvin"@sl)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/K> "Kelvin"@tr)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/K> "Kelwin"@pl)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/K> "Κέλβιν"@el)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/K> "Келвин"@bg)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/K> "Кельвин"@ru)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/K> "קלווין"@he)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/K> "كلفن"@ar)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/K> "کلوین"@fa)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/K> "कैल्विन"@hi)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/K> "ケルビン"@ja)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/K> "开尔文"@zh)
+ClassAssertion(<http://qudt.org/schema/qudt/Unit> <http://qudt.org/vocab/unit/K>)
+
+# Individual: <http://qudt.org/vocab/unit/M2> (Meter Persegi)
+
+AnnotationAssertion(dcterms:description <http://qudt.org/vocab/unit/M2> "The S I unit of area is the square metre."^^rdf:HTML)
+AnnotationAssertion(<http://qudt.org/schema/qudt/dbpediaMatch> <http://qudt.org/vocab/unit/M2> "http://dbpedia.org/resource/Square_metre"^^xsd:anyURI)
+AnnotationAssertion(<http://qudt.org/schema/qudt/expression> <http://qudt.org/vocab/unit/M2> "$sq-m$"^^<http://qudt.org/schema/qudt/LatexString>)
+AnnotationAssertion(<http://qudt.org/schema/qudt/informativeReference> <http://qudt.org/vocab/unit/M2> "http://en.wikipedia.org/wiki/Square_metre?oldid=490945508"^^xsd:anyURI)
+AnnotationAssertion(<http://qudt.org/schema/qudt/informativeReference> <http://qudt.org/vocab/unit/M2> "https://cdd.iec.ch/cdd/iec62720/iec62720.nsf/Units/0112-2---62720%23UAA744"^^xsd:anyURI)
+AnnotationAssertion(<http://qudt.org/schema/qudt/wikidataMatch> <http://qudt.org/vocab/unit/M2> <http://www.wikidata.org/entity/Q25343>)
+AnnotationAssertion(rdfs:isDefinedBy <http://qudt.org/vocab/unit/M2> <http://qudt.org/vocab/unit>)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Kvadratni Meter"@sl)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Meter Persegi"@ms)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Metr Kwadratowy"@pl)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Metrekare"@tr)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Metro Cuadrado"@es)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Metro Quadrado"@pt)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Metro Quadrato"@it)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Metru Pătrat"@ro)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Metrum Quadratum"@la)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Mètre Carré"@fr)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Négyzetméter"@hu)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Quadratmeter"@de)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Square Meter"@en-us)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Square Metre")
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Square Metre"@en)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Čtvereční Metr"@cs)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Τετραγωνικό Μέτρο"@el)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Квадратен Метър"@bg)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Квадратный Метр"@ru)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "מטר רבוע"@he)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "متر مربع"@ar)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "متر مربع"@fa)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "वर्ग मीटर"@hi)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "平方メートル"@ja)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "平方米"@zh)
+ClassAssertion(<http://qudt.org/schema/qudt/DerivedUnit> <http://qudt.org/vocab/unit/M2>)
+ClassAssertion(<http://qudt.org/schema/qudt/Unit> <http://qudt.org/vocab/unit/M2>)
 
 # Individual: <https://w3id.org/pmd/co/PMD_0020006> (bravais lattice triclinic primitve)
 

@@ -3086,67 +3086,10 @@ for now.</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/UO_0000012 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000012">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000045"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_1000012"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_0000016 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000016">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_1000008"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_0000027 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000027">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_1000027"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_0000031 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000031">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_1000031"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_0000045 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000045">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
-        <obo:IAO_0000115>A unit which is one of a particular measure to which all measures of that type can be related.</obo:IAO_0000115>
-        <rdfs:label>base unit</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UO_0000045"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A unit which is one of a particular measure to which all measures of that type can be related.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>NIST:NIST</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/UO_0000076 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000076">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_1000076"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_0000106 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000106">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_1000106"/>
     </owl:Class>
     
 
@@ -3199,56 +3142,11 @@ for now.</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/UO_1000008 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_1000008">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
-        <rdfs:label>meter based unit</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_1000012 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_1000012">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
-        <rdfs:label>kelvin based unit</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_1000027 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_1000027">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
-        <rdfs:label>degree Celsius based unit</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_1000031 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_1000031">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
-        <rdfs:label>minute based unit</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/UO_1000076 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_1000076">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
         <rdfs:label>mole fraction based unit</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_1000106 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_1000106">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
-        <rdfs:label>hertz based unit</rdfs:label>
     </owl:Class>
     
 
@@ -3286,6 +3184,7 @@ for now.</obo:IAO_0000116>
     <!-- http://qudt.org/schema/qudt/Unit -->
 
     <owl:Class rdf:about="http://qudt.org/schema/qudt/Unit">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
         <dcterms:description rdf:datatype="http://qudt.org/schema/qudt/LatexString">
   A unit of measure, or unit, is a particular quantity value that has been chosen as a scale for measuring other quantities the same kind (more generally of equivalent dimension). 
   For example, the meter is a quantity of length that has been rigorously defined and standardized by the BIPM (International Board of Weights and Measures). 
@@ -6947,39 +6846,9 @@ Note: The concept of parallel length is replaced by the concept of distance betw
     
 
 
-    <!-- http://purl.obolibrary.org/obo/UO_0000012 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/UO_0000012"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_0000016 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/UO_0000016"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_0000027 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/UO_0000027"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_0000031 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/UO_0000031"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/UO_0000076 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/UO_0000076"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_0000106 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/UO_0000106"/>
     
 
 
@@ -7412,52 +7281,6 @@ Note: The concept of parallel length is replaced by the concept of distance betw
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000012">
-        <obo:IAO_0000115>A thermodynamic temperature unit which is equal to the fraction 1/273.16 of the thermodynamic temperature of the triple point of water.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>K</oboInOwl:hasExactSynonym>
-        <rdfs:label>kelvin</rdfs:label>
-    </rdf:Description>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UO_0000012"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A thermodynamic temperature unit which is equal to the fraction 1/273.16 of the thermodynamic temperature of the triple point of water.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>BIPM:BIPM</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>NIST:NIST</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000016">
-        <obo:IAO_0000115>A length unit which is equal to one thousandth of a meter or 10^[-3] m.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>millimetre</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>mm</oboInOwl:hasExactSynonym>
-        <rdfs:label>millimeter</rdfs:label>
-    </rdf:Description>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UO_0000016"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A length unit which is equal to one thousandth of a meter or 10^[-3] m.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>NIST:NIST</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000027">
-        <obo:IAO_0000115>A temperature unit which is equal to one kelvin degree. However, they have their zeros at different points. The centigrade scale has its zero at 273.15 K.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>C</oboInOwl:hasExactSynonym>
-        <rdfs:label>degree Celsius</rdfs:label>
-    </rdf:Description>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UO_0000027"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A temperature unit which is equal to one kelvin degree. However, they have their zeros at different points. The centigrade scale has its zero at 273.15 K.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>NIST:NIST</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000031">
-        <obo:IAO_0000115>A time unit which is equal to 60 seconds.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>min</oboInOwl:hasExactSynonym>
-        <rdfs:label>minute</rdfs:label>
-    </rdf:Description>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UO_0000031"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A time unit which is equal to 60 seconds.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>Wikipedia:Wikipedia</oboInOwl:hasDbXref>
-    </owl:Axiom>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000076">
         <obo:IAO_0000115>A concentration unit which denotes the number of moles of solute as a proportion of the total number of moles in a solution.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>(x)</oboInOwl:hasExactSynonym>
@@ -7469,18 +7292,6 @@ Note: The concept of parallel length is replaced by the concept of distance betw
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A concentration unit which denotes the number of moles of solute as a proportion of the total number of moles in a solution.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>Wikipedia:Wikipedia</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000106">
-        <obo:IAO_0000115>A frequency unit which is equal to 1 complete cycle of a recurring phenomenon in 1 second.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>Hz</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>s^1</oboInOwl:hasExactSynonym>
-        <rdfs:label>hertz</rdfs:label>
-    </rdf:Description>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UO_0000106"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A frequency unit which is equal to 1 complete cycle of a recurring phenomenon in 1 second.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>NIST:NIST</oboInOwl:hasDbXref>
     </owl:Axiom>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000163">
         <obo:IAO_0000115>A dimensionless concentration unit which denotes the mass of a substance in a mixture as a percentage of the mass of the entire mixture.</obo:IAO_0000115>
