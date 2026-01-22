@@ -12,6 +12,7 @@ edit_format: owl
 use_templates: false
 
 import_group:
+  annotate_with_labels: true
   annotation_properties: ['rdfs:label', 'IAO:0000119','IAO:0000115', 'IAO:0000116', 'IAO:0000112', 'skos:definition', 'skos:example', 'skos:comment', 'skos:altLabel' ]
   
   products:
@@ -26,7 +27,7 @@ import_group:
     - id: uo
       mirror_from: https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/refs/heads/master/uo-full.owl
       module_type: custom
-    id: qudt
+    - id: qudt
       mirror_from: https://qudt.org/qudt-all
       module_type: custom
 
