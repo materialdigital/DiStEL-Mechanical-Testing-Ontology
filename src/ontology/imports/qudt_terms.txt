@@ -1,0 +1,8 @@
+# Classes
+http://qudt.org/schema/qudt/Unit
+http://qudt.org/schema/qudt/DerivedUnit
+
+# Individuals
+http://qudt.org/vocab/unit/HZ  # Hertz
+http://qudt.org/vocab/unit/K   # Kelvin
+http://qudt.org/vocab/unit/M2  # square metre
