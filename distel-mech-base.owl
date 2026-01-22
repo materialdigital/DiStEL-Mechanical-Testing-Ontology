@@ -122,7 +122,11 @@
 
     <!-- https://w3id.org/pmd/co/PMD_0050117 -->
 
-    <owl:AnnotationProperty rdf:about="https://w3id.org/pmd/co/PMD_0050117"/>
+    <owl:AnnotationProperty rdf:about="https://w3id.org/pmd/co/PMD_0050117">
+        <rdfs:label xml:lang="en">abbreviation</rdfs:label>
+        <skos:definition xml:lang="en">A textual annotation used to specify a commonly accepted abbreviation, acronym, or shortened form of a class label. This property is intended to support concise referencing of ontology classes, especially when standard abbreviations are widely used in practice.</skos:definition>
+        <skos:example xml:lang="en">&quot;DNA&quot; for &quot;Deoxyribonucleic Acid&quot;</skos:example>
+    </owl:AnnotationProperty>
     
 
 

@@ -143,23 +143,12 @@ Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0001930>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0001931>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0001933>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000000>))
-Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000012>))
-Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000016>))
-Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000027>))
-Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000031>))
-Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000045>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000076>))
-Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000106>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000163>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000164>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000190>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0010006>))
-Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000008>))
-Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000012>))
-Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000027>))
-Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000031>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000076>))
-Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000106>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000163>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000164>))
 Declaration(Class(<http://qudt.org/schema/qudt/DerivedUnit>))
@@ -428,12 +417,7 @@ Declaration(ObjectProperty(<https://w3id.org/pmd/co/PMD_0025999>))
 Declaration(DataProperty(<http://purl.obolibrary.org/obo/OBI_0001937>))
 Declaration(DataProperty(<http://purl.obolibrary.org/obo/OBI_0002135>))
 Declaration(DataProperty(<https://w3id.org/pmd/co/PMD_0000006>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000012>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000016>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000027>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000031>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000076>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000106>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000163>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000164>))
 Declaration(NamedIndividual(<http://qudt.org/vocab/unit/HZ>))
@@ -500,6 +484,28 @@ Declaration(Datatype(rdf:HTML))
 #   Annotation Properties
 ############################
 
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000112> (example of usage)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000112> "A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000112> "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000112> "example of usage")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000112> "example of usage"@en)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000116> (editor note)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000116> "An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000116> "GROUP:OBI:<http://purl.obofoundry.org/obo/obi>"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000116> "editor note"@en)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000119> (definition source)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000119> "Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000119> "formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000119> "Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000119> "Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000119> "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000119> "definition source"@en)
+
 # Annotation Property: dcterms:description (description)
 
 AnnotationAssertion(rdfs:label dcterms:description "description")
@@ -511,6 +517,12 @@ AnnotationAssertion(rdfs:label dcterms:license "license")
 # Annotation Property: dcterms:title (title)
 
 AnnotationAssertion(rdfs:label dcterms:title "title")
+
+# Annotation Property: <https://w3id.org/pmd/co/PMD_0050117> (abbreviation)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0050117> "abbreviation"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0050117> "A textual annotation used to specify a commonly accepted abbreviation, acronym, or shortened form of a class label. This property is intended to support concise referencing of ontology classes, especially when standard abbreviations are widely used in practice."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0050117> "\"DNA\" for \"Deoxyribonucleic Acid\""@en)
 
 
 ############################
@@ -2176,42 +2188,6 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000000> "unit")
 SubClassOf(<http://purl.obolibrary.org/obo/UO_0000000> <http://purl.obolibrary.org/obo/IAO_0000003>)
 
-# Class: <http://purl.obolibrary.org/obo/UO_0000012> (kelvin)
-
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "BIPM:BIPM") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "NIST:NIST") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0000012> "A thermodynamic temperature unit which is equal to the fraction 1/273.16 of the thermodynamic temperature of the triple point of water.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000012> "K")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000012> "kelvin")
-SubClassOf(<http://purl.obolibrary.org/obo/UO_0000012> <http://purl.obolibrary.org/obo/UO_0000045>)
-SubClassOf(<http://purl.obolibrary.org/obo/UO_0000012> <http://purl.obolibrary.org/obo/UO_1000012>)
-
-# Class: <http://purl.obolibrary.org/obo/UO_0000016> (millimeter)
-
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "NIST:NIST") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0000016> "A length unit which is equal to one thousandth of a meter or 10^[-3] m.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000016> "millimetre")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000016> "mm")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000016> "millimeter")
-SubClassOf(<http://purl.obolibrary.org/obo/UO_0000016> <http://purl.obolibrary.org/obo/UO_1000008>)
-
-# Class: <http://purl.obolibrary.org/obo/UO_0000027> (degree Celsius)
-
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "NIST:NIST") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0000027> "A temperature unit which is equal to one kelvin degree. However, they have their zeros at different points. The centigrade scale has its zero at 273.15 K.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000027> "C")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000027> "degree Celsius")
-SubClassOf(<http://purl.obolibrary.org/obo/UO_0000027> <http://purl.obolibrary.org/obo/UO_1000027>)
-
-# Class: <http://purl.obolibrary.org/obo/UO_0000031> (minute)
-
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "Wikipedia:Wikipedia") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0000031> "A time unit which is equal to 60 seconds.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000031> "min")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000031> "minute")
-SubClassOf(<http://purl.obolibrary.org/obo/UO_0000031> <http://purl.obolibrary.org/obo/UO_1000031>)
-
-# Class: <http://purl.obolibrary.org/obo/UO_0000045> (base unit)
-
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "NIST:NIST") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0000045> "A unit which is one of a particular measure to which all measures of that type can be related.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000045> "base unit")
-SubClassOf(<http://purl.obolibrary.org/obo/UO_0000045> <http://purl.obolibrary.org/obo/UO_0000000>)
-
 # Class: <http://purl.obolibrary.org/obo/UO_0000076> (mole fraction)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "Wikipedia:Wikipedia") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0000076> "A concentration unit which denotes the number of moles of solute as a proportion of the total number of moles in a solution.")
@@ -2219,14 +2195,6 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000076> "chi")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000076> "mole fraction")
 SubClassOf(<http://purl.obolibrary.org/obo/UO_0000076> <http://purl.obolibrary.org/obo/UO_1000076>)
-
-# Class: <http://purl.obolibrary.org/obo/UO_0000106> (hertz)
-
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "NIST:NIST") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0000106> "A frequency unit which is equal to 1 complete cycle of a recurring phenomenon in 1 second.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000106> "Hz")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000106> "s^1")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000106> "hertz")
-SubClassOf(<http://purl.obolibrary.org/obo/UO_0000106> <http://purl.obolibrary.org/obo/UO_1000106>)
 
 # Class: <http://purl.obolibrary.org/obo/UO_0000163> (mass percentage)
 
@@ -2256,35 +2224,10 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0010006> "ratio")
 SubClassOf(<http://purl.obolibrary.org/obo/UO_0010006> <http://purl.obolibrary.org/obo/UO_0000190>)
 
-# Class: <http://purl.obolibrary.org/obo/UO_1000008> (meter based unit)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000008> "meter based unit")
-SubClassOf(<http://purl.obolibrary.org/obo/UO_1000008> <http://purl.obolibrary.org/obo/UO_0000000>)
-
-# Class: <http://purl.obolibrary.org/obo/UO_1000012> (kelvin based unit)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000012> "kelvin based unit")
-SubClassOf(<http://purl.obolibrary.org/obo/UO_1000012> <http://purl.obolibrary.org/obo/UO_0000000>)
-
-# Class: <http://purl.obolibrary.org/obo/UO_1000027> (degree Celsius based unit)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000027> "degree Celsius based unit")
-SubClassOf(<http://purl.obolibrary.org/obo/UO_1000027> <http://purl.obolibrary.org/obo/UO_0000000>)
-
-# Class: <http://purl.obolibrary.org/obo/UO_1000031> (minute based unit)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000031> "minute based unit")
-SubClassOf(<http://purl.obolibrary.org/obo/UO_1000031> <http://purl.obolibrary.org/obo/UO_0000000>)
-
 # Class: <http://purl.obolibrary.org/obo/UO_1000076> (mole fraction based unit)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000076> "mole fraction based unit")
 SubClassOf(<http://purl.obolibrary.org/obo/UO_1000076> <http://purl.obolibrary.org/obo/UO_0000000>)
-
-# Class: <http://purl.obolibrary.org/obo/UO_1000106> (hertz based unit)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000106> "hertz based unit")
-SubClassOf(<http://purl.obolibrary.org/obo/UO_1000106> <http://purl.obolibrary.org/obo/UO_0000000>)
 
 # Class: <http://purl.obolibrary.org/obo/UO_1000163> (mass percentage based unit)
 
@@ -2821,7 +2764,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000952> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000952> <https://w3id.org/pmd/co/PMD_0000848>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "Struktur Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "structural property analyzing process"@en)

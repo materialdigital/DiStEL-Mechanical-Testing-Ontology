@@ -28,7 +28,11 @@
 #################################################################
 
 ###  http://purl.obolibrary.org/obo/IAO_0000112
-obo:IAO_0000112 rdf:type owl:AnnotationProperty .
+obo:IAO_0000112 rdf:type owl:AnnotationProperty ;
+                obo:IAO_0000115 "A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold."@en ;
+                obo:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en ;
+                rdfs:label "example of usage" ,
+                           "example of usage"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000115
@@ -36,11 +40,20 @@ obo:IAO_0000115 rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000116
-obo:IAO_0000116 rdf:type owl:AnnotationProperty .
+obo:IAO_0000116 rdf:type owl:AnnotationProperty ;
+                obo:IAO_0000115 "An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology."@en ;
+                obo:IAO_0000119 "GROUP:OBI:<http://purl.obofoundry.org/obo/obi>"@en ;
+                rdfs:label "editor note"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000119
-obo:IAO_0000119 rdf:type owl:AnnotationProperty .
+obo:IAO_0000119 rdf:type owl:AnnotationProperty ;
+                obo:IAO_0000115 "Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007"@en ,
+                                "formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007"@en ;
+                obo:IAO_0000119 "Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w" ,
+                                "Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w"@en ,
+                                "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en ;
+                rdfs:label "definition source"@en .
 
 
 ###  http://purl.org/dc/elements/1.1/source
@@ -119,7 +132,10 @@ co:PMD_0001032 rdf:type owl:AnnotationProperty .
 
 
 ###  https://w3id.org/pmd/co/PMD_0050117
-co:PMD_0050117 rdf:type owl:AnnotationProperty .
+co:PMD_0050117 rdf:type owl:AnnotationProperty ;
+               rdfs:label "abbreviation"@en ;
+               skos:definition "A textual annotation used to specify a commonly accepted abbreviation, acronym, or shortened form of a class label. This property is intended to support concise referencing of ontology classes, especially when standard abbreviations are widely used in practice."@en ;
+               skos:example "\"DNA\" for \"Deoxyribonucleic Acid\""@en .
 
 
 ###  https://w3id.org/pmd/co/definitionSource

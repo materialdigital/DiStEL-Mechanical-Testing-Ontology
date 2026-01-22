@@ -72,7 +72,10 @@ co:PMD_0001032 rdf:type owl:AnnotationProperty .
 
 
 ###  https://w3id.org/pmd/co/PMD_0050117
-co:PMD_0050117 rdf:type owl:AnnotationProperty .
+co:PMD_0050117 rdf:type owl:AnnotationProperty ;
+               rdfs:label "abbreviation"@en ;
+               skos:definition "A textual annotation used to specify a commonly accepted abbreviation, acronym, or shortened form of a class label. This property is intended to support concise referencing of ontology classes, especially when standard abbreviations are widely used in practice."@en ;
+               skos:example "\"DNA\" for \"Deoxyribonucleic Acid\""@en .
 
 
 ###  https://w3id.org/pmd/co/definitionSource
