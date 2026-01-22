@@ -33,6 +33,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
@@ -89,19 +95,30 @@
 
     <!-- https://w3id.org/pmd/co/PMD_0000060 -->
 
-    <owl:AnnotationProperty rdf:about="https://w3id.org/pmd/co/PMD_0000060"/>
+    <owl:AnnotationProperty rdf:about="https://w3id.org/pmd/co/PMD_0000060">
+        <rdfs:comment xml:lang="en">Indicates whether the ontology element is part of the minimal profile of the ontology. Useful for modularization, simplified views, or lightweight implementations.</rdfs:comment>
+        <rdfs:label xml:lang="en">isInMinimalProfile</rdfs:label>
+        <co:PMD_0001032>https://github.com/materialdigital/core-ontology/issues/121</co:PMD_0001032>
+    </owl:AnnotationProperty>
     
 
 
     <!-- https://w3id.org/pmd/co/PMD_0000064 -->
 
-    <owl:AnnotationProperty rdf:about="https://w3id.org/pmd/co/PMD_0000064"/>
+    <owl:AnnotationProperty rdf:about="https://w3id.org/pmd/co/PMD_0000064">
+        <rdfs:comment>An editor note referring to a pattern which shows the usage of this class or property.</rdfs:comment>
+        <rdfs:label xml:lang="en">pattern example</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
     <!-- https://w3id.org/pmd/co/PMD_0001032 -->
 
-    <owl:AnnotationProperty rdf:about="https://w3id.org/pmd/co/PMD_0001032"/>
+    <owl:AnnotationProperty rdf:about="https://w3id.org/pmd/co/PMD_0001032">
+        <obo:IAO_0000115 xml:lang="en">A term tracker annotation is an editor note used to track the history of an entity. For each change, it records the related GitHub issue and pull request.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">hijacked from http://openenergy-platform.org/ontology/oeo/OEO_00020426</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">term tracker annotation</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 

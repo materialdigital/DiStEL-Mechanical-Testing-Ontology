@@ -23,6 +23,10 @@
 #    Annotation properties
 #################################################################
 
+###  http://purl.obolibrary.org/obo/IAO_0000115
+obo:IAO_0000115 rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.obolibrary.org/obo/IAO_0000116
 obo:IAO_0000116 rdf:type owl:AnnotationProperty .
 
@@ -60,15 +64,23 @@ skos:example rdf:type owl:AnnotationProperty .
 
 
 ###  https://w3id.org/pmd/co/PMD_0000060
-co:PMD_0000060 rdf:type owl:AnnotationProperty .
+co:PMD_0000060 rdf:type owl:AnnotationProperty ;
+               rdfs:comment "Indicates whether the ontology element is part of the minimal profile of the ontology. Useful for modularization, simplified views, or lightweight implementations."@en ;
+               rdfs:label "isInMinimalProfile"@en ;
+               co:PMD_0001032 "https://github.com/materialdigital/core-ontology/issues/121" .
 
 
 ###  https://w3id.org/pmd/co/PMD_0000064
-co:PMD_0000064 rdf:type owl:AnnotationProperty .
+co:PMD_0000064 rdf:type owl:AnnotationProperty ;
+               rdfs:comment "An editor note referring to a pattern which shows the usage of this class or property." ;
+               rdfs:label "pattern example"@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0001032
-co:PMD_0001032 rdf:type owl:AnnotationProperty .
+co:PMD_0001032 rdf:type owl:AnnotationProperty ;
+               obo:IAO_0000115 "A term tracker annotation is an editor note used to track the history of an entity. For each change, it records the related GitHub issue and pull request."@en ;
+               obo:IAO_0000116 "hijacked from http://openenergy-platform.org/ontology/oeo/OEO_00020426"@en ;
+               rdfs:label "term tracker annotation"@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0050117
