@@ -3074,7 +3074,8 @@ for now.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/UO_0000012 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000012">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000045"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_1000012"/>
     </owl:Class>
     
 
@@ -3082,7 +3083,7 @@ for now.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/UO_0000016 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000016">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_1000008"/>
     </owl:Class>
     
 
@@ -3090,7 +3091,7 @@ for now.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/UO_0000027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000027">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_1000027"/>
     </owl:Class>
     
 
@@ -3098,8 +3099,24 @@ for now.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/UO_0000031 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000031">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_1000031"/>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
+        <obo:IAO_0000115>A unit which is one of a particular measure to which all measures of that type can be related.</obo:IAO_0000115>
+        <rdfs:label>base unit</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UO_0000045"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A unit which is one of a particular measure to which all measures of that type can be related.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>NIST:NIST</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -3114,7 +3131,7 @@ for now.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/UO_0000106 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000106">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_1000106"/>
     </owl:Class>
     
 
@@ -3122,7 +3139,7 @@ for now.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/UO_0000163 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000163">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_1000163"/>
     </owl:Class>
     
 
@@ -3135,10 +3152,26 @@ for now.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UO_0000190 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000190">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
+        <obo:IAO_0000115>A dimensionless unit which denotes an amount or magnitude of one quantity relative to another.</obo:IAO_0000115>
+        <rdfs:label>ratio unit</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UO_0000190"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A dimensionless unit which denotes an amount or magnitude of one quantity relative to another.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>Wikipedia:Wikipedia</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UO_0010006 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0010006">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000190"/>
         <obo:IAO_0000115>A dimensionless ratio unit which, given a pair of quantities a and b, for which b is a multiple of a, denotes b by giving the multiplier (coefficient) c for a to result in b.</obo:IAO_0000115>
         <rdfs:label>ratio</rdfs:label>
     </owl:Class>
@@ -3151,6 +3184,42 @@ for now.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UO_1000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_1000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
+        <rdfs:label>meter based unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_1000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_1000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
+        <rdfs:label>kelvin based unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_1000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_1000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
+        <rdfs:label>degree Celsius based unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_1000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_1000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
+        <rdfs:label>minute based unit</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UO_1000076 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_1000076">
@@ -3160,10 +3229,19 @@ for now.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UO_1000106 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_1000106">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
+        <rdfs:label>hertz based unit</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UO_1000163 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_1000163">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000190"/>
         <rdfs:label>mass percentage based unit</rdfs:label>
     </owl:Class>
     
@@ -3174,16 +3252,6 @@ for now.</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_1000164">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
         <rdfs:label>mass volume percentage based unit</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://qudt.org/schema/qudt/Concept -->
-
-    <owl:Class rdf:about="http://qudt.org/schema/qudt/Concept">
-        <rdfs:comment rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML">The root class for all QUDT concepts.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt"/>
-        <rdfs:label>QUDT Concept</rdfs:label>
     </owl:Class>
     
 
@@ -3203,8 +3271,6 @@ for now.</obo:IAO_0000116>
     <!-- http://qudt.org/schema/qudt/Unit -->
 
     <owl:Class rdf:about="http://qudt.org/schema/qudt/Unit">
-        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt/Concept"/>
-        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt/Verifiable"/>
         <dcterms:description rdf:datatype="http://qudt.org/schema/qudt/LatexString">
   A unit of measure, or unit, is a particular quantity value that has been chosen as a scale for measuring other quantities the same kind (more generally of equivalent dimension). 
   For example, the meter is a quantity of length that has been rigorously defined and standardized by the BIPM (International Board of Weights and Measures). 
@@ -3215,16 +3281,6 @@ for now.</obo:IAO_0000116>
         <qudt:informativeReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.allmeasures.com/Fullconversion.asp</qudt:informativeReference>
         <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt"/>
         <rdfs:label>Unit</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://qudt.org/schema/qudt/Verifiable -->
-
-    <owl:Class rdf:about="http://qudt.org/schema/qudt/Verifiable">
-        <rdfs:comment>An aspect class that holds properties that provide external knowledge and specifications of a given resource.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt"/>
-        <rdfs:label>Verifiable</rdfs:label>
     </owl:Class>
     
 

@@ -10,10 +10,8 @@ Ontology(<https://w3id.org/pmd/distel/imports/qudt_import.owl>
 <https://w3id.org/pmd/distel/releases/2026-01-22/imports/qudt_import.owl>
 Annotation(owl:versionInfo "2026-01-22")
 
-Declaration(Class(<http://qudt.org/schema/qudt/Concept>))
 Declaration(Class(<http://qudt.org/schema/qudt/DerivedUnit>))
 Declaration(Class(<http://qudt.org/schema/qudt/Unit>))
-Declaration(Class(<http://qudt.org/schema/qudt/Verifiable>))
 Declaration(NamedIndividual(<http://qudt.org/vocab/unit/HZ>))
 Declaration(NamedIndividual(<http://qudt.org/vocab/unit/K>))
 Declaration(NamedIndividual(<http://qudt.org/vocab/unit/M2>))
@@ -29,12 +27,6 @@ Declaration(Datatype(rdf:HTML))
 ############################
 #   Classes
 ############################
-
-# Class: <http://qudt.org/schema/qudt/Concept> (QUDT Concept)
-
-AnnotationAssertion(rdfs:comment <http://qudt.org/schema/qudt/Concept> "The root class for all QUDT concepts."^^rdf:HTML)
-AnnotationAssertion(rdfs:isDefinedBy <http://qudt.org/schema/qudt/Concept> <http://qudt.org/schema/qudt>)
-AnnotationAssertion(rdfs:label <http://qudt.org/schema/qudt/Concept> "QUDT Concept")
 
 # Class: <http://qudt.org/schema/qudt/DerivedUnit> (Derived Unit)
 
@@ -56,14 +48,6 @@ AnnotationAssertion(<http://qudt.org/schema/qudt/informativeReference> <http://q
 AnnotationAssertion(<http://qudt.org/schema/qudt/informativeReference> <http://qudt.org/schema/qudt/Unit> "http://www.allmeasures.com/Fullconversion.asp"^^xsd:anyURI)
 AnnotationAssertion(rdfs:isDefinedBy <http://qudt.org/schema/qudt/Unit> <http://qudt.org/schema/qudt>)
 AnnotationAssertion(rdfs:label <http://qudt.org/schema/qudt/Unit> "Unit")
-SubClassOf(<http://qudt.org/schema/qudt/Unit> <http://qudt.org/schema/qudt/Concept>)
-SubClassOf(<http://qudt.org/schema/qudt/Unit> <http://qudt.org/schema/qudt/Verifiable>)
-
-# Class: <http://qudt.org/schema/qudt/Verifiable> (Verifiable)
-
-AnnotationAssertion(rdfs:comment <http://qudt.org/schema/qudt/Verifiable> "An aspect class that holds properties that provide external knowledge and specifications of a given resource.")
-AnnotationAssertion(rdfs:isDefinedBy <http://qudt.org/schema/qudt/Verifiable> <http://qudt.org/schema/qudt>)
-AnnotationAssertion(rdfs:label <http://qudt.org/schema/qudt/Verifiable> "Verifiable")
 
 
 ############################

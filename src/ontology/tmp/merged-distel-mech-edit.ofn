@@ -147,19 +147,12 @@ Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000012>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000016>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000031>))
-Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000045>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000076>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000106>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000163>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000164>))
-Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000190>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0010006>))
-Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000008>))
-Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000012>))
-Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000027>))
-Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000031>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000076>))
-Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000106>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000163>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000164>))
 Declaration(Class(<https://w3id.org/pmd/DISTEL-MECH_0000000>))
@@ -2170,8 +2163,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/UO_0000000> <http://purl.obolibrary.o
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "BIPM:BIPM") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "NIST:NIST") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0000012> "A thermodynamic temperature unit which is equal to the fraction 1/273.16 of the thermodynamic temperature of the triple point of water.")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000012> "K")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000012> "kelvin")
-SubClassOf(<http://purl.obolibrary.org/obo/UO_0000012> <http://purl.obolibrary.org/obo/UO_0000045>)
-SubClassOf(<http://purl.obolibrary.org/obo/UO_0000012> <http://purl.obolibrary.org/obo/UO_1000012>)
+SubClassOf(<http://purl.obolibrary.org/obo/UO_0000012> <http://purl.obolibrary.org/obo/UO_0000000>)
 
 # Class: <http://purl.obolibrary.org/obo/UO_0000016> (millimeter)
 
@@ -2179,27 +2171,21 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000016> "millimetre")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000016> "mm")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000016> "millimeter")
-SubClassOf(<http://purl.obolibrary.org/obo/UO_0000016> <http://purl.obolibrary.org/obo/UO_1000008>)
+SubClassOf(<http://purl.obolibrary.org/obo/UO_0000016> <http://purl.obolibrary.org/obo/UO_0000000>)
 
 # Class: <http://purl.obolibrary.org/obo/UO_0000027> (degree Celsius)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "NIST:NIST") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0000027> "A temperature unit which is equal to one kelvin degree. However, they have their zeros at different points. The centigrade scale has its zero at 273.15 K.")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000027> "C")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000027> "degree Celsius")
-SubClassOf(<http://purl.obolibrary.org/obo/UO_0000027> <http://purl.obolibrary.org/obo/UO_1000027>)
+SubClassOf(<http://purl.obolibrary.org/obo/UO_0000027> <http://purl.obolibrary.org/obo/UO_0000000>)
 
 # Class: <http://purl.obolibrary.org/obo/UO_0000031> (minute)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "Wikipedia:Wikipedia") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0000031> "A time unit which is equal to 60 seconds.")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000031> "min")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000031> "minute")
-SubClassOf(<http://purl.obolibrary.org/obo/UO_0000031> <http://purl.obolibrary.org/obo/UO_1000031>)
-
-# Class: <http://purl.obolibrary.org/obo/UO_0000045> (base unit)
-
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "NIST:NIST") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0000045> "A unit which is one of a particular measure to which all measures of that type can be related.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000045> "base unit")
-SubClassOf(<http://purl.obolibrary.org/obo/UO_0000045> <http://purl.obolibrary.org/obo/UO_0000000>)
+SubClassOf(<http://purl.obolibrary.org/obo/UO_0000031> <http://purl.obolibrary.org/obo/UO_0000000>)
 
 # Class: <http://purl.obolibrary.org/obo/UO_0000076> (mole fraction)
 
@@ -2215,7 +2201,7 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000106> "Hz")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000106> "s^1")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000106> "hertz")
-SubClassOf(<http://purl.obolibrary.org/obo/UO_0000106> <http://purl.obolibrary.org/obo/UO_1000106>)
+SubClassOf(<http://purl.obolibrary.org/obo/UO_0000106> <http://purl.obolibrary.org/obo/UO_0000000>)
 
 # Class: <http://purl.obolibrary.org/obo/UO_0000163> (mass percentage)
 
@@ -2223,7 +2209,7 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000163> "w/w")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000163> "weight-weight percentage")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000163> "mass percentage")
-SubClassOf(<http://purl.obolibrary.org/obo/UO_0000163> <http://purl.obolibrary.org/obo/UO_1000163>)
+SubClassOf(<http://purl.obolibrary.org/obo/UO_0000163> <http://purl.obolibrary.org/obo/UO_0000000>)
 
 # Class: <http://purl.obolibrary.org/obo/UO_0000164> (mass volume percentage)
 
@@ -2233,53 +2219,21 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000164> "mass volume percentage")
 SubClassOf(<http://purl.obolibrary.org/obo/UO_0000164> <http://purl.obolibrary.org/obo/UO_1000164>)
 
-# Class: <http://purl.obolibrary.org/obo/UO_0000190> (ratio unit)
-
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "Wikipedia:Wikipedia") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0000190> "A dimensionless unit which denotes an amount or magnitude of one quantity relative to another.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000190> "ratio unit")
-SubClassOf(<http://purl.obolibrary.org/obo/UO_0000190> <http://purl.obolibrary.org/obo/UO_0000000>)
-
 # Class: <http://purl.obolibrary.org/obo/UO_0010006> (ratio)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "UOB:LKSR") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0010006> "A dimensionless ratio unit which, given a pair of quantities a and b, for which b is a multiple of a, denotes b by giving the multiplier (coefficient) c for a to result in b.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0010006> "ratio")
-SubClassOf(<http://purl.obolibrary.org/obo/UO_0010006> <http://purl.obolibrary.org/obo/UO_0000190>)
-
-# Class: <http://purl.obolibrary.org/obo/UO_1000008> (meter based unit)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000008> "meter based unit")
-SubClassOf(<http://purl.obolibrary.org/obo/UO_1000008> <http://purl.obolibrary.org/obo/UO_0000000>)
-
-# Class: <http://purl.obolibrary.org/obo/UO_1000012> (kelvin based unit)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000012> "kelvin based unit")
-SubClassOf(<http://purl.obolibrary.org/obo/UO_1000012> <http://purl.obolibrary.org/obo/UO_0000000>)
-
-# Class: <http://purl.obolibrary.org/obo/UO_1000027> (degree Celsius based unit)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000027> "degree Celsius based unit")
-SubClassOf(<http://purl.obolibrary.org/obo/UO_1000027> <http://purl.obolibrary.org/obo/UO_0000000>)
-
-# Class: <http://purl.obolibrary.org/obo/UO_1000031> (minute based unit)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000031> "minute based unit")
-SubClassOf(<http://purl.obolibrary.org/obo/UO_1000031> <http://purl.obolibrary.org/obo/UO_0000000>)
+SubClassOf(<http://purl.obolibrary.org/obo/UO_0010006> <http://purl.obolibrary.org/obo/UO_0000000>)
 
 # Class: <http://purl.obolibrary.org/obo/UO_1000076> (mole fraction based unit)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000076> "mole fraction based unit")
 SubClassOf(<http://purl.obolibrary.org/obo/UO_1000076> <http://purl.obolibrary.org/obo/UO_0000000>)
 
-# Class: <http://purl.obolibrary.org/obo/UO_1000106> (hertz based unit)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000106> "hertz based unit")
-SubClassOf(<http://purl.obolibrary.org/obo/UO_1000106> <http://purl.obolibrary.org/obo/UO_0000000>)
-
 # Class: <http://purl.obolibrary.org/obo/UO_1000163> (mass percentage based unit)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000163> "mass percentage based unit")
 SubClassOf(<http://purl.obolibrary.org/obo/UO_1000163> <http://purl.obolibrary.org/obo/UO_0000000>)
-SubClassOf(<http://purl.obolibrary.org/obo/UO_1000163> <http://purl.obolibrary.org/obo/UO_0000190>)
 
 # Class: <http://purl.obolibrary.org/obo/UO_1000164> (mass volume percentage based unit)
 
@@ -2667,7 +2621,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> <https://w3id.org/pmd/co/PMD_00
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <https://w3id.org/pmd/co/PMD_0000522>))
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000522>))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000849> (Mechanische Eigenschaften Analyseverfahren)
+# Class: <https://w3id.org/pmd/co/PMD_0000849> (mechanical property analyzing process)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000849> "Mechanische Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000849> "mechanical property analyzing process"@en)
