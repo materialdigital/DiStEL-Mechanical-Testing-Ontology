@@ -101,6 +101,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33310>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33319>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33330>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33331>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33336>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33341>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33342>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33343>))
@@ -320,6 +321,7 @@ Declaration(Class(<https://w3id.org/pmd/co/PMD_0025004>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025007>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025009>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025012>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0025015>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025016>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025017>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025018>))
@@ -1896,6 +1898,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_33330> <http://purl.obolibrary.
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_33331> "yttrium atom")
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_33331> <http://purl.obolibrary.org/obo/CHEBI_33521>)
 
+# Class: <http://purl.obolibrary.org/obo/CHEBI_33336> (lanthanum atom)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_33336> "lanthanum atom")
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_33336> <http://purl.obolibrary.org/obo/CHEBI_33319>)
+
 # Class: <http://purl.obolibrary.org/obo/CHEBI_33341> (titanium atom)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_33341> "titanium atom")
@@ -2421,7 +2428,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0000075> <https://w3id.org/pmd/co/PMD_00
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000501> "1D"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000501> "1-D is an information content entity representing a one-dimensional structure or model representing a single linear dimension, often used in material science simulations or analysis."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000501> "true"^^xsd:boolean)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0000501> <http://purl.obolibrary.org/obo/IAO_0000030>)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000501> <http://purl.obolibrary.org/obo/IAO_0000027>)
 
 # Class: <https://w3id.org/pmd/co/PMD_0000503> (ASTM grainsize)
 
@@ -2707,7 +2714,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> <https://w3id.org/pmd/co/PMD_00
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <https://w3id.org/pmd/co/PMD_0000522>))
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000522>))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000849> (mechanical property analyzing process)
+# Class: <https://w3id.org/pmd/co/PMD_0000849> (Mechanische Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000849> "Mechanische Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000849> "mechanical property analyzing process"@en)
@@ -2902,13 +2909,14 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020003> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020003> <http://purl.obolibrary.org/obo/BFO_0000030>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0020004> (composition specification)
+# Class: <https://w3id.org/pmd/co/PMD_0020004> (composition data item)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020004> "composition specification"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020004> "Composition specification is an information content entity that is conretized by  composition of a portion of matter and has memebers fraction specifications of portions of other matters (but not chemical elements) of which the whole portion of matter consists of (has parts)."@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020004> "composition data item"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/pmd/co/PMD_0020004> "composition specification"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020004> "Composition data item is an information content entity that is about composition of a portion of matter, and it has memebers fraction specifications of portions of other matters (but not chemical elements), which are parts of the whole portion of matter."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0020004> "Nitric acid solution has quality  composition , which concretizes the composition specification .The composition specification has parts fraction specifications of nitric acid, e.g., 4 vol.%, and distilled water. These fraction specifications specify value of pure substances of nitric acid and distilled water, respectively. Furthermore, these fraction specifications are conretized by relational qualities (volume) proportion of nitric acid and (volume) proportion of distilled water."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020004> "true"^^xsd:boolean)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0020004> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/IAO_0000030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000058> <https://w3id.org/pmd/co/PMD_0025001>)))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0020004> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/IAO_0000027> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <https://w3id.org/pmd/co/PMD_0025001>)))
 
 # Class: <https://w3id.org/pmd/co/PMD_0020005> (porosity)
 
@@ -3683,13 +3691,14 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0025001> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0025001> <https://w3id.org/pmd/co/PMD_0020131>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0025002> (chemical composition specification)
+# Class: <https://w3id.org/pmd/co/PMD_0025002> (chemical composition data item)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025002> "chemical composition specification"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0025002> "Chemical composition specification is an information content entity that is conretized by chemical composition of a material and has memebers fraction specifications of portions of chemical elements of which the material consists of (has parts)."@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025002> "chemical composition data item"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/pmd/co/PMD_0025002> "chemical composition specification"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0025002> "Chemical composition data item is an information content entity that is about chemical composition of a material and has memebers fraction specifications of portions of chemical elements, which are parts of the material."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0025002> "Steel has quality chemical composition , which concretizes the chemical composition specification .The chemical composition specification has parts fraction specifications of iron and carbon. These fraction specifications specify value of portion of iron and portion of carbon respectively. Furthermore, these  fraction specifications are conretized by relational qualities (mass) proportion of iron and (mass) proportion of carbon."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0025002> "true"^^xsd:boolean)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0025002> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0020004> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000058> <https://w3id.org/pmd/co/PMD_0000551>)))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0025002> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0020004> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <https://w3id.org/pmd/co/PMD_0000551>)))
 
 # Class: <https://w3id.org/pmd/co/PMD_0025003> (metallic grain structure)
 
@@ -3728,6 +3737,14 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0025009> ObjectSomeValuesFrom(<https://w
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025012> "analytical calculation"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0025012> "Analytical calculation is a computing process which has value specification or measurement datum as a specified output. It applies a closed-form mathematical expression or formula to a set it specified inputs (value specifications) without requiring stochastic sampling, iterative numerical solving, or data-driven training."@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0025012> <https://w3id.org/pmd/co/PMD_0000583>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0025015> (portion of lanthanum)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/co/PMD_0025015> "'portion of pure chemical element' and 'has part' only CHEBI:33336")
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025015> "portion of lanthanum"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0025015> "A portion of lanthanum is a portion of pure substance that has parts only chebi:lanthanum atom."@en)
+EquivalentClasses(<https://w3id.org/pmd/co/PMD_0025015> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0020140> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/CHEBI_33336>)))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0025015> <https://w3id.org/pmd/co/PMD_0020140>)
 
 # Class: <https://w3id.org/pmd/co/PMD_0025016> (Innendurchmesser)
 
@@ -4001,7 +4018,7 @@ SubClassOf(<https://w3id.org/pmd/tto/TTO_0000059> <https://w3id.org/pmd/tto/TTO_
 #   Named Individuals
 ############################
 
-# Individual: <http://qudt.org/vocab/unit/HZ> (Hertz)
+# Individual: <http://qudt.org/vocab/unit/HZ> (हर्ट्ज)
 
 AnnotationAssertion(dcterms:description <http://qudt.org/vocab/unit/HZ> "
   $\\textit{Hertz}$ (symbol $Hz$) is the SI unit of frequency defined as the number of cycles per second of a periodic phenomenon. 

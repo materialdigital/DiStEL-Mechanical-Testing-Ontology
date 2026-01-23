@@ -99,6 +99,7 @@ http://purl.obolibrary.org/obo/CHEBI_33310
 http://purl.obolibrary.org/obo/CHEBI_33319
 http://purl.obolibrary.org/obo/CHEBI_33330
 http://purl.obolibrary.org/obo/CHEBI_33331
+http://purl.obolibrary.org/obo/CHEBI_33336
 http://purl.obolibrary.org/obo/CHEBI_33341
 http://purl.obolibrary.org/obo/CHEBI_33342
 http://purl.obolibrary.org/obo/CHEBI_33343
@@ -447,6 +448,7 @@ https://w3id.org/pmd/co/PMD_0025006
 https://w3id.org/pmd/co/PMD_0025007
 https://w3id.org/pmd/co/PMD_0025009
 https://w3id.org/pmd/co/PMD_0025012
+https://w3id.org/pmd/co/PMD_0025015
 https://w3id.org/pmd/co/PMD_0025016
 https://w3id.org/pmd/co/PMD_0025017
 https://w3id.org/pmd/co/PMD_0025018
