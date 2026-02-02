@@ -67,7 +67,3 @@ idranges:
     idprefix: https://w3id.org/pmd/distel/DISTEL_
     iddigits: 7
 
-idranges:
-  - idsfor: distel
-    idprefix: https://w3id.org/pmd/distel/DISTEL_
-    iddigits: 7
