@@ -483,6 +483,12 @@ https://w3id.org/pmd/distel/DISTEL_0000005
 https://w3id.org/pmd/distel/DISTEL_0000006
 https://w3id.org/pmd/distel/DISTEL_0000007
 https://w3id.org/pmd/distel/DISTEL_0000008
+https://w3id.org/pmd/distel/DISTEL_0000009
+https://w3id.org/pmd/distel/DISTEL_0000010
+https://w3id.org/pmd/distel/DISTEL_0000011
+https://w3id.org/pmd/distel/DISTEL_0000012
+https://w3id.org/pmd/distel/DISTEL_0000013
+https://w3id.org/pmd/distel/DISTEL_0000014
 https://w3id.org/pmd/tto
 https://w3id.org/pmd/tto/ExtensometerGaugeLength
 https://w3id.org/pmd/tto/FinalGaugeLengthAfterFracture

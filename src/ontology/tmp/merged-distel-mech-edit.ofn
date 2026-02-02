@@ -340,6 +340,10 @@ Declaration(Class(<https://w3id.org/pmd/co/PMD_0050156>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0050157>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000000>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000008>))
+Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000009>))
+Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000010>))
+Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000013>))
+Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000014>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000005>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000009>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000012>))
@@ -469,6 +473,8 @@ Declaration(NamedIndividual(<https://w3id.org/pmd/distel/DISTEL_0000004>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/distel/DISTEL_0000005>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/distel/DISTEL_0000006>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/distel/DISTEL_0000007>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/distel/DISTEL_0000011>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/distel/DISTEL_0000012>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000112>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000116>))
@@ -2890,7 +2896,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000952> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000952> <https://w3id.org/pmd/co/PMD_0000848>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "Struktur Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "structural property analyzing process"@en)
@@ -3933,7 +3939,37 @@ SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000000> <http://purl.obolibrary.
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000008> "fatigue loading type"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000008> "Fatigue loading type  is process attribute which describes the direction of an applied force in respect to the specimen."@en)
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000008> <https://w3id.org/pmd/co/PMD_0000008>)
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000008> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0025006> ObjectUnionOf(<https://w3id.org/pmd/co/PMD_0000638> <https://w3id.org/pmd/co/PMD_0025020>)))
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000008> ObjectAllValuesFrom(<https://w3id.org/pmd/co/PMD_0000004> <https://w3id.org/pmd/distel/DISTEL_0000000>))
+
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000009> (fatigue control type value)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000009> "fatigue control type value"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000009> "Fatigue control type value is a categorical value specification which describes the variable (stress or strain) that remains constant during the fatigue testing."@en)
+EquivalentClasses(<https://w3id.org/pmd/distel/DISTEL_0000009> ObjectOneOf(<https://w3id.org/pmd/distel/DISTEL_0000011> <https://w3id.org/pmd/distel/DISTEL_0000012>))
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000009> <http://purl.obolibrary.org/obo/OBI_0001930>)
+
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000010> (fatigue control type)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000010> "fatigue control type"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000010> "Fatigue control type is a process attribute of a fatigue testing  which describes the variable (stress or strain) that remains constant during the fatigue testing."@en)
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000010> <https://w3id.org/pmd/co/PMD_0000008>)
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000010> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0025006> ObjectUnionOf(<https://w3id.org/pmd/co/PMD_0000638> <https://w3id.org/pmd/co/PMD_0025020>)))
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000010> ObjectAllValuesFrom(<https://w3id.org/pmd/co/PMD_0000004> <https://w3id.org/pmd/distel/DISTEL_0000009>))
+
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000013> (fatigue waveform)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000013> "fatigue waveform"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000013> "Fatigue waveform is a process attribute of a fatigue testing which describes the shape of a mechanical acuation signal (load)."@en)
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000013> <https://w3id.org/pmd/co/PMD_0000008>)
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000013> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0025006> ObjectUnionOf(<https://w3id.org/pmd/co/PMD_0000638> <https://w3id.org/pmd/co/PMD_0025020>)))
+
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000014> (fatigue testing frequency)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000014> "fatigue testing frequency"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000014> "Fatigue testing frequency is a process attribute of a fatigue testing which indicates how many loading cycles the sample experiences within a second."@en)
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000014> <https://w3id.org/pmd/co/PMD_0025007>)
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000014> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0025006> ObjectUnionOf(<https://w3id.org/pmd/co/PMD_0000638> <https://w3id.org/pmd/co/PMD_0025020>)))
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000005> (extension)
 
@@ -4095,7 +4131,7 @@ SubClassOf(<https://w3id.org/pmd/tto/TTO_0000059> <https://w3id.org/pmd/tto/TTO_
 #   Named Individuals
 ############################
 
-# Individual: <http://qudt.org/vocab/unit/HZ> (Hertz)
+# Individual: <http://qudt.org/vocab/unit/HZ> (हर्ट्ज)
 
 AnnotationAssertion(dcterms:description <http://qudt.org/vocab/unit/HZ> "
   $\\textit{Hertz}$ (symbol $Hz$) is the SI unit of frequency defined as the number of cycles per second of a periodic phenomenon. 
@@ -4399,6 +4435,14 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000006> "rot
 # Individual: <https://w3id.org/pmd/distel/DISTEL_0000007> (shear loading)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000007> "shear loading"@en)
+
+# Individual: <https://w3id.org/pmd/distel/DISTEL_0000011> (strain-controlled)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000011> "strain-controlled"@en)
+
+# Individual: <https://w3id.org/pmd/distel/DISTEL_0000012> (stress-controlled)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000012> "stress-controlled"@en)
 
 
 SubClassOf(ObjectUnionOf(<https://w3id.org/pmd/co/PMD_0000773> <https://w3id.org/pmd/co/PMD_0000952>) <https://w3id.org/pmd/co/PMD_0000848>)

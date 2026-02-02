@@ -1,3 +1,7 @@
 Level	Rule Name	Subject	Property	Value
 WARN	missing_definition	fatigue loading type value	definition	
 WARN	missing_definition	fatigue loading type	definition	
+WARN	missing_definition	fatigue control type value	definition	
+WARN	missing_definition	fatigue control type	definition	
+WARN	missing_definition	fatigue waveform	definition	
+WARN	missing_definition	fatigue testing frequency	definition	

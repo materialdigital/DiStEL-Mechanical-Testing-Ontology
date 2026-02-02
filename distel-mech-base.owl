@@ -4589,12 +4589,118 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0025006"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000638"/>
+                            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0025020"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000004"/>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">fatigue loading type</rdfs:label>
         <skos:definition xml:lang="en">Fatigue loading type  is process attribute which describes the direction of an applied force in respect to the specimen.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000009 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000009">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0000011"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0000012"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
+        <rdfs:label xml:lang="en">fatigue control type value</rdfs:label>
+        <skos:definition xml:lang="en">Fatigue control type value is a categorical value specification which describes the variable (stress or strain) that remains constant during the fatigue testing.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000010 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000010">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0025006"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000638"/>
+                            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0025020"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000004"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">fatigue control type</rdfs:label>
+        <skos:definition xml:lang="en">Fatigue control type is a process attribute of a fatigue testing  which describes the variable (stress or strain) that remains constant during the fatigue testing.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000013 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000013">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0025006"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000638"/>
+                            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0025020"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">fatigue waveform</rdfs:label>
+        <skos:definition xml:lang="en">Fatigue waveform is a process attribute of a fatigue testing which describes the shape of a mechanical acuation signal (load).</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000014 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000014">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0025007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0025006"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000638"/>
+                            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0025020"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">fatigue testing frequency</rdfs:label>
+        <skos:definition xml:lang="en">Fatigue testing frequency is a process attribute of a fatigue testing which indicates how many loading cycles the sample experiences within a second.</skos:definition>
     </owl:Class>
     
 
@@ -5144,6 +5250,22 @@ Note: The concept of parallel length is replaced by the concept of distance betw
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000007">
         <rdfs:label xml:lang="en">shear loading</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000011 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000011">
+        <rdfs:label xml:lang="en">strain-controlled</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000012 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000012">
+        <rdfs:label xml:lang="en">stress-controlled</rdfs:label>
     </owl:NamedIndividual>
     
 
