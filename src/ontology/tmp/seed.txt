@@ -474,6 +474,15 @@ https://w3id.org/pmd/co/PMD_0050157
 https://w3id.org/pmd/co/definitionSource
 https://w3id.org/pmd/co/symbol
 https://w3id.org/pmd/distel-mech.owl
+https://w3id.org/pmd/distel/DISTEL_0000000
+https://w3id.org/pmd/distel/DISTEL_0000001
+https://w3id.org/pmd/distel/DISTEL_0000002
+https://w3id.org/pmd/distel/DISTEL_0000003
+https://w3id.org/pmd/distel/DISTEL_0000004
+https://w3id.org/pmd/distel/DISTEL_0000005
+https://w3id.org/pmd/distel/DISTEL_0000006
+https://w3id.org/pmd/distel/DISTEL_0000007
+https://w3id.org/pmd/distel/DISTEL_0000008
 https://w3id.org/pmd/tto
 https://w3id.org/pmd/tto/ExtensometerGaugeLength
 https://w3id.org/pmd/tto/FinalGaugeLengthAfterFracture

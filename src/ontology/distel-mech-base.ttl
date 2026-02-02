@@ -3280,6 +3280,34 @@ co:PMD_0050157 rdf:type owl:Class ;
                             "Examples include shapes like cubes, spheres, and pyramids."@en .
 
 
+###  https://w3id.org/pmd/distel/DISTEL_0000000
+<https://w3id.org/pmd/distel/DISTEL_0000000> rdf:type owl:Class ;
+                                             owl:equivalentClass [ rdf:type owl:Class ;
+                                                                   owl:oneOf ( <https://w3id.org/pmd/distel/DISTEL_0000001>
+                                                                               <https://w3id.org/pmd/distel/DISTEL_0000002>
+                                                                               <https://w3id.org/pmd/distel/DISTEL_0000003>
+                                                                               <https://w3id.org/pmd/distel/DISTEL_0000004>
+                                                                               <https://w3id.org/pmd/distel/DISTEL_0000005>
+                                                                               <https://w3id.org/pmd/distel/DISTEL_0000006>
+                                                                               <https://w3id.org/pmd/distel/DISTEL_0000007>
+                                                                             )
+                                                                 ] ;
+                                             rdfs:subClassOf obo:OBI_0001930 ;
+                                             rdfs:label "fatigue loading type value"@en ;
+                                             skos:definition "Fatigue loading type values is a categotical value specification which describes the direction of an applied force in respect to the specimen."@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000008
+<https://w3id.org/pmd/distel/DISTEL_0000008> rdf:type owl:Class ;
+                                             rdfs:subClassOf co:PMD_0000008 ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty co:PMD_0000004 ;
+                                                               owl:allValuesFrom <https://w3id.org/pmd/distel/DISTEL_0000000>
+                                                             ] ;
+                                             rdfs:label "fatigue loading type"@en ;
+                                             skos:definition "Fatigue loading type  is process attribute which describes the direction of an applied force in respect to the specimen."@en .
+
+
 ###  https://w3id.org/pmd/tto/TTO_0000005
 <https://w3id.org/pmd/tto/TTO_0000005> rdf:type owl:Class ;
                                        rdfs:subClassOf co:PMD_0000848 ;
@@ -3638,6 +3666,41 @@ co:PMD_0020125 rdf:type owl:NamedIndividual ;
                rdfs:label "aggregate state suprasolid"@en ;
                skos:definition "A state that exhibits suprafluid and solid properties."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000001
+<https://w3id.org/pmd/distel/DISTEL_0000001> rdf:type owl:NamedIndividual ;
+                                             rdfs:label "axial loading"@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000002
+<https://w3id.org/pmd/distel/DISTEL_0000002> rdf:type owl:NamedIndividual ;
+                                             rdfs:label "tension-tension loading"@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000003
+<https://w3id.org/pmd/distel/DISTEL_0000003> rdf:type owl:NamedIndividual ;
+                                             rdfs:label "tension-compression loading"@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000004
+<https://w3id.org/pmd/distel/DISTEL_0000004> rdf:type owl:NamedIndividual ;
+                                             rdfs:label "bending loading"@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000005
+<https://w3id.org/pmd/distel/DISTEL_0000005> rdf:type owl:NamedIndividual ;
+                                             rdfs:label "torsional loading"@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000006
+<https://w3id.org/pmd/distel/DISTEL_0000006> rdf:type owl:NamedIndividual ;
+                                             rdfs:label "rotating bending loading"@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000007
+<https://w3id.org/pmd/distel/DISTEL_0000007> rdf:type owl:NamedIndividual ;
+                                             rdfs:label "shear loading"@en .
 
 
 #################################################################

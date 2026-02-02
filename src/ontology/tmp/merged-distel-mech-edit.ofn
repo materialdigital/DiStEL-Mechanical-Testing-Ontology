@@ -338,6 +338,8 @@ Declaration(Class(<https://w3id.org/pmd/co/PMD_0050154>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0050155>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0050156>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0050157>))
+Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000000>))
+Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000008>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000005>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000009>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000012>))
@@ -460,6 +462,13 @@ Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020122>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020123>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020124>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020125>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/distel/DISTEL_0000001>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/distel/DISTEL_0000002>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/distel/DISTEL_0000003>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/distel/DISTEL_0000004>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/distel/DISTEL_0000005>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/distel/DISTEL_0000006>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/distel/DISTEL_0000007>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000112>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000116>))
@@ -2760,7 +2769,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> <https://w3id.org/pmd/co/PMD_00
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <https://w3id.org/pmd/co/PMD_0000522>))
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000522>))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000849> (Mechanische Eigenschaften Analyseverfahren)
+# Class: <https://w3id.org/pmd/co/PMD_0000849> (mechanical property analyzing process)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000849> "Mechanische Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000849> "mechanical property analyzing process"@en)
@@ -2881,7 +2890,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000952> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000952> <https://w3id.org/pmd/co/PMD_0000848>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "Struktur Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "structural property analyzing process"@en)
@@ -3912,6 +3921,20 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0050157> "Examples include shapes like cubes, spheres, and pyramids."@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0050157> <https://w3id.org/pmd/co/PMD_0050156>)
 
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000000> (fatigue loading type value)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000000> "fatigue loading type value"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000000> "Fatigue loading type values is a categotical value specification which describes the direction of an applied force in respect to the specimen."@en)
+EquivalentClasses(<https://w3id.org/pmd/distel/DISTEL_0000000> ObjectOneOf(<https://w3id.org/pmd/distel/DISTEL_0000001> <https://w3id.org/pmd/distel/DISTEL_0000002> <https://w3id.org/pmd/distel/DISTEL_0000003> <https://w3id.org/pmd/distel/DISTEL_0000004> <https://w3id.org/pmd/distel/DISTEL_0000005> <https://w3id.org/pmd/distel/DISTEL_0000006> <https://w3id.org/pmd/distel/DISTEL_0000007>))
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000000> <http://purl.obolibrary.org/obo/OBI_0001930>)
+
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000008> (fatigue loading type)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000008> "fatigue loading type"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000008> "Fatigue loading type  is process attribute which describes the direction of an applied force in respect to the specimen."@en)
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000008> <https://w3id.org/pmd/co/PMD_0000008>)
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000008> ObjectAllValuesFrom(<https://w3id.org/pmd/co/PMD_0000004> <https://w3id.org/pmd/distel/DISTEL_0000000>))
+
 # Class: <https://w3id.org/pmd/tto/TTO_0000005> (extension)
 
 AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/tto/TTO_0000005> "Dimensional analysis: L
@@ -3953,7 +3976,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000012> <https://www.merriam-webster.com/dictionary/cross%20section>)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000012> <https://w3id.org/pmd/co/PMD_0020199>)
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000017> (extensometer gauge length)
+# Class: <https://w3id.org/pmd/tto/TTO_0000017> (Extensometer-Messlänge)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000017> <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000017> "Extensometer-Messlänge"@de)
@@ -4072,7 +4095,7 @@ SubClassOf(<https://w3id.org/pmd/tto/TTO_0000059> <https://w3id.org/pmd/tto/TTO_
 #   Named Individuals
 ############################
 
-# Individual: <http://qudt.org/vocab/unit/HZ> (हर्ट्ज)
+# Individual: <http://qudt.org/vocab/unit/HZ> (Hertz)
 
 AnnotationAssertion(dcterms:description <http://qudt.org/vocab/unit/HZ> "
   $\\textit{Hertz}$ (symbol $Hz$) is the SI unit of frequency defined as the number of cycles per second of a periodic phenomenon. 
@@ -4348,6 +4371,34 @@ AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020125> "aggregate state suprasolid"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020125> "A state that exhibits suprafluid and solid properties."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020125> "true"^^xsd:boolean)
+
+# Individual: <https://w3id.org/pmd/distel/DISTEL_0000001> (axial loading)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000001> "axial loading"@en)
+
+# Individual: <https://w3id.org/pmd/distel/DISTEL_0000002> (tension-tension loading)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000002> "tension-tension loading"@en)
+
+# Individual: <https://w3id.org/pmd/distel/DISTEL_0000003> (tension-compression loading)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000003> "tension-compression loading"@en)
+
+# Individual: <https://w3id.org/pmd/distel/DISTEL_0000004> (bending loading)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000004> "bending loading"@en)
+
+# Individual: <https://w3id.org/pmd/distel/DISTEL_0000005> (torsional loading)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000005> "torsional loading"@en)
+
+# Individual: <https://w3id.org/pmd/distel/DISTEL_0000006> (rotating bending loading)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000006> "rotating bending loading"@en)
+
+# Individual: <https://w3id.org/pmd/distel/DISTEL_0000007> (shear loading)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000007> "shear loading"@en)
 
 
 SubClassOf(ObjectUnionOf(<https://w3id.org/pmd/co/PMD_0000773> <https://w3id.org/pmd/co/PMD_0000952>) <https://w3id.org/pmd/co/PMD_0000848>)

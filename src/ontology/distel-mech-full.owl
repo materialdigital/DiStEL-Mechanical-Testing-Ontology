@@ -6833,6 +6833,45 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
     
 
 
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000000 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000000">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0000001"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0000002"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0000003"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0000004"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0000005"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0000006"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0000007"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
+        <rdfs:label xml:lang="en">fatigue loading type value</rdfs:label>
+        <skos:definition xml:lang="en">Fatigue loading type values is a categotical value specification which describes the direction of an applied force in respect to the specimen.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000008 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000008">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000004"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">fatigue loading type</rdfs:label>
+        <skos:definition xml:lang="en">Fatigue loading type  is process attribute which describes the direction of an applied force in respect to the specimen.</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/tto/TTO_0000005 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000005">
@@ -7470,6 +7509,62 @@ Note: The concept of parallel length is replaced by the concept of distance betw
         <rdfs:label xml:lang="en">aggregate state suprasolid</rdfs:label>
         <skos:definition xml:lang="en">A state that exhibits suprafluid and solid properties.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000001 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000001">
+        <rdfs:label xml:lang="en">axial loading</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000002 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000002">
+        <rdfs:label xml:lang="en">tension-tension loading</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000003 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000003">
+        <rdfs:label xml:lang="en">tension-compression loading</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000004 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000004">
+        <rdfs:label xml:lang="en">bending loading</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000005 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000005">
+        <rdfs:label xml:lang="en">torsional loading</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000006 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000006">
+        <rdfs:label xml:lang="en">rotating bending loading</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000007 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000007">
+        <rdfs:label xml:lang="en">shear loading</rdfs:label>
     </owl:NamedIndividual>
     
 
