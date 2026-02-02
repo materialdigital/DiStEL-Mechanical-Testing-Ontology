@@ -12,15 +12,15 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/pmd/distel/">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/distel/2026-01-23"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/distel/2026-02-02"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
-        <dcterms:bibliographicCitation>distel-mech: DiStEL Mechanical Testing Ontology. Version 2026-01-23, https://w3id.org/pmd/distel/</dcterms:bibliographicCitation>
-        <dcterms:created>2026-01-23</dcterms:created>
+        <dcterms:bibliographicCitation>distel-mech: DiStEL Mechanical Testing Ontology. Version 2026-02-02, https://w3id.org/pmd/distel/</dcterms:bibliographicCitation>
+        <dcterms:created>2026-02-02</dcterms:created>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>DiStEL Mechanical Testing Ontology</dcterms:title>
         <owl:priorVersion rdf:resource="https://w3id.org/pmd/distel/"/>
-        <owl:versionInfo>2026-01-23</owl:versionInfo>
+        <owl:versionInfo>2026-02-02</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -206,6 +206,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000117 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000117"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000199 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000199"/>
@@ -263,6 +269,18 @@
     <!-- http://purl.obolibrary.org/obo/RO_0000086 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000086"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002350 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002350"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002351 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002351"/>
     
 
 
@@ -999,6 +1017,20 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/COB_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000035"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000082">
+        <owl:disjointWith rdf:resource="https://w3id.org/pmd/co/PMD_0025009"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
@@ -1008,14 +1040,6 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
     <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
-        <owl:disjointWith rdf:resource="https://w3id.org/pmd/co/PMD_0025009"/>
-    </owl:Class>
     
 
 
@@ -1442,7 +1466,7 @@ Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subcl
     <!-- https://w3id.org/pmd/co/PMD_0000583 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000583">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1610,10 +1634,18 @@ Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subcl
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000638">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000849"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0025020"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="de">Ermüdungsprüfverfahren</rdfs:label>
         <rdfs:label xml:lang="en">fatigue testing process</rdfs:label>
-        <skos:definition xml:lang="en">A Mechanical Property Analyzing Process that assesses a material&apos;s ability to withstand cyclic loading, determining its fatigue life and endurance limit.</skos:definition>
+        <skos:altLabel xml:lang="en">S-N testing process</skos:altLabel>
+        <skos:altLabel xml:lang="en">fatigue testing series</skos:altLabel>
         <skos:definition xml:lang="de">Ein Mechanische Eigenschaften Analyseverfahren, das die Fähigkeit eines Materials bewertet, zyklischen Belastungen standzuhalten, und seine Ermüdungslebensdauer und -grenze bestimmt.</skos:definition>
+        <skos:definition xml:lang="en">Fatigue testing process is a  mechanical property analyzing process that assesses a material&apos;s ability to withstand cyclic loading, determining its fatigue life and endurance limit. It must have occurent parts single fatigue tests.</skos:definition>
         <skos:example xml:lang="en">Fatigue testing of metal components in bridges to predict their lifespan under repetitive loading conditions.</skos:example>
     </owl:Class>
     
@@ -1734,7 +1766,7 @@ Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subcl
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000082"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                         <owl:someValuesFrom>
@@ -1760,7 +1792,7 @@ Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subcl
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
@@ -2237,6 +2269,12 @@ TODO: Check general class axiom and defintion altogether !!!</skos:definition>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0025997"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">composition data item</rdfs:label>
         <skos:altLabel xml:lang="en">composition specification</skos:altLabel>
@@ -4352,6 +4390,16 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
     
 
 
+    <!-- https://w3id.org/pmd/co/PMD_0025020 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025020">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000849"/>
+        <rdfs:label xml:lang="en">single fatigue testing process</rdfs:label>
+        <skos:definition xml:lang="en">A single fatigue testing process is a occurent part of a fatigue testing process (S-N testing process). A single fatigue testing process assesses how many cycles a material can withstand under the given loading.</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/co/PMD_0025997 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025997">
@@ -4380,6 +4428,12 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">fraction value specification</rdfs:label>
