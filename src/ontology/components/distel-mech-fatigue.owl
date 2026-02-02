@@ -1,16 +1,142 @@
 <?xml version="1.0"?>
-<rdf:RDF 
-     xml:base="https://w3id.org/pmd/"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+<rdf:RDF xmlns="https://w3id.org/pmd/distel/components/distel-mech-fatigue.owl/"
+     xml:base="https://w3id.org/pmd/distel/components/distel-mech-fatigue.owl/"
+     xmlns:co="https://w3id.org/pmd/co/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:doap="http://usefulinc.com/ns/doap#"
+     xmlns:qudt="http://qudt.org/schema/qudt/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:obo="http://purl.obolibrary.org/obo/">
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/pmd/distel/components/distel-mech-fatigue.owl">
         <owl:imports rdf:resource="https://w3id.org/pmd/distel/components/distel-mech-shared.owl"/>
     </owl:Ontology>
+    
 
-    <!-- This is a placeholder, it will be regenerated when makefile is first executed -->
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000000 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000000">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0000001"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0000002"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0000003"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0000004"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0000005"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0000006"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0000007"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
+        <rdfs:label xml:lang="en">fatigue loading type value</rdfs:label>
+        <skos:definition xml:lang="en">Fatigue loading type values is a categotical value specification which describes the direction of an applied force in respect to the specimen.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000008 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000008">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000004"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">fatigue loading type</rdfs:label>
+        <skos:definition xml:lang="en">Fatigue loading type  is process attribute which describes the direction of an applied force in respect to the specimen.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000001 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000001">
+        <rdfs:label xml:lang="en">axial loading</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000002 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000002">
+        <rdfs:label xml:lang="en">tension-tension loading</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000003 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000003">
+        <rdfs:label xml:lang="en">tension-compression loading</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000004 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000004">
+        <rdfs:label xml:lang="en">bending loading</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000005 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000005">
+        <rdfs:label xml:lang="en">torsional loading</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000006 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000006">
+        <rdfs:label xml:lang="en">rotating bending loading</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000007 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000007">
+        <rdfs:label xml:lang="en">shear loading</rdfs:label>
+    </owl:NamedIndividual>
 </rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

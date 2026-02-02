@@ -36,6 +36,7 @@ https://w3id.org/pmd/co/PMD_0000552  # chemical composition analyzing process
 https://w3id.org/pmd/co/PMD_0000611  # Dimensions Messprozess
 https://w3id.org/pmd/co/PMD_0000974  # tensile testing process
 https://w3id.org/pmd/co/PMD_0000638  # fatigue testing process
+https://w3id.org/pmd/co/PMD_0025020  # single fafigue testing process
 https://w3id.org/pmd/co/PMD_0000776  # hardness testing process
 
 https://w3id.org/pmd/co/PMD_0000823  # marching geometrically undefined
