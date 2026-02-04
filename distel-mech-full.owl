@@ -17,14 +17,14 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/pmd/distel/">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/distel/2026-02-02"/>
-        <dcterms:bibliographicCitation>distel-mech: DiStEL Mechanical Testing Ontology. Version 2026-02-02, https://w3id.org/pmd/distel/</dcterms:bibliographicCitation>
-        <dcterms:created>2026-02-02</dcterms:created>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/distel/2026-02-04"/>
+        <dcterms:bibliographicCitation>distel-mech: DiStEL Mechanical Testing Ontology. Version 2026-02-04, https://w3id.org/pmd/distel/</dcterms:bibliographicCitation>
+        <dcterms:created>2026-02-04</dcterms:created>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>DiStEL Mechanical Testing Ontology</dcterms:title>
         <owl:priorVersion rdf:resource="https://w3id.org/pmd/distel/"/>
-        <owl:versionInfo>2026-02-02</owl:versionInfo>
+        <owl:versionInfo>2026-02-04</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1370,6 +1370,7 @@ An example of such case can be &quot;Temperature of during the annealing process
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/PMD_0025998">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="https://w3id.org/pmd/co/PMD_0025999"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000145"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
@@ -3504,6 +3505,11 @@ As a consequence, the behavoiral material properties in the ontology are differe
 
 (Callister, W.D., Rethwisch, D.G., Materials Science and Engineering, Wiley, 2014)
 
+We only deal with intensive (system-size independent) material properties. Extensive properties that depend on the testpiece/specimen/probe size should be found in the respective testing method modules.</skos:definition>
+        <skos:definition xml:lang="en">A property is a material trait in terms of the kind and magnitude of response to a specific imposed stimulus. Generally, definitions of properties are made independent of material shape and size.
+
+(Callister, W.D., Rethwisch, D.G., Materials Science and Engineering, Wiley, 2014)
+
 We only deal with intensive (system-size independent) materrial properties. Extensive properties that depend on the testpiece/specimen/probe size should be found in the respective testing method modules.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
@@ -3738,7 +3744,7 @@ Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subcl
         <obo:IAO_0000119 xml:lang="de">Offizielle Definition findet man in: DIN 8592</obo:IAO_0000119>
         <rdfs:label xml:lang="de">Reinigen</rdfs:label>
         <rdfs:label xml:lang="en">cleaning</rdfs:label>
-        <skos:definition xml:lang="en">A Seperating process that involves removing unwanted material from a surface through cleaning methods, which may include processes like blasting, washing, or chemical cleaning.</skos:definition>
+        <skos:definition xml:lang="en">A Separating process that involves removing unwanted material from a surface through cleaning methods, which may include processes like blasting, washing, or chemical cleaning.</skos:definition>
         <skos:definition xml:lang="de">Ein Trennprozess, bei dem unerwünschtes Material von einer Oberfläche durch Reinigungsmethoden entfernt wird, die Verfahren wie Strahlen, Waschen oder chemische Reinigung umfassen können.</skos:definition>
         <skos:example xml:lang="en">Chemical Cleaning, Mechanical Cleaning</skos:example>
     </owl:Class>
@@ -3895,7 +3901,7 @@ Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subcl
         <obo:IAO_0000119 xml:lang="de">Offizielle Definition findet man in: DIN 8588</obo:IAO_0000119>
         <rdfs:label xml:lang="de">Zerteilen</rdfs:label>
         <rdfs:label xml:lang="en">dividing</rdfs:label>
-        <skos:definition xml:lang="en">A Seperating process that involves separating material into distinct parts using techniques like shear cutting, splitting, tearing, or breaking, typically employed in processes where precise control over the cut is less critical.</skos:definition>
+        <skos:definition xml:lang="en">A Separating process that involves separating material into distinct parts using techniques like shear cutting, splitting, tearing, or breaking, typically employed in processes where precise control over the cut is less critical.</skos:definition>
         <skos:definition xml:lang="de">Ein Trennprozess, bei dem das Material durch Techniken wie Scherschneiden, Spalten, Reißen oder Brechen in verschiedene Teile zerlegt wird. Es wird in der Regel bei Prozessen eingesetzt, bei denen eine genaue Kontrolle über den Schnitt weniger wichtig ist.</skos:definition>
         <skos:example xml:lang="en">Shearing, Cracking</skos:example>
     </owl:Class>
@@ -4032,7 +4038,7 @@ Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subcl
         <obo:IAO_0000119 xml:lang="de">Offizielle Definition findet man in: DIN 8589-0</obo:IAO_0000119>
         <rdfs:label xml:lang="de">Spanen Mit Geometrisch Bestimmten Schneiden</rdfs:label>
         <rdfs:label xml:lang="en">machining geometrically defined</rdfs:label>
-        <skos:definition xml:lang="en">A Seperating process that involves removing material with a tool that has a defined shape and sharp edges, such as in sawing and drilling operations.</skos:definition>
+        <skos:definition xml:lang="en">A Separating process that involves removing material with a tool that has a defined shape and sharp edges, such as in sawing and drilling operations.</skos:definition>
         <skos:definition xml:lang="de">Ein Trennprozess, bei dem Material mit einem Werkzeug mit definierter Form und scharfen Kanten entfernt wird, wie z. B. beim Sägen und Bohren.</skos:definition>
         <skos:example xml:lang="en">Drilling, Turning</skos:example>
     </owl:Class>
@@ -4047,7 +4053,7 @@ Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subcl
         <obo:IAO_0000119 xml:lang="de">Offizielle Definition findet man in: DIN 8589-0</obo:IAO_0000119>
         <rdfs:label xml:lang="de">Spanen Mit Geometrisch Unbestimmten Schneiden</rdfs:label>
         <rdfs:label xml:lang="en">machining geometrically undefined</rdfs:label>
-        <skos:definition xml:lang="en">A Seperating process that involves removing material using tools with undefined cutting edges, such as grinding or abrasive machining, where the exact shape of the cutting part isn&apos;t clearly defined.</skos:definition>
+        <skos:definition xml:lang="en">A Separating process that involves removing material using tools with undefined cutting edges, such as grinding or abrasive machining, where the exact shape of the cutting part isn&apos;t clearly defined.</skos:definition>
         <skos:definition xml:lang="de">Ein Trennprozess, bei dem Material mit Werkzeugen mit undefinierten Schneiden abgetragen wird, wie z. B. beim Schleifen oder bei der abrasiven Bearbeitung, bei der die genaue Form des zu schneidenden Teils nicht klar definiert ist.</skos:definition>
         <skos:example xml:lang="en">Grinding, Blasting</skos:example>
     </owl:Class>
@@ -4060,7 +4066,7 @@ Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subcl
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000082"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000035"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                         <owl:someValuesFrom>
@@ -4115,7 +4121,7 @@ Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subcl
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Manufacturing processes alternate qualities of materials, i.e., a value specification of some quality of a material entity, which is a specified input to the process, cannot be the same as a value specification of the same quality of another material entity, which is a specified output of the process. 
 
-Unfortunately is is not possible to write down such axiom based on OWL. Semi-working solution are the temporally qualified continuants + SPARQL constrains.</rdfs:comment>
+Unfortunately it is not possible to write down such axiom based on OWL. Semi-working solution are the temporally qualified continuants + SPARQL constrains.</rdfs:comment>
         <rdfs:label xml:lang="de">Herstellungsprozess</rdfs:label>
         <rdfs:label xml:lang="en">manufacturing process</rdfs:label>
         <skos:definition xml:lang="en">A planned process that is driven by the primary intent to transform objects
@@ -4132,14 +4138,22 @@ A manufacturing process is always a transformative process.</skos:definition>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000005"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0001030"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000522"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The axiom that mechanical property has realization some application of mechanical load treats only conventional materials and not such effects as magnetostriction etc.</rdfs:comment>
         <rdfs:label xml:lang="en">mechanical property</rdfs:label>
         <skos:definition xml:lang="en">A mechanical property is a material property that inheres in a material M when an object O_target that consists of M is stimulated in a process through an interaction with an object O_stimulus and M changes its stress/strain/..(mechanical?) SDCs.
 
 TODO: Check general class axiom and defintion altogether !!!</skos:definition>
+        <skos:definition xml:lang="en">A mechanical property is a material property which is a characteristic of material M. Mechanical property has realization in a stimulating process (in most cases, application of mechanical load), and the stimulating process is an occurent part of another process, in which an object O that is an instance of M participates.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
     
@@ -4279,7 +4293,7 @@ TODO: Check general class axiom and defintion altogether !!!</skos:definition>
         <obo:IAO_0000119 xml:lang="de">Offizielle Definition findet man in: DIN 8590</obo:IAO_0000119>
         <rdfs:label xml:lang="de">Abtragen</rdfs:label>
         <rdfs:label xml:lang="en">removing</rdfs:label>
-        <skos:definition xml:lang="en">A Seperating process that involves removing material through thermical, chemical and electrochemical methods.</skos:definition>
+        <skos:definition xml:lang="en">A Separating process that involves removing material through thermal, chemical and electrochemical methods.</skos:definition>
         <skos:definition xml:lang="de">Ein Trennprozess, bei dem Material durch thermische, chemische und elektrochemische Methoden abgetragen wird.</skos:definition>
         <skos:example xml:lang="en">Electrical Discharge Machining, Thermal Ablation</skos:example>
     </owl:Class>
@@ -4463,7 +4477,7 @@ TODO: Check general class axiom and defintion altogether !!!</skos:definition>
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000967">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020131"/>
-        <rdfs:comment xml:lang="en">The concept refers to an absolute tempeature, not to be mistaken with temperature difference.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The concept refers to an absolute temperature, not to be mistaken with temperature difference.</rdfs:comment>
         <rdfs:comment xml:lang="en">To express that an object has a temperature, the property &apos;intensive bearer of&apos; can be used. It implies a chain of: object consists of some portion of matter and portion of matter bearer of some temperature.</rdfs:comment>
         <rdfs:label xml:lang="en">temperature</rdfs:label>
         <skos:definition xml:lang="en">The temperature is a fundamental intensive quality representing the average atomic or molcular movement or vibration of a portion of matter.</skos:definition>
@@ -4564,10 +4578,11 @@ TODO: Check general class axiom and defintion altogether !!!</skos:definition>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0025997"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">These portions of other matters do not have to be portions of specific chemical elements, i.e., atomic composition, but rather portions of other substances, such as nitric acid and water.</rdfs:comment>
         <rdfs:label xml:lang="en">composition data item</rdfs:label>
         <skos:altLabel xml:lang="en">composition specification</skos:altLabel>
-        <skos:definition xml:lang="en">Composition data item is an information content entity that is about composition of a portion of matter, and it has memebers fraction specifications of portions of other matters (but not chemical elements), which are parts of the whole portion of matter.</skos:definition>
-        <skos:example xml:lang="en">Nitric acid solution has quality  composition , which concretizes the composition specification .The composition specification has parts fraction specifications of nitric acid, e.g., 4 vol.%, and distilled water. These fraction specifications specify value of pure substances of nitric acid and distilled water, respectively. Furthermore, these fraction specifications are conretized by relational qualities (volume) proportion of nitric acid and (volume) proportion of distilled water.</skos:example>
+        <skos:definition xml:lang="en">Composition data item is an information content entity that is about composition of a portion of matter, and it has members fraction specifications of portions of other matters, which are parts of the whole portion of matter.</skos:definition>
+        <skos:example xml:lang="en">Nitric acid solution has quality  composition, and  the composition data item is about this composition.The composition data item has members fraction specifications of nitric acid, e.g., 4 vol.%, and distilled water. These fraction specifications specify value of pure substances of nitric acid and distilled water, respectively. Furthermore, these fraction specifications specify values of relational qualities (volume) proportion of nitric acid and (volume) proportion of distilled water.</skos:example>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
     
@@ -6205,7 +6220,7 @@ More elaborate crystal descriptions may be found in http://emmo.info/domain-crys
         <rdfs:label xml:lang="en">proportion</rdfs:label>
         <skos:altLabel xml:lang="en">concentration</skos:altLabel>
         <skos:altLabel xml:lang="en">fraction</skos:altLabel>
-        <skos:definition xml:lang="en">A Proportion is a relational quality between two entites (the whole and the part) which quantifies the relation between the whole and its part.</skos:definition>
+        <skos:definition xml:lang="en">A proportion is a relational quality between two entities (the whole and the part) which quantifies the relation between the whole and its part.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
     
@@ -6216,7 +6231,7 @@ More elaborate crystal descriptions may be found in http://emmo.info/domain-crys
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020102">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020101"/>
         <rdfs:label xml:lang="en">mass proportion</rdfs:label>
-        <skos:definition xml:lang="en">The Mass Proportion is a Proportion which quantifies the mass of the part relative to the mass of the whole.</skos:definition>
+        <skos:definition xml:lang="en">Mass proportion is a proportion which quantifies the mass of the part relative to the mass of the whole.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
     
@@ -6225,11 +6240,12 @@ More elaborate crystal descriptions may be found in http://emmo.info/domain-crys
     <!-- https://w3id.org/pmd/co/PMD_0020103 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020103">
+        <owl:equivalentClass rdf:resource="https://w3id.org/pmd/co/PMD_0020207"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020101"/>
         <rdfs:label xml:lang="en">molar proportion</rdfs:label>
         <skos:altLabel xml:lang="en">Molar Ratio</skos:altLabel>
-        <skos:definition xml:lang="en">The Molar Proportion is the proportion which quantifies the entities count of the part in relation to the entites count of the whole.</skos:definition>
-        <skos:example xml:lang="en">The molar ratio of hydrogen gas H2 molecules to water H2O molecules is 1/1 in the oxyhydrogen reaction. The molar ratio of oxigen molecules O2 to water molecules is 2/1.
+        <skos:definition xml:lang="en">Molar proportion is the proportion which quantifies the entities count of the part in relation to the entities count of the whole.</skos:definition>
+        <skos:example xml:lang="en">The molar ratio of hydrogen gas H2 molecules to water H2O molecules is 1/1 in the oxyhydrogen reaction. The molar ratio of oxygen molecules O2 to water molecules is 2/1.
 The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 2022 AD.</skos:example>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
@@ -6241,7 +6257,7 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020104">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020101"/>
         <rdfs:label xml:lang="en">volume proportion</rdfs:label>
-        <skos:definition xml:lang="en">The Mass Proportion is a Proportion which quantifies the volume of the part relative to the volume of the whole.</skos:definition>
+        <skos:definition xml:lang="en">Volume proportion is a proportion which quantifies the volume of the part relative to the volume of the whole.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
     
@@ -6298,7 +6314,7 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020098"/>
         <rdfs:label xml:lang="en">aggregate state value</rdfs:label>
         <skos:definition xml:lang="en">The aggregate state type is a nature constant that concretizes the aggregatge state quality.</skos:definition>
-        <skos:definition xml:lang="en">The aggregate state value is a categorical value specification that specifies value of the aggregatge state quality.</skos:definition>
+        <skos:definition xml:lang="en">The aggregate state value is a categorical value specification that specifies value of the aggregate state quality.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
     
@@ -6322,7 +6338,7 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
         <owl:disjointWith rdf:resource="https://w3id.org/pmd/co/PMD_0020148"/>
         <rdfs:label xml:lang="en">intensive quality</rdfs:label>
         <skos:altLabel xml:lang="en">Point property</skos:altLabel>
-        <skos:definition xml:lang="en">An intensive quality is a qualty that inheres in only portion of matter and thus is independent of the bearers (system-) size.</skos:definition>
+        <skos:definition xml:lang="en">An intensive quality is a quality that inheres in only portion of matter and thus is independent of the bearers (system-) size.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
     
@@ -6392,7 +6408,7 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020143">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:label xml:lang="en">process chain</rdfs:label>
-        <skos:definition xml:lang="en">A process chain is a process that &apos;has contiuant part&apos; subprocesses S1...Sn where S1...Sn precede each other and where some object or object aggregate that are output of Sn are then input to Sn+1.</skos:definition>
+        <skos:definition xml:lang="en">A process chain is a process that &apos;has continuant part&apos; subprocesses S1...Sn where S1...Sn precede each other and where some object or object aggregate that are output of Sn are then input to Sn+1.</skos:definition>
     </owl:Class>
     
 
@@ -6456,9 +6472,9 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
     <!-- https://w3id.org/pmd/co/PMD_0020207 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020207">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020103"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020101"/>
         <rdfs:label xml:lang="en">amount of substance</rdfs:label>
-        <skos:definition xml:lang="en">Amount of substance n is a molar propotion when the whole is a object aggregate N, which has Avogadro number objects (of same type) as parts (n = N/N_A).</skos:definition>
+        <skos:definition xml:lang="en">Amount of substance n is a molar proportion when the whole is an object aggregate N, which has Avogadro number objects (of same type) as parts (n = N/N_A).</skos:definition>
     </owl:Class>
     
 
@@ -6491,8 +6507,8 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">chemical composition data item</rdfs:label>
         <skos:altLabel xml:lang="en">chemical composition specification</skos:altLabel>
-        <skos:definition xml:lang="en">Chemical composition data item is an information content entity that is about chemical composition of a material and has memebers fraction specifications of portions of chemical elements, which are parts of the material.</skos:definition>
-        <skos:example xml:lang="en">Steel has quality chemical composition , which concretizes the chemical composition specification .The chemical composition specification has parts fraction specifications of iron and carbon. These fraction specifications specify value of portion of iron and portion of carbon respectively. Furthermore, these  fraction specifications are conretized by relational qualities (mass) proportion of iron and (mass) proportion of carbon.</skos:example>
+        <skos:definition xml:lang="en">Chemical composition data item is an information content entity that is about chemical composition of a material and has members fraction specifications of portions of chemical elements, which are parts of the material.</skos:definition>
+        <skos:example xml:lang="en">Steel has quality chemical composition , and the chemical composition data item is about the chemical composition .The chemical composition data item has members fraction specifications of iron and carbon. These fraction specifications specify value of portion of iron and portion of carbon respectively. Furthermore, these fraction specifications specify  values of relational qualities (mass) proportion of iron and (mass) proportion of carbon.</skos:example>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
     
@@ -6725,8 +6741,8 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">fraction value specification</rdfs:label>
-        <skos:definition xml:lang="en">Fraction value specification is a value specification that contains information about quantative share of a part relative to a specified whole.</skos:definition>
-        <skos:example xml:lang="en">2.05 wt.% of carbon in steel, 4 vol.% of nictric acid in a solution</skos:example>
+        <skos:definition xml:lang="en">Fraction value specification is a value specification that contains information about quantitative share of a part relative to a specified whole.</skos:definition>
+        <skos:example xml:lang="en">2.05 wt.% of carbon in steel, 4 vol.% of nitric acid in a solution</skos:example>
     </owl:Class>
     
 
@@ -6736,6 +6752,7 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0040001">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020132"/>
         <rdfs:comment xml:lang="en">Length is a size that describes the spacial extend of its bearer in one dimension.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Length is a size that describes the spatial extent of its bearer in one dimension.</rdfs:comment>
         <rdfs:label xml:lang="en">length</rdfs:label>
         <skos:altLabel xml:lang="en">dimension</skos:altLabel>
         <skos:definition>Length is a one dimensional size.</skos:definition>
@@ -6876,6 +6893,26 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000008">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
         <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000000"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                        <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000000"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0025006"/>
                 <owl:someValuesFrom>
@@ -6888,12 +6925,7 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000004"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Note: some of the loading type can be performed only with a specific control type. It will be proved using SWRL rules.</rdfs:comment>
         <rdfs:label xml:lang="en">fatigue loading type</rdfs:label>
         <skos:definition xml:lang="en">Fatigue loading type  is process attribute which describes the direction of an applied force in respect to the specimen.</skos:definition>
     </owl:Class>
@@ -6923,6 +6955,26 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000010">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
         <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000009"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                        <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000009"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0025006"/>
                 <owl:someValuesFrom>
@@ -6933,12 +6985,6 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000004"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">fatigue control type</rdfs:label>
@@ -6989,6 +7035,92 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">fatigue testing frequency</rdfs:label>
         <skos:definition xml:lang="en">Fatigue testing frequency is a process attribute of a fatigue testing which indicates how many loading cycles the sample experiences within a second.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000017 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000017">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
+        <rdfs:label xml:lang="en">applied stress</rdfs:label>
+        <skos:definition xml:lang="en">Applied stress is a process attribute of a fatigue testing which is characterized by a load (force) that the specimen exhibits normalized by the specimen&apos;s cross sectional area.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000018 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000018">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000017"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0025006"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000638"/>
+                            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0025020"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">stress amplitude</rdfs:label>
+        <skos:definition xml:lang="en">Stress amplitude is a maximal applied stress that the specimen experiences during a fatigue testing.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000019 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000019">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000017"/>
+        <rdfs:label xml:lang="en">mean applied stress</rdfs:label>
+        <skos:definition xml:lang="en">Mean applied stress is a average value of an applied stress that the specimen experiences during fatigue testing.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000020 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000020">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
+        <rdfs:comment>TODO write axioms for the specific loading ratios</rdfs:comment>
+        <rdfs:label xml:lang="en">loading ratio</rdfs:label>
+        <skos:definition xml:lang="en">Loading ratio is a process attribute of a fatigue testing which describes the ratio between the minimal and the maximal value of some physical quality, namely stress, strain, or load.</skos:definition>
+        <co:symbol>R</co:symbol>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000021 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000021">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000020"/>
+        <rdfs:label xml:lang="en">stress ratio</rdfs:label>
+        <skos:definition xml:lang="en">Stress ratio is a loading ratio process attribute of a fatigue test which is determined as a ratio between the maximal and minimal value of a stress applied to the specimen.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000022 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000022">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000020"/>
+        <rdfs:label xml:lang="en">strain ratio</rdfs:label>
+        <skos:definition xml:lang="en">Strain ratio is a loading ratio process attribute of a fatigue test which is determined as a ratio between the maximal and minimal value of a strain which the specimen experiences.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000023 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000023">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000020"/>
+        <rdfs:label xml:lang="en">load ratio</rdfs:label>
+        <skos:altLabel xml:lang="en">force ratio</skos:altLabel>
+        <skos:definition xml:lang="en">Load ratio is a loading ratio process attribute of a fatigue test which is determined as a ratio between the maximal and minimal value of an applied load (force).</skos:definition>
     </owl:Class>
     
 
@@ -7548,7 +7680,7 @@ Note: The concept of parallel length is replaced by the concept of distance betw
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020117">
         <rdfs:label xml:lang="en">aggregate state solid</rdfs:label>
-        <skos:definition xml:lang="en">A state where the bonds between entites trasmit shear forces.</skos:definition>
+        <skos:definition xml:lang="en">A state where the bonds between entities transmit shear forces.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:NamedIndividual>
     
@@ -7558,7 +7690,7 @@ Note: The concept of parallel length is replaced by the concept of distance betw
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020118">
         <rdfs:label xml:lang="en">aggregate state liquid</rdfs:label>
-        <skos:definition xml:lang="en">A state where the bonds of the entites transmit no shear force.</skos:definition>
+        <skos:definition xml:lang="en">A state where the bonds of the entities transmit no shear force.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:NamedIndividual>
     
@@ -7567,7 +7699,7 @@ Note: The concept of parallel length is replaced by the concept of distance betw
     <!-- https://w3id.org/pmd/co/PMD_0020119 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020119">
-        <rdfs:label xml:lang="en">aggregate state gasous</rdfs:label>
+        <rdfs:label xml:lang="en">aggregate state gaseous</rdfs:label>
         <skos:definition xml:lang="en">A state where the entities have no bonding.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:NamedIndividual>
@@ -7578,7 +7710,7 @@ Note: The concept of parallel length is replaced by the concept of distance betw
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020120">
         <rdfs:label xml:lang="en">aggregate state plasma</rdfs:label>
-        <skos:definition xml:lang="en">An aggregate state where the entites are atom nuclei and have no bonds.</skos:definition>
+        <skos:definition xml:lang="en">An aggregate state where the entities are atom nuclei and have no bonds.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:NamedIndividual>
     
@@ -7598,7 +7730,7 @@ Note: The concept of parallel length is replaced by the concept of distance betw
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020122">
         <rdfs:label xml:lang="en">aggregate state supercritical fluid</rdfs:label>
-        <skos:definition xml:lang="en">A state with strong bindings between entites that do not transmit shear force.</skos:definition>
+        <skos:definition xml:lang="en">A state with strong bindings between entities that do not transmit shear force.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:NamedIndividual>
     
@@ -7618,7 +7750,7 @@ Note: The concept of parallel length is replaced by the concept of distance betw
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020124">
         <rdfs:label xml:lang="en">aggregate state suprafluid</rdfs:label>
-        <skos:definition xml:lang="en">A state with frictionless binding that transmits no shear force between entites.</skos:definition>
+        <skos:definition xml:lang="en">A state with frictionless binding that transmits no shear force between entities.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:NamedIndividual>
     
@@ -7638,6 +7770,7 @@ Note: The concept of parallel length is replaced by the concept of distance betw
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000001">
         <rdfs:label xml:lang="en">axial loading</rdfs:label>
+        <skos:altLabel xml:lang="en">push-pull loading</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -7646,6 +7779,7 @@ Note: The concept of parallel length is replaced by the concept of distance betw
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000002">
         <rdfs:label xml:lang="en">tension-tension loading</rdfs:label>
+        <skos:definition>Tension-tension loading is a type of axial loading. A specimen is pulled in tension and then returned to its original length.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -7654,6 +7788,7 @@ Note: The concept of parallel length is replaced by the concept of distance betw
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000003">
         <rdfs:label xml:lang="en">tension-compression loading</rdfs:label>
+        <skos:definition>Tension-compression loading is a type of axial loading. A specimen is pulled in tension and then compressed.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -7670,6 +7805,8 @@ Note: The concept of parallel length is replaced by the concept of distance betw
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000005">
         <rdfs:label xml:lang="en">torsional loading</rdfs:label>
+        <skos:altLabel xml:lang="en">twist loading</skos:altLabel>
+        <skos:definition xml:lang="en">During a fatigue test with torsional loading type the specimen is twisted and experienced shear stress.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -7694,6 +7831,8 @@ Note: The concept of parallel length is replaced by the concept of distance betw
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000011">
         <rdfs:label xml:lang="en">strain-controlled</rdfs:label>
+        <skos:altLabel xml:lang="en">displacement-controlled</skos:altLabel>
+        <skos:definition xml:lang="en">A fatigue test is considered stain-controlled if the strain ratio of a strain that the sample exhibits is kept constant.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -7702,6 +7841,30 @@ Note: The concept of parallel length is replaced by the concept of distance betw
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000012">
         <rdfs:label xml:lang="en">stress-controlled</rdfs:label>
+        <skos:altLabel xml:lang="en">force-controlled</skos:altLabel>
+        <skos:altLabel xml:lang="en">load-controlled</skos:altLabel>
+        <skos:definition xml:lang="en">A fatigue test is considered stress-controlled if a laod/force ratio of a load exerted on a specimen is kept constant.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000015 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000015">
+        <rdfs:label xml:lang="en">compression-compression loading</rdfs:label>
+        <skos:definition xml:lang="en">Compression-compression loading is a type of axial loading. A specimen is compresed and then returned to its original length.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000016 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000016">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
+        <rdfs:comment>TODO there is abn abbreviation AP in PMDco</rdfs:comment>
+        <rdfs:label xml:lang="en">room temperature</rdfs:label>
+        <skos:altLabel xml:lang="en">RT</skos:altLabel>
+        <skos:definition xml:lang="en">Room temperature is a value specification, which vaguely describes the temperature usually during some process. It leaves a room for interpretation at which exact temperature is meant.</skos:definition>
     </owl:NamedIndividual>
     
 

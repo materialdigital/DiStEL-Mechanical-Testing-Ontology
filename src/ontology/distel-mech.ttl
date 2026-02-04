@@ -17,11 +17,11 @@
 @base <https://w3id.org/pmd/distel-mech.ttl> .
 
 <https://w3id.org/pmd/distel-mech.ttl> rdf:type owl:Ontology ;
-                                        owl:versionIRI <https://w3id.org/pmd/distel/releases/2026-02-02/distel-mech.ttl> ;
+                                        owl:versionIRI <https://w3id.org/pmd/distel/releases/2026-02-04/distel-mech.ttl> ;
                                         dcterms:description "None" ;
                                         dcterms:license <https://creativecommons.org/licenses/unspecified> ;
                                         dcterms:title "DiStEL Mechanical Testing Ontology" ;
-                                        owl:versionInfo "2026-02-02" .
+                                        owl:versionInfo "2026-02-04" .
 
 #################################################################
 #    Annotation properties
@@ -1016,6 +1016,7 @@ co:PMD_0025006 rdf:type owl:ObjectProperty ;
 co:PMD_0025998 rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf owl:topObjectProperty ;
                owl:inverseOf co:PMD_0025999 ;
+               rdfs:domain obo:BFO_0000004 ;
                rdfs:range obo:BFO_0000145 ;
                owl:propertyChainAxiom ( obo:BFO_0000051
                                         co:PMD_0025998
@@ -2568,6 +2569,11 @@ As a consequence, the behavoiral material properties in the ontology are differe
 
 (Callister, W.D., Rethwisch, D.G., Materials Science and Engineering, Wiley, 2014)
 
+We only deal with intensive (system-size independent) material properties. Extensive properties that depend on the testpiece/specimen/probe size should be found in the respective testing method modules."""@en ,
+                               """A property is a material trait in terms of the kind and magnitude of response to a specific imposed stimulus. Generally, definitions of properties are made independent of material shape and size.
+
+(Callister, W.D., Rethwisch, D.G., Materials Science and Engineering, Wiley, 2014)
+
 We only deal with intensive (system-size independent) materrial properties. Extensive properties that depend on the testpiece/specimen/probe size should be found in the respective testing method modules."""@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
@@ -2739,7 +2745,7 @@ co:PMD_0000560 rdf:type owl:Class ;
                                "Offizielle Definition findet man in: DIN 8592"@de ;
                rdfs:label "Reinigen"@de ,
                           "cleaning"@en ;
-               skos:definition "A Seperating process that involves removing unwanted material from a surface through cleaning methods, which may include processes like blasting, washing, or chemical cleaning."@en ,
+               skos:definition "A Separating process that involves removing unwanted material from a surface through cleaning methods, which may include processes like blasting, washing, or chemical cleaning."@en ,
                                "Ein Trennprozess, bei dem unerwünschtes Material von einer Oberfläche durch Reinigungsmethoden entfernt wird, die Verfahren wie Strahlen, Waschen oder chemische Reinigung umfassen können."@de ;
                skos:example "Chemical Cleaning, Mechanical Cleaning"@en .
 
@@ -2857,7 +2863,7 @@ co:PMD_0000614 rdf:type owl:Class ;
                                "Offizielle Definition findet man in: DIN 8588"@de ;
                rdfs:label "Zerteilen"@de ,
                           "dividing"@en ;
-               skos:definition "A Seperating process that involves separating material into distinct parts using techniques like shear cutting, splitting, tearing, or breaking, typically employed in processes where precise control over the cut is less critical."@en ,
+               skos:definition "A Separating process that involves separating material into distinct parts using techniques like shear cutting, splitting, tearing, or breaking, typically employed in processes where precise control over the cut is less critical."@en ,
                                "Ein Trennprozess, bei dem das Material durch Techniken wie Scherschneiden, Spalten, Reißen oder Brechen in verschiedene Teile zerlegt wird. Es wird in der Regel bei Prozessen eingesetzt, bei denen eine genaue Kontrolle über den Schnitt weniger wichtig ist."@de ;
                skos:example "Shearing, Cracking"@en .
 
@@ -2960,7 +2966,7 @@ co:PMD_0000822 rdf:type owl:Class ;
                                "Offizielle Definition findet man in: DIN 8589-0"@de ;
                rdfs:label "Spanen Mit Geometrisch Bestimmten Schneiden"@de ,
                           "machining geometrically defined"@en ;
-               skos:definition "A Seperating process that involves removing material with a tool that has a defined shape and sharp edges, such as in sawing and drilling operations."@en ,
+               skos:definition "A Separating process that involves removing material with a tool that has a defined shape and sharp edges, such as in sawing and drilling operations."@en ,
                                "Ein Trennprozess, bei dem Material mit einem Werkzeug mit definierter Form und scharfen Kanten entfernt wird, wie z. B. beim Sägen und Bohren."@de ;
                skos:example "Drilling, Turning"@en .
 
@@ -2972,14 +2978,14 @@ co:PMD_0000823 rdf:type owl:Class ;
                                "Offizielle Definition findet man in: DIN 8589-0"@de ;
                rdfs:label "Spanen Mit Geometrisch Unbestimmten Schneiden"@de ,
                           "machining geometrically undefined"@en ;
-               skos:definition "A Seperating process that involves removing material using tools with undefined cutting edges, such as grinding or abrasive machining, where the exact shape of the cutting part isn't clearly defined."@en ,
+               skos:definition "A Separating process that involves removing material using tools with undefined cutting edges, such as grinding or abrasive machining, where the exact shape of the cutting part isn't clearly defined."@en ,
                                "Ein Trennprozess, bei dem Material mit Werkzeugen mit undefinierten Schneiden abgetragen wird, wie z. B. beim Schleifen oder bei der abrasiven Bearbeitung, bei der die genaue Form des zu schneidenden Teils nicht klar definiert ist."@de ;
                skos:example "Grinding, Blasting"@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0000833
 co:PMD_0000833 rdf:type owl:Class ;
-               owl:equivalentClass [ owl:intersectionOf ( obo:COB_0000082
+               owl:equivalentClass [ owl:intersectionOf ( obo:COB_0000035
                                                           [ rdf:type owl:Restriction ;
                                                             owl:onProperty obo:OBI_0000293 ;
                                                             owl:someValuesFrom [ rdf:type owl:Class ;
@@ -3018,7 +3024,7 @@ co:PMD_0000833 rdf:type owl:Class ;
                                ] ;
                rdfs:comment """Manufacturing processes alternate qualities of materials, i.e., a value specification of some quality of a material entity, which is a specified input to the process, cannot be the same as a value specification of the same quality of another material entity, which is a specified output of the process. 
 
-Unfortunately is is not possible to write down such axiom based on OWL. Semi-working solution are the temporally qualified continuants + SPARQL constrains."""@en ;
+Unfortunately it is not possible to write down such axiom based on OWL. Semi-working solution are the temporally qualified continuants + SPARQL constrains."""@en ;
                rdfs:label "Herstellungsprozess"@de ,
                           "manufacturing process"@en ;
                skos:definition """A planned process that is driven by the primary intent to transform objects
@@ -3031,13 +3037,19 @@ A manufacturing process is always a transformative process."""@en ,
 co:PMD_0000848 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000005 ,
                                [ rdf:type owl:Restriction ;
+                                 owl:onProperty obo:RO_0000052 ;
+                                 owl:someValuesFrom co:PMD_0000000
+                               ] ,
+                               [ rdf:type owl:Restriction ;
                                  owl:onProperty co:PMD_0001030 ;
                                  owl:someValuesFrom co:PMD_0000522
                                ] ;
+               rdfs:comment "The axiom that mechanical property has realization some application of mechanical load treats only conventional materials and not such effects as magnetostriction etc."@en ;
                rdfs:label "mechanical property"@en ;
                skos:definition """A mechanical property is a material property that inheres in a material M when an object O_target that consists of M is stimulated in a process through an interaction with an object O_stimulus and M changes its stress/strain/..(mechanical?) SDCs.
 
-TODO: Check general class axiom and defintion altogether !!!"""@en ;
+TODO: Check general class axiom and defintion altogether !!!"""@en ,
+                               "A mechanical property is a material property which is a characteristic of material M. Mechanical property has realization in a stimulating process (in most cases, application of mechanical load), and the stimulating process is an occurent part of another process, in which an object O that is an instance of M participates."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -3140,7 +3152,7 @@ co:PMD_0000914 rdf:type owl:Class ;
                                "Offizielle Definition findet man in: DIN 8590"@de ;
                rdfs:label "Abtragen"@de ,
                           "removing"@en ;
-               skos:definition "A Seperating process that involves removing material through thermical, chemical and electrochemical methods."@en ,
+               skos:definition "A Separating process that involves removing material through thermal, chemical and electrochemical methods."@en ,
                                "Ein Trennprozess, bei dem Material durch thermische, chemische und elektrochemische Methoden abgetragen wird."@de ;
                skos:example "Electrical Discharge Machining, Thermal Ablation"@en .
 
@@ -3274,7 +3286,7 @@ co:PMD_0000965 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000967
 co:PMD_0000967 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020131 ;
-               rdfs:comment "The concept refers to an absolute tempeature, not to be mistaken with temperature difference."@en ,
+               rdfs:comment "The concept refers to an absolute temperature, not to be mistaken with temperature difference."@en ,
                             "To express that an object has a temperature, the property 'intensive bearer of' can be used. It implies a chain of: object consists of some portion of matter and portion of matter bearer of some temperature."@en ;
                rdfs:label "temperature"@en ;
                skos:definition "The temperature is a fundamental intensive quality representing the average atomic or molcular movement or vibration of a portion of matter."@en ;
@@ -3349,10 +3361,11 @@ co:PMD_0020004 rdf:type owl:Class ;
                                  owl:onProperty obo:RO_0002351 ;
                                  owl:someValuesFrom co:PMD_0025997
                                ] ;
+               rdfs:comment "These portions of other matters do not have to be portions of specific chemical elements, i.e., atomic composition, but rather portions of other substances, such as nitric acid and water."@en ;
                rdfs:label "composition data item"@en ;
                skos:altLabel "composition specification"@en ;
-               skos:definition "Composition data item is an information content entity that is about composition of a portion of matter, and it has memebers fraction specifications of portions of other matters (but not chemical elements), which are parts of the whole portion of matter."@en ;
-               skos:example "Nitric acid solution has quality  composition , which concretizes the composition specification .The composition specification has parts fraction specifications of nitric acid, e.g., 4 vol.%, and distilled water. These fraction specifications specify value of pure substances of nitric acid and distilled water, respectively. Furthermore, these fraction specifications are conretized by relational qualities (volume) proportion of nitric acid and (volume) proportion of distilled water."@en ;
+               skos:definition "Composition data item is an information content entity that is about composition of a portion of matter, and it has members fraction specifications of portions of other matters, which are parts of the whole portion of matter."@en ;
+               skos:example "Nitric acid solution has quality  composition, and  the composition data item is about this composition.The composition data item has members fraction specifications of nitric acid, e.g., 4 vol.%, and distilled water. These fraction specifications specify value of pure substances of nitric acid and distilled water, respectively. Furthermore, these fraction specifications specify values of relational qualities (volume) proportion of nitric acid and (volume) proportion of distilled water."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -4550,7 +4563,7 @@ co:PMD_0020101 rdf:type owl:Class ;
                rdfs:label "proportion"@en ;
                skos:altLabel "concentration"@en ,
                              "fraction"@en ;
-               skos:definition "A Proportion is a relational quality between two entites (the whole and the part) which quantifies the relation between the whole and its part."@en ;
+               skos:definition "A proportion is a relational quality between two entities (the whole and the part) which quantifies the relation between the whole and its part."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -4558,17 +4571,18 @@ co:PMD_0020101 rdf:type owl:Class ;
 co:PMD_0020102 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020101 ;
                rdfs:label "mass proportion"@en ;
-               skos:definition "The Mass Proportion is a Proportion which quantifies the mass of the part relative to the mass of the whole."@en ;
+               skos:definition "Mass proportion is a proportion which quantifies the mass of the part relative to the mass of the whole."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020103
 co:PMD_0020103 rdf:type owl:Class ;
+               owl:equivalentClass co:PMD_0020207 ;
                rdfs:subClassOf co:PMD_0020101 ;
                rdfs:label "molar proportion"@en ;
                skos:altLabel "Molar Ratio"@en ;
-               skos:definition "The Molar Proportion is the proportion which quantifies the entities count of the part in relation to the entites count of the whole."@en ;
-               skos:example """The molar ratio of hydrogen gas H2 molecules to water H2O molecules is 1/1 in the oxyhydrogen reaction. The molar ratio of oxigen molecules O2 to water molecules is 2/1.
+               skos:definition "Molar proportion is the proportion which quantifies the entities count of the part in relation to the entities count of the whole."@en ;
+               skos:example """The molar ratio of hydrogen gas H2 molecules to water H2O molecules is 1/1 in the oxyhydrogen reaction. The molar ratio of oxygen molecules O2 to water molecules is 2/1.
 The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 2022 AD."""@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
@@ -4577,7 +4591,7 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
 co:PMD_0020104 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020101 ;
                rdfs:label "volume proportion"@en ;
-               skos:definition "The Mass Proportion is a Proportion which quantifies the volume of the part relative to the volume of the whole."@en ;
+               skos:definition "Volume proportion is a proportion which quantifies the volume of the part relative to the volume of the whole."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -4620,7 +4634,7 @@ co:PMD_0020116 rdf:type owl:Class ;
                                co:PMD_0020098 ;
                rdfs:label "aggregate state value"@en ;
                skos:definition "The aggregate state type is a nature constant that concretizes the aggregatge state quality."@en ,
-                               "The aggregate state value is a categorical value specification that specifies value of the aggregatge state quality."@en ;
+                               "The aggregate state value is a categorical value specification that specifies value of the aggregate state quality."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -4638,7 +4652,7 @@ co:PMD_0020131 rdf:type owl:Class ;
                owl:disjointWith co:PMD_0020148 ;
                rdfs:label "intensive quality"@en ;
                skos:altLabel "Point property"@en ;
-               skos:definition "An intensive quality is a qualty that inheres in only portion of matter and thus is independent of the bearers (system-) size."@en ;
+               skos:definition "An intensive quality is a quality that inheres in only portion of matter and thus is independent of the bearers (system-) size."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -4690,7 +4704,7 @@ co:PMD_0020142 rdf:type owl:Class ;
 co:PMD_0020143 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000015 ;
                rdfs:label "process chain"@en ;
-               skos:definition "A process chain is a process that 'has contiuant part' subprocesses S1...Sn where S1...Sn precede each other and where some object or object aggregate that are output of Sn are then input to Sn+1."@en .
+               skos:definition "A process chain is a process that 'has continuant part' subprocesses S1...Sn where S1...Sn precede each other and where some object or object aggregate that are output of Sn are then input to Sn+1."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020148
@@ -4736,9 +4750,9 @@ co:PMD_0020199 rdf:type owl:Class ;
 
 ###  https://w3id.org/pmd/co/PMD_0020207
 co:PMD_0020207 rdf:type owl:Class ;
-               rdfs:subClassOf co:PMD_0020103 ;
+               rdfs:subClassOf co:PMD_0020101 ;
                rdfs:label "amount of substance"@en ;
-               skos:definition "Amount of substance n is a molar propotion when the whole is a object aggregate N, which has Avogadro number objects (of same type) as parts (n = N/N_A)."@en .
+               skos:definition "Amount of substance n is a molar proportion when the whole is an object aggregate N, which has Avogadro number objects (of same type) as parts (n = N/N_A)."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0025001
@@ -4762,8 +4776,8 @@ co:PMD_0025002 rdf:type owl:Class ;
                                ] ;
                rdfs:label "chemical composition data item"@en ;
                skos:altLabel "chemical composition specification"@en ;
-               skos:definition "Chemical composition data item is an information content entity that is about chemical composition of a material and has memebers fraction specifications of portions of chemical elements, which are parts of the material."@en ;
-               skos:example "Steel has quality chemical composition , which concretizes the chemical composition specification .The chemical composition specification has parts fraction specifications of iron and carbon. These fraction specifications specify value of portion of iron and portion of carbon respectively. Furthermore, these  fraction specifications are conretized by relational qualities (mass) proportion of iron and (mass) proportion of carbon."@en ;
+               skos:definition "Chemical composition data item is an information content entity that is about chemical composition of a material and has members fraction specifications of portions of chemical elements, which are parts of the material."@en ;
+               skos:example "Steel has quality chemical composition , and the chemical composition data item is about the chemical composition .The chemical composition data item has members fraction specifications of iron and carbon. These fraction specifications specify value of portion of iron and portion of carbon respectively. Furthermore, these fraction specifications specify  values of relational qualities (mass) proportion of iron and (mass) proportion of carbon."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -4931,14 +4945,15 @@ co:PMD_0025997 rdf:type owl:Class ;
                                  owl:allValuesFrom co:PMD_0020004
                                ] ;
                rdfs:label "fraction value specification"@en ;
-               skos:definition "Fraction value specification is a value specification that contains information about quantative share of a part relative to a specified whole."@en ;
-               skos:example "2.05 wt.% of carbon in steel, 4 vol.% of nictric acid in a solution"@en .
+               skos:definition "Fraction value specification is a value specification that contains information about quantitative share of a part relative to a specified whole."@en ;
+               skos:example "2.05 wt.% of carbon in steel, 4 vol.% of nitric acid in a solution"@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0040001
 co:PMD_0040001 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020132 ;
-               rdfs:comment "Length is a size that describes the spacial extend of its bearer in one dimension."@en ;
+               rdfs:comment "Length is a size that describes the spacial extend of its bearer in one dimension."@en ,
+                            "Length is a size that describes the spatial extent of its bearer in one dimension."@en ;
                rdfs:label "length"@en ;
                skos:altLabel "dimension"@en ;
                skos:definition "Length is a one dimensional size." ;
@@ -5045,6 +5060,21 @@ co:PMD_0050157 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/distel/DISTEL_0000008
 <https://w3id.org/pmd/distel/DISTEL_0000008> rdf:type owl:Class ;
                                              rdfs:subClassOf co:PMD_0000008 ,
+                                                             [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty co:PMD_0000077 ;
+                                                                                      owl:someValuesFrom <https://w3id.org/pmd/distel/DISTEL_0000000>
+                                                                                    ]
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty co:PMD_0000077 ;
+                                                                                      owl:allValuesFrom <https://w3id.org/pmd/distel/DISTEL_0000000>
+                                                                                    ]
+                                                                                  ) ;
+                                                               rdf:type owl:Class
+                                                             ] ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty co:PMD_0000077 ;
+                                                               owl:someValuesFrom <https://w3id.org/pmd/distel/DISTEL_0000000>
+                                                             ] ,
                                                              [ rdf:type owl:Restriction ;
                                                                owl:onProperty co:PMD_0025006 ;
                                                                owl:someValuesFrom [ rdf:type owl:Class ;
@@ -5052,11 +5082,8 @@ co:PMD_0050157 rdf:type owl:Class ;
                                                                                                   co:PMD_0025020
                                                                                                 )
                                                                                   ]
-                                                             ] ,
-                                                             [ rdf:type owl:Restriction ;
-                                                               owl:onProperty co:PMD_0000004 ;
-                                                               owl:allValuesFrom <https://w3id.org/pmd/distel/DISTEL_0000000>
                                                              ] ;
+                                             rdfs:comment "Note: some of the loading type can be performed only with a specific control type. It will be proved using SWRL rules."@en ;
                                              rdfs:label "fatigue loading type"@en ;
                                              skos:definition "Fatigue loading type  is process attribute which describes the direction of an applied force in respect to the specimen."@en .
 
@@ -5076,6 +5103,21 @@ co:PMD_0050157 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/distel/DISTEL_0000010
 <https://w3id.org/pmd/distel/DISTEL_0000010> rdf:type owl:Class ;
                                              rdfs:subClassOf co:PMD_0000008 ,
+                                                             [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty co:PMD_0000077 ;
+                                                                                      owl:someValuesFrom <https://w3id.org/pmd/distel/DISTEL_0000009>
+                                                                                    ]
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty co:PMD_0000077 ;
+                                                                                      owl:allValuesFrom <https://w3id.org/pmd/distel/DISTEL_0000009>
+                                                                                    ]
+                                                                                  ) ;
+                                                               rdf:type owl:Class
+                                                             ] ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty co:PMD_0000077 ;
+                                                               owl:someValuesFrom <https://w3id.org/pmd/distel/DISTEL_0000009>
+                                                             ] ,
                                                              [ rdf:type owl:Restriction ;
                                                                owl:onProperty co:PMD_0025006 ;
                                                                owl:someValuesFrom [ rdf:type owl:Class ;
@@ -5083,10 +5125,6 @@ co:PMD_0050157 rdf:type owl:Class ;
                                                                                                   co:PMD_0025020
                                                                                                 )
                                                                                   ]
-                                                             ] ,
-                                                             [ rdf:type owl:Restriction ;
-                                                               owl:onProperty co:PMD_0000004 ;
-                                                               owl:allValuesFrom <https://w3id.org/pmd/distel/DISTEL_0000009>
                                                              ] ;
                                              rdfs:label "fatigue control type"@en ;
                                              skos:definition "Fatigue control type is a process attribute of a fatigue testing  which describes the variable (stress or strain) that remains constant during the fatigue testing."@en .
@@ -5120,6 +5158,66 @@ co:PMD_0050157 rdf:type owl:Class ;
                                                              ] ;
                                              rdfs:label "fatigue testing frequency"@en ;
                                              skos:definition "Fatigue testing frequency is a process attribute of a fatigue testing which indicates how many loading cycles the sample experiences within a second."@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000017
+<https://w3id.org/pmd/distel/DISTEL_0000017> rdf:type owl:Class ;
+                                             rdfs:subClassOf co:PMD_0000008 ;
+                                             rdfs:label "applied stress"@en ;
+                                             skos:definition "Applied stress is a process attribute of a fatigue testing which is characterized by a load (force) that the specimen exhibits normalized by the specimen's cross sectional area."@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000018
+<https://w3id.org/pmd/distel/DISTEL_0000018> rdf:type owl:Class ;
+                                             rdfs:subClassOf <https://w3id.org/pmd/distel/DISTEL_0000017> ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty co:PMD_0025006 ;
+                                                               owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                    owl:unionOf ( co:PMD_0000638
+                                                                                                  co:PMD_0025020
+                                                                                                )
+                                                                                  ]
+                                                             ] ;
+                                             rdfs:label "stress amplitude"@en ;
+                                             skos:definition "Stress amplitude is a maximal applied stress that the specimen experiences during a fatigue testing."@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000019
+<https://w3id.org/pmd/distel/DISTEL_0000019> rdf:type owl:Class ;
+                                             rdfs:subClassOf <https://w3id.org/pmd/distel/DISTEL_0000017> ;
+                                             rdfs:label "mean applied stress"@en ;
+                                             skos:definition "Mean applied stress is a average value of an applied stress that the specimen experiences during fatigue testing."@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000020
+<https://w3id.org/pmd/distel/DISTEL_0000020> rdf:type owl:Class ;
+                                             rdfs:subClassOf co:PMD_0000008 ;
+                                             rdfs:comment "TODO write axioms for the specific loading ratios" ;
+                                             rdfs:label "loading ratio"@en ;
+                                             skos:definition "Loading ratio is a process attribute of a fatigue testing which describes the ratio between the minimal and the maximal value of some physical quality, namely stress, strain, or load."@en ;
+                                             co:symbol "R" .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000021
+<https://w3id.org/pmd/distel/DISTEL_0000021> rdf:type owl:Class ;
+                                             rdfs:subClassOf <https://w3id.org/pmd/distel/DISTEL_0000020> ;
+                                             rdfs:label "stress ratio"@en ;
+                                             skos:definition "Stress ratio is a loading ratio process attribute of a fatigue test which is determined as a ratio between the maximal and minimal value of a stress applied to the specimen."@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000022
+<https://w3id.org/pmd/distel/DISTEL_0000022> rdf:type owl:Class ;
+                                             rdfs:subClassOf <https://w3id.org/pmd/distel/DISTEL_0000020> ;
+                                             rdfs:label "strain ratio"@en ;
+                                             skos:definition "Strain ratio is a loading ratio process attribute of a fatigue test which is determined as a ratio between the maximal and minimal value of a strain which the specimen experiences."@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000023
+<https://w3id.org/pmd/distel/DISTEL_0000023> rdf:type owl:Class ;
+                                             rdfs:subClassOf <https://w3id.org/pmd/distel/DISTEL_0000020> ;
+                                             rdfs:label "load ratio"@en ;
+                                             skos:altLabel "force ratio"@en ;
+                                             skos:definition "Load ratio is a loading ratio process attribute of a fatigue test which is determined as a ratio between the maximal and minimal value of an applied load (force)."@en .
 
 
 ###  https://w3id.org/pmd/tto/TTO_0000005
@@ -5555,20 +5653,20 @@ co:PMD_0020111 rdf:type owl:NamedIndividual ;
 ###  https://w3id.org/pmd/co/PMD_0020117
 co:PMD_0020117 rdf:type owl:NamedIndividual ;
                rdfs:label "aggregate state solid"@en ;
-               skos:definition "A state where the bonds between entites trasmit shear forces."@en ;
+               skos:definition "A state where the bonds between entities transmit shear forces."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020118
 co:PMD_0020118 rdf:type owl:NamedIndividual ;
                rdfs:label "aggregate state liquid"@en ;
-               skos:definition "A state where the bonds of the entites transmit no shear force."@en ;
+               skos:definition "A state where the bonds of the entities transmit no shear force."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020119
 co:PMD_0020119 rdf:type owl:NamedIndividual ;
-               rdfs:label "aggregate state gasous"@en ;
+               rdfs:label "aggregate state gaseous"@en ;
                skos:definition "A state where the entities have no bonding."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
@@ -5576,7 +5674,7 @@ co:PMD_0020119 rdf:type owl:NamedIndividual ;
 ###  https://w3id.org/pmd/co/PMD_0020120
 co:PMD_0020120 rdf:type owl:NamedIndividual ;
                rdfs:label "aggregate state plasma"@en ;
-               skos:definition "An aggregate state where the entites are atom nuclei and have no bonds."@en ;
+               skos:definition "An aggregate state where the entities are atom nuclei and have no bonds."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -5590,7 +5688,7 @@ co:PMD_0020121 rdf:type owl:NamedIndividual ;
 ###  https://w3id.org/pmd/co/PMD_0020122
 co:PMD_0020122 rdf:type owl:NamedIndividual ;
                rdfs:label "aggregate state supercritical fluid"@en ;
-               skos:definition "A state with strong bindings between entites that do not transmit shear force."@en ;
+               skos:definition "A state with strong bindings between entities that do not transmit shear force."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -5604,7 +5702,7 @@ co:PMD_0020123 rdf:type owl:NamedIndividual ;
 ###  https://w3id.org/pmd/co/PMD_0020124
 co:PMD_0020124 rdf:type owl:NamedIndividual ;
                rdfs:label "aggregate state suprafluid"@en ;
-               skos:definition "A state with frictionless binding that transmits no shear force between entites."@en ;
+               skos:definition "A state with frictionless binding that transmits no shear force between entities."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -5617,17 +5715,20 @@ co:PMD_0020125 rdf:type owl:NamedIndividual ;
 
 ###  https://w3id.org/pmd/distel/DISTEL_0000001
 <https://w3id.org/pmd/distel/DISTEL_0000001> rdf:type owl:NamedIndividual ;
-                                             rdfs:label "axial loading"@en .
+                                             rdfs:label "axial loading"@en ;
+                                             skos:altLabel "push-pull loading"@en .
 
 
 ###  https://w3id.org/pmd/distel/DISTEL_0000002
 <https://w3id.org/pmd/distel/DISTEL_0000002> rdf:type owl:NamedIndividual ;
-                                             rdfs:label "tension-tension loading"@en .
+                                             rdfs:label "tension-tension loading"@en ;
+                                             skos:definition "Tension-tension loading is a type of axial loading. A specimen is pulled in tension and then returned to its original length." .
 
 
 ###  https://w3id.org/pmd/distel/DISTEL_0000003
 <https://w3id.org/pmd/distel/DISTEL_0000003> rdf:type owl:NamedIndividual ;
-                                             rdfs:label "tension-compression loading"@en .
+                                             rdfs:label "tension-compression loading"@en ;
+                                             skos:definition "Tension-compression loading is a type of axial loading. A specimen is pulled in tension and then compressed." .
 
 
 ###  https://w3id.org/pmd/distel/DISTEL_0000004
@@ -5637,7 +5738,9 @@ co:PMD_0020125 rdf:type owl:NamedIndividual ;
 
 ###  https://w3id.org/pmd/distel/DISTEL_0000005
 <https://w3id.org/pmd/distel/DISTEL_0000005> rdf:type owl:NamedIndividual ;
-                                             rdfs:label "torsional loading"@en .
+                                             rdfs:label "torsional loading"@en ;
+                                             skos:altLabel "twist loading"@en ;
+                                             skos:definition "During a fatigue test with torsional loading type the specimen is twisted and experienced shear stress."@en .
 
 
 ###  https://w3id.org/pmd/distel/DISTEL_0000006
@@ -5652,12 +5755,32 @@ co:PMD_0020125 rdf:type owl:NamedIndividual ;
 
 ###  https://w3id.org/pmd/distel/DISTEL_0000011
 <https://w3id.org/pmd/distel/DISTEL_0000011> rdf:type owl:NamedIndividual ;
-                                             rdfs:label "strain-controlled"@en .
+                                             rdfs:label "strain-controlled"@en ;
+                                             skos:altLabel "displacement-controlled"@en ;
+                                             skos:definition "A fatigue test is considered stain-controlled if the strain ratio of a strain that the sample exhibits is kept constant."@en .
 
 
 ###  https://w3id.org/pmd/distel/DISTEL_0000012
 <https://w3id.org/pmd/distel/DISTEL_0000012> rdf:type owl:NamedIndividual ;
-                                             rdfs:label "stress-controlled"@en .
+                                             rdfs:label "stress-controlled"@en ;
+                                             skos:altLabel "force-controlled"@en ,
+                                                           "load-controlled"@en ;
+                                             skos:definition "A fatigue test is considered stress-controlled if a laod/force ratio of a load exerted on a specimen is kept constant."@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000015
+<https://w3id.org/pmd/distel/DISTEL_0000015> rdf:type owl:NamedIndividual ;
+                                             rdfs:label "compression-compression loading"@en ;
+                                             skos:definition "Compression-compression loading is a type of axial loading. A specimen is compresed and then returned to its original length."@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000016
+<https://w3id.org/pmd/distel/DISTEL_0000016> rdf:type owl:NamedIndividual ,
+                                                      obo:OBI_0001933 ;
+                                             rdfs:comment "TODO there is abn abbreviation AP in PMDco" ;
+                                             rdfs:label "room temperature"@en ;
+                                             skos:altLabel "RT"@en ;
+                                             skos:definition "Room temperature is a value specification, which vaguely describes the temperature usually during some process. It leaves a room for interpretation at which exact temperature is meant."@en .
 
 
 #################################################################
