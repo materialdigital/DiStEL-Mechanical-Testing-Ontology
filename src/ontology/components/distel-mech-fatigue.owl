@@ -59,6 +59,20 @@
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000008">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
         <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000000"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                        <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000000"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0025006"/>
                 <owl:someValuesFrom>
@@ -71,12 +85,7 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000004"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Note: some of the loading type can be performed only with a specific control type. It will be proved using SWRL rules.</rdfs:comment>
         <rdfs:label xml:lang="en">fatigue loading type</rdfs:label>
         <skos:definition xml:lang="en">Fatigue loading type  is process attribute which describes the direction of an applied force in respect to the specimen.</skos:definition>
     </owl:Class>
@@ -106,6 +115,20 @@
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000010">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
         <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000009"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                        <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000009"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0025006"/>
                 <owl:someValuesFrom>
@@ -116,12 +139,6 @@
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000004"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">fatigue control type</rdfs:label>
@@ -176,6 +193,92 @@
     
 
 
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000017 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000017">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
+        <rdfs:label xml:lang="en">applied stress</rdfs:label>
+        <skos:definition xml:lang="en">Applied stress is a process attribute of a fatigue testing which is characterized by a load (force) that the specimen exhibits normalized by the specimen&apos;s cross sectional area.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000018 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000018">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000017"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0025006"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000638"/>
+                            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0025020"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">stress amplitude</rdfs:label>
+        <skos:definition xml:lang="en">Stress amplitude is a maximal applied stress that the specimen experiences during a fatigue testing.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000019 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000019">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000017"/>
+        <rdfs:label xml:lang="en">mean applied stress</rdfs:label>
+        <skos:definition xml:lang="en">Mean applied stress is a average value of an applied stress that the specimen experiences during fatigue testing.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000020 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000020">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
+        <rdfs:comment>TODO write axioms for the specific loading ratios</rdfs:comment>
+        <rdfs:label xml:lang="en">loading ratio</rdfs:label>
+        <skos:definition xml:lang="en">Loading ratio is a process attribute of a fatigue testing which describes the ratio between the minimal and the maximal value of some physical quality, namely stress, strain, or load.</skos:definition>
+        <co:symbol>R</co:symbol>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000021 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000021">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000020"/>
+        <rdfs:label xml:lang="en">stress ratio</rdfs:label>
+        <skos:definition xml:lang="en">Stress ratio is a loading ratio process attribute of a fatigue test which is determined as a ratio between the maximal and minimal value of a stress applied to the specimen.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000022 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000022">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000020"/>
+        <rdfs:label xml:lang="en">strain ratio</rdfs:label>
+        <skos:definition xml:lang="en">Strain ratio is a loading ratio process attribute of a fatigue test which is determined as a ratio between the maximal and minimal value of a strain which the specimen experiences.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000023 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000023">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000020"/>
+        <rdfs:label xml:lang="en">load ratio</rdfs:label>
+        <skos:altLabel xml:lang="en">force ratio</skos:altLabel>
+        <skos:definition xml:lang="en">Load ratio is a loading ratio process attribute of a fatigue test which is determined as a ratio between the maximal and minimal value of an applied load (force).</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -191,6 +294,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000001">
         <rdfs:label xml:lang="en">axial loading</rdfs:label>
+        <skos:altLabel xml:lang="en">push-pull loading</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -199,6 +303,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000002">
         <rdfs:label xml:lang="en">tension-tension loading</rdfs:label>
+        <skos:definition>Tension-tension loading is a type of axial loading. A specimen is pulled in tension and then returned to its original length.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -207,6 +312,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000003">
         <rdfs:label xml:lang="en">tension-compression loading</rdfs:label>
+        <skos:definition>Tension-compression loading is a type of axial loading. A specimen is pulled in tension and then compressed.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -223,6 +329,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000005">
         <rdfs:label xml:lang="en">torsional loading</rdfs:label>
+        <skos:altLabel xml:lang="en">twist loading</skos:altLabel>
+        <skos:definition xml:lang="en">During a fatigue test with torsional loading type the specimen is twisted and experienced shear stress.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -247,6 +355,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000011">
         <rdfs:label xml:lang="en">strain-controlled</rdfs:label>
+        <skos:altLabel xml:lang="en">displacement-controlled</skos:altLabel>
+        <skos:definition xml:lang="en">A fatigue test is considered stain-controlled if the strain ratio of a strain that the sample exhibits is kept constant.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -255,6 +365,30 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000012">
         <rdfs:label xml:lang="en">stress-controlled</rdfs:label>
+        <skos:altLabel xml:lang="en">force-controlled</skos:altLabel>
+        <skos:altLabel xml:lang="en">load-controlled</skos:altLabel>
+        <skos:definition xml:lang="en">A fatigue test is considered stress-controlled if a laod/force ratio of a load exerted on a specimen is kept constant.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000015 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000015">
+        <rdfs:label xml:lang="en">compression-compression loading</rdfs:label>
+        <skos:definition xml:lang="en">Compression-compression loading is a type of axial loading. A specimen is compresed and then returned to its original length.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000016 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000016">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
+        <rdfs:comment>TODO there is abn abbreviation AP in PMDco</rdfs:comment>
+        <rdfs:label xml:lang="en">room temperature</rdfs:label>
+        <skos:altLabel xml:lang="en">RT</skos:altLabel>
+        <skos:definition xml:lang="en">Room temperature is a value specification, which vaguely describes the temperature usually during some process. It leaves a room for interpretation at which exact temperature is meant.</skos:definition>
     </owl:NamedIndividual>
 </rdf:RDF>
 
