@@ -17,11 +17,11 @@
 @base <https://w3id.org/pmd/distel/distel-mech-full.ttl> .
 
 <https://w3id.org/pmd/distel/distel-mech-full.ttl> rdf:type owl:Ontology ;
-                                                    owl:versionIRI <https://w3id.org/pmd/distel/releases/2026-02-04/distel-mech-full.ttl> ;
+                                                    owl:versionIRI <https://w3id.org/pmd/distel/releases/2026-02-11/distel-mech-full.ttl> ;
                                                     dcterms:description "None" ;
                                                     dcterms:license <https://creativecommons.org/licenses/unspecified> ;
                                                     dcterms:title "DiStEL Mechanical Testing Ontology" ;
-                                                    owl:versionInfo "2026-02-04" .
+                                                    owl:versionInfo "2026-02-11" .
 
 #################################################################
 #    Annotation properties
@@ -2488,7 +2488,8 @@ When defining specific materials/material taxonomies, these three aspects shall 
                rdfs:label "Material"@de ,
                           "material"@en ;
                skos:altLabel "Portion of Material"@en ;
-               skos:definition "A Material is a Portion Of Matter that may participate in some Manifacturing Process and whose shape is not relevant for its participation in the Manifacuring Process."@en ;
+               skos:definition "A Material is a Portion Of Matter that may participate in some Manifacturing Process and whose shape is not relevant for its participation in the Manifacuring Process."@en ,
+                               "A material is a portion of matter that may participate in some manufacturing process and whose shape is not relevant for its participation in the manufacturing process."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -2510,7 +2511,7 @@ co:PMD_0000002 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000000 ;
                rdfs:comment "We recognize that some of the materials in the subclasses also occur naturally. However, these are not within the scope of our consideration for technical use."@en ;
                rdfs:label "engineered material"@en ;
-               skos:definition "An Engineered Material is a Material that is output of a Manufacturing Process."@en ;
+               skos:definition "An engineered material is a material that is output of a manufacturing process."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -2726,7 +2727,7 @@ co:PMD_0000552 rdf:type owl:Class ;
                                ] ;
                rdfs:label "Analyseverfahren für die chemische Zusammensetzung"@de ,
                           "chemical composition analyzing process"@en ;
-               skos:definition "A Structural Property Analyzing Process that determines the chemical composition of a material by identifying and quantifying its constituent elements and compounds."@en ,
+               skos:definition "A structural property analyzing process that determines the chemical composition of a material by identifying and quantifying its constituent elements and compounds."@en ,
                                "Ein Struktur Eigenschaften Analyseverfahren, das die chemische Zusammensetzung eines Materials bestimmt, indem es dessen Bestandteile und Verbindungen identifiziert und quantifiziert."@de .
 
 
@@ -2745,7 +2746,7 @@ co:PMD_0000560 rdf:type owl:Class ;
                                "Offizielle Definition findet man in: DIN 8592"@de ;
                rdfs:label "Reinigen"@de ,
                           "cleaning"@en ;
-               skos:definition "A Separating process that involves removing unwanted material from a surface through cleaning methods, which may include processes like blasting, washing, or chemical cleaning."@en ,
+               skos:definition "A separating process that involves removing unwanted material from a surface through cleaning methods, which may include processes like blasting, washing, or chemical cleaning."@en ,
                                "Ein Trennprozess, bei dem unerwünschtes Material von einer Oberfläche durch Reinigungsmethoden entfernt wird, die Verfahren wie Strahlen, Waschen oder chemische Reinigung umfassen können."@de ;
                skos:example "Chemical Cleaning, Mechanical Cleaning"@en .
 
@@ -2852,7 +2853,7 @@ co:PMD_0000611 rdf:type owl:Class ;
                                ] ;
                rdfs:label "Dimensions Messprozess"@de ,
                           "dimension measuring process"@en ;
-               skos:definition "A Structural Property Analyzing Process that determines the physical dimensions of a material or object, such as length, width, height, diameter, and thickness, with high accuracy and precision."@en ,
+               skos:definition "A structural property analyzing process that determines the physical dimensions of a material or object, such as length, width, height, diameter, and thickness, with high accuracy and precision."@en ,
                                "Ein Struktur Eigenschaften Analyseverfahren, das die physikalischen Dimensionen eines Materials oder Objekts, wie Länge, Breite, Höhe, Durchmesser und Dicke, mit hoher Genauigkeit und Präzision bestimmt."@de .
 
 
@@ -2863,7 +2864,7 @@ co:PMD_0000614 rdf:type owl:Class ;
                                "Offizielle Definition findet man in: DIN 8588"@de ;
                rdfs:label "Zerteilen"@de ,
                           "dividing"@en ;
-               skos:definition "A Separating process that involves separating material into distinct parts using techniques like shear cutting, splitting, tearing, or breaking, typically employed in processes where precise control over the cut is less critical."@en ,
+               skos:definition "A separating process that involves separating material into distinct parts using techniques like shear cutting, splitting, tearing, or breaking, typically employed in processes where precise control over the cut is less critical."@en ,
                                "Ein Trennprozess, bei dem das Material durch Techniken wie Scherschneiden, Spalten, Reißen oder Brechen in verschiedene Teile zerlegt wird. Es wird in der Regel bei Prozessen eingesetzt, bei denen eine genaue Kontrolle über den Schnitt weniger wichtig ist."@de ;
                skos:example "Shearing, Cracking"@en .
 
@@ -2937,7 +2938,7 @@ co:PMD_0000667 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000648 ;
                rdfs:label "Schleifmaschine"@de ,
                           "grinding machine"@en ;
-               skos:definition "A Grinding Machine is a Forming Machine that uses an abrasive wheel to remove material from the surface of a workpiece, typically for finishing or precision work."@en ,
+               skos:definition "A grinding machine is a forming machine that uses an abrasive wheel to remove material from the surface of a workpiece, typically for finishing or precision work."@en ,
                                "Eine Schleifmaschine ist eine Formmaschine, die ein Schleifrad verwendet, um Material von der Oberfläche eines Werkstücks zu entfernen, typischerweise für Feinarbeiten oder Präzisionsarbeiten."@de .
 
 
@@ -2954,7 +2955,7 @@ co:PMD_0000776 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000849 ;
                rdfs:label "Härteprüfverfahren"@de ,
                           "hardness testing process"@en ;
-               skos:definition "A Mechanical Property Analyzing Process that measures a material's resistance to deformation, typically using indentation methods to determine hardness."@en ,
+               skos:definition "A mechanical property analyzing process that measures a material's resistance to deformation, typically using indentation methods to determine hardness."@en ,
                                "Ein Mechanische Eigenschaften Analyseverfahren, das den Widerstand eines Materials gegen Verformung misst und typischerweise Eindringverfahren verwendet, um die Härte zu bestimmen."@de ;
                skos:example "Hardness testing of steel using the Rockwell method to classify its grade for industrial applications."@en .
 
@@ -2966,7 +2967,7 @@ co:PMD_0000822 rdf:type owl:Class ;
                                "Offizielle Definition findet man in: DIN 8589-0"@de ;
                rdfs:label "Spanen Mit Geometrisch Bestimmten Schneiden"@de ,
                           "machining geometrically defined"@en ;
-               skos:definition "A Separating process that involves removing material with a tool that has a defined shape and sharp edges, such as in sawing and drilling operations."@en ,
+               skos:definition "A separating process that involves removing material with a tool that has a defined shape and sharp edges, such as in sawing and drilling operations."@en ,
                                "Ein Trennprozess, bei dem Material mit einem Werkzeug mit definierter Form und scharfen Kanten entfernt wird, wie z. B. beim Sägen und Bohren."@de ;
                skos:example "Drilling, Turning"@en .
 
@@ -2978,7 +2979,7 @@ co:PMD_0000823 rdf:type owl:Class ;
                                "Offizielle Definition findet man in: DIN 8589-0"@de ;
                rdfs:label "Spanen Mit Geometrisch Unbestimmten Schneiden"@de ,
                           "machining geometrically undefined"@en ;
-               skos:definition "A Separating process that involves removing material using tools with undefined cutting edges, such as grinding or abrasive machining, where the exact shape of the cutting part isn't clearly defined."@en ,
+               skos:definition "A separating process that involves removing material using tools with undefined cutting edges, such as grinding or abrasive machining, where the exact shape of the cutting part isn't clearly defined."@en ,
                                "Ein Trennprozess, bei dem Material mit Werkzeugen mit undefinierten Schneiden abgetragen wird, wie z. B. beim Schleifen oder bei der abrasiven Bearbeitung, bei der die genaue Form des zu schneidenden Teils nicht klar definiert ist."@de ;
                skos:example "Grinding, Blasting"@en .
 
@@ -3098,11 +3099,7 @@ co:PMD_0000852 rdf:type owl:Class ;
 
 ###  https://w3id.org/pmd/co/PMD_0000853
 co:PMD_0000853 rdf:type owl:Class ;
-               rdfs:subClassOf co:PMD_0020131 ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty obo:RO_0000080 ;
-                                 owl:someValuesFrom co:PMD_0020106
-                               ] ;
+               rdfs:subClassOf co:PMD_0020131 ;
                rdfs:label "crystallographic texture"@en ;
                skos:definition "The crystallographic texture is a morphological quality describing the arrangement and orientation of grains in a metallic material, observed through crystallographic analysis."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
@@ -3113,7 +3110,7 @@ co:PMD_0000886 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000648 ;
                rdfs:label "Poliermaschine"@de ,
                           "polishing machine"@en ;
-               skos:definition "A Polishing Machine is a Forming Machine that smooths the surface of a material by rubbing it with a tool, abrasive, or chemical."@en ,
+               skos:definition "A polishing machine is a forming machine that smooths the surface of a material by rubbing it with a tool, abrasive, or chemical."@en ,
                                "Eine Poliermaschine ist eine Formmaschine, die die Oberfläche eines Materials durch Reiben mit einem Werkzeug, Schleifmittel oder Chemikalien glättet."@de .
 
 
@@ -3152,7 +3149,7 @@ co:PMD_0000914 rdf:type owl:Class ;
                                "Offizielle Definition findet man in: DIN 8590"@de ;
                rdfs:label "Abtragen"@de ,
                           "removing"@en ;
-               skos:definition "A Separating process that involves removing material through thermal, chemical and electrochemical methods."@en ,
+               skos:definition "A separating process that involves removing material through thermal, chemical and electrochemical methods."@en ,
                                "Ein Trennprozess, bei dem Material durch thermische, chemische und elektrochemische Methoden abgetragen wird."@de ;
                skos:example "Electrical Discharge Machining, Thermal Ablation"@en .
 
@@ -3307,7 +3304,7 @@ co:PMD_0000974 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000849 ;
                rdfs:label "Zugprüfverfahren"@de ,
                           "tensile testing process"@en ;
-               skos:definition "A Mechanical Property Analyzing Process that determines a material's response to tensile forces, measuring its tensile strength, elongation, and Young's modulus."@en ,
+               skos:definition "A mechanical property analyzing process that determines a material's response to tensile forces, measuring its tensile strength, elongation, and Young's modulus."@en ,
                                "Ein Mechanische Eigenschaften Analyseverfahren, das die Reaktion eines Materials auf Zugkräfte bestimmt und seine Zugfestigkeit, Dehnung und seinen Elastizitätsmodul misst."@de ;
                skos:example "Tensile testing of polymer films to ensure they can stretch without breaking in packaging applications"@en .
 
@@ -3727,7 +3724,7 @@ co:PMD_0020047 rdf:type owl:Class ;
                                                         ) ;
                                      rdf:type owl:Class
                                    ] ;
-               rdfs:subClassOf co:PMD_0020140 ;
+               rdfs:subClassOf co:PMD_0020094 ;
                rdfs:comment "A Portion Of Matter that consists of only phosphorus atoms."@en ;
                rdfs:label "portion of phosphorus"@en ;
                skos:definition "A 'Portion Of Phosphorus' is a 'Portion Of Pure Substance' that 'consists of' only chebi:phosphorus atom."@en .
@@ -3951,7 +3948,7 @@ co:PMD_0020061 rdf:type owl:Class ;
                                                         ) ;
                                      rdf:type owl:Class
                                    ] ;
-               rdfs:subClassOf co:PMD_0020140 ;
+               rdfs:subClassOf co:PMD_0020037 ;
                rdfs:comment "A Portion Of Matter that consists of only krypton atoms."@en ;
                rdfs:label "portion of krypton"@en ;
                skos:definition "A 'Portion Of Krypton' is a 'Portion Of Pure Substance' that 'consists of' only chebi:krypton atom."@en .
@@ -4552,7 +4549,7 @@ More elaborate crystal descriptions may be found in http://emmo.info/domain-crys
 TODO: possibly extend for 2D (Graphene etc)
 
 More elaborate crystal descriptions may be found in http://emmo.info/domain-crystallography/crystallography or https://purls.helmholtz-metadaten.de/disos/cso"""@en ,
-                               "The Bravais lattice is a categorical value specification that specifies value of the crystal structure quality. It describes the possible geometric arrangement of lattice points in a crystal. The present descriptor is limited to the 14 possible three-dimensional arrangements."@en ;
+                               "The bravais lattice is a categorical value specification that specifies value of the crystal structure quality. It describes the possible geometric arrangement of lattice points in a crystal. The present descriptor is limited to the 14 possible three-dimensional arrangements."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -4711,7 +4708,8 @@ co:PMD_0020143 rdf:type owl:Class ;
 co:PMD_0020148 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000019 ;
                rdfs:label "extensive quality"@en ;
-               skos:definition "An extensive quality is a qualty that inheres in only object or object aggregate or fiat object part or chemical entity and is dependent on the bearers (system-) size."@en ;
+               skos:definition "An extensive quality is a quality that inheres in only object or object aggregate or fiat object part or chemical entity and is dependent on the bearers (system-) size."@en ,
+                               "An extensive quality is a qualty that inheres in only object or object aggregate or fiat object part or chemical entity and is dependent on the bearers (system-) size."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -4752,7 +4750,7 @@ co:PMD_0020199 rdf:type owl:Class ;
 co:PMD_0020207 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020101 ;
                rdfs:label "amount of substance"@en ;
-               skos:definition "Amount of substance n is a molar proportion when the whole is an object aggregate N, which has Avogadro number objects (of same type) as parts (n = N/N_A)."@en .
+               skos:definition "Amount of substance n is a molar proportion when the whole is an object aggregate N, which has avogadro number objects (of same type) as parts (n = N/N_A)."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0025001
@@ -4810,7 +4808,7 @@ co:PMD_0025004 rdf:type owl:Class ;
 co:PMD_0025007 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000008 ;
                rdfs:label "frequency"@en ;
-               skos:definition "frequency is a process attribute which characterizes the rate per second of oscillation or vibration."@en ;
+               skos:definition "Frequency is a process attribute which characterizes the rate per second of oscillation or vibration."@en ;
                skos:example "Frequency of electromagnetic wave, Frequency of sound wave."@en .
 
 
@@ -5160,16 +5158,9 @@ co:PMD_0050157 rdf:type owl:Class ;
                                              skos:definition "Fatigue testing frequency is a process attribute of a fatigue testing which indicates how many loading cycles the sample experiences within a second."@en .
 
 
-###  https://w3id.org/pmd/distel/DISTEL_0000017
-<https://w3id.org/pmd/distel/DISTEL_0000017> rdf:type owl:Class ;
-                                             rdfs:subClassOf co:PMD_0000008 ;
-                                             rdfs:label "applied stress"@en ;
-                                             skos:definition "Applied stress is a process attribute of a fatigue testing which is characterized by a load (force) that the specimen exhibits normalized by the specimen's cross sectional area."@en .
-
-
 ###  https://w3id.org/pmd/distel/DISTEL_0000018
 <https://w3id.org/pmd/distel/DISTEL_0000018> rdf:type owl:Class ;
-                                             rdfs:subClassOf <https://w3id.org/pmd/distel/DISTEL_0000017> ,
+                                             rdfs:subClassOf co:PMD_0000008 ,
                                                              [ rdf:type owl:Restriction ;
                                                                owl:onProperty co:PMD_0025006 ;
                                                                owl:someValuesFrom [ rdf:type owl:Class ;
@@ -5178,15 +5169,15 @@ co:PMD_0050157 rdf:type owl:Class ;
                                                                                                 )
                                                                                   ]
                                                              ] ;
-                                             rdfs:label "stress amplitude"@en ;
-                                             skos:definition "Stress amplitude is a maximal applied stress that the specimen experiences during a fatigue testing."@en .
+                                             rdfs:label "loading amplitude"@en ;
+                                             skos:definition "Loading amplitude is a maximal difference between a minimal and maximal stress or strain (depending on the fatigue control type) that the specimen experiences during a fatigue testing."@en .
 
 
 ###  https://w3id.org/pmd/distel/DISTEL_0000019
 <https://w3id.org/pmd/distel/DISTEL_0000019> rdf:type owl:Class ;
-                                             rdfs:subClassOf <https://w3id.org/pmd/distel/DISTEL_0000017> ;
-                                             rdfs:label "mean applied stress"@en ;
-                                             skos:definition "Mean applied stress is a average value of an applied stress that the specimen experiences during fatigue testing."@en .
+                                             rdfs:subClassOf co:PMD_0000008 ;
+                                             rdfs:label "fatigue mean stress"@en ;
+                                             skos:definition "Fatigue mean stress is a average value of a stress that the specimen experiences during fatigue testing."@en .
 
 
 ###  https://w3id.org/pmd/distel/DISTEL_0000020
@@ -5202,14 +5193,14 @@ co:PMD_0050157 rdf:type owl:Class ;
 <https://w3id.org/pmd/distel/DISTEL_0000021> rdf:type owl:Class ;
                                              rdfs:subClassOf <https://w3id.org/pmd/distel/DISTEL_0000020> ;
                                              rdfs:label "stress ratio"@en ;
-                                             skos:definition "Stress ratio is a loading ratio process attribute of a fatigue test which is determined as a ratio between the maximal and minimal value of a stress applied to the specimen."@en .
+                                             skos:definition "Stress ratio is a loading ratio process attribute of a fatigue test which is determined as a ratio between the maximum and minimum value of a stress applied to the specimen."@en .
 
 
 ###  https://w3id.org/pmd/distel/DISTEL_0000022
 <https://w3id.org/pmd/distel/DISTEL_0000022> rdf:type owl:Class ;
                                              rdfs:subClassOf <https://w3id.org/pmd/distel/DISTEL_0000020> ;
                                              rdfs:label "strain ratio"@en ;
-                                             skos:definition "Strain ratio is a loading ratio process attribute of a fatigue test which is determined as a ratio between the maximal and minimal value of a strain which the specimen experiences."@en .
+                                             skos:definition "Strain ratio is a loading ratio process attribute of a fatigue test which is determined as a ratio between the maximum and minimum value of a strain which the specimen experiences."@en .
 
 
 ###  https://w3id.org/pmd/distel/DISTEL_0000023
@@ -5217,7 +5208,50 @@ co:PMD_0050157 rdf:type owl:Class ;
                                              rdfs:subClassOf <https://w3id.org/pmd/distel/DISTEL_0000020> ;
                                              rdfs:label "load ratio"@en ;
                                              skos:altLabel "force ratio"@en ;
-                                             skos:definition "Load ratio is a loading ratio process attribute of a fatigue test which is determined as a ratio between the maximal and minimal value of an applied load (force)."@en .
+                                             skos:definition "Load ratio is a loading ratio process attribute of a fatigue test which is determined as a ratio between the maximum and minimum value of an applied load (force)."@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000024
+<https://w3id.org/pmd/distel/DISTEL_0000024> rdf:type owl:Class ;
+                                             rdfs:subClassOf <https://w3id.org/pmd/distel/DISTEL_0000018> ;
+                                             rdfs:label "stress amplitude"@en ;
+                                             skos:definition "Stress amplitude is a maximal difference between a minimal and maximal stress that the specimen experiences during a fatigue testing."@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000025
+<https://w3id.org/pmd/distel/DISTEL_0000025> rdf:type owl:Class ;
+                                             rdfs:subClassOf <https://w3id.org/pmd/distel/DISTEL_0000018> ;
+                                             rdfs:label "strain amplitude"@en ;
+                                             skos:definition "Strain amplitude is a maximal difference between a minimal and maximal strain that the specimen experiences during a fatigue testing."@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000026
+<https://w3id.org/pmd/distel/DISTEL_0000026> rdf:type owl:Class ;
+                                             rdfs:subClassOf co:PMD_0000008 ;
+                                             rdfs:label "fatigue maximum stress"@en ;
+                                             skos:definition "Fatigue maximum stress is a process attribute of a fatigue testing process which describes the maximum stress that the specimen experiences. Its value corresponds to the max peak of a fatigue waveform."@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000027
+<https://w3id.org/pmd/distel/DISTEL_0000027> rdf:type owl:Class ;
+                                             rdfs:subClassOf co:PMD_0000008 ;
+                                             rdfs:label "fatigue minimum stress"@en ;
+                                             skos:definition "Fatigue minimum stress is a process attribute of a fatigue testing process which describes the minimum stress that the specimen experiences. Its value corresponds to the min peak of a fatigue waveform."@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000028
+<https://w3id.org/pmd/distel/DISTEL_0000028> rdf:type owl:Class ;
+                                             rdfs:subClassOf obo:OBI_0001930 ;
+                                             rdfs:comment "TODO add other individuals" ;
+                                             rdfs:label "loading ratio type value"@en ;
+                                             skos:definition "Loading ratio type value is a categorical value specification which specifies value of a loading ratio process attribute and qualitatively describes the ratio between the minumum and maximum loading (force, stress, strain) of a specimen during a fatigue testing. It is equivalent to the scalar value specification of R."@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000030
+<https://w3id.org/pmd/distel/DISTEL_0000030> rdf:type owl:Class ;
+                                             rdfs:subClassOf co:PMD_0000008 ;
+                                             rdfs:label "fatigue cycle limit"@en ;
+                                             skos:definition "Fatigue cycle limit is a process attribute of a fatigue testing process which describes the maximum number of loading cycles that would be performed if the specimen does not fail (break) before undergoing this number of cycles."@en .
 
 
 ###  https://w3id.org/pmd/tto/TTO_0000005
@@ -5780,7 +5814,14 @@ co:PMD_0020125 rdf:type owl:NamedIndividual ;
                                              rdfs:comment "TODO there is abn abbreviation AP in PMDco" ;
                                              rdfs:label "room temperature"@en ;
                                              skos:altLabel "RT"@en ;
-                                             skos:definition "Room temperature is a value specification, which vaguely describes the temperature usually during some process. It leaves a room for interpretation at which exact temperature is meant."@en .
+                                             skos:definition "Room temperature is a value specification, which vaguely describes the temperature usually during some process. It leaves a room for interpretation which exact temperature is meant."@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000029
+<https://w3id.org/pmd/distel/DISTEL_0000029> rdf:type owl:NamedIndividual ,
+                                                      <https://w3id.org/pmd/distel/DISTEL_0000028> ;
+                                             rdfs:comment "TODO write defintion" ;
+                                             rdfs:label "fully reversed loading"@en .
 
 
 #################################################################
