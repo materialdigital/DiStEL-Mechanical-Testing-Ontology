@@ -193,20 +193,10 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000017 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000017">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
-        <rdfs:label xml:lang="en">applied stress</rdfs:label>
-        <skos:definition xml:lang="en">Applied stress is a process attribute of a fatigue testing which is characterized by a load (force) that the specimen exhibits normalized by the specimen&apos;s cross sectional area.</skos:definition>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/pmd/distel/DISTEL_0000018 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000018">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000017"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0025006"/>
@@ -220,8 +210,8 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">stress amplitude</rdfs:label>
-        <skos:definition xml:lang="en">Stress amplitude is a maximal applied stress that the specimen experiences during a fatigue testing.</skos:definition>
+        <rdfs:label xml:lang="en">loading amplitude</rdfs:label>
+        <skos:definition xml:lang="en">Loading amplitude is a maximal difference between a minimal and maximal stress or strain (depending on the fatigue control type) that the specimen experiences during a fatigue testing.</skos:definition>
     </owl:Class>
     
 
@@ -229,9 +219,9 @@
     <!-- https://w3id.org/pmd/distel/DISTEL_0000019 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000019">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000017"/>
-        <rdfs:label xml:lang="en">mean applied stress</rdfs:label>
-        <skos:definition xml:lang="en">Mean applied stress is a average value of an applied stress that the specimen experiences during fatigue testing.</skos:definition>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
+        <rdfs:label xml:lang="en">fatigue mean stress</rdfs:label>
+        <skos:definition xml:lang="en">Fatigue mean stress is a average value of a stress that the specimen experiences during fatigue testing.</skos:definition>
     </owl:Class>
     
 
@@ -253,7 +243,7 @@
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000021">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000020"/>
         <rdfs:label xml:lang="en">stress ratio</rdfs:label>
-        <skos:definition xml:lang="en">Stress ratio is a loading ratio process attribute of a fatigue test which is determined as a ratio between the maximal and minimal value of a stress applied to the specimen.</skos:definition>
+        <skos:definition xml:lang="en">Stress ratio is a loading ratio process attribute of a fatigue test which is determined as a ratio between the maximum and minimum value of a stress applied to the specimen.</skos:definition>
     </owl:Class>
     
 
@@ -263,7 +253,7 @@
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000022">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000020"/>
         <rdfs:label xml:lang="en">strain ratio</rdfs:label>
-        <skos:definition xml:lang="en">Strain ratio is a loading ratio process attribute of a fatigue test which is determined as a ratio between the maximal and minimal value of a strain which the specimen experiences.</skos:definition>
+        <skos:definition xml:lang="en">Strain ratio is a loading ratio process attribute of a fatigue test which is determined as a ratio between the maximum and minimum value of a strain which the specimen experiences.</skos:definition>
     </owl:Class>
     
 
@@ -274,7 +264,68 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000020"/>
         <rdfs:label xml:lang="en">load ratio</rdfs:label>
         <skos:altLabel xml:lang="en">force ratio</skos:altLabel>
-        <skos:definition xml:lang="en">Load ratio is a loading ratio process attribute of a fatigue test which is determined as a ratio between the maximal and minimal value of an applied load (force).</skos:definition>
+        <skos:definition xml:lang="en">Load ratio is a loading ratio process attribute of a fatigue test which is determined as a ratio between the maximum and minimum value of an applied load (force).</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000024 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000024">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000018"/>
+        <rdfs:label xml:lang="en">stress amplitude</rdfs:label>
+        <skos:definition xml:lang="en">Stress amplitude is a maximal difference between a minimal and maximal stress that the specimen experiences during a fatigue testing.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000025 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000025">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000018"/>
+        <rdfs:label xml:lang="en">strain amplitude</rdfs:label>
+        <skos:definition xml:lang="en">Strain amplitude is a maximal difference between a minimal and maximal strain that the specimen experiences during a fatigue testing.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000026 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000026">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
+        <rdfs:label xml:lang="en">fatigue maximum stress</rdfs:label>
+        <skos:definition xml:lang="en">Fatigue maximum stress is a process attribute of a fatigue testing process which describes the maximum stress that the specimen experiences. Its value corresponds to the max peak of a fatigue waveform.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000027 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000027">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
+        <rdfs:label xml:lang="en">fatigue minimum stress</rdfs:label>
+        <skos:definition xml:lang="en">Fatigue minimum stress is a process attribute of a fatigue testing process which describes the minimum stress that the specimen experiences. Its value corresponds to the min peak of a fatigue waveform.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000028 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
+        <rdfs:comment>TODO add other individuals</rdfs:comment>
+        <rdfs:label xml:lang="en">loading ratio type value</rdfs:label>
+        <skos:definition xml:lang="en">Loading ratio type value is a categorical value specification which specifies value of a loading ratio process attribute and qualitatively describes the ratio between the minumum and maximum loading (force, stress, strain) of a specimen during a fatigue testing. It is equivalent to the scalar value specification of R.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000030 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000030">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
+        <rdfs:label xml:lang="en">fatigue cycle limit</rdfs:label>
+        <skos:definition xml:lang="en">Fatigue cycle limit is a process attribute of a fatigue testing process which describes the maximum number of loading cycles that would be performed if the specimen does not fail (break) before undergoing this number of cycles.</skos:definition>
     </owl:Class>
     
 
@@ -388,7 +439,17 @@
         <rdfs:comment>TODO there is abn abbreviation AP in PMDco</rdfs:comment>
         <rdfs:label xml:lang="en">room temperature</rdfs:label>
         <skos:altLabel xml:lang="en">RT</skos:altLabel>
-        <skos:definition xml:lang="en">Room temperature is a value specification, which vaguely describes the temperature usually during some process. It leaves a room for interpretation at which exact temperature is meant.</skos:definition>
+        <skos:definition xml:lang="en">Room temperature is a value specification, which vaguely describes the temperature usually during some process. It leaves a room for interpretation which exact temperature is meant.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000029 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000029">
+        <rdf:type rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000028"/>
+        <rdfs:comment>TODO write defintion</rdfs:comment>
+        <rdfs:label xml:lang="en">fully reversed loading</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 
