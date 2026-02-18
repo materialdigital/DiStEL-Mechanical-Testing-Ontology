@@ -6,6 +6,7 @@ https://w3id.org/pmd/co/PMD_0025997  # fraction specification
 http://purl.obolibrary.org/obo/OBI_0001931  # scalar value specification
 http://purl.obolibrary.org/obo/IAO_0000109 # measurement datum
 http://purl.obolibrary.org/obo/UO_0000000 # Unit
+https://w3id.org/pmd/co/PMD_0000502  # 2D
 
 ### SDCs
 https://w3id.org/pmd/co/PMD_0020142  # Energy
@@ -74,6 +75,7 @@ https://w3id.org/pmd/co/PMD_0000965  # surface
 https://w3id.org/pmd/co/PMD_0000538  # bulk
 https://w3id.org/pmd/co/PMD_0000891 # 'disconnected material entity aggregate'
 http://purl.obolibrary.org/obo/OBI_0000835 # manufacturer
+https://w3id.org/pmd/co/PMD_0000637  # fatigue testing machine
 
 
 # OPs

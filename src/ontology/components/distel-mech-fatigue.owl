@@ -193,6 +193,16 @@
     
 
 
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000017 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000017">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000952"/>
+        <rdfs:label xml:lang="en">fatigue strength</rdfs:label>
+        <skos:definition xml:lang="en">Fatigue strength is a strength which is realized in the fatigue process and desribes the maximum cyclic stress amplitude that a material can withstand without failure.</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/distel/DISTEL_0000018 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000018">
@@ -326,6 +336,60 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
         <rdfs:label xml:lang="en">fatigue cycle limit</rdfs:label>
         <skos:definition xml:lang="en">Fatigue cycle limit is a process attribute of a fatigue testing process which describes the maximum number of loading cycles that would be performed if the specimen does not fail (break) before undergoing this number of cycles.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000031 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000031">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000017"/>
+        <rdfs:label xml:lang="en">fatigue strength at cycle limit</rdfs:label>
+        <skos:definition xml:lang="en">Fatigue strength at cycle limit is a fatigue strength which desribes the maximum cyclic stress amplitude that a material must withstand without failure for a predetermined number of cycles.</skos:definition>
+        <skos:example xml:lang="en">if a material has a fatigue strength of 200 MPa at 10^6 cycles, this means that when subjected to a cyclic stress of 200 MPa, the material is expected to fail after approximately 10^6 cycles.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000032 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000032">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000017"/>
+        <rdfs:comment xml:lang="en">This limit is characteristic of certain ferrous (iron-based) and titanium alloys, for which the S-N curve and underlying data points level off at high cycle counts, indicating that failure is unlikely to occur below the limit. In contrast, materials like aluminium and copper typically do not exhibit a distinct endurance limit.</rdfs:comment>
+        <rdfs:label xml:lang="en">fatigue endurance limit</rdfs:label>
+        <skos:definition xml:lang="en">Fatigue endurance limit is a fatigue strength which desribes the maximum cyclic stress amplitude that a material must withstand without failure assuming an infinite number of load cycles.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000033 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000033">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:label xml:lang="en">knee point</rdfs:label>
+        <skos:definition xml:lang="en">Knee point is a mechnical property realized in a fatigue process which describes the number of cycles at which....</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000034 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000034">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:label xml:lang="en">slope of S-N curve</rdfs:label>
+        <skos:definition xml:lang="en">Slope of S-N curve is a mechanical property realized in the fatigue testing which defines the inclination of the S-N curve in the finite life fatigue region.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000035 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000035">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
+        <rdfs:comment xml:lang="en">For now a free text description, i.e., pointing to a value specification</rdfs:comment>
+        <rdfs:label xml:lang="en">failure criterion</rdfs:label>
+        <skos:definition xml:lang="en">Failure criterion is a process attribute which describes the conditions at which a fatigue specimen is considered to be failed, i.e., no further cycles are applied.</skos:definition>
+        <skos:example xml:lang="en">A crack in a specimen, which exceeds certain length. A significant drop in a load which material experiences.</skos:example>
     </owl:Class>
     
 
