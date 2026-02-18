@@ -367,7 +367,7 @@
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000033">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
         <rdfs:label xml:lang="en">knee point</rdfs:label>
-        <skos:definition xml:lang="en">Knee point is a mechnical property realized in a fatigue process which describes the number of cycles at which....</skos:definition>
+        <skos:definition xml:lang="en">Knee point is a mechnical property realized in a fatigue process which describes the number of cycles at which the slope of a fatigue curve changes.</skos:definition>
     </owl:Class>
     
 
