@@ -12084,7 +12084,6 @@ More elaborate crystal descriptions may be found in http://emmo.info/domain-crys
     <!-- https://w3id.org/pmd/co/PMD_0020103 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020103">
-        <owl:equivalentClass rdf:resource="https://w3id.org/pmd/co/PMD_0020207"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020101"/>
         <rdfs:label xml:lang="en">molar proportion</rdfs:label>
         <skos:altLabel xml:lang="en">Molar Ratio</skos:altLabel>
@@ -13012,8 +13011,9 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020194">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:comment xml:lang="en">often used to describe mass transport from regions of high concentration to regions of low concentration</rdfs:comment>
         <rdfs:label xml:lang="en">diffusion</rdfs:label>
-        <skos:definition xml:lang="en">process by which material entities spread from regions of high concentration to low concentration due to random thermal motion</skos:definition>
+        <skos:definition xml:lang="en">process by which material entities spread or move due to random thermal motion</skos:definition>
     </owl:Class>
     
 
@@ -13147,7 +13147,7 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
     <!-- https://w3id.org/pmd/co/PMD_0020207 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020207">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020101"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020103"/>
         <rdfs:label xml:lang="en">amount of substance</rdfs:label>
         <skos:definition xml:lang="en">Amount of substance n is a molar proportion when the whole is an object aggregate N, which has avogadro number objects (of same type) as parts (n = N/N_A).</skos:definition>
     </owl:Class>
@@ -13348,6 +13348,7 @@ characterized by frequency, wavelength, and speed</rdfs:comment>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">self-diffusion in crystaline solid</rdfs:label>
+        <skos:definition xml:lang="en">diffusion of entites of a single type in a crystal that consists of entites of this same type</skos:definition>
     </owl:Class>
     
 
@@ -13370,6 +13371,7 @@ characterized by frequency, wavelength, and speed</rdfs:comment>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">inter-diffusion in crystalline solid</rdfs:label>
+        <skos:definition xml:lang="en">diffusion of entites of some type in a crystal that consists mostly of entites of a different type</skos:definition>
     </owl:Class>
     
 
@@ -13384,8 +13386,8 @@ characterized by frequency, wavelength, and speed</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020224"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000116 xml:lang="en">diffusion process in which crystal forming entities move from lattice points to vacant adjacent lattice points</obo:IAO_0000116>
         <rdfs:label xml:lang="en">vacancy diffusion</rdfs:label>
+        <skos:definition xml:lang="en">diffusion process in which crystal forming entities move from lattice points to vacant adjacent lattice points</skos:definition>
     </owl:Class>
     
 
@@ -13902,9 +13904,9 @@ characterized by frequency, wavelength, and speed</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020246">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020245"/>
-        <obo:IAO_0000116 xml:lang="en">e.g the flow of a liquid in a pipe, diffusion of a gas in different gas</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">recurring transport of multiple entities, such that the transported entities are not being discretized anymore</obo:IAO_0000116>
         <rdfs:label xml:lang="en">continous transport</rdfs:label>
+        <skos:definition xml:lang="en">recurring transport of multiple entities, such that the transported entities are not being discretized anymore</skos:definition>
+        <skos:example xml:lang="en">the flow of a liquid in a pipe, diffusion of a gas in different gas</skos:example>
     </owl:Class>
     
 

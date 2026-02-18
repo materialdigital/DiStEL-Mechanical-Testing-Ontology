@@ -681,7 +681,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000051> "has
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/BFO_0000051>)
 TransitiveObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>)
 
-# Object Property: <http://purl.obolibrary.org/obo/BFO_0000054> (realized in)
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000054> (has realization)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000054> "has realization"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000054> "realized in"@en)
@@ -2571,7 +2571,7 @@ EquivalentClasses(<https://w3id.org/pmd/co/PMD_0000512> ObjectExactCardinality(1
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000512> <https://w3id.org/pmd/co/PMD_0020131>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000512> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/co/PMD_0020116>))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000522> (mechanical loading)
+# Class: <https://w3id.org/pmd/co/PMD_0000522> (application of mechanical load)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000522> "application of mechanical load"@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000522> "mechanical loading"@en)
@@ -2855,7 +2855,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<http://pu
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000000>))
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000522>))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000849> (Mechanische Eigenschaften Analyseverfahren)
+# Class: <https://w3id.org/pmd/co/PMD_0000849> (mechanical property analyzing process)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000849> "Mechanische Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000849> "mechanical property analyzing process"@en)
@@ -2975,7 +2975,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000952> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000952> <https://w3id.org/pmd/co/PMD_0000848>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "Struktur Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "structural property analyzing process"@en)
@@ -3646,7 +3646,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020098> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020098> <http://purl.obolibrary.org/obo/BFO_0000031>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0020099> (bravais lattice (3D))
+# Class: <https://w3id.org/pmd/co/PMD_0020099> (bravais lattice (3d))
 
 AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/co/PMD_0020099> "TODO: possibly extend for 2D (Graphene etc)
 
@@ -3689,7 +3689,6 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0020103> "The molar ratio of hydrogen gas H2 molecules to water H2O molecules is 1/1 in the oxyhydrogen reaction. The molar ratio of oxygen molecules O2 to water molecules is 2/1.
 The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 2022 AD."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020103> "true"^^xsd:boolean)
-EquivalentClasses(<https://w3id.org/pmd/co/PMD_0020103> <https://w3id.org/pmd/co/PMD_0020207>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020103> <https://w3id.org/pmd/co/PMD_0020101>)
 
 # Class: <https://w3id.org/pmd/co/PMD_0020104> (volume proportion)
@@ -3827,7 +3826,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0020199> <https://w3id.org/pmd/co/PMD_00
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020207> "amount of substance"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020207> "Amount of substance n is a molar proportion when the whole is an object aggregate N, which has avogadro number objects (of same type) as parts (n = N/N_A)."@en)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0020207> <https://w3id.org/pmd/co/PMD_0020101>)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0020207> <https://w3id.org/pmd/co/PMD_0020103>)
 
 # Class: <https://w3id.org/pmd/co/PMD_0020210> (elemental crystal)
 
@@ -4190,7 +4189,7 @@ SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000032> <https://w3id.org/pmd/di
 # Class: <https://w3id.org/pmd/distel/DISTEL_0000033> (knee point)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000033> "knee point"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000033> "Knee point is a mechnical property realized in a fatigue process which describes the number of cycles at which...."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000033> "Knee point is a mechnical property realized in a fatigue process which describes the number of cycles at which the slope of a fatigue curve changes."@en)
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000033> <https://w3id.org/pmd/co/PMD_0000848>)
 
 # Class: <https://w3id.org/pmd/distel/DISTEL_0000034> (slope of S-N curve)

@@ -4643,7 +4643,6 @@ co:PMD_0020102 rdf:type owl:Class ;
 
 ###  https://w3id.org/pmd/co/PMD_0020103
 co:PMD_0020103 rdf:type owl:Class ;
-               owl:equivalentClass co:PMD_0020207 ;
                rdfs:subClassOf co:PMD_0020101 ;
                rdfs:label "molar proportion"@en ;
                skos:altLabel "Molar Ratio"@en ;
@@ -4817,7 +4816,7 @@ co:PMD_0020199 rdf:type owl:Class ;
 
 ###  https://w3id.org/pmd/co/PMD_0020207
 co:PMD_0020207 rdf:type owl:Class ;
-               rdfs:subClassOf co:PMD_0020101 ;
+               rdfs:subClassOf co:PMD_0020103 ;
                rdfs:label "amount of substance"@en ;
                skos:definition "Amount of substance n is a molar proportion when the whole is an object aggregate N, which has avogadro number objects (of same type) as parts (n = N/N_A)."@en .
 
@@ -5410,7 +5409,7 @@ co:PMD_0050157 rdf:type owl:Class ;
 <https://w3id.org/pmd/distel/DISTEL_0000033> rdf:type owl:Class ;
                                              rdfs:subClassOf co:PMD_0000848 ;
                                              rdfs:label "knee point"@en ;
-                                             skos:definition "Knee point is a mechnical property realized in a fatigue process which describes the number of cycles at which...."@en .
+                                             skos:definition "Knee point is a mechnical property realized in a fatigue process which describes the number of cycles at which the slope of a fatigue curve changes."@en .
 
 
 ###  https://w3id.org/pmd/distel/DISTEL_0000034
