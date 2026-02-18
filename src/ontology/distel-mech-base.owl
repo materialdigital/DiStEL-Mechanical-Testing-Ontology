@@ -12,12 +12,12 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/pmd/distel/distel-mech-base.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/distel/releases/2026-02-11/distel-mech-base.owl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/distel/releases/2026-02-18/distel-mech-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>DiStEL Mechanical Testing Ontology</dcterms:title>
-        <owl:versionInfo>2026-02-11</owl:versionInfo>
+        <owl:versionInfo>2026-02-18</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -106,7 +106,7 @@
     <!-- https://w3id.org/pmd/co/PMD_0000064 -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/pmd/co/PMD_0000064">
-        <rdfs:comment>An editor note referring to a pattern which shows the usage of this class or property.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An editor note referring to a pattern which shows the usage of this class or property.</rdfs:comment>
         <rdfs:label xml:lang="en">pattern example</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -209,6 +209,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000417 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000417"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000293 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000293"/>
@@ -218,6 +224,12 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312"/>
     
 
 
@@ -242,6 +254,12 @@
     <!-- http://purl.obolibrary.org/obo/RO_0000056 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000056"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000080 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000080"/>
     
 
 
@@ -272,6 +290,12 @@
     <!-- http://purl.obolibrary.org/obo/RO_0009006 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0009006"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000102 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/STATO_0000102"/>
     
 
 
@@ -315,7 +339,7 @@
         </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/pmd/co/PMD_0000068"/>
         <rdfs:label xml:lang="en">has state</rdfs:label>
-        <skos:definition xml:lang="en">relates a temporally qualified continuant to the unique anchor continuant that it is a temporal phase of</skos:definition>
+        <skos:definition xml:lang="en">relates an anchor continuant to a temporally qualified continuant that represents a specific temporal phase of its existence.</skos:definition>
         <co:PMD_0001032>https://github.com/materialdigital/core-ontology/issues/185</co:PMD_0001032>
     </owl:ObjectProperty>
     
@@ -326,7 +350,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/PMD_0000070">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:label xml:lang="en">is state of</rdfs:label>
-        <skos:definition>relates a temporally qualified continuant to the unique anchor continuant that it is a temporal phase of</skos:definition>
+        <skos:definition xml:lang="en">relates a temporally qualified continuant to the unique anchor continuant that it is a temporal phase of</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -359,6 +383,7 @@
         <rdfs:range rdf:resource="https://w3id.org/pmd/co/PMD_0000915"/>
         <rdfs:label xml:lang="en">responds with</rdfs:label>
         <skos:definition>The realizable entity must be &quot;stimulated&quot; by some Stimulus in order to respond with the Response. The bearer of the realizable entity must participate in Stimulation as well as in Response.</skos:definition>
+        <skos:definition xml:lang="en">The realizable entity must be &quot;stimulated&quot; by some Stimulus in order to respond with the Response. The bearer of the realizable entity must participate in Stimulation as well as in Response.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -405,7 +430,6 @@ An example of such case can be &quot;Temperature of during the annealing process
     <!-- https://w3id.org/pmd/co/PMD_0025998 -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/PMD_0025998">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="https://w3id.org/pmd/co/PMD_0025999"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000145"/>
@@ -423,7 +447,6 @@ An example of such case can be &quot;Temperature of during the annealing process
     <!-- https://w3id.org/pmd/co/PMD_0025999 -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/PMD_0025999">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0025999"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -1023,6 +1046,18 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000104"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000109 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000109"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000070"/>
@@ -1305,12 +1340,50 @@ Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subcl
     
 
 
+    <!-- https://w3id.org/pmd/co/PMD_0000502 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000502">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:label xml:lang="en">2D</rdfs:label>
+        <skos:definition xml:lang="en">A two-dimensional information content entity is a representation or analysis, commonly applied in studying planar material properties or surface phenomena.</skos:definition>
+        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/co/PMD_0000503 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000503">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020131"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020243"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000417"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000109"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/STATO_0000102"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000116 xml:lang="en">TODO: axiom needs refinement</obo:IAO_0000116>
         <rdfs:label xml:lang="en">ASTM grainsize</rdfs:label>
-        <skos:definition xml:lang="en">The ASTM grain size is a scalar specifically describing the size of grains in a crystalline material as defined by ASTM standards.</skos:definition>
+        <skos:definition xml:lang="en">The ASTM grain size is a quality that is measured through a process that follows the ASTM standard.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
     
@@ -1345,7 +1418,9 @@ Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subcl
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000522">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:label xml:lang="en">application of mechanical load</rdfs:label>
+        <rdfs:label xml:lang="en">mechanical loading</rdfs:label>
         <skos:definition xml:lang="en">An application of mechanical load is the process of applying force or stress to a material to observe its response or measure its properties.</skos:definition>
+        <skos:definition xml:lang="en">application of external forces, moments, or imposed displacements to objects or the equivalent loadings (stresses, strains) to materials.</skos:definition>
     </owl:Class>
     
 
@@ -1537,7 +1612,7 @@ Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subcl
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000596">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:label xml:lang="en">deformation</rdfs:label>
-        <skos:definition xml:lang="en">The deformation is a process describing a change in the shape, size, or structure of a material under the influence of stress or force.</skos:definition>
+        <skos:definition xml:lang="en">The deformation is a process describing a change in the shape, size, or structure of a material often under the influence of stress or force.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
     
@@ -1618,6 +1693,18 @@ Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subcl
         <obo:IAO_0000119 xml:lang="en">“Extensometer.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/extensometer. Accessed 5 Dec. 2022.</obo:IAO_0000119>
         <rdfs:label xml:lang="en">extensometer</rdfs:label>
         <skos:definition xml:lang="en">A device for measuring minute deformations of test specimens caused by tension, compression, bending, or twisting.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0000637 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000637">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000602"/>
+        <rdfs:label xml:lang="de">Materialermüdungsprüfmaschine</rdfs:label>
+        <rdfs:label xml:lang="en">fatigue testing machine</rdfs:label>
+        <skos:definition xml:lang="en">A device used to test the fatigue resistance of materials by subjecting them to repeated stress cycles.</skos:definition>
+        <skos:definition xml:lang="de">Ein Gerät zur Prüfung der Ermüdungsresistenz von Materialien, indem diese wiederholten Belastungszyklen ausgesetzt werden.</skos:definition>
     </owl:Class>
     
 
@@ -2243,8 +2330,14 @@ TODO: Check general class axiom and defintion altogether !!!</skos:definition>
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000591"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">crystal</rdfs:label>
-        <skos:definition xml:lang="en">A crystal is an object that has part some entities that concretize a Bravais lattice.</skos:definition>
+        <skos:definition xml:lang="en">A crystal is an object that has a quality &quot;crystal structure&quot;.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
     
@@ -3892,6 +3985,7 @@ TODO: Check general class axiom and defintion altogether !!!</skos:definition>
         <rdfs:comment xml:lang="en">TODO: possibly extend for 2D (Graphene etc)
 
 More elaborate crystal descriptions may be found in http://emmo.info/domain-crystallography/crystallography or https://purls.helmholtz-metadaten.de/disos/cso</rdfs:comment>
+        <rdfs:label xml:lang="en">bravais lattice (3D)</rdfs:label>
         <rdfs:label xml:lang="en">bravais lattice (3d)</rdfs:label>
         <skos:definition xml:lang="en">The Bravais Lattice is a nature constant that describes the possible geometric arrangement of lattice points in a crystal. The present descriptor is limited to the 14 possible three-dimensional arrangements. 
 
@@ -4172,6 +4266,89 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
     
 
 
+    <!-- https://w3id.org/pmd/co/PMD_0020210 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020210">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/pmd/co/PMD_0020140"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020140"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">elemental crystal</rdfs:label>
+        <skos:definition xml:lang="en">a crystal that consists of exactly one atomic species</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020216 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020216">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020217"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020218"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020219"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020242"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
+        <rdfs:label xml:lang="en">order scale value</rdfs:label>
+        <skos:definition xml:lang="en">possible values of characteristic length over which structural correlations persist in a material</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020220 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020220">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/pmd/co/PMD_0020216"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020131"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020216"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">order scale</rdfs:label>
+        <skos:definition xml:lang="en">characteristic length over which structural correlations persist in a material</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020243 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020243">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020131"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020106"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000116 xml:lang="en">size values of indiviudal grains are properties of the respective objects</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">grain size</rdfs:label>
+        <skos:definition xml:lang="en">an average size of the grains of a polycrystal</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/co/PMD_0025001 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025001">
@@ -4314,6 +4491,7 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">material reacting process has always energy minimization as a driving force.</rdfs:comment>
         <rdfs:label xml:lang="en">material reacting process</rdfs:label>
         <skos:definition xml:lang="en">Material reacting process is a process which occurs in a portion of matter due to some of its disposition or behavioral material property which has realization in some  stimulating process. Both the material reacting process and stimulating process must be occurent parts of a planned process, if the planned process takes place.</skos:definition>
     </owl:Class>
@@ -4345,7 +4523,7 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020140"/>
-        <rdfs:comment>&apos;portion of pure chemical element&apos; and &apos;has part&apos; only CHEBI:33336</rdfs:comment>
+        <rdfs:comment xml:lang="en">&apos;portion of pure chemical element&apos; and &apos;has part&apos; only CHEBI:33336</rdfs:comment>
         <rdfs:label xml:lang="en">portion of lanthanum</rdfs:label>
         <skos:definition xml:lang="en">A portion of lanthanum is a portion of pure substance that has parts only chebi:lanthanum atom.</skos:definition>
     </owl:Class>
@@ -4449,6 +4627,7 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
         <rdfs:label xml:lang="en">length</rdfs:label>
         <skos:altLabel xml:lang="en">dimension</skos:altLabel>
         <skos:definition>Length is a one dimensional size.</skos:definition>
+        <skos:definition xml:lang="en">Length is a one dimensional size.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
     
@@ -4720,6 +4899,16 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
     
 
 
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000017 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000017">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000952"/>
+        <rdfs:label xml:lang="en">fatigue strength</rdfs:label>
+        <skos:definition xml:lang="en">Fatigue strength is a strength which is realized in the fatigue process and desribes the maximum cyclic stress amplitude that a material can withstand without failure.</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/distel/DISTEL_0000018 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000018">
@@ -4853,6 +5042,60 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
         <rdfs:label xml:lang="en">fatigue cycle limit</rdfs:label>
         <skos:definition xml:lang="en">Fatigue cycle limit is a process attribute of a fatigue testing process which describes the maximum number of loading cycles that would be performed if the specimen does not fail (break) before undergoing this number of cycles.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000031 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000031">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000017"/>
+        <rdfs:label xml:lang="en">fatigue strength at cycle limit</rdfs:label>
+        <skos:definition xml:lang="en">Fatigue strength at cycle limit is a fatigue strength which desribes the maximum cyclic stress amplitude that a material must withstand without failure for a predetermined number of cycles.</skos:definition>
+        <skos:example xml:lang="en">if a material has a fatigue strength of 200 MPa at 10^6 cycles, this means that when subjected to a cyclic stress of 200 MPa, the material is expected to fail after approximately 10^6 cycles.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000032 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000032">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000017"/>
+        <rdfs:comment xml:lang="en">This limit is characteristic of certain ferrous (iron-based) and titanium alloys, for which the S-N curve and underlying data points level off at high cycle counts, indicating that failure is unlikely to occur below the limit. In contrast, materials like aluminium and copper typically do not exhibit a distinct endurance limit.</rdfs:comment>
+        <rdfs:label xml:lang="en">fatigue endurance limit</rdfs:label>
+        <skos:definition xml:lang="en">Fatigue endurance limit is a fatigue strength which desribes the maximum cyclic stress amplitude that a material must withstand without failure assuming an infinite number of load cycles.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000033 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000033">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:label xml:lang="en">knee point</rdfs:label>
+        <skos:definition xml:lang="en">Knee point is a mechnical property realized in a fatigue process which describes the number of cycles at which....</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000034 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000034">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:label xml:lang="en">slope of S-N curve</rdfs:label>
+        <skos:definition xml:lang="en">Slope of S-N curve is a mechanical property realized in the fatigue testing which defines the inclination of the S-N curve in the finite life fatigue region.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000035 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000035">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
+        <rdfs:comment xml:lang="en">For now a free text description, i.e., pointing to a value specification</rdfs:comment>
+        <rdfs:label xml:lang="en">failure criterion</rdfs:label>
+        <skos:definition xml:lang="en">Failure criterion is a process attribute which describes the conditions at which a fatigue specimen is considered to be failed, i.e., no further cycles are applied.</skos:definition>
+        <skos:example xml:lang="en">A crack in a specimen, which exceeds certain length. A significant drop in a load which material experiences.</skos:example>
     </owl:Class>
     
 
@@ -5074,7 +5317,7 @@ Note: The concept of parallel length is replaced by the concept of distance betw
     <!-- https://w3id.org/pmd/co/PMD_0020006 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020006">
-        <rdfs:label xml:lang="en">bravais lattice triclinic primitve</rdfs:label>
+        <rdfs:label xml:lang="en">bravais lattice triclinic primitive</rdfs:label>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:NamedIndividual>
     
@@ -5346,6 +5589,42 @@ Note: The concept of parallel length is replaced by the concept of distance betw
         <rdfs:label xml:lang="en">aggregate state suprasolid</rdfs:label>
         <skos:definition xml:lang="en">A state that exhibits suprafluid and solid properties.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020217 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020217">
+        <rdfs:label xml:lang="en">short range order</rdfs:label>
+        <skos:definition xml:lang="en">periodic arrangement of structural features up to a few entities</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020218 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020218">
+        <rdfs:label xml:lang="en">medium range order</rdfs:label>
+        <skos:definition xml:lang="en">periodic arrangement of structural features of many entities</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020219 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020219">
+        <rdfs:label xml:lang="en">long range order</rdfs:label>
+        <skos:definition xml:lang="en">periodic arrangement of structural features of virtually all entities</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020242 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020242">
+        <rdfs:label xml:lang="en">no range order</rdfs:label>
+        <skos:definition xml:lang="en">no periodic arrangement of structural features of entites</skos:definition>
     </owl:NamedIndividual>
     
 

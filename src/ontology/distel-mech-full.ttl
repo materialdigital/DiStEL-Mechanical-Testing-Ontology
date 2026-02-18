@@ -17,11 +17,11 @@
 @base <https://w3id.org/pmd/distel/distel-mech-full.ttl> .
 
 <https://w3id.org/pmd/distel/distel-mech-full.ttl> rdf:type owl:Ontology ;
-                                                    owl:versionIRI <https://w3id.org/pmd/distel/releases/2026-02-11/distel-mech-full.ttl> ;
+                                                    owl:versionIRI <https://w3id.org/pmd/distel/releases/2026-02-18/distel-mech-full.ttl> ;
                                                     dcterms:description "None" ;
                                                     dcterms:license <https://creativecommons.org/licenses/unspecified> ;
                                                     dcterms:title "DiStEL Mechanical Testing Ontology" ;
-                                                    owl:versionInfo "2026-02-11" .
+                                                    owl:versionInfo "2026-02-18" .
 
 #################################################################
 #    Annotation properties
@@ -102,6 +102,14 @@ obo:IAO_0000119 rdf:type owl:AnnotationProperty ;
                 rdfs:label "definition source"@en .
 
 
+###  http://purl.obolibrary.org/obo/IAO_0000232
+obo:IAO_0000232 rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000233
+obo:IAO_0000233 rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/elements/1.1/source
 dce:source rdf:type owl:AnnotationProperty .
 
@@ -174,7 +182,7 @@ co:PMD_0000060 rdf:type owl:AnnotationProperty ;
 
 ###  https://w3id.org/pmd/co/PMD_0000064
 co:PMD_0000064 rdf:type owl:AnnotationProperty ;
-               rdfs:comment "An editor note referring to a pattern which shows the usage of this class or property." ;
+               rdfs:comment "An editor note referring to a pattern which shows the usage of this class or property."@en ;
                rdfs:label "pattern example"@en .
 
 
@@ -421,6 +429,7 @@ r is a portion of reality
 there is some c that is a concretization of g 
 every c that is a concretization of g specifically denotes r"""@en ;
                 obo:IAO_0000119 "Conversations with Barry Smith, Werner Ceusters, Bjoern Peters, Michel Dumontier, Melanie Courtot, James Malone, Bill Hogan"@en ;
+                rdfs:comment ""@en ;
                 rdfs:label "denotes"@en .
 
 
@@ -474,6 +483,7 @@ obo:IAO_0000235 rdf:type owl:ObjectProperty ;
                 rdfs:domain obo:BFO_0000001 ;
                 rdfs:range obo:IAO_0000030 ;
                 obo:IAO_0000115 "inverse of the relation 'denotes'"@en ;
+                obo:IAO_0000233 <https://github.com/information-artifact-ontology/IAO/issues/206> ;
                 rdfs:label "denoted by"@en .
 
 
@@ -545,6 +555,7 @@ obo:OBI_0000417 rdf:type owl:ObjectProperty ;
                 obo:IAO_0000112 "A cell sorting process achieves the objective specification 'material separation objective'" ;
                 obo:IAO_0000115 "This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process."@en ;
                 obo:IAO_0000119 "PPPB branch derived" ;
+                obo:IAO_0000232 "modified according to email thread from 1/23/09 in accordince with DT and PPPB branch" ;
                 rdfs:label "achieves_planned_objective" ;
                 co:PMD_0000064 "https://github.com/search?q=repo%3Amaterialdigital%2Fcore-ontology+path%3A%2F%5Epatterns%5C%2F%2F+OBI_0000417&type=code" .
 
@@ -575,6 +586,7 @@ obo:RO_0000052 rdf:type owl:ObjectProperty ;
                obo:IAO_0000112 "this fragility is a characteristic of this vase"@en ,
                                "this red color is a characteristic of this apple"@en ;
                obo:IAO_0000115 "a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence."@en ;
+               rdfs:comment "Note that this relation was previously called \"inheres in\", but was changed to be called \"characteristic of\" because BFO2 uses \"inheres in\" in a more restricted fashion. This relation differs from BFO2:inheres_in in two respects: (1) it does not impose a range constraint, and thus it allows qualities of processes, as well as of information entities, whereas BFO2 restricts inheres_in to only apply to independent continuants (2) it is declared functional, i.e. something can only be a characteristic of one thing." ;
                rdfs:label "characteristic of"@en .
 
 
@@ -655,6 +667,7 @@ obo:RO_0000079 rdf:type owl:ObjectProperty ;
                obo:IAO_0000112 "this catalysis function is a function of this enzyme"@en ;
                obo:IAO_0000115 "a relation between a function and an independent continuant (the bearer), in which the function specifically depends on the bearer for its existence"@en ;
                obo:IAO_0000116 "A function inheres in its bearer at all times for which the function exists, however the function need not be realized at all the times that the function exists."@en ;
+               rdfs:comment "This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020." ;
                rdfs:label "function of"@en .
 
 
@@ -672,6 +685,7 @@ obo:RO_0000080 rdf:type owl:ObjectProperty ;
                obo:IAO_0000112 "this red color is a quality of this apple"@en ;
                obo:IAO_0000115 "a relation between a quality and an independent continuant (the bearer), in which the quality specifically depends on the bearer for its existence"@en ;
                obo:IAO_0000116 "A quality inheres in its bearer at all times for which the quality exists."@en ;
+               rdfs:comment "This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020." ;
                rdfs:label "quality of"@en .
 
 
@@ -682,6 +696,7 @@ obo:RO_0000081 rdf:type owl:ObjectProperty ;
                obo:IAO_0000112 "this investigator role is a role of this person"@en ;
                obo:IAO_0000115 "a relation between a role and an independent continuant (the bearer), in which the role specifically depends on the bearer for its existence"@en ;
                obo:IAO_0000116 "A role inheres in its bearer at all times for which the role exists, however the role need not be realized at all the times that the role exists."@en ;
+               rdfs:comment "This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020." ;
                rdfs:label "role of"@en .
 
 
@@ -731,6 +746,7 @@ obo:RO_0000091 rdf:type owl:ObjectProperty ;
 obo:RO_0000092 rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf obo:RO_0000052 ;
                obo:IAO_0000115 "inverse of has disposition" ;
+               rdfs:comment "This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020." ;
                rdfs:label "disposition of"@en .
 
 
@@ -799,6 +815,7 @@ obo:RO_0002082 rdf:type owl:ObjectProperty ,
                         owl:SymmetricProperty ,
                         owl:TransitiveProperty ;
                obo:IAO_0000115 "x simultaneous with y iff ω(x) = ω(y) and ω(α ) = ω(α), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point and '=' indicates the same instance in time." ;
+               rdfs:comment "t1 simultaneous_with t2 iff:=  t1 before_or_simultaneous_with t2  and not (t1 before t2)"@en ;
                rdfs:label "simultaneous with"@en .
 
 
@@ -948,7 +965,7 @@ co:PMD_0000069 rdf:type owl:ObjectProperty ;
                            ] ;
                rdfs:range co:PMD_0000068 ;
                rdfs:label "has state"@en ;
-               skos:definition "relates a temporally qualified continuant to the unique anchor continuant that it is a temporal phase of"@en ;
+               skos:definition "relates an anchor continuant to a temporally qualified continuant that represents a specific temporal phase of its existence."@en ;
                co:PMD_0001032 "https://github.com/materialdigital/core-ontology/issues/185" .
 
 
@@ -956,7 +973,7 @@ co:PMD_0000069 rdf:type owl:ObjectProperty ;
 co:PMD_0000070 rdf:type owl:ObjectProperty ,
                         owl:FunctionalProperty ;
                rdfs:label "is state of"@en ;
-               skos:definition "relates a temporally qualified continuant to the unique anchor continuant that it is a temporal phase of" .
+               skos:definition "relates a temporally qualified continuant to the unique anchor continuant that it is a temporal phase of"@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0000077
@@ -979,7 +996,8 @@ co:PMD_0001029 rdf:type owl:ObjectProperty ;
                rdfs:domain obo:BFO_0000017 ;
                rdfs:range co:PMD_0000915 ;
                rdfs:label "responds with"@en ;
-               skos:definition "The realizable entity must be \"stimulated\" by some Stimulus in order to respond with the Response. The bearer of the realizable entity must participate in Stimulation as well as in Response." .
+               skos:definition "The realizable entity must be \"stimulated\" by some Stimulus in order to respond with the Response. The bearer of the realizable entity must participate in Stimulation as well as in Response." ,
+                               "The realizable entity must be \"stimulated\" by some Stimulus in order to respond with the Response. The bearer of the realizable entity must participate in Stimulation as well as in Response."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0001030
@@ -1014,7 +1032,6 @@ co:PMD_0025006 rdf:type owl:ObjectProperty ;
 
 ###  https://w3id.org/pmd/co/PMD_0025998
 co:PMD_0025998 rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf owl:topObjectProperty ;
                owl:inverseOf co:PMD_0025999 ;
                rdfs:domain obo:BFO_0000004 ;
                rdfs:range obo:BFO_0000145 ;
@@ -1028,7 +1045,6 @@ co:PMD_0025998 rdf:type owl:ObjectProperty ;
 
 ###  https://w3id.org/pmd/co/PMD_0025999
 co:PMD_0025999 rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf owl:topObjectProperty ;
                owl:propertyChainAxiom ( co:PMD_0025999
                                         obo:BFO_0000050
                                       ) ;
@@ -2051,6 +2067,8 @@ obo:IAO_0000009 rdf:type owl:Class ;
                 rdfs:subClassOf obo:IAO_0000030 ;
                 obo:IAO_0000115 "A label is a symbol that is part of some other datum and is used to either partially define  the denotation of that datum or to provide a means for identifying the datum as a member of the set of data with the same label"@en ;
                 obo:IAO_0000116 "http://www.golovchenko.org/cgi-bin/wnsearch?q=label#4n"@en ;
+                obo:IAO_0000232 """9/22/11 BP: changed the rdfs:label for this class from 'label' to 'datum label' to convey that this class is not intended to cover all kinds of labels (stickers, radiolabels, etc.), and not even all kind of textual labels, but rather the kind of labels occuring in a datum. 
+""" ;
                 rdfs:label "datum label"@en .
 
 
@@ -2125,6 +2143,13 @@ obo:IAO_0000104 rdf:type owl:Class ;
                                 "Alternative previous definition: a plan is a set of instructions that specify how an objective should be achieved"@en ;
                 obo:IAO_0000119 "OBI Plan and Planned Process branch"@en ,
                                 "OBI_0000344"@en ;
+                rdfs:comment """2/3/2009 Comment from OBI review.
+
+Action specification not well enough specified.
+Conditional specification not well enough specified.
+Question whether all plan specifications have objective specifications.
+
+Request that IAO either clarify these or change definitions not to use them"""@en ;
                 rdfs:label "plan specification"@en .
 
 
@@ -2166,6 +2191,7 @@ obo:OBI_0000067 rdf:type owl:Class ;
                 obo:IAO_0000116 "Role call - 17nov-08: JF and MC think an evaluant role is always specified input of a process. Even in the case where we have an assay taking blood as evaluant and outputting blood, the blood is not the specified output at the end of the assay (the concentration of glucose in the blood is)"@en ,
                                 "examples of features that could be described in an evaluant: quality.... e.g. \"contains 10 pg/ml IL2\", or \"no glucose detected\")"@en ;
                 obo:IAO_0000119 "OBI" ;
+                obo:IAO_0000232 "Feb 10, 2009.  changes after discussion at OBI Consortium Workshop Feb 2-6, 2009.  accepted as core term." ;
                 rdfs:label "evaluant role"@en .
 
 
@@ -2651,11 +2677,38 @@ co:PMD_0000501 rdf:type owl:Class ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
+###  https://w3id.org/pmd/co/PMD_0000502
+co:PMD_0000502 rdf:type owl:Class ;
+               rdfs:subClassOf obo:IAO_0000027 ;
+               rdfs:label "2D"@en ;
+               skos:definition "A two-dimensional information content entity is a representation or analysis, commonly applied in studying planar material properties or surface phenomena."@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
 ###  https://w3id.org/pmd/co/PMD_0000503
 co:PMD_0000503 rdf:type owl:Class ;
-               rdfs:subClassOf co:PMD_0020131 ;
+               rdfs:subClassOf co:PMD_0020243 ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty obo:IAO_0000417 ;
+                                 owl:someValuesFrom [ owl:intersectionOf ( obo:IAO_0000109
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty obo:OBI_0000312 ;
+                                                                             owl:someValuesFrom [ owl:intersectionOf ( obo:BFO_0000015
+                                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                                         owl:onProperty obo:STATO_0000102 ;
+                                                                                                                         owl:someValuesFrom obo:IAO_0000104
+                                                                                                                       ]
+                                                                                                                     ) ;
+                                                                                                  rdf:type owl:Class
+                                                                                                ]
+                                                                           ]
+                                                                         ) ;
+                                                      rdf:type owl:Class
+                                                    ]
+                               ] ;
+               obo:IAO_0000116 "TODO: axiom needs refinement"@en ;
                rdfs:label "ASTM grainsize"@en ;
-               skos:definition "The ASTM grain size is a scalar specifically describing the size of grains in a crystalline material as defined by ASTM standards."@en ;
+               skos:definition "The ASTM grain size is a quality that is measured through a process that follows the ASTM standard."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -2679,8 +2732,10 @@ co:PMD_0000512 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000522
 co:PMD_0000522 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000015 ;
-               rdfs:label "application of mechanical load"@en ;
-               skos:definition "An application of mechanical load is the process of applying force or stress to a material to observe its response or measure its properties."@en .
+               rdfs:label "application of mechanical load"@en ,
+                          "mechanical loading"@en ;
+               skos:definition "An application of mechanical load is the process of applying force or stress to a material to observe its response or measure its properties."@en ,
+                               "application of external forces, moments, or imposed displacements to objects or the equivalent loadings (stresses, strains) to materials."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0000538
@@ -2822,7 +2877,7 @@ co:PMD_0000595 rdf:type owl:Class ;
 co:PMD_0000596 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000015 ;
                rdfs:label "deformation"@en ;
-               skos:definition "The deformation is a process describing a change in the shape, size, or structure of a material under the influence of stress or force."@en ;
+               skos:definition "The deformation is a process describing a change in the shape, size, or structure of a material often under the influence of stress or force."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -2883,6 +2938,15 @@ co:PMD_0000636 rdf:type owl:Class ;
                obo:IAO_0000119 "“Extensometer.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/extensometer. Accessed 5 Dec. 2022."@en ;
                rdfs:label "extensometer"@en ;
                skos:definition "A device for measuring minute deformations of test specimens caused by tension, compression, bending, or twisting."@en .
+
+
+###  https://w3id.org/pmd/co/PMD_0000637
+co:PMD_0000637 rdf:type owl:Class ;
+               rdfs:subClassOf co:PMD_0000602 ;
+               rdfs:label "Materialermüdungsprüfmaschine"@de ,
+                          "fatigue testing machine"@en ;
+               skos:definition "A device used to test the fatigue resistance of materials by subjecting them to repeated stress cycles."@en ,
+                               "Ein Gerät zur Prüfung der Ermüdungsresistenz von Materialien, indem diese wiederholten Belastungszyklen ausgesetzt werden."@de .
 
 
 ###  https://w3id.org/pmd/co/PMD_0000638
@@ -3338,9 +3402,13 @@ co:PMD_0020000 rdf:type owl:Class ;
 
 ###  https://w3id.org/pmd/co/PMD_0020003
 co:PMD_0020003 rdf:type owl:Class ;
-               rdfs:subClassOf obo:BFO_0000030 ;
+               rdfs:subClassOf obo:BFO_0000030 ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty obo:RO_0000086 ;
+                                 owl:someValuesFrom co:PMD_0000591
+                               ] ;
                rdfs:label "crystal"@en ;
-               skos:definition "A crystal is an object that has part some entities that concretize a Bravais lattice."@en ;
+               skos:definition "A crystal is an object that has a quality \"crystal structure\"."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -4543,7 +4611,8 @@ co:PMD_0020099 rdf:type owl:Class ;
                rdfs:comment """TODO: possibly extend for 2D (Graphene etc)
 
 More elaborate crystal descriptions may be found in http://emmo.info/domain-crystallography/crystallography or https://purls.helmholtz-metadaten.de/disos/cso"""@en ;
-               rdfs:label "bravais lattice (3d)"@en ;
+               rdfs:label "bravais lattice (3D)"@en ,
+                          "bravais lattice (3d)"@en ;
                skos:definition """The Bravais Lattice is a nature constant that describes the possible geometric arrangement of lattice points in a crystal. The present descriptor is limited to the 14 possible three-dimensional arrangements. 
 
 TODO: possibly extend for 2D (Graphene etc)
@@ -4753,6 +4822,64 @@ co:PMD_0020207 rdf:type owl:Class ;
                skos:definition "Amount of substance n is a molar proportion when the whole is an object aggregate N, which has avogadro number objects (of same type) as parts (n = N/N_A)."@en .
 
 
+###  https://w3id.org/pmd/co/PMD_0020210
+co:PMD_0020210 rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Restriction ;
+                                     owl:onProperty obo:RO_0002351 ;
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass co:PMD_0020140
+                                   ] ;
+               rdfs:subClassOf co:PMD_0020003 ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty obo:RO_0002351 ;
+                                 owl:someValuesFrom co:PMD_0020140
+                               ] ;
+               rdfs:label "elemental crystal"@en ;
+               skos:definition "a crystal that consists of exactly one atomic species"@en .
+
+
+###  https://w3id.org/pmd/co/PMD_0020216
+co:PMD_0020216 rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Class ;
+                                     owl:oneOf ( co:PMD_0020217
+                                                 co:PMD_0020218
+                                                 co:PMD_0020219
+                                                 co:PMD_0020242
+                                               )
+                                   ] ;
+               rdfs:subClassOf obo:OBI_0001930 ;
+               rdfs:label "order scale value"@en ;
+               skos:definition "possible values of characteristic length over which structural correlations persist in a material"@en .
+
+
+###  https://w3id.org/pmd/co/PMD_0020220
+co:PMD_0020220 rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Restriction ;
+                                     owl:onProperty co:PMD_0000077 ;
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass co:PMD_0020216
+                                   ] ;
+               rdfs:subClassOf co:PMD_0020131 ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty co:PMD_0000077 ;
+                                 owl:someValuesFrom co:PMD_0020216
+                               ] ;
+               rdfs:label "order scale"@en ;
+               skos:definition "characteristic length over which structural correlations persist in a material"@en .
+
+
+###  https://w3id.org/pmd/co/PMD_0020243
+co:PMD_0020243 rdf:type owl:Class ;
+               rdfs:subClassOf co:PMD_0020131 ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty obo:RO_0000080 ;
+                                 owl:someValuesFrom co:PMD_0020106
+                               ] ;
+               obo:IAO_0000116 "size values of indiviudal grains are properties of the respective objects"@en ;
+               rdfs:label "grain size"@en ;
+               skos:definition "an average size of the grains of a polycrystal"@en .
+
+
 ###  https://w3id.org/pmd/co/PMD_0025001
 co:PMD_0025001 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020131 ;
@@ -4857,6 +4984,7 @@ co:PMD_0025009 rdf:type owl:Class ;
                                                       rdf:type owl:Class
                                                     ]
                                ] ;
+               rdfs:comment "material reacting process has always energy minimization as a driving force."@en ;
                rdfs:label "material reacting process"@en ;
                skos:definition "Material reacting process is a process which occurs in a portion of matter due to some of its disposition or behavioral material property which has realization in some  stimulating process. Both the material reacting process and stimulating process must be occurent parts of a planned process, if the planned process takes place."@en .
 
@@ -4879,7 +5007,7 @@ co:PMD_0025015 rdf:type owl:Class ;
                                      rdf:type owl:Class
                                    ] ;
                rdfs:subClassOf co:PMD_0020140 ;
-               rdfs:comment "'portion of pure chemical element' and 'has part' only CHEBI:33336" ;
+               rdfs:comment "'portion of pure chemical element' and 'has part' only CHEBI:33336"@en ;
                rdfs:label "portion of lanthanum"@en ;
                skos:definition "A portion of lanthanum is a portion of pure substance that has parts only chebi:lanthanum atom."@en .
 
@@ -4954,7 +5082,8 @@ co:PMD_0040001 rdf:type owl:Class ;
                             "Length is a size that describes the spatial extent of its bearer in one dimension."@en ;
                rdfs:label "length"@en ;
                skos:altLabel "dimension"@en ;
-               skos:definition "Length is a one dimensional size." ;
+               skos:definition "Length is a one dimensional size." ,
+                               "Length is a one dimensional size."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -5158,6 +5287,13 @@ co:PMD_0050157 rdf:type owl:Class ;
                                              skos:definition "Fatigue testing frequency is a process attribute of a fatigue testing which indicates how many loading cycles the sample experiences within a second."@en .
 
 
+###  https://w3id.org/pmd/distel/DISTEL_0000017
+<https://w3id.org/pmd/distel/DISTEL_0000017> rdf:type owl:Class ;
+                                             rdfs:subClassOf co:PMD_0000952 ;
+                                             rdfs:label "fatigue strength"@en ;
+                                             skos:definition "Fatigue strength is a strength which is realized in the fatigue process and desribes the maximum cyclic stress amplitude that a material can withstand without failure."@en .
+
+
 ###  https://w3id.org/pmd/distel/DISTEL_0000018
 <https://w3id.org/pmd/distel/DISTEL_0000018> rdf:type owl:Class ;
                                              rdfs:subClassOf co:PMD_0000008 ,
@@ -5252,6 +5388,45 @@ co:PMD_0050157 rdf:type owl:Class ;
                                              rdfs:subClassOf co:PMD_0000008 ;
                                              rdfs:label "fatigue cycle limit"@en ;
                                              skos:definition "Fatigue cycle limit is a process attribute of a fatigue testing process which describes the maximum number of loading cycles that would be performed if the specimen does not fail (break) before undergoing this number of cycles."@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000031
+<https://w3id.org/pmd/distel/DISTEL_0000031> rdf:type owl:Class ;
+                                             rdfs:subClassOf <https://w3id.org/pmd/distel/DISTEL_0000017> ;
+                                             rdfs:label "fatigue strength at cycle limit"@en ;
+                                             skos:definition "Fatigue strength at cycle limit is a fatigue strength which desribes the maximum cyclic stress amplitude that a material must withstand without failure for a predetermined number of cycles."@en ;
+                                             skos:example "if a material has a fatigue strength of 200 MPa at 10^6 cycles, this means that when subjected to a cyclic stress of 200 MPa, the material is expected to fail after approximately 10^6 cycles."@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000032
+<https://w3id.org/pmd/distel/DISTEL_0000032> rdf:type owl:Class ;
+                                             rdfs:subClassOf <https://w3id.org/pmd/distel/DISTEL_0000017> ;
+                                             rdfs:comment "This limit is characteristic of certain ferrous (iron-based) and titanium alloys, for which the S-N curve and underlying data points level off at high cycle counts, indicating that failure is unlikely to occur below the limit. In contrast, materials like aluminium and copper typically do not exhibit a distinct endurance limit."@en ;
+                                             rdfs:label "fatigue endurance limit"@en ;
+                                             skos:definition "Fatigue endurance limit is a fatigue strength which desribes the maximum cyclic stress amplitude that a material must withstand without failure assuming an infinite number of load cycles."@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000033
+<https://w3id.org/pmd/distel/DISTEL_0000033> rdf:type owl:Class ;
+                                             rdfs:subClassOf co:PMD_0000848 ;
+                                             rdfs:label "knee point"@en ;
+                                             skos:definition "Knee point is a mechnical property realized in a fatigue process which describes the number of cycles at which...."@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000034
+<https://w3id.org/pmd/distel/DISTEL_0000034> rdf:type owl:Class ;
+                                             rdfs:subClassOf co:PMD_0000848 ;
+                                             rdfs:label "slope of S-N curve"@en ;
+                                             skos:definition "Slope of S-N curve is a mechanical property realized in the fatigue testing which defines the inclination of the S-N curve in the finite life fatigue region."@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000035
+<https://w3id.org/pmd/distel/DISTEL_0000035> rdf:type owl:Class ;
+                                             rdfs:subClassOf co:PMD_0000008 ;
+                                             rdfs:comment "For now a free text description, i.e., pointing to a value specification"@en ;
+                                             rdfs:label "failure criterion"@en ;
+                                             skos:definition "Failure criterion is a process attribute which describes the conditions at which a fatigue specimen is considered to be failed, i.e., no further cycles are applied."@en ;
+                                             skos:example "A crack in a specimen, which exceeds certain length. A significant drop in a load which material experiences."@en .
 
 
 ###  https://w3id.org/pmd/tto/TTO_0000005
@@ -5560,7 +5735,7 @@ obo:UO_0000164 rdf:type owl:NamedIndividual .
 
 ###  https://w3id.org/pmd/co/PMD_0020006
 co:PMD_0020006 rdf:type owl:NamedIndividual ;
-               rdfs:label "bravais lattice triclinic primitve"@en ;
+               rdfs:label "bravais lattice triclinic primitive"@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -5745,6 +5920,30 @@ co:PMD_0020125 rdf:type owl:NamedIndividual ;
                rdfs:label "aggregate state suprasolid"@en ;
                skos:definition "A state that exhibits suprafluid and solid properties."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0020217
+co:PMD_0020217 rdf:type owl:NamedIndividual ;
+               rdfs:label "short range order"@en ;
+               skos:definition "periodic arrangement of structural features up to a few entities"@en .
+
+
+###  https://w3id.org/pmd/co/PMD_0020218
+co:PMD_0020218 rdf:type owl:NamedIndividual ;
+               rdfs:label "medium range order"@en ;
+               skos:definition "periodic arrangement of structural features of many entities"@en .
+
+
+###  https://w3id.org/pmd/co/PMD_0020219
+co:PMD_0020219 rdf:type owl:NamedIndividual ;
+               rdfs:label "long range order"@en ;
+               skos:definition "periodic arrangement of structural features of virtually all entities"@en .
+
+
+###  https://w3id.org/pmd/co/PMD_0020242
+co:PMD_0020242 rdf:type owl:NamedIndividual ;
+               rdfs:label "no range order"@en ;
+               skos:definition "no periodic arrangement of structural features of entites"@en .
 
 
 ###  https://w3id.org/pmd/distel/DISTEL_0000001

@@ -5,6 +5,7 @@ WARN	missing_definition	fatigue control type value	definition
 WARN	missing_definition	fatigue control type	definition	
 WARN	missing_definition	fatigue waveform	definition	
 WARN	missing_definition	fatigue testing frequency	definition	
+WARN	missing_definition	fatigue strength	definition	
 WARN	missing_definition	loading amplitude	definition	
 WARN	missing_definition	fatigue mean stress	definition	
 WARN	missing_definition	loading ratio	definition	
@@ -17,3 +18,8 @@ WARN	missing_definition	fatigue maximum stress	definition
 WARN	missing_definition	fatigue minimum stress	definition	
 WARN	missing_definition	loading ratio type value	definition	
 WARN	missing_definition	fatigue cycle limit	definition	
+WARN	missing_definition	fatigue strength at cycle limit	definition	
+WARN	missing_definition	fatigue endurance limit	definition	
+WARN	missing_definition	knee point	definition	
+WARN	missing_definition	slope of S-N curve	definition	
+WARN	missing_definition	failure criterion	definition	

@@ -141,6 +141,8 @@ http://purl.obolibrary.org/obo/IAO_0000119
 http://purl.obolibrary.org/obo/IAO_0000136
 http://purl.obolibrary.org/obo/IAO_0000219
 http://purl.obolibrary.org/obo/IAO_0000221
+http://purl.obolibrary.org/obo/IAO_0000232
+http://purl.obolibrary.org/obo/IAO_0000233
 http://purl.obolibrary.org/obo/IAO_0000235
 http://purl.obolibrary.org/obo/IAO_0000417
 http://purl.obolibrary.org/obo/IAO_0000418
@@ -237,6 +239,7 @@ http://www.wikidata.org/entity/Q11579
 http://www.wikidata.org/entity/Q25343
 http://www.wikidata.org/entity/Q39369
 https://creativecommons.org/licenses/unspecified
+https://github.com/information-artifact-ontology/IAO/issues/206
 https://w3id.org/pmd/DISTEL-MECH_0000000
 https://w3id.org/pmd/co/2.0.8/CrossSectionArea
 https://w3id.org/pmd/co/2.0.8/Diameter
@@ -259,6 +262,7 @@ https://w3id.org/pmd/co/PMD_0000070
 https://w3id.org/pmd/co/PMD_0000075
 https://w3id.org/pmd/co/PMD_0000077
 https://w3id.org/pmd/co/PMD_0000501
+https://w3id.org/pmd/co/PMD_0000502
 https://w3id.org/pmd/co/PMD_0000503
 https://w3id.org/pmd/co/PMD_0000512
 https://w3id.org/pmd/co/PMD_0000522
@@ -280,6 +284,7 @@ https://w3id.org/pmd/co/PMD_0000611
 https://w3id.org/pmd/co/PMD_0000614
 https://w3id.org/pmd/co/PMD_0000619
 https://w3id.org/pmd/co/PMD_0000636
+https://w3id.org/pmd/co/PMD_0000637
 https://w3id.org/pmd/co/PMD_0000638
 https://w3id.org/pmd/co/PMD_0000639
 https://w3id.org/pmd/co/PMD_0000648
@@ -445,6 +450,14 @@ https://w3id.org/pmd/co/PMD_0020150
 https://w3id.org/pmd/co/PMD_0020161
 https://w3id.org/pmd/co/PMD_0020199
 https://w3id.org/pmd/co/PMD_0020207
+https://w3id.org/pmd/co/PMD_0020210
+https://w3id.org/pmd/co/PMD_0020216
+https://w3id.org/pmd/co/PMD_0020217
+https://w3id.org/pmd/co/PMD_0020218
+https://w3id.org/pmd/co/PMD_0020219
+https://w3id.org/pmd/co/PMD_0020220
+https://w3id.org/pmd/co/PMD_0020242
+https://w3id.org/pmd/co/PMD_0020243
 https://w3id.org/pmd/co/PMD_0025001
 https://w3id.org/pmd/co/PMD_0025002
 https://w3id.org/pmd/co/PMD_0025003
@@ -491,6 +504,7 @@ https://w3id.org/pmd/distel/DISTEL_0000013
 https://w3id.org/pmd/distel/DISTEL_0000014
 https://w3id.org/pmd/distel/DISTEL_0000015
 https://w3id.org/pmd/distel/DISTEL_0000016
+https://w3id.org/pmd/distel/DISTEL_0000017
 https://w3id.org/pmd/distel/DISTEL_0000018
 https://w3id.org/pmd/distel/DISTEL_0000019
 https://w3id.org/pmd/distel/DISTEL_0000020
@@ -504,6 +518,11 @@ https://w3id.org/pmd/distel/DISTEL_0000027
 https://w3id.org/pmd/distel/DISTEL_0000028
 https://w3id.org/pmd/distel/DISTEL_0000029
 https://w3id.org/pmd/distel/DISTEL_0000030
+https://w3id.org/pmd/distel/DISTEL_0000031
+https://w3id.org/pmd/distel/DISTEL_0000032
+https://w3id.org/pmd/distel/DISTEL_0000033
+https://w3id.org/pmd/distel/DISTEL_0000034
+https://w3id.org/pmd/distel/DISTEL_0000035
 https://w3id.org/pmd/tto
 https://w3id.org/pmd/tto/ExtensometerGaugeLength
 https://w3id.org/pmd/tto/FinalGaugeLengthAfterFracture
