@@ -17,11 +17,11 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/pmd/distel-mech.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/distel/releases/2026-02-18/distel-mech.owl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/distel/releases/2026-02-20/distel-mech.owl"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>DiStEL Mechanical Testing Ontology</dcterms:title>
-        <owl:versionInfo>2026-02-18</owl:versionInfo>
+        <owl:versionInfo>2026-02-20</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -2405,6 +2405,15 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_30452 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30452">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_137980"/>
+        <rdfs:label>tellurium atom</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_30501 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30501">
@@ -2446,12 +2455,6 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30682">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33521"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label>ruthenium atom</rdfs:label>
     </owl:Class>
     
@@ -2590,6 +2593,16 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33355">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33521"/>
         <rdfs:label>bohrium atom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33359 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33359">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33521"/>
+        <obo:IAO_0000115>A cobalt group element atom of atomic number 45.</obo:IAO_0000115>
+        <rdfs:label>rhodium atom</rdfs:label>
     </owl:Class>
     
 
@@ -3696,7 +3709,7 @@ Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subcl
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">aggregate state</rdfs:label>
-        <skos:definition xml:lang="en">The aggregate state is a morphological quality representing the physical state of a material, such as solid, liquid, or gas.</skos:definition>
+        <skos:definition xml:lang="en">an intensive quality representing the physical state of a material, such as solid, liquid, or gasous</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
     
@@ -3756,9 +3769,19 @@ Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subcl
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000551">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0025001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000004"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0025002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">See the editor note of composition to understand the difference between composition and chemical composition.
+
+See the pattern example of composition to underatand the difference between composition and proportion.</rdfs:comment>
         <rdfs:label xml:lang="en">chemical composition</rdfs:label>
-        <skos:definition xml:lang="en">The chemical composition is a quality describing the types and proportions of elements or compounds present in a material.</skos:definition>
+        <skos:definition xml:lang="en">The chemical composition is an intensive quality of a portion of matter which describes the types and proportions of pure chemical elements in the portion of matter, and it is a subject of some chemical composition data item.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
+        <co:PMD_0000064 xml:lang="en">Material has quality chemical composition. Chemical composition is a subject of chemical composition data item. Chemical composition data item has members fraction value specifications (which have a numeral and a unit). Material has part portion of carbon. Material has relational quality mass proportion. Portion of carbon  has relational quality mass proportion. Mass propotion is specified by value fraction value specification. Same approach for all chemical elements.</co:PMD_0000064>
     </owl:Class>
     
 
@@ -3890,7 +3913,7 @@ Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subcl
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000595">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020131"/>
         <rdfs:label xml:lang="en">defect density</rdfs:label>
-        <skos:definition xml:lang="en">The defect density is a morphological quality describing the number of defects per unit volume or area in a material, which can affect its mechanical and electronic properties.</skos:definition>
+        <skos:definition xml:lang="en">an intensive quality describing the number of defects per unit volume or area in a material, which can affect its mechanical and electronic properties</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
     
@@ -4022,16 +4045,15 @@ Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subcl
     <!-- https://w3id.org/pmd/co/PMD_0000639 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000639">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0025004"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000852"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020026"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">ferrous alloy</rdfs:label>
-        <skos:definition xml:lang="en">A ferrous alloy is a metal describing an alloy containing iron as its principal element, often combined with other elements for enhanced properties.</skos:definition>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
+        <rdfs:label xml:lang="en">ferrous metal</rdfs:label>
+        <skos:definition xml:lang="en">metal that has iron as primary constituent</skos:definition>
     </owl:Class>
     
 
@@ -4291,8 +4313,9 @@ TODO: Check general class axiom and defintion altogether !!!</skos:definition>
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000853">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020131"/>
+        <rdfs:comment xml:lang="en">typically observed through crystallographic analysis</rdfs:comment>
         <rdfs:label xml:lang="en">crystallographic texture</rdfs:label>
-        <skos:definition xml:lang="en">The crystallographic texture is a morphological quality describing the arrangement and orientation of grains in a metallic material, observed through crystallographic analysis.</skos:definition>
+        <skos:definition xml:lang="en">an intensive quality describing the arrangement and orientation of grains in a polychrystal</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
     
@@ -4598,6 +4621,50 @@ TODO: Check general class axiom and defintion altogether !!!</skos:definition>
     
 
 
+    <!-- https://w3id.org/pmd/co/PMD_0010020 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0010020">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020140"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33359"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020140"/>
+        <rdfs:comment xml:lang="en">A Portion Of Matter that consists of only rhodium atoms.</rdfs:comment>
+        <rdfs:label xml:lang="en">portion of rhodium</rdfs:label>
+        <skos:definition xml:lang="en">A &apos;Portion Of Rhodium&apos; is a &apos;Portion Of Pure Substance&apos; that &apos;consists of&apos; only chebi:rhodium atom.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0010021 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0010021">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020140"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30452"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020140"/>
+        <rdfs:comment xml:lang="en">A Portion Of Matter that consists of only tellurium atoms.</rdfs:comment>
+        <rdfs:label xml:lang="en">portion of tellurium</rdfs:label>
+        <skos:definition xml:lang="en">A &apos;Portion Of Tellurium&apos; is a &apos;Portion Of Pure Substance&apos; that &apos;consists of&apos; only chebi:tellurium atom.</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/co/PMD_0020000 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020000">
@@ -4646,10 +4713,13 @@ TODO: Check general class axiom and defintion altogether !!!</skos:definition>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0025997"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000116 xml:lang="en">See editior note of composition to underatand the difference between composition and chemical composition data items.
+
+To understand the difference between the composition and the composition data item, one has to understand the difference between SDCs and GDCs in BFO. A triple &quot;material entity has quality compsition&quot;, conveys the fact such quality exists without telling us what are fractions of compounds in this material entity. A triple &quot;compostion is subject of composition data item&quot; conveys that there&apos;s an information about values of these fractions. Think of comosition data item as a pdf where the composition is documented.</obo:IAO_0000116>
         <rdfs:comment xml:lang="en">These portions of other matters do not have to be portions of specific chemical elements, i.e., atomic composition, but rather portions of other substances, such as nitric acid and water.</rdfs:comment>
         <rdfs:label xml:lang="en">composition data item</rdfs:label>
         <skos:altLabel xml:lang="en">composition specification</skos:altLabel>
-        <skos:definition xml:lang="en">Composition data item is an information content entity that is about composition of a portion of matter, and it has members fraction specifications of portions of other matters, which are parts of the whole portion of matter.</skos:definition>
+        <skos:definition xml:lang="en">Composition data item is an information content entity that is about composition of a material enity. It has members fraction value specifications which specifiy values of propotions of compounds, which are parts of the material enity.</skos:definition>
         <skos:example xml:lang="en">Nitric acid solution has quality  composition, and  the composition data item is about this composition.The composition data item has members fraction specifications of nitric acid, e.g., 4 vol.%, and distilled water. These fraction specifications specify value of pure substances of nitric acid and distilled water, respectively. Furthermore, these fraction specifications specify values of relational qualities (volume) proportion of nitric acid and (volume) proportion of distilled water.</skos:example>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
@@ -6222,8 +6292,7 @@ TODO: Check general class axiom and defintion altogether !!!</skos:definition>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">steel</rdfs:label>
-        <skos:definition xml:lang="en">Steel is a ferrous alloy that consists of iron and carbon and possibly other alloying elements (and possibly impurities).</skos:definition>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
+        <skos:definition xml:lang="en">steel is a ferrous metal that consists of iron and carbon and possibly other alloying elements (and possibly impurities).</skos:definition>
     </owl:Class>
     
 
@@ -6635,10 +6704,18 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025001">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020131"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000004"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000116 xml:lang="en">There&apos;s a dfference between composition and chemical compositon for the following reason: chemical compositon is relevant when the mass/volume/mole proportions of chemical elements(!) are identified, whlist composition includes proportions of molecules, other pure chemical substances, or even proptions of objects (in an object aggregate).</obo:IAO_0000116>
         <rdfs:label xml:lang="en">composition</rdfs:label>
-        <skos:definition xml:lang="en">Composition is a morphological quality describing the types and proportions of compounds (but not chemical elements) present in a portion of matter.</skos:definition>
+        <skos:definition xml:lang="en">Composition is an intensive quality which defines types and proportions of compounds present in a material entity and is subject of some composition data item.</skos:definition>
         <skos:example xml:lang="en">4 vol.% nitric acid solution, Styrene-Butadiene-Styrene (SBS) Block Copolymer with 50 vol.% of both styrene and butadiene</skos:example>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
+        <co:PMD_0000064 xml:lang="en">Composition is a collective property of a portion of matter, i.e., the triple portion of matter has quality composition holds. As &quot;has quality&quot; is an inverse  functional property, only one instance of portion of matter can have this specific composition. However, proportions describe the relation between the prortion of matter (the whole) and some compound (the part). Thus, the following triples hold: portion of matter has relational quality proportion; portion of matter has part some substance (or whatever is your part); substance has relational quality proportion. &quot;Has relational quality&quot; is not inverse functional, i.e., it can point to a single object from 2 distinct subjects.</co:PMD_0000064>
     </owl:Class>
     
 
@@ -6659,7 +6736,7 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">chemical composition data item</rdfs:label>
         <skos:altLabel xml:lang="en">chemical composition specification</skos:altLabel>
-        <skos:definition xml:lang="en">Chemical composition data item is an information content entity that is about chemical composition of a material and has members fraction specifications of portions of chemical elements, which are parts of the material.</skos:definition>
+        <skos:definition xml:lang="en">Chemical composition data item is an information content entity that is about composition of a portion of matter. It has members fraction value specifications which specifiy values of propotions of portions of (pure) chemical elements, which are parts of the portion of matter.</skos:definition>
         <skos:example xml:lang="en">Steel has quality chemical composition , and the chemical composition data item is about the chemical composition .The chemical composition data item has members fraction specifications of iron and carbon. These fraction specifications specify value of portion of iron and portion of carbon respectively. Furthermore, these fraction specifications specify  values of relational qualities (mass) proportion of iron and (mass) proportion of carbon.</skos:example>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
@@ -6686,17 +6763,6 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
         <rdfs:label xml:lang="en">metallic grain structure</rdfs:label>
         <skos:definition xml:lang="en">metallic grain structure characterizes the distinct phases in the microscopic structure of a metallic material. It concretizes ferrite, austenite, martensite, etc.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</co:PMD_0000060>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0025004 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025004">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000852"/>
-        <rdfs:label xml:lang="en">alloy</rdfs:label>
-        <skos:definition xml:lang="en">An alloy is a material containing any metallic element as its principal element, often combined with other elements for enhanced properties.</skos:definition>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
     
 
@@ -7390,6 +7456,115 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
         <rdfs:label xml:lang="en">failure criterion</rdfs:label>
         <skos:definition xml:lang="en">Failure criterion is a process attribute which describes the conditions at which a fatigue specimen is considered to be failed, i.e., no further cycles are applied.</skos:definition>
         <skos:example xml:lang="en">A crack in a specimen, which exceeds certain length. A significant drop in a load which material experiences.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000036 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000036">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000637"/>
+        <rdfs:label xml:lang="en">tensile fatigue testing machine</rdfs:label>
+        <skos:definition xml:lang="en">Tensile fatigue testing machine is a type of a fatigue testing machine which are designed to evaluate the  dynamic mechanical properties of materials by applying repeated cyclic tension (and often compression/bending) loads. Such machines are primarly designed for uniaxial tension-tension or tension-compression fatigue.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000037 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000037">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000637"/>
+        <obo:IAO_0000119>https://www.sciencedirect.com/science/article/pii/S0142112325002257</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">ultrasonic fatigue testing machine</rdfs:label>
+        <skos:definition xml:lang="en">Ultrasonic fatigue testing machine is a type of a fatigue testing machine which uses forced vibration at the specimen’s fundamental frequency.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000038 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000038">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000502"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000638"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                        <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000638"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000638"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">S-N curve</rdfs:label>
+        <skos:definition xml:lang="en">An S-N curve is a 2D data item, which is a specified output of a fatigue testing and describes an ability of a material to resist fracture under repeated, alternating loads over a finite or infinite duration.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000039 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000009"/>
+        <rdfs:label xml:lang="en">axis label of S-N curve</rdfs:label>
+        <skos:definition xml:lang="en">Axis label of S-N curve is a datum label which desribes the label of the axis (x- or y-) in the S-N curve.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000040 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000040">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000039"/>
+        <rdfs:label xml:lang="en">y-axis label of S-N curve</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000041 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000041">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000039"/>
+        <rdfs:label xml:lang="en">x-axis label of S-N curve</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000042 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000042">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000038"/>
+        <rdfs:label xml:lang="en">semi-log S-N curve</rdfs:label>
+        <skos:definition xml:lang="en">Semi-log S-N curve is a type of S-N curve, where both x-axis (the time variable) is given in logarithmic scale, while y-axis (loading variable) is given in its original scale.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000043 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000043">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000038"/>
+        <rdfs:label xml:lang="en">log-log S-N curve</rdfs:label>
+        <skos:definition xml:lang="en">Log-log S-N curve is a type of S-N curve, where both x-axis (the time variable) and y-axis (loading variable) are given in the logarithm scale.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000044 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000044">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000038"/>
+        <rdfs:label xml:lang="en">linear S-N curve</rdfs:label>
+        <skos:definition xml:lang="en">Linear S-N curve is a type of S-N curve, where both x-axis (the time variable) and y-axis (loading variable) are given in its original scaling.</skos:definition>
     </owl:Class>
     
 

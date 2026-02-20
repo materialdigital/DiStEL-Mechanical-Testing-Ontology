@@ -86,6 +86,7 @@ http://purl.obolibrary.org/obo/CHEBI_30217
 http://purl.obolibrary.org/obo/CHEBI_30430
 http://purl.obolibrary.org/obo/CHEBI_30440
 http://purl.obolibrary.org/obo/CHEBI_30441
+http://purl.obolibrary.org/obo/CHEBI_30452
 http://purl.obolibrary.org/obo/CHEBI_30501
 http://purl.obolibrary.org/obo/CHEBI_30512
 http://purl.obolibrary.org/obo/CHEBI_30513
@@ -106,6 +107,7 @@ http://purl.obolibrary.org/obo/CHEBI_33343
 http://purl.obolibrary.org/obo/CHEBI_33344
 http://purl.obolibrary.org/obo/CHEBI_33348
 http://purl.obolibrary.org/obo/CHEBI_33355
+http://purl.obolibrary.org/obo/CHEBI_33359
 http://purl.obolibrary.org/obo/CHEBI_33363
 http://purl.obolibrary.org/obo/CHEBI_33364
 http://purl.obolibrary.org/obo/CHEBI_33369
@@ -321,6 +323,8 @@ https://w3id.org/pmd/co/PMD_0001028
 https://w3id.org/pmd/co/PMD_0001029
 https://w3id.org/pmd/co/PMD_0001030
 https://w3id.org/pmd/co/PMD_0001032
+https://w3id.org/pmd/co/PMD_0010020
+https://w3id.org/pmd/co/PMD_0010021
 https://w3id.org/pmd/co/PMD_0020000
 https://w3id.org/pmd/co/PMD_0020003
 https://w3id.org/pmd/co/PMD_0020004
@@ -461,7 +465,6 @@ https://w3id.org/pmd/co/PMD_0020243
 https://w3id.org/pmd/co/PMD_0025001
 https://w3id.org/pmd/co/PMD_0025002
 https://w3id.org/pmd/co/PMD_0025003
-https://w3id.org/pmd/co/PMD_0025004
 https://w3id.org/pmd/co/PMD_0025006
 https://w3id.org/pmd/co/PMD_0025007
 https://w3id.org/pmd/co/PMD_0025009
@@ -523,6 +526,15 @@ https://w3id.org/pmd/distel/DISTEL_0000032
 https://w3id.org/pmd/distel/DISTEL_0000033
 https://w3id.org/pmd/distel/DISTEL_0000034
 https://w3id.org/pmd/distel/DISTEL_0000035
+https://w3id.org/pmd/distel/DISTEL_0000036
+https://w3id.org/pmd/distel/DISTEL_0000037
+https://w3id.org/pmd/distel/DISTEL_0000038
+https://w3id.org/pmd/distel/DISTEL_0000039
+https://w3id.org/pmd/distel/DISTEL_0000040
+https://w3id.org/pmd/distel/DISTEL_0000041
+https://w3id.org/pmd/distel/DISTEL_0000042
+https://w3id.org/pmd/distel/DISTEL_0000043
+https://w3id.org/pmd/distel/DISTEL_0000044
 https://w3id.org/pmd/tto
 https://w3id.org/pmd/tto/ExtensometerGaugeLength
 https://w3id.org/pmd/tto/FinalGaugeLengthAfterFracture
