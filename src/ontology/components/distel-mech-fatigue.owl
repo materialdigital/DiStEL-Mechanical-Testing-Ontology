@@ -394,6 +394,109 @@
     
 
 
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000036 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000036">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000637"/>
+        <rdfs:label xml:lang="en">tensile fatigue testing machine</rdfs:label>
+        <skos:definition xml:lang="en">Tensile fatigue testing machine is a type of a fatigue testing machine which are designed to evaluate the  dynamic mechanical properties of materials by applying repeated cyclic tension (and often compression/bending) loads. Such machines are primarly designed for uniaxial tension-tension or tension-compression fatigue.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000037 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000037">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000637"/>
+        <obo:IAO_0000119>https://www.sciencedirect.com/science/article/pii/S0142112325002257</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">ultrasonic fatigue testing machine</rdfs:label>
+        <skos:definition xml:lang="en">Ultrasonic fatigue testing machine is a type of a fatigue testing machine which uses forced vibration at the specimen’s fundamental frequency.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000038 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000038">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000502"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000638"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                        <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000638"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">S-N curve</rdfs:label>
+        <skos:definition xml:lang="en">An S-N curve is a 2D data item, which is a specified output of a fatigue testing and describes an ability of a material to resist fracture under repeated, alternating loads over a finite or infinite duration.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000039 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000009"/>
+        <rdfs:label xml:lang="en">axis label of S-N curve</rdfs:label>
+        <skos:definition xml:lang="en">Axis label of S-N curve is a datum label which desribes the label of the axis (x- or y-) in the S-N curve.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000040 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000040">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000039"/>
+        <rdfs:label xml:lang="en">y-axis label of S-N curve</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000041 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000041">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000039"/>
+        <rdfs:label xml:lang="en">x-axis label of S-N curve</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000042 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000042">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000038"/>
+        <rdfs:label xml:lang="en">semi-log S-N curve</rdfs:label>
+        <skos:definition xml:lang="en">Semi-log S-N curve is a type of S-N curve, where both x-axis (the time variable) is given in logarithmic scale, while y-axis (loading variable) is given in its original scale.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000043 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000043">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000038"/>
+        <rdfs:label xml:lang="en">log-log S-N curve</rdfs:label>
+        <skos:definition xml:lang="en">Log-log S-N curve is a type of S-N curve, where both x-axis (the time variable) and y-axis (loading variable) are given in the logarithm scale.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000044 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000044">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000038"/>
+        <rdfs:label xml:lang="en">linear S-N curve</rdfs:label>
+        <skos:definition xml:lang="en">Linear S-N curve is a type of S-N curve, where both x-axis (the time variable) and y-axis (loading variable) are given in its original scaling.</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
