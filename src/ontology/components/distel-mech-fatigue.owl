@@ -399,7 +399,7 @@
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000036">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000637"/>
         <rdfs:label xml:lang="en">tensile fatigue testing machine</rdfs:label>
-        <skos:definition xml:lang="en">Tensile fatigue testing machine is a type of a fatigue testing machine which are designed to evaluate the  dynamic mechanical properties of materials by applying repeated cyclic tension (and often compression/bending) loads. Such machines are primarly designed for uniaxial tension-tension or tension-compression fatigue.</skos:definition>
+        <skos:definition xml:lang="en">Tensile fatigue testing machine is a type of a fatigue testing machine which are designed to evaluate the mechanical fatigue of materials by applying repeated cyclic tension or compression loads. Such machines are primarly designed for uniaxial tension-tension or tension-compression fatigue.</skos:definition>
     </owl:Class>
     
 
@@ -410,7 +410,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000637"/>
         <obo:IAO_0000119>https://www.sciencedirect.com/science/article/pii/S0142112325002257</obo:IAO_0000119>
         <rdfs:label xml:lang="en">ultrasonic fatigue testing machine</rdfs:label>
-        <skos:definition xml:lang="en">Ultrasonic fatigue testing machine is a type of a fatigue testing machine which uses forced vibration at the specimen’s fundamental frequency.</skos:definition>
+        <skos:definition xml:lang="en">Ultrasonic fatigue testing machine is a type of a fatigue testing machine which applies load at a frequency equal to the specimen’s natural frequency.</skos:definition>
     </owl:Class>
     
 
@@ -418,7 +418,7 @@
     <!-- https://w3id.org/pmd/distel/DISTEL_0000038 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000038">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000502"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000045"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -443,7 +443,7 @@
 
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000039">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000009"/>
-        <rdfs:label xml:lang="en">axis label of S-N curve</rdfs:label>
+        <rdfs:label xml:lang="en">axis label of fatigue curve</rdfs:label>
         <skos:definition xml:lang="en">Axis label of S-N curve is a datum label which desribes the label of the axis (x- or y-) in the S-N curve.</skos:definition>
     </owl:Class>
     
@@ -453,7 +453,7 @@
 
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000040">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000039"/>
-        <rdfs:label xml:lang="en">y-axis label of S-N curve</rdfs:label>
+        <rdfs:label xml:lang="en">y-axis label of fatigue curve</rdfs:label>
     </owl:Class>
     
 
@@ -462,7 +462,7 @@
 
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000041">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000039"/>
-        <rdfs:label xml:lang="en">x-axis label of S-N curve</rdfs:label>
+        <rdfs:label xml:lang="en">x-axis label of fatigue curve</rdfs:label>
     </owl:Class>
     
 
@@ -493,6 +493,65 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000038"/>
         <rdfs:label xml:lang="en">linear S-N curve</rdfs:label>
         <skos:definition xml:lang="en">Linear S-N curve is a type of S-N curve, where both x-axis (the time variable) and y-axis (loading variable) are given in its original scaling.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000045 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000045">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000502"/>
+        <rdfs:label xml:lang="en">fatigue life curve</rdfs:label>
+        <skos:definition xml:lang="en">Fatigue life curve is a 2D data item which is an output from a fatigue testing process, and it is about the performance of a material under cyclic load.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000046 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000046">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000045"/>
+        <rdfs:label xml:lang="en">ε-N curve</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000047 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000047">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000638"/>
+        <rdfs:label xml:lang="en">rolling contact fatigue testing process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000048 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000048">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000638"/>
+        <rdfs:label xml:lang="en">tensile fatigue testing process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000049 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000049">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000005"/>
+        <rdfs:label xml:lang="en">number of sustained loading cycles</rdfs:label>
+        <skos:altLabel xml:lang="en">fatigue lifetime</skos:altLabel>
+        <skos:definition xml:lang="en">Number of sustained loading cycles is a behavioral characteristic of a material in a single fatigue testing process, and it describes how many cycles of applied load the material can sustain before failure.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000050 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000050">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0025020"/>
+        <rdfs:comment>Must be defined class based on the number of sustained loading cycles or fatigue cycle limit??</rdfs:comment>
+        <rdfs:label xml:lang="en">single fatigue testing process with run out</rdfs:label>
+        <skos:definition xml:lang="en">Single fatigue testing process with run out is a single fatigue testing process in which the specimen did not fail when the fatigue cycle limit is reached.</skos:definition>
     </owl:Class>
     
 
