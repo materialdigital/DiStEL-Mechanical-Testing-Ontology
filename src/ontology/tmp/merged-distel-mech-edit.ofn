@@ -98,6 +98,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_30687>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_32594>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33250>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33301>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33303>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33310>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33319>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33330>))
@@ -193,6 +194,7 @@ Declaration(Class(<https://w3id.org/pmd/co/PMD_0000637>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000638>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000639>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000648>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0000654>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000663>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000667>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000773>))
@@ -380,6 +382,12 @@ Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000041>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000042>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000043>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000044>))
+Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000045>))
+Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000046>))
+Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000047>))
+Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000048>))
+Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000049>))
+Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000050>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000005>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000009>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000012>))
@@ -693,7 +701,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000051> "has
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/BFO_0000051>)
 TransitiveObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>)
 
-# Object Property: <http://purl.obolibrary.org/obo/BFO_0000054> (realized in)
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000054> (has realization)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000054> "has realization"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000054> "realized in"@en)
@@ -1787,6 +1795,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_25585> <http://purl.obolibrary.
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_25805> "oxygen atom")
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_25805> <http://purl.obolibrary.org/obo/CHEBI_25585>)
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_25805> <http://purl.obolibrary.org/obo/CHEBI_33303>)
 
 # Class: <http://purl.obolibrary.org/obo/CHEBI_26216> (potassium atom)
 
@@ -1802,6 +1811,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_26708> <http://purl.obolibrary.
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_26833> "sulfur atom")
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_26833> <http://purl.obolibrary.org/obo/CHEBI_25585>)
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_26833> <http://purl.obolibrary.org/obo/CHEBI_33303>)
 
 # Class: <http://purl.obolibrary.org/obo/CHEBI_27007> (tin atom)
 
@@ -1833,6 +1843,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_27563> <http://purl.obolibrary.
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_27568> "selenium atom")
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_27568> <http://purl.obolibrary.org/obo/CHEBI_25585>)
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_27568> <http://purl.obolibrary.org/obo/CHEBI_33303>)
 
 # Class: <http://purl.obolibrary.org/obo/CHEBI_27573> (silicon atom)
 
@@ -1931,6 +1942,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_30441> <http://purl.obolibrary.
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_30452> "tellurium atom")
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_30452> <http://purl.obolibrary.org/obo/CHEBI_137980>)
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_30452> <http://purl.obolibrary.org/obo/CHEBI_33303>)
 
 # Class: <http://purl.obolibrary.org/obo/CHEBI_30501> (beryllium atom)
 
@@ -1978,6 +1990,12 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_33250> <http://purl.obolibrary.
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_33301> "bismuth atom")
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_33301> <http://purl.obolibrary.org/obo/CHEBI_33521>)
+
+# Class: <http://purl.obolibrary.org/obo/CHEBI_33303> (chalcogen)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_33303> "Any p-block element belonging to the group 16 family of the periodic table.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_33303> "chalcogen")
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_33303> <http://purl.obolibrary.org/obo/CHEBI_33250>)
 
 # Class: <http://purl.obolibrary.org/obo/CHEBI_33310> (neon atom)
 
@@ -2266,7 +2284,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000109> "mea
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000109> <http://purl.obolibrary.org/obo/IAO_0000027>)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000109> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0001938> <http://purl.obolibrary.org/obo/OBI_0001933>))
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (Homo sapiens)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (homo sapiens)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "Homo sapiens")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "homo sapiens")
@@ -2512,6 +2530,7 @@ AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/co/PMD_0000005> "Technica
 As a consequence, the behavoiral material properties in the ontology are differeciated according to their measurement method, e.g. Brinell hardness and Vickers hardness are different types of indentation hardness rather than different measures/quantification (GDC) of the materials property 'indentation hardness'.
  The 'unit idenifieres' of such properties (e.g. \"HV1\", \"HV10\", \"HBW\") are strictly speaking not units but rather references to the measurement methodology used to determine a numeric value that quantifies the property."@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000005> "behavioral material property"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000005> "material property"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000005> "A property is a material trait in terms of the kind and magnitude of response to a specific imposed stimulus. Generally, definitions of properties are made independent of material shape and size.
 
 (Callister, W.D., Rethwisch, D.G., Materials Science and Engineering, Wiley, 2014)
@@ -2523,10 +2542,12 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 
 We only deal with intensive (system-size independent) materrial properties. Extensive properties that depend on the testpiece/specimen/probe size should be found in the respective testing method modules."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000005> "true"^^xsd:boolean)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000005> <http://purl.obolibrary.org/obo/BFO_0000016>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000005> <http://purl.obolibrary.org/obo/BFO_0000017>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000005> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000915> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))))) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001029> <https://w3id.org/pmd/co/PMD_0000915>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000950>)))
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <https://w3id.org/pmd/co/PMD_0000950>))
-SubClassOf(<https://w3id.org/pmd/co/PMD_0000005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/BFO_0000015>))))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/BFO_0000015>))))
+SubClassOf(Annotation(rdfs:comment "Due to the duality of object and portion of matter this axiom can not be an equivalent class axiom."@en) <https://w3id.org/pmd/co/PMD_0000005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/BFO_0000015>))))
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000005> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000000>))
 
 # Class: <https://w3id.org/pmd/co/PMD_0000008> (process attribute)
@@ -2593,7 +2614,7 @@ EquivalentClasses(<https://w3id.org/pmd/co/PMD_0000512> ObjectExactCardinality(1
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000512> <https://w3id.org/pmd/co/PMD_0020131>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000512> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/co/PMD_0020116>))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000522> (mechanical loading)
+# Class: <https://w3id.org/pmd/co/PMD_0000522> (application of mechanical load)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000522> "application of mechanical load"@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000522> "mechanical loading"@en)
@@ -2645,7 +2666,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0000552> ObjectSomeValuesFrom(<http://pu
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000553> "chemical potential"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000553> "The chemical potential is a thermodynamic quality describing the energy change associated with the addition of a small quantity of a substance to a system at constant temperature and pressure."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000553> "true"^^xsd:boolean)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0000553> <https://w3id.org/pmd/co/PMD_0020148>)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000553> <https://w3id.org/pmd/co/PMD_0020131>)
 
 # Class: <https://w3id.org/pmd/co/PMD_0000560> (Reinigen)
 
@@ -2795,6 +2816,16 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000648> "Ein Gerät zur Formgebung von Materialien unter verschiedenen Bedingungen, einschließlich Zug-, Druck- und Scherbedingungen."@de)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000648> <https://w3id.org/pmd/co/PMD_0000602>)
 
+# Class: <https://w3id.org/pmd/co/PMD_0000654> (functional material)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <https://w3id.org/pmd/co/PMD_0000654> "Classified by the role in a system."@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000654> "functional material"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000654> "A functional material F is an engineered material which has the disposition to be used for an object O (O consists of F) and O's function is other/more than mechanical load carrying."@en)
+AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000654> "true"^^xsd:boolean)
+EquivalentClasses(<https://w3id.org/pmd/co/PMD_0000654> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000085> <http://purl.obolibrary.org/obo/BFO_0000034>)))))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000654> <https://w3id.org/pmd/co/PMD_0000002>)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000654> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000085> <http://purl.obolibrary.org/obo/BFO_0000034>))))
+
 # Class: <https://w3id.org/pmd/co/PMD_0000663> (kristallit)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000663> "crystallite"@en)
@@ -2881,7 +2912,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<http://pu
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000000>))
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000522>))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000849> (Mechanische Eigenschaften Analyseverfahren)
+# Class: <https://w3id.org/pmd/co/PMD_0000849> (mechanical property analyzing process)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000849> "Mechanische Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000849> "mechanical property analyzing process"@en)
@@ -3002,7 +3033,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000952> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000952> <https://w3id.org/pmd/co/PMD_0000848>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "Struktur Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "structural property analyzing process"@en)
@@ -3290,7 +3321,7 @@ AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/co/PMD_0020047> "A Portio
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020047> "portion of phosphorus"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020047> "A 'Portion Of Phosphorus' is a 'Portion Of Pure Substance' that 'consists of' only chebi:phosphorus atom."@en)
 EquivalentClasses(<https://w3id.org/pmd/co/PMD_0020047> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0020140> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/CHEBI_28659>)))
-SubClassOf(<https://w3id.org/pmd/co/PMD_0020047> <https://w3id.org/pmd/co/PMD_0020094>)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0020047> <https://w3id.org/pmd/co/PMD_0020140>)
 
 # Class: <https://w3id.org/pmd/co/PMD_0020048> (portion of boron)
 
@@ -3402,7 +3433,7 @@ AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/co/PMD_0020061> "A Portio
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020061> "portion of krypton"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020061> "A 'Portion Of Krypton' is a 'Portion Of Pure Substance' that 'consists of' only chebi:krypton atom."@en)
 EquivalentClasses(<https://w3id.org/pmd/co/PMD_0020061> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0020140> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/CHEBI_49696>)))
-SubClassOf(<https://w3id.org/pmd/co/PMD_0020061> <https://w3id.org/pmd/co/PMD_0020037>)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0020061> <https://w3id.org/pmd/co/PMD_0020140>)
 
 # Class: <https://w3id.org/pmd/co/PMD_0020062> (portion of bismuth)
 
@@ -3691,7 +3722,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020098> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020098> <http://purl.obolibrary.org/obo/BFO_0000031>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0020099> (bravais lattice (3D))
+# Class: <https://w3id.org/pmd/co/PMD_0020099> (bravais lattice (3d))
 
 AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/co/PMD_0020099> "TODO: possibly extend for 2D (Graphene etc)
 
@@ -3783,6 +3814,8 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020131> "An intensive quality is a quality that inheres in only portion of matter and thus is independent of the bearers (system-) size."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020131> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020131> <http://purl.obolibrary.org/obo/BFO_0000019>)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0020131> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> <https://w3id.org/pmd/co/PMD_0000001>))
+SubClassOf(Annotation(rdfs:comment "Due to the duality of object and portion of matter this axiom can not be an equivalent class axiom."@en) <https://w3id.org/pmd/co/PMD_0020131> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> <https://w3id.org/pmd/co/PMD_0000001>))
 DisjointClasses(<https://w3id.org/pmd/co/PMD_0020131> <https://w3id.org/pmd/co/PMD_0020148>)
 
 # Class: <https://w3id.org/pmd/co/PMD_0020132> (size)
@@ -4250,37 +4283,37 @@ SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000035> <https://w3id.org/pmd/co
 # Class: <https://w3id.org/pmd/distel/DISTEL_0000036> (tensile fatigue testing machine)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000036> "tensile fatigue testing machine"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000036> "Tensile fatigue testing machine is a type of a fatigue testing machine which are designed to evaluate the  dynamic mechanical properties of materials by applying repeated cyclic tension (and often compression/bending) loads. Such machines are primarly designed for uniaxial tension-tension or tension-compression fatigue."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000036> "Tensile fatigue testing machine is a type of a fatigue testing machine which are designed to evaluate the mechanical fatigue of materials by applying repeated cyclic tension or compression loads. Such machines are primarly designed for uniaxial tension-tension or tension-compression fatigue."@en)
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000036> <https://w3id.org/pmd/co/PMD_0000637>)
 
 # Class: <https://w3id.org/pmd/distel/DISTEL_0000037> (ultrasonic fatigue testing machine)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <https://w3id.org/pmd/distel/DISTEL_0000037> "https://www.sciencedirect.com/science/article/pii/S0142112325002257")
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000037> "ultrasonic fatigue testing machine"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000037> "Ultrasonic fatigue testing machine is a type of a fatigue testing machine which uses forced vibration at the specimen’s fundamental frequency."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000037> "Ultrasonic fatigue testing machine is a type of a fatigue testing machine which applies load at a frequency equal to the specimen’s natural frequency."@en)
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000037> <https://w3id.org/pmd/co/PMD_0000637>)
 
 # Class: <https://w3id.org/pmd/distel/DISTEL_0000038> (S-N curve)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000038> "S-N curve"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000038> "An S-N curve is a 2D data item, which is a specified output of a fatigue testing and describes an ability of a material to resist fracture under repeated, alternating loads over a finite or infinite duration."@en)
-SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000038> <https://w3id.org/pmd/co/PMD_0000502>)
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000038> <https://w3id.org/pmd/distel/DISTEL_0000045>)
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000038> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <https://w3id.org/pmd/co/PMD_0000638>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <https://w3id.org/pmd/co/PMD_0000638>)))
 
-# Class: <https://w3id.org/pmd/distel/DISTEL_0000039> (axis label of S-N curve)
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000039> (axis label of fatigue curve)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000039> "axis label of S-N curve"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000039> "axis label of fatigue curve"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000039> "Axis label of S-N curve is a datum label which desribes the label of the axis (x- or y-) in the S-N curve."@en)
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000039> <http://purl.obolibrary.org/obo/IAO_0000009>)
 
-# Class: <https://w3id.org/pmd/distel/DISTEL_0000040> (y-axis label of S-N curve)
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000040> (y-axis label of fatigue curve)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000040> "y-axis label of S-N curve"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000040> "y-axis label of fatigue curve"@en)
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000040> <https://w3id.org/pmd/distel/DISTEL_0000039>)
 
-# Class: <https://w3id.org/pmd/distel/DISTEL_0000041> (x-axis label of S-N curve)
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000041> (x-axis label of fatigue curve)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000041> "x-axis label of S-N curve"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000041> "x-axis label of fatigue curve"@en)
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000041> <https://w3id.org/pmd/distel/DISTEL_0000039>)
 
 # Class: <https://w3id.org/pmd/distel/DISTEL_0000042> (semi-log S-N curve)
@@ -4300,6 +4333,41 @@ SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000043> <https://w3id.org/pmd/di
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000044> "linear S-N curve"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000044> "Linear S-N curve is a type of S-N curve, where both x-axis (the time variable) and y-axis (loading variable) are given in its original scaling."@en)
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000044> <https://w3id.org/pmd/distel/DISTEL_0000038>)
+
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000045> (fatigue life curve)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000045> "fatigue life curve"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000045> "Fatigue life curve is a 2D data item which is an output from a fatigue testing process, and it is about the performance of a material under cyclic load."@en)
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000045> <https://w3id.org/pmd/co/PMD_0000502>)
+
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000046> (ε-N curve)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000046> "ε-N curve"@en)
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000046> <https://w3id.org/pmd/distel/DISTEL_0000045>)
+
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000047> (rolling contact fatigue testing process)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000047> "rolling contact fatigue testing process"@en)
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000047> <https://w3id.org/pmd/co/PMD_0000638>)
+
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000048> (tensile fatigue testing process)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000048> "tensile fatigue testing process"@en)
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000048> <https://w3id.org/pmd/co/PMD_0000638>)
+
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000049> (number of sustained loading cycles)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000049> "number of sustained loading cycles"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/pmd/distel/DISTEL_0000049> "fatigue lifetime"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000049> "Number of sustained loading cycles is a behavioral characteristic of a material in a single fatigue testing process, and it describes how many cycles of applied load the material can sustain before failure."@en)
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000049> <https://w3id.org/pmd/co/PMD_0000005>)
+
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000050> (single fatigue testing process with run out)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/distel/DISTEL_0000050> "Must be defined class based on the number of sustained loading cycles or fatigue cycle limit??")
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000050> "single fatigue testing process with run out"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000050> "Single fatigue testing process with run out is a single fatigue testing process in which the specimen did not fail when the fatigue cycle limit is reached."@en)
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000050> <https://w3id.org/pmd/co/PMD_0025020>)
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000005> (extension)
 
@@ -4342,7 +4410,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000012> <https://www.merriam-webster.com/dictionary/cross%20section>)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000012> <https://w3id.org/pmd/co/PMD_0020199>)
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000017> (Extensometer-Messlänge)
+# Class: <https://w3id.org/pmd/tto/TTO_0000017> (extensometer gauge length)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000017> <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000017> "Extensometer-Messlänge"@de)

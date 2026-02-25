@@ -26,9 +26,15 @@ WARN	missing_definition	failure criterion	definition
 WARN	missing_definition	tensile fatigue testing machine	definition	
 WARN	missing_definition	ultrasonic fatigue testing machine	definition	
 WARN	missing_definition	S-N curve	definition	
-WARN	missing_definition	axis label of S-N curve	definition	
-WARN	missing_definition	y-axis label of S-N curve	definition	
-WARN	missing_definition	x-axis label of S-N curve	definition	
+WARN	missing_definition	axis label of fatigue curve	definition	
+WARN	missing_definition	y-axis label of fatigue curve	definition	
+WARN	missing_definition	x-axis label of fatigue curve	definition	
 WARN	missing_definition	semi-log S-N curve	definition	
 WARN	missing_definition	log-log S-N curve	definition	
 WARN	missing_definition	linear S-N curve	definition	
+WARN	missing_definition	fatigue life curve	definition	
+WARN	missing_definition	ε-N curve	definition	
+WARN	missing_definition	rolling contact fatigue testing process	definition	
+WARN	missing_definition	tensile fatigue testing process	definition	
+WARN	missing_definition	number of sustained loading cycles	definition	
+WARN	missing_definition	single fatigue testing process with run out	definition	

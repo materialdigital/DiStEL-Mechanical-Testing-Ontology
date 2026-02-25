@@ -17,14 +17,14 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/pmd/distel/">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/distel/2026-02-20"/>
-        <dcterms:bibliographicCitation>distel-mech: DiStEL Mechanical Testing Ontology. Version 2026-02-20, https://w3id.org/pmd/distel/</dcterms:bibliographicCitation>
-        <dcterms:created>2026-02-20</dcterms:created>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/distel/2026-02-25"/>
+        <dcterms:bibliographicCitation>distel-mech: DiStEL Mechanical Testing Ontology. Version 2026-02-25, https://w3id.org/pmd/distel/</dcterms:bibliographicCitation>
+        <dcterms:created>2026-02-25</dcterms:created>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>DiStEL Mechanical Testing Ontology</dcterms:title>
         <owl:priorVersion rdf:resource="https://w3id.org/pmd/distel/"/>
-        <owl:versionInfo>2026-02-20</owl:versionInfo>
+        <owl:versionInfo>2026-02-25</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -2172,6 +2172,7 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_25805">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25585"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33303"/>
         <rdfs:label>oxygen atom</rdfs:label>
     </owl:Class>
     
@@ -2199,6 +2200,7 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_26833">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25585"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33303"/>
         <rdfs:label>sulfur atom</rdfs:label>
     </owl:Class>
     
@@ -2254,6 +2256,7 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27568">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25585"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33303"/>
         <rdfs:label>selenium atom</rdfs:label>
     </owl:Class>
     
@@ -2424,6 +2427,7 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30452">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_137980"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33303"/>
         <rdfs:label>tellurium atom</rdfs:label>
     </owl:Class>
     
@@ -2508,6 +2512,16 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33301">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33521"/>
         <rdfs:label>bismuth atom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33303 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33303">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33250"/>
+        <obo:IAO_0000115>Any p-block element belonging to the group 16 family of the periodic table.</obo:IAO_0000115>
+        <rdfs:label>chalcogen</rdfs:label>
     </owl:Class>
     
 
@@ -3482,7 +3496,7 @@ granularity. At these coarser levels, the individual molecules cannot be differe
     <!-- https://w3id.org/pmd/co/PMD_0000005 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000005">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -3535,6 +3549,7 @@ granularity. At these coarser levels, the individual molecules cannot be differe
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:nodeID="genid155"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
@@ -3545,6 +3560,7 @@ granularity. At these coarser levels, the individual molecules cannot be differe
 As a consequence, the behavoiral material properties in the ontology are differeciated according to their measurement method, e.g. Brinell hardness and Vickers hardness are different types of indentation hardness rather than different measures/quantification (GDC) of the materials property &apos;indentation hardness&apos;.
  The &apos;unit idenifieres&apos; of such properties (e.g. &quot;HV1&quot;, &quot;HV10&quot;, &quot;HBW&quot;) are strictly speaking not units but rather references to the measurement methodology used to determine a numeric value that quantifies the property.</rdfs:comment>
         <rdfs:label xml:lang="en">behavioral material property</rdfs:label>
+        <rdfs:label xml:lang="en">material property</rdfs:label>
         <skos:definition xml:lang="en">A property is a material trait in terms of the kind and magnitude of response to a specific imposed stimulus. Generally, definitions of properties are made independent of material shape and size.
 
 (Callister, W.D., Rethwisch, D.G., Materials Science and Engineering, Wiley, 2014)
@@ -3557,6 +3573,26 @@ We only deal with intensive (system-size independent) material properties. Exten
 We only deal with intensive (system-size independent) materrial properties. Extensive properties that depend on the testpiece/specimen/probe size should be found in the respective testing method modules.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
+    <owl:Restriction rdf:nodeID="genid155">
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+        <owl:someValuesFrom>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:someValuesFrom>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/pmd/co/PMD_0000005"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid155"/>
+        <rdfs:comment xml:lang="en">Due to the duality of object and portion of matter this axiom can not be an equivalent class axiom.</rdfs:comment>
+    </owl:Axiom>
     
 
 
@@ -3822,7 +3858,7 @@ See the pattern example of composition to underatand the difference between comp
     <!-- https://w3id.org/pmd/co/PMD_0000553 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000553">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020148"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020131"/>
         <rdfs:label xml:lang="en">chemical potential</rdfs:label>
         <skos:definition xml:lang="en">The chemical potential is a thermodynamic quality describing the energy change associated with the addition of a small quantity of a substance to a system at constant temperature and pressure.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
@@ -4081,6 +4117,55 @@ See the pattern example of composition to underatand the difference between comp
         <rdfs:label xml:lang="en">forming machine</rdfs:label>
         <skos:definition xml:lang="en">A device used for shaping materials under various conditions, including tensile, compressive, and shearing.</skos:definition>
         <skos:definition xml:lang="de">Ein Gerät zur Formgebung von Materialien unter verschiedenen Bedingungen, einschließlich Zug-, Druck- und Scherbedingungen.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0000654 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000654">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000002"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000085"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000085"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000116 xml:lang="en">Classified by the role in a system.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">functional material</rdfs:label>
+        <skos:definition xml:lang="en">A functional material F is an engineered material which has the disposition to be used for an object O (O consists of F) and O&apos;s function is other/more than mechanical load carrying.</skos:definition>
+        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
     
 
@@ -5232,7 +5317,7 @@ To understand the difference between the composition and the composition data it
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020094"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020140"/>
         <rdfs:comment xml:lang="en">A Portion Of Matter that consists of only phosphorus atoms.</rdfs:comment>
         <rdfs:label xml:lang="en">portion of phosphorus</rdfs:label>
         <skos:definition xml:lang="en">A &apos;Portion Of Phosphorus&apos; is a &apos;Portion Of Pure Substance&apos; that &apos;consists of&apos; only chebi:phosphorus atom.</skos:definition>
@@ -5540,7 +5625,7 @@ To understand the difference between the composition and the composition data it
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020037"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020140"/>
         <rdfs:comment xml:lang="en">A Portion Of Matter that consists of only krypton atoms.</rdfs:comment>
         <rdfs:label xml:lang="en">portion of krypton</rdfs:label>
         <skos:definition xml:lang="en">A &apos;Portion Of Krypton&apos; is a &apos;Portion Of Pure Substance&apos; that &apos;consists of&apos; only chebi:krypton atom.</skos:definition>
@@ -6487,12 +6572,23 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020131">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:subClassOf rdf:nodeID="genid606"/>
         <owl:disjointWith rdf:resource="https://w3id.org/pmd/co/PMD_0020148"/>
         <rdfs:label xml:lang="en">intensive quality</rdfs:label>
         <skos:altLabel xml:lang="en">Point property</skos:altLabel>
         <skos:definition xml:lang="en">An intensive quality is a quality that inheres in only portion of matter and thus is independent of the bearers (system-) size.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
+    <owl:Restriction rdf:nodeID="genid606">
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000001"/>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/pmd/co/PMD_0020131"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid606"/>
+        <rdfs:comment xml:lang="en">Due to the duality of object and portion of matter this axiom can not be an equivalent class axiom.</rdfs:comment>
+    </owl:Axiom>
     
 
 
@@ -7480,7 +7576,7 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000036">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000637"/>
         <rdfs:label xml:lang="en">tensile fatigue testing machine</rdfs:label>
-        <skos:definition xml:lang="en">Tensile fatigue testing machine is a type of a fatigue testing machine which are designed to evaluate the  dynamic mechanical properties of materials by applying repeated cyclic tension (and often compression/bending) loads. Such machines are primarly designed for uniaxial tension-tension or tension-compression fatigue.</skos:definition>
+        <skos:definition xml:lang="en">Tensile fatigue testing machine is a type of a fatigue testing machine which are designed to evaluate the mechanical fatigue of materials by applying repeated cyclic tension or compression loads. Such machines are primarly designed for uniaxial tension-tension or tension-compression fatigue.</skos:definition>
     </owl:Class>
     
 
@@ -7491,7 +7587,7 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000637"/>
         <obo:IAO_0000119>https://www.sciencedirect.com/science/article/pii/S0142112325002257</obo:IAO_0000119>
         <rdfs:label xml:lang="en">ultrasonic fatigue testing machine</rdfs:label>
-        <skos:definition xml:lang="en">Ultrasonic fatigue testing machine is a type of a fatigue testing machine which uses forced vibration at the specimen’s fundamental frequency.</skos:definition>
+        <skos:definition xml:lang="en">Ultrasonic fatigue testing machine is a type of a fatigue testing machine which applies load at a frequency equal to the specimen’s natural frequency.</skos:definition>
     </owl:Class>
     
 
@@ -7499,7 +7595,7 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
     <!-- https://w3id.org/pmd/distel/DISTEL_0000038 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000038">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000502"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000045"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -7530,7 +7626,7 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
 
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000039">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000009"/>
-        <rdfs:label xml:lang="en">axis label of S-N curve</rdfs:label>
+        <rdfs:label xml:lang="en">axis label of fatigue curve</rdfs:label>
         <skos:definition xml:lang="en">Axis label of S-N curve is a datum label which desribes the label of the axis (x- or y-) in the S-N curve.</skos:definition>
     </owl:Class>
     
@@ -7540,7 +7636,7 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
 
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000040">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000039"/>
-        <rdfs:label xml:lang="en">y-axis label of S-N curve</rdfs:label>
+        <rdfs:label xml:lang="en">y-axis label of fatigue curve</rdfs:label>
     </owl:Class>
     
 
@@ -7549,7 +7645,7 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
 
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000041">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000039"/>
-        <rdfs:label xml:lang="en">x-axis label of S-N curve</rdfs:label>
+        <rdfs:label xml:lang="en">x-axis label of fatigue curve</rdfs:label>
     </owl:Class>
     
 
@@ -7580,6 +7676,65 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000038"/>
         <rdfs:label xml:lang="en">linear S-N curve</rdfs:label>
         <skos:definition xml:lang="en">Linear S-N curve is a type of S-N curve, where both x-axis (the time variable) and y-axis (loading variable) are given in its original scaling.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000045 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000045">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000502"/>
+        <rdfs:label xml:lang="en">fatigue life curve</rdfs:label>
+        <skos:definition xml:lang="en">Fatigue life curve is a 2D data item which is an output from a fatigue testing process, and it is about the performance of a material under cyclic load.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000046 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000046">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000045"/>
+        <rdfs:label xml:lang="en">ε-N curve</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000047 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000047">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000638"/>
+        <rdfs:label xml:lang="en">rolling contact fatigue testing process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000048 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000048">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000638"/>
+        <rdfs:label xml:lang="en">tensile fatigue testing process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000049 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000049">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000005"/>
+        <rdfs:label xml:lang="en">number of sustained loading cycles</rdfs:label>
+        <skos:altLabel xml:lang="en">fatigue lifetime</skos:altLabel>
+        <skos:definition xml:lang="en">Number of sustained loading cycles is a behavioral characteristic of a material in a single fatigue testing process, and it describes how many cycles of applied load the material can sustain before failure.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000050 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000050">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0025020"/>
+        <rdfs:comment>Must be defined class based on the number of sustained loading cycles or fatigue cycle limit??</rdfs:comment>
+        <rdfs:label xml:lang="en">single fatigue testing process with run out</rdfs:label>
+        <skos:definition xml:lang="en">Single fatigue testing process with run out is a single fatigue testing process in which the specimen did not fail when the fatigue cycle limit is reached.</skos:definition>
     </owl:Class>
     
 

@@ -96,6 +96,7 @@ http://purl.obolibrary.org/obo/CHEBI_30687
 http://purl.obolibrary.org/obo/CHEBI_32594
 http://purl.obolibrary.org/obo/CHEBI_33250
 http://purl.obolibrary.org/obo/CHEBI_33301
+http://purl.obolibrary.org/obo/CHEBI_33303
 http://purl.obolibrary.org/obo/CHEBI_33310
 http://purl.obolibrary.org/obo/CHEBI_33319
 http://purl.obolibrary.org/obo/CHEBI_33330
@@ -232,6 +233,7 @@ http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
 http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML
 http://www.w3.org/1999/02/22-rdf-syntax-ns#nil
 http://www.w3.org/2000/01/rdf-schema#Literal
+http://www.w3.org/2000/01/rdf-schema#subClassOf
 http://www.w3.org/2000/01/rdf-schema#subPropertyOf
 http://www.w3.org/2002/07/owl#topObjectProperty
 http://www.w3.org/2004/02/skos/core#altLabel
@@ -290,6 +292,7 @@ https://w3id.org/pmd/co/PMD_0000637
 https://w3id.org/pmd/co/PMD_0000638
 https://w3id.org/pmd/co/PMD_0000639
 https://w3id.org/pmd/co/PMD_0000648
+https://w3id.org/pmd/co/PMD_0000654
 https://w3id.org/pmd/co/PMD_0000663
 https://w3id.org/pmd/co/PMD_0000667
 https://w3id.org/pmd/co/PMD_0000773
@@ -535,6 +538,12 @@ https://w3id.org/pmd/distel/DISTEL_0000041
 https://w3id.org/pmd/distel/DISTEL_0000042
 https://w3id.org/pmd/distel/DISTEL_0000043
 https://w3id.org/pmd/distel/DISTEL_0000044
+https://w3id.org/pmd/distel/DISTEL_0000045
+https://w3id.org/pmd/distel/DISTEL_0000046
+https://w3id.org/pmd/distel/DISTEL_0000047
+https://w3id.org/pmd/distel/DISTEL_0000048
+https://w3id.org/pmd/distel/DISTEL_0000049
+https://w3id.org/pmd/distel/DISTEL_0000050
 https://w3id.org/pmd/tto
 https://w3id.org/pmd/tto/ExtensometerGaugeLength
 https://w3id.org/pmd/tto/FinalGaugeLengthAfterFracture

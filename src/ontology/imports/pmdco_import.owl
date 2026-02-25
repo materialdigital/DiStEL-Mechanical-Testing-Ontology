@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<https://w3id.org/pmd/distel/imports/pmdco_import.owl>
-<https://w3id.org/pmd/distel/releases/2026-02-20/imports/pmdco_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <https://w3id.org/pmd/co/releases/2026-02-19/pmdco.ttl>)
-Annotation(owl:versionInfo "2026-02-20")
+<https://w3id.org/pmd/distel/releases/2026-02-25/imports/pmdco_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <https://w3id.org/pmd/co/releases/2026-02-24/pmdco.ttl>)
+Annotation(owl:versionInfo "2026-02-25")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -96,6 +96,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_30687>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_32594>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33250>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33301>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33303>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33310>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33319>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33330>))
@@ -185,6 +186,7 @@ Declaration(Class(<https://w3id.org/pmd/co/PMD_0000637>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000638>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000639>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000648>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0000654>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000663>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000667>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000773>))
@@ -1598,6 +1600,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_25585> <http://purl.obolibrary.
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_25805> "oxygen atom")
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_25805> <http://purl.obolibrary.org/obo/CHEBI_25585>)
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_25805> <http://purl.obolibrary.org/obo/CHEBI_33303>)
 
 # Class: <http://purl.obolibrary.org/obo/CHEBI_26216> (potassium atom)
 
@@ -1613,6 +1616,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_26708> <http://purl.obolibrary.
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_26833> "sulfur atom")
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_26833> <http://purl.obolibrary.org/obo/CHEBI_25585>)
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_26833> <http://purl.obolibrary.org/obo/CHEBI_33303>)
 
 # Class: <http://purl.obolibrary.org/obo/CHEBI_27007> (tin atom)
 
@@ -1644,6 +1648,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_27563> <http://purl.obolibrary.
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_27568> "selenium atom")
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_27568> <http://purl.obolibrary.org/obo/CHEBI_25585>)
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_27568> <http://purl.obolibrary.org/obo/CHEBI_33303>)
 
 # Class: <http://purl.obolibrary.org/obo/CHEBI_27573> (silicon atom)
 
@@ -1742,6 +1747,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_30441> <http://purl.obolibrary.
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_30452> "tellurium atom")
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_30452> <http://purl.obolibrary.org/obo/CHEBI_137980>)
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_30452> <http://purl.obolibrary.org/obo/CHEBI_33303>)
 
 # Class: <http://purl.obolibrary.org/obo/CHEBI_30501> (beryllium atom)
 
@@ -1789,6 +1795,12 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_33250> <http://purl.obolibrary.
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_33301> "bismuth atom")
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_33301> <http://purl.obolibrary.org/obo/CHEBI_33521>)
+
+# Class: <http://purl.obolibrary.org/obo/CHEBI_33303> (chalcogen)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_33303> "Any p-block element belonging to the group 16 family of the periodic table.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_33303> "chalcogen")
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_33303> <http://purl.obolibrary.org/obo/CHEBI_33250>)
 
 # Class: <http://purl.obolibrary.org/obo/CHEBI_33310> (neon atom)
 
@@ -2267,21 +2279,22 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000002> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000002> <https://w3id.org/pmd/co/PMD_0000000>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000005> (behavioral material property)
+# Class: <https://w3id.org/pmd/co/PMD_0000005> (material property)
 
 AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/co/PMD_0000005> "Technical materials are complex object aggregates. The properties that are determined for those object aggregates are intrinsically associated with the methodologies employed in the measurement process. This is in contrast to typical 'physical' properties, which like e.g. mass that can be determined to high accuracy independently of the measurement process. 
 As a consequence, the behavoiral material properties in the ontology are differeciated according to their measurement method, e.g. Brinell hardness and Vickers hardness are different types of indentation hardness rather than different measures/quantification (GDC) of the materials property 'indentation hardness'.
  The 'unit idenifieres' of such properties (e.g. \"HV1\", \"HV10\", \"HBW\") are strictly speaking not units but rather references to the measurement methodology used to determine a numeric value that quantifies the property."@en)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000005> "behavioral material property"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000005> "material property"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000005> "A property is a material trait in terms of the kind and magnitude of response to a specific imposed stimulus. Generally, definitions of properties are made independent of material shape and size.
 
 (Callister, W.D., Rethwisch, D.G., Materials Science and Engineering, Wiley, 2014)
 
 We only deal with intensive (system-size independent) material properties. Extensive properties that depend on the testpiece/specimen/probe size should be found in the respective testing method modules."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000005> "true"^^xsd:boolean)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0000005> <http://purl.obolibrary.org/obo/BFO_0000017>)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000005> <http://purl.obolibrary.org/obo/BFO_0000016>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <https://w3id.org/pmd/co/PMD_0000950>))
-SubClassOf(<https://w3id.org/pmd/co/PMD_0000005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/BFO_0000015>))))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/BFO_0000015>))))
+SubClassOf(Annotation(rdfs:comment "Due to the duality of object and portion of matter this axiom can not be an equivalent class axiom."@en) <https://w3id.org/pmd/co/PMD_0000005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/BFO_0000015>))))
 
 # Class: <https://w3id.org/pmd/co/PMD_0000008> (process attribute)
 
@@ -2397,7 +2410,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0000552> ObjectSomeValuesFrom(<http://pu
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000553> "chemical potential"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000553> "The chemical potential is a thermodynamic quality describing the energy change associated with the addition of a small quantity of a substance to a system at constant temperature and pressure."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000553> "true"^^xsd:boolean)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0000553> <https://w3id.org/pmd/co/PMD_0020148>)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000553> <https://w3id.org/pmd/co/PMD_0020131>)
 
 # Class: <https://w3id.org/pmd/co/PMD_0000560> (Reinigen)
 
@@ -2546,6 +2559,16 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000648> "forming ma
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000648> "A device used for shaping materials under various conditions, including tensile, compressive, and shearing."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000648> "Ein Gerät zur Formgebung von Materialien unter verschiedenen Bedingungen, einschließlich Zug-, Druck- und Scherbedingungen."@de)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000648> <https://w3id.org/pmd/co/PMD_0000602>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0000654> (functional material)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <https://w3id.org/pmd/co/PMD_0000654> "Classified by the role in a system."@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000654> "functional material"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000654> "A functional material F is an engineered material which has the disposition to be used for an object O (O consists of F) and O's function is other/more than mechanical load carrying."@en)
+AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000654> "true"^^xsd:boolean)
+EquivalentClasses(<https://w3id.org/pmd/co/PMD_0000654> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000085> <http://purl.obolibrary.org/obo/BFO_0000034>)))))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000654> <https://w3id.org/pmd/co/PMD_0000002>)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000654> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000085> <http://purl.obolibrary.org/obo/BFO_0000034>))))
 
 # Class: <https://w3id.org/pmd/co/PMD_0000663> (kristallit)
 
@@ -2742,7 +2765,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000952> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000952> <https://w3id.org/pmd/co/PMD_0000848>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "Struktur Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "structural property analyzing process"@en)
@@ -3028,7 +3051,7 @@ AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/co/PMD_0020047> "A Portio
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020047> "portion of phosphorus"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020047> "A 'Portion Of Phosphorus' is a 'Portion Of Pure Substance' that 'consists of' only chebi:phosphorus atom."@en)
 EquivalentClasses(<https://w3id.org/pmd/co/PMD_0020047> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0020140> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/CHEBI_28659>)))
-SubClassOf(<https://w3id.org/pmd/co/PMD_0020047> <https://w3id.org/pmd/co/PMD_0020094>)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0020047> <https://w3id.org/pmd/co/PMD_0020140>)
 
 # Class: <https://w3id.org/pmd/co/PMD_0020048> (portion of boron)
 
@@ -3140,7 +3163,7 @@ AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/co/PMD_0020061> "A Portio
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020061> "portion of krypton"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020061> "A 'Portion Of Krypton' is a 'Portion Of Pure Substance' that 'consists of' only chebi:krypton atom."@en)
 EquivalentClasses(<https://w3id.org/pmd/co/PMD_0020061> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0020140> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/CHEBI_49696>)))
-SubClassOf(<https://w3id.org/pmd/co/PMD_0020061> <https://w3id.org/pmd/co/PMD_0020037>)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0020061> <https://w3id.org/pmd/co/PMD_0020140>)
 
 # Class: <https://w3id.org/pmd/co/PMD_0020062> (portion of bismuth)
 
@@ -3504,6 +3527,8 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020131> "An intensive quality is a quality that inheres in only portion of matter and thus is independent of the bearers (system-) size."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020131> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020131> <http://purl.obolibrary.org/obo/BFO_0000019>)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0020131> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> <https://w3id.org/pmd/co/PMD_0000001>))
+SubClassOf(Annotation(rdfs:comment "Due to the duality of object and portion of matter this axiom can not be an equivalent class axiom."@en) <https://w3id.org/pmd/co/PMD_0020131> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> <https://w3id.org/pmd/co/PMD_0000001>))
 DisjointClasses(<https://w3id.org/pmd/co/PMD_0020131> <https://w3id.org/pmd/co/PMD_0020148>)
 
 # Class: <https://w3id.org/pmd/co/PMD_0020132> (size)
