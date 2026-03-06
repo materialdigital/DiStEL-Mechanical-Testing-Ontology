@@ -19,6 +19,7 @@
         <owl:imports rdf:resource="https://w3id.org/pmd/distel/imports/qudt_import.owl"/>
         <owl:imports rdf:resource="https://w3id.org/pmd/distel/imports/tto_import.owl"/>
         <owl:imports rdf:resource="https://w3id.org/pmd/distel/imports/uo_import.owl"/>
+        <owl:imports rdf:resource="https://w3id.org/pmd/distel/imports/iao_import.owl"/>
     </owl:Ontology>
     
 

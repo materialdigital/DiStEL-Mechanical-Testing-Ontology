@@ -42,6 +42,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">motor of a fatigue testing machine</rdfs:label>
+        <skos:definition xml:lang="en">Motor of a fatigue testing machine is a part of such machine which is essential for the applicaiton of loading on a sample.</skos:definition>
     </owl:Class>
     
 
@@ -535,7 +536,10 @@
 
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000047">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000638"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Rolling_contact_fatigue</obo:IAO_0000119>
         <rdfs:label xml:lang="en">rolling contact fatigue testing process</rdfs:label>
+        <skos:altLabel xml:lang="en">RCF</skos:altLabel>
+        <skos:definition xml:lang="en">Rolling contact fatigue (RCF) testing is a fatigue testing process that evaluates material performance under repeated loading while applying high cyclic contact pressure and sliding until failure (pitting/spalling) occurs.</skos:definition>
     </owl:Class>
     
 
@@ -544,6 +548,7 @@
 
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000048">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000638"/>
+        <obo:IAO_0000119 xml:lang="en">Tensile fatigue testing process is a fatigue testing process  that evaluates material performance under repeated loading while applying cyclic, axial tensile stress. The test can involve constant amplitude or variable amplitude loading.</obo:IAO_0000119>
         <rdfs:label xml:lang="en">tensile fatigue testing process</rdfs:label>
     </owl:Class>
     
@@ -565,8 +570,9 @@
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000050">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0025020"/>
         <owl:disjointWith rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000052"/>
-        <rdfs:comment xml:lang="en">Must be defined class based on the number of sustained loading cycles or fatigue cycle limit??
-TODO Is it possible to define it via negation? Alternative: SHACL Shape specifically for this class , stating that it cannot have fatigue specimen failure as occurent part.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The axioms about NOT having a failure: 
+Option 1 (easy): SHACL Shape specifically for this class, stating that it cannot have fatigue specimen failure as occurent part.
+Option 2 (ontology advanced): make an equv. class axiom with some and only to make a an exaustive and close list of triples the class is allowed to have. Then, if the failure is an occurent part, it will be automatically inferred as &quot;.. test with failed specimen&quot;. If no failure is explicitly given, but all the other essential triples are asserted, it will be classified as &quot;.. test with run out&quot;</rdfs:comment>
         <rdfs:label xml:lang="en">single fatigue testing process with run out</rdfs:label>
         <skos:definition xml:lang="en">Single fatigue testing process with run out is a single fatigue testing process in which the specimen did not fail when the fatigue cycle limit is reached.</skos:definition>
     </owl:Class>
@@ -585,6 +591,7 @@ TODO Is it possible to define it via negation? Alternative: SHACL Shape specific
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">The &quot;failure&quot; is defined based on the free text failure criterion from process attributes</rdfs:comment>
         <rdfs:label xml:lang="en">fatigue specimen failure</rdfs:label>
+        <skos:definition xml:lang="en">Fatigue specimen failure is a process which is an occurent part of a sinlge fatigue testing process. If fatigue specimen failure took place, it means that the defined failure criterion has been satisfied.</skos:definition>
     </owl:Class>
     
 
@@ -637,6 +644,7 @@ TODO Is it possible to define it via negation? Alternative: SHACL Shape specific
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
         <rdfs:label xml:lang="en">fatigue test run out</rdfs:label>
+        <skos:definition xml:lang="en">Fatigue test run out is an object which has an evaluant role in a single fatigue testing process and does not experience failure (defined by a failure criterion) after reaching the planned number number of cycles</skos:definition>
     </owl:Class>
     
 

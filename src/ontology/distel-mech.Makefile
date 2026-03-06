@@ -92,6 +92,16 @@ $(IMPORTDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl $(IMPORTDIR)/obi_terms.txt \
 		 repair --merge-axiom-annotations true \
 		 $(ANNOTATE_CONVERT_FILE)
 
+$(IMPORTDIR)/iao_import.owl: $(MIRRORDIR)/iao.owl $(IMPORTDIR)/iao_terms.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
+		remove --select "IAO:*" --select complement --select "classes object-properties data-properties"  --axioms annotation \
+		extract --term-file $(IMPORTDIR)/iao_terms.txt  --force true --copy-ontology-annotations true --individuals exclude --intermediates none --method BOT \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+ 		remove --term IAO:0000032 --axioms subclass \
+ 		remove $(foreach p, $(ANNOTATION_PROPERTIES), --term $(p)) \
+		      --select complement --select annotation-properties \
+		$(ANNOTATE_CONVERT_FILE); fi
+
 
 #.PHONY: autoshapes
 #autoshapes: 
