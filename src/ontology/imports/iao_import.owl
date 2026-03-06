@@ -14,6 +14,7 @@ Annotation(owl:versionInfo "2026-03-06")
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000101>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000308>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0000502>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000136>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000052>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000053>))
@@ -36,48 +37,48 @@ Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000136> "is about"@en)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
-# Object Property: <http://purl.obolibrary.org/obo/RO_0000052> (<http://purl.obolibrary.org/obo/RO_0000052>)
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000052> (characteristic of)
 
 InverseObjectProperties(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/RO_0000053>)
 FunctionalObjectProperty(<http://purl.obolibrary.org/obo/RO_0000052>)
 
-# Object Property: <http://purl.obolibrary.org/obo/RO_0000053> (<http://purl.obolibrary.org/obo/RO_0000053>)
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000053> (has characteristic)
 
 InverseFunctionalObjectProperty(<http://purl.obolibrary.org/obo/RO_0000053>)
 
-# Object Property: <http://purl.obolibrary.org/obo/RO_0000079> (<http://purl.obolibrary.org/obo/RO_0000079>)
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000079> (function of)
 
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0000079> <http://purl.obolibrary.org/obo/RO_0000052>)
 InverseObjectProperties(<http://purl.obolibrary.org/obo/RO_0000079> <http://purl.obolibrary.org/obo/RO_0000085>)
 
-# Object Property: <http://purl.obolibrary.org/obo/RO_0000080> (<http://purl.obolibrary.org/obo/RO_0000080>)
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000080> (quality of)
 
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0000080> <http://purl.obolibrary.org/obo/RO_0000052>)
 InverseObjectProperties(<http://purl.obolibrary.org/obo/RO_0000080> <http://purl.obolibrary.org/obo/RO_0000086>)
 
-# Object Property: <http://purl.obolibrary.org/obo/RO_0000081> (<http://purl.obolibrary.org/obo/RO_0000081>)
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000081> (role of)
 
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0000081> <http://purl.obolibrary.org/obo/RO_0000052>)
 InverseObjectProperties(<http://purl.obolibrary.org/obo/RO_0000081> <http://purl.obolibrary.org/obo/RO_0000087>)
 
-# Object Property: <http://purl.obolibrary.org/obo/RO_0000085> (<http://purl.obolibrary.org/obo/RO_0000085>)
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000085> (has function)
 
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0000085> <http://purl.obolibrary.org/obo/RO_0000053>)
 
-# Object Property: <http://purl.obolibrary.org/obo/RO_0000086> (<http://purl.obolibrary.org/obo/RO_0000086>)
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000086> (has quality)
 
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/RO_0000053>)
 
-# Object Property: <http://purl.obolibrary.org/obo/RO_0000087> (<http://purl.obolibrary.org/obo/RO_0000087>)
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000087> (has role)
 
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0000087> <http://purl.obolibrary.org/obo/RO_0000053>)
 
-# Object Property: <http://purl.obolibrary.org/obo/RO_0000091> (<http://purl.obolibrary.org/obo/RO_0000091>)
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000091> (has disposition)
 
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0000091> <http://purl.obolibrary.org/obo/RO_0000053>)
 InverseObjectProperties(<http://purl.obolibrary.org/obo/RO_0000091> <http://purl.obolibrary.org/obo/RO_0000092>)
 
-# Object Property: <http://purl.obolibrary.org/obo/RO_0000092> (<http://purl.obolibrary.org/obo/RO_0000092>)
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000092> (disposition of)
 
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0000092> <http://purl.obolibrary.org/obo/RO_0000052>)
 
@@ -99,7 +100,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000101> <http://purl.obolibrary.
 # Class: <http://purl.obolibrary.org/obo/IAO_0000308> (figure)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000308> "figure"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000308> <http://purl.obolibrary.org/obo/IAO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000308> <https://w3id.org/pmd/co/PMD_0000502>)
 
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000002> "example to be eventually removed"@en)
