@@ -38,3 +38,6 @@ WARN	missing_definition	rolling contact fatigue testing process	definition
 WARN	missing_definition	tensile fatigue testing process	definition	
 WARN	missing_definition	number of sustained loading cycles	definition	
 WARN	missing_definition	single fatigue testing process with run out	definition	
+WARN	missing_definition	fatigue specimen failure	definition	
+WARN	missing_definition	single fatigue testing process with failed specimen	definition	
+WARN	missing_definition	fatigue test run out	definition	
