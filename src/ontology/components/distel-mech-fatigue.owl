@@ -31,6 +31,21 @@
     
 
 
+    <!-- https://w3id.org/pmd/co/PMD_0025004 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025004">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000602"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000637"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">motor of a fatigue testing machine</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/distel/DISTEL_0000000 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000000">
@@ -549,9 +564,79 @@
 
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000050">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0025020"/>
-        <rdfs:comment>Must be defined class based on the number of sustained loading cycles or fatigue cycle limit??</rdfs:comment>
+        <owl:disjointWith rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000052"/>
+        <rdfs:comment xml:lang="en">Must be defined class based on the number of sustained loading cycles or fatigue cycle limit??
+TODO Is it possible to define it via negation? Alternative: SHACL Shape specifically for this class , stating that it cannot have fatigue specimen failure as occurent part.</rdfs:comment>
         <rdfs:label xml:lang="en">single fatigue testing process with run out</rdfs:label>
         <skos:definition xml:lang="en">Single fatigue testing process with run out is a single fatigue testing process in which the specimen did not fail when the fatigue cycle limit is reached.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000051 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000132"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0025020"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The &quot;failure&quot; is defined based on the free text failure criterion from process attributes</rdfs:comment>
+        <rdfs:label xml:lang="en">fatigue specimen failure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000052 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000052">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0025020"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000051"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0025020"/>
+        <rdfs:comment xml:lang="en">For determining the S-N curve for a specific material, the query must contain outputs and/or process attributes of instances of this class!</rdfs:comment>
+        <rdfs:label xml:lang="en">single fatigue testing process with failed specimen</rdfs:label>
+        <skos:definition xml:lang="en">Single fatigue testing process with failed specimen is a process of determining number of cycles a sinlge specimen can withstand under given load. The prerequisite for this process is a failed specimen, i.e., the fatigue specimen failure must be an occurent part of the single fatigue testing process.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000053 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000053">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000067"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000050"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:label xml:lang="en">fatigue test run out</rdfs:label>
     </owl:Class>
     
 
