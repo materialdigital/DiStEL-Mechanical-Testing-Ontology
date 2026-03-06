@@ -41,3 +41,7 @@ WARN	missing_definition	single fatigue testing process with run out	definition
 WARN	missing_definition	fatigue specimen failure	definition	
 WARN	missing_definition	single fatigue testing process with failed specimen	definition	
 WARN	missing_definition	fatigue test run out	definition	
+WARN	missing_definition	range of motion specification	definition	
+WARN	missing_definition	evaluation software	definition	
+WARN	missing_definition	fatigue test control software	definition	
+WARN	missing_definition	motor of a fatigue testing machine	definition	

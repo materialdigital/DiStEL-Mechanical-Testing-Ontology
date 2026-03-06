@@ -983,6 +983,16 @@ co:PMD_0000077 rdf:type owl:ObjectProperty ;
                skos:definition "A relation between an entity and a value specification which is about this entity."@en .
 
 
+###  https://w3id.org/pmd/co/PMD_0001026
+co:PMD_0001026 rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf co:PMD_0000004 ;
+               rdfs:domain obo:BFO_0000004 ;
+               rdfs:range obo:IAO_0000030 ;
+               rdfs:label "complies with"@en ,
+                          "entspricht"@de ;
+               skos:definition "complies with is a relation between an independent continuant and an information content entity (e.g., specification or objective) that it conforms to."@en .
+
+
 ###  https://w3id.org/pmd/co/PMD_0001028
 co:PMD_0001028 rdf:type owl:ObjectProperty ;
                owl:inverseOf co:PMD_0001029 ;
@@ -5178,17 +5188,6 @@ co:PMD_0025003 rdf:type owl:Class ;
                co:PMD_0000060 "false"^^xsd:boolean .
 
 
-###  https://w3id.org/pmd/co/PMD_0025004
-co:PMD_0025004 rdf:type owl:Class ;
-               rdfs:subClassOf co:PMD_0000602 ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty obo:BFO_0000050 ;
-                                 owl:someValuesFrom co:PMD_0000637
-                               ] ;
-               rdfs:label "motor of a fatigue testing machine"@en ;
-               skos:definition "Motor of a fatigue testing machine is a part of such machine which is essential for the applicaiton of loading on a sample."@en .
-
-
 ###  https://w3id.org/pmd/co/PMD_0025007
 co:PMD_0025007 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000008 ;
@@ -5882,6 +5881,47 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
                                                              ] ;
                                              rdfs:label "fatigue test run out"@en ;
                                              skos:definition "Fatigue test run out is an object which has an evaluant role in a single fatigue testing process and does not experience failure (defined by a failure criterion) after reaching the planned number number of cycles"@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000054
+<https://w3id.org/pmd/distel/DISTEL_0000054> rdf:type owl:Class ;
+                                             rdfs:subClassOf co:PMD_0060006 ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty obo:IAO_0000136 ;
+                                                               owl:someValuesFrom co:PMD_0000637
+                                                             ] ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty obo:OBI_0001938 ;
+                                                               owl:someValuesFrom obo:OBI_0001933
+                                                             ] ;
+                                             rdfs:comment "TODO which defines what?" ;
+                                             rdfs:label "range of motion specification"@en ;
+                                             skos:definition "Range of motion is a device specification of  fatigue testing machine which defines ..."@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000055
+<https://w3id.org/pmd/distel/DISTEL_0000055> rdf:type owl:Class ;
+                                             rdfs:subClassOf obo:IAO_0000010 ;
+                                             rdfs:label "evaluation software"@en ;
+                                             skos:definition "Software used to evaluate results of assays or computing processes"@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000056
+<https://w3id.org/pmd/distel/DISTEL_0000056> rdf:type owl:Class ;
+                                             rdfs:subClassOf obo:IAO_0000010 ;
+                                             rdfs:label "fatigue test control software"@en ;
+                                             skos:definition "Software used to control the course of a fatigue testing process."@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000100
+<https://w3id.org/pmd/distel/DISTEL_0000100> rdf:type owl:Class ;
+                                             rdfs:subClassOf co:PMD_0000602 ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty obo:BFO_0000050 ;
+                                                               owl:someValuesFrom co:PMD_0000637
+                                                             ] ;
+                                             rdfs:label "motor of a fatigue testing machine"@en ;
+                                             skos:definition "Motor of a fatigue testing machine is a part of such machine which is essential for the applicaiton of loading on a sample."@en .
 
 
 ###  https://w3id.org/pmd/tto/TTO_0000005

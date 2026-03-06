@@ -260,6 +260,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0001938 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0001938"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000052"/>
@@ -394,6 +400,19 @@
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/co/PMD_0000004"/>
         <rdfs:label xml:lang="en">specified by value</rdfs:label>
         <skos:definition xml:lang="en">A relation between an entity and a value specification which is about this entity.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0001026 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/PMD_0001026">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/co/PMD_0000004"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:label xml:lang="en">complies with</rdfs:label>
+        <rdfs:label xml:lang="de">entspricht</rdfs:label>
+        <skos:definition xml:lang="en">complies with is a relation between an independent continuant and an information content entity (e.g., specification or objective) that it conforms to.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -1076,6 +1095,12 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
     <!-- http://purl.obolibrary.org/obo/IAO_0000009 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000009"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000010"/>
     
 
 
@@ -4665,22 +4690,6 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0025004 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025004">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000602"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000637"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">motor of a fatigue testing machine</rdfs:label>
-        <skos:definition xml:lang="en">Motor of a fatigue testing machine is a part of such machine which is essential for the applicaiton of loading on a sample.</skos:definition>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/pmd/co/PMD_0025007 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025007">
@@ -5629,6 +5638,65 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">fatigue test run out</rdfs:label>
         <skos:definition xml:lang="en">Fatigue test run out is an object which has an evaluant role in a single fatigue testing process and does not experience failure (defined by a failure criterion) after reaching the planned number number of cycles</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000054 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000054">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0060006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000637"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001938"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>TODO which defines what?</rdfs:comment>
+        <rdfs:label xml:lang="en">range of motion specification</rdfs:label>
+        <skos:definition xml:lang="en">Range of motion is a device specification of  fatigue testing machine which defines ...</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000055 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
+        <rdfs:label xml:lang="en">evaluation software</rdfs:label>
+        <skos:definition xml:lang="en">Software used to evaluate results of assays or computing processes</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000056 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
+        <rdfs:label xml:lang="en">fatigue test control software</rdfs:label>
+        <skos:definition xml:lang="en">Software used to control the course of a fatigue testing process.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000100 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000100">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000602"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000637"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">motor of a fatigue testing machine</rdfs:label>
+        <skos:definition xml:lang="en">Motor of a fatigue testing machine is a part of such machine which is essential for the applicaiton of loading on a sample.</skos:definition>
     </owl:Class>
     
 
