@@ -1,0 +1,123 @@
+Prefix(:=<https://w3id.org/pmd/distel/imports/iao_import.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<https://w3id.org/pmd/distel/imports/iao_import.owl>
+<https://w3id.org/pmd/distel/releases/2026-03-06/imports/iao_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl>)
+Annotation(owl:versionInfo "2026-03-06")
+
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000101>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000308>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000136>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000052>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000053>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000079>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000080>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000081>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000085>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000086>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000087>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000091>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000092>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.obolibrary.org/obo/IAO_0000136> (is about)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000136> "is about"@en)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000052> (<http://purl.obolibrary.org/obo/RO_0000052>)
+
+InverseObjectProperties(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/RO_0000053>)
+FunctionalObjectProperty(<http://purl.obolibrary.org/obo/RO_0000052>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000053> (<http://purl.obolibrary.org/obo/RO_0000053>)
+
+InverseFunctionalObjectProperty(<http://purl.obolibrary.org/obo/RO_0000053>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000079> (<http://purl.obolibrary.org/obo/RO_0000079>)
+
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0000079> <http://purl.obolibrary.org/obo/RO_0000052>)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/RO_0000079> <http://purl.obolibrary.org/obo/RO_0000085>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000080> (<http://purl.obolibrary.org/obo/RO_0000080>)
+
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0000080> <http://purl.obolibrary.org/obo/RO_0000052>)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/RO_0000080> <http://purl.obolibrary.org/obo/RO_0000086>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000081> (<http://purl.obolibrary.org/obo/RO_0000081>)
+
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0000081> <http://purl.obolibrary.org/obo/RO_0000052>)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/RO_0000081> <http://purl.obolibrary.org/obo/RO_0000087>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000085> (<http://purl.obolibrary.org/obo/RO_0000085>)
+
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0000085> <http://purl.obolibrary.org/obo/RO_0000053>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000086> (<http://purl.obolibrary.org/obo/RO_0000086>)
+
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/RO_0000053>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000087> (<http://purl.obolibrary.org/obo/RO_0000087>)
+
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0000087> <http://purl.obolibrary.org/obo/RO_0000053>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000091> (<http://purl.obolibrary.org/obo/RO_0000091>)
+
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0000091> <http://purl.obolibrary.org/obo/RO_0000053>)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/RO_0000091> <http://purl.obolibrary.org/obo/RO_0000092>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000092> (<http://purl.obolibrary.org/obo/RO_0000092>)
+
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0000092> <http://purl.obolibrary.org/obo/RO_0000052>)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000030> (information content entity)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000030> "information content entity"@en)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000101> (image)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000101> "image"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000101> <http://purl.obolibrary.org/obo/IAO_0000308>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000308> (figure)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000308> "figure"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000308> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000002> "example to be eventually removed"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000103> "failed exploratory term"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000120> "metadata complete"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000121> "organizational term"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000122> "ready for release"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000123> "metadata incomplete"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000124> "uncurated"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000125> "pending final vetting"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000226> "placeholder removed"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000227> "terms merged"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000228> "term imported"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000229> "term split"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000410> "universal"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000420> "defined class"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000421> "named class expression"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000423> "to be replaced with external ontology term"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000428> "requires discussion"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMO_0001000> "out of scope")
+)

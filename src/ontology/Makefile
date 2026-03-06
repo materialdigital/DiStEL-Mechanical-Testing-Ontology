@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                3df3cefce3c1745becb20d7c52fc9c9a1f217aa38519ef6f8202ea5367fac4a2
+CONFIG_HASH=                6ece15b5c09b51a1fea902d9f6ee494f94583f5ee5f1bd1ba32327c989ccced1
 
 
 # ----------------------------------------
@@ -187,7 +187,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  pmdco tto uo qudt
+IMPORTS =  pmdco tto uo qudt iao
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -433,6 +433,12 @@ $(IMPORTDIR)/qudt_import.owl: $(MIRRORDIR)/qudt.owl
 	@echo "       This rule needs to be overwritten in distel-mech.Makefile!"
 	@false
 
+## Module for ontology: iao (custom)
+$(IMPORTDIR)/iao_import.owl: $(MIRRORDIR)/iao.owl
+	@echo "ERROR: You have configured iao as a custom module;"
+	@echo "       This rule needs to be overwritten in distel-mech.Makefile!"
+	@false
+
 endif # IMP=true
 
 .PHONY: refresh-imports
@@ -544,6 +550,13 @@ mirror-uo: | $(TMPDIR)
 .PRECIOUS: $(MIRRORDIR)/qudt.owl
 mirror-qudt: | $(TMPDIR)
 	$(ROBOT) convert -I https://qudt.org/qudt-all -o $(TMPDIR)/$@.owl
+
+
+## ONTOLOGY: iao
+.PHONY: mirror-iao
+.PRECIOUS: $(MIRRORDIR)/iao.owl
+mirror-iao: | $(TMPDIR)
+	$(ROBOT) convert -I https://raw.githubusercontent.com/information-artifact-ontology/IAO/refs/heads/master/iao.owl -o $(TMPDIR)/$@.owl
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)

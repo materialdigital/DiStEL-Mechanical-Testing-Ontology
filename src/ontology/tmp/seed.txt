@@ -130,10 +130,12 @@ http://purl.obolibrary.org/obo/IAO_0000003
 http://purl.obolibrary.org/obo/IAO_0000005
 http://purl.obolibrary.org/obo/IAO_0000007
 http://purl.obolibrary.org/obo/IAO_0000009
+http://purl.obolibrary.org/obo/IAO_0000010
 http://purl.obolibrary.org/obo/IAO_0000027
 http://purl.obolibrary.org/obo/IAO_0000030
 http://purl.obolibrary.org/obo/IAO_0000033
 http://purl.obolibrary.org/obo/IAO_0000039
+http://purl.obolibrary.org/obo/IAO_0000100
 http://purl.obolibrary.org/obo/IAO_0000104
 http://purl.obolibrary.org/obo/IAO_0000109
 http://purl.obolibrary.org/obo/IAO_0000112
@@ -149,6 +151,8 @@ http://purl.obolibrary.org/obo/IAO_0000235
 http://purl.obolibrary.org/obo/IAO_0000417
 http://purl.obolibrary.org/obo/IAO_0000418
 http://purl.obolibrary.org/obo/IAO_0000419
+http://purl.obolibrary.org/obo/IAO_0020000
+http://purl.obolibrary.org/obo/IAO_0020010
 http://purl.obolibrary.org/obo/NCBITaxon_9606
 http://purl.obolibrary.org/obo/OBI_0000067
 http://purl.obolibrary.org/obo/OBI_0000070
@@ -276,6 +280,7 @@ https://w3id.org/pmd/co/PMD_0000553
 https://w3id.org/pmd/co/PMD_0000560
 https://w3id.org/pmd/co/PMD_0000561
 https://w3id.org/pmd/co/PMD_0000583
+https://w3id.org/pmd/co/PMD_0000587
 https://w3id.org/pmd/co/PMD_0000591
 https://w3id.org/pmd/co/PMD_0000592
 https://w3id.org/pmd/co/PMD_0000595
@@ -289,12 +294,14 @@ https://w3id.org/pmd/co/PMD_0000636
 https://w3id.org/pmd/co/PMD_0000637
 https://w3id.org/pmd/co/PMD_0000638
 https://w3id.org/pmd/co/PMD_0000639
+https://w3id.org/pmd/co/PMD_0000645
 https://w3id.org/pmd/co/PMD_0000648
 https://w3id.org/pmd/co/PMD_0000654
 https://w3id.org/pmd/co/PMD_0000663
 https://w3id.org/pmd/co/PMD_0000667
 https://w3id.org/pmd/co/PMD_0000773
 https://w3id.org/pmd/co/PMD_0000776
+https://w3id.org/pmd/co/PMD_0000820
 https://w3id.org/pmd/co/PMD_0000822
 https://w3id.org/pmd/co/PMD_0000823
 https://w3id.org/pmd/co/PMD_0000833
@@ -303,6 +310,7 @@ https://w3id.org/pmd/co/PMD_0000849
 https://w3id.org/pmd/co/PMD_0000852
 https://w3id.org/pmd/co/PMD_0000853
 https://w3id.org/pmd/co/PMD_0000886
+https://w3id.org/pmd/co/PMD_0000889
 https://w3id.org/pmd/co/PMD_0000890
 https://w3id.org/pmd/co/PMD_0000891
 https://w3id.org/pmd/co/PMD_0000896
@@ -313,6 +321,7 @@ https://w3id.org/pmd/co/PMD_0000942
 https://w3id.org/pmd/co/PMD_0000946
 https://w3id.org/pmd/co/PMD_0000950
 https://w3id.org/pmd/co/PMD_0000952
+https://w3id.org/pmd/co/PMD_0000953
 https://w3id.org/pmd/co/PMD_0000957
 https://w3id.org/pmd/co/PMD_0000965
 https://w3id.org/pmd/co/PMD_0000967
@@ -446,6 +455,7 @@ https://w3id.org/pmd/co/PMD_0020132
 https://w3id.org/pmd/co/PMD_0020133
 https://w3id.org/pmd/co/PMD_0020137
 https://w3id.org/pmd/co/PMD_0020140
+https://w3id.org/pmd/co/PMD_0020141
 https://w3id.org/pmd/co/PMD_0020142
 https://w3id.org/pmd/co/PMD_0020143
 https://w3id.org/pmd/co/PMD_0020148
@@ -488,6 +498,7 @@ https://w3id.org/pmd/co/PMD_0050154
 https://w3id.org/pmd/co/PMD_0050155
 https://w3id.org/pmd/co/PMD_0050156
 https://w3id.org/pmd/co/PMD_0050157
+https://w3id.org/pmd/co/PMD_0060006
 https://w3id.org/pmd/co/definitionSource
 https://w3id.org/pmd/co/symbol
 https://w3id.org/pmd/distel-mech.owl

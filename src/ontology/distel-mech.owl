@@ -2853,6 +2853,19 @@ of this, different, term.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <obo:IAO_0000115 xml:lang="en">Software is a plan specification composed of a series of instructions that can be 
+interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">see sourceforge tracker discussion at http://sourceforge.net/tracker/index.php?func=detail&amp;aid=1958818&amp;group_id=177891&amp;atid=886178</obo:IAO_0000116>
+        <obo:IAO_0000119 xml:lang="en">GROUP: OBI</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">software</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
@@ -2918,6 +2931,30 @@ Previous. An information content entity is a non-realizable information entity t
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000100 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000100">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000112 xml:lang="en">Intensity values in a CEL file or from multiple CEL files comprise a data set (as opposed to the CEL files themselves).</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A data item that is an aggregate of other data items of the same type that have something in common. Averages and distributions can be determined for data sets.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2009/10/23 Alan Ruttenberg. The intention is that this term represent collections of like data. So this isn&apos;t for, e.g. the whole contents of a cel file, which includes parameters, metadata etc. This is more like java arrays of a certain rather specific type</obo:IAO_0000116>
+        <obo:IAO_0000116>2014-05-05: Data sets are aggregates and thus must include two or more data items. We have chosen not to add logical axioms to make this restriction.</obo:IAO_0000116>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000042</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000101 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000101">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000308"/>
+        <rdfs:label xml:lang="en">image</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000104 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000104">
@@ -2970,6 +3007,83 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000119 xml:lang="en">OBI_0000305</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
         <rdfs:label xml:lang="en">measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000308 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000308">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:label xml:lang="en">figure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020000">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020010"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity.</obo:IAO_0000115>
+        <obo:IAO_0000233 xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/237</obo:IAO_0000233>
+        <rdfs:comment xml:lang="en">Sep 29, 2016: The current definition has been amended from the previous version: &quot;A proper name is an information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity.&quot; to more accuratly reflect the necessary and sufficient condition on the class. (MB)</rdfs:comment>
+        <rdfs:label xml:lang="en">identifier</rdfs:label>
+        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020010">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000035"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A planned process that provides a reference to an individual entity shared by a group of subscribers to refer to that individual entity.</obo:IAO_0000115>
+        <obo:IAO_0000233 xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/237</obo:IAO_0000233>
+        <rdfs:label xml:lang="en">identifier creating process</rdfs:label>
     </owl:Class>
     
 
@@ -3541,7 +3655,7 @@ granularity. At these coarser levels, the individual molecules cannot be differe
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <rdfs:subClassOf rdf:nodeID="genid160"/>
+        <rdfs:subClassOf rdf:nodeID="genid173"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
@@ -3569,7 +3683,7 @@ We only deal with intensive (system-size independent) materrial properties. Exte
         <skos:definition xml:lang="en">a disposition of a portion of matter that is realized in a compatible process and whose realization is grounded in the portions intensive qualities</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid160">
+    <owl:Restriction rdf:nodeID="genid173">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
         <owl:someValuesFrom>
             <owl:Class>
@@ -3586,7 +3700,7 @@ We only deal with intensive (system-size independent) materrial properties. Exte
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/pmd/co/PMD_0000005"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid160"/>
+        <owl:annotatedTarget rdf:nodeID="genid173"/>
         <rdfs:comment xml:lang="en">Due to the duality of object and portion of matter this axiom can not be an equivalent class axiom.</rdfs:comment>
     </owl:Axiom>
     
@@ -3912,6 +4026,17 @@ See the pattern example of composition to underatand the difference between comp
     
 
 
+    <!-- https://w3id.org/pmd/co/PMD_0000587 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000587">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:label xml:lang="en">crack growth</rdfs:label>
+        <skos:definition xml:lang="en">The crack growth is an evolution of damage describing the progressive extension of a crack in a material under stress.</skos:definition>
+        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/co/PMD_0000591 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000591">
@@ -4101,6 +4226,17 @@ See the pattern example of composition to underatand the difference between comp
     
 
 
+    <!-- https://w3id.org/pmd/co/PMD_0000645 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000645">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:label xml:lang="en">formation of notch or scratch</rdfs:label>
+        <skos:definition xml:lang="en">The formation of (a) notch or (a) scratch is a process that describes the creation of small surface imperfections, which can influence a material&apos;s mechanical properties.</skos:definition>
+        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/co/PMD_0000648 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000648">
@@ -4208,6 +4344,18 @@ See the pattern example of composition to underatand the difference between comp
         <skos:definition xml:lang="en">A mechanical property analyzing process that measures a material&apos;s resistance to deformation, typically using indentation methods to determine hardness.</skos:definition>
         <skos:definition xml:lang="de">Ein Mechanische Eigenschaften Analyseverfahren, das den Widerstand eines Materials gegen Verformung misst und typischerweise Eindringverfahren verwendet, um die Härte zu bestimmen.</skos:definition>
         <skos:example xml:lang="en">Hardness testing of steel using the Rockwell method to classify its grade for industrial applications.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0000820 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000820">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000602"/>
+        <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Load_cell</obo:IAO_0000119>
+        <rdfs:label xml:lang="de">Kraftmessdose</rdfs:label>
+        <rdfs:label xml:lang="en">load cell</rdfs:label>
+        <skos:definition xml:lang="en">A device that converts mechanical force into a measurable signal by sensing the physical deformation of a structural element.</skos:definition>
     </owl:Class>
     
 
@@ -4425,6 +4573,17 @@ TODO: Check general class axiom and defintion altogether !!!</skos:definition>
     
 
 
+    <!-- https://w3id.org/pmd/co/PMD_0000889 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000889">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:label xml:lang="en">pore growth</rdfs:label>
+        <skos:definition xml:lang="en">Pore growth is an evolution of damage describing the process by which voids or pores in a material increase in size, often affecting its mechanical and physical properties.</skos:definition>
+        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/co/PMD_0000890 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000890">
@@ -4609,6 +4768,17 @@ TODO: Check general class axiom and defintion altogether !!!</skos:definition>
         <rdfs:label xml:lang="en">strength</rdfs:label>
         <skos:definition xml:lang="en">The strength is a material property describing the maximum stress a material can withstand before failure.</skos:definition>
         <skos:definition xml:lang="en">The strength is a mechanical property describing the maximum stress a material can withstand before failure.</skos:definition>
+        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0000953 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000953">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:label xml:lang="en">structural and chemical decay</rdfs:label>
+        <skos:definition xml:lang="en">The structural and chemical decay is an evolution of damage describing the deterioration of a material&apos;s structure and composition over time due to environmental or operational conditions.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
     
@@ -6537,21 +6707,21 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020131">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <rdfs:subClassOf rdf:nodeID="genid605"/>
+        <rdfs:subClassOf rdf:nodeID="genid618"/>
         <owl:disjointWith rdf:resource="https://w3id.org/pmd/co/PMD_0020148"/>
         <rdfs:label xml:lang="en">intensive quality</rdfs:label>
         <skos:altLabel xml:lang="en">Point property</skos:altLabel>
         <skos:definition xml:lang="en">An intensive quality is a quality that inheres in only portion of matter and thus is independent of the bearers (system-) size.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid605">
+    <owl:Restriction rdf:nodeID="genid618">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
         <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000001"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/pmd/co/PMD_0020131"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid605"/>
+        <owl:annotatedTarget rdf:nodeID="genid618"/>
         <rdfs:comment xml:lang="en">Due to the duality of object and portion of matter this axiom can not be an equivalent class axiom.</rdfs:comment>
     </owl:Axiom>
     
@@ -6601,6 +6771,17 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_60003"/>
         <rdfs:label xml:lang="en">portion of pure chemical element</rdfs:label>
         <skos:definition xml:lang="en">A portion of pure chemical element is a pure substance composed of multiple atoms, which are all of the same kind.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020141 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020141">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:comment xml:lang="en">Fatigue is typically of interest when the change of the material affects the objects ability to fulfill its function.</rdfs:comment>
+        <rdfs:label xml:lang="en">fatigue (reaction to repetitive loading)</rdfs:label>
+        <skos:definition xml:lang="en">fatigue is a process that affects an material entities integrity by nucleation and growing cracks.</skos:definition>
     </owl:Class>
     
 
@@ -6852,6 +7033,7 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">motor of a fatigue testing machine</rdfs:label>
+        <skos:definition xml:lang="en">Motor of a fatigue testing machine is a part of such machine which is essential for the applicaiton of loading on a sample.</skos:definition>
     </owl:Class>
     
 
@@ -7169,6 +7351,17 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
         <skos:definition xml:lang="de">Eine 3D Geometrie ist eine geometrische Form, die in drei Dimensionen existiert, mit Länge, Breite und Höhe, und die durch ihre räumlichen Eigenschaften wie Volumen und Oberfläche definiert werden kann.</skos:definition>
         <skos:example xml:lang="de">Beispiele sind Formen wie Würfel, Kugeln und Pyramiden.</skos:example>
         <skos:example xml:lang="en">Examples include shapes like cubes, spheres, and pyramids.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0060006 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0060006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <rdfs:label xml:lang="en">device specification</rdfs:label>
+        <skos:definition xml:lang="en">A directive information entity that outlines the technical requirements, features, constraints, and performance criteria of a specific device, guiding its design, manufacturing, operation, or maintenance.</skos:definition>
+        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
     
 
@@ -7680,7 +7873,10 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
 
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000047">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000638"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Rolling_contact_fatigue</obo:IAO_0000119>
         <rdfs:label xml:lang="en">rolling contact fatigue testing process</rdfs:label>
+        <skos:altLabel xml:lang="en">RCF</skos:altLabel>
+        <skos:definition xml:lang="en">Rolling contact fatigue (RCF) testing is a fatigue testing process that evaluates material performance under repeated loading while applying high cyclic contact pressure and sliding until failure (pitting/spalling) occurs.</skos:definition>
     </owl:Class>
     
 
@@ -7689,6 +7885,7 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
 
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000048">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000638"/>
+        <obo:IAO_0000119 xml:lang="en">Tensile fatigue testing process is a fatigue testing process  that evaluates material performance under repeated loading while applying cyclic, axial tensile stress. The test can involve constant amplitude or variable amplitude loading.</obo:IAO_0000119>
         <rdfs:label xml:lang="en">tensile fatigue testing process</rdfs:label>
     </owl:Class>
     
@@ -7710,8 +7907,9 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000050">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0025020"/>
         <owl:disjointWith rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000052"/>
-        <rdfs:comment xml:lang="en">Must be defined class based on the number of sustained loading cycles or fatigue cycle limit??
-TODO Is it possible to define it via negation? Alternative: SHACL Shape specifically for this class , stating that it cannot have fatigue specimen failure as occurent part.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The axioms about NOT having a failure: 
+Option 1 (easy): SHACL Shape specifically for this class, stating that it cannot have fatigue specimen failure as occurent part.
+Option 2 (ontology advanced): make an equv. class axiom with some and only to make a an exaustive and close list of triples the class is allowed to have. Then, if the failure is an occurent part, it will be automatically inferred as &quot;.. test with failed specimen&quot;. If no failure is explicitly given, but all the other essential triples are asserted, it will be classified as &quot;.. test with run out&quot;</rdfs:comment>
         <rdfs:label xml:lang="en">single fatigue testing process with run out</rdfs:label>
         <skos:definition xml:lang="en">Single fatigue testing process with run out is a single fatigue testing process in which the specimen did not fail when the fatigue cycle limit is reached.</skos:definition>
     </owl:Class>
@@ -7730,6 +7928,7 @@ TODO Is it possible to define it via negation? Alternative: SHACL Shape specific
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">The &quot;failure&quot; is defined based on the free text failure criterion from process attributes</rdfs:comment>
         <rdfs:label xml:lang="en">fatigue specimen failure</rdfs:label>
+        <skos:definition xml:lang="en">Fatigue specimen failure is a process which is an occurent part of a sinlge fatigue testing process. If fatigue specimen failure took place, it means that the defined failure criterion has been satisfied.</skos:definition>
     </owl:Class>
     
 
@@ -7804,6 +8003,7 @@ TODO Is it possible to define it via negation? Alternative: SHACL Shape specific
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">fatigue test run out</rdfs:label>
+        <skos:definition xml:lang="en">Fatigue test run out is an object which has an evaluant role in a single fatigue testing process and does not experience failure (defined by a failure criterion) after reaching the planned number number of cycles</skos:definition>
     </owl:Class>
     
 
@@ -8606,6 +8806,60 @@ Note: The concept of parallel length is replaced by the concept of distance betw
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000002">
+        <rdfs:label xml:lang="en">example to be eventually removed</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000103">
+        <rdfs:label xml:lang="en">failed exploratory term</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000120">
+        <rdfs:label xml:lang="en">metadata complete</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000121">
+        <rdfs:label xml:lang="en">organizational term</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000122">
+        <rdfs:label xml:lang="en">ready for release</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000123">
+        <rdfs:label xml:lang="en">metadata incomplete</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000124">
+        <rdfs:label xml:lang="en">uncurated</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000125">
+        <rdfs:label xml:lang="en">pending final vetting</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000226">
+        <rdfs:label xml:lang="en">placeholder removed</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000227">
+        <rdfs:label xml:lang="en">terms merged</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000228">
+        <rdfs:label xml:lang="en">term imported</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000229">
+        <rdfs:label xml:lang="en">term split</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000410">
+        <rdfs:label xml:lang="en">universal</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000420">
+        <rdfs:label xml:lang="en">defined class</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000421">
+        <rdfs:label xml:lang="en">named class expression</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000423">
+        <rdfs:label xml:lang="en">to be replaced with external ontology term</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000428">
+        <rdfs:label xml:lang="en">requires discussion</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMO_0001000">
+        <rdfs:label>out of scope</rdfs:label>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000076">
         <obo:IAO_0000115>A concentration unit which denotes the number of moles of solute as a proportion of the total number of moles in a solution.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>(x)</oboInOwl:hasExactSynonym>
@@ -8722,6 +8976,14 @@ Note: The concept of parallel length is replaced by the concept of distance betw
             <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020142"/>
             <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020161"/>
             <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0050155"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000587"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000889"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000953"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>

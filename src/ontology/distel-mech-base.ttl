@@ -722,6 +722,10 @@ obo:IAO_0000027 rdf:type owl:Class .
 obo:IAO_0000030 rdf:type owl:Class .
 
 
+###  http://purl.obolibrary.org/obo/IAO_0000033
+obo:IAO_0000033 rdf:type owl:Class .
+
+
 ###  http://purl.obolibrary.org/obo/IAO_0000104
 obo:IAO_0000104 rdf:type owl:Class .
 
@@ -1150,6 +1154,14 @@ co:PMD_0000583 rdf:type owl:Class ;
                                "Ein Prozess, der die systematische Verwendung von rechnerischen Methoden und Werkzeugen umfasst, um Simulationen, Analysen oder Datenumwandlungen durchzuführen, um spezifische wissenschaftliche oder technische Ziele zu erreichen."@de .
 
 
+###  https://w3id.org/pmd/co/PMD_0000587
+co:PMD_0000587 rdf:type owl:Class ;
+               rdfs:subClassOf obo:BFO_0000015 ;
+               rdfs:label "crack growth"@en ;
+               skos:definition "The crack growth is an evolution of damage describing the progressive extension of a crack in a material under stress."@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
 ###  https://w3id.org/pmd/co/PMD_0000591
 co:PMD_0000591 rdf:type owl:Class ;
                owl:equivalentClass [ rdf:type owl:Restriction ;
@@ -1290,6 +1302,14 @@ co:PMD_0000639 rdf:type owl:Class ;
                skos:definition "metal that has iron as primary constituent"@en .
 
 
+###  https://w3id.org/pmd/co/PMD_0000645
+co:PMD_0000645 rdf:type owl:Class ;
+               rdfs:subClassOf obo:BFO_0000015 ;
+               rdfs:label "formation of notch or scratch"@en ;
+               skos:definition "The formation of (a) notch or (a) scratch is a process that describes the creation of small surface imperfections, which can influence a material's mechanical properties."@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
 ###  https://w3id.org/pmd/co/PMD_0000648
 co:PMD_0000648 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000602 ;
@@ -1370,6 +1390,15 @@ co:PMD_0000776 rdf:type owl:Class ;
                skos:definition "A mechanical property analyzing process that measures a material's resistance to deformation, typically using indentation methods to determine hardness."@en ,
                                "Ein Mechanische Eigenschaften Analyseverfahren, das den Widerstand eines Materials gegen Verformung misst und typischerweise Eindringverfahren verwendet, um die Härte zu bestimmen."@de ;
                skos:example "Hardness testing of steel using the Rockwell method to classify its grade for industrial applications."@en .
+
+
+###  https://w3id.org/pmd/co/PMD_0000820
+co:PMD_0000820 rdf:type owl:Class ;
+               rdfs:subClassOf co:PMD_0000602 ;
+               obo:IAO_0000119 "https://en.wikipedia.org/wiki/Load_cell"@en ;
+               rdfs:label "Kraftmessdose"@de ,
+                          "load cell"@en ;
+               skos:definition "A device that converts mechanical force into a measurable signal by sensing the physical deformation of a structural element."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0000822
@@ -1531,6 +1560,14 @@ co:PMD_0000886 rdf:type owl:Class ;
                                "Eine Poliermaschine ist eine Formmaschine, die die Oberfläche eines Materials durch Reiben mit einem Werkzeug, Schleifmittel oder Chemikalien glättet."@de .
 
 
+###  https://w3id.org/pmd/co/PMD_0000889
+co:PMD_0000889 rdf:type owl:Class ;
+               rdfs:subClassOf obo:BFO_0000015 ;
+               rdfs:label "pore growth"@en ;
+               skos:definition "Pore growth is an evolution of damage describing the process by which voids or pores in a material increase in size, often affecting its mechanical and physical properties."@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
 ###  https://w3id.org/pmd/co/PMD_0000890
 co:PMD_0000890 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000027 ;
@@ -1669,6 +1706,14 @@ co:PMD_0000952 rdf:type owl:Class ;
                rdfs:label "strength"@en ;
                skos:definition "The strength is a material property describing the maximum stress a material can withstand before failure."@en ,
                                "The strength is a mechanical property describing the maximum stress a material can withstand before failure."@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0000953
+co:PMD_0000953 rdf:type owl:Class ;
+               rdfs:subClassOf obo:BFO_0000015 ;
+               rdfs:label "structural and chemical decay"@en ;
+               skos:definition "The structural and chemical decay is an evolution of damage describing the deterioration of a material's structure and composition over time due to environmental or operational conditions."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -3137,6 +3182,14 @@ co:PMD_0020140 rdf:type owl:Class ;
                skos:definition "A portion of pure chemical element is a pure substance composed of multiple atoms, which are all of the same kind."@en .
 
 
+###  https://w3id.org/pmd/co/PMD_0020141
+co:PMD_0020141 rdf:type owl:Class ;
+               rdfs:subClassOf obo:BFO_0000015 ;
+               rdfs:comment "Fatigue is typically of interest when the change of the material affects the objects ability to fulfill its function."@en ;
+               rdfs:label "fatigue (reaction to repetitive loading)"@en ;
+               skos:definition "fatigue is a process that affects an material entities integrity by nucleation and growing cracks."@en .
+
+
 ###  https://w3id.org/pmd/co/PMD_0020142
 co:PMD_0020142 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020148 ;
@@ -3315,7 +3368,8 @@ co:PMD_0025004 rdf:type owl:Class ;
                                  owl:onProperty obo:BFO_0000050 ;
                                  owl:someValuesFrom co:PMD_0000637
                                ] ;
-               rdfs:label "motor of a fatigue testing machine"@en .
+               rdfs:label "motor of a fatigue testing machine"@en ;
+               skos:definition "Motor of a fatigue testing machine is a part of such machine which is essential for the applicaiton of loading on a sample."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0025007
@@ -3551,6 +3605,14 @@ co:PMD_0050157 rdf:type owl:Class ;
                                "Eine 3D Geometrie ist eine geometrische Form, die in drei Dimensionen existiert, mit Länge, Breite und Höhe, und die durch ihre räumlichen Eigenschaften wie Volumen und Oberfläche definiert werden kann."@de ;
                skos:example "Beispiele sind Formen wie Würfel, Kugeln und Pyramiden."@de ,
                             "Examples include shapes like cubes, spheres, and pyramids."@en .
+
+
+###  https://w3id.org/pmd/co/PMD_0060006
+co:PMD_0060006 rdf:type owl:Class ;
+               rdfs:subClassOf obo:IAO_0000033 ;
+               rdfs:label "device specification"@en ;
+               skos:definition "A directive information entity that outlines the technical requirements, features, constraints, and performance criteria of a specific device, guiding its design, manufacturing, operation, or maintenance."@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
 
 
 ###  https://w3id.org/pmd/distel/DISTEL_0000000
@@ -3896,12 +3958,16 @@ co:PMD_0050157 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/distel/DISTEL_0000047
 <https://w3id.org/pmd/distel/DISTEL_0000047> rdf:type owl:Class ;
                                              rdfs:subClassOf co:PMD_0000638 ;
-                                             rdfs:label "rolling contact fatigue testing process"@en .
+                                             obo:IAO_0000119 "https://en.wikipedia.org/wiki/Rolling_contact_fatigue" ;
+                                             rdfs:label "rolling contact fatigue testing process"@en ;
+                                             skos:altLabel "RCF"@en ;
+                                             skos:definition "Rolling contact fatigue (RCF) testing is a fatigue testing process that evaluates material performance under repeated loading while applying high cyclic contact pressure and sliding until failure (pitting/spalling) occurs."@en .
 
 
 ###  https://w3id.org/pmd/distel/DISTEL_0000048
 <https://w3id.org/pmd/distel/DISTEL_0000048> rdf:type owl:Class ;
                                              rdfs:subClassOf co:PMD_0000638 ;
+                                             obo:IAO_0000119 "Tensile fatigue testing process is a fatigue testing process  that evaluates material performance under repeated loading while applying cyclic, axial tensile stress. The test can involve constant amplitude or variable amplitude loading."@en ;
                                              rdfs:label "tensile fatigue testing process"@en .
 
 
@@ -3917,8 +3983,9 @@ co:PMD_0050157 rdf:type owl:Class ;
 <https://w3id.org/pmd/distel/DISTEL_0000050> rdf:type owl:Class ;
                                              rdfs:subClassOf co:PMD_0025020 ;
                                              owl:disjointWith <https://w3id.org/pmd/distel/DISTEL_0000052> ;
-                                             rdfs:comment """Must be defined class based on the number of sustained loading cycles or fatigue cycle limit??
-TODO Is it possible to define it via negation? Alternative: SHACL Shape specifically for this class , stating that it cannot have fatigue specimen failure as occurent part."""@en ;
+                                             rdfs:comment """The axioms about NOT having a failure: 
+Option 1 (easy): SHACL Shape specifically for this class, stating that it cannot have fatigue specimen failure as occurent part.
+Option 2 (ontology advanced): make an equv. class axiom with some and only to make a an exaustive and close list of triples the class is allowed to have. Then, if the failure is an occurent part, it will be automatically inferred as \".. test with failed specimen\". If no failure is explicitly given, but all the other essential triples are asserted, it will be classified as \".. test with run out\""""@en ;
                                              rdfs:label "single fatigue testing process with run out"@en ;
                                              skos:definition "Single fatigue testing process with run out is a single fatigue testing process in which the specimen did not fail when the fatigue cycle limit is reached."@en .
 
@@ -3931,7 +3998,8 @@ TODO Is it possible to define it via negation? Alternative: SHACL Shape specific
                                                                owl:someValuesFrom co:PMD_0025020
                                                              ] ;
                                              rdfs:comment "The \"failure\" is defined based on the free text failure criterion from process attributes"@en ;
-                                             rdfs:label "fatigue specimen failure"@en .
+                                             rdfs:label "fatigue specimen failure"@en ;
+                                             skos:definition "Fatigue specimen failure is a process which is an occurent part of a sinlge fatigue testing process. If fatigue specimen failure took place, it means that the defined failure criterion has been satisfied."@en .
 
 
 ###  https://w3id.org/pmd/distel/DISTEL_0000052
@@ -3983,7 +4051,8 @@ TODO Is it possible to define it via negation? Alternative: SHACL Shape specific
                                                                                     rdf:type owl:Class
                                                                                   ]
                                                              ] ;
-                                             rdfs:label "fatigue test run out"@en .
+                                             rdfs:label "fatigue test run out"@en ;
+                                             skos:definition "Fatigue test run out is an object which has an evaluant role in a single fatigue testing process and does not experience failure (defined by a failure criterion) after reaching the planned number number of cycles"@en .
 
 
 ###  https://w3id.org/pmd/tto/TTO_0000005
@@ -4485,6 +4554,14 @@ co:PMD_0020242 rdf:type owl:NamedIndividual ;
                 co:PMD_0020142
                 co:PMD_0020161
                 co:PMD_0050155
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( co:PMD_0000587
+                co:PMD_0000889
+                co:PMD_0000953
               )
 ] .
 

@@ -132,11 +132,15 @@ Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000007>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000009>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000010>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000033>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000100>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000104>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000109>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0020000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0020010>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9606>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000067>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000070>))
@@ -179,6 +183,7 @@ Declaration(Class(<https://w3id.org/pmd/co/PMD_0000553>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000560>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000561>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000583>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0000587>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000591>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000592>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000595>))
@@ -192,12 +197,14 @@ Declaration(Class(<https://w3id.org/pmd/co/PMD_0000636>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000637>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000638>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000639>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0000645>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000648>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000654>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000663>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000667>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000773>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000776>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0000820>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000822>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000823>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000833>))
@@ -206,6 +213,7 @@ Declaration(Class(<https://w3id.org/pmd/co/PMD_0000849>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000852>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000853>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000886>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0000889>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000890>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000891>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000896>))
@@ -216,6 +224,7 @@ Declaration(Class(<https://w3id.org/pmd/co/PMD_0000942>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000946>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000950>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000952>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0000953>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000957>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000965>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000967>))
@@ -314,6 +323,7 @@ Declaration(Class(<https://w3id.org/pmd/co/PMD_0020132>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020133>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020137>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020140>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0020141>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020142>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020143>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020148>))
@@ -348,6 +358,7 @@ Declaration(Class(<https://w3id.org/pmd/co/PMD_0050154>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0050155>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0050156>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0050157>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0060006>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000000>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000008>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000009>))
@@ -2204,6 +2215,15 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000009> "datum label"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000009> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
+# Class: <http://purl.obolibrary.org/obo/IAO_0000010> (software)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000010> "Software is a plan specification composed of a series of instructions that can be 
+interpreted by or directly executed by a processing unit."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000010> "see sourceforge tracker discussion at http://sourceforge.net/tracker/index.php?func=detail&aid=1958818&group_id=177891&atid=886178"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000010> "GROUP: OBI"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000010> "software"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000010> <http://purl.obolibrary.org/obo/IAO_0000104>)
+
 # Class: <http://purl.obolibrary.org/obo/IAO_0000027> (data item)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/IAO_0000027> "Data items include counts of things, analyte concentrations, and statistical summaries."@en)
@@ -2247,6 +2267,17 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000033> "dir
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000033> <http://purl.obolibrary.org/obo/IAO_0000030>)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000033> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/BFO_0000017>))
 
+# Class: <http://purl.obolibrary.org/obo/IAO_0000100> (data set)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/IAO_0000100> "Intensity values in a CEL file or from multiple CEL files comprise a data set (as opposed to the CEL files themselves)."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000100> "A data item that is an aggregate of other data items of the same type that have something in common. Averages and distributions can be determined for data sets."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000100> "2009/10/23 Alan Ruttenberg. The intention is that this term represent collections of like data. So this isn't for, e.g. the whole contents of a cel file, which includes parameters, metadata etc. This is more like java arrays of a certain rather specific type"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000100> "2014-05-05: Data sets are aggregates and thus must include two or more data items. We have chosen not to add logical axioms to make this restriction.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000100> "OBI_0000042"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000100> "group:OBI"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000100> "data set"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000100> <http://purl.obolibrary.org/obo/IAO_0000027>)
+
 # Class: <http://purl.obolibrary.org/obo/IAO_0000104> (plan specification)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/IAO_0000104> "PMID: 18323827.Nat Med. 2008 Mar;14(3):226.New plan proposed to help resolve conflicting medical advice."@en)
@@ -2279,6 +2310,27 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000109> "measurement datum"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000109> <http://purl.obolibrary.org/obo/IAO_0000027>)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000109> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0001938> <http://purl.obolibrary.org/obo/OBI_0001933>))
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0020000> (identifier)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0020000> "An information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/IAO_0020000> "https://github.com/information-artifact-ontology/IAO/issues/237"@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/IAO_0020000> "Sep 29, 2016: The current definition has been amended from the previous version: \"A proper name is an information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity.\" to more accuratly reflect the necessary and sufficient condition on the class. (MB)"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0020000> "identifier"@en)
+AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <http://purl.obolibrary.org/obo/IAO_0020000> "true"^^xsd:boolean)
+EquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0020000> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/IAO_0000030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000219> <http://purl.obolibrary.org/obo/BFO_0000001>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/IAO_0020010>)))
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020000> <http://purl.obolibrary.org/obo/IAO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000219> <http://purl.obolibrary.org/obo/BFO_0000001>))
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/IAO_0020010>))
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0020010> (identifier creating process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0020010> "A planned process that provides a reference to an individual entity shared by a group of subscribers to refer to that individual entity."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/IAO_0020010> "https://github.com/information-artifact-ontology/IAO/issues/237"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0020010> "identifier creating process"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0020010> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/COB_0000035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/IAO_0020000>)))
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020010> <http://purl.obolibrary.org/obo/COB_0000035>)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/IAO_0020000>))
 
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (homo sapiens)
 
@@ -2700,6 +2752,13 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000583> <http://purl.obolibrary.org/obo/COB_0000035>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000583> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/IAO_0000030>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/IAO_0000030>)))
 
+# Class: <https://w3id.org/pmd/co/PMD_0000587> (crack growth)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000587> "crack growth"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000587> "The crack growth is an evolution of damage describing the progressive extension of a crack in a material under stress."@en)
+AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000587> "true"^^xsd:boolean)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000587> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
 # Class: <https://w3id.org/pmd/co/PMD_0000591> (crystal structure)
 
 AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/co/PMD_0000591> "The finite set of periodic geometric arrangements is described e.g. by the 14 possible Bravais Lattices in three-dimensional space."@en)
@@ -2811,6 +2870,13 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000639> <https://w3id.org/pmd/co/PMD_0000852>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000639> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <https://w3id.org/pmd/co/PMD_0020026>))
 
+# Class: <https://w3id.org/pmd/co/PMD_0000645> (formation of notch or scratch)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000645> "formation of notch or scratch"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000645> "The formation of (a) notch or (a) scratch is a process that describes the creation of small surface imperfections, which can influence a material's mechanical properties."@en)
+AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000645> "true"^^xsd:boolean)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000645> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
 # Class: <https://w3id.org/pmd/co/PMD_0000648> (Formmaschine)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000648> "Formmaschine"@de)
@@ -2862,6 +2928,14 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000776> "Ein Mechanische Eigenschaften Analyseverfahren, das den Widerstand eines Materials gegen Verformung misst und typischerweise Eindringverfahren verwendet, um die Härte zu bestimmen."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0000776> "Hardness testing of steel using the Rockwell method to classify its grade for industrial applications."@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000776> <https://w3id.org/pmd/co/PMD_0000849>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0000820> (Kraftmessdose)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <https://w3id.org/pmd/co/PMD_0000820> "https://en.wikipedia.org/wiki/Load_cell"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000820> "Kraftmessdose"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000820> "load cell"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000820> "A device that converts mechanical force into a measurable signal by sensing the physical deformation of a structural element."@en)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000820> <https://w3id.org/pmd/co/PMD_0000602>)
 
 # Class: <https://w3id.org/pmd/co/PMD_0000822> (Spanen Mit Geometrisch Bestimmten Schneiden)
 
@@ -2915,7 +2989,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<http://pu
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000000>))
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000522>))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000849> (mechanical property analyzing process)
+# Class: <https://w3id.org/pmd/co/PMD_0000849> (Mechanische Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000849> "Mechanische Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000849> "mechanical property analyzing process"@en)
@@ -2947,6 +3021,13 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000886> "polishing 
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000886> "A polishing machine is a forming machine that smooths the surface of a material by rubbing it with a tool, abrasive, or chemical."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000886> "Eine Poliermaschine ist eine Formmaschine, die die Oberfläche eines Materials durch Reiben mit einem Werkzeug, Schleifmittel oder Chemikalien glättet."@de)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000886> <https://w3id.org/pmd/co/PMD_0000648>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0000889> (pore growth)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000889> "pore growth"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000889> "Pore growth is an evolution of damage describing the process by which voids or pores in a material increase in size, often affecting its mechanical and physical properties."@en)
+AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000889> "true"^^xsd:boolean)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000889> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
 # Class: <https://w3id.org/pmd/co/PMD_0000890> (connected material entity aggregate)
 
@@ -3037,7 +3118,14 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000952> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000952> <https://w3id.org/pmd/co/PMD_0000848>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
+# Class: <https://w3id.org/pmd/co/PMD_0000953> (structural and chemical decay)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000953> "structural and chemical decay"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000953> "The structural and chemical decay is an evolution of damage describing the deterioration of a material's structure and composition over time due to environmental or operational conditions."@en)
+AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000953> "true"^^xsd:boolean)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000953> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "Struktur Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "structural property analyzing process"@en)
@@ -3845,6 +3933,13 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020140> "portion of
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020140> "A portion of pure chemical element is a pure substance composed of multiple atoms, which are all of the same kind."@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020140> <http://purl.obolibrary.org/obo/CHEBI_60003>)
 
+# Class: <https://w3id.org/pmd/co/PMD_0020141> (fatigue (reaction to repetitive loading))
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/co/PMD_0020141> "Fatigue is typically of interest when the change of the material affects the objects ability to fulfill its function."@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020141> "fatigue (reaction to repetitive loading)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020141> "fatigue is a process that affects an material entities integrity by nucleation and growing cracks."@en)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0020141> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
 # Class: <https://w3id.org/pmd/co/PMD_0020142> (energy)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <https://w3id.org/pmd/co/PMD_0020142> <http://openenergy-platform.org/ontology/oeo/OEO_00000150>)
@@ -3967,6 +4062,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0025003> ObjectSomeValuesFrom(<https://w
 # Class: <https://w3id.org/pmd/co/PMD_0025004> (motor of a fatigue testing machine)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025004> "motor of a fatigue testing machine"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0025004> "Motor of a fatigue testing machine is a part of such machine which is essential for the applicaiton of loading on a sample."@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0025004> <https://w3id.org/pmd/co/PMD_0000602>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0025004> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/pmd/co/PMD_0000637>))
 
@@ -4120,6 +4216,13 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0050157> "Beispiele sind Formen wie Würfel, Kugeln und Pyramiden."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0050157> "Examples include shapes like cubes, spheres, and pyramids."@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0050157> <https://w3id.org/pmd/co/PMD_0050156>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0060006> (device specification)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0060006> "device specification"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0060006> "A directive information entity that outlines the technical requirements, features, constraints, and performance criteria of a specific device, guiding its design, manufacturing, operation, or maintenance."@en)
+AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0060006> "true"^^xsd:boolean)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0060006> <http://purl.obolibrary.org/obo/IAO_0000033>)
 
 # Class: <https://w3id.org/pmd/distel/DISTEL_0000000> (fatigue loading type value)
 
@@ -4350,11 +4453,15 @@ SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000046> <https://w3id.org/pmd/di
 
 # Class: <https://w3id.org/pmd/distel/DISTEL_0000047> (rolling contact fatigue testing process)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <https://w3id.org/pmd/distel/DISTEL_0000047> "https://en.wikipedia.org/wiki/Rolling_contact_fatigue")
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000047> "rolling contact fatigue testing process"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/pmd/distel/DISTEL_0000047> "RCF"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000047> "Rolling contact fatigue (RCF) testing is a fatigue testing process that evaluates material performance under repeated loading while applying high cyclic contact pressure and sliding until failure (pitting/spalling) occurs."@en)
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000047> <https://w3id.org/pmd/co/PMD_0000638>)
 
 # Class: <https://w3id.org/pmd/distel/DISTEL_0000048> (tensile fatigue testing process)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <https://w3id.org/pmd/distel/DISTEL_0000048> "Tensile fatigue testing process is a fatigue testing process  that evaluates material performance under repeated loading while applying cyclic, axial tensile stress. The test can involve constant amplitude or variable amplitude loading."@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000048> "tensile fatigue testing process"@en)
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000048> <https://w3id.org/pmd/co/PMD_0000638>)
 
@@ -4367,8 +4474,9 @@ SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000049> <https://w3id.org/pmd/co
 
 # Class: <https://w3id.org/pmd/distel/DISTEL_0000050> (single fatigue testing process with run out)
 
-AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/distel/DISTEL_0000050> "Must be defined class based on the number of sustained loading cycles or fatigue cycle limit??
-TODO Is it possible to define it via negation? Alternative: SHACL Shape specifically for this class , stating that it cannot have fatigue specimen failure as occurent part."@en)
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/distel/DISTEL_0000050> "The axioms about NOT having a failure: 
+Option 1 (easy): SHACL Shape specifically for this class, stating that it cannot have fatigue specimen failure as occurent part.
+Option 2 (ontology advanced): make an equv. class axiom with some and only to make a an exaustive and close list of triples the class is allowed to have. Then, if the failure is an occurent part, it will be automatically inferred as \".. test with failed specimen\". If no failure is explicitly given, but all the other essential triples are asserted, it will be classified as \".. test with run out\""@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000050> "single fatigue testing process with run out"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000050> "Single fatigue testing process with run out is a single fatigue testing process in which the specimen did not fail when the fatigue cycle limit is reached."@en)
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000050> <https://w3id.org/pmd/co/PMD_0025020>)
@@ -4378,6 +4486,7 @@ DisjointClasses(<https://w3id.org/pmd/distel/DISTEL_0000050> <https://w3id.org/p
 
 AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/distel/DISTEL_0000051> "The \"failure\" is defined based on the free text failure criterion from process attributes"@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000051> "fatigue specimen failure"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000051> "Fatigue specimen failure is a process which is an occurent part of a sinlge fatigue testing process. If fatigue specimen failure took place, it means that the defined failure criterion has been satisfied."@en)
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000051> <http://purl.obolibrary.org/obo/BFO_0000015>)
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000132> <https://w3id.org/pmd/co/PMD_0025020>))
 
@@ -4392,6 +4501,7 @@ SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000052> <https://w3id.org/pmd/co
 # Class: <https://w3id.org/pmd/distel/DISTEL_0000053> (fatigue test run out)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000053> "fatigue test run out"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000053> "Fatigue test run out is an object which has an evaluant role in a single fatigue testing process and does not experience failure (defined by a failure criterion) after reaching the planned number number of cycles"@en)
 EquivalentClasses(<https://w3id.org/pmd/distel/DISTEL_0000053> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000087> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0000067> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <https://w3id.org/pmd/distel/DISTEL_0000050>)))))
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000053> <http://purl.obolibrary.org/obo/BFO_0000030>)
 
@@ -4436,7 +4546,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000012> <https://www.merriam-webster.com/dictionary/cross%20section>)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000012> <https://w3id.org/pmd/co/PMD_0020199>)
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000017> (Extensometer-Messlänge)
+# Class: <https://w3id.org/pmd/tto/TTO_0000017> (extensometer gauge length)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000017> <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000017> "Extensometer-Messlänge"@de)
@@ -4925,6 +5035,7 @@ DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000008> <http://purl.obolib
 DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000009> <http://purl.obolibrary.org/obo/BFO_0000018> <http://purl.obolibrary.org/obo/BFO_0000026> <http://purl.obolibrary.org/obo/BFO_0000028>)
 DisjointClasses(<https://w3id.org/pmd/co/PMD_0000503> <https://w3id.org/pmd/co/PMD_0000512> <https://w3id.org/pmd/co/PMD_0000591> <https://w3id.org/pmd/co/PMD_0000595> <https://w3id.org/pmd/co/PMD_0000597> <https://w3id.org/pmd/co/PMD_0000853> <https://w3id.org/pmd/co/PMD_0000896> <https://w3id.org/pmd/co/PMD_0000942> <https://w3id.org/pmd/co/PMD_0000967> <https://w3id.org/pmd/co/PMD_0020005> <https://w3id.org/pmd/co/PMD_0020112> <https://w3id.org/pmd/co/PMD_0025001> <https://w3id.org/pmd/co/PMD_0025003>)
 DisjointClasses(<https://w3id.org/pmd/co/PMD_0000553> <https://w3id.org/pmd/co/PMD_0000619> <https://w3id.org/pmd/co/PMD_0020132> <https://w3id.org/pmd/co/PMD_0020133> <https://w3id.org/pmd/co/PMD_0020142> <https://w3id.org/pmd/co/PMD_0020161> <https://w3id.org/pmd/co/PMD_0050155>)
+DisjointClasses(<https://w3id.org/pmd/co/PMD_0000587> <https://w3id.org/pmd/co/PMD_0000889> <https://w3id.org/pmd/co/PMD_0000953>)
 DisjointClasses(<https://w3id.org/pmd/co/PMD_0020102> <https://w3id.org/pmd/co/PMD_0020103> <https://w3id.org/pmd/co/PMD_0020104>)
 DifferentIndividuals(<https://w3id.org/pmd/co/PMD_0020006> <https://w3id.org/pmd/co/PMD_0020007> <https://w3id.org/pmd/co/PMD_0020008> <https://w3id.org/pmd/co/PMD_0020009> <https://w3id.org/pmd/co/PMD_0020010> <https://w3id.org/pmd/co/PMD_0020011> <https://w3id.org/pmd/co/PMD_0020012> <https://w3id.org/pmd/co/PMD_0020013> <https://w3id.org/pmd/co/PMD_0020014> <https://w3id.org/pmd/co/PMD_0020015> <https://w3id.org/pmd/co/PMD_0020016> <https://w3id.org/pmd/co/PMD_0020017> <https://w3id.org/pmd/co/PMD_0020018> <https://w3id.org/pmd/co/PMD_0020019>)
 DifferentIndividuals(<https://w3id.org/pmd/co/PMD_0020117> <https://w3id.org/pmd/co/PMD_0020118> <https://w3id.org/pmd/co/PMD_0020119> <https://w3id.org/pmd/co/PMD_0020120> <https://w3id.org/pmd/co/PMD_0020121> <https://w3id.org/pmd/co/PMD_0020122> <https://w3id.org/pmd/co/PMD_0020123> <https://w3id.org/pmd/co/PMD_0020124> <https://w3id.org/pmd/co/PMD_0020125>)
