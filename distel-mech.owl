@@ -8026,14 +8026,18 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0060006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000637"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001938"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001938"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/pmd/co/PMD_0001026"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000637"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>TODO which defines what?</rdfs:comment>

@@ -2334,7 +2334,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000109> ObjectSomeValuesFrom(<ht
 # Class: <http://purl.obolibrary.org/obo/IAO_0000308> (figure)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000308> "figure"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000308> <https://w3id.org/pmd/co/PMD_0000502>)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000308> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
 # Class: <http://purl.obolibrary.org/obo/IAO_0020000> (identifier)
 
@@ -4529,8 +4529,8 @@ AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/distel/DISTEL_0000054> "T
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000054> "range of motion specification"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000054> "Range of motion is a device specification of  fatigue testing machine which defines ..."@en)
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000054> <https://w3id.org/pmd/co/PMD_0060006>)
-SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000054> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <https://w3id.org/pmd/co/PMD_0000637>))
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000054> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0001938> <http://purl.obolibrary.org/obo/OBI_0001933>))
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000054> ObjectSomeValuesFrom(ObjectInverseOf(<https://w3id.org/pmd/co/PMD_0001026>) <https://w3id.org/pmd/co/PMD_0000637>))
 
 # Class: <https://w3id.org/pmd/distel/DISTEL_0000055> (evaluation software)
 
@@ -4711,7 +4711,7 @@ SubClassOf(<https://w3id.org/pmd/tto/TTO_0000059> <https://w3id.org/pmd/tto/TTO_
 #   Named Individuals
 ############################
 
-# Individual: <http://qudt.org/vocab/unit/HZ> (हर्ट्ज)
+# Individual: <http://qudt.org/vocab/unit/HZ> (Hertz)
 
 AnnotationAssertion(dcterms:description <http://qudt.org/vocab/unit/HZ> "
   $\\textit{Hertz}$ (symbol $Hz$) is the SI unit of frequency defined as the number of cycles per second of a periodic phenomenon. 
