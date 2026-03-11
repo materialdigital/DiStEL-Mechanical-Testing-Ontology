@@ -17,11 +17,11 @@
 @base <https://w3id.org/pmd/distel-mech.ttl> .
 
 <https://w3id.org/pmd/distel-mech.ttl> rdf:type owl:Ontology ;
-                                        owl:versionIRI <https://w3id.org/pmd/distel/releases/2026-03-06/distel-mech.ttl> ;
+                                        owl:versionIRI <https://w3id.org/pmd/distel/releases/2026-03-11/distel-mech.ttl> ;
                                         dcterms:description "None" ;
                                         dcterms:license <https://creativecommons.org/licenses/unspecified> ;
                                         dcterms:title "DiStEL Mechanical Testing Ontology" ;
-                                        owl:versionInfo "2026-03-06" .
+                                        owl:versionInfo "2026-03-11" .
 
 #################################################################
 #    Annotation properties
@@ -5893,7 +5893,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
                                                              [ rdf:type owl:Restriction ;
                                                                owl:onProperty [ owl:inverseOf co:PMD_0001026
                                                                               ] ;
-                                                               owl:someValuesFrom co:PMD_0000637
+                                                               owl:someValuesFrom <https://w3id.org/pmd/distel/DISTEL_0000057>
                                                              ] ;
                                              rdfs:comment "TODO which defines what?" ;
                                              rdfs:label "range of motion specification"@en ;
@@ -5914,14 +5914,34 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
                                              skos:definition "Software used to control the course of a fatigue testing process."@en .
 
 
+###  https://w3id.org/pmd/distel/DISTEL_0000057
+<https://w3id.org/pmd/distel/DISTEL_0000057> rdf:type owl:Class ;
+                                             rdfs:subClassOf co:PMD_0000602 ;
+                                             rdfs:comment "TODO defintion" ;
+                                             rdfs:label "actuator"@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000058
+<https://w3id.org/pmd/distel/DISTEL_0000058> rdf:type owl:Class ;
+                                             rdfs:subClassOf <https://w3id.org/pmd/distel/DISTEL_0000057> ;
+                                             rdfs:comment "TODO defintion" ;
+                                             rdfs:label "piezo actuator"@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000059
+<https://w3id.org/pmd/distel/DISTEL_0000059> rdf:type owl:Class ;
+                                             rdfs:subClassOf co:PMD_0040001 ;
+                                             rdfs:label "initial crack length"@en .
+
+
 ###  https://w3id.org/pmd/distel/DISTEL_0000100
 <https://w3id.org/pmd/distel/DISTEL_0000100> rdf:type owl:Class ;
-                                             rdfs:subClassOf co:PMD_0000602 ,
+                                             rdfs:subClassOf <https://w3id.org/pmd/distel/DISTEL_0000057> ,
                                                              [ rdf:type owl:Restriction ;
                                                                owl:onProperty obo:BFO_0000050 ;
                                                                owl:someValuesFrom co:PMD_0000637
                                                              ] ;
-                                             rdfs:label "motor of a fatigue testing machine"@en ;
+                                             rdfs:label "motor"@en ;
                                              skos:definition "Motor of a fatigue testing machine is a part of such machine which is essential for the applicaiton of loading on a sample."@en .
 
 

@@ -405,6 +405,9 @@ Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000053>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000054>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000055>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000056>))
+Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000057>))
+Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000058>))
+Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000059>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000100>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000005>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000009>))
@@ -3150,7 +3153,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000953> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000953> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "Struktur Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "structural property analyzing process"@en)
@@ -4530,7 +4533,7 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000054> "ran
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000054> "Range of motion is a device specification of  fatigue testing machine which defines ..."@en)
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000054> <https://w3id.org/pmd/co/PMD_0060006>)
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000054> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0001938> <http://purl.obolibrary.org/obo/OBI_0001933>))
-SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000054> ObjectSomeValuesFrom(ObjectInverseOf(<https://w3id.org/pmd/co/PMD_0001026>) <https://w3id.org/pmd/co/PMD_0000637>))
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000054> ObjectSomeValuesFrom(ObjectInverseOf(<https://w3id.org/pmd/co/PMD_0001026>) <https://w3id.org/pmd/distel/DISTEL_0000057>))
 
 # Class: <https://w3id.org/pmd/distel/DISTEL_0000055> (evaluation software)
 
@@ -4544,11 +4547,28 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000056> "fat
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000056> "Software used to control the course of a fatigue testing process."@en)
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000056> <http://purl.obolibrary.org/obo/IAO_0000010>)
 
-# Class: <https://w3id.org/pmd/distel/DISTEL_0000100> (motor of a fatigue testing machine)
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000057> (actuator)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000100> "motor of a fatigue testing machine"@en)
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/distel/DISTEL_0000057> "TODO defintion")
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000057> "actuator"@en)
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000057> <https://w3id.org/pmd/co/PMD_0000602>)
+
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000058> (piezo actuator)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/distel/DISTEL_0000058> "TODO defintion")
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000058> "piezo actuator"@en)
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000058> <https://w3id.org/pmd/distel/DISTEL_0000057>)
+
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000059> (initial crack length)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000059> "initial crack length"@en)
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000059> <https://w3id.org/pmd/co/PMD_0040001>)
+
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000100> (motor)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000100> "motor"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000100> "Motor of a fatigue testing machine is a part of such machine which is essential for the applicaiton of loading on a sample."@en)
-SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000100> <https://w3id.org/pmd/co/PMD_0000602>)
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000100> <https://w3id.org/pmd/distel/DISTEL_0000057>)
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000100> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/pmd/co/PMD_0000637>))
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000005> (extension)

@@ -579,6 +579,9 @@ https://w3id.org/pmd/distel/DISTEL_0000053
 https://w3id.org/pmd/distel/DISTEL_0000054
 https://w3id.org/pmd/distel/DISTEL_0000055
 https://w3id.org/pmd/distel/DISTEL_0000056
+https://w3id.org/pmd/distel/DISTEL_0000057
+https://w3id.org/pmd/distel/DISTEL_0000058
+https://w3id.org/pmd/distel/DISTEL_0000059
 https://w3id.org/pmd/distel/DISTEL_0000100
 https://w3id.org/pmd/tto
 https://w3id.org/pmd/tto/ExtensometerGaugeLength

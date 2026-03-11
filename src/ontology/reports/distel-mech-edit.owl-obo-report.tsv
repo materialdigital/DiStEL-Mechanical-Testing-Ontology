@@ -44,4 +44,7 @@ WARN	missing_definition	fatigue test run out	definition
 WARN	missing_definition	range of motion specification	definition	
 WARN	missing_definition	evaluation software	definition	
 WARN	missing_definition	fatigue test control software	definition	
-WARN	missing_definition	motor of a fatigue testing machine	definition	
+WARN	missing_definition	actuator	definition	
+WARN	missing_definition	piezo actuator	definition	
+WARN	missing_definition	initial crack length	definition	
+WARN	missing_definition	motor	definition	

@@ -12,12 +12,12 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/pmd/distel/distel-mech-base.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/distel/releases/2026-03-06/distel-mech-base.owl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/distel/releases/2026-03-11/distel-mech-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>DiStEL Mechanical Testing Ontology</dcterms:title>
-        <owl:versionInfo>2026-03-06</owl:versionInfo>
+        <owl:versionInfo>2026-03-11</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -5644,7 +5644,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
                         <owl:inverseOf rdf:resource="https://w3id.org/pmd/co/PMD_0001026"/>
                     </rdf:Description>
                 </owl:onProperty>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000637"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000057"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>TODO which defines what?</rdfs:comment>
@@ -5674,17 +5674,46 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000057 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000057">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000602"/>
+        <rdfs:comment>TODO defintion</rdfs:comment>
+        <rdfs:label xml:lang="en">actuator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000058 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000058">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000057"/>
+        <rdfs:comment>TODO defintion</rdfs:comment>
+        <rdfs:label xml:lang="en">piezo actuator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000059 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000059">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
+        <rdfs:label xml:lang="en">initial crack length</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/distel/DISTEL_0000100 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000100">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000602"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000057"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000637"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">motor of a fatigue testing machine</rdfs:label>
+        <rdfs:label xml:lang="en">motor</rdfs:label>
         <skos:definition xml:lang="en">Motor of a fatigue testing machine is a part of such machine which is essential for the applicaiton of loading on a sample.</skos:definition>
     </owl:Class>
     
