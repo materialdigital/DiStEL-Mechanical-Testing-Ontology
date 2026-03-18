@@ -7364,6 +7364,16 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
     
 
 
+    <!-- https://w3id.org/pmd/co/PMD_0025010 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025010">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000549"/>
+        <rdfs:label xml:lang="en">heating</rdfs:label>
+        <skos:definition xml:lang="en">Heating is a change of temperature which corresponds to the increase of temperature in the system or object.</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/co/PMD_0025011 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025011">
@@ -7548,6 +7558,56 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
         <rdfs:label xml:lang="en">cooling rate</rdfs:label>
         <skos:definition xml:lang="en">Cooling rate is a process attribute which describes the descreate of temperature of some of the participant in a process over time.</skos:definition>
         <skos:example xml:lang="en">10 K/s</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0025023 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025023">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0025019"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0020127"/>
+                        <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000967"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0025006"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0025010"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <owl:Class>
+                                                        <owl:unionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                                                            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000068"/>
+                                                        </owl:unionOf>
+                                                    </owl:Class>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000967"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">heating rate</rdfs:label>
+        <skos:definition xml:lang="en">Heating rate is a process attribute which describes the increare of temperature of some of the participant in a process over time</skos:definition>
+        <skos:example xml:lang="en">1000 K/s</skos:example>
     </owl:Class>
     
 
@@ -8884,19 +8944,6 @@ Note: It is recommended to measure the original cross-sectional area of the para
     
 
 
-    <!-- https://w3id.org/pmd/tto/TTO_0000025 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000025">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Bewegungsqualität</rdfs:label>
-        <rdfs:label xml:lang="en">movement quality</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/MovementQuality"/>
-        <skos:definition xml:lang="en">A movement quality is a physical quality that inheres in a material entity and represents a property of the entity&apos;s motion or change of position over time.</skos:definition>
-        <skos:definition xml:lang="de">Eine Bewegungsqualität ist eine physikalische Qualität, die einer materiellen Entität innewohnt und eine Eigenschaft der Bewegung oder Positionsänderung der Entität im Laufe der Zeit darstellt.</skos:definition>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/pmd/tto/TTO_0000026 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000026">
@@ -9362,7 +9409,6 @@ Source: ISO 6892-1:2019</skos:definition>
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000051">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000025"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Dehngeschwindigkeit</rdfs:label>
         <rdfs:label xml:lang="en">strain rate</rdfs:label>
@@ -9379,7 +9425,6 @@ Source: ISO 6892-1:2019</skos:definition>
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000052">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000025"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Spannungsgeschwindigkeit</rdfs:label>
         <rdfs:label xml:lang="en">stress rate</rdfs:label>

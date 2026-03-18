@@ -367,6 +367,7 @@ Declaration(Class(<https://w3id.org/pmd/co/PMD_0025002>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025003>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025007>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025009>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0025010>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025011>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025012>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025015>))
@@ -376,6 +377,7 @@ Declaration(Class(<https://w3id.org/pmd/co/PMD_0025018>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025019>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025020>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025022>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0025023>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025997>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0040001>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0050000>))
@@ -2432,7 +2434,7 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0020010> ObjectIntersectio
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020010> <http://purl.obolibrary.org/obo/COB_0000035>)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/IAO_0020000>))
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (homo sapiens)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (Homo sapiens)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "Homo sapiens")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "homo sapiens")
@@ -3244,7 +3246,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<http://pu
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000000>))
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000522>))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000849> (Mechanische Eigenschaften Analyseverfahren)
+# Class: <https://w3id.org/pmd/co/PMD_0000849> (mechanical property analyzing process)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000849> "Mechanische Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000849> "mechanical property analyzing process"@en)
@@ -3383,7 +3385,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000953> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000953> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "Struktur Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "structural property analyzing process"@en)
@@ -4333,6 +4335,13 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0025009> <http://purl.obolibrary.org/obo
 SubClassOf(<https://w3id.org/pmd/co/PMD_0025009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000066> <https://w3id.org/pmd/co/PMD_0000001>))
 SubClassOf(<https://w3id.org/pmd/co/PMD_0025009> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001028> ObjectIntersectionOf(ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000016> <https://w3id.org/pmd/co/PMD_0000005>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <https://w3id.org/pmd/co/PMD_0000950>))))
 
+# Class: <https://w3id.org/pmd/co/PMD_0025010> (heating)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025010> "heating"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0025010> "Heating is a change of temperature which corresponds to the increase of temperature in the system or object."@en)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0025010> <http://purl.obolibrary.org/obo/BFO_0000015>)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0025010> <https://w3id.org/pmd/co/PMD_0000549>)
+
 # Class: <https://w3id.org/pmd/co/PMD_0025011> (cooling)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025011> "cooling"@en)
@@ -4399,6 +4408,14 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0025022> "10 K/s"@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0025022> <https://w3id.org/pmd/co/PMD_0025019>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0025022> ObjectIntersectionOf(ObjectAllValuesFrom(<https://w3id.org/pmd/co/PMD_0020127> <https://w3id.org/pmd/co/PMD_0000967>) ObjectAllValuesFrom(<https://w3id.org/pmd/co/PMD_0025006> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0025011> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> ObjectIntersectionOf(ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000040> <https://w3id.org/pmd/co/PMD_0000068>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <https://w3id.org/pmd/co/PMD_0000967>)))))))
+
+# Class: <https://w3id.org/pmd/co/PMD_0025023> (heating rate)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025023> "heating rate"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0025023> "Heating rate is a process attribute which describes the increare of temperature of some of the participant in a process over time"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0025023> "1000 K/s"@en)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0025023> <https://w3id.org/pmd/co/PMD_0025019>)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0025023> ObjectIntersectionOf(ObjectAllValuesFrom(<https://w3id.org/pmd/co/PMD_0020127> <https://w3id.org/pmd/co/PMD_0000967>) ObjectAllValuesFrom(<https://w3id.org/pmd/co/PMD_0025006> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0025010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> ObjectIntersectionOf(ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000040> <https://w3id.org/pmd/co/PMD_0000068>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <https://w3id.org/pmd/co/PMD_0000967>)))))))
 
 # Class: <https://w3id.org/pmd/co/PMD_0025997> (fraction value specification)
 

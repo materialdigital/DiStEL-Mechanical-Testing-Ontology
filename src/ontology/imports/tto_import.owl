@@ -1293,19 +1293,6 @@ Note: It is recommended to measure the original cross-sectional area of the para
     
 
 
-    <!-- https://w3id.org/pmd/tto/TTO_0000025 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000025">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Bewegungsqualität</rdfs:label>
-        <rdfs:label xml:lang="en">movement quality</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/MovementQuality"/>
-        <skos:definition xml:lang="en">A movement quality is a physical quality that inheres in a material entity and represents a property of the entity&apos;s motion or change of position over time.</skos:definition>
-        <skos:definition xml:lang="de">Eine Bewegungsqualität ist eine physikalische Qualität, die einer materiellen Entität innewohnt und eine Eigenschaft der Bewegung oder Positionsänderung der Entität im Laufe der Zeit darstellt.</skos:definition>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/pmd/tto/TTO_0000026 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000026">
@@ -2111,7 +2098,6 @@ Source: ISO 6892-1:2019</skos:definition>
     <!-- https://w3id.org/pmd/tto/TTO_0000051 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000051">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000025"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Dehngeschwindigkeit</rdfs:label>
         <rdfs:label xml:lang="en">strain rate</rdfs:label>
@@ -2127,7 +2113,6 @@ Source: ISO 6892-1:2019</skos:definition>
     <!-- https://w3id.org/pmd/tto/TTO_0000052 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000052">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000025"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Spannungsgeschwindigkeit</rdfs:label>
         <rdfs:label xml:lang="en">stress rate</rdfs:label>

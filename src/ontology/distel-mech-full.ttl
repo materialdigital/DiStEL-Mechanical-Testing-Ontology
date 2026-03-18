@@ -5420,6 +5420,13 @@ co:PMD_0025009 rdf:type owl:Class ;
                skos:definition "Material reacting process is a process which occurs in a portion of matter due to some of its disposition or behavioral material property which has realization in some  stimulating process. Both the material reacting process and stimulating process must be occurent parts of a planned process, if the planned process takes place."@en .
 
 
+###  https://w3id.org/pmd/co/PMD_0025010
+co:PMD_0025010 rdf:type owl:Class ;
+               rdfs:subClassOf co:PMD_0000549 ;
+               rdfs:label "heating"@en ;
+               skos:definition "Heating is a change of temperature which corresponds to the increase of temperature in the system or object."@en .
+
+
 ###  https://w3id.org/pmd/co/PMD_0025011
 co:PMD_0025011 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000549 ;
@@ -5556,6 +5563,43 @@ co:PMD_0025022 rdf:type owl:Class ;
                rdfs:label "cooling rate"@en ;
                skos:definition "Cooling rate is a process attribute which describes the descreate of temperature of some of the participant in a process over time."@en ;
                skos:example "10 K/s"@en .
+
+
+###  https://w3id.org/pmd/co/PMD_0025023
+co:PMD_0025023 rdf:type owl:Class ;
+               rdfs:subClassOf co:PMD_0025019 ,
+                               [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                        owl:onProperty co:PMD_0020127 ;
+                                                        owl:allValuesFrom co:PMD_0000967
+                                                      ]
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty co:PMD_0025006 ;
+                                                        owl:allValuesFrom [ owl:intersectionOf ( co:PMD_0025010
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty obo:RO_0000057 ;
+                                                                                                   owl:someValuesFrom [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                                                                                                               owl:unionOf ( obo:BFO_0000040
+                                                                                                                                                             co:PMD_0000068
+                                                                                                                                                           )
+                                                                                                                                             ]
+                                                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                                                               owl:onProperty obo:RO_0000086 ;
+                                                                                                                                               owl:someValuesFrom co:PMD_0000967
+                                                                                                                                             ]
+                                                                                                                                           ) ;
+                                                                                                                        rdf:type owl:Class
+                                                                                                                      ]
+                                                                                                 ]
+                                                                                               ) ;
+                                                                            rdf:type owl:Class
+                                                                          ]
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
+                               ] ;
+               rdfs:label "heating rate"@en ;
+               skos:definition "Heating rate is a process attribute which describes the increare of temperature of some of the participant in a process over time"@en ;
+               skos:example "1000 K/s"@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0025997
@@ -6529,16 +6573,6 @@ Note: It is recommended to measure the original cross-sectional area of the para
                                        co:definitionSource "DIN EN ISO 6892-1:2019" .
 
 
-###  https://w3id.org/pmd/tto/TTO_0000025
-<https://w3id.org/pmd/tto/TTO_0000025> rdf:type owl:Class ;
-                                       rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
-                                       rdfs:label "Bewegungsqualität"@de ,
-                                                  "movement quality"@en ;
-                                       rdfs:seeAlso <https://w3id.org/pmd/tto/MovementQuality> ;
-                                       skos:definition "A movement quality is a physical quality that inheres in a material entity and represents a property of the entity's motion or change of position over time."@en ,
-                                                       "Eine Bewegungsqualität ist eine physikalische Qualität, die einer materiellen Entität innewohnt und eine Eigenschaft der Bewegung oder Positionsänderung der Entität im Laufe der Zeit darstellt."@de .
-
-
 ###  https://w3id.org/pmd/tto/TTO_0000026
 <https://w3id.org/pmd/tto/TTO_0000026> rdf:type owl:Class ;
                                        rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000012> ,
@@ -6908,8 +6942,7 @@ Source: ISO 6892-1:2019"""@en ;
 
 ###  https://w3id.org/pmd/tto/TTO_0000051
 <https://w3id.org/pmd/tto/TTO_0000051> rdf:type owl:Class ;
-                                       rdfs:subClassOf co:PMD_0000008 ,
-                                                       <https://w3id.org/pmd/tto/TTO_0000025> ;
+                                       rdfs:subClassOf co:PMD_0000008 ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Dehngeschwindigkeit"@de ,
                                                   "strain rate"@en ;
@@ -6922,8 +6955,7 @@ Source: ISO 6892-1:2019"""@en ;
 
 ###  https://w3id.org/pmd/tto/TTO_0000052
 <https://w3id.org/pmd/tto/TTO_0000052> rdf:type owl:Class ;
-                                       rdfs:subClassOf co:PMD_0000008 ,
-                                                       <https://w3id.org/pmd/tto/TTO_0000025> ;
+                                       rdfs:subClassOf co:PMD_0000008 ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Spannungsgeschwindigkeit"@de ,
                                                   "stress rate"@en ;
