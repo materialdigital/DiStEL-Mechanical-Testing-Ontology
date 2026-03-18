@@ -4637,8 +4637,7 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
 
 ###  https://w3id.org/pmd/tto/TTO_0000038
 <https://w3id.org/pmd/tto/TTO_0000038> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000042> ,
-                                                       [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                       rdfs:subClassOf [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
                                                                                 owl:onProperty co:relatesTo ;
                                                                                 owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000024>
                                                                               ]
@@ -4713,17 +4712,6 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
                                        co:symbol "A_e"@en .
 
 
-###  https://w3id.org/pmd/tto/TTO_0000042
-<https://w3id.org/pmd/tto/TTO_0000042> rdf:type owl:Class ;
-                                       rdfs:subClassOf obo:BFO_0000019 ;
-                                       rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
-                                       rdfs:label "Physikalische Qualität"@de ,
-                                                  "physical quality"@en ;
-                                       rdfs:seeAlso <https://w3id.org/pmd/tto/PhysicalQuality> ;
-                                       skos:definition "A physical quality is a quality that inheres in a material entity and represents a measurable or observable property related to its physical state."@en ,
-                                                       "Eine physikalische Qualität ist eine Eigenschaft, die einer materiellen Einheit innewohnt und eine messbare oder beobachtbare Eigenschaft darstellt, die mit ihrem physikalischen Zustand zusammenhängt."@de .
-
-
 ###  https://w3id.org/pmd/tto/TTO_0000043
 <https://w3id.org/pmd/tto/TTO_0000043> rdf:type owl:Class ;
                                        rdfs:subClassOf co:PMD_0000952 ;
@@ -4782,7 +4770,6 @@ Source: ISO 6892-1:2019"""@en ;
 
 ###  https://w3id.org/pmd/tto/TTO_0000051
 <https://w3id.org/pmd/tto/TTO_0000051> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000042> ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Dehngeschwindigkeit"@de ,
                                                   "strain rate"@en ;
@@ -4795,7 +4782,6 @@ Source: ISO 6892-1:2019"""@en ;
 
 ###  https://w3id.org/pmd/tto/TTO_0000052
 <https://w3id.org/pmd/tto/TTO_0000052> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000042> ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Spannungsgeschwindigkeit"@de ,
                                                   "stress rate"@en ;

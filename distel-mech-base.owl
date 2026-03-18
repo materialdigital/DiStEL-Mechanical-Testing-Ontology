@@ -6387,7 +6387,6 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
     <!-- https://w3id.org/pmd/tto/TTO_0000038 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000038">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000042"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -6482,20 +6481,6 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
     
 
 
-    <!-- https://w3id.org/pmd/tto/TTO_0000042 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000042">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Physikalische Qualität</rdfs:label>
-        <rdfs:label xml:lang="en">physical quality</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/PhysicalQuality"/>
-        <skos:definition xml:lang="en">A physical quality is a quality that inheres in a material entity and represents a measurable or observable property related to its physical state.</skos:definition>
-        <skos:definition xml:lang="de">Eine physikalische Qualität ist eine Eigenschaft, die einer materiellen Einheit innewohnt und eine messbare oder beobachtbare Eigenschaft darstellt, die mit ihrem physikalischen Zustand zusammenhängt.</skos:definition>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/pmd/tto/TTO_0000043 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000043">
@@ -6567,7 +6552,6 @@ Source: ISO 6892-1:2019</skos:definition>
     <!-- https://w3id.org/pmd/tto/TTO_0000051 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000051">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000042"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Dehngeschwindigkeit</rdfs:label>
         <rdfs:label xml:lang="en">strain rate</rdfs:label>
@@ -6583,7 +6567,6 @@ Source: ISO 6892-1:2019</skos:definition>
     <!-- https://w3id.org/pmd/tto/TTO_0000052 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000052">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000042"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Spannungsgeschwindigkeit</rdfs:label>
         <rdfs:label xml:lang="en">stress rate</rdfs:label>

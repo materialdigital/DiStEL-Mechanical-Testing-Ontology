@@ -1499,11 +1499,6 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
     <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
-        <obo:IAO_0000112 xml:lang="en">Julius Caesar</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">Verdi’s Requiem</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">the Second World War</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">your body mass index</obo:IAO_0000112>
-        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: In all areas of empirical inquiry we encounter general terms of two sorts. First are general terms which refer to universals or types:animaltuberculosissurgical procedurediseaseSecond, are general terms used to refer to groups of entities which instantiate a given universal but do not correspond to the extension of any subuniversal of that universal because there is nothing intrinsic to the entities in question by virtue of which they – and only they – are counted as belonging to the given group. Examples are: animal purchased by the Emperortuberculosis diagnosed on a Wednesdaysurgical procedure performed on a patient from Stockholmperson identified as candidate for clinical trial #2056-555person who is signatory of Form 656-PPVpainting by Leonardo da VinciSuch terms, which represent what are called ‘specializations’ in [81</obo:IAO_0000116>
         <rdfs:label xml:lang="en">entity</rdfs:label>
         <skos:definition xml:lang="en">(Elucidation) An entity is anything that exists or has existed or will exist</skos:definition>
         <skos:example xml:lang="en">Julius Caesar; the Second World War; your body mass index; Verdi&apos;s Requiem</skos:example>
@@ -1528,8 +1523,6 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
             </owl:Restriction>
         </owl:disjointWith>
-        <obo:IAO_0000115 xml:lang="en">An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Continuant entities are entities which can be sliced to yield parts only along the spatial dimension, yielding for example the parts of your table which we call its legs, its top, its nails. ‘My desk stretches from the window to the door. It has spatial parts, and can be sliced (in space) in two. With respect to time, however, a thing is a continuant.’ [60, p. 240</obo:IAO_0000116>
         <rdfs:label xml:lang="en">continuant</rdfs:label>
         <skos:definition xml:lang="en">(Elucidation) A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity</skos:definition>
         <skos:example xml:lang="en">A human being; a tennis ball; a cave; a region of space; someone&apos;s temperature</skos:example>
@@ -1750,12 +1743,6 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000112 xml:lang="en">the ambient temperature of this portion of air</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">the color of a tomato</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">the length of the circumference of your waist</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">the mass of this piece of gold.</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">the shape of your nose</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">the shape of your nostril</obo:IAO_0000112>
         <rdfs:label xml:lang="en">quality</rdfs:label>
         <skos:definition xml:lang="en">(Elucidation) A quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized</skos:definition>
         <skos:example xml:lang="en">The colour of a tomato; the ambient temperature of this portion of air; the length of the circumference of your waist; the shape of your nose; the shape of your nostril; the mass of this piece of gold</skos:example>
@@ -1774,18 +1761,6 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
-        <obo:IAO_0000112 xml:lang="en">Reciprocal specifically dependent continuants: the function of this key to open this lock and the mutually dependent disposition of this lock: to be opened by this key</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">of one-sided specifically dependent continuants: the mass of this tomato</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">of relational dependent continuants (multiple bearers): John’s love for Mary, the ownership relation between John and this statue, the relation of authority between John and his subordinates.</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">the disposition of this fish to decay</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">the function of this heart: to pump blood</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">the mutual dependence of proton donors and acceptors in chemical reactions [79</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">the mutual dependence of the role predator and the role prey as played by two organisms in a given interaction</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">the pink color of a medium rare piece of grilled filet mignon at its center</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">the role of being a doctor</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">the shape of this hole.</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">the smell of this portion of mozzarella</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">b is a specifically dependent continuant = Def. b is a continuant &amp; there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])</obo:IAO_0000115>
         <rdfs:label xml:lang="en">specifically dependent continuant</rdfs:label>
         <skos:definition xml:lang="en">b is a specifically dependent continuant =Def b is a continuant &amp; there is some independent continuant c which is not a spatial region &amp; which is such that b specifically depends on c</skos:definition>
         <skos:example xml:lang="en">(with multiple bearers) John&apos;s love for Mary; the ownership relation between John and this statue; the relation of authority between John and his subordinates</skos:example>
@@ -8964,7 +8939,6 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
     <!-- https://w3id.org/pmd/tto/TTO_0000038 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000038">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000042"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -9059,20 +9033,6 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
     
 
 
-    <!-- https://w3id.org/pmd/tto/TTO_0000042 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000042">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Physikalische Qualität</rdfs:label>
-        <rdfs:label xml:lang="en">physical quality</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/PhysicalQuality"/>
-        <skos:definition xml:lang="en">A physical quality is a quality that inheres in a material entity and represents a measurable or observable property related to its physical state.</skos:definition>
-        <skos:definition xml:lang="de">Eine physikalische Qualität ist eine Eigenschaft, die einer materiellen Einheit innewohnt und eine messbare oder beobachtbare Eigenschaft darstellt, die mit ihrem physikalischen Zustand zusammenhängt.</skos:definition>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/pmd/tto/TTO_0000043 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000043">
@@ -9144,7 +9104,6 @@ Source: ISO 6892-1:2019</skos:definition>
     <!-- https://w3id.org/pmd/tto/TTO_0000051 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000051">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000042"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Dehngeschwindigkeit</rdfs:label>
         <rdfs:label xml:lang="en">strain rate</rdfs:label>
@@ -9160,7 +9119,6 @@ Source: ISO 6892-1:2019</skos:definition>
     <!-- https://w3id.org/pmd/tto/TTO_0000052 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000052">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000042"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Spannungsgeschwindigkeit</rdfs:label>
         <rdfs:label xml:lang="en">stress rate</rdfs:label>

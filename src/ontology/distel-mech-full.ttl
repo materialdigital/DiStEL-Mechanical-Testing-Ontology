@@ -1105,11 +1105,6 @@ co:PMD_0000006 rdf:type owl:DatatypeProperty ;
 
 ###  http://purl.obolibrary.org/obo/BFO_0000001
 obo:BFO_0000001 rdf:type owl:Class ;
-                obo:IAO_0000112 "Julius Caesar"@en ,
-                                "Verdi’s Requiem"@en ,
-                                "the Second World War"@en ,
-                                "your body mass index"@en ;
-                obo:IAO_0000116 "BFO 2 Reference: In all areas of empirical inquiry we encounter general terms of two sorts. First are general terms which refer to universals or types:animaltuberculosissurgical procedurediseaseSecond, are general terms used to refer to groups of entities which instantiate a given universal but do not correspond to the extension of any subuniversal of that universal because there is nothing intrinsic to the entities in question by virtue of which they – and only they – are counted as belonging to the given group. Examples are: animal purchased by the Emperortuberculosis diagnosed on a Wednesdaysurgical procedure performed on a patient from Stockholmperson identified as candidate for clinical trial #2056-555person who is signatory of Form 656-PPVpainting by Leonardo da VinciSuch terms, which represent what are called ‘specializations’ in [81"@en ;
                 rdfs:label "entity"@en ;
                 skos:definition "(Elucidation) An entity is anything that exists or has existed or will exist"@en ;
                 skos:example "Julius Caesar; the Second World War; your body mass index; Verdi's Requiem"@en .
@@ -1127,8 +1122,6 @@ obo:BFO_0000002 rdf:type owl:Class ;
                                    owl:onProperty obo:BFO_0000050 ;
                                    owl:someValuesFrom obo:BFO_0000003
                                  ] ;
-                obo:IAO_0000115 "An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts."@en ;
-                obo:IAO_0000116 "BFO 2 Reference: Continuant entities are entities which can be sliced to yield parts only along the spatial dimension, yielding for example the parts of your table which we call its legs, its top, its nails. ‘My desk stretches from the window to the door. It has spatial parts, and can be sliced (in space) in two. With respect to time, however, a thing is a continuant.’ [60, p. 240"@en ;
                 rdfs:label "continuant"@en ;
                 skos:definition "(Elucidation) A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity"@en ;
                 skos:example "A human being; a tennis ball; a cave; a region of space; someone's temperature"@en .
@@ -1295,12 +1288,6 @@ obo:BFO_0000019 rdf:type owl:Class ;
                                   owl:onProperty obo:BFO_0000050 ;
                                   owl:allValuesFrom obo:BFO_0000019
                                 ] ;
-                obo:IAO_0000112 "the ambient temperature of this portion of air"@en ,
-                                "the color of a tomato"@en ,
-                                "the length of the circumference of your waist"@en ,
-                                "the mass of this piece of gold."@en ,
-                                "the shape of your nose"@en ,
-                                "the shape of your nostril"@en ;
                 rdfs:label "quality"@en ;
                 skos:definition "(Elucidation) A quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized"@en ;
                 skos:example "The colour of a tomato; the ambient temperature of this portion of air; the length of the circumference of your waist; the shape of your nose; the shape of your nostril; the mass of this piece of gold"@en .
@@ -1314,18 +1301,6 @@ obo:BFO_0000020 rdf:type owl:Class ;
                                   owl:allValuesFrom obo:BFO_0000020
                                 ] ;
                 owl:disjointWith obo:BFO_0000031 ;
-                obo:IAO_0000112 "Reciprocal specifically dependent continuants: the function of this key to open this lock and the mutually dependent disposition of this lock: to be opened by this key"@en ,
-                                "of one-sided specifically dependent continuants: the mass of this tomato"@en ,
-                                "of relational dependent continuants (multiple bearers): John’s love for Mary, the ownership relation between John and this statue, the relation of authority between John and his subordinates."@en ,
-                                "the disposition of this fish to decay"@en ,
-                                "the function of this heart: to pump blood"@en ,
-                                "the mutual dependence of proton donors and acceptors in chemical reactions [79"@en ,
-                                "the mutual dependence of the role predator and the role prey as played by two organisms in a given interaction"@en ,
-                                "the pink color of a medium rare piece of grilled filet mignon at its center"@en ,
-                                "the role of being a doctor"@en ,
-                                "the shape of this hole."@en ,
-                                "the smell of this portion of mozzarella"@en ;
-                obo:IAO_0000115 "b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])"@en ;
                 rdfs:label "specifically dependent continuant"@en ;
                 skos:definition "b is a specifically dependent continuant =Def b is a continuant & there is some independent continuant c which is not a spatial region & which is such that b specifically depends on c"@en ;
                 skos:example "(with multiple bearers) John's love for Mary; the ownership relation between John and this statue; the relation of authority between John and his subordinates"@en ,
@@ -6595,8 +6570,7 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
 
 ###  https://w3id.org/pmd/tto/TTO_0000038
 <https://w3id.org/pmd/tto/TTO_0000038> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000042> ,
-                                                       [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                       rdfs:subClassOf [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
                                                                                 owl:onProperty co:relatesTo ;
                                                                                 owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000024>
                                                                               ]
@@ -6671,17 +6645,6 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
                                        co:symbol "A_e"@en .
 
 
-###  https://w3id.org/pmd/tto/TTO_0000042
-<https://w3id.org/pmd/tto/TTO_0000042> rdf:type owl:Class ;
-                                       rdfs:subClassOf obo:BFO_0000019 ;
-                                       rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
-                                       rdfs:label "Physikalische Qualität"@de ,
-                                                  "physical quality"@en ;
-                                       rdfs:seeAlso <https://w3id.org/pmd/tto/PhysicalQuality> ;
-                                       skos:definition "A physical quality is a quality that inheres in a material entity and represents a measurable or observable property related to its physical state."@en ,
-                                                       "Eine physikalische Qualität ist eine Eigenschaft, die einer materiellen Einheit innewohnt und eine messbare oder beobachtbare Eigenschaft darstellt, die mit ihrem physikalischen Zustand zusammenhängt."@de .
-
-
 ###  https://w3id.org/pmd/tto/TTO_0000043
 <https://w3id.org/pmd/tto/TTO_0000043> rdf:type owl:Class ;
                                        rdfs:subClassOf co:PMD_0000952 ;
@@ -6740,7 +6703,6 @@ Source: ISO 6892-1:2019"""@en ;
 
 ###  https://w3id.org/pmd/tto/TTO_0000051
 <https://w3id.org/pmd/tto/TTO_0000051> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000042> ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Dehngeschwindigkeit"@de ,
                                                   "strain rate"@en ;
@@ -6753,7 +6715,6 @@ Source: ISO 6892-1:2019"""@en ;
 
 ###  https://w3id.org/pmd/tto/TTO_0000052
 <https://w3id.org/pmd/tto/TTO_0000052> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000042> ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Spannungsgeschwindigkeit"@de ,
                                                   "stress rate"@en ;

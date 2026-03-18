@@ -1,4 +1,5 @@
 Level	Rule Name	Subject	Property	Value
+ERROR	duplicate_label	strain rate	rdfs:label	strain rate@en
 WARN	missing_definition	fatigue loading type value	definition	
 WARN	missing_definition	fatigue loading type	definition	
 WARN	missing_definition	fatigue control type value	definition	
