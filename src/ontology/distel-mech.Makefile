@@ -26,7 +26,6 @@ $(IMPORTDIR)/tto_import.owl: $(MIRRORDIR)/tto.owl $(IMPORTDIR)/tto_terms.txt $(I
 					--trim true \
 			remove --term https://w3id.org/pmd/co/relatesTo \
 					--select "references" \
-					--select "axioms" \
 					--trim true \
 			remove --term-file $(IAO_TO_REMOVE) \
 				   --select "individuals classes"\
