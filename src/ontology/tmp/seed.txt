@@ -318,6 +318,7 @@ https://w3id.org/pmd/co/PMD_0000512
 https://w3id.org/pmd/co/PMD_0000522
 https://w3id.org/pmd/co/PMD_0000538
 https://w3id.org/pmd/co/PMD_0000544
+https://w3id.org/pmd/co/PMD_0000549
 https://w3id.org/pmd/co/PMD_0000551
 https://w3id.org/pmd/co/PMD_0000552
 https://w3id.org/pmd/co/PMD_0000553
@@ -525,12 +526,15 @@ https://w3id.org/pmd/co/PMD_0025003
 https://w3id.org/pmd/co/PMD_0025006
 https://w3id.org/pmd/co/PMD_0025007
 https://w3id.org/pmd/co/PMD_0025009
+https://w3id.org/pmd/co/PMD_0025011
 https://w3id.org/pmd/co/PMD_0025012
 https://w3id.org/pmd/co/PMD_0025015
 https://w3id.org/pmd/co/PMD_0025016
 https://w3id.org/pmd/co/PMD_0025017
 https://w3id.org/pmd/co/PMD_0025018
+https://w3id.org/pmd/co/PMD_0025019
 https://w3id.org/pmd/co/PMD_0025020
+https://w3id.org/pmd/co/PMD_0025022
 https://w3id.org/pmd/co/PMD_0025997
 https://w3id.org/pmd/co/PMD_0025998
 https://w3id.org/pmd/co/PMD_0025999

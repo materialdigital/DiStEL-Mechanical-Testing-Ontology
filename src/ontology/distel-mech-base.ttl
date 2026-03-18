@@ -182,6 +182,10 @@ obo:RO_0000053 rdf:type owl:ObjectProperty .
 obo:RO_0000056 rdf:type owl:ObjectProperty .
 
 
+###  http://purl.obolibrary.org/obo/RO_0000057
+obo:RO_0000057 rdf:type owl:ObjectProperty .
+
+
 ###  http://purl.obolibrary.org/obo/RO_0000080
 obo:RO_0000080 rdf:type owl:ObjectProperty .
 
@@ -1106,6 +1110,14 @@ co:PMD_0000544 rdf:type owl:Class ;
                           "caliper"@en ;
                skos:definition "A measuring device having two usually adjustable arms, legs, or jaws used especially to measure the dimensions of objects, such as diameters or thicknesses"@en ,
                                "Messgerät mit zwei in der Regel verstellbaren Armen, Schenkeln oder Klemmbacken, das vor allem zur Messung der Abmessungen von Gegenständen, wie z. B. des Durchmessers oder der Dicke, verwendet wird"@de .
+
+
+###  https://w3id.org/pmd/co/PMD_0000549
+co:PMD_0000549 rdf:type owl:Class ;
+               rdfs:subClassOf obo:BFO_0000015 ;
+               rdfs:label "change of temperature"@en ;
+               skos:definition "change of temperature is a process in which a particpant changes its temperature"@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
 
 
 ###  https://w3id.org/pmd/co/PMD_0000551
@@ -3380,6 +3392,10 @@ co:PMD_0025002 rdf:type owl:Class ;
                                                         owl:onProperty obo:IAO_0000136 ;
                                                         owl:someValuesFrom co:PMD_0000551
                                                       ]
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty obo:RO_0002351 ;
+                                                        owl:someValuesFrom co:PMD_0025997
+                                                      ]
                                                     ) ;
                                  rdf:type owl:Class
                                ] ;
@@ -3466,6 +3482,13 @@ co:PMD_0025009 rdf:type owl:Class ;
                skos:definition "Material reacting process is a process which occurs in a portion of matter due to some of its disposition or behavioral material property which has realization in some  stimulating process. Both the material reacting process and stimulating process must be occurent parts of a planned process, if the planned process takes place."@en .
 
 
+###  https://w3id.org/pmd/co/PMD_0025011
+co:PMD_0025011 rdf:type owl:Class ;
+               rdfs:subClassOf co:PMD_0000549 ;
+               rdfs:label "cooling"@en ;
+               skos:definition "Cooling is a change of temperature which corresponds to the decrease of temperature in the system or object."@en .
+
+
 ###  https://w3id.org/pmd/co/PMD_0025012
 co:PMD_0025012 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000583 ;
@@ -3515,11 +3538,86 @@ co:PMD_0025018 rdf:type owl:Class ;
                skos:example "Elongation of a specimen after a tensile step, i.e., the specimen before and after the test. Angle between a rolling direction of a rolled material and the longitudinal side of a specimen."@en .
 
 
+###  https://w3id.org/pmd/co/PMD_0025019
+co:PMD_0025019 rdf:type owl:Class ;
+               rdfs:subClassOf co:PMD_0000008 ,
+                               [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                        owl:onProperty co:PMD_0020127 ;
+                                                        owl:allValuesFrom obo:BFO_0000019
+                                                      ]
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty co:PMD_0025006 ;
+                                                        owl:allValuesFrom [ owl:intersectionOf ( obo:BFO_0000015
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty obo:RO_0000057 ;
+                                                                                                   owl:someValuesFrom [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                                                                                                               owl:unionOf ( obo:BFO_0000004
+                                                                                                                                                             co:PMD_0000068
+                                                                                                                                                           )
+                                                                                                                                             ]
+                                                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                                                               owl:onProperty obo:RO_0000086 ;
+                                                                                                                                               owl:someValuesFrom obo:BFO_0000019
+                                                                                                                                             ]
+                                                                                                                                           ) ;
+                                                                                                                        rdf:type owl:Class
+                                                                                                                      ]
+                                                                                                 ]
+                                                                                               ) ;
+                                                                            rdf:type owl:Class
+                                                                          ]
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
+                               ] ;
+               obo:IAO_0000116 "Ideally, a temporally qualified continuant must be used as a participant in a process where the qualities of the participant changes.This temporally qualitified continuant has an instance of quality with one on value before the process and another instance of the same quality with another on value after the process."@en ,
+                               "In the axiom, the instance of quality in \"refers to\" triple must be the same instance as in \"has quality\" triple."@en ;
+               rdfs:label "rate"@en ;
+               skos:definition "Rate is a process attribute which describes the change of some quality of some of the participants in a process over time."@en .
+
+
 ###  https://w3id.org/pmd/co/PMD_0025020
 co:PMD_0025020 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000849 ;
                rdfs:label "single fatigue testing process"@en ;
                skos:definition "Mechanical property analyzing process that is an occurent part of a fatigue testing process (S-N testing process). A single fatigue testing process assesses how many cycles a material can withstand under the given loading."@en .
+
+
+###  https://w3id.org/pmd/co/PMD_0025022
+co:PMD_0025022 rdf:type owl:Class ;
+               rdfs:subClassOf co:PMD_0025019 ,
+                               [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                        owl:onProperty co:PMD_0020127 ;
+                                                        owl:allValuesFrom co:PMD_0000967
+                                                      ]
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty co:PMD_0025006 ;
+                                                        owl:allValuesFrom [ owl:intersectionOf ( co:PMD_0025011
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty obo:RO_0000057 ;
+                                                                                                   owl:someValuesFrom [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                                                                                                               owl:unionOf ( obo:BFO_0000040
+                                                                                                                                                             co:PMD_0000068
+                                                                                                                                                           )
+                                                                                                                                             ]
+                                                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                                                               owl:onProperty obo:RO_0000086 ;
+                                                                                                                                               owl:someValuesFrom co:PMD_0000967
+                                                                                                                                             ]
+                                                                                                                                           ) ;
+                                                                                                                        rdf:type owl:Class
+                                                                                                                      ]
+                                                                                                 ]
+                                                                                               ) ;
+                                                                            rdf:type owl:Class
+                                                                          ]
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
+                               ] ;
+               rdfs:label "cooling rate"@en ;
+               skos:definition "Cooling rate is a process attribute which describes the descreate of temperature of some of the participant in a process over time."@en ;
+               skos:example "10 K/s"@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0025997
