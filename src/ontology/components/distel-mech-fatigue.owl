@@ -104,8 +104,8 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
-        <rdfs:label xml:lang="en">fatigue control type value</rdfs:label>
-        <skos:definition xml:lang="en">Fatigue control type value is a categorical value specification which describes the variable (stress or strain) that remains constant during the fatigue testing.</skos:definition>
+        <rdfs:label xml:lang="en">control type value</rdfs:label>
+        <skos:definition xml:lang="en">Control type value is a categorical value specification which describes the variable (stress or strain) that remains constant during mechanical testing testing.</skos:definition>
     </owl:Class>
     
 
@@ -136,13 +136,14 @@
                         <owl:unionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000638"/>
                             <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0025020"/>
+                            <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0025001"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">fatigue control type</rdfs:label>
-        <skos:definition xml:lang="en">Fatigue control type is a process attribute of a fatigue testing  which describes the variable (stress or strain) that remains constant during the fatigue testing.</skos:definition>
+        <rdfs:label xml:lang="en">control type of a mechanical test</rdfs:label>
+        <skos:definition xml:lang="en">control type of a mechanical test is a process attribute of a fatigue testing or hot tensile testing which describes the variable (stress or strain) that remains constant during the  testing.</skos:definition>
     </owl:Class>
     
 
@@ -702,6 +703,12 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
         <rdfs:label xml:lang="en">motor</rdfs:label>
         <skos:definition xml:lang="en">Motor of a fatigue testing machine is a part of such machine which is essential for the applicaiton of loading on a sample.</skos:definition>
     </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0025001 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0025001"/>
     
 
 
