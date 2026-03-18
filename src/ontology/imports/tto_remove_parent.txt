@@ -1,0 +1,3 @@
+https://w3id.org/pmd/tto/TTO_0000051  # strain rate
+https://w3id.org/pmd/tto/TTO_0000052  # stress rate
+https://w3id.org/pmd/tto/TTO_0000038  # 'percentage reduction of area'
