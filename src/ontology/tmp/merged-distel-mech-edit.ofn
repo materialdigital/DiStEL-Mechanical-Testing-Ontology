@@ -354,7 +354,6 @@ Declaration(Class(<https://w3id.org/pmd/co/PMD_0020148>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020149>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020150>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020161>))
-Declaration(Class(<https://w3id.org/pmd/co/PMD_0020199>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020200>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020207>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020210>))
@@ -434,13 +433,8 @@ Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000059>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000100>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0025001>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0025003>))
-Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000002>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000004>))
-Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000005>))
-Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000006>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000009>))
-Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000010>))
-Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000012>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000015>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000017>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000018>))
@@ -1588,12 +1582,6 @@ DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000016> <http://purl.obolib
 
 # Class: <http://purl.obolibrary.org/obo/BFO_0000017> (realizable entity)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000017> "the disposition of this piece of metal to conduct electricity."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000017> "the disposition of your blood to coagulate"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000017> "the function of your reproductive organs"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000017> "the role of being a doctor"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000017> "the role of this boundary to delineate where Utah and Colorado meet"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000017> "A specifically dependent continuant  that inheres in continuant  entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000017> "realizable entity"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/BFO_0000017> "(Elucidation) A realizable entity is a specifically dependent continuant that inheres in some independent continuant which is not a spatial region & which is of a type some instances of which are realized in processes of a correlated type"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000017> "The role of being a doctor; the role of this boundary to delineate where Utah and Colorado meet; the function of your reproductive organs; the disposition of your blood to coagulate; the disposition of this piece of metal to conduct electricity"@en)
@@ -2788,25 +2776,13 @@ As a consequence, material properties in the ontology are differeciated accordin
  The 'unit idenifieres' of such properties (e.g. \"HV1\", \"HV10\", \"HBW\") are strictly speaking not units but rather references to the measurement methodology used to determine a numeric value that quantifies the property.
 
 Extensive properties that depend on the object being tested rather than on the portion of matter are (extensive) object- or system-properties."@en)
-AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/co/PMD_0000005> "Technical materials are complex object aggregates. The properties that are determined for those object aggregates are intrinsically associated with the methodologies employed in the measurement process. This is in contrast to typical 'physical' properties, which like e.g. mass that can be determined to high accuracy independently of the measurement process. 
-As a consequence, the behavoiral material properties in the ontology are differeciated according to their measurement method, e.g. Brinell hardness and Vickers hardness are different types of indentation hardness rather than different measures/quantification (GDC) of the materials property 'indentation hardness'.
- The 'unit idenifieres' of such properties (e.g. \"HV1\", \"HV10\", \"HBW\") are strictly speaking not units but rather references to the measurement methodology used to determine a numeric value that quantifies the property."@en)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000005> "behavioral material property"@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000005> "material property"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000005> "A property is a material trait in terms of the kind and magnitude of response to a specific imposed stimulus. Generally, definitions of properties are made independent of material shape and size.
-
-(Callister, W.D., Rethwisch, D.G., Materials Science and Engineering, Wiley, 2014)
-
-We only deal with intensive (system-size independent) materrial properties. Extensive properties that depend on the testpiece/specimen/probe size should be found in the respective testing method modules."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000005> "a disposition of a portion of matter that is realized in a compatible process and whose realization is grounded in the portions intensive qualities"@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000005> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000005> <http://purl.obolibrary.org/obo/BFO_0000016>)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0000005> <http://purl.obolibrary.org/obo/BFO_0000017>)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0000005> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000915> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))))) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001029> <https://w3id.org/pmd/co/PMD_0000915>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000950>)))
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <https://w3id.org/pmd/co/PMD_0000950>))
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/BFO_0000015>))))
 SubClassOf(Annotation(rdfs:comment "Due to the duality of object and portion of matter this axiom can not be an equivalent class axiom."@en) <https://w3id.org/pmd/co/PMD_0000005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/BFO_0000015>))))
-SubClassOf(<https://w3id.org/pmd/co/PMD_0000005> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000000>))
 
 # Class: <https://w3id.org/pmd/co/PMD_0000008> (process attribute)
 
@@ -3123,6 +3099,9 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000773> "hardness"@
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000773> "The hardness is a mechanical property used as a measure of a material's resistance to localized plastic deformation, often tested by indentation or scratch methods."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000773> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000773> <https://w3id.org/pmd/co/PMD_0000848>)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000773> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000915> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))))) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001029> <https://w3id.org/pmd/co/PMD_0000915>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000950>)))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000773> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000522>))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000773> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000000>))
 
 # Class: <https://w3id.org/pmd/co/PMD_0000776> (hardness testing process)
 
@@ -3183,15 +3162,11 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0000833> ObjectSomeValuesFrom(<http://pu
 
 AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/co/PMD_0000848> "The axiom that mechanical property has realization some application of mechanical load treats only conventional materials and not such effects as magnetostriction etc."@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000848> "mechanical property"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000848> "A mechanical property is a material property that inheres in a material M when an object O_target that consists of M is stimulated in a process through an interaction with an object O_stimulus and M changes its stress/strain/..(mechanical?) SDCs.
-
-TODO: Check general class axiom and defintion altogether !!!"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000848> "A mechanical property is a material property which is a characteristic of material M. Mechanical property has realization in a stimulating process (in most cases, application of mechanical load), and the stimulating process is an occurent part of another process, in which an object O that is an instance of M participates."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000848> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> <https://w3id.org/pmd/co/PMD_0000005>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <https://w3id.org/pmd/co/PMD_0000522>))
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000000>))
-SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000522>))
 
 # Class: <https://w3id.org/pmd/co/PMD_0000849> (mechanical property analyzing process)
 
@@ -3321,6 +3296,9 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000952> "The strength is a mechanical property describing the maximum stress a material can withstand before failure."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000952> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000952> <https://w3id.org/pmd/co/PMD_0000848>)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000952> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000915> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))))) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001029> <https://w3id.org/pmd/co/PMD_0000915>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000950>)))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000952> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000522>))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000952> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000000>))
 
 # Class: <https://w3id.org/pmd/co/PMD_0000953> (structural and chemical decay)
 
@@ -3329,7 +3307,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000953> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000953> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "Struktur Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "structural property analyzing process"@en)
@@ -4108,7 +4086,6 @@ DisjointClasses(<https://w3id.org/pmd/co/PMD_0020131> <https://w3id.org/pmd/co/P
 # Class: <https://w3id.org/pmd/co/PMD_0020132> (size)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020132> "size"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020132> "Size is the quality of a material entity that describes its spatial extend."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020132> "an extensive quality of a material entity that describes its spatial extend."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020132> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020132> <https://w3id.org/pmd/co/PMD_0020148>)
@@ -4162,7 +4139,6 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0020143> <http://purl.obolibrary.org/obo
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020148> "extensive quality"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020148> "An extensive quality is a quality that inheres in only object or object aggregate or fiat object part or chemical entity and is dependent on the bearers (system-) size."@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020148> "An extensive quality is a qualty that inheres in only object or object aggregate or fiat object part or chemical entity and is dependent on the bearers (system-) size."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020148> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020148> <http://purl.obolibrary.org/obo/BFO_0000019>)
 
@@ -4189,20 +4165,11 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020161> "activity (
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020161> "Thermodynamic activity is a relational quality that inheres between a chemical species and a non-ideal solution and represents the effective concentration of the species accounting for particle interactions."@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020161> <http://purl.obolibrary.org/obo/BFO_0000145>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0020199> (Fläche)
-
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020199> "Fläche"@de)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020199> "area"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020199> "Area a two dimesional size"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0020199> "Section area or a surface area"@en)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0020199> <https://w3id.org/pmd/co/PMD_0020132>)
-
 # Class: <https://w3id.org/pmd/co/PMD_0020200> (force)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020200> "force"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020200> "Force is a reciprocal relation realized between two objects where the other object exerces the same force with opposite sign onto the first. Force may be responsible for changes in velocity and/or deformation of objects."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020200> "true"^^xsd:boolean)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0020200> <http://purl.obolibrary.org/obo/BFO_0000017>)
 
 # Class: <https://w3id.org/pmd/co/PMD_0020207> (amount of substance)
 
@@ -4341,11 +4308,9 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0025997> ObjectAllValuesFrom(<http://pur
 
 # Class: <https://w3id.org/pmd/co/PMD_0040001> (length)
 
-AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/co/PMD_0040001> "Length is a size that describes the spacial extend of its bearer in one dimension."@en)
 AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/co/PMD_0040001> "Length is a size that describes the spatial extent of its bearer in one dimension."@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0040001> "length"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/pmd/co/PMD_0040001> "dimension"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0040001> "Length is a one dimensional size.")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0040001> "Length is a one dimensional size."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0040001> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0040001> <https://w3id.org/pmd/co/PMD_0020132>)
@@ -4768,17 +4733,6 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0025003> "str
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0025003> "heating rate is a process attribute which describes the change in length of a specimen participating in a process over time."@en)
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0025003> <https://w3id.org/pmd/co/PMD_0000008>)
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000002> (Durchmesser)
-
-AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000002> <https://w3id.org/pmd/tto>)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000002> "Durchmesser"@de)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000002> "diameter"@en)
-AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/tto/TTO_0000002> <https://w3id.org/pmd/co/2.0.8/Diameter>)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000002> "Die Länge einer geraden Linie durch den Mittelpunkt eines Objekts oder Raums."@de)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000002> "The length of a straight line through the center of an object or space."@en)
-AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000002> "“Diameter.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/diameter. Accessed 5 Dec. 2022.")
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000002> <https://w3id.org/pmd/co/PMD_0040001>)
-
 # Class: <https://w3id.org/pmd/tto/TTO_0000004> (elongation)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000004> <https://w3id.org/pmd/tto>)
@@ -4791,35 +4745,6 @@ AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000004> <https://w3id.org/pmd/co/PMD_0040001>)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000004> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/relatesTo> <https://w3id.org/pmd/tto/TTO_0000028>))
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000005> (extension)
-
-AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/tto/TTO_0000005> "Dimensional analysis: L
-Unit (e.g. SI): mm"@en)
-AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/tto/TTO_0000005> "Hinweis: Die Dehnung kann mit verschiedenen Kanälen gemessen werden (z. B. bei Verwendung von einem oder zwei Dehnungsmesserkanälen); in der Regel wird als Dehnungswert der mittlere Durchschnittswert der beteiligten Kanäle angegeben, falls zutreffend.
-
-Hinweis: Die optische Längenänderungsmessung kann eine besondere Methode der Datenspeicherung erfordern."@de)
-AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/tto/TTO_0000005> "Note: The extension might be measured using different channels (e.g. when using one or two extensometer channels); usually, the mean average value of involved channels is given as extension value, if applicable.
-
-Note: Optical extensometry may require a specific data storage method."@en)
-AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000005> <https://w3id.org/pmd/tto>)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000005> "Verlängerung (der Extensometer-Messlänge)"@de)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000005> "extension"@en)
-AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/tto/TTO_0000005> <https://w3id.org/pmd/co/2.0.8/Extension>)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000005> "Increase in the extensometer gauge length at any moment during a test"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000005> "Zunahme der Extensometer-Messlänge zu einem beliebigen Zeitpunkt eines Versuchs"@de)
-AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000005> "DIN EN ISO 6892-1:2019")
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000005> <https://w3id.org/pmd/co/PMD_0000848>)
-
-# Class: <https://w3id.org/pmd/tto/TTO_0000006> (Dicke)
-
-AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000006> <https://w3id.org/pmd/tto>)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000006> "Dicke"@de)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000006> "thickness"@en)
-AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/tto/TTO_0000006> <https://w3id.org/pmd/co/2.0.8/Thickness>)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000006> "Diese Klasse beschreibt das gemessene Maß in einer Richtung eines Prüfkörpers."@de)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000006> "This class describes the measured dimension in one direction of a test piece."@en)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000006> <https://w3id.org/pmd/co/PMD_0040001>)
-
 # Class: <https://w3id.org/pmd/tto/TTO_0000009> (Streckgrenze)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000009> <https://w3id.org/pmd/tto>)
@@ -4831,28 +4756,6 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000009> "DIN EN ISO 6892-1:2019"@en)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000009> <https://w3id.org/pmd/co/PMD_0000952>)
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000010> (width)
-
-AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000010> <https://w3id.org/pmd/tto>)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000010> "Breite"@de)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000010> "width"@en)
-AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/tto/TTO_0000010> <https://w3id.org/pmd/co/2.0.8/Width>)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000010> "Diese Klasse beschreibt eine horizontale Messung eines Objekts, die im rechten Winkel zur Länge des Objekts vorgenommen wird."@de)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000010> "This class describes a horizontal measurement of an object taken at right angles to the length of the object."@en)
-AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000010> <https://www.merriam-webster.com/dictionary/width>)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000010> <https://w3id.org/pmd/co/PMD_0040001>)
-
-# Class: <https://w3id.org/pmd/tto/TTO_0000012> (cross section area)
-
-AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000012> <https://w3id.org/pmd/tto>)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000012> "Querschnittsfläche"@de)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000012> "cross section area"@en)
-AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/tto/TTO_0000012> <https://w3id.org/pmd/co/2.0.8/CrossSectionArea>)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000012> "Die Querschnittsfläche ist die Fläche eines Schnittes oder eines rechtwinklig geschnittenen oder gebrochenen Stücks eines Objektes in Bezug auf eine Achse."@de)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000012> "The cross section area is an area of a cutting or piece of an object cut off or broken at right angles or related to an axis."@en)
-AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000012> <https://www.merriam-webster.com/dictionary/cross%20section>)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000012> <https://w3id.org/pmd/co/PMD_0020199>)
-
 # Class: <https://w3id.org/pmd/tto/TTO_0000015> (End-Probendurchmesser)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000015> <https://w3id.org/pmd/tto>)
@@ -4861,7 +4764,7 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000015> "diameter 
 AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/tto/TTO_0000015> <https://w3id.org/pmd/tto/DiameterAfterFracture>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000015> "Die Länge einer geraden Linie durch den Mittelpunkt eines Objekts (Zugprüfstücks), gemessen nach einem Bruch, der während einer Prüfung aufgetreten ist."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000015> "The length of a straight line through the center of an object (tensile test piece) as measured after a fracture occured during a test."@en)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000015> <https://w3id.org/pmd/tto/TTO_0000002>)
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000015> <https://w3id.org/pmd/co/PMD_0050051>)
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000017> (Extensometer-Messlänge)
 
@@ -4953,7 +4856,6 @@ Note: It is typically measured perpendicular to the direction of the applied for
 
 Note: It is recommended to measure the original cross-sectional area of the parallel length to an accuracy of ±2 %. However, measuring the original cross-sectional area of the parallel length with an accuracy of ±2 % on small diameter round test pieces, or test pieces with other cross-sectional geometries, may not be possible."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000024> "DIN EN ISO 6892-1:2019")
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000024> <https://w3id.org/pmd/tto/TTO_0000012>)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000024> ObjectUnionOf(ObjectIntersectionOf(ObjectSomeValuesFrom(<https://w3id.org/pmd/co/relatesTo> <https://w3id.org/pmd/tto/TTO_0000056>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/relatesTo> <https://w3id.org/pmd/tto/TTO_0000060>)) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/relatesTo> <https://w3id.org/pmd/tto/TTO_0000015>)))
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000026> (Anfangsquerschnitt innerhalb der parallelen Länge)
@@ -4966,7 +4868,6 @@ AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/tto/TTO_0000026> <https:/
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000026> "Dieses Konzept beschreibt die initiale Querschnittsfläche des Zugprüfkörpers entlang seiner parallelen Länge, bevor eine Verformung auftritt."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000026> "This concept describes the initial area of the tensile test piece before any deformation occurs."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000026> "DIN EN ISO 6892-1:2019")
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000026> <https://w3id.org/pmd/tto/TTO_0000012>)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000026> ObjectUnionOf(ObjectIntersectionOf(ObjectSomeValuesFrom(<https://w3id.org/pmd/co/relatesTo> <https://w3id.org/pmd/tto/TTO_0000029>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/relatesTo> <https://w3id.org/pmd/tto/TTO_0000030>)) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/relatesTo> <https://w3id.org/pmd/tto/TTO_0000027>)))
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000027> (original diameter)
@@ -4978,7 +4879,7 @@ AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/tto/TTO_0000027> <https:/
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000027> "Die Länge einer geraden Linie durch den Mittelpunkt eines Objekts (Zugprüfkörpers), die vor einer Prüfung gemessen wird."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000027> "The length of a straight line through the center of an object (tensile test piece) as measured prior to a tensile test."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000027> "DIN EN ISO 6892-1:2019"@en)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000027> <https://w3id.org/pmd/tto/TTO_0000002>)
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000027> <https://w3id.org/pmd/co/PMD_0050051>)
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000028> (original gauge length)
 
@@ -5000,7 +4901,7 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000029> "original 
 AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/tto/TTO_0000029> <https://w3id.org/pmd/tto/OriginalThickness>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000029> "Diese Entität beschreibt die gemessene Dimension in einer Richtung eines Prüfstücks, wie sie vor der Prüfung gemessen wurde."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000029> "This entity describes the measured dimension in one direction of a test piece, as measured before the test."@en)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000029> <https://w3id.org/pmd/tto/TTO_0000006>)
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000029> <https://w3id.org/pmd/co/PMD_0050153>)
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000030> (original width)
 
@@ -5010,7 +4911,7 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000030> "original 
 AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/tto/TTO_0000030> <https://w3id.org/pmd/tto/OriginalWidth>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000030> "Diese Entität beschreibt eine horizontale Messung eines Objekts (Prüfkörpers) im rechten Winkel zur Länge des Objekts (Prüfkörpers), wie sie vor einer Prüfung gemessen wird."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000030> "This entity describes a horizontal measurement of an object (test piece) taken at right angles to the length of the object (test piece), as measured before a test."@en)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000030> <https://w3id.org/pmd/tto/TTO_0000010>)
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000030> <https://w3id.org/pmd/co/PMD_0050154>)
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000031> (Parallele Länge)
 
@@ -5066,8 +4967,10 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 
 Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bezeichnet.")
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000034> "DIN EN ISO 6892-1:2019")
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000034> <https://w3id.org/pmd/tto/TTO_0000005>)
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000034> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000915> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))))) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001029> <https://w3id.org/pmd/co/PMD_0000915>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000950>)))
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000034> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000522>))
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000034> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/relatesTo> <https://w3id.org/pmd/tto/TTO_0000017>))
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000034> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000000>))
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000035> (percentage permanent elongation)
 
@@ -5089,8 +4992,10 @@ AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/tto/TTO_0000036> <https:/
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000036> "Vergrößerung der Extensometer-Messlänge nach Entfernen einer festgelegten, auf die Probe aufgebrachten Zugspannung, angegeben in Prozent, bezogen auf die Extensometer-Messlänge"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000036> "increase in the extensometer gauge length, after removal of a specified stress from the test piece, expressed as a percentage of the extensometer gauge length"@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000036> "DIN EN ISO 6892-1:2019"@en)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000036> <https://w3id.org/pmd/tto/TTO_0000005>)
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000036> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000915> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))))) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001029> <https://w3id.org/pmd/co/PMD_0000915>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000950>)))
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000036> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000522>))
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000036> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/relatesTo> <https://w3id.org/pmd/tto/TTO_0000017>))
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000036> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000000>))
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000037> (percentage plastic extension at maximum force)
 
@@ -5102,8 +5007,10 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000037> "plastische Verlängerung der Extensometer-Messlänge bei Höchstkraft, angegeben in Prozent, bezogen auf die Extensometer-Messlänge"@de)
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000037> "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/symbol> <https://w3id.org/pmd/tto/TTO_0000037> "A_g"@en)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000037> <https://w3id.org/pmd/tto/TTO_0000005>)
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000037> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000915> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))))) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001029> <https://w3id.org/pmd/co/PMD_0000915>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000950>)))
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000037> ObjectIntersectionOf(ObjectSomeValuesFrom(<https://w3id.org/pmd/co/relatesTo> <https://w3id.org/pmd/tto/TTO_0000017>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/relatesTo> <https://w3id.org/pmd/tto/TTO_0000023>)))
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000037> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000522>))
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000037> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000000>))
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000038> (percentage reduction of area)
 
@@ -5128,8 +5035,10 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000039> "total extension (elastic extension plus plastic extension) at the moment of fracture, expressed as a percentage of the extensometer gauge length"@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000039> "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/symbol> <https://w3id.org/pmd/tto/TTO_0000039> "A_t"@en)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000039> <https://w3id.org/pmd/tto/TTO_0000005>)
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000039> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000915> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))))) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001029> <https://w3id.org/pmd/co/PMD_0000915>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000950>)))
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000039> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000522>))
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000039> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/relatesTo> <https://w3id.org/pmd/tto/TTO_0000017>))
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000039> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000000>))
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000040> (Gesamte Extensometer-Dehnung bei Höchstkraft)
 
@@ -5141,8 +5050,10 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000040> "total extension (elastic extension plus plastic extension) at maximum force, expressed as a percentage of the extensometer gauge length"@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000040> "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/symbol> <https://w3id.org/pmd/tto/TTO_0000040> "A_gt"@en)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000040> <https://w3id.org/pmd/tto/TTO_0000005>)
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000040> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000915> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))))) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001029> <https://w3id.org/pmd/co/PMD_0000915>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000950>)))
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000040> ObjectIntersectionOf(ObjectSomeValuesFrom(<https://w3id.org/pmd/co/relatesTo> <https://w3id.org/pmd/tto/TTO_0000017>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/relatesTo> <https://w3id.org/pmd/tto/TTO_0000023>)))
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000040> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000522>))
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000040> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000000>))
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000041> (Streckgrenzen-Extensometer-Dehnung)
 
@@ -5154,7 +5065,9 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000041> "For discontinuous yielding materials: extension between the start of yielding and the start of uniform work-hardening, expressed as a percentage of the extensometer gauge length"@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000041> "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/symbol> <https://w3id.org/pmd/tto/TTO_0000041> "A_e"@en)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000041> <https://w3id.org/pmd/tto/TTO_0000005>)
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000041> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000915> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))))) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001029> <https://w3id.org/pmd/co/PMD_0000915>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000950>)))
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000041> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000522>))
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000041> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000000>))
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000043> (proof strength)
 
@@ -5256,7 +5169,7 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000056> "thickness
 AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/tto/TTO_0000056> <https://w3id.org/pmd/tto/ThicknessAfterFracture>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000056> "Diese Entität beschreibt die gemessene Dimension in einer Richtung eines Prüfstücks, wie sie vor der Prüfung gemessen wurde."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000056> "This entity describes the measured dimension in one direction of a test piece, as measured after the test."@en)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000056> <https://w3id.org/pmd/tto/TTO_0000006>)
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000056> <https://w3id.org/pmd/co/PMD_0050153>)
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000059> (Obere Streckgrenze)
 
@@ -5278,7 +5191,7 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000060> "width aft
 AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/tto/TTO_0000060> <https://w3id.org/pmd/tto/WidthAfterFracture>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000060> "Diese Entität beschreibt eine horizontale Messung eines Objekts (Prüfkörpers) im rechten Winkel zur Länge des Objekts (Prüfkörpers), wie sie nach einer Prüfung gemessen wird."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000060> "This entity describes a horizontal measurement of an object (test piece) taken at right angles to the length of the object (test piece), as measured after a test."@en)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000060> <https://w3id.org/pmd/tto/TTO_0000010>)
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000060> <https://w3id.org/pmd/co/PMD_0050154>)
 
 
 ############################

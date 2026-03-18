@@ -4243,7 +4243,8 @@ TODO import from TTO at some point (hopefully)"""@en ;
 
 ###  https://w3id.org/pmd/tto/TTO_0000004
 <https://w3id.org/pmd/tto/TTO_0000004> rdf:type owl:Class ;
-                                       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                       rdfs:subClassOf co:PMD_0040001 ,
+                                                       [ rdf:type owl:Restriction ;
                                                          owl:onProperty co:relatesTo ;
                                                          owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000028>
                                                        ] ;
@@ -4270,6 +4271,7 @@ TODO import from TTO at some point (hopefully)"""@en ;
 
 ###  https://w3id.org/pmd/tto/TTO_0000015
 <https://w3id.org/pmd/tto/TTO_0000015> rdf:type owl:Class ;
+                                       rdfs:subClassOf co:PMD_0050051 ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "End-Probendurchmesser"@de ,
                                                   "diameter after fracture"@en ;
@@ -4310,6 +4312,7 @@ Note: For the determination of several properties which are based (partly or com
 
 ###  https://w3id.org/pmd/tto/TTO_0000019
 <https://w3id.org/pmd/tto/TTO_0000019> rdf:type owl:Class ;
+                                       rdfs:subClassOf co:PMD_0040001 ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Messlänge"@de ,
                                                   "gauge length"@en ;
@@ -4424,6 +4427,7 @@ Note: It is recommended to measure the original cross-sectional area of the para
 
 ###  https://w3id.org/pmd/tto/TTO_0000027
 <https://w3id.org/pmd/tto/TTO_0000027> rdf:type owl:Class ;
+                                       rdfs:subClassOf co:PMD_0050051 ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Anfangs-Probendurchmesser"@de ,
                                                   "original diameter"@en ;
@@ -4448,6 +4452,7 @@ Note: It is recommended to measure the original cross-sectional area of the para
 
 ###  https://w3id.org/pmd/tto/TTO_0000029
 <https://w3id.org/pmd/tto/TTO_0000029> rdf:type owl:Class ;
+                                       rdfs:subClassOf co:PMD_0050153 ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Anfangs-Dicke"@de ,
                                                   "original thickness"@en ;
@@ -4458,6 +4463,7 @@ Note: It is recommended to measure the original cross-sectional area of the para
 
 ###  https://w3id.org/pmd/tto/TTO_0000030
 <https://w3id.org/pmd/tto/TTO_0000030> rdf:type owl:Class ;
+                                       rdfs:subClassOf co:PMD_0050154 ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Anfangs-Breite"@de ,
                                                   "original width"@en ;
@@ -4468,6 +4474,7 @@ Note: It is recommended to measure the original cross-sectional area of the para
 
 ###  https://w3id.org/pmd/tto/TTO_0000031
 <https://w3id.org/pmd/tto/TTO_0000031> rdf:type owl:Class ;
+                                       rdfs:subClassOf co:PMD_0040001 ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Parallele Länge"@de ,
                                                   "parallel length"@en ;
@@ -5048,6 +5055,7 @@ Note: Stress rate is only used in the elastic part of the test."""@en ;
 
 ###  https://w3id.org/pmd/tto/TTO_0000056
 <https://w3id.org/pmd/tto/TTO_0000056> rdf:type owl:Class ;
+                                       rdfs:subClassOf co:PMD_0050153 ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "End-Dicke"@de ,
                                                   "thickness after fracture"@en ;
@@ -5071,6 +5079,7 @@ Note: Stress rate is only used in the elastic part of the test."""@en ;
 
 ###  https://w3id.org/pmd/tto/TTO_0000060
 <https://w3id.org/pmd/tto/TTO_0000060> rdf:type owl:Class ;
+                                       rdfs:subClassOf co:PMD_0050154 ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "End-Breite"@de ,
                                                   "width after fracture"@en ;

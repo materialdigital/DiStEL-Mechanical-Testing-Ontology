@@ -8454,6 +8454,7 @@ TODO import from TTO at some point (hopefully)</rdfs:comment>
     <!-- https://w3id.org/pmd/tto/TTO_0000004 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000004">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
@@ -8489,6 +8490,7 @@ TODO import from TTO at some point (hopefully)</rdfs:comment>
     <!-- https://w3id.org/pmd/tto/TTO_0000015 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000015">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0050051"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">End-Probendurchmesser</rdfs:label>
         <rdfs:label xml:lang="en">diameter after fracture</rdfs:label>
@@ -8538,6 +8540,7 @@ Note: For the determination of several properties which are based (partly or com
     <!-- https://w3id.org/pmd/tto/TTO_0000019 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000019">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Messlänge</rdfs:label>
         <rdfs:label xml:lang="en">gauge length</rdfs:label>
@@ -8675,6 +8678,7 @@ Note: It is recommended to measure the original cross-sectional area of the para
     <!-- https://w3id.org/pmd/tto/TTO_0000027 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000027">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0050051"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Anfangs-Probendurchmesser</rdfs:label>
         <rdfs:label xml:lang="en">original diameter</rdfs:label>
@@ -8705,6 +8709,7 @@ Note: It is recommended to measure the original cross-sectional area of the para
     <!-- https://w3id.org/pmd/tto/TTO_0000029 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000029">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0050153"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Anfangs-Dicke</rdfs:label>
         <rdfs:label xml:lang="en">original thickness</rdfs:label>
@@ -8718,6 +8723,7 @@ Note: It is recommended to measure the original cross-sectional area of the para
     <!-- https://w3id.org/pmd/tto/TTO_0000030 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000030">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0050154"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Anfangs-Breite</rdfs:label>
         <rdfs:label xml:lang="en">original width</rdfs:label>
@@ -8731,6 +8737,7 @@ Note: It is recommended to measure the original cross-sectional area of the para
     <!-- https://w3id.org/pmd/tto/TTO_0000031 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000031">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Parallele Länge</rdfs:label>
         <rdfs:label xml:lang="en">parallel length</rdfs:label>
@@ -9476,6 +9483,7 @@ Note: Stress rate is only used in the elastic part of the test.</skos:definition
     <!-- https://w3id.org/pmd/tto/TTO_0000056 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000056">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0050153"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">End-Dicke</rdfs:label>
         <rdfs:label xml:lang="en">thickness after fracture</rdfs:label>
@@ -9505,6 +9513,7 @@ Note: Stress rate is only used in the elastic part of the test.</skos:definition
     <!-- https://w3id.org/pmd/tto/TTO_0000060 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000060">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0050154"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">End-Breite</rdfs:label>
         <rdfs:label xml:lang="en">width after fracture</rdfs:label>
