@@ -35,7 +35,7 @@ https://w3id.org/pmd/co/PMD_0025018  # geometric relational quality
 
 ### Occurents
 https://w3id.org/pmd/co/PMD_0000008  # process attribute
-https://w3id.org/pmd/co/PMD_0025022  # heating rate
+https://w3id.org/pmd/co/PMD_0025023  # heating rate
 https://w3id.org/pmd/co/PMD_0025022  # cooling rate
 https://w3id.org/pmd/co/PMD_0020143  # process chain
 # https://w3id.org/pmd/co/PMD_0000554  # chemical property analyzing process
