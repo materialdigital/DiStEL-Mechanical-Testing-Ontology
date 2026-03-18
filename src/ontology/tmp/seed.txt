@@ -258,6 +258,7 @@ http://www.w3.org/1999/02/22-rdf-syntax-ns#nil
 http://www.w3.org/2000/01/rdf-schema#Literal
 http://www.w3.org/2000/01/rdf-schema#subClassOf
 http://www.w3.org/2000/01/rdf-schema#subPropertyOf
+http://www.w3.org/2001/XMLSchema#decimal
 http://www.w3.org/2002/07/owl#topObjectProperty
 http://www.w3.org/2004/02/skos/core#altLabel
 http://www.w3.org/2004/02/skos/core#definition
@@ -583,6 +584,8 @@ https://w3id.org/pmd/distel/DISTEL_0000057
 https://w3id.org/pmd/distel/DISTEL_0000058
 https://w3id.org/pmd/distel/DISTEL_0000059
 https://w3id.org/pmd/distel/DISTEL_0000100
+https://w3id.org/pmd/distel/DISTEL_0025001
+https://w3id.org/pmd/distel/DISTEL_0025003
 https://w3id.org/pmd/tto
 https://w3id.org/pmd/tto/ExtensometerGaugeLength
 https://w3id.org/pmd/tto/FinalGaugeLengthAfterFracture

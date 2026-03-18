@@ -48,3 +48,5 @@ WARN	missing_definition	actuator	definition
 WARN	missing_definition	piezo actuator	definition	
 WARN	missing_definition	initial crack length	definition	
 WARN	missing_definition	motor	definition	
+WARN	missing_definition	hot tensile testing process	definition	
+WARN	missing_definition	strain rate	definition	

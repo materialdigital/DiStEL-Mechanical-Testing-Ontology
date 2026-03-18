@@ -409,6 +409,8 @@ Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000057>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000058>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000059>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000100>))
+Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0025001>))
+Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0025003>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000005>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000009>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000012>))
@@ -723,7 +725,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000051> "has
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/BFO_0000051>)
 TransitiveObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>)
 
-# Object Property: <http://purl.obolibrary.org/obo/BFO_0000054> (realized in)
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000054> (has realization)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000054> "has realization"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000054> "realized in"@en)
@@ -2602,7 +2604,7 @@ EquivalentClasses(<https://w3id.org/pmd/co/PMD_0000002> ObjectIntersectionOf(<ht
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000002> <https://w3id.org/pmd/co/PMD_0000000>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <https://w3id.org/pmd/co/PMD_0000833>))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000005> (material property)
+# Class: <https://w3id.org/pmd/co/PMD_0000005> (behavioral material property)
 
 AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/co/PMD_0000005> "A property is a material trait in terms of the kind and magnitude of response to a specific imposed stimulus. Generally, definitions of properties are made independent of material shape and size.
 (Callister, W.D., Rethwisch, D.G., Materials Science and Engineering, Wiley, 2014)
@@ -2697,7 +2699,7 @@ EquivalentClasses(<https://w3id.org/pmd/co/PMD_0000512> ObjectExactCardinality(1
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000512> <https://w3id.org/pmd/co/PMD_0020131>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000512> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/co/PMD_0020116>))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000522> (mechanical process)
+# Class: <https://w3id.org/pmd/co/PMD_0000522> (application of mechanical load)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000522> "application of mechanical load"@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000522> "mechanical process"@en)
@@ -3017,7 +3019,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<http://pu
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000000>))
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000522>))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000849> (Mechanische Eigenschaften Analyseverfahren)
+# Class: <https://w3id.org/pmd/co/PMD_0000849> (mechanical property analyzing process)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000849> "Mechanische Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000849> "mechanical property analyzing process"@en)
@@ -3833,7 +3835,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020098> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020098> <http://purl.obolibrary.org/obo/BFO_0000031>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0020099> (bravais lattice (3D))
+# Class: <https://w3id.org/pmd/co/PMD_0020099> (bravais lattice (3d))
 
 AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/co/PMD_0020099> "TODO: possibly extend for 2D (Graphene etc)
 
@@ -4571,6 +4573,20 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000100> <https://w3id.org/pmd/distel/DISTEL_0000057>)
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000100> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/pmd/co/PMD_0000637>))
 
+# Class: <https://w3id.org/pmd/distel/DISTEL_0025001> (hot tensile testing process)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0025001> "hot tensile testing process"@en)
+EquivalentClasses(<https://w3id.org/pmd/distel/DISTEL_0025001> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000974> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000009> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000008> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0020127> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000967> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0001931> DataSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0001937> DatatypeRestriction(xsd:decimal xsd:minExclusive "25"^^xsd:decimal))))))))))
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0025001> <https://w3id.org/pmd/co/PMD_0000974>)
+
+# Class: <https://w3id.org/pmd/distel/DISTEL_0025003> (strain rate)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/distel/DISTEL_0025003> "Defined in Distel, cause TTO developers are unable to fix their errors since months.
+TODO import from TTO at some point (hopefully)"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0025003> "strain rate"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0025003> "heating rate is a process attribute which describes the change in length of a specimen participating in a process over time."@en)
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0025003> <https://w3id.org/pmd/co/PMD_0000008>)
+
 # Class: <https://w3id.org/pmd/tto/TTO_0000005> (extension)
 
 AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/tto/TTO_0000005> "Dimensional analysis: L
@@ -4731,7 +4747,7 @@ SubClassOf(<https://w3id.org/pmd/tto/TTO_0000059> <https://w3id.org/pmd/tto/TTO_
 #   Named Individuals
 ############################
 
-# Individual: <http://qudt.org/vocab/unit/HZ> (Hertz)
+# Individual: <http://qudt.org/vocab/unit/HZ> (हर्ट्ज)
 
 AnnotationAssertion(dcterms:description <http://qudt.org/vocab/unit/HZ> "
   $\\textit{Hertz}$ (symbol $Hz$) is the SI unit of frequency defined as the number of cycles per second of a periodic phenomenon. 
