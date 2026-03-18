@@ -1,16 +1,107 @@
 <?xml version="1.0"?>
-<rdf:RDF 
-     xml:base="https://w3id.org/pmd/"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+<rdf:RDF xmlns="https://w3id.org/pmd/distel/components/distel-mech-tensile-test.owl/"
+     xml:base="https://w3id.org/pmd/distel/components/distel-mech-tensile-test.owl/"
+     xmlns:co="https://w3id.org/pmd/co/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:doap="http://usefulinc.com/ns/doap#"
+     xmlns:qudt="http://qudt.org/schema/qudt/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:obo="http://purl.obolibrary.org/obo/">
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/pmd/distel/components/distel-mech-tensile-test.owl">
         <owl:imports rdf:resource="https://w3id.org/pmd/distel/components/distel-mech-shared.owl"/>
     </owl:Ontology>
+    
 
-    <!-- This is a placeholder, it will be regenerated when makefile is first executed -->
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0025001 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0025001">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000974"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000009"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000008"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0020127"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000967"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                                                        <owl:someValuesFrom>
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001931"/>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001937"/>
+                                                                        <owl:someValuesFrom>
+                                                                            <rdfs:Datatype>
+                                                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                                                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                                                    <rdf:Description>
+                                                                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25</xsd:minExclusive>
+                                                                                    </rdf:Description>
+                                                                                </owl:withRestrictions>
+                                                                            </rdfs:Datatype>
+                                                                        </owl:someValuesFrom>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                        </owl:someValuesFrom>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000974"/>
+        <rdfs:label xml:lang="en">hot tensile testing process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0025003 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0025003">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
+        <rdfs:comment xml:lang="en">Defined in Distel, cause TTO developers are unable to fix their errors since months.
+TODO import from TTO at some point (hopefully)</rdfs:comment>
+        <rdfs:label xml:lang="en">strain rate</rdfs:label>
+        <skos:definition xml:lang="en">heating rate is a process attribute which describes the change in length of a specimen participating in a process over time.</skos:definition>
+    </owl:Class>
 </rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

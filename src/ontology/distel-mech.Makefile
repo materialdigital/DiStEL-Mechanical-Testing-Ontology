@@ -21,6 +21,13 @@ $(IMPORTDIR)/tto_import.owl: $(MIRRORDIR)/tto.owl $(IMPORTDIR)/tto_terms.txt $(I
 						--individuals exclude \
 						--intermediates all \
 						--method BOT \
+			### Remove sublcass axioms from strain rate --> might remove in the future
+			remove --term https://w3id.org/pmd/tto/TTO_0000051 --select "parents" --trim true \
+			### Remove axioms with relatesTo --> might remove in the future
+			remove --term https://w3id.org/pmd/co/relatesTo \
+					--select "references" \
+					--select "subclass" \
+					--trim true \
 			remove --term-file $(IAO_TO_REMOVE) \
 				   --select "individuals classes"\
 			remove --select individuals \
