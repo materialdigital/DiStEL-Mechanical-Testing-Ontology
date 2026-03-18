@@ -52,6 +52,16 @@
         <rdfs:label xml:lang="en">fatigue test control software</rdfs:label>
         <skos:definition xml:lang="en">Software used to control the course of a fatigue testing process.</skos:definition>
     </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0025002 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0025002">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000952"/>
+        <rdfs:label xml:lang="en">fracture strength</rdfs:label>
+        <skos:definition xml:lang="en">Fracture strength is a strength which describes the stress at the breaking point of a test piece.</skos:definition>
+    </owl:Class>
 </rdf:RDF>
 
 

@@ -99,10 +99,58 @@
     
 
 
+    <!-- https://w3id.org/pmd/tto/TTO_0000034 -->
+
+    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000034">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000036 -->
+
+    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000036">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000037 -->
+
+    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000037">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+    </rdf:Description>
+    
+
+
     <!-- https://w3id.org/pmd/tto/TTO_0000038 -->
 
     <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000038">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0025018"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000039 -->
+
+    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000039">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000040 -->
+
+    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000040">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000041 -->
+
+    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000041">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
     </rdf:Description>
     
 

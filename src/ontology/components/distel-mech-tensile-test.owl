@@ -57,6 +57,10 @@
                                                                 <owl:intersectionOf rdf:parseType="Collection">
                                                                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001931"/>
                                                                     <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                                                                        <owl:hasValue rdf:resource="http://purl.obolibrary.org/obo/UO_0000027"/>
+                                                                    </owl:Restriction>
+                                                                    <owl:Restriction>
                                                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001937"/>
                                                                         <owl:someValuesFrom>
                                                                             <rdfs:Datatype>
@@ -90,14 +94,25 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0025003 -->
+    <!-- https://w3id.org/pmd/distel/DISTEL_0025004 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0025003">
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0025004">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Strain_hardening_exponent</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">strain hardening exponent</rdfs:label>
+        <skos:altLabel xml:lang="en">strain hardening index</skos:altLabel>
+        <skos:definition xml:lang="en">Strain hardening exponent is a mechanical property which quantifies the ability of a material to become stronger due to strain hardening. It is a exponent relation between true stress and true strain.</skos:definition>
+        <co:symbol>n</co:symbol>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0025006 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0025006">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
-        <rdfs:comment xml:lang="en">Defined in Distel, cause TTO developers are unable to fix their errors since months.
-TODO import from TTO at some point (hopefully)</rdfs:comment>
-        <rdfs:label xml:lang="en">strain rate</rdfs:label>
-        <skos:definition xml:lang="en">heating rate is a process attribute which describes the change in length of a specimen participating in a process over time.</skos:definition>
+        <rdfs:label xml:lang="en">target strain</rdfs:label>
+        <skos:definition xml:lang="en">Target strain is a process attribute of a compression test which defines the final strain that a test piece should achieve in the test.</skos:definition>
     </owl:Class>
 </rdf:RDF>
 

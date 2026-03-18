@@ -705,6 +705,57 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
+    <!-- https://w3id.org/pmd/distel/DISTEL_0025007 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0025007">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0025020"/>
+        <rdfs:label xml:lang="en">load increasing fatigue testing process</rdfs:label>
+        <skos:definition xml:lang="en">Load increasing fatigue testing process is a single fatigue testing process in which the load is gradually increased by a given load increment value after a given number of cycles.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0025008 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0025008">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000018"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0025006"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0025007"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0025006"/>
+                        <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0025007"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">initial loading amplitute</rdfs:label>
+        <skos:definition xml:lang="en">Initial loading amplitute is a value of intial load in a load increasing fatigue testing process.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0025009 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0025009">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0025006"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0025007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>TODO think if this is necessary (&apos;process attribute of&apos; some &apos;load increasing fatigue testing process&apos;)</rdfs:comment>
+        <rdfs:label xml:lang="en">loading amplitude increment</rdfs:label>
+        <skos:definition xml:lang="en">Loading amplitute increment is a value of an incease of a loading amplitude in a load increasing fatigue testing process.</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
