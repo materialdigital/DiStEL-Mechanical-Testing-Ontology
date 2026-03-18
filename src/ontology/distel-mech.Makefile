@@ -21,6 +21,8 @@ $(IMPORTDIR)/tto_import.owl: $(MIRRORDIR)/tto.owl $(IMPORTDIR)/tto_terms.txt $(I
 						--individuals exclude \
 						--intermediates all \
 						--method BOT \
+			odk:normalize --base-iri https://w3id.org/pmd/distel \
+							--subset-decls true --synonym-decls true \
 			remove --term-file $(IMPORTDIR)/tto_remove_parent.txt \
 					--select "ancestors" \
 					--trim true \
@@ -31,11 +33,8 @@ $(IMPORTDIR)/tto_import.owl: $(MIRRORDIR)/tto.owl $(IMPORTDIR)/tto_terms.txt $(I
 			remove --term-file $(IAO_TO_REMOVE) \
 				   --select "individuals classes"\
 			remove --select individuals \
-			\
 			remove --term http://purl.obolibrary.org/obo/IAO_0000412 \
 					--select annotation \
-			odk:normalize --base-iri https://w3id.org/pmd/distel \
-							--subset-decls true --synonym-decls true \
 			annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 			convert -f owl --output $@.tmp.owl && mv $@.tmp.owl $@
 
