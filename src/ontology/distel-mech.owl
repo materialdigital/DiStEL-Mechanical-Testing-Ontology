@@ -8924,6 +8924,7 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
     <!-- https://w3id.org/pmd/tto/TTO_0000038 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000038">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0025018"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -9089,6 +9090,7 @@ Source: ISO 6892-1:2019</skos:definition>
     <!-- https://w3id.org/pmd/tto/TTO_0000051 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000051">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Dehngeschwindigkeit</rdfs:label>
         <rdfs:label xml:lang="en">strain rate</rdfs:label>
@@ -9104,6 +9106,7 @@ Source: ISO 6892-1:2019</skos:definition>
     <!-- https://w3id.org/pmd/tto/TTO_0000052 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000052">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Spannungsgeschwindigkeit</rdfs:label>
         <rdfs:label xml:lang="en">stress rate</rdfs:label>

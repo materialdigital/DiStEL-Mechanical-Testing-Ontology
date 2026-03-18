@@ -636,7 +636,6 @@ https://w3id.org/pmd/tto/PercentageReductionOfArea
 https://w3id.org/pmd/tto/PercentageTotalExtensionAtFracture
 https://w3id.org/pmd/tto/PercentageTotalExtensionAtMaximumForce
 https://w3id.org/pmd/tto/PercentageYieldPointExtension
-https://w3id.org/pmd/tto/PhysicalQuality
 https://w3id.org/pmd/tto/ProofStrength
 https://w3id.org/pmd/tto/ProofStrengthPlasticExtension
 https://w3id.org/pmd/tto/Rp01
@@ -673,7 +672,6 @@ https://w3id.org/pmd/tto/TTO_0000038
 https://w3id.org/pmd/tto/TTO_0000039
 https://w3id.org/pmd/tto/TTO_0000040
 https://w3id.org/pmd/tto/TTO_0000041
-https://w3id.org/pmd/tto/TTO_0000042
 https://w3id.org/pmd/tto/TTO_0000043
 https://w3id.org/pmd/tto/TTO_0000044
 https://w3id.org/pmd/tto/TTO_0000046

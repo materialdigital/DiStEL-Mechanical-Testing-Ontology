@@ -4637,7 +4637,8 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
 
 ###  https://w3id.org/pmd/tto/TTO_0000038
 <https://w3id.org/pmd/tto/TTO_0000038> rdf:type owl:Class ;
-                                       rdfs:subClassOf [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                       rdfs:subClassOf co:PMD_0025018 ,
+                                                       [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
                                                                                 owl:onProperty co:relatesTo ;
                                                                                 owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000024>
                                                                               ]
@@ -4770,6 +4771,7 @@ Source: ISO 6892-1:2019"""@en ;
 
 ###  https://w3id.org/pmd/tto/TTO_0000051
 <https://w3id.org/pmd/tto/TTO_0000051> rdf:type owl:Class ;
+                                       rdfs:subClassOf co:PMD_0000008 ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Dehngeschwindigkeit"@de ,
                                                   "strain rate"@en ;
@@ -4782,6 +4784,7 @@ Source: ISO 6892-1:2019"""@en ;
 
 ###  https://w3id.org/pmd/tto/TTO_0000052
 <https://w3id.org/pmd/tto/TTO_0000052> rdf:type owl:Class ;
+                                       rdfs:subClassOf co:PMD_0000008 ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Spannungsgeschwindigkeit"@de ,
                                                   "stress rate"@en ;
