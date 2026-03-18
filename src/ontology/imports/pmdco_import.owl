@@ -174,6 +174,7 @@ Declaration(Class(<https://w3id.org/pmd/co/PMD_0000552>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000553>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000560>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000561>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0000581>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000583>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000587>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000591>))
@@ -2488,6 +2489,15 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000561> "Ein Gerät zum Entfernen von Verunreinigungen von Materialien oder Oberflächen."@de)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000561> <https://w3id.org/pmd/co/PMD_0000602>)
 
+# Class: <https://w3id.org/pmd/co/PMD_0000581> (Druckprüfverfahren)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000581> "Druckprüfverfahren"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000581> "compression testing process"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000581> "A mechanical property analyzing processs that determines a material's behavior under compressive forces, measuring its compressive strength and modulus."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000581> "Ein Mechanische Eigenschaften Analyseverfahren, das das Verhalten eines Materials unter Druckkräften bestimmt und seine Druckfestigkeit und seinen Druckmodul misst."@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0000581> "Compression testing of concrete samples to ensure they meet the required strength standards for construction."@en)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000581> <https://w3id.org/pmd/co/PMD_0000849>)
+
 # Class: <https://w3id.org/pmd/co/PMD_0000583> (Datenverarbeitung)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <https://w3id.org/pmd/co/PMD_0000583> "The subclass trees of \"Computing Process\" are currently still proposals and serve as a working basis for the discussion round with the simulation/workflow domain experts."@en)
@@ -2732,7 +2742,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> <https://w3id.org/pmd/co/PMD_00
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <https://w3id.org/pmd/co/PMD_0000522>))
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000000>))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000849> (mechanical property analyzing process)
+# Class: <https://w3id.org/pmd/co/PMD_0000849> (Mechanische Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000849> "Mechanische Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000849> "mechanical property analyzing process"@en)

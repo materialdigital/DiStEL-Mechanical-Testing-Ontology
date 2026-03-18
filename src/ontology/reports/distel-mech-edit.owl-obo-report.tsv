@@ -1,5 +1,4 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	duplicate_label	strain rate	rdfs:label	strain rate@en
 WARN	missing_definition	fatigue loading type value	definition	
 WARN	missing_definition	fatigue loading type	definition	
 WARN	missing_definition	fatigue control type value	definition	
@@ -50,4 +49,9 @@ WARN	missing_definition	piezo actuator	definition
 WARN	missing_definition	initial crack length	definition	
 WARN	missing_definition	motor	definition	
 WARN	missing_definition	hot tensile testing process	definition	
-WARN	missing_definition	strain rate	definition	
+WARN	missing_definition	fracture strength	definition	
+WARN	missing_definition	strain hardening exponent	definition	
+WARN	missing_definition	target strain	definition	
+WARN	missing_definition	load increasing fatigue testing process	definition	
+WARN	missing_definition	initial loading amplitute	definition	
+WARN	missing_definition	loading amplitude increment	definition	
