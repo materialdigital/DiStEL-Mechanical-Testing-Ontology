@@ -1262,12 +1262,6 @@ obo:BFO_0000017 rdf:type owl:Class ;
                                   owl:allValuesFrom obo:BFO_0000017
                                 ] ;
                 owl:disjointWith obo:BFO_0000019 ;
-                obo:IAO_0000112 "the disposition of this piece of metal to conduct electricity."@en ,
-                                "the disposition of your blood to coagulate"@en ,
-                                "the function of your reproductive organs"@en ,
-                                "the role of being a doctor"@en ,
-                                "the role of this boundary to delineate where Utah and Colorado meet"@en ;
-                obo:IAO_0000115 "A specifically dependent continuant  that inheres in continuant  entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances."@en ;
                 rdfs:label "realizable entity"@en ;
                 skos:definition "(Elucidation) A realizable entity is a specifically dependent continuant that inheres in some independent continuant which is not a spatial region & which is of a type some instances of which are realized in processes of a correlated type"@en ;
                 skos:example "The role of being a doctor; the role of this boundary to delineate where Utah and Colorado meet; the function of your reproductive organs; the disposition of your blood to coagulate; the disposition of this piece of metal to conduct electricity"@en .
@@ -2783,51 +2777,11 @@ co:PMD_0000002 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000005
 co:PMD_0000005 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000016 ,
-                               [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                        owl:onProperty obo:RO_0000052 ;
-                                                        owl:someValuesFrom [ owl:intersectionOf ( obo:BFO_0000040
-                                                                                                  [ rdf:type owl:Restriction ;
-                                                                                                    owl:onProperty obo:RO_0000056 ;
-                                                                                                    owl:someValuesFrom [ owl:intersectionOf ( co:PMD_0000915
-                                                                                                                                              [ rdf:type owl:Restriction ;
-                                                                                                                                                owl:onProperty obo:BFO_0000199 ;
-                                                                                                                                                owl:someValuesFrom obo:BFO_0000008
-                                                                                                                                              ]
-                                                                                                                                            ) ;
-                                                                                                                         rdf:type owl:Class
-                                                                                                                       ]
-                                                                                                  ]
-                                                                                                  [ rdf:type owl:Restriction ;
-                                                                                                    owl:onProperty obo:RO_0000056 ;
-                                                                                                    owl:someValuesFrom [ owl:intersectionOf ( co:PMD_0000950
-                                                                                                                                              [ rdf:type owl:Restriction ;
-                                                                                                                                                owl:onProperty obo:BFO_0000199 ;
-                                                                                                                                                owl:someValuesFrom obo:BFO_0000008
-                                                                                                                                              ]
-                                                                                                                                            ) ;
-                                                                                                                         rdf:type owl:Class
-                                                                                                                       ]
-                                                                                                  ]
-                                                                                                ) ;
-                                                                             rdf:type owl:Class
-                                                                           ]
-                                                      ]
-                                                      [ rdf:type owl:Restriction ;
-                                                        owl:onProperty co:PMD_0001029 ;
-                                                        owl:someValuesFrom co:PMD_0000915
-                                                      ]
-                                                      [ rdf:type owl:Restriction ;
-                                                        owl:onProperty co:PMD_0001030 ;
-                                                        owl:someValuesFrom co:PMD_0000950
-                                                      ]
-                                                    ) ;
-                                 rdf:type owl:Class
-                               ] ,
-                               _:genid175 ,
                                [ rdf:type owl:Restriction ;
-                                 owl:onProperty obo:RO_0000052 ;
-                                 owl:allValuesFrom co:PMD_0000000
-                               ] ;
+                                 owl:onProperty obo:BFO_0000054 ;
+                                 owl:someValuesFrom co:PMD_0000950
+                               ] ,
+                               _:genid155 ;
                rdfs:comment """A property is a material trait in terms of the kind and magnitude of response to a specific imposed stimulus. Generally, definitions of properties are made independent of material shape and size.
 (Callister, W.D., Rethwisch, D.G., Materials Science and Engineering, Wiley, 2014)
 
@@ -2835,21 +2789,12 @@ Technical materials are complex aggregates. Many properties that are determined 
 As a consequence, material properties in the ontology are differeciated according to their measurement method, e.g. Brinell hardness and Vickers hardness are different types of indentation hardness rather than different measures/quantification (GDC) of the materials property 'indentation hardness'.
  The 'unit idenifieres' of such properties (e.g. \"HV1\", \"HV10\", \"HBW\") are strictly speaking not units but rather references to the measurement methodology used to determine a numeric value that quantifies the property.
 
-Extensive properties that depend on the object being tested rather than on the portion of matter are (extensive) object- or system-properties."""@en ,
-                            """Technical materials are complex object aggregates. The properties that are determined for those object aggregates are intrinsically associated with the methodologies employed in the measurement process. This is in contrast to typical 'physical' properties, which like e.g. mass that can be determined to high accuracy independently of the measurement process. 
-As a consequence, the behavoiral material properties in the ontology are differeciated according to their measurement method, e.g. Brinell hardness and Vickers hardness are different types of indentation hardness rather than different measures/quantification (GDC) of the materials property 'indentation hardness'.
- The 'unit idenifieres' of such properties (e.g. \"HV1\", \"HV10\", \"HBW\") are strictly speaking not units but rather references to the measurement methodology used to determine a numeric value that quantifies the property."""@en ;
-               rdfs:label "behavioral material property"@en ,
-                          "material property"@en ;
-               skos:definition """A property is a material trait in terms of the kind and magnitude of response to a specific imposed stimulus. Generally, definitions of properties are made independent of material shape and size.
-
-(Callister, W.D., Rethwisch, D.G., Materials Science and Engineering, Wiley, 2014)
-
-We only deal with intensive (system-size independent) materrial properties. Extensive properties that depend on the testpiece/specimen/probe size should be found in the respective testing method modules."""@en ,
-                               "a disposition of a portion of matter that is realized in a compatible process and whose realization is grounded in the portions intensive qualities"@en ;
+Extensive properties that depend on the object being tested rather than on the portion of matter are (extensive) object- or system-properties."""@en ;
+               rdfs:label "material property"@en ;
+               skos:definition "a disposition of a portion of matter that is realized in a compatible process and whose realization is grounded in the portions intensive qualities"@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
-_:genid175 rdf:type owl:Restriction ;
+_:genid155 rdf:type owl:Restriction ;
             owl:onProperty obo:RO_0000052 ;
             owl:someValuesFrom [ owl:intersectionOf ( co:PMD_0000001
                                                       [ rdf:type owl:Restriction ;
@@ -2863,7 +2808,7 @@ _:genid175 rdf:type owl:Restriction ;
 [ rdf:type owl:Axiom ;
    owl:annotatedSource co:PMD_0000005 ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid175 ;
+   owl:annotatedTarget _:genid155 ;
    rdfs:comment "Due to the duality of object and portion of matter this axiom can not be an equivalent class axiom."@en
  ] .
 
@@ -3327,7 +3272,55 @@ co:PMD_0000667 rdf:type owl:Class ;
 
 ###  https://w3id.org/pmd/co/PMD_0000773
 co:PMD_0000773 rdf:type owl:Class ;
-               rdfs:subClassOf co:PMD_0000848 ;
+               rdfs:subClassOf co:PMD_0000848 ,
+                               [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                        owl:onProperty obo:RO_0000052 ;
+                                                        owl:someValuesFrom [ owl:intersectionOf ( obo:BFO_0000040
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty obo:RO_0000056 ;
+                                                                                                    owl:someValuesFrom [ owl:intersectionOf ( co:PMD_0000915
+                                                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                                                owl:onProperty obo:BFO_0000199 ;
+                                                                                                                                                owl:someValuesFrom obo:BFO_0000008
+                                                                                                                                              ]
+                                                                                                                                            ) ;
+                                                                                                                         rdf:type owl:Class
+                                                                                                                       ]
+                                                                                                  ]
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty obo:RO_0000056 ;
+                                                                                                    owl:someValuesFrom [ owl:intersectionOf ( co:PMD_0000950
+                                                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                                                owl:onProperty obo:BFO_0000199 ;
+                                                                                                                                                owl:someValuesFrom obo:BFO_0000008
+                                                                                                                                              ]
+                                                                                                                                            ) ;
+                                                                                                                         rdf:type owl:Class
+                                                                                                                       ]
+                                                                                                  ]
+                                                                                                ) ;
+                                                                             rdf:type owl:Class
+                                                                           ]
+                                                      ]
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty co:PMD_0001029 ;
+                                                        owl:someValuesFrom co:PMD_0000915
+                                                      ]
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty co:PMD_0001030 ;
+                                                        owl:someValuesFrom co:PMD_0000950
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty co:PMD_0001030 ;
+                                 owl:someValuesFrom co:PMD_0000522
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty obo:RO_0000052 ;
+                                 owl:allValuesFrom co:PMD_0000000
+                               ] ;
                rdfs:label "hardness"@en ;
                skos:definition "The hardness is a mechanical property used as a measure of a material's resistance to localized plastic deformation, often tested by indentation or scratch methods."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
@@ -3430,19 +3423,16 @@ A manufacturing process is always a transformative process."""@en ,
 co:PMD_0000848 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000005 ,
                                [ rdf:type owl:Restriction ;
-                                 owl:onProperty obo:RO_0000052 ;
-                                 owl:someValuesFrom co:PMD_0000000
+                                 owl:onProperty obo:BFO_0000054 ;
+                                 owl:someValuesFrom co:PMD_0000522
                                ] ,
                                [ rdf:type owl:Restriction ;
-                                 owl:onProperty co:PMD_0001030 ;
-                                 owl:someValuesFrom co:PMD_0000522
+                                 owl:onProperty obo:RO_0000052 ;
+                                 owl:someValuesFrom co:PMD_0000000
                                ] ;
                rdfs:comment "The axiom that mechanical property has realization some application of mechanical load treats only conventional materials and not such effects as magnetostriction etc."@en ;
                rdfs:label "mechanical property"@en ;
-               skos:definition """A mechanical property is a material property that inheres in a material M when an object O_target that consists of M is stimulated in a process through an interaction with an object O_stimulus and M changes its stress/strain/..(mechanical?) SDCs.
-
-TODO: Check general class axiom and defintion altogether !!!"""@en ,
-                               "A mechanical property is a material property which is a characteristic of material M. Mechanical property has realization in a stimulating process (in most cases, application of mechanical load), and the stimulating process is an occurent part of another process, in which an object O that is an instance of M participates."@en ;
+               skos:definition "A mechanical property is a material property which is a characteristic of material M. Mechanical property has realization in a stimulating process (in most cases, application of mechanical load), and the stimulating process is an occurent part of another process, in which an object O that is an instance of M participates."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -3649,7 +3639,55 @@ co:PMD_0000950 rdf:type owl:Class ;
 
 ###  https://w3id.org/pmd/co/PMD_0000952
 co:PMD_0000952 rdf:type owl:Class ;
-               rdfs:subClassOf co:PMD_0000848 ;
+               rdfs:subClassOf co:PMD_0000848 ,
+                               [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                        owl:onProperty obo:RO_0000052 ;
+                                                        owl:someValuesFrom [ owl:intersectionOf ( obo:BFO_0000040
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty obo:RO_0000056 ;
+                                                                                                    owl:someValuesFrom [ owl:intersectionOf ( co:PMD_0000915
+                                                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                                                owl:onProperty obo:BFO_0000199 ;
+                                                                                                                                                owl:someValuesFrom obo:BFO_0000008
+                                                                                                                                              ]
+                                                                                                                                            ) ;
+                                                                                                                         rdf:type owl:Class
+                                                                                                                       ]
+                                                                                                  ]
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty obo:RO_0000056 ;
+                                                                                                    owl:someValuesFrom [ owl:intersectionOf ( co:PMD_0000950
+                                                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                                                owl:onProperty obo:BFO_0000199 ;
+                                                                                                                                                owl:someValuesFrom obo:BFO_0000008
+                                                                                                                                              ]
+                                                                                                                                            ) ;
+                                                                                                                         rdf:type owl:Class
+                                                                                                                       ]
+                                                                                                  ]
+                                                                                                ) ;
+                                                                             rdf:type owl:Class
+                                                                           ]
+                                                      ]
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty co:PMD_0001029 ;
+                                                        owl:someValuesFrom co:PMD_0000915
+                                                      ]
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty co:PMD_0001030 ;
+                                                        owl:someValuesFrom co:PMD_0000950
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty co:PMD_0001030 ;
+                                 owl:someValuesFrom co:PMD_0000522
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty obo:RO_0000052 ;
+                                 owl:allValuesFrom co:PMD_0000000
+                               ] ;
                rdfs:label "strength"@en ;
                skos:definition "The strength is a material property describing the maximum stress a material can withstand before failure."@en ,
                                "The strength is a mechanical property describing the maximum stress a material can withstand before failure."@en ;
@@ -5074,21 +5112,21 @@ co:PMD_0020128 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0020131
 co:PMD_0020131 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000019 ,
-                               _:genid620 ;
+                               _:genid645 ;
                owl:disjointWith co:PMD_0020148 ;
                rdfs:label "intensive quality"@en ;
                skos:altLabel "Point property"@en ;
                skos:definition "An intensive quality is a quality that inheres in only portion of matter and thus is independent of the bearers (system-) size."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
-_:genid620 rdf:type owl:Restriction ;
+_:genid645 rdf:type owl:Restriction ;
             owl:onProperty obo:RO_0000080 ;
             owl:someValuesFrom co:PMD_0000001 .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource co:PMD_0020131 ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid620 ;
+   owl:annotatedTarget _:genid645 ;
    rdfs:comment "Due to the duality of object and portion of matter this axiom can not be an equivalent class axiom."@en
  ] .
 
@@ -5097,8 +5135,7 @@ _:genid620 rdf:type owl:Restriction ;
 co:PMD_0020132 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020148 ;
                rdfs:label "size"@en ;
-               skos:definition "Size is the quality of a material entity that describes its spatial extend."@en ,
-                               "an extensive quality of a material entity that describes its spatial extend."@en ;
+               skos:definition "an extensive quality of a material entity that describes its spatial extend."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -5157,8 +5194,7 @@ co:PMD_0020143 rdf:type owl:Class ;
 co:PMD_0020148 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000019 ;
                rdfs:label "extensive quality"@en ;
-               skos:definition "An extensive quality is a quality that inheres in only object or object aggregate or fiat object part or chemical entity and is dependent on the bearers (system-) size."@en ,
-                               "An extensive quality is a qualty that inheres in only object or object aggregate or fiat object part or chemical entity and is dependent on the bearers (system-) size."@en ;
+               skos:definition "An extensive quality is a quality that inheres in only object or object aggregate or fiat object part or chemical entity and is dependent on the bearers (system-) size."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -5188,18 +5224,8 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
                skos:definition "Thermodynamic activity is a relational quality that inheres between a chemical species and a non-ideal solution and represents the effective concentration of the species accounting for particle interactions."@en .
 
 
-###  https://w3id.org/pmd/co/PMD_0020199
-co:PMD_0020199 rdf:type owl:Class ;
-               rdfs:subClassOf co:PMD_0020132 ;
-               rdfs:label "Fläche"@de ,
-                          "area"@en ;
-               skos:definition "Area a two dimesional size"@en ;
-               skos:example "Section area or a surface area"@en .
-
-
 ###  https://w3id.org/pmd/co/PMD_0020200
 co:PMD_0020200 rdf:type owl:Class ;
-               rdfs:subClassOf obo:BFO_0000017 ;
                rdfs:label "force"@en ;
                skos:definition "Force is a reciprocal relation realized between two objects where the other object exerces the same force with opposite sign onto the first. Force may be responsible for changes in velocity and/or deformation of objects."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
@@ -5463,12 +5489,10 @@ co:PMD_0025997 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0040001
 co:PMD_0040001 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020132 ;
-               rdfs:comment "Length is a size that describes the spacial extend of its bearer in one dimension."@en ,
-                            "Length is a size that describes the spatial extent of its bearer in one dimension."@en ;
+               rdfs:comment "Length is a size that describes the spatial extent of its bearer in one dimension."@en ;
                rdfs:label "length"@en ;
                skos:altLabel "dimension"@en ;
-               skos:definition "Length is a one dimensional size." ,
-                               "Length is a one dimensional size."@en ;
+               skos:definition "Length is a one dimensional size."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -6152,22 +6176,9 @@ TODO import from TTO at some point (hopefully)"""@en ;
                                              skos:definition "heating rate is a process attribute which describes the change in length of a specimen participating in a process over time."@en .
 
 
-###  https://w3id.org/pmd/tto/TTO_0000002
-<https://w3id.org/pmd/tto/TTO_0000002> rdf:type owl:Class ;
-                                       rdfs:subClassOf co:PMD_0040001 ;
-                                       rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
-                                       rdfs:label "Durchmesser"@de ,
-                                                  "diameter"@en ;
-                                       rdfs:seeAlso <https://w3id.org/pmd/co/2.0.8/Diameter> ;
-                                       skos:definition "Die Länge einer geraden Linie durch den Mittelpunkt eines Objekts oder Raums."@de ,
-                                                       "The length of a straight line through the center of an object or space."@en ;
-                                       co:definitionSource "“Diameter.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/diameter. Accessed 5 Dec. 2022." .
-
-
 ###  https://w3id.org/pmd/tto/TTO_0000004
 <https://w3id.org/pmd/tto/TTO_0000004> rdf:type owl:Class ;
-                                       rdfs:subClassOf co:PMD_0040001 ,
-                                                       [ rdf:type owl:Restriction ;
+                                       rdfs:subClassOf [ rdf:type owl:Restriction ;
                                                          owl:onProperty co:relatesTo ;
                                                          owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000028>
                                                        ] ;
@@ -6178,37 +6189,6 @@ TODO import from TTO at some point (hopefully)"""@en ;
                                        skos:definition "Zunahme der Anfangsmesslänge zu einem beliebigen Zeitpunkt während des Versuchs"@de ,
                                                        "increase in the original gauge length at any moment during the test"@en ;
                                        co:definitionSource "DIN EN ISO 6892-1:2019"@en .
-
-
-###  https://w3id.org/pmd/tto/TTO_0000005
-<https://w3id.org/pmd/tto/TTO_0000005> rdf:type owl:Class ;
-                                       rdfs:subClassOf co:PMD_0000848 ;
-                                       rdfs:comment """Dimensional analysis: L
-Unit (e.g. SI): mm"""@en ,
-                                                    """Hinweis: Die Dehnung kann mit verschiedenen Kanälen gemessen werden (z. B. bei Verwendung von einem oder zwei Dehnungsmesserkanälen); in der Regel wird als Dehnungswert der mittlere Durchschnittswert der beteiligten Kanäle angegeben, falls zutreffend.
-
-Hinweis: Die optische Längenänderungsmessung kann eine besondere Methode der Datenspeicherung erfordern."""@de ,
-                                                    """Note: The extension might be measured using different channels (e.g. when using one or two extensometer channels); usually, the mean average value of involved channels is given as extension value, if applicable.
-
-Note: Optical extensometry may require a specific data storage method."""@en ;
-                                       rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
-                                       rdfs:label "Verlängerung (der Extensometer-Messlänge)"@de ,
-                                                  "extension"@en ;
-                                       rdfs:seeAlso <https://w3id.org/pmd/co/2.0.8/Extension> ;
-                                       skos:definition "Increase in the extensometer gauge length at any moment during a test"@en ,
-                                                       "Zunahme der Extensometer-Messlänge zu einem beliebigen Zeitpunkt eines Versuchs"@de ;
-                                       co:definitionSource "DIN EN ISO 6892-1:2019" .
-
-
-###  https://w3id.org/pmd/tto/TTO_0000006
-<https://w3id.org/pmd/tto/TTO_0000006> rdf:type owl:Class ;
-                                       rdfs:subClassOf co:PMD_0040001 ;
-                                       rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
-                                       rdfs:label "Dicke"@de ,
-                                                  "thickness"@en ;
-                                       rdfs:seeAlso <https://w3id.org/pmd/co/2.0.8/Thickness> ;
-                                       skos:definition "Diese Klasse beschreibt das gemessene Maß in einer Richtung eines Prüfkörpers."@de ,
-                                                       "This class describes the measured dimension in one direction of a test piece."@en .
 
 
 ###  https://w3id.org/pmd/tto/TTO_0000009
@@ -6223,33 +6203,8 @@ Note: Optical extensometry may require a specific data storage method."""@en ;
                                        co:definitionSource "DIN EN ISO 6892-1:2019"@en .
 
 
-###  https://w3id.org/pmd/tto/TTO_0000010
-<https://w3id.org/pmd/tto/TTO_0000010> rdf:type owl:Class ;
-                                       rdfs:subClassOf co:PMD_0040001 ;
-                                       rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
-                                       rdfs:label "Breite"@de ,
-                                                  "width"@en ;
-                                       rdfs:seeAlso <https://w3id.org/pmd/co/2.0.8/Width> ;
-                                       skos:definition "Diese Klasse beschreibt eine horizontale Messung eines Objekts, die im rechten Winkel zur Länge des Objekts vorgenommen wird."@de ,
-                                                       "This class describes a horizontal measurement of an object taken at right angles to the length of the object."@en ;
-                                       co:definitionSource <https://www.merriam-webster.com/dictionary/width> .
-
-
-###  https://w3id.org/pmd/tto/TTO_0000012
-<https://w3id.org/pmd/tto/TTO_0000012> rdf:type owl:Class ;
-                                       rdfs:subClassOf co:PMD_0020199 ;
-                                       rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
-                                       rdfs:label "Querschnittsfläche"@de ,
-                                                  "cross section area"@en ;
-                                       rdfs:seeAlso <https://w3id.org/pmd/co/2.0.8/CrossSectionArea> ;
-                                       skos:definition "Die Querschnittsfläche ist die Fläche eines Schnittes oder eines rechtwinklig geschnittenen oder gebrochenen Stücks eines Objektes in Bezug auf eine Achse."@de ,
-                                                       "The cross section area is an area of a cutting or piece of an object cut off or broken at right angles or related to an axis."@en ;
-                                       co:definitionSource <https://www.merriam-webster.com/dictionary/cross%20section> .
-
-
 ###  https://w3id.org/pmd/tto/TTO_0000015
 <https://w3id.org/pmd/tto/TTO_0000015> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000002> ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "End-Probendurchmesser"@de ,
                                                   "diameter after fracture"@en ;
@@ -6290,7 +6245,6 @@ Note: For the determination of several properties which are based (partly or com
 
 ###  https://w3id.org/pmd/tto/TTO_0000019
 <https://w3id.org/pmd/tto/TTO_0000019> rdf:type owl:Class ;
-                                       rdfs:subClassOf co:PMD_0040001 ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Messlänge"@de ,
                                                   "gauge length"@en ;
@@ -6337,8 +6291,7 @@ Note: For materials which display discontinuous yielding, but where no work-hard
 
 ###  https://w3id.org/pmd/tto/TTO_0000024
 <https://w3id.org/pmd/tto/TTO_0000024> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000012> ,
-                                                       [ rdf:type owl:Class ;
+                                       rdfs:subClassOf [ rdf:type owl:Class ;
                                                          owl:unionOf ( [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
                                                                                                 owl:onProperty co:relatesTo ;
                                                                                                 owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000056>
@@ -6376,8 +6329,7 @@ Note: It is recommended to measure the original cross-sectional area of the para
 
 ###  https://w3id.org/pmd/tto/TTO_0000026
 <https://w3id.org/pmd/tto/TTO_0000026> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000012> ,
-                                                       [ rdf:type owl:Class ;
+                                       rdfs:subClassOf [ rdf:type owl:Class ;
                                                          owl:unionOf ( [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
                                                                                                 owl:onProperty co:relatesTo ;
                                                                                                 owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000029>
@@ -6407,7 +6359,6 @@ Note: It is recommended to measure the original cross-sectional area of the para
 
 ###  https://w3id.org/pmd/tto/TTO_0000027
 <https://w3id.org/pmd/tto/TTO_0000027> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000002> ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Anfangs-Probendurchmesser"@de ,
                                                   "original diameter"@en ;
@@ -6432,7 +6383,6 @@ Note: It is recommended to measure the original cross-sectional area of the para
 
 ###  https://w3id.org/pmd/tto/TTO_0000029
 <https://w3id.org/pmd/tto/TTO_0000029> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000006> ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Anfangs-Dicke"@de ,
                                                   "original thickness"@en ;
@@ -6443,7 +6393,6 @@ Note: It is recommended to measure the original cross-sectional area of the para
 
 ###  https://w3id.org/pmd/tto/TTO_0000030
 <https://w3id.org/pmd/tto/TTO_0000030> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000010> ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Anfangs-Breite"@de ,
                                                   "original width"@en ;
@@ -6454,7 +6403,6 @@ Note: It is recommended to measure the original cross-sectional area of the para
 
 ###  https://w3id.org/pmd/tto/TTO_0000031
 <https://w3id.org/pmd/tto/TTO_0000031> rdf:type owl:Class ;
-                                       rdfs:subClassOf co:PMD_0040001 ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Parallele Länge"@de ,
                                                   "parallel length"@en ;
@@ -6496,10 +6444,58 @@ Note: The concept of parallel length is replaced by the concept of distance betw
 
 ###  https://w3id.org/pmd/tto/TTO_0000034
 <https://w3id.org/pmd/tto/TTO_0000034> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000005> ,
+                                       rdfs:subClassOf obo:BFO_0000017 ,
+                                                       [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty obo:RO_0000052 ;
+                                                                                owl:someValuesFrom [ owl:intersectionOf ( obo:BFO_0000040
+                                                                                                                          [ rdf:type owl:Restriction ;
+                                                                                                                            owl:onProperty obo:RO_0000056 ;
+                                                                                                                            owl:someValuesFrom [ owl:intersectionOf ( co:PMD_0000915
+                                                                                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                                                                                        owl:onProperty obo:BFO_0000199 ;
+                                                                                                                                                                        owl:someValuesFrom obo:BFO_0000008
+                                                                                                                                                                      ]
+                                                                                                                                                                    ) ;
+                                                                                                                                                 rdf:type owl:Class
+                                                                                                                                               ]
+                                                                                                                          ]
+                                                                                                                          [ rdf:type owl:Restriction ;
+                                                                                                                            owl:onProperty obo:RO_0000056 ;
+                                                                                                                            owl:someValuesFrom [ owl:intersectionOf ( co:PMD_0000950
+                                                                                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                                                                                        owl:onProperty obo:BFO_0000199 ;
+                                                                                                                                                                        owl:someValuesFrom obo:BFO_0000008
+                                                                                                                                                                      ]
+                                                                                                                                                                    ) ;
+                                                                                                                                                 rdf:type owl:Class
+                                                                                                                                               ]
+                                                                                                                          ]
+                                                                                                                        ) ;
+                                                                                                     rdf:type owl:Class
+                                                                                                   ]
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty co:PMD_0001029 ;
+                                                                                owl:someValuesFrom co:PMD_0000915
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty co:PMD_0001030 ;
+                                                                                owl:someValuesFrom co:PMD_0000950
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty co:PMD_0001030 ;
+                                                         owl:someValuesFrom co:PMD_0000522
+                                                       ] ,
                                                        [ rdf:type owl:Restriction ;
                                                          owl:onProperty co:relatesTo ;
                                                          owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000017>
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty obo:RO_0000052 ;
+                                                         owl:allValuesFrom co:PMD_0000000
                                                        ] ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Extensometer-Dehnung"@de ,
@@ -6530,10 +6526,58 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
 
 ###  https://w3id.org/pmd/tto/TTO_0000036
 <https://w3id.org/pmd/tto/TTO_0000036> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000005> ,
+                                       rdfs:subClassOf obo:BFO_0000017 ,
+                                                       [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty obo:RO_0000052 ;
+                                                                                owl:someValuesFrom [ owl:intersectionOf ( obo:BFO_0000040
+                                                                                                                          [ rdf:type owl:Restriction ;
+                                                                                                                            owl:onProperty obo:RO_0000056 ;
+                                                                                                                            owl:someValuesFrom [ owl:intersectionOf ( co:PMD_0000915
+                                                                                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                                                                                        owl:onProperty obo:BFO_0000199 ;
+                                                                                                                                                                        owl:someValuesFrom obo:BFO_0000008
+                                                                                                                                                                      ]
+                                                                                                                                                                    ) ;
+                                                                                                                                                 rdf:type owl:Class
+                                                                                                                                               ]
+                                                                                                                          ]
+                                                                                                                          [ rdf:type owl:Restriction ;
+                                                                                                                            owl:onProperty obo:RO_0000056 ;
+                                                                                                                            owl:someValuesFrom [ owl:intersectionOf ( co:PMD_0000950
+                                                                                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                                                                                        owl:onProperty obo:BFO_0000199 ;
+                                                                                                                                                                        owl:someValuesFrom obo:BFO_0000008
+                                                                                                                                                                      ]
+                                                                                                                                                                    ) ;
+                                                                                                                                                 rdf:type owl:Class
+                                                                                                                                               ]
+                                                                                                                          ]
+                                                                                                                        ) ;
+                                                                                                     rdf:type owl:Class
+                                                                                                   ]
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty co:PMD_0001029 ;
+                                                                                owl:someValuesFrom co:PMD_0000915
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty co:PMD_0001030 ;
+                                                                                owl:someValuesFrom co:PMD_0000950
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty co:PMD_0001030 ;
+                                                         owl:someValuesFrom co:PMD_0000522
+                                                       ] ,
                                                        [ rdf:type owl:Restriction ;
                                                          owl:onProperty co:relatesTo ;
                                                          owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000017>
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty obo:RO_0000052 ;
+                                                         owl:allValuesFrom co:PMD_0000000
                                                        ] ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Bleibende Extensometer-Dehnung"@de ,
@@ -6546,7 +6590,47 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
 
 ###  https://w3id.org/pmd/tto/TTO_0000037
 <https://w3id.org/pmd/tto/TTO_0000037> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000005> ,
+                                       rdfs:subClassOf obo:BFO_0000017 ,
+                                                       [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty obo:RO_0000052 ;
+                                                                                owl:someValuesFrom [ owl:intersectionOf ( obo:BFO_0000040
+                                                                                                                          [ rdf:type owl:Restriction ;
+                                                                                                                            owl:onProperty obo:RO_0000056 ;
+                                                                                                                            owl:someValuesFrom [ owl:intersectionOf ( co:PMD_0000915
+                                                                                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                                                                                        owl:onProperty obo:BFO_0000199 ;
+                                                                                                                                                                        owl:someValuesFrom obo:BFO_0000008
+                                                                                                                                                                      ]
+                                                                                                                                                                    ) ;
+                                                                                                                                                 rdf:type owl:Class
+                                                                                                                                               ]
+                                                                                                                          ]
+                                                                                                                          [ rdf:type owl:Restriction ;
+                                                                                                                            owl:onProperty obo:RO_0000056 ;
+                                                                                                                            owl:someValuesFrom [ owl:intersectionOf ( co:PMD_0000950
+                                                                                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                                                                                        owl:onProperty obo:BFO_0000199 ;
+                                                                                                                                                                        owl:someValuesFrom obo:BFO_0000008
+                                                                                                                                                                      ]
+                                                                                                                                                                    ) ;
+                                                                                                                                                 rdf:type owl:Class
+                                                                                                                                               ]
+                                                                                                                          ]
+                                                                                                                        ) ;
+                                                                                                     rdf:type owl:Class
+                                                                                                   ]
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty co:PMD_0001029 ;
+                                                                                owl:someValuesFrom co:PMD_0000915
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty co:PMD_0001030 ;
+                                                                                owl:someValuesFrom co:PMD_0000950
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ] ,
                                                        [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
                                                                                 owl:onProperty co:relatesTo ;
                                                                                 owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000017>
@@ -6557,6 +6641,14 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
                                                                               ]
                                                                             ) ;
                                                          rdf:type owl:Class
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty co:PMD_0001030 ;
+                                                         owl:someValuesFrom co:PMD_0000522
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty obo:RO_0000052 ;
+                                                         owl:allValuesFrom co:PMD_0000000
                                                        ] ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Plastische Extensometer-Dehnung bei Höchstkraft"@de ,
@@ -6594,10 +6686,58 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
 
 ###  https://w3id.org/pmd/tto/TTO_0000039
 <https://w3id.org/pmd/tto/TTO_0000039> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000005> ,
+                                       rdfs:subClassOf obo:BFO_0000017 ,
+                                                       [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty obo:RO_0000052 ;
+                                                                                owl:someValuesFrom [ owl:intersectionOf ( obo:BFO_0000040
+                                                                                                                          [ rdf:type owl:Restriction ;
+                                                                                                                            owl:onProperty obo:RO_0000056 ;
+                                                                                                                            owl:someValuesFrom [ owl:intersectionOf ( co:PMD_0000915
+                                                                                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                                                                                        owl:onProperty obo:BFO_0000199 ;
+                                                                                                                                                                        owl:someValuesFrom obo:BFO_0000008
+                                                                                                                                                                      ]
+                                                                                                                                                                    ) ;
+                                                                                                                                                 rdf:type owl:Class
+                                                                                                                                               ]
+                                                                                                                          ]
+                                                                                                                          [ rdf:type owl:Restriction ;
+                                                                                                                            owl:onProperty obo:RO_0000056 ;
+                                                                                                                            owl:someValuesFrom [ owl:intersectionOf ( co:PMD_0000950
+                                                                                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                                                                                        owl:onProperty obo:BFO_0000199 ;
+                                                                                                                                                                        owl:someValuesFrom obo:BFO_0000008
+                                                                                                                                                                      ]
+                                                                                                                                                                    ) ;
+                                                                                                                                                 rdf:type owl:Class
+                                                                                                                                               ]
+                                                                                                                          ]
+                                                                                                                        ) ;
+                                                                                                     rdf:type owl:Class
+                                                                                                   ]
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty co:PMD_0001029 ;
+                                                                                owl:someValuesFrom co:PMD_0000915
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty co:PMD_0001030 ;
+                                                                                owl:someValuesFrom co:PMD_0000950
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty co:PMD_0001030 ;
+                                                         owl:someValuesFrom co:PMD_0000522
+                                                       ] ,
                                                        [ rdf:type owl:Restriction ;
                                                          owl:onProperty co:relatesTo ;
                                                          owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000017>
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty obo:RO_0000052 ;
+                                                         owl:allValuesFrom co:PMD_0000000
                                                        ] ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Gesamte Extensometer-Dehnung beim Bruch"@de ,
@@ -6611,7 +6751,47 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
 
 ###  https://w3id.org/pmd/tto/TTO_0000040
 <https://w3id.org/pmd/tto/TTO_0000040> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000005> ,
+                                       rdfs:subClassOf obo:BFO_0000017 ,
+                                                       [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty obo:RO_0000052 ;
+                                                                                owl:someValuesFrom [ owl:intersectionOf ( obo:BFO_0000040
+                                                                                                                          [ rdf:type owl:Restriction ;
+                                                                                                                            owl:onProperty obo:RO_0000056 ;
+                                                                                                                            owl:someValuesFrom [ owl:intersectionOf ( co:PMD_0000915
+                                                                                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                                                                                        owl:onProperty obo:BFO_0000199 ;
+                                                                                                                                                                        owl:someValuesFrom obo:BFO_0000008
+                                                                                                                                                                      ]
+                                                                                                                                                                    ) ;
+                                                                                                                                                 rdf:type owl:Class
+                                                                                                                                               ]
+                                                                                                                          ]
+                                                                                                                          [ rdf:type owl:Restriction ;
+                                                                                                                            owl:onProperty obo:RO_0000056 ;
+                                                                                                                            owl:someValuesFrom [ owl:intersectionOf ( co:PMD_0000950
+                                                                                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                                                                                        owl:onProperty obo:BFO_0000199 ;
+                                                                                                                                                                        owl:someValuesFrom obo:BFO_0000008
+                                                                                                                                                                      ]
+                                                                                                                                                                    ) ;
+                                                                                                                                                 rdf:type owl:Class
+                                                                                                                                               ]
+                                                                                                                          ]
+                                                                                                                        ) ;
+                                                                                                     rdf:type owl:Class
+                                                                                                   ]
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty co:PMD_0001029 ;
+                                                                                owl:someValuesFrom co:PMD_0000915
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty co:PMD_0001030 ;
+                                                                                owl:someValuesFrom co:PMD_0000950
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ] ,
                                                        [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
                                                                                 owl:onProperty co:relatesTo ;
                                                                                 owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000017>
@@ -6622,6 +6802,14 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
                                                                               ]
                                                                             ) ;
                                                          rdf:type owl:Class
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty co:PMD_0001030 ;
+                                                         owl:someValuesFrom co:PMD_0000522
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty obo:RO_0000052 ;
+                                                         owl:allValuesFrom co:PMD_0000000
                                                        ] ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Gesamte Extensometer-Dehnung bei Höchstkraft"@de ,
@@ -6635,7 +6823,55 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
 
 ###  https://w3id.org/pmd/tto/TTO_0000041
 <https://w3id.org/pmd/tto/TTO_0000041> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000005> ;
+                                       rdfs:subClassOf obo:BFO_0000017 ,
+                                                       [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty obo:RO_0000052 ;
+                                                                                owl:someValuesFrom [ owl:intersectionOf ( obo:BFO_0000040
+                                                                                                                          [ rdf:type owl:Restriction ;
+                                                                                                                            owl:onProperty obo:RO_0000056 ;
+                                                                                                                            owl:someValuesFrom [ owl:intersectionOf ( co:PMD_0000915
+                                                                                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                                                                                        owl:onProperty obo:BFO_0000199 ;
+                                                                                                                                                                        owl:someValuesFrom obo:BFO_0000008
+                                                                                                                                                                      ]
+                                                                                                                                                                    ) ;
+                                                                                                                                                 rdf:type owl:Class
+                                                                                                                                               ]
+                                                                                                                          ]
+                                                                                                                          [ rdf:type owl:Restriction ;
+                                                                                                                            owl:onProperty obo:RO_0000056 ;
+                                                                                                                            owl:someValuesFrom [ owl:intersectionOf ( co:PMD_0000950
+                                                                                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                                                                                        owl:onProperty obo:BFO_0000199 ;
+                                                                                                                                                                        owl:someValuesFrom obo:BFO_0000008
+                                                                                                                                                                      ]
+                                                                                                                                                                    ) ;
+                                                                                                                                                 rdf:type owl:Class
+                                                                                                                                               ]
+                                                                                                                          ]
+                                                                                                                        ) ;
+                                                                                                     rdf:type owl:Class
+                                                                                                   ]
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty co:PMD_0001029 ;
+                                                                                owl:someValuesFrom co:PMD_0000915
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty co:PMD_0001030 ;
+                                                                                owl:someValuesFrom co:PMD_0000950
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty co:PMD_0001030 ;
+                                                         owl:someValuesFrom co:PMD_0000522
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty obo:RO_0000052 ;
+                                                         owl:allValuesFrom co:PMD_0000000
+                                                       ] ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Streckgrenzen-Extensometer-Dehnung"@de ,
                                                   "percentage yield point extension"@en ;
@@ -6747,7 +6983,6 @@ Note: Stress rate is only used in the elastic part of the test."""@en ;
 
 ###  https://w3id.org/pmd/tto/TTO_0000056
 <https://w3id.org/pmd/tto/TTO_0000056> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000006> ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "End-Dicke"@de ,
                                                   "thickness after fracture"@en ;
@@ -6771,7 +7006,6 @@ Note: Stress rate is only used in the elastic part of the test."""@en ;
 
 ###  https://w3id.org/pmd/tto/TTO_0000060
 <https://w3id.org/pmd/tto/TTO_0000060> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000010> ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "End-Breite"@de ,
                                                   "width after fracture"@en ;
