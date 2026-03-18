@@ -615,6 +615,14 @@ https://w3id.org/pmd/distel/DISTEL_0000056
 https://w3id.org/pmd/distel/DISTEL_0000057
 https://w3id.org/pmd/distel/DISTEL_0000058
 https://w3id.org/pmd/distel/DISTEL_0000059
+https://w3id.org/pmd/distel/DISTEL_0000060
+https://w3id.org/pmd/distel/DISTEL_0000061
+https://w3id.org/pmd/distel/DISTEL_0000062
+https://w3id.org/pmd/distel/DISTEL_0000063
+https://w3id.org/pmd/distel/DISTEL_0000064
+https://w3id.org/pmd/distel/DISTEL_0000065
+https://w3id.org/pmd/distel/DISTEL_0000066
+https://w3id.org/pmd/distel/DISTEL_0000067
 https://w3id.org/pmd/distel/DISTEL_0000100
 https://w3id.org/pmd/distel/DISTEL_0025001
 https://w3id.org/pmd/distel/DISTEL_0025002
@@ -632,7 +640,6 @@ https://w3id.org/pmd/tto/GaugeLength
 https://w3id.org/pmd/tto/LowerYieldStrength
 https://w3id.org/pmd/tto/MaximumForce
 https://w3id.org/pmd/tto/MinimumCrossSectionalAreaAfterFracture
-https://w3id.org/pmd/tto/MovementQuality
 https://w3id.org/pmd/tto/OriginalCrossSectionalArea
 https://w3id.org/pmd/tto/OriginalDiameter
 https://w3id.org/pmd/tto/OriginalGaugeLength
@@ -667,7 +674,6 @@ https://w3id.org/pmd/tto/TTO_0000019
 https://w3id.org/pmd/tto/TTO_0000022
 https://w3id.org/pmd/tto/TTO_0000023
 https://w3id.org/pmd/tto/TTO_0000024
-https://w3id.org/pmd/tto/TTO_0000025
 https://w3id.org/pmd/tto/TTO_0000026
 https://w3id.org/pmd/tto/TTO_0000027
 https://w3id.org/pmd/tto/TTO_0000028

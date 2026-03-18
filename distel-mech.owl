@@ -7878,8 +7878,8 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
-        <rdfs:label xml:lang="en">fatigue control type value</rdfs:label>
-        <skos:definition xml:lang="en">Fatigue control type value is a categorical value specification which describes the variable (stress or strain) that remains constant during the fatigue testing.</skos:definition>
+        <rdfs:label xml:lang="en">control type value</rdfs:label>
+        <skos:definition xml:lang="en">Control type value is a categorical value specification which describes the variable (stress or strain) that remains constant during mechanical testing testing.</skos:definition>
     </owl:Class>
     
 
@@ -7916,13 +7916,14 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
                         <owl:unionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000638"/>
                             <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0025020"/>
+                            <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0025001"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">fatigue control type</rdfs:label>
-        <skos:definition xml:lang="en">Fatigue control type is a process attribute of a fatigue testing  which describes the variable (stress or strain) that remains constant during the fatigue testing.</skos:definition>
+        <rdfs:label xml:lang="en">control type of a mechanical test</rdfs:label>
+        <skos:definition xml:lang="en">control type of a mechanical test is a process attribute of a fatigue testing or hot tensile testing which describes the variable (stress or strain) that remains constant during the  testing.</skos:definition>
     </owl:Class>
     
 
@@ -8517,6 +8518,209 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000060 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000060">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000502"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000974"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">engineering stress-strain curve</rdfs:label>
+        <skos:definition xml:lang="en">Engineering stress-strain curve is a 2D data-item which is a specified output of a tensile testing process. The x-axis is a strain, i.e., the change of gauge length relative to its inital value, the y-axis is an engineering stress, i.e., force normalized to the initial cross-sectional area of a specimen.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000061 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000061">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000502"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000974"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">true stress-strain curve</rdfs:label>
+        <skos:definition xml:lang="en">True stress-strain curve is a 2D data-item which is a specified output of a tensile testing process. The x-axis is a strain, i.e., the change of gauge length relative to its inital value, the y-axis is a true stress, i.e., force normalized to the instantaneous cross-sectional area of a specimen.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000062 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000062">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000502"/>
+        <rdfs:label xml:lang="en">true stress-compression curve</rdfs:label>
+        <skos:definition xml:lang="en">True stress-compression curve is a 2D data-item which is a specified output of a compression testing process. The x-axis is a compression, i.e., the change of gauge length relative to its inital value, the y-axis is a true stress, i.e., force normalized to the instantaneous cross-sectional area of a specimen.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000063 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000063">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000581"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000009"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000008"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0020127"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000967"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                                                        <owl:someValuesFrom>
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001931"/>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                                                                        <owl:hasValue rdf:resource="http://purl.obolibrary.org/obo/UO_0000027"/>
+                                                                    </owl:Restriction>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001937"/>
+                                                                        <owl:someValuesFrom>
+                                                                            <rdfs:Datatype>
+                                                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                                                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                                                    <rdf:Description>
+                                                                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25</xsd:minExclusive>
+                                                                                    </rdf:Description>
+                                                                                </owl:withRestrictions>
+                                                                            </rdfs:Datatype>
+                                                                        </owl:someValuesFrom>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                        </owl:someValuesFrom>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000581"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000009"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000008"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0020127"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000967"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001931"/>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                                                                <owl:hasValue rdf:resource="http://purl.obolibrary.org/obo/UO_0000027"/>
+                                                            </owl:Restriction>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001937"/>
+                                                                <owl:someValuesFrom>
+                                                                    <rdfs:Datatype>
+                                                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                                                                        <owl:withRestrictions rdf:parseType="Collection">
+                                                                            <rdf:Description>
+                                                                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25</xsd:minExclusive>
+                                                                            </rdf:Description>
+                                                                        </owl:withRestrictions>
+                                                                    </rdfs:Datatype>
+                                                                </owl:someValuesFrom>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">hot compression testing process</rdfs:label>
+        <skos:definition>Hot compression testing process is a compression testing process performed at elevated temperature, i.e., it has a process attribute which refers to temperature with numerical value above 25°C.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000064 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000064">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <obo:IAO_0000119>DIN 50106</obo:IAO_0000119>
+        <obo:IAO_0000119>TODO add upper and lower</obo:IAO_0000119>
+        <rdfs:comment xml:lang="en">Very important note:  not added directly under yield strength from TTO, because the other yield strength is implicitly TENSILE yield strength (so much on unambigious defintions in an ontology.... )</rdfs:comment>
+        <rdfs:label xml:lang="en">compressive yield strength</rdfs:label>
+        <skos:definition xml:lang="en">compressive stress at the elastic-plastic transition in the case of deformation with no or only minor increase in compressive stress.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000065 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000065">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <obo:IAO_0000119>DIN 50106</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">compressive proof strength</rdfs:label>
+        <skos:definition xml:lang="en">compressive stress at a specified plastic strain</skos:definition>
+        <co:symbol xml:lang="en">R_dp</co:symbol>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000066 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000066">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000065"/>
+        <rdfs:label xml:lang="en">compressive proof strength dp02</rdfs:label>
+        <skos:definition xml:lang="en">stress at which the plastic compression  is equal to 0.2 percent of the extensometer gauge length.</skos:definition>
+        <co:symbol xml:lang="en">R_dp0,2</co:symbol>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000067 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000067">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <obo:IAO_0000119>DIN 50106</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">compressive strength</rdfs:label>
+        <skos:definition>compressive stress at the point when the test piece separates into two (or more) pieces</skos:definition>
+        <co:symbol xml:lang="en">R_dB</co:symbol>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/distel/DISTEL_0000100 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000100">
@@ -8641,6 +8845,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">hot tensile testing process</rdfs:label>
+        <skos:definition xml:lang="en">Hot tensile testing process is a tensile testing process performed at elevated temperature, i.e., it has a process attribute which refers to temperature with numerical value above 25°C.</skos:definition>
     </owl:Class>
     
 
@@ -8673,7 +8878,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0025006">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
         <rdfs:label xml:lang="en">target strain</rdfs:label>
-        <skos:definition xml:lang="en">Target strain is a process attribute of a compression test which defines the final strain that a test piece should achieve in the test.</skos:definition>
+        <skos:definition xml:lang="en">Target strain is a process attribute of a compression test or a hot tensile test which defines the final strain that a test piece should achieve in the test.</skos:definition>
     </owl:Class>
     
 
@@ -8759,6 +8964,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     <!-- https://w3id.org/pmd/tto/TTO_0000005 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000005">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
         <rdfs:comment xml:lang="en">Dimensional analysis: L
 Unit (e.g. SI): mm</rdfs:comment>
         <rdfs:comment xml:lang="de">Hinweis: Die Dehnung kann mit verschiedenen Kanälen gemessen werden (z. B. bei Verwendung von einem oder zwei Dehnungsmesserkanälen); in der Regel wird als Dehnungswert der mittlere Durchschnittswert der beteiligten Kanäle angegeben, falls zutreffend.
@@ -8796,6 +9002,7 @@ Note: Optical extensometry may require a specific data storage method.</rdfs:com
     <!-- https://w3id.org/pmd/tto/TTO_0000012 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000012">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020132"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Querschnittsfläche</rdfs:label>
         <rdfs:label xml:lang="en">cross section area</rdfs:label>
@@ -9110,7 +9317,6 @@ Note: The concept of parallel length is replaced by the concept of distance betw
     <!-- https://w3id.org/pmd/tto/TTO_0000034 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000034">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000005"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -9159,7 +9365,6 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
     <!-- https://w3id.org/pmd/tto/TTO_0000036 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000036">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000005"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -9187,7 +9392,6 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
     <!-- https://w3id.org/pmd/tto/TTO_0000037 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000037">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000005"/>
         <rdfs:subClassOf>
             <owl:Class>
@@ -9225,7 +9429,6 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000038">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0025018"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000049"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -9255,7 +9458,6 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
     <!-- https://w3id.org/pmd/tto/TTO_0000039 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000039">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000005"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -9284,7 +9486,6 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
     <!-- https://w3id.org/pmd/tto/TTO_0000040 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000040">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000005"/>
         <rdfs:subClassOf>
             <owl:Class>
@@ -9321,7 +9522,6 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
     <!-- https://w3id.org/pmd/tto/TTO_0000041 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000041">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000005"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -9409,21 +9609,10 @@ Source: ISO 6892-1:2019</skos:definition>
     
 
 
-    <!-- https://w3id.org/pmd/tto/TTO_0000049 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000049">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Größenrelation</rdfs:label>
-        <rdfs:label xml:lang="en">size relation</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/SizeRelation"/>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/pmd/tto/TTO_0000051 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000051">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0025019"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Dehngeschwindigkeit</rdfs:label>
         <rdfs:label xml:lang="en">strain rate</rdfs:label>
@@ -9439,7 +9628,7 @@ Source: ISO 6892-1:2019</skos:definition>
     <!-- https://w3id.org/pmd/tto/TTO_0000052 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000052">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0025019"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Spannungsgeschwindigkeit</rdfs:label>
         <rdfs:label xml:lang="en">stress rate</rdfs:label>

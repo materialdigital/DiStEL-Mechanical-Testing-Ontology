@@ -437,6 +437,14 @@ Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000056>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000057>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000058>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000059>))
+Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000060>))
+Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000061>))
+Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000062>))
+Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000063>))
+Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000064>))
+Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000065>))
+Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000066>))
+Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000067>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000100>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0025001>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0025002>))
@@ -456,7 +464,6 @@ Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000019>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000022>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000023>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000024>))
-Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000025>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000026>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000027>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000028>))
@@ -2434,7 +2441,7 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0020010> ObjectIntersectio
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020010> <http://purl.obolibrary.org/obo/COB_0000035>)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/IAO_0020000>))
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (Homo sapiens)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (homo sapiens)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "Homo sapiens")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "homo sapiens")
@@ -3246,7 +3253,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<http://pu
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000000>))
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000522>))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000849> (mechanical property analyzing process)
+# Class: <https://w3id.org/pmd/co/PMD_0000849> (Mechanische Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000849> "Mechanische Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000849> "mechanical property analyzing process"@en)
@@ -3385,7 +3392,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000953> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000953> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "Struktur Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "structural property analyzing process"@en)
@@ -4531,20 +4538,20 @@ SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000008> <https://w3id.org/pmd/co
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000008> ObjectIntersectionOf(ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/distel/DISTEL_0000000>) ObjectAllValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/distel/DISTEL_0000000>)))
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000008> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0025006> ObjectUnionOf(<https://w3id.org/pmd/co/PMD_0000638> <https://w3id.org/pmd/co/PMD_0025020>)))
 
-# Class: <https://w3id.org/pmd/distel/DISTEL_0000009> (fatigue control type value)
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000009> (control type value)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000009> "fatigue control type value"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000009> "Fatigue control type value is a categorical value specification which describes the variable (stress or strain) that remains constant during the fatigue testing."@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000009> "control type value"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000009> "Control type value is a categorical value specification which describes the variable (stress or strain) that remains constant during mechanical testing testing."@en)
 EquivalentClasses(<https://w3id.org/pmd/distel/DISTEL_0000009> ObjectOneOf(<https://w3id.org/pmd/distel/DISTEL_0000011> <https://w3id.org/pmd/distel/DISTEL_0000012>))
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000009> <http://purl.obolibrary.org/obo/OBI_0001930>)
 
-# Class: <https://w3id.org/pmd/distel/DISTEL_0000010> (fatigue control type)
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000010> (control type of a mechanical test)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000010> "fatigue control type"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000010> "Fatigue control type is a process attribute of a fatigue testing  which describes the variable (stress or strain) that remains constant during the fatigue testing."@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000010> "control type of a mechanical test"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000010> "control type of a mechanical test is a process attribute of a fatigue testing or hot tensile testing which describes the variable (stress or strain) that remains constant during the  testing."@en)
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000010> <https://w3id.org/pmd/co/PMD_0000008>)
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000010> ObjectIntersectionOf(ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/distel/DISTEL_0000009>) ObjectAllValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/distel/DISTEL_0000009>)))
-SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000010> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0025006> ObjectUnionOf(<https://w3id.org/pmd/co/PMD_0000638> <https://w3id.org/pmd/co/PMD_0025020>)))
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000010> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0025006> ObjectUnionOf(<https://w3id.org/pmd/co/PMD_0000638> <https://w3id.org/pmd/co/PMD_0025020> <https://w3id.org/pmd/distel/DISTEL_0025001>)))
 
 # Class: <https://w3id.org/pmd/distel/DISTEL_0000013> (fatigue waveform)
 
@@ -4834,6 +4841,65 @@ SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000058> <https://w3id.org/pmd/di
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000059> "initial crack length"@en)
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000059> <https://w3id.org/pmd/co/PMD_0040001>)
 
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000060> (engineering stress-strain curve)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000060> "engineering stress-strain curve"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000060> "Engineering stress-strain curve is a 2D data-item which is a specified output of a tensile testing process. The x-axis is a strain, i.e., the change of gauge length relative to its inital value, the y-axis is an engineering stress, i.e., force normalized to the initial cross-sectional area of a specimen."@en)
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000060> <https://w3id.org/pmd/co/PMD_0000502>)
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000060> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <https://w3id.org/pmd/co/PMD_0000974>))
+
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000061> (true stress-strain curve)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000061> "true stress-strain curve"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000061> "True stress-strain curve is a 2D data-item which is a specified output of a tensile testing process. The x-axis is a strain, i.e., the change of gauge length relative to its inital value, the y-axis is a true stress, i.e., force normalized to the instantaneous cross-sectional area of a specimen."@en)
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000061> <https://w3id.org/pmd/co/PMD_0000502>)
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000061> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <https://w3id.org/pmd/co/PMD_0000974>))
+
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000062> (true stress-compression curve)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000062> "true stress-compression curve"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000062> "True stress-compression curve is a 2D data-item which is a specified output of a compression testing process. The x-axis is a compression, i.e., the change of gauge length relative to its inital value, the y-axis is a true stress, i.e., force normalized to the instantaneous cross-sectional area of a specimen."@en)
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000062> <https://w3id.org/pmd/co/PMD_0000502>)
+
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000063> (hot compression testing process)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000063> "hot compression testing process"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000063> "Hot compression testing process is a compression testing process performed at elevated temperature, i.e., it has a process attribute which refers to temperature with numerical value above 25°C.")
+EquivalentClasses(<https://w3id.org/pmd/distel/DISTEL_0000063> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000581> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000009> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000008> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0020127> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000967> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0001931> ObjectHasValue(<http://purl.obolibrary.org/obo/IAO_0000039> <http://purl.obolibrary.org/obo/UO_0000027>) DataSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0001937> DatatypeRestriction(xsd:decimal xsd:minExclusive "25"^^xsd:decimal))))))))))
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000063> <https://w3id.org/pmd/co/PMD_0000581>)
+
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000064> (compressive yield strength)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <https://w3id.org/pmd/distel/DISTEL_0000064> "DIN 50106")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <https://w3id.org/pmd/distel/DISTEL_0000064> "TODO add upper and lower")
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/distel/DISTEL_0000064> "Very important note:  not added directly under yield strength from TTO, because the other yield strength is implicitly TENSILE yield strength (so much on unambigious defintions in an ontology.... )"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000064> "compressive yield strength"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000064> "compressive stress at the elastic-plastic transition in the case of deformation with no or only minor increase in compressive stress."@en)
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000064> <https://w3id.org/pmd/co/PMD_0000848>)
+
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000065> (compressive proof strength)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <https://w3id.org/pmd/distel/DISTEL_0000065> "DIN 50106")
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000065> "compressive proof strength"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000065> "compressive stress at a specified plastic strain"@en)
+AnnotationAssertion(<https://w3id.org/pmd/co/symbol> <https://w3id.org/pmd/distel/DISTEL_0000065> "R_dp"@en)
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000065> <https://w3id.org/pmd/co/PMD_0000848>)
+
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000066> (compressive proof strength dp02)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000066> "compressive proof strength dp02"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000066> "stress at which the plastic compression  is equal to 0.2 percent of the extensometer gauge length."@en)
+AnnotationAssertion(<https://w3id.org/pmd/co/symbol> <https://w3id.org/pmd/distel/DISTEL_0000066> "R_dp0,2"@en)
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000066> <https://w3id.org/pmd/distel/DISTEL_0000065>)
+
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000067> (compressive strength)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <https://w3id.org/pmd/distel/DISTEL_0000067> "DIN 50106")
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000067> "compressive strength"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000067> "compressive stress at the point when the test piece separates into two (or more) pieces")
+AnnotationAssertion(<https://w3id.org/pmd/co/symbol> <https://w3id.org/pmd/distel/DISTEL_0000067> "R_dB"@en)
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000067> <https://w3id.org/pmd/co/PMD_0000848>)
+
 # Class: <https://w3id.org/pmd/distel/DISTEL_0000100> (motor)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000100> "motor"@en)
@@ -4844,6 +4910,7 @@ SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000100> ObjectSomeValuesFrom(<ht
 # Class: <https://w3id.org/pmd/distel/DISTEL_0025001> (hot tensile testing process)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0025001> "hot tensile testing process"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0025001> "Hot tensile testing process is a tensile testing process performed at elevated temperature, i.e., it has a process attribute which refers to temperature with numerical value above 25°C."@en)
 EquivalentClasses(<https://w3id.org/pmd/distel/DISTEL_0025001> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000974> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000009> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000008> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0020127> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000967> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0001931> ObjectHasValue(<http://purl.obolibrary.org/obo/IAO_0000039> <http://purl.obolibrary.org/obo/UO_0000027>) DataSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0001937> DatatypeRestriction(xsd:decimal xsd:minExclusive "25"^^xsd:decimal))))))))))
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0025001> <https://w3id.org/pmd/co/PMD_0000974>)
 
@@ -4865,7 +4932,7 @@ SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0025004> <https://w3id.org/pmd/co
 # Class: <https://w3id.org/pmd/distel/DISTEL_0025006> (target strain)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0025006> "target strain"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0025006> "Target strain is a process attribute of a compression test which defines the final strain that a test piece should achieve in the test."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0025006> "Target strain is a process attribute of a compression test or a hot tensile test which defines the final strain that a test piece should achieve in the test."@en)
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0025006> <https://w3id.org/pmd/co/PMD_0000008>)
 
 # Class: <https://w3id.org/pmd/distel/DISTEL_0025007> (load increasing fatigue testing process)
@@ -4918,6 +4985,7 @@ AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/tto/TTO_0000005> <https:/
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000005> "Increase in the extensometer gauge length at any moment during a test"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000005> "Zunahme der Extensometer-Messlänge zu einem beliebigen Zeitpunkt eines Versuchs"@de)
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000005> "DIN EN ISO 6892-1:2019")
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000005> <https://w3id.org/pmd/co/PMD_0000848>)
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000009> (Streckgrenze)
 
@@ -4939,6 +5007,7 @@ AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/tto/TTO_0000012> <https:/
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000012> "Die Querschnittsfläche ist die Fläche eines Schnittes oder eines rechtwinklig geschnittenen oder gebrochenen Stücks eines Objektes in Bezug auf eine Achse."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000012> "The cross section area is an area of a cutting or piece of an object cut off or broken at right angles or related to an axis."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000012> <https://www.merriam-webster.com/dictionary/cross%20section>)
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000012> <https://w3id.org/pmd/co/PMD_0020132>)
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000015> (End-Probendurchmesser)
 
@@ -5043,15 +5112,6 @@ Note: It is recommended to measure the original cross-sectional area of the para
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000024> "DIN EN ISO 6892-1:2019")
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000024> <https://w3id.org/pmd/tto/TTO_0000012>)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000024> ObjectUnionOf(ObjectIntersectionOf(ObjectSomeValuesFrom(<https://w3id.org/pmd/co/relatesTo> <https://w3id.org/pmd/tto/TTO_0000056>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/relatesTo> <https://w3id.org/pmd/tto/TTO_0000060>)) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/relatesTo> <https://w3id.org/pmd/tto/TTO_0000015>)))
-
-# Class: <https://w3id.org/pmd/tto/TTO_0000025> (Bewegungsqualität)
-
-AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000025> <https://w3id.org/pmd/tto>)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000025> "Bewegungsqualität"@de)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000025> "movement quality"@en)
-AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/tto/TTO_0000025> <https://w3id.org/pmd/tto/MovementQuality>)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000025> "A movement quality is a physical quality that inheres in a material entity and represents a property of the entity's motion or change of position over time."@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000025> "Eine Bewegungsqualität ist eine physikalische Qualität, die einer materiellen Entität innewohnt und eine Eigenschaft der Bewegung oder Positionsänderung der Entität im Laufe der Zeit darstellt."@de)
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000026> (Anfangsquerschnitt innerhalb der parallelen Länge)
 
@@ -5166,7 +5226,6 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 
 Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bezeichnet.")
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000034> "DIN EN ISO 6892-1:2019")
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000034> <https://w3id.org/pmd/co/PMD_0000848>)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000034> <https://w3id.org/pmd/tto/TTO_0000005>)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000034> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000915> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))))) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001029> <https://w3id.org/pmd/co/PMD_0000915>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000950>)))
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000034> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000522>))
@@ -5184,7 +5243,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000035> "DIN EN ISO 6892-1:2019"@en)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000035> <https://w3id.org/pmd/tto/TTO_0000004>)
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000036> (Bleibende Extensometer-Dehnung)
+# Class: <https://w3id.org/pmd/tto/TTO_0000036> (percentage permanent extension)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000036> <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000036> "Bleibende Extensometer-Dehnung"@de)
@@ -5193,7 +5252,6 @@ AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/tto/TTO_0000036> <https:/
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000036> "Vergrößerung der Extensometer-Messlänge nach Entfernen einer festgelegten, auf die Probe aufgebrachten Zugspannung, angegeben in Prozent, bezogen auf die Extensometer-Messlänge"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000036> "increase in the extensometer gauge length, after removal of a specified stress from the test piece, expressed as a percentage of the extensometer gauge length"@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000036> "DIN EN ISO 6892-1:2019"@en)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000036> <https://w3id.org/pmd/co/PMD_0000848>)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000036> <https://w3id.org/pmd/tto/TTO_0000005>)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000036> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000915> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))))) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001029> <https://w3id.org/pmd/co/PMD_0000915>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000950>)))
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000036> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000522>))
@@ -5210,7 +5268,6 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000037> "plastische Verlängerung der Extensometer-Messlänge bei Höchstkraft, angegeben in Prozent, bezogen auf die Extensometer-Messlänge"@de)
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000037> "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/symbol> <https://w3id.org/pmd/tto/TTO_0000037> "A_g"@en)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000037> <https://w3id.org/pmd/co/PMD_0000848>)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000037> <https://w3id.org/pmd/tto/TTO_0000005>)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000037> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000915> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))))) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001029> <https://w3id.org/pmd/co/PMD_0000915>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000950>)))
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000037> ObjectIntersectionOf(ObjectSomeValuesFrom(<https://w3id.org/pmd/co/relatesTo> <https://w3id.org/pmd/tto/TTO_0000017>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/relatesTo> <https://w3id.org/pmd/tto/TTO_0000023>)))
@@ -5241,7 +5298,6 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000039> "total extension (elastic extension plus plastic extension) at the moment of fracture, expressed as a percentage of the extensometer gauge length"@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000039> "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/symbol> <https://w3id.org/pmd/tto/TTO_0000039> "A_t"@en)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000039> <https://w3id.org/pmd/co/PMD_0000848>)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000039> <https://w3id.org/pmd/tto/TTO_0000005>)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000039> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000915> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))))) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001029> <https://w3id.org/pmd/co/PMD_0000915>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000950>)))
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000039> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000522>))
@@ -5258,7 +5314,6 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000040> "total extension (elastic extension plus plastic extension) at maximum force, expressed as a percentage of the extensometer gauge length"@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000040> "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/symbol> <https://w3id.org/pmd/tto/TTO_0000040> "A_gt"@en)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000040> <https://w3id.org/pmd/co/PMD_0000848>)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000040> <https://w3id.org/pmd/tto/TTO_0000005>)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000040> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000915> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))))) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001029> <https://w3id.org/pmd/co/PMD_0000915>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000950>)))
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000040> ObjectIntersectionOf(ObjectSomeValuesFrom(<https://w3id.org/pmd/co/relatesTo> <https://w3id.org/pmd/tto/TTO_0000017>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/relatesTo> <https://w3id.org/pmd/tto/TTO_0000023>)))
@@ -5275,7 +5330,6 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000041> "For discontinuous yielding materials: extension between the start of yielding and the start of uniform work-hardening, expressed as a percentage of the extensometer gauge length"@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000041> "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/symbol> <https://w3id.org/pmd/tto/TTO_0000041> "A_e"@en)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000041> <https://w3id.org/pmd/co/PMD_0000848>)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000041> <https://w3id.org/pmd/tto/TTO_0000005>)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000041> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000915> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))))) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001029> <https://w3id.org/pmd/co/PMD_0000915>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000950>)))
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000041> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000522>))
@@ -5350,8 +5404,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000051> "increase of strain, measured with an extensometer, in extensometer gauge length, per time"@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000051> "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/symbol> <https://w3id.org/pmd/tto/TTO_0000051> "e^._L_e"@en)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000051> <https://w3id.org/pmd/co/PMD_0000008>)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000051> <https://w3id.org/pmd/tto/TTO_0000025>)
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000051> <https://w3id.org/pmd/co/PMD_0025019>)
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000052> (stress rate)
 
@@ -5367,8 +5420,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 Note: Stress rate is only used in the elastic part of the test."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000052> "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/symbol> <https://w3id.org/pmd/tto/TTO_0000052> "R"@en)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000052> <https://w3id.org/pmd/co/PMD_0000008>)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000052> <https://w3id.org/pmd/tto/TTO_0000025>)
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000052> <https://w3id.org/pmd/co/PMD_0025019>)
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000053> (tensile strength)
 

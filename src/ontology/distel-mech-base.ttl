@@ -3845,8 +3845,8 @@ co:PMD_0060006 rdf:type owl:Class ;
                                                                              )
                                                                  ] ;
                                              rdfs:subClassOf obo:OBI_0001930 ;
-                                             rdfs:label "fatigue control type value"@en ;
-                                             skos:definition "Fatigue control type value is a categorical value specification which describes the variable (stress or strain) that remains constant during the fatigue testing."@en .
+                                             rdfs:label "control type value"@en ;
+                                             skos:definition "Control type value is a categorical value specification which describes the variable (stress or strain) that remains constant during mechanical testing testing."@en .
 
 
 ###  https://w3id.org/pmd/distel/DISTEL_0000010
@@ -3868,11 +3868,12 @@ co:PMD_0060006 rdf:type owl:Class ;
                                                                owl:someValuesFrom [ rdf:type owl:Class ;
                                                                                     owl:unionOf ( co:PMD_0000638
                                                                                                   co:PMD_0025020
+                                                                                                  <https://w3id.org/pmd/distel/DISTEL_0025001>
                                                                                                 )
                                                                                   ]
                                                              ] ;
-                                             rdfs:label "fatigue control type"@en ;
-                                             skos:definition "Fatigue control type is a process attribute of a fatigue testing  which describes the variable (stress or strain) that remains constant during the fatigue testing."@en .
+                                             rdfs:label "control type of a mechanical test"@en ;
+                                             skos:definition "control type of a mechanical test is a process attribute of a fatigue testing or hot tensile testing which describes the variable (stress or strain) that remains constant during the  testing."@en .
 
 
 ###  https://w3id.org/pmd/distel/DISTEL_0000013
@@ -4284,6 +4285,150 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
                                              rdfs:label "initial crack length"@en .
 
 
+###  https://w3id.org/pmd/distel/DISTEL_0000060
+<https://w3id.org/pmd/distel/DISTEL_0000060> rdf:type owl:Class ;
+                                             rdfs:subClassOf co:PMD_0000502 ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty obo:OBI_0000312 ;
+                                                               owl:allValuesFrom co:PMD_0000974
+                                                             ] ;
+                                             rdfs:label "engineering stress-strain curve"@en ;
+                                             skos:definition "Engineering stress-strain curve is a 2D data-item which is a specified output of a tensile testing process. The x-axis is a strain, i.e., the change of gauge length relative to its inital value, the y-axis is an engineering stress, i.e., force normalized to the initial cross-sectional area of a specimen."@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000061
+<https://w3id.org/pmd/distel/DISTEL_0000061> rdf:type owl:Class ;
+                                             rdfs:subClassOf co:PMD_0000502 ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty obo:OBI_0000312 ;
+                                                               owl:allValuesFrom co:PMD_0000974
+                                                             ] ;
+                                             rdfs:label "true stress-strain curve"@en ;
+                                             skos:definition "True stress-strain curve is a 2D data-item which is a specified output of a tensile testing process. The x-axis is a strain, i.e., the change of gauge length relative to its inital value, the y-axis is a true stress, i.e., force normalized to the instantaneous cross-sectional area of a specimen."@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000062
+<https://w3id.org/pmd/distel/DISTEL_0000062> rdf:type owl:Class ;
+                                             rdfs:subClassOf co:PMD_0000502 ;
+                                             rdfs:label "true stress-compression curve"@en ;
+                                             skos:definition "True stress-compression curve is a 2D data-item which is a specified output of a compression testing process. The x-axis is a compression, i.e., the change of gauge length relative to its inital value, the y-axis is a true stress, i.e., force normalized to the instantaneous cross-sectional area of a specimen."@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000063
+<https://w3id.org/pmd/distel/DISTEL_0000063> rdf:type owl:Class ;
+                                             owl:equivalentClass [ owl:intersectionOf ( co:PMD_0000581
+                                                                                        [ rdf:type owl:Restriction ;
+                                                                                          owl:onProperty co:PMD_0000009 ;
+                                                                                          owl:someValuesFrom [ owl:intersectionOf ( co:PMD_0000008
+                                                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                                                      owl:onProperty co:PMD_0020127 ;
+                                                                                                                                      owl:someValuesFrom [ owl:intersectionOf ( co:PMD_0000967
+                                                                                                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                                                                                                  owl:onProperty co:PMD_0000077 ;
+                                                                                                                                                                                  owl:someValuesFrom [ owl:intersectionOf ( obo:OBI_0001931
+                                                                                                                                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                                                                                                                                              owl:onProperty obo:IAO_0000039 ;
+                                                                                                                                                                                                                              owl:hasValue obo:UO_0000027
+                                                                                                                                                                                                                            ]
+                                                                                                                                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                                                                                                                                              owl:onProperty obo:OBI_0001937 ;
+                                                                                                                                                                                                                              owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                                                                                                                                   owl:onDatatype xsd:decimal ;
+                                                                                                                                                                                                                                                   owl:withRestrictions ( [ xsd:minExclusive 25
+                                                                                                                                                                                                                                                                          ]
+                                                                                                                                                                                                                                                                        )
+                                                                                                                                                                                                                                                 ]
+                                                                                                                                                                                                                            ]
+                                                                                                                                                                                                                          ) ;
+                                                                                                                                                                                                       rdf:type owl:Class
+                                                                                                                                                                                                     ]
+                                                                                                                                                                                ]
+                                                                                                                                                                              ) ;
+                                                                                                                                                           rdf:type owl:Class
+                                                                                                                                                         ]
+                                                                                                                                    ]
+                                                                                                                                  ) ;
+                                                                                                               rdf:type owl:Class
+                                                                                                             ]
+                                                                                        ]
+                                                                                      ) ;
+                                                                   rdf:type owl:Class
+                                                                 ] ;
+                                             rdfs:subClassOf co:PMD_0000581 ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty co:PMD_0000009 ;
+                                                               owl:someValuesFrom [ owl:intersectionOf ( co:PMD_0000008
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty co:PMD_0020127 ;
+                                                                                                           owl:someValuesFrom [ owl:intersectionOf ( co:PMD_0000967
+                                                                                                                                                     [ rdf:type owl:Restriction ;
+                                                                                                                                                       owl:onProperty co:PMD_0000077 ;
+                                                                                                                                                       owl:someValuesFrom [ owl:intersectionOf ( obo:OBI_0001931
+                                                                                                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                                                                                                   owl:onProperty obo:IAO_0000039 ;
+                                                                                                                                                                                                   owl:hasValue obo:UO_0000027
+                                                                                                                                                                                                 ]
+                                                                                                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                                                                                                   owl:onProperty obo:OBI_0001937 ;
+                                                                                                                                                                                                   owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                                                                                                        owl:onDatatype xsd:decimal ;
+                                                                                                                                                                                                                        owl:withRestrictions ( [ xsd:minExclusive 25
+                                                                                                                                                                                                                                               ]
+                                                                                                                                                                                                                                             )
+                                                                                                                                                                                                                      ]
+                                                                                                                                                                                                 ]
+                                                                                                                                                                                               ) ;
+                                                                                                                                                                            rdf:type owl:Class
+                                                                                                                                                                          ]
+                                                                                                                                                     ]
+                                                                                                                                                   ) ;
+                                                                                                                                rdf:type owl:Class
+                                                                                                                              ]
+                                                                                                         ]
+                                                                                                       ) ;
+                                                                                    rdf:type owl:Class
+                                                                                  ]
+                                                             ] ;
+                                             rdfs:label "hot compression testing process"@en ;
+                                             skos:definition "Hot compression testing process is a compression testing process performed at elevated temperature, i.e., it has a process attribute which refers to temperature with numerical value above 25°C." .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000064
+<https://w3id.org/pmd/distel/DISTEL_0000064> rdf:type owl:Class ;
+                                             rdfs:subClassOf co:PMD_0000848 ;
+                                             obo:IAO_0000119 "DIN 50106" ,
+                                                             "TODO add upper and lower" ;
+                                             rdfs:comment "Very important note:  not added directly under yield strength from TTO, because the other yield strength is implicitly TENSILE yield strength (so much on unambigious defintions in an ontology.... )"@en ;
+                                             rdfs:label "compressive yield strength"@en ;
+                                             skos:definition "compressive stress at the elastic-plastic transition in the case of deformation with no or only minor increase in compressive stress."@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000065
+<https://w3id.org/pmd/distel/DISTEL_0000065> rdf:type owl:Class ;
+                                             rdfs:subClassOf co:PMD_0000848 ;
+                                             obo:IAO_0000119 "DIN 50106" ;
+                                             rdfs:label "compressive proof strength"@en ;
+                                             skos:definition "compressive stress at a specified plastic strain"@en ;
+                                             co:symbol "R_dp"@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000066
+<https://w3id.org/pmd/distel/DISTEL_0000066> rdf:type owl:Class ;
+                                             rdfs:subClassOf <https://w3id.org/pmd/distel/DISTEL_0000065> ;
+                                             rdfs:label "compressive proof strength dp02"@en ;
+                                             skos:definition "stress at which the plastic compression  is equal to 0.2 percent of the extensometer gauge length."@en ;
+                                             co:symbol "R_dp0,2"@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000067
+<https://w3id.org/pmd/distel/DISTEL_0000067> rdf:type owl:Class ;
+                                             rdfs:subClassOf co:PMD_0000848 ;
+                                             obo:IAO_0000119 "DIN 50106" ;
+                                             rdfs:label "compressive strength"@en ;
+                                             skos:definition "compressive stress at the point when the test piece separates into two (or more) pieces" ;
+                                             co:symbol "R_dB"@en .
+
+
 ###  https://w3id.org/pmd/distel/DISTEL_0000100
 <https://w3id.org/pmd/distel/DISTEL_0000100> rdf:type owl:Class ;
                                              rdfs:subClassOf <https://w3id.org/pmd/distel/DISTEL_0000057> ,
@@ -4370,7 +4515,8 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
                                                                                     rdf:type owl:Class
                                                                                   ]
                                                              ] ;
-                                             rdfs:label "hot tensile testing process"@en .
+                                             rdfs:label "hot tensile testing process"@en ;
+                                             skos:definition "Hot tensile testing process is a tensile testing process performed at elevated temperature, i.e., it has a process attribute which refers to temperature with numerical value above 25°C."@en .
 
 
 ###  https://w3id.org/pmd/distel/DISTEL_0025002
@@ -4394,7 +4540,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
 <https://w3id.org/pmd/distel/DISTEL_0025006> rdf:type owl:Class ;
                                              rdfs:subClassOf co:PMD_0000008 ;
                                              rdfs:label "target strain"@en ;
-                                             skos:definition "Target strain is a process attribute of a compression test which defines the final strain that a test piece should achieve in the test."@en .
+                                             skos:definition "Target strain is a process attribute of a compression test or a hot tensile test which defines the final strain that a test piece should achieve in the test."@en .
 
 
 ###  https://w3id.org/pmd/distel/DISTEL_0025007
@@ -4452,6 +4598,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
 
 ###  https://w3id.org/pmd/tto/TTO_0000005
 <https://w3id.org/pmd/tto/TTO_0000005> rdf:type owl:Class ;
+                                       rdfs:subClassOf co:PMD_0000848 ;
                                        rdfs:comment """Dimensional analysis: L
 Unit (e.g. SI): mm"""@en ,
                                                     """Hinweis: Die Dehnung kann mit verschiedenen Kanälen gemessen werden (z. B. bei Verwendung von einem oder zwei Dehnungsmesserkanälen); in der Regel wird als Dehnungswert der mittlere Durchschnittswert der beteiligten Kanäle angegeben, falls zutreffend.
@@ -4483,6 +4630,7 @@ Note: Optical extensometry may require a specific data storage method."""@en ;
 
 ###  https://w3id.org/pmd/tto/TTO_0000012
 <https://w3id.org/pmd/tto/TTO_0000012> rdf:type owl:Class ;
+                                       rdfs:subClassOf co:PMD_0020132 ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Querschnittsfläche"@de ,
                                                   "cross section area"@en ;
@@ -4741,8 +4889,7 @@ Note: The concept of parallel length is replaced by the concept of distance betw
 
 ###  https://w3id.org/pmd/tto/TTO_0000034
 <https://w3id.org/pmd/tto/TTO_0000034> rdf:type owl:Class ;
-                                       rdfs:subClassOf co:PMD_0000848 ,
-                                                       <https://w3id.org/pmd/tto/TTO_0000005> ,
+                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000005> ,
                                                        [ rdf:type owl:Restriction ;
                                                          owl:onProperty co:relatesTo ;
                                                          owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000017>
@@ -4780,8 +4927,7 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
 
 ###  https://w3id.org/pmd/tto/TTO_0000036
 <https://w3id.org/pmd/tto/TTO_0000036> rdf:type owl:Class ;
-                                       rdfs:subClassOf co:PMD_0000848 ,
-                                                       <https://w3id.org/pmd/tto/TTO_0000005> ,
+                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000005> ,
                                                        [ rdf:type owl:Restriction ;
                                                          owl:onProperty co:relatesTo ;
                                                          owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000017>
@@ -4801,8 +4947,7 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
 
 ###  https://w3id.org/pmd/tto/TTO_0000037
 <https://w3id.org/pmd/tto/TTO_0000037> rdf:type owl:Class ;
-                                       rdfs:subClassOf co:PMD_0000848 ,
-                                                       <https://w3id.org/pmd/tto/TTO_0000005> ,
+                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000005> ,
                                                        [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
                                                                                 owl:onProperty co:relatesTo ;
                                                                                 owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000017>
@@ -4831,7 +4976,6 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
 ###  https://w3id.org/pmd/tto/TTO_0000038
 <https://w3id.org/pmd/tto/TTO_0000038> rdf:type owl:Class ;
                                        rdfs:subClassOf co:PMD_0025018 ,
-                                                       <https://w3id.org/pmd/tto/TTO_0000049> ,
                                                        [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
                                                                                 owl:onProperty co:relatesTo ;
                                                                                 owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000024>
@@ -4855,8 +4999,7 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
 
 ###  https://w3id.org/pmd/tto/TTO_0000039
 <https://w3id.org/pmd/tto/TTO_0000039> rdf:type owl:Class ;
-                                       rdfs:subClassOf co:PMD_0000848 ,
-                                                       <https://w3id.org/pmd/tto/TTO_0000005> ,
+                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000005> ,
                                                        [ rdf:type owl:Restriction ;
                                                          owl:onProperty co:relatesTo ;
                                                          owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000017>
@@ -4877,8 +5020,7 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
 
 ###  https://w3id.org/pmd/tto/TTO_0000040
 <https://w3id.org/pmd/tto/TTO_0000040> rdf:type owl:Class ;
-                                       rdfs:subClassOf co:PMD_0000848 ,
-                                                       <https://w3id.org/pmd/tto/TTO_0000005> ,
+                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000005> ,
                                                        [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
                                                                                 owl:onProperty co:relatesTo ;
                                                                                 owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000017>
@@ -4906,8 +5048,7 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
 
 ###  https://w3id.org/pmd/tto/TTO_0000041
 <https://w3id.org/pmd/tto/TTO_0000041> rdf:type owl:Class ;
-                                       rdfs:subClassOf co:PMD_0000848 ,
-                                                       <https://w3id.org/pmd/tto/TTO_0000005> ,
+                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000005> ,
                                                        [ rdf:type owl:Restriction ;
                                                          owl:onProperty obo:RO_0000052 ;
                                                          owl:allValuesFrom co:PMD_0000000
@@ -4978,17 +5119,9 @@ Source: ISO 6892-1:2019"""@en ;
                                        co:symbol "R_p_0.2"@en .
 
 
-###  https://w3id.org/pmd/tto/TTO_0000049
-<https://w3id.org/pmd/tto/TTO_0000049> rdf:type owl:Class ;
-                                       rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
-                                       rdfs:label "Größenrelation"@de ,
-                                                  "size relation"@en ;
-                                       rdfs:seeAlso <https://w3id.org/pmd/tto/SizeRelation> .
-
-
 ###  https://w3id.org/pmd/tto/TTO_0000051
 <https://w3id.org/pmd/tto/TTO_0000051> rdf:type owl:Class ;
-                                       rdfs:subClassOf co:PMD_0000008 ;
+                                       rdfs:subClassOf co:PMD_0025019 ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Dehngeschwindigkeit"@de ,
                                                   "strain rate"@en ;
@@ -5001,7 +5134,7 @@ Source: ISO 6892-1:2019"""@en ;
 
 ###  https://w3id.org/pmd/tto/TTO_0000052
 <https://w3id.org/pmd/tto/TTO_0000052> rdf:type owl:Class ;
-                                       rdfs:subClassOf co:PMD_0000008 ;
+                                       rdfs:subClassOf co:PMD_0025019 ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Spannungsgeschwindigkeit"@de ,
                                                   "stress rate"@en ;

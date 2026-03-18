@@ -1,8 +1,8 @@
 Level	Rule Name	Subject	Property	Value
 WARN	missing_definition	fatigue loading type value	definition	
 WARN	missing_definition	fatigue loading type	definition	
-WARN	missing_definition	fatigue control type value	definition	
-WARN	missing_definition	fatigue control type	definition	
+WARN	missing_definition	control type value	definition	
+WARN	missing_definition	control type of a mechanical test	definition	
 WARN	missing_definition	fatigue waveform	definition	
 WARN	missing_definition	fatigue testing frequency	definition	
 WARN	missing_definition	fatigue strength	definition	
@@ -47,6 +47,14 @@ WARN	missing_definition	fatigue test control software	definition
 WARN	missing_definition	actuator	definition	
 WARN	missing_definition	piezo actuator	definition	
 WARN	missing_definition	initial crack length	definition	
+WARN	missing_definition	engineering stress-strain curve	definition	
+WARN	missing_definition	true stress-strain curve	definition	
+WARN	missing_definition	true stress-compression curve	definition	
+WARN	missing_definition	hot compression testing process	definition	
+WARN	missing_definition	compressive yield strength	definition	
+WARN	missing_definition	compressive proof strength	definition	
+WARN	missing_definition	compressive proof strength dp02	definition	
+WARN	missing_definition	compressive strength	definition	
 WARN	missing_definition	motor	definition	
 WARN	missing_definition	hot tensile testing process	definition	
 WARN	missing_definition	fracture strength	definition	
