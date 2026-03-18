@@ -23,7 +23,7 @@ $(IMPORTDIR)/tto_import.owl: $(MIRRORDIR)/tto.owl $(IMPORTDIR)/tto_terms.txt $(I
 						--method BOT \
 			remove --term-file $(IMPORTDIR)/tto_remove_parent.txt \
 					--select "ancestors" \
-					--trim true \
+					--trim false \
 			remove --select "complement" --select "named" --trim true \
 			remove --term-file $(IAO_TO_REMOVE) \
 				   --select "individuals classes"\
