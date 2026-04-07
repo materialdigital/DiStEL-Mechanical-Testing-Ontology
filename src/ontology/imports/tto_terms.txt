@@ -17,6 +17,8 @@ https://w3id.org/pmd/tto/TTO_0000051  # strain rate
 https://w3id.org/pmd/tto/TTO_0000052  # stress rate
 https://w3id.org/pmd/tto/TTO_0000038  # 'percentage reduction of area'
 https://w3id.org/pmd/tto/TTO_0000012  # cross section area
+https://w3id.org/pmd/tto/TTO_0000024  # minimum cross-sectional area after fracture 
+https://w3id.org/pmd/tto/TTO_0000026  # original cross-sectional area of the parallel length
 
 # Properties
 https://w3id.org/pmd/tto/TTO_0000005  # extension of extensometer length
