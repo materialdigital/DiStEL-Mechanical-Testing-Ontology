@@ -49,7 +49,6 @@ $(IMPORTDIR)/tto_import.owl: $(MIRRORDIR)/tto.owl $(IMPORTDIR)/tto_terms.txt $(I
 						--method BOT \
 			remove --term "https://w3id.org/pmd/co/relatesTo" \
 				   --select "self" \
-				   --axioms "logical" \
 				   --trim true \
 			odk:normalize --base-iri https://w3id.org/pmd/distel \
 							--subset-decls true --synonym-decls true \
