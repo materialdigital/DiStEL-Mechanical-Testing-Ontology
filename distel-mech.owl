@@ -8909,6 +8909,16 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000068 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000068">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:label xml:lang="en">ductility</rdfs:label>
+        <skos:definition xml:lang="en">Ductlity is a mechanical property which describes the ability of a material to sustain  plastic deformation under tensile load before fracture.</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/distel/DISTEL_0000100 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000100">
@@ -9530,6 +9540,7 @@ Note: The concept of parallel length is replaced by the concept of distance betw
     <!-- https://w3id.org/pmd/tto/TTO_0000033 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000033">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000068"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000004"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Bruchdehnung</rdfs:label>
