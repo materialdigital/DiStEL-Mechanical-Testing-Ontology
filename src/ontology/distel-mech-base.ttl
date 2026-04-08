@@ -4629,6 +4629,13 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
                                              co:symbol "R_dB"@en .
 
 
+###  https://w3id.org/pmd/distel/DISTEL_0000068
+<https://w3id.org/pmd/distel/DISTEL_0000068> rdf:type owl:Class ;
+                                             rdfs:subClassOf co:PMD_0000848 ;
+                                             rdfs:label "ductility"@en ;
+                                             skos:definition "Ductlity is a mechanical property which describes the ability of a material to sustain  plastic deformation under tensile load before fracture."@en .
+
+
 ###  https://w3id.org/pmd/distel/DISTEL_0000100
 <https://w3id.org/pmd/distel/DISTEL_0000100> rdf:type owl:Class ;
                                              rdfs:subClassOf <https://w3id.org/pmd/distel/DISTEL_0000057> ,
@@ -5104,7 +5111,8 @@ Note: The concept of parallel length is replaced by the concept of distance betw
 
 ###  https://w3id.org/pmd/tto/TTO_0000033
 <https://w3id.org/pmd/tto/TTO_0000033> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000004> ;
+                                       rdfs:subClassOf <https://w3id.org/pmd/distel/DISTEL_0000068> ,
+                                                       <https://w3id.org/pmd/tto/TTO_0000004> ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Bruchdehnung"@de ,
                                                   "percentage elongation after fracture"@en ;

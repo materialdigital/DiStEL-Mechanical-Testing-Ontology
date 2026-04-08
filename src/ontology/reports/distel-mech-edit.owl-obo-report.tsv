@@ -55,6 +55,7 @@ WARN	missing_definition	compressive yield strength	textual definition
 WARN	missing_definition	compressive proof strength	textual definition	
 WARN	missing_definition	compressive proof strength dp02	textual definition	
 WARN	missing_definition	compressive strength	textual definition	
+WARN	missing_definition	ductility	textual definition	
 WARN	missing_definition	motor	textual definition	
 WARN	missing_definition	percentage reduction of area at fracture	textual definition	
 WARN	missing_definition	hot tensile testing process	textual definition	
