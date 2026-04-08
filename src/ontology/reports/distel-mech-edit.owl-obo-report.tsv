@@ -1,65 +1,66 @@
 Level	Rule Name	Subject	Property	Value
-WARN	missing_definition	fatigue loading type value	definition	
-WARN	missing_definition	fatigue loading type	definition	
-WARN	missing_definition	control type value	definition	
-WARN	missing_definition	control type of a mechanical test	definition	
-WARN	missing_definition	fatigue waveform	definition	
-WARN	missing_definition	fatigue testing frequency	definition	
-WARN	missing_definition	fatigue strength	definition	
-WARN	missing_definition	loading amplitude	definition	
-WARN	missing_definition	fatigue mean stress	definition	
-WARN	missing_definition	loading ratio	definition	
-WARN	missing_definition	stress ratio	definition	
-WARN	missing_definition	strain ratio	definition	
-WARN	missing_definition	load ratio	definition	
-WARN	missing_definition	stress amplitude	definition	
-WARN	missing_definition	strain amplitude	definition	
-WARN	missing_definition	fatigue maximum stress	definition	
-WARN	missing_definition	fatigue minimum stress	definition	
-WARN	missing_definition	loading ratio type value	definition	
-WARN	missing_definition	fatigue cycle limit	definition	
-WARN	missing_definition	fatigue strength at cycle limit	definition	
-WARN	missing_definition	fatigue endurance limit	definition	
-WARN	missing_definition	knee point	definition	
-WARN	missing_definition	slope of S-N curve	definition	
-WARN	missing_definition	failure criterion	definition	
-WARN	missing_definition	tensile fatigue testing machine	definition	
-WARN	missing_definition	ultrasonic fatigue testing machine	definition	
-WARN	missing_definition	S-N curve	definition	
-WARN	missing_definition	axis label of fatigue curve	definition	
-WARN	missing_definition	y-axis label of fatigue curve	definition	
-WARN	missing_definition	x-axis label of fatigue curve	definition	
-WARN	missing_definition	semi-log S-N curve	definition	
-WARN	missing_definition	log-log S-N curve	definition	
-WARN	missing_definition	linear S-N curve	definition	
-WARN	missing_definition	fatigue life curve	definition	
-WARN	missing_definition	ε-N curve	definition	
-WARN	missing_definition	rolling contact fatigue testing process	definition	
-WARN	missing_definition	tensile fatigue testing process	definition	
-WARN	missing_definition	number of sustained loading cycles	definition	
-WARN	missing_definition	single fatigue testing process with run out	definition	
-WARN	missing_definition	fatigue specimen failure	definition	
-WARN	missing_definition	single fatigue testing process with failed specimen	definition	
-WARN	missing_definition	fatigue test run out	definition	
-WARN	missing_definition	range of motion specification	definition	
-WARN	missing_definition	evaluation software	definition	
-WARN	missing_definition	fatigue test control software	definition	
-WARN	missing_definition	actuator	definition	
-WARN	missing_definition	piezo actuator	definition	
-WARN	missing_definition	initial crack length	definition	
-WARN	missing_definition	engineering stress-strain curve	definition	
-WARN	missing_definition	true stress-strain curve	definition	
-WARN	missing_definition	true stress-compression curve	definition	
-WARN	missing_definition	hot compression testing process	definition	
-WARN	missing_definition	compressive yield strength	definition	
-WARN	missing_definition	compressive proof strength	definition	
-WARN	missing_definition	compressive proof strength dp02	definition	
-WARN	missing_definition	compressive strength	definition	
-WARN	missing_definition	motor	definition	
-WARN	missing_definition	hot tensile testing process	definition	
-WARN	missing_definition	fracture strength	definition	
-WARN	missing_definition	strain hardening exponent	definition	
-WARN	missing_definition	target strain	definition	
-WARN	missing_definition	load increasing fatigue testing process	definition	
-WARN	missing_definition	initial loading amplitute	definition	
-WARN	missing_definition	loading amplitude increment	definition	
+WARN	missing_definition	fatigue loading type value	textual definition	
+WARN	missing_definition	fatigue loading type	textual definition	
+WARN	missing_definition	control type value	textual definition	
+WARN	missing_definition	control type of a mechanical test	textual definition	
+WARN	missing_definition	fatigue waveform	textual definition	
+WARN	missing_definition	fatigue testing frequency	textual definition	
+WARN	missing_definition	fatigue strength	textual definition	
+WARN	missing_definition	loading amplitude	textual definition	
+WARN	missing_definition	fatigue mean stress	textual definition	
+WARN	missing_definition	loading ratio	textual definition	
+WARN	missing_definition	stress ratio	textual definition	
+WARN	missing_definition	strain ratio	textual definition	
+WARN	missing_definition	load ratio	textual definition	
+WARN	missing_definition	stress amplitude	textual definition	
+WARN	missing_definition	strain amplitude	textual definition	
+WARN	missing_definition	fatigue maximum stress	textual definition	
+WARN	missing_definition	fatigue minimum stress	textual definition	
+WARN	missing_definition	loading ratio type value	textual definition	
+WARN	missing_definition	fatigue cycle limit	textual definition	
+WARN	missing_definition	fatigue strength at cycle limit	textual definition	
+WARN	missing_definition	fatigue endurance limit	textual definition	
+WARN	missing_definition	knee point	textual definition	
+WARN	missing_definition	slope of S-N curve	textual definition	
+WARN	missing_definition	failure criterion	textual definition	
+WARN	missing_definition	tensile fatigue testing machine	textual definition	
+WARN	missing_definition	ultrasonic fatigue testing machine	textual definition	
+WARN	missing_definition	S-N curve	textual definition	
+WARN	missing_definition	axis label of fatigue curve	textual definition	
+WARN	missing_definition	y-axis label of fatigue curve	textual definition	
+WARN	missing_definition	x-axis label of fatigue curve	textual definition	
+WARN	missing_definition	semi-log S-N curve	textual definition	
+WARN	missing_definition	log-log S-N curve	textual definition	
+WARN	missing_definition	linear S-N curve	textual definition	
+WARN	missing_definition	fatigue life curve	textual definition	
+WARN	missing_definition	ε-N curve	textual definition	
+WARN	missing_definition	rolling contact fatigue testing process	textual definition	
+WARN	missing_definition	tensile fatigue testing process	textual definition	
+WARN	missing_definition	number of sustained loading cycles	textual definition	
+WARN	missing_definition	single fatigue testing process with run out	textual definition	
+WARN	missing_definition	fatigue specimen failure	textual definition	
+WARN	missing_definition	single fatigue testing process with failed specimen	textual definition	
+WARN	missing_definition	fatigue test run out	textual definition	
+WARN	missing_definition	range of motion specification	textual definition	
+WARN	missing_definition	evaluation software	textual definition	
+WARN	missing_definition	fatigue test control software	textual definition	
+WARN	missing_definition	actuator	textual definition	
+WARN	missing_definition	piezo actuator	textual definition	
+WARN	missing_definition	initial crack length	textual definition	
+WARN	missing_definition	engineering stress-strain curve	textual definition	
+WARN	missing_definition	true stress-strain curve	textual definition	
+WARN	missing_definition	true stress-compression curve	textual definition	
+WARN	missing_definition	hot compression testing process	textual definition	
+WARN	missing_definition	compressive yield strength	textual definition	
+WARN	missing_definition	compressive proof strength	textual definition	
+WARN	missing_definition	compressive proof strength dp02	textual definition	
+WARN	missing_definition	compressive strength	textual definition	
+WARN	missing_definition	motor	textual definition	
+WARN	missing_definition	percentage reduction of area at fracture	textual definition	
+WARN	missing_definition	hot tensile testing process	textual definition	
+WARN	missing_definition	fracture strength	textual definition	
+WARN	missing_definition	strain hardening exponent	textual definition	
+WARN	missing_definition	target strain	textual definition	
+WARN	missing_definition	load increasing fatigue testing process	textual definition	
+WARN	missing_definition	initial loading amplitute	textual definition	
+WARN	missing_definition	loading amplitude increment	textual definition	

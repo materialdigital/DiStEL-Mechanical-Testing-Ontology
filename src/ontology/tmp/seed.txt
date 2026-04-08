@@ -142,8 +142,10 @@ http://purl.obolibrary.org/obo/IAO_0000103
 http://purl.obolibrary.org/obo/IAO_0000104
 http://purl.obolibrary.org/obo/IAO_0000109
 http://purl.obolibrary.org/obo/IAO_0000112
+http://purl.obolibrary.org/obo/IAO_0000114
 http://purl.obolibrary.org/obo/IAO_0000115
 http://purl.obolibrary.org/obo/IAO_0000116
+http://purl.obolibrary.org/obo/IAO_0000117
 http://purl.obolibrary.org/obo/IAO_0000119
 http://purl.obolibrary.org/obo/IAO_0000120
 http://purl.obolibrary.org/obo/IAO_0000121
@@ -624,6 +626,7 @@ https://w3id.org/pmd/distel/DISTEL_0000065
 https://w3id.org/pmd/distel/DISTEL_0000066
 https://w3id.org/pmd/distel/DISTEL_0000067
 https://w3id.org/pmd/distel/DISTEL_0000100
+https://w3id.org/pmd/distel/DISTEL_0002002
 https://w3id.org/pmd/distel/DISTEL_0025001
 https://w3id.org/pmd/distel/DISTEL_0025002
 https://w3id.org/pmd/distel/DISTEL_0025004
@@ -660,7 +663,6 @@ https://w3id.org/pmd/tto/ProofStrength
 https://w3id.org/pmd/tto/ProofStrengthPlasticExtension
 https://w3id.org/pmd/tto/Rp01
 https://w3id.org/pmd/tto/Rp02
-https://w3id.org/pmd/tto/SizeRelation
 https://w3id.org/pmd/tto/StrainRate
 https://w3id.org/pmd/tto/StressRate
 https://w3id.org/pmd/tto/TTO_0000004
@@ -695,7 +697,6 @@ https://w3id.org/pmd/tto/TTO_0000043
 https://w3id.org/pmd/tto/TTO_0000044
 https://w3id.org/pmd/tto/TTO_0000046
 https://w3id.org/pmd/tto/TTO_0000047
-https://w3id.org/pmd/tto/TTO_0000049
 https://w3id.org/pmd/tto/TTO_0000051
 https://w3id.org/pmd/tto/TTO_0000052
 https://w3id.org/pmd/tto/TTO_0000053

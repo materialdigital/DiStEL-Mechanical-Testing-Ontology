@@ -17,11 +17,11 @@
 @base <https://w3id.org/pmd/distel-mech.ttl> .
 
 <https://w3id.org/pmd/distel-mech.ttl> rdf:type owl:Ontology ;
-                                        owl:versionIRI <https://w3id.org/pmd/distel/releases/2026-03-18/distel-mech.ttl> ;
+                                        owl:versionIRI <https://w3id.org/pmd/distel/releases/2026-04-08/distel-mech.ttl> ;
                                         dcterms:description "None" ;
                                         dcterms:license <https://creativecommons.org/licenses/unspecified> ;
                                         dcterms:title "DiStEL Mechanical Testing Ontology" ;
-                                        owl:versionInfo "2026-03-18" .
+                                        owl:versionInfo "2026-04-08" .
 
 #################################################################
 #    Annotation properties
@@ -29,16 +29,26 @@
 
 ###  http://purl.obolibrary.org/obo/IAO_0000112
 obo:IAO_0000112 rdf:type owl:AnnotationProperty ;
+                obo:IAO_0000114 obo:IAO_0000122 ;
                 obo:IAO_0000115 "A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold."@en ;
+                obo:IAO_0000117 "PERSON:Daniel Schober"@en ;
                 obo:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en ;
                 rdfs:label "example of usage" ,
                            "example of usage"@en .
 
 
+###  http://purl.obolibrary.org/obo/IAO_0000114
+obo:IAO_0000114 rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.obolibrary.org/obo/IAO_0000115
 obo:IAO_0000115 rdf:type owl:AnnotationProperty ;
-                obo:IAO_0000115 "The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en ,
-                                "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en ;
+                obo:IAO_0000114 obo:IAO_0000122 ;
+                obo:IAO_0000115 "A property representing the English language definitions of what NCI means by the concept. They may also include information about the definition's source and attribution in a form that can easily be interpreted by software." ,
+                                "English language definitions of what NCI means by the concept. These are limited to 1024 characters. They may also include information about the definition's source and attribution in a form that can easily be interpreted by software." ,
+                                "The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en ,
+                                "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en ,
+                                "The official definition." ;
                 obo:IAO_0000116 """2012-04-05: 
 Barry Smith
 
@@ -79,6 +89,7 @@ We don't have definitions of 'meaning' or 'expression' or 'property'. For 'refer
 Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
 
 We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  """@en ;
+                obo:IAO_0000117 "PERSON:Daniel Schober"@en ;
                 obo:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en ;
                 rdfs:label "definition" ,
                            "definition"@en ,
@@ -87,15 +98,23 @@ We also have the outstanding issue of how to aim different definitions to differ
 
 ###  http://purl.obolibrary.org/obo/IAO_0000116
 obo:IAO_0000116 rdf:type owl:AnnotationProperty ;
+                obo:IAO_0000114 obo:IAO_0000122 ;
                 obo:IAO_0000115 "An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology."@en ;
+                obo:IAO_0000117 "PERSON:Daniel Schober"@en ;
                 obo:IAO_0000119 "GROUP:OBI:<http://purl.obofoundry.org/obo/obi>"@en ;
                 rdfs:label "editor note"@en .
 
 
+###  http://purl.obolibrary.org/obo/IAO_0000117
+obo:IAO_0000117 rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.obolibrary.org/obo/IAO_0000119
 obo:IAO_0000119 rdf:type owl:AnnotationProperty ;
+                obo:IAO_0000114 obo:IAO_0000122 ;
                 obo:IAO_0000115 "Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007"@en ,
                                 "formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007"@en ;
+                obo:IAO_0000117 "PERSON:Daniel Schober"@en ;
                 obo:IAO_0000119 "Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w" ,
                                 "Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w"@en ,
                                 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en ;
@@ -133,16 +152,24 @@ dcterms:title rdf:type owl:AnnotationProperty ;
               rdfs:label "title" .
 
 
-###  http://qudt.org/schema/qudt/dbpediaMatch
-qudt:dbpediaMatch rdf:type owl:AnnotationProperty .
-
-
 ###  http://qudt.org/schema/qudt/expression
 qudt:expression rdf:type owl:AnnotationProperty .
 
 
 ###  http://qudt.org/schema/qudt/informativeReference
 qudt:informativeReference rdf:type owl:AnnotationProperty .
+
+
+###  http://qudt.org/schema/qudt/omUnit
+qudt:omUnit rdf:type owl:AnnotationProperty .
+
+
+###  http://qudt.org/schema/qudt/siExactMatch
+qudt:siExactMatch rdf:type owl:AnnotationProperty .
+
+
+###  http://qudt.org/schema/qudt/symbol
+qudt:symbol rdf:type owl:AnnotationProperty .
 
 
 ###  http://qudt.org/schema/qudt/wikidataMatch
@@ -175,6 +202,8 @@ skos:example rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/pmd/co/PMD_0000060
 co:PMD_0000060 rdf:type owl:AnnotationProperty ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:comment "Indicates whether the ontology element is part of the minimal profile of the ontology. Useful for modularization, simplified views, or lightweight implementations."@en ;
                rdfs:label "isInMinimalProfile"@en ;
                co:PMD_0001032 "https://github.com/materialdigital/core-ontology/issues/121" .
@@ -182,19 +211,25 @@ co:PMD_0000060 rdf:type owl:AnnotationProperty ;
 
 ###  https://w3id.org/pmd/co/PMD_0000064
 co:PMD_0000064 rdf:type owl:AnnotationProperty ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:comment "An editor note referring to a pattern which shows the usage of this class or property."@en ;
                rdfs:label "pattern example"@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0001032
 co:PMD_0001032 rdf:type owl:AnnotationProperty ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
                obo:IAO_0000115 "A term tracker annotation is an editor note used to track the history of an entity. For each change, it records the related GitHub issue and pull request."@en ;
                obo:IAO_0000116 "hijacked from http://openenergy-platform.org/ontology/oeo/OEO_00020426"@en ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "term tracker annotation"@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0050117
 co:PMD_0050117 rdf:type owl:AnnotationProperty ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Markus Schilling" ;
                rdfs:label "abbreviation"@en ;
                skos:definition "A textual annotation used to specify a commonly accepted abbreviation, acronym, or shortened form of a class label. This property is intended to support concise referencing of ontology classes, especially when standard abbreviations are widely used in practice."@en ;
                skos:example "\"DNA\" for \"Deoxyribonucleic Acid\""@en .
@@ -241,7 +276,8 @@ obo:BFO_0000050 rdf:type owl:ObjectProperty ;
                                 """Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)
 
 A continuant cannot be part of an occurrent: use 'participates in'. An occurrent cannot be part of a continuant: use 'has participant'. A material entity cannot be part of an immaterial entity: use 'has location'. A specifically dependent continuant cannot be part of an independent continuant: use 'inheres in'. An independent continuant cannot be part of a specifically dependent continuant: use 'bearer of'."""@en ;
-                rdfs:label "part of"@en .
+                rdfs:label "part of" ,
+                           "part of"@en .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000051
@@ -515,8 +551,13 @@ obo:OBI_0000293 rdf:type owl:ObjectProperty ;
                 owl:inverseOf obo:OBI_0000295 ;
                 rdfs:domain obo:COB_0000035 ;
                 obo:IAO_0000112 "see is_input_of example_of_usage"@en ;
+                obo:IAO_0000114 obo:IAO_0000122 ;
                 obo:IAO_0000115 "The inverse property of is specified input of" ;
                 obo:IAO_0000116 "8/17/09: specified inputs of one process are not necessarily specified inputs of a larger process that it is part of. This is in contrast to how 'has participant' works." ;
+                obo:IAO_0000117 "PERSON: Alan Ruttenberg"@en ,
+                                "PERSON: Bjoern Peters" ,
+                                "PERSON: Larry Hunter" ,
+                                "PERSON: Melanie Coutot" ;
                 rdfs:label "has specified input"@en .
 
 
@@ -525,7 +566,10 @@ obo:OBI_0000295 rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf obo:RO_0000056 ;
                 rdfs:range obo:COB_0000035 ;
                 obo:IAO_0000112 "some Autologous EBV(Epstein-Barr virus)-transformed B-LCL (B lymphocyte cell line) is_input_for instance of Chromum Release Assay described at https://wiki.cbil.upenn.edu/obiwiki/index.php/Chromium_Release_assay"@en ;
+                obo:IAO_0000114 obo:IAO_0000122 ;
                 obo:IAO_0000115 "A relation between a completely executed planned process and a continuant participating in that process that is not created during the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of." ;
+                obo:IAO_0000117 "Alan Ruttenberg"@en ,
+                                "PERSON:Bjoern Peters" ;
                 rdfs:label "is specified input of"@en .
 
 
@@ -536,7 +580,12 @@ obo:OBI_0000299 rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf obo:RO_0000057 ;
                 owl:inverseOf obo:OBI_0000312 ;
                 rdfs:domain obo:COB_0000035 ;
+                obo:IAO_0000114 obo:IAO_0000122 ;
                 obo:IAO_0000115 "The inverse property of is specified output of" ;
+                obo:IAO_0000117 "PERSON: Alan Ruttenberg"@en ,
+                                "PERSON: Bjoern Peters" ,
+                                "PERSON: Larry Hunter" ,
+                                "PERSON: Melanie Courtot" ;
                 rdfs:label "has specified output"@en .
 
 
@@ -544,7 +593,10 @@ obo:OBI_0000299 rdf:type owl:ObjectProperty ;
 obo:OBI_0000312 rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf obo:RO_0000056 ;
                 rdfs:range obo:COB_0000035 ;
+                obo:IAO_0000114 obo:IAO_0000122 ;
                 obo:IAO_0000115 "A relation between a completely executed planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of."@en ;
+                obo:IAO_0000117 "Alan Ruttenberg"@en ,
+                                "PERSON:Bjoern Peters" ;
                 rdfs:label "is specified output of"@en .
 
 
@@ -553,7 +605,9 @@ obo:OBI_0000417 rdf:type owl:ObjectProperty ;
                 rdfs:domain obo:COB_0000035 ;
                 rdfs:range obo:IAO_0000005 ;
                 obo:IAO_0000112 "A cell sorting process achieves the objective specification 'material separation objective'" ;
+                obo:IAO_0000114 obo:IAO_0000120 ;
                 obo:IAO_0000115 "This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process."@en ;
+                obo:IAO_0000117 "BP, AR, PPPB branch" ;
                 obo:IAO_0000119 "PPPB branch derived" ;
                 obo:IAO_0000232 "modified according to email thread from 1/23/09 in accordince with DT and PPPB branch" ;
                 rdfs:label "achieves_planned_objective" ;
@@ -565,6 +619,7 @@ obo:OBI_0001927 rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf obo:IAO_0000136 ;
                 owl:inverseOf co:PMD_0000077 ;
                 rdfs:domain obo:OBI_0001933 ;
+                obo:IAO_0000114 obo:IAO_0000123 ;
                 obo:IAO_0000115 "A relation between a value specification and an entity which the specification is about."@en ;
                 rdfs:label "specifies value of" .
 
@@ -574,7 +629,9 @@ obo:OBI_0001938 rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf obo:BFO_0000051 ;
                 rdfs:domain obo:IAO_0000030 ;
                 rdfs:range obo:OBI_0001933 ;
+                obo:IAO_0000114 obo:IAO_0000120 ;
                 obo:IAO_0000115 "A relation between an information content entity and a value specification that specifies its value."@en ;
+                obo:IAO_0000117 "PERSON: James A. Overton" ;
                 obo:IAO_0000119 "OBI" ;
                 rdfs:label "has value specification" .
 
@@ -931,12 +988,17 @@ obo:STATO_0000102 rdf:type owl:ObjectProperty ;
                                            obo:RO_0000059
                                          ) ;
                   obo:IAO_0000115 "relationship between a planned process and the plan specification that it carries out; it is defined as equivalent to the composed relationship (realizes o concretizes)"@en ;
+                  obo:IAO_0000117 "Alejandra Gonzalez-Beltran" ,
+                                  "Orlaith Burke" ,
+                                  "Philippe Rocca-Serra" ;
                   obo:IAO_0000119 "AGB" ;
                   rdfs:label "executes" .
 
 
 ###  https://w3id.org/pmd/co/PMD_0000004
 co:PMD_0000004 rdf:type owl:ObjectProperty ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "is subject of"@en ;
                skos:definition "Inverse of 'is about'."@en .
 
@@ -946,6 +1008,8 @@ co:PMD_0000009 rdf:type owl:ObjectProperty ;
                owl:inverseOf co:PMD_0025006 ;
                rdfs:domain obo:BFO_0000015 ;
                rdfs:range co:PMD_0000008 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "has process attribute"@en ;
                rdfs:seeAlso "has process attribute from OEO https://openenergyplatform.org/ontology/oeo/OEO_00000500"@en ;
                skos:definition "A relation between a process and a process attribute that depends on it."@en ;
@@ -964,6 +1028,8 @@ co:PMD_0000069 rdf:type owl:ObjectProperty ;
                              rdf:type owl:Class
                            ] ;
                rdfs:range co:PMD_0000068 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "has state"@en ;
                skos:definition "relates an anchor continuant to a temporally qualified continuant that represents a specific temporal phase of its existence."@en ;
                co:PMD_0001032 "https://github.com/materialdigital/core-ontology/issues/185" .
@@ -972,6 +1038,8 @@ co:PMD_0000069 rdf:type owl:ObjectProperty ;
 ###  https://w3id.org/pmd/co/PMD_0000070
 co:PMD_0000070 rdf:type owl:ObjectProperty ,
                         owl:FunctionalProperty ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "is state of"@en ;
                skos:definition "relates a temporally qualified continuant to the unique anchor continuant that it is a temporal phase of"@en .
 
@@ -979,6 +1047,8 @@ co:PMD_0000070 rdf:type owl:ObjectProperty ,
 ###  https://w3id.org/pmd/co/PMD_0000077
 co:PMD_0000077 rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf co:PMD_0000004 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "specified by value"@en ;
                skos:definition "A relation between an entity and a value specification which is about this entity."@en .
 
@@ -988,6 +1058,8 @@ co:PMD_0001026 rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf co:PMD_0000004 ;
                rdfs:domain obo:BFO_0000004 ;
                rdfs:range obo:IAO_0000030 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "complies with"@en ,
                           "entspricht"@de ;
                skos:definition "complies with is a relation between an independent continuant and an information content entity (e.g., specification or objective) that it conforms to."@en .
@@ -996,6 +1068,8 @@ co:PMD_0001026 rdf:type owl:ObjectProperty ;
 ###  https://w3id.org/pmd/co/PMD_0001028
 co:PMD_0001028 rdf:type owl:ObjectProperty ;
                owl:inverseOf co:PMD_0001029 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "in response to"@en ;
                skos:definition "inverse of responds with"@en .
 
@@ -1005,6 +1079,8 @@ co:PMD_0001029 rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf owl:topObjectProperty ;
                rdfs:domain obo:BFO_0000017 ;
                rdfs:range co:PMD_0000915 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "responds with"@en ;
                skos:definition "The realizable entity must be \"stimulated\" by some Stimulus in order to respond with the Response. The bearer of the realizable entity must participate in Stimulation as well as in Response." ,
                                "The realizable entity must be \"stimulated\" by some Stimulus in order to respond with the Response. The bearer of the realizable entity must participate in Stimulation as well as in Response."@en .
@@ -1022,6 +1098,8 @@ co:PMD_0001030 rdf:type owl:ObjectProperty ;
 co:PMD_0020127 rdf:type owl:ObjectProperty ;
                rdfs:domain co:PMD_0000008 ;
                rdfs:range obo:BFO_0000020 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Philipp von Hartrott" ;
                rdfs:comment """Despite has characteristic from RO does not have any domain constraints, it is still not possible to directly connect an instance of a process with an instance of a SDC. 
 
 First, SDC is dependent on a IC. As RO does not have \"bearer of\" object property, the \"has characteristic\" implies that the domain should be an IC. 
@@ -1035,6 +1113,8 @@ An example of such case can be \"Temperature of during the annealing process was
 
 ###  https://w3id.org/pmd/co/PMD_0025006
 co:PMD_0025006 rdf:type owl:ObjectProperty ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Kamilla Zaripova" ;
                rdfs:label "process attribute of"@en ;
                skos:definition "A relation between a process attribute and a process, which \"bears\" the attribute."@en ;
                skos:example "Tensile rate is a process attribute of tensile test"@en .
@@ -1048,6 +1128,8 @@ co:PMD_0025998 rdf:type owl:ObjectProperty ;
                owl:propertyChainAxiom ( obo:BFO_0000051
                                         co:PMD_0025998
                                       ) ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Kamilla Zaripova" ;
                rdfs:label "has relational quality"@en ;
                skos:definition "a relation between an independent continuant (the bearer) and a relational quality, in which the quality specifically depends on the bearer for its existence"@en ;
                skos:example "material has relational quality mass proportion m, and portion of iron has the same relational quality mass proportion m"@en .
@@ -1058,15 +1140,13 @@ co:PMD_0025999 rdf:type owl:ObjectProperty ;
                owl:propertyChainAxiom ( co:PMD_0025999
                                         obo:BFO_0000050
                                       ) ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
                obo:IAO_0000116 """The 'relational quality of' is more strict that 'quality of' from RO, since domain is 'relational quality'. The motivtion to introduce an object property for relational qualities is the following:
 RO's 'quality of' is functional i.e., a->b, a->c => b=c. The functionality is relevant for most of the SDC -> IC triples, expect for relational qualities, which per definiton can be simultaneously inherited in >=2 ICs. Thus,  'relational quality of'  has the same intention to connect SDC to IC, however, without cardinality constraints."""@en ;
+               obo:IAO_0000117 "PERSON: Kamilla Zaripova" ;
                rdfs:label "relational quality of"@en ;
                skos:definition "a relation between a relational quality and an independent continuant (the bearer), in which the quality specifically depends on the bearer for its existence"@en ;
                skos:example "mass proportion m is relational qualitiy of material, and the same mass proportion m is relational qualitiy of portion of iron"@en .
-
-
-###  https://w3id.org/pmd/co/relatesTo
-co:relatesTo rdf:type owl:ObjectProperty .
 
 
 #################################################################
@@ -1077,8 +1157,10 @@ co:relatesTo rdf:type owl:ObjectProperty .
 obo:OBI_0001937 rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf obo:OBI_0002135 ;
                 rdfs:domain obo:OBI_0001933 ;
+                obo:IAO_0000114 obo:IAO_0000120 ;
                 obo:IAO_0000115 "A relation between a value specification and a number that quantifies it."@en ;
                 obo:IAO_0000116 "A range of 'real' might be better than 'float'. For now we follow 'has measurement value' until we can consider technical issues with SPARQL queries and reasoning." ;
+                obo:IAO_0000117 "PERSON: James A. Overton" ;
                 obo:IAO_0000119 "OBI" ;
                 rdfs:label "has specified numeric value" .
 
@@ -1086,6 +1168,7 @@ obo:OBI_0001937 rdf:type owl:DatatypeProperty ;
 ###  http://purl.obolibrary.org/obo/OBI_0002135
 obo:OBI_0002135 rdf:type owl:DatatypeProperty ;
                 rdfs:domain obo:OBI_0001933 ;
+                obo:IAO_0000114 obo:IAO_0000123 ;
                 obo:IAO_0000115 "A relation between a value specification and a literal."@en ;
                 obo:IAO_0000116 "This is not an RDF/OWL object property. It is intended to link a value found in e.g. a database column of 'M' (the literal) to an instance of a value specification class, which can then be linked to indicate that this is about the biological gender of a human subject." ;
                 obo:IAO_0000119 "OBI" ;
@@ -1095,6 +1178,8 @@ obo:OBI_0002135 rdf:type owl:DatatypeProperty ;
 ###  https://w3id.org/pmd/co/PMD_0000006
 co:PMD_0000006 rdf:type owl:DatatypeProperty ;
                rdfs:domain obo:IAO_0000030 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "has value"@en ;
                skos:definition "data property that relates an information content entity to a literal"@en .
 
@@ -2161,6 +2246,28 @@ obo:IAO_0000033 rdf:type owl:Class ;
                 rdfs:label "directive information entity"@en .
 
 
+###  http://purl.obolibrary.org/obo/IAO_0000078
+obo:IAO_0000078 rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Class ;
+                                      owl:oneOf ( obo:IAO_0000002
+                                                  obo:IAO_0000120
+                                                  obo:IAO_0000121
+                                                  obo:IAO_0000122
+                                                  obo:IAO_0000123
+                                                  obo:IAO_0000124
+                                                  obo:IAO_0000125
+                                                  obo:IAO_0000423
+                                                  obo:IAO_0000428
+                                                )
+                                    ] ;
+                rdfs:subClassOf obo:IAO_0000102 ;
+                obo:IAO_0000115 "The curation status of the term. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value."@en ;
+                obo:IAO_0000116 "Better to represent curation as a process with parts and then relate labels to that process (in IAO meeting)"@en ;
+                obo:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en ,
+                                "OBI_0000266"@en ;
+                rdfs:label "curation status specification"@en .
+
+
 ###  http://purl.obolibrary.org/obo/IAO_0000100
 obo:IAO_0000100 rdf:type owl:Class ;
                 rdfs:subClassOf obo:IAO_0000027 ;
@@ -2177,6 +2284,13 @@ obo:IAO_0000100 rdf:type owl:Class ;
 obo:IAO_0000101 rdf:type owl:Class ;
                 rdfs:subClassOf obo:IAO_0000308 ;
                 rdfs:label "image"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000102
+obo:IAO_0000102 rdf:type owl:Class ;
+                rdfs:subClassOf obo:IAO_0000027 ;
+                obo:IAO_0000115 "Data about an ontology part is a data item about a part of an ontology, for example a term"@en ;
+                rdfs:label "data about an ontology part"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000104
@@ -2223,10 +2337,42 @@ obo:IAO_0000109 rdf:type owl:Class ;
                 rdfs:label "measurement datum"@en .
 
 
+###  http://purl.obolibrary.org/obo/IAO_0000225
+obo:IAO_0000225 rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Class ;
+                                      owl:oneOf ( obo:IAO_0000103
+                                                  obo:IAO_0000226
+                                                  obo:IAO_0000227
+                                                  obo:IAO_0000228
+                                                  obo:IAO_0000229
+                                                  obo:OMO_0001000
+                                                )
+                                    ] ;
+                rdfs:subClassOf obo:IAO_0000102 ;
+                obo:IAO_0000115 "The reason for which a term has been deprecated. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value."@en ;
+                obo:IAO_0000116 "The creation of this class has been inspired in part by Werner Ceusters' paper, Applying evolutionary terminology auditing to the Gene Ontology."@en ;
+                rdfs:label "obsolescence reason specification"@en .
+
+
 ###  http://purl.obolibrary.org/obo/IAO_0000308
 obo:IAO_0000308 rdf:type owl:Class ;
                 rdfs:subClassOf obo:IAO_0000030 ;
                 rdfs:label "figure"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000409
+obo:IAO_0000409 rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Class ;
+                                      owl:oneOf ( obo:IAO_0000410
+                                                  obo:IAO_0000420
+                                                  obo:IAO_0000421
+                                                )
+                                    ] ;
+                rdfs:subClassOf obo:IAO_0000102 ;
+                obo:IAO_0000112 "The Basic Formal Ontology ontology makes a distinction between Universals and defined classes, where the formal are \"natural kinds\" and the latter arbitrary collections of entities."@en ;
+                obo:IAO_0000115 "A denotator type indicates how a term should be interpreted from an ontological perspective."@en ;
+                obo:IAO_0000119 "Barry Smith, Werner Ceusters"@en ;
+                rdfs:label "denotator type"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0020000
@@ -2298,9 +2444,11 @@ obo:OBI_0000067 rdf:type owl:Class ;
                                   owl:allValuesFrom obo:OBI_0000070
                                 ] ;
                 obo:IAO_0000112 "When a specimen of blood is assayed for glucose concentration, the blood has the evaluant role. When measuring the mass of a mouse, the evaluant is the mouse. When measuring the time of DNA replication, the evaluant is the DNA. When measuring the intensity of light on a surface, the evaluant is the light source."@en ;
+                obo:IAO_0000114 obo:IAO_0000122 ;
                 obo:IAO_0000115 "a role that inheres in a material entity that is realized in an assay in which data is generated about the bearer of the evaluant role"@en ;
                 obo:IAO_0000116 "Role call - 17nov-08: JF and MC think an evaluant role is always specified input of a process. Even in the case where we have an assay taking blood as evaluant and outputting blood, the blood is not the specified output at the end of the assay (the concentration of glucose in the blood is)"@en ,
                                 "examples of features that could be described in an evaluant: quality.... e.g. \"contains 10 pg/ml IL2\", or \"no glucose detected\")"@en ;
+                obo:IAO_0000117 "GROUP:  Role Branch" ;
                 obo:IAO_0000119 "OBI" ;
                 obo:IAO_0000232 "Feb 10, 2009.  changes after discussion at OBI Consortium Workshop Feb 2-6, 2009.  accepted as core term." ;
                 rdfs:label "evaluant role"@en .
@@ -2366,9 +2514,11 @@ obo:OBI_0000070 rdf:type owl:Class ;
                                                      ]
                                 ] ;
                 obo:IAO_0000112 "Assay the wavelength of light emitted by excited Neon atoms. Count of geese flying over a house." ;
+                obo:IAO_0000114 obo:IAO_0000122 ;
                 obo:IAO_0000115 "A planned process that has the objective to produce information about a material entity (the evaluant) by examining it."@en ;
                 obo:IAO_0000116 "12/3/12: BP: the reference to the 'physical examination' is included to point out that a prediction is not an assay, as that does not require physical examiniation." ,
                                 "Discussion on OBI call 2023-05-01 resulted in an agreement to revise the textual definition of 'assay'.  https://github.com/obi-ontology/obi/issues/1683." ;
+                obo:IAO_0000117 "PlanAndPlannedProcess Branch"@en ;
                 obo:IAO_0000119 "OBI branch derived"@en ;
                 rdfs:label "assay"@en .
 
@@ -2377,6 +2527,7 @@ obo:OBI_0000070 rdf:type owl:Class ;
 obo:OBI_0000245 rdf:type owl:Class ;
                 rdfs:subClassOf obo:BFO_0000040 ;
                 obo:IAO_0000112 "PMID: 16353909.AAPS J. 2005 Sep 22;7(2):E274-80. Review. The joint food and agriculture organization of the United Nations/World Health Organization Expert Committee on Food Additives and its role in the evaluation of the safety of veterinary drug residues in foods."@en ;
+                obo:IAO_0000114 obo:IAO_0000122 ;
                 obo:IAO_0000115 "An entity that can bear roles, has members, and has a set of organization rules. Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members."@en ;
                 obo:IAO_0000116 """BP: The definition summarizes long email discussions on the OBI developer, roles, biomaterial and denrie branches. It leaves open if an organization is a material entity or a dependent continuant, as no consensus was reached on that.  The current placement as material is therefore temporary, in order to move forward with development. Here is the entire email summary, on which the definition is based:
 
@@ -2405,6 +2556,10 @@ This leads to my proposal: We define organization through the statements 1 -
 current place in the is_a hierarchy (material entity) or move it up to
 'continuant'. We leave further clarifications to BFO, and close this issue
 for now."""@en ;
+                obo:IAO_0000117 "PERSON: Alan Ruttenberg" ,
+                                "PERSON: Bjoern Peters" ,
+                                "PERSON: Philippe Rocca-Serra" ,
+                                "PERSON: Susanna Sansone" ;
                 obo:IAO_0000119 "GROUP: OBI" ;
                 rdfs:label "organization"@en .
 
@@ -2417,8 +2572,10 @@ obo:OBI_0000260 rdf:type owl:Class ;
                                   owl:someValuesFrom obo:IAO_0000104
                                 ] ;
                 obo:IAO_0000112 "The plan of researcher X to perform an experiment according to a protocol." ;
+                obo:IAO_0000114 obo:IAO_0000125 ;
                 obo:IAO_0000115 "A plan is a realizable entity that is the inheres in a bearer who is committed to realizing it as a completely executed planned process."@en ;
                 obo:IAO_0000116 "This class is included to make clear how the plan specification, the plan, and the planned process relate. OBI will however only subclass and work under the 'plan specification', and 'planned process' class, as we want to avoid to get deep into discussions of 'intend' etc." ;
+                obo:IAO_0000117 "AR, BP, JM, MC, PRS"@en ;
                 obo:IAO_0000119 "branch derived"@en ;
                 rdfs:label "plan"@en .
 
@@ -2439,7 +2596,9 @@ obo:OBI_0000571 rdf:type owl:Class ;
                                                      ]
                                 ] ;
                 obo:IAO_0000112 "With respect to The Accuri C6 Flow Cytometer System, the organization Accuri bears the role manufacturer role.  With respect to a transformed line of tissue culture cells derived by a specific lab, the lab whose personnel isolated the cll line bears the role manufacturer role.  With respect to a specific antibody produced by an individual scientist, the scientist who purifies, characterizes and distributes the anitbody bears the role manufacturer role." ;
+                obo:IAO_0000114 obo:IAO_0000123 ;
                 obo:IAO_0000115 "Manufacturer role is a role which inheres in a person or organization and which is realized by a manufacturing process."@en ;
+                obo:IAO_0000117 "GROUP:  Role Branch" ;
                 obo:IAO_0000119 "OBI" ;
                 rdfs:label "manufacturer role" .
 
@@ -2463,6 +2622,7 @@ obo:OBI_0000835 rdf:type owl:Class ;
                                   owl:onProperty obo:RO_0000087 ;
                                   owl:someValuesFrom obo:OBI_0000571
                                 ] ;
+                obo:IAO_0000114 obo:IAO_0000123 ;
                 obo:IAO_0000115 "A person or organization that has a manufacturer role."@en ;
                 rdfs:label "manufacturer" .
 
@@ -2470,7 +2630,9 @@ obo:OBI_0000835 rdf:type owl:Class ;
 ###  http://purl.obolibrary.org/obo/OBI_0001930
 obo:OBI_0001930 rdf:type owl:Class ;
                 rdfs:subClassOf obo:OBI_0001933 ;
+                obo:IAO_0000114 obo:IAO_0000123 ;
                 obo:IAO_0000115 "A value specification that is specifies one category out of a fixed number of nominal categories"@en ;
+                obo:IAO_0000117 "PERSON:Bjoern Peters" ;
                 rdfs:label "categorical value specification" .
 
 
@@ -2481,7 +2643,9 @@ obo:OBI_0001931 rdf:type owl:Class ;
                                   owl:onProperty obo:OBI_0001937 ;
                                   owl:minCardinality "1"^^xsd:nonNegativeInteger
                                 ] ;
+                obo:IAO_0000114 obo:IAO_0000123 ;
                 obo:IAO_0000115 "A value specification that consists of two parts: a numeral and a unit label"@en ;
+                obo:IAO_0000117 "PERSON:Bjoern Peters" ;
                 rdfs:label "scalar value specification" .
 
 
@@ -2489,8 +2653,10 @@ obo:OBI_0001931 rdf:type owl:Class ;
 obo:OBI_0001933 rdf:type owl:Class ;
                 rdfs:subClassOf obo:IAO_0000030 ;
                 obo:IAO_0000112 "The value of 'positive' in a classification scheme of \"positive or negative\"; the value of '20g' on the quantitative scale of mass." ;
+                obo:IAO_0000114 obo:IAO_0000122 ;
                 obo:IAO_0000115 "An information content entity that specifies a value within a classification scheme or on a quantitative scale."@en ;
                 obo:IAO_0000116 "This term is currently a descendant of 'information content entity', which requires that it 'is about' something. A value specification of '20g' for a measurement data item of the mass of a particular mouse 'is about' the mass of that mouse. However there are cases where a value specification is not clearly about any particular. In the future we may change 'value specification' to remove the 'is about' requirement." ;
+                obo:IAO_0000117 "PERSON:Bjoern Peters" ;
                 rdfs:label "value specification" .
 
 
@@ -2712,11 +2878,7 @@ obo:UO_1000228 rdf:type owl:Class ;
 
 ###  http://qudt.org/schema/qudt/DerivedUnit
 qudt:DerivedUnit rdf:type owl:Class ;
-                 rdfs:subClassOf qudt:Unit ;
-                 qudt:dbpediaMatch "http://dbpedia.org/resource/Category:SI_derived_units"^^xsd:anyURI ;
-                 rdfs:comment "A DerivedUnit is a type specification for units that are derived from other units."^^rdf:HTML ;
-                 rdfs:isDefinedBy <http://qudt.org/schema/qudt> ;
-                 rdfs:label "Derived Unit" .
+                 rdfs:subClassOf qudt:Unit .
 
 
 ###  http://qudt.org/schema/qudt/Unit
@@ -2757,6 +2919,8 @@ co:PMD_0000000 rdf:type owl:Class ;
                                                     ) ;
                                  rdf:type owl:Class
                                ] ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:comment "Instances of Portions Of Matter whose shape is relevant for their dispostion to participate in a Manufacturing Process may be SemiFinishedProdcuts."@en ,
                             "Instances of Portions Of Matter whose shape is relevant for their dispostion to participate in a manufacturing process may be (subclasses of) objects that bear a 'blank role' in the context of the manufacturing process."@en ,
                             """Material is defined in terms of the three main perspectives that material specifications rely on: the structure of the material (\"intensive quality\"), the performance of the material (\"behavoiral material property\") and the processing the material must have undergone (\"output of some process\").
@@ -2774,6 +2938,8 @@ When defining specific materials/material taxonomies, these three aspects shall 
 ###  https://w3id.org/pmd/co/PMD_0000001
 co:PMD_0000001 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000040 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:comment """It is also representing a distinct physical or conceptual part of a material or substance.
 
 The open energy ontology OEO defines portion of matter as a subclass of object aggregate, which implies countability. Our portion is not (precisely) countable and thus bearer of intensive properties."""@en ,
@@ -2848,11 +3014,13 @@ co:PMD_0000005 rdf:type owl:Class ;
                                                     ) ;
                                  rdf:type owl:Class
                                ] ,
-                               _:genid175 ,
+                               _:genid196 ,
                                [ rdf:type owl:Restriction ;
                                  owl:onProperty obo:RO_0000052 ;
                                  owl:allValuesFrom co:PMD_0000000
                                ] ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:comment """A property is a material trait in terms of the kind and magnitude of response to a specific imposed stimulus. Generally, definitions of properties are made independent of material shape and size.
 (Callister, W.D., Rethwisch, D.G., Materials Science and Engineering, Wiley, 2014)
 
@@ -2874,7 +3042,7 @@ We only deal with intensive (system-size independent) materrial properties. Exte
                                "a disposition of a portion of matter that is realized in a compatible process and whose realization is grounded in the portions intensive qualities"@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
-_:genid175 rdf:type owl:Restriction ;
+_:genid196 rdf:type owl:Restriction ;
             owl:onProperty obo:RO_0000052 ;
             owl:someValuesFrom [ owl:intersectionOf ( co:PMD_0000001
                                                       [ rdf:type owl:Restriction ;
@@ -2888,7 +3056,7 @@ _:genid175 rdf:type owl:Restriction ;
 [ rdf:type owl:Axiom ;
    owl:annotatedSource co:PMD_0000005 ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid175 ;
+   owl:annotatedTarget _:genid196 ;
    rdfs:comment "Due to the duality of object and portion of matter this axiom can not be an equivalent class axiom."@en
  ] .
 
@@ -2896,7 +3064,9 @@ _:genid175 rdf:type owl:Restriction ;
 ###  https://w3id.org/pmd/co/PMD_0000008
 co:PMD_0000008 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000003 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
                obo:IAO_0000116 "an attribute of a process" ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:comment """Process attribute for a process has a similar application to specifically dependened continuant (SDC) for an independent continuant (IC). Furthermore, process attribute describes how SDCs of some participants, i.e., ICs, change in a process. 
 
 Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subclasses of this class."""@en ;
@@ -2944,7 +3114,9 @@ co:PMD_0000068 rdf:type owl:Class ;
                                                       rdf:type owl:Class
                                                     ]
                                ] ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
                obo:IAO_0000116 "For any temporally qualified continuant x@t, there exists a continuant y such that x@t has_state y, meaning that y is the anchor continuant of which x@t is a temporal phase existing at temporal regions t. The relation has_state is functional and signifies that all such temporally qualified continuants are uniquely associated with their basic anchor continuant."@en ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "temporally qualified continuant"@en ;
                skos:definition "A temporally qualified continuant is a continuant that, by reference to a determinate temporal region, is such as to possess its properties only for so long as that period obtains, being otherwise in its essentiality unchanged."@en ;
                co:PMD_0001032 "https://github.com/materialdigital/core-ontology/issues/185" .
@@ -2953,6 +3125,8 @@ co:PMD_0000068 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000075
 co:PMD_0000075 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000602 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "mold"@en-us ,
                           "mould"@en ;
                skos:definition "A device consisting of a hollowed-out cavity that shapes fluid or plastic material into a specific form through the process of solidification or cooling."@en .
@@ -2961,6 +3135,8 @@ co:PMD_0000075 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000501
 co:PMD_0000501 rdf:type owl:Class ;
                rdfs:subClassOf obo:IAO_0000027 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "1D"@en ;
                skos:definition "1D is a data item representing a one-dimensional structure or model representing a single linear dimension, often used in material science simulations or analysis."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
@@ -2969,6 +3145,8 @@ co:PMD_0000501 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000502
 co:PMD_0000502 rdf:type owl:Class ;
                rdfs:subClassOf obo:IAO_0000027 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "2D"@en ;
                skos:definition "A two-dimensional data item is a representation or analysis, commonly applied in studying planar material properties or surface phenomena."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
@@ -2995,7 +3173,9 @@ co:PMD_0000503 rdf:type owl:Class ;
                                                       rdf:type owl:Class
                                                     ]
                                ] ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
                obo:IAO_0000116 "TODO: axiom needs refinement"@en ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "ASTM grainsize"@en ;
                skos:definition "The ASTM grain size is a quality that is measured through a process that follows the ASTM standard."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
@@ -3013,6 +3193,8 @@ co:PMD_0000512 rdf:type owl:Class ;
                                  owl:onProperty co:PMD_0000077 ;
                                  owl:someValuesFrom co:PMD_0020116
                                ] ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "aggregate state"@en ;
                skos:definition "an intensive quality representing the physical state of a material, such as solid, liquid, or gasous"@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
@@ -3021,6 +3203,8 @@ co:PMD_0000512 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000522
 co:PMD_0000522 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000015 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "application of mechanical load"@en ,
                           "mechanical process"@en ;
                skos:definition "An application of mechanical load is the process of applying force or stress to a material to observe its response or measure its properties."@en ,
@@ -3039,6 +3223,8 @@ co:PMD_0000538 rdf:type owl:Class ;
                                                    ]
                                ] ;
                owl:disjointWith co:PMD_0000965 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "bulk"@en ;
                skos:definition "The bulk is a fiat object part that describes the volume or mass of material considered as a whole, often in contrast to surface or interface phenomena."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
@@ -3047,6 +3233,8 @@ co:PMD_0000538 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000544
 co:PMD_0000544 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000602 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                obo:IAO_0000119 "https://www.merriam-webster.com/dictionary/caliper"@en ;
                rdfs:label "Messschieber"@de ,
                           "caliper"@en ;
@@ -3057,6 +3245,8 @@ co:PMD_0000544 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000549
 co:PMD_0000549 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000015 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "change of temperature"@en ;
                skos:definition "change of temperature is a process in which a particpant changes its temperature"@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
@@ -3065,6 +3255,8 @@ co:PMD_0000549 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000551
 co:PMD_0000551 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0025001 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:comment """See the editor note of composition to understand the difference between composition and chemical composition.
 
 See the pattern example of composition to underatand the difference between composition and proportion."""@en ;
@@ -3081,6 +3273,8 @@ co:PMD_0000552 rdf:type owl:Class ;
                                  owl:onProperty obo:RO_0009006 ;
                                  owl:someValuesFrom co:PMD_0000551
                                ] ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "Analyseverfahren für die chemische Zusammensetzung"@de ,
                           "chemical composition analyzing process"@en ;
                skos:definition "A structural property analyzing process that determines the chemical composition of a material by identifying and quantifying its constituent elements and compounds."@en ,
@@ -3090,6 +3284,8 @@ co:PMD_0000552 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000553
 co:PMD_0000553 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020131 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "chemical potential"@en ;
                skos:definition "an intensive quality of a thermodynamic system describing the energy change associated with the addition of a small quantity of a substance to a system at constant temperature and pressure."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
@@ -3110,6 +3306,8 @@ co:PMD_0000560 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000561
 co:PMD_0000561 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000602 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "Reinigungsgerät"@de ,
                           "cleaning device"@en ;
                skos:definition "A device used for removing contaminants from materials or surfaces."@en ,
@@ -3119,6 +3317,8 @@ co:PMD_0000561 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000581
 co:PMD_0000581 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000849 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "Druckprüfverfahren"@de ,
                           "compression testing process"@en ;
                skos:definition "A mechanical property analyzing processs that determines a material's behavior under compressive forces, measuring its compressive strength and modulus."@en ,
@@ -3140,7 +3340,9 @@ co:PMD_0000583 rdf:type owl:Class ;
                                                     ) ;
                                  rdf:type owl:Class
                                ] ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
                obo:IAO_0000116 "The subclass trees of \"Computing Process\" are currently still proposals and serve as a working basis for the discussion round with the simulation/workflow domain experts."@en ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "Datenverarbeitung"@de ,
                           "Rechenprozess"@de ,
                           "computing process"@en ;
@@ -3151,6 +3353,8 @@ co:PMD_0000583 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000587
 co:PMD_0000587 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000015 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "crack growth"@en ;
                skos:definition "The crack growth is an evolution of damage describing the progressive extension of a crack in a material under stress."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
@@ -3168,6 +3372,8 @@ co:PMD_0000591 rdf:type owl:Class ;
                                  owl:onProperty co:PMD_0000077 ;
                                  owl:someValuesFrom co:PMD_0020099
                                ] ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:comment "The finite set of periodic geometric arrangements is described e.g. by the 14 possible Bravais Lattices in three-dimensional space."@en ;
                rdfs:label "crystal structure"@en ;
                skos:definition "an intensive qualtty of a crystal that embodies the periodic geometric arrangement of entities in a crystal lattice."@en ;
@@ -3177,6 +3383,8 @@ co:PMD_0000591 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000592
 co:PMD_0000592 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000034 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "Trennen Funktion"@de ,
                           "cut function"@en ;
                skos:altLabel "Schneidfunktion"@de ;
@@ -3188,6 +3396,8 @@ co:PMD_0000592 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000595
 co:PMD_0000595 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020131 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "defect density"@en ;
                skos:definition "an intensive quality describing the number of defects per unit volume or area in a material, which can affect its mechanical and electronic properties"@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
@@ -3196,6 +3406,8 @@ co:PMD_0000595 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000596
 co:PMD_0000596 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000015 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "deformation"@en ;
                skos:definition "The deformation is a process describing a change in the shape, size, or structure of a material often under the influence of stress or force."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
@@ -3204,6 +3416,8 @@ co:PMD_0000596 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000597
 co:PMD_0000597 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020131 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "density"@en ;
                skos:definition "The density is a universal intensive quality representing the unit mass of a portion of matter per unit volume."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
@@ -3212,6 +3426,8 @@ co:PMD_0000597 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000602
 co:PMD_0000602 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000030 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "Gerät"@de ,
                           "device"@en ;
                skos:definition "A device is an object that is designed to perform a specific function or task involving measurement, manipulation, processing, or analysis."@en ,
@@ -3226,6 +3442,8 @@ co:PMD_0000611 rdf:type owl:Class ;
                                  owl:onProperty obo:RO_0009006 ;
                                  owl:someValuesFrom co:PMD_0020132
                                ] ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "Dimensions Messprozess"@de ,
                           "dimension measuring process"@en ;
                skos:definition "A structural property analyzing process that determines the physical dimensions of a material or object, such as length, width, height, diameter, and thickness, with high accuracy and precision."@en ,
@@ -3247,6 +3465,8 @@ co:PMD_0000614 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000619
 co:PMD_0000619 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020148 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "electric potential"@en ;
                skos:definition "an extensvie quality describing the amount of work needed to move a unit charge from a reference point to a specific location in an electric field."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
@@ -3255,6 +3475,8 @@ co:PMD_0000619 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000636
 co:PMD_0000636 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000602 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                obo:IAO_0000119 "“Extensometer.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/extensometer. Accessed 5 Dec. 2022."@en ;
                rdfs:label "extensometer"@en ;
                skos:definition "A device for measuring minute deformations of test specimens caused by tension, compression, bending, or twisting."@en .
@@ -3263,6 +3485,8 @@ co:PMD_0000636 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000637
 co:PMD_0000637 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000602 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "Materialermüdungsprüfmaschine"@de ,
                           "fatigue testing machine"@en ;
                skos:definition "A device used to test the fatigue resistance of materials by subjecting them to repeated stress cycles."@en ,
@@ -3276,6 +3500,8 @@ co:PMD_0000638 rdf:type owl:Class ;
                                  owl:onProperty obo:BFO_0000117 ;
                                  owl:someValuesFrom co:PMD_0025020
                                ] ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "Ermüdungsprüfverfahren"@de ,
                           "fatigue testing process"@en ;
                skos:altLabel "S-N testing process"@en ,
@@ -3299,6 +3525,8 @@ co:PMD_0000639 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000645
 co:PMD_0000645 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000015 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "formation of notch or scratch"@en ;
                skos:definition "The formation of (a) notch or (a) scratch is a process that describes the creation of small surface imperfections, which can influence a material's mechanical properties."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
@@ -3307,6 +3535,8 @@ co:PMD_0000645 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000648
 co:PMD_0000648 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000602 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "Formmaschine"@de ,
                           "forming machine"@en ;
                skos:definition "A device used for shaping materials under various conditions, including tensile, compressive, and shearing."@en ,
@@ -3362,6 +3592,8 @@ co:PMD_0000663 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000667
 co:PMD_0000667 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000648 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "Schleifmaschine"@de ,
                           "grinding machine"@en ;
                skos:definition "A grinding machine is a forming machine that uses an abrasive wheel to remove material from the surface of a workpiece, typically for finishing or precision work."@en ,
@@ -3370,11 +3602,9 @@ co:PMD_0000667 rdf:type owl:Class ;
 
 ###  https://w3id.org/pmd/co/PMD_0000773
 co:PMD_0000773 rdf:type owl:Class ;
-               rdfs:subClassOf co:PMD_0000848 ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty obo:RO_0000052 ;
-                                 owl:allValuesFrom co:PMD_0000000
-                               ] ;
+               rdfs:subClassOf co:PMD_0000848 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "hardness"@en ;
                skos:definition "The hardness is a mechanical property used as a measure of a material's resistance to localized plastic deformation, often tested by indentation or scratch methods."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
@@ -3383,6 +3613,8 @@ co:PMD_0000773 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000776
 co:PMD_0000776 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000849 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "Härteprüfverfahren"@de ,
                           "hardness testing process"@en ;
                skos:definition "A mechanical property analyzing process that measures a material's resistance to deformation, typically using indentation methods to determine hardness."@en ,
@@ -3393,6 +3625,8 @@ co:PMD_0000776 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000820
 co:PMD_0000820 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000602 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                obo:IAO_0000119 "https://en.wikipedia.org/wiki/Load_cell"@en ;
                rdfs:label "Kraftmessdose"@de ,
                           "load cell"@en ;
@@ -3484,6 +3718,8 @@ co:PMD_0000848 rdf:type owl:Class ;
                                  owl:onProperty co:PMD_0001030 ;
                                  owl:someValuesFrom co:PMD_0000522
                                ] ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:comment "The axiom that mechanical property has realization some application of mechanical load treats only conventional materials and not such effects as magnetostriction etc."@en ;
                rdfs:label "mechanical property"@en ;
                skos:definition """A mechanical property is a material property that inheres in a material M when an object O_target that consists of M is stimulated in a process through an interaction with an object O_stimulus and M changes its stress/strain/..(mechanical?) SDCs.
@@ -3500,6 +3736,8 @@ co:PMD_0000849 rdf:type owl:Class ;
                                  owl:onProperty obo:RO_0009006 ;
                                  owl:someValuesFrom co:PMD_0000848
                                ] ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "Mechanische Eigenschaften Analyseverfahren"@de ,
                           "mechanical property analyzing process"@en ;
                skos:definition "An assay that evaluates the mechanical characteristics of materials, such as strength, hardness, elasticity, and tensile properties, often through tests that measure response to forces and loads."@en ,
@@ -3539,6 +3777,8 @@ co:PMD_0000852 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000853
 co:PMD_0000853 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020131 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:comment "typically observed through crystallographic analysis"@en ;
                rdfs:label "crystallographic texture"@en ;
                skos:definition "an intensive quality describing the arrangement and orientation of grains in a polychrystal"@en ;
@@ -3548,6 +3788,8 @@ co:PMD_0000853 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000886
 co:PMD_0000886 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000648 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "Poliermaschine"@de ,
                           "polishing machine"@en ;
                skos:definition "A polishing machine is a forming machine that smooths the surface of a material by rubbing it with a tool, abrasive, or chemical."@en ,
@@ -3557,6 +3799,8 @@ co:PMD_0000886 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000889
 co:PMD_0000889 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000015 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "pore growth"@en ;
                skos:definition "Pore growth is an evolution of damage describing the process by which voids or pores in a material increase in size, often affecting its mechanical and physical properties."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
@@ -3584,6 +3828,8 @@ co:PMD_0000891 rdf:type owl:Class ;
 co:PMD_0000896 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020131 ;
                owl:disjointWith co:PMD_0000967 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:comment "The pressure is commonly measured in Pascals."@en ;
                rdfs:label "pressure"@en ;
                skos:definition "an intensive quality describing the force exerted per unit area in or on a material."@en ;
@@ -3638,6 +3884,8 @@ co:PMD_0000927 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000942
 co:PMD_0000942 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020131 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "specific surface area"@en ;
                skos:definition "an intensive quality embodying the total surface area of a material per unit of mass or volume."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
@@ -3647,6 +3895,8 @@ co:PMD_0000942 rdf:type owl:Class ;
 co:PMD_0000946 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000501 ;
                owl:disjointWith co:PMD_0000992 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "spectrum"@en ;
                skos:definition "A spectrum is a 1-D information content entity that describes the range of wavelengths or frequencies of a physical property, often used in reference to light, sound, or electromagnetic radiation."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
@@ -3689,6 +3939,8 @@ co:PMD_0000950 rdf:type owl:Class ;
                                                       rdf:type owl:Class
                                                     ]
                                ] ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "stimulating process"@en ;
                skos:definition "The stimulating process is a process describing the application of an external influence, such as force, heat, or radiation, to study material response."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
@@ -3696,11 +3948,9 @@ co:PMD_0000950 rdf:type owl:Class ;
 
 ###  https://w3id.org/pmd/co/PMD_0000952
 co:PMD_0000952 rdf:type owl:Class ;
-               rdfs:subClassOf co:PMD_0000848 ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty obo:RO_0000052 ;
-                                 owl:allValuesFrom co:PMD_0000000
-                               ] ;
+               rdfs:subClassOf co:PMD_0000848 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "strength"@en ;
                skos:definition "The strength is a material property describing the maximum stress a material can withstand before failure."@en ,
                                "The strength is a mechanical property describing the maximum stress a material can withstand before failure."@en ;
@@ -3710,6 +3960,8 @@ co:PMD_0000952 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000953
 co:PMD_0000953 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000015 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "structural and chemical decay"@en ;
                skos:definition "The structural and chemical decay is an evolution of damage describing the deterioration of a material's structure and composition over time due to environmental or operational conditions."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
@@ -3718,6 +3970,8 @@ co:PMD_0000953 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000957
 co:PMD_0000957 rdf:type owl:Class ;
                rdfs:subClassOf obo:OBI_0000070 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "Struktur Eigenschaften Analyseverfahren"@de ,
                           "structural property analyzing process"@en ;
                skos:definition "An assay that examines the external and internal structure and morphology of materials, including the arrangement of atoms, crystals, grains, and phases, often using techniques like microscopy and diffraction."@en ,
@@ -3735,6 +3989,8 @@ co:PMD_0000965 rdf:type owl:Class ;
                                                                  )
                                                    ]
                                ] ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "surface layer (fiat object part)"@en ;
                skos:definition "A surface layer (fiat object part) is a fiat object part that is part of only object. The surface layer is the three dimensional region defining the outermost layer of an object, where surface-interactions with other material entities occur. What is considered as the surface is thus defined by the interaction process."@en ;
                skos:example "When considering optical properties of a surface layer (fiat object part) of a polished piece of metal we likely consider a different three dimensional spatial region than when considering the scratch hardness properties of the same polished piece of metal."@en ;
@@ -3744,6 +4000,8 @@ co:PMD_0000965 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000967
 co:PMD_0000967 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020131 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:comment "The concept refers to an absolute temperature, not to be mistaken with temperature difference."@en ,
                             "To express that an object has a temperature, the property 'intensive bearer of' can be used. It implies a chain of: object consists of some portion of matter and portion of matter bearer of some temperature."@en ;
                rdfs:label "temperature"@en ;
@@ -3754,6 +4012,8 @@ co:PMD_0000967 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000973
 co:PMD_0000973 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000602 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "Zugprüfmaschine"@de ,
                           "tensile testing machine"@en ;
                skos:definition "A device used to test the tensile strength and elongation of materials by applying a stretching force."@en ,
@@ -3763,6 +4023,8 @@ co:PMD_0000973 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000974
 co:PMD_0000974 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000849 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "Zugprüfverfahren"@de ,
                           "tensile testing process"@en ;
                skos:definition "A mechanical property analyzing process that determines a material's response to tensile forces, measuring its tensile strength, elongation, and Young's modulus."@en ,
@@ -3773,6 +4035,8 @@ co:PMD_0000974 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000992
 co:PMD_0000992 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000501 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "time series"@en ;
                skos:definition "A time series is a 1-D information content entity defined by a sequence of data points collected or recorded at successive time intervals, used for analyzing temporal properties or trends."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
@@ -3781,6 +4045,8 @@ co:PMD_0000992 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000997
 co:PMD_0000997 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000561 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:label "Ultraschallreiniger"@de ,
                           "ultrasonic cleaner"@en ;
                skos:definition "A device that uses ultrasound and a cleaning solvent to clean delicate or complex items."@en ,
@@ -3836,6 +4102,8 @@ co:PMD_0020003 rdf:type owl:Class ;
                                  owl:onProperty obo:RO_0000086 ;
                                  owl:someValuesFrom co:PMD_0000591
                                ] ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Philipp von Hartrott" ;
                rdfs:label "crystal"@en ;
                skos:definition "A crystal is an object that has a quality \"crystal structure\"."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
@@ -3855,9 +4123,11 @@ co:PMD_0020004 rdf:type owl:Class ;
                                  owl:onProperty obo:RO_0002351 ;
                                  owl:someValuesFrom co:PMD_0025997
                                ] ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
                obo:IAO_0000116 """See editior note of composition to underatand the difference between composition and chemical composition data items.
 
 To understand the difference between the composition and the composition data item, one has to understand the difference between SDCs and GDCs in BFO. A triple \"material entity has quality compsition\", conveys the fact such quality exists without telling us what are fractions of compounds in this material entity. A triple \"compostion is subject of composition data item\" conveys that there's an information about values of these fractions. Think of comosition data item as a pdf where the composition is documented."""@en ;
+               obo:IAO_0000117 "PERSON: Philipp von Hartrott" ;
                rdfs:comment "These portions of other matters do not have to be portions of specific chemical elements, i.e., atomic composition, but rather portions of other substances, such as nitric acid and water."@en ;
                rdfs:label "composition data item"@en ;
                skos:altLabel "composition specification"@en ;
@@ -3869,6 +4139,8 @@ To understand the difference between the composition and the composition data it
 ###  https://w3id.org/pmd/co/PMD_0020005
 co:PMD_0020005 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020131 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Philipp von Hartrott" ;
                rdfs:label "porosity"@en ;
                skos:definition "itensive quality embodiying the fraction of the materials (enclosing) spatial region occupied by pores."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
@@ -3888,6 +4160,8 @@ co:PMD_0020023 rdf:type owl:Class ;
                                    ] ;
                rdfs:subClassOf obo:OBI_0001930 ,
                                co:PMD_0020098 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Philipp von Hartrott" ;
                rdfs:label "metallic grain structures"@en ;
                skos:definition "Metallic grain structures are descriptors for the morphology of polycrystalline metallic materials. Polycrystalline metallic materials will typically form their grain structures as one of those categories or a transition or mixture state of those."@en ,
                                "The metallic grain structures is a categorical value specification that specifies value of the  metallic grain structure quality. It describes the morphology of polycrystalline metallic materials. Polycrystalline metallic materials will typically form their grain structures as one of those categories or a transition or mixture state of those."@en ;
@@ -5019,6 +5293,8 @@ co:PMD_0020099 rdf:type owl:Class ;
                                    ] ;
                rdfs:subClassOf obo:OBI_0001930 ,
                                co:PMD_0020098 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Philipp von Hartrott" ;
                rdfs:comment """TODO: possibly extend for 2D (Graphene etc)
 
 More elaborate crystal descriptions may be found in http://emmo.info/domain-crystallography/crystallography or https://purls.helmholtz-metadaten.de/disos/cso"""@en ;
@@ -5037,6 +5313,8 @@ More elaborate crystal descriptions may be found in http://emmo.info/domain-crys
 co:PMD_0020101 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000145 ;
                owl:disjointWith co:PMD_0050000 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Philipp von Hartrott" ;
                rdfs:label "proportion"@en ;
                skos:altLabel "concentration"@en ,
                              "fraction"@en ;
@@ -5047,6 +5325,8 @@ co:PMD_0020101 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0020102
 co:PMD_0020102 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020101 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Philipp von Hartrott" ;
                rdfs:label "mass proportion"@en ;
                skos:definition "Mass proportion is a proportion which quantifies the mass of the part relative to the mass of the whole."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
@@ -5055,6 +5335,8 @@ co:PMD_0020102 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0020103
 co:PMD_0020103 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020101 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Philipp von Hartrott" ;
                rdfs:label "molar proportion"@en ;
                skos:altLabel "Molar Ratio"@en ;
                skos:definition "Molar proportion is the proportion which quantifies the entities count of the part in relation to the entities count of the whole."@en ;
@@ -5066,6 +5348,8 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
 ###  https://w3id.org/pmd/co/PMD_0020104
 co:PMD_0020104 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020101 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Philipp von Hartrott" ;
                rdfs:label "volume proportion"@en ;
                skos:definition "Volume proportion is a proportion which quantifies the volume of the part relative to the volume of the whole."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
@@ -5078,6 +5362,8 @@ co:PMD_0020106 rdf:type owl:Class ;
                                  owl:onProperty obo:BFO_0000051 ;
                                  owl:someValuesFrom co:PMD_0000663
                                ] ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Philipp von Hartrott" ;
                rdfs:label "polycrystal"@en ;
                skos:altLabel "Polycrystalline structure"@en ;
                skos:definition "A polycrystal is a connected material entity aggregate that consists of multiple crystal grains joined through crystallographic interfaces."@en ;
@@ -5087,6 +5373,8 @@ co:PMD_0020106 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0020112
 co:PMD_0020112 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020131 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Philipp von Hartrott" ;
                rdfs:label "grain size distribution"@en ;
                skos:definition "An intensive quality describing the lower length scale object aggregate (grains) that is part of the material."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
@@ -5108,6 +5396,8 @@ co:PMD_0020116 rdf:type owl:Class ;
                                    ] ;
                rdfs:subClassOf obo:OBI_0001930 ,
                                co:PMD_0020098 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Philipp von Hartrott" ;
                rdfs:label "aggregate state value"@en ;
                skos:definition "The aggregate state type is a nature constant that concretizes the aggregatge state quality."@en ,
                                "The aggregate state value is a categorical value specification that specifies value of the aggregate state quality."@en ;
@@ -5125,21 +5415,23 @@ co:PMD_0020128 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0020131
 co:PMD_0020131 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000019 ,
-                               _:genid622 ;
+                               _:genid641 ;
                owl:disjointWith co:PMD_0020148 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Philipp von Hartrott" ;
                rdfs:label "intensive quality"@en ;
                skos:altLabel "Point property"@en ;
                skos:definition "An intensive quality is a quality that inheres in only portion of matter and thus is independent of the bearers (system-) size."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
-_:genid622 rdf:type owl:Restriction ;
+_:genid641 rdf:type owl:Restriction ;
             owl:onProperty obo:RO_0000080 ;
             owl:someValuesFrom co:PMD_0000001 .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource co:PMD_0020131 ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid622 ;
+   owl:annotatedTarget _:genid641 ;
    rdfs:comment "Due to the duality of object and portion of matter this axiom can not be an equivalent class axiom."@en
  ] .
 
@@ -5147,6 +5439,8 @@ _:genid622 rdf:type owl:Restriction ;
 ###  https://w3id.org/pmd/co/PMD_0020132
 co:PMD_0020132 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020148 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Philipp von Hartrott" ;
                rdfs:label "size"@en ;
                skos:definition "Size is the quality of a material entity that describes its spatial extend."@en ,
                                "an extensive quality of a material entity that describes its spatial extend."@en ;
@@ -5156,6 +5450,8 @@ co:PMD_0020132 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0020133
 co:PMD_0020133 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020148 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Philipp von Hartrott" ;
                rdfs:comment "Mass is relevant in such processes as gravitation, acceleration, etc."@en ;
                rdfs:label "mass"@en ;
                skos:definition "Mass is fundamental extensive quality."@en ;
@@ -5183,6 +5479,8 @@ co:PMD_0020140 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0020141
 co:PMD_0020141 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000015 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Philipp von Hartrott" ;
                rdfs:comment "Fatigue is typically of interest when the change of the material affects the objects ability to fulfill its function."@en ;
                rdfs:label "fatigue (reaction to repetitive loading)"@en ;
                skos:definition "fatigue is a process that affects an material entities integrity by nucleation and growing cracks."@en .
@@ -5191,6 +5489,8 @@ co:PMD_0020141 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0020142
 co:PMD_0020142 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020148 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Philipp von Hartrott" ;
                obo:IAO_0000119 <http://openenergy-platform.org/ontology/oeo/OEO_00000150> ;
                rdfs:label "energy"@en ;
                skos:definition "an extensive quality of material entities which manifests as a capacity to perform work (such as causing motion or the interaction of molecules)"@en ;
@@ -5207,6 +5507,8 @@ co:PMD_0020143 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0020148
 co:PMD_0020148 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000019 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Philipp von Hartrott" ;
                rdfs:label "extensive quality"@en ;
                skos:definition "An extensive quality is a quality that inheres in only object or object aggregate or fiat object part or chemical entity and is dependent on the bearers (system-) size."@en ,
                                "An extensive quality is a qualty that inheres in only object or object aggregate or fiat object part or chemical entity and is dependent on the bearers (system-) size."@en ;
@@ -5225,6 +5527,8 @@ co:PMD_0020149 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0020150
 co:PMD_0020150 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020132 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Philipp von Hartrott" ;
                rdfs:label "volume"@en ;
                skos:definition "Volume is a three dimensional size."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
@@ -5233,10 +5537,21 @@ co:PMD_0020150 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0020161
 co:PMD_0020161 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000145 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Philipp von Hartrott" ;
                obo:IAO_0000119 """old defintion: 
 Activity (a_X) is a relational property between a chemical species X and a non-ideal solution. a_X is a measure of the effective concentration of a chemical species X in the non-ideal solution, accounting for interactions between particles. It is defined as the product of the concentration and an activity coefficient, where the activity coefficient corrects for non-ideal behavior.""" ;
                rdfs:label "activity (thermodynamic)"@en ;
                skos:definition "Thermodynamic activity is a relational quality that inheres between a chemical species and a non-ideal solution and represents the effective concentration of the species accounting for particle interactions."@en .
+
+
+###  https://w3id.org/pmd/co/PMD_0020199
+co:PMD_0020199 rdf:type owl:Class ;
+               rdfs:subClassOf co:PMD_0020132 ;
+               rdfs:label "Fläche"@de ,
+                          "area"@en ;
+               skos:definition "Area a two dimesional size"@en ;
+               skos:example "Section area or a surface area"@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020200
@@ -5250,6 +5565,8 @@ co:PMD_0020200 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0020207
 co:PMD_0020207 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020103 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Philipp von Hartrott" ;
                rdfs:label "amount of substance"@en ;
                skos:definition "Amount of substance n is a molar proportion when the whole is an object aggregate N, which has avogadro number objects (of same type) as parts (n = N/N_A)."@en .
 
@@ -5280,6 +5597,8 @@ co:PMD_0020216 rdf:type owl:Class ;
                                                )
                                    ] ;
                rdfs:subClassOf obo:OBI_0001930 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Philipp von Hartrott" ;
                rdfs:label "order scale value"@en ;
                skos:definition "possible values of characteristic length over which structural correlations persist in a material"@en .
 
@@ -5296,6 +5615,8 @@ co:PMD_0020220 rdf:type owl:Class ;
                                  owl:onProperty co:PMD_0000077 ;
                                  owl:someValuesFrom co:PMD_0020216
                                ] ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Philipp von Hartrott" ;
                rdfs:label "order scale"@en ;
                skos:definition "characteristic length over which structural correlations persist in a material"@en .
 
@@ -5307,7 +5628,9 @@ co:PMD_0020243 rdf:type owl:Class ;
                                  owl:onProperty obo:RO_0000080 ;
                                  owl:someValuesFrom co:PMD_0020106
                                ] ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
                obo:IAO_0000116 "size values of indiviudal grains are properties of the respective objects"@en ;
+               obo:IAO_0000117 "PERSON: Philipp von Hartrott" ;
                rdfs:label "grain size"@en ;
                skos:definition "an intensive quality epitomizing the average size of the grains of a polycrystal"@en .
 
@@ -5315,7 +5638,9 @@ co:PMD_0020243 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0025001
 co:PMD_0025001 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020131 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
                obo:IAO_0000116 "There's a dfference between composition and chemical compositon for the following reason: chemical compositon is relevant when the mass/volume/mole proportions of chemical elements(!) are identified, whlist composition includes proportions of molecules, other pure chemical substances, or even proptions of objects (in an object aggregate)."@en ;
+               obo:IAO_0000117 "PERSON: Kamilla Zaripova" ;
                rdfs:label "composition"@en ;
                skos:definition "Composition is an intensive quality which defines types and proportions of compounds present in a material entity and is subject of some composition data item."@en ;
                skos:example "4 vol.% nitric acid solution, Styrene-Butadiene-Styrene (SBS) Block Copolymer with 50 vol.% of both styrene and butadiene"@en ;
@@ -5337,6 +5662,8 @@ co:PMD_0025002 rdf:type owl:Class ;
                                                     ) ;
                                  rdf:type owl:Class
                                ] ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Kamilla Zaripova" ;
                rdfs:label "chemical composition data item"@en ;
                skos:altLabel "chemical composition specification"@en ;
                skos:definition "Chemical composition data item is an information content entity that is about composition of a portion of matter. It has members fraction value specifications which specifiy values of propotions of portions of (pure) chemical elements, which are parts of the portion of matter."@en ;
@@ -5356,6 +5683,8 @@ co:PMD_0025003 rdf:type owl:Class ;
                                  owl:onProperty co:PMD_0000077 ;
                                  owl:someValuesFrom co:PMD_0020023
                                ] ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Kamilla Zaripova" ;
                rdfs:comment "ferrite, austenite, martensite, etc."@en ;
                rdfs:label "metallic grain structure"@en ;
                skos:definition "intensive quality epitomizing the distinct phases in the microscopic structure of a metallic material."@en ;
@@ -5365,6 +5694,8 @@ co:PMD_0025003 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0025007
 co:PMD_0025007 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000008 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Kamilla Zaripova" ;
                rdfs:label "frequency"@en ;
                skos:definition "Frequency is a process attribute which characterizes the rate per second of oscillation or vibration."@en ;
                skos:example "Frequency of electromagnetic wave, Frequency of sound wave."@en .
@@ -5415,6 +5746,8 @@ co:PMD_0025009 rdf:type owl:Class ;
                                                       rdf:type owl:Class
                                                     ]
                                ] ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Kamilla Zaripova" ;
                rdfs:comment "material reacting process has always energy minimization as a driving force."@en ;
                rdfs:label "material reacting process"@en ;
                skos:definition "Material reacting process is a process which occurs in a portion of matter due to some of its disposition or behavioral material property which has realization in some  stimulating process. Both the material reacting process and stimulating process must be occurent parts of a planned process, if the planned process takes place."@en .
@@ -5423,6 +5756,8 @@ co:PMD_0025009 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0025010
 co:PMD_0025010 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000549 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Kamilla Zaripova" ;
                rdfs:label "heating"@en ;
                skos:definition "Heating is a change of temperature which corresponds to the increase of temperature in the system or object."@en .
 
@@ -5430,6 +5765,8 @@ co:PMD_0025010 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0025011
 co:PMD_0025011 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000549 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Kamilla Zaripova" ;
                rdfs:label "cooling"@en ;
                skos:definition "Cooling is a change of temperature which corresponds to the decrease of temperature in the system or object."@en .
 
@@ -5437,6 +5774,8 @@ co:PMD_0025011 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0025012
 co:PMD_0025012 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000583 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Kamilla Zaripova" ;
                rdfs:label "analytical calculation"@en ;
                skos:definition "Analytical calculation is a computing process which has value specification or measurement datum as a specified output. It applies a closed-form mathematical expression or formula to a set it specified inputs (value specifications) without requiring stochastic sampling, iterative numerical solving, or data-driven training."@en .
 
@@ -5460,6 +5799,8 @@ co:PMD_0025015 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0025016
 co:PMD_0025016 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0050051 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Kamilla Zaripova" ;
                rdfs:label "Innendurchmesser"@de ,
                           "inner diameter"@en ;
                skos:definition "Der Innendurchmesser ist die Länge einer geraden Linie von einer Innenfläche eines Objekts oder Raums zur anderen Seite seiner Innenfläche durch den Mittelpunkt eines Objekts oder Raums, wenn es eine Innen- und Außenfläche hat."@de ,
@@ -5469,6 +5810,8 @@ co:PMD_0025016 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0025017
 co:PMD_0025017 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0050051 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Kamilla Zaripova" ;
                rdfs:label "Außendurchmesser"@de ,
                           "outer diameter"@en ;
                skos:definition "Der Außendurchmesser ist die Länge einer geraden Linie von einer Außenfläche eines Objekts oder Raums zur anderen Seite seiner Außenfläche durch den Mittelpunkt eines Objekts oder Raums, wenn es eine Innen- und Außenfläche hat."@de ,
@@ -5478,6 +5821,8 @@ co:PMD_0025017 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0025018
 co:PMD_0025018 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000145 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Kamilla Zaripova" ;
                rdfs:label "geometric relational quality"@en ;
                skos:definition "Geometric relational quality is a relational quality describing the geometric relation between two or more independent continuants."@en ;
                skos:example "Elongation of a specimen after a tensile step, i.e., the specimen before and after the test. Angle between a rolling direction of a rolled material and the longitudinal side of a specimen."@en .
@@ -5515,8 +5860,10 @@ co:PMD_0025019 rdf:type owl:Class ;
                                                     ) ;
                                  rdf:type owl:Class
                                ] ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
                obo:IAO_0000116 "Ideally, a temporally qualified continuant must be used as a participant in a process where the qualities of the participant changes.This temporally qualitified continuant has an instance of quality with one on value before the process and another instance of the same quality with another on value after the process."@en ,
                                "In the axiom, the instance of quality in \"refers to\" triple must be the same instance as in \"has quality\" triple."@en ;
+               obo:IAO_0000117 "PERSON: Kamilla Zaripova" ;
                rdfs:label "rate"@en ;
                skos:definition "Rate is a process attribute which describes the change of some quality of some of the participants in a process over time."@en .
 
@@ -5524,6 +5871,8 @@ co:PMD_0025019 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0025020
 co:PMD_0025020 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000849 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Kamilla Zaripova" ;
                rdfs:label "single fatigue testing process"@en ;
                skos:definition "Mechanical property analyzing process that is an occurent part of a fatigue testing process (S-N testing process). A single fatigue testing process assesses how many cycles a material can withstand under the given loading."@en .
 
@@ -5560,6 +5909,8 @@ co:PMD_0025022 rdf:type owl:Class ;
                                                     ) ;
                                  rdf:type owl:Class
                                ] ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Kamilla Zaripova" ;
                rdfs:label "cooling rate"@en ;
                skos:definition "Cooling rate is a process attribute which describes the descreate of temperature of some of the participant in a process over time."@en ;
                skos:example "10 K/s"@en .
@@ -5597,6 +5948,8 @@ co:PMD_0025023 rdf:type owl:Class ;
                                                     ) ;
                                  rdf:type owl:Class
                                ] ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Kamilla Zaripova" ;
                rdfs:label "heating rate"@en ;
                skos:definition "Heating rate is a process attribute which describes the increare of temperature of some of the participant in a process over time"@en ;
                skos:example "1000 K/s"@en .
@@ -5627,6 +5980,8 @@ co:PMD_0025997 rdf:type owl:Class ;
                                  owl:onProperty obo:RO_0002350 ;
                                  owl:allValuesFrom co:PMD_0020004
                                ] ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Kamilla Zaripova" ;
                rdfs:label "fraction value specification"@en ;
                skos:definition "Fraction value specification is a value specification that contains information about quantitative share of a part relative to a specified whole."@en ;
                skos:example "2.05 wt.% of carbon in steel, 4 vol.% of nitric acid in a solution"@en .
@@ -5635,6 +5990,8 @@ co:PMD_0025997 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0040001
 co:PMD_0040001 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020132 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Lars Vogt" ;
                rdfs:comment "Length is a size that describes the spacial extend of its bearer in one dimension."@en ,
                             "Length is a size that describes the spatial extent of its bearer in one dimension."@en ;
                rdfs:label "length"@en ;
@@ -5647,6 +6004,8 @@ co:PMD_0040001 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0050000
 co:PMD_0050000 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000145 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Markus Schilling" ;
                rdfs:label "bond"@en ;
                skos:definition "A bond is a relational quality describing the force interaction between atoms."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
@@ -5655,6 +6014,8 @@ co:PMD_0050000 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0050002
 co:PMD_0050002 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0050000 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Markus Schilling" ;
                obo:IAO_0000119 <https://www.thoughtco.com/metallic-bond-definition-properties-and-examples-4117948> ;
                rdfs:label "metallic bond"@en ;
                skos:definition "A metallic bond is a bond that forms between metal atoms, where electrons are shared in a \"sea\" of electrons that move freely around the metal ions. This type of bonding gives metals their characteristic properties such as conductivity and malleability."@en ;
@@ -5664,6 +6025,8 @@ co:PMD_0050002 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0050051
 co:PMD_0050051 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0040001 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Markus Schilling" ;
                obo:IAO_0000119 "“Diameter.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/diameter. Accessed 5 Dec. 2022." ;
                rdfs:label "Durchmesser"@de ,
                           "diameter"@en ;
@@ -5675,6 +6038,8 @@ co:PMD_0050051 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0050153
 co:PMD_0050153 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0040001 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Markus Schilling" ;
                rdfs:label "Dicke"@de ,
                           "thickness"@en ;
                skos:definition "A length that describes the measured dimension in one direction of a test piece."@en ,
@@ -5684,6 +6049,8 @@ co:PMD_0050153 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0050154
 co:PMD_0050154 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0040001 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Markus Schilling" ;
                rdfs:label "Breite"@de ,
                           "width"@en ;
                rdfs:seeAlso <https://w3id.org/pmd/co/2.0.8/Width> ,
@@ -5695,6 +6062,8 @@ co:PMD_0050154 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0050155
 co:PMD_0050155 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020148 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Markus Schilling" ;
                obo:IAO_0000119 "“Shape.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/shape. Accessed 13 Jan. 2023." ;
                rdfs:label "Form"@de ,
                           "shape"@en ;
@@ -5705,6 +6074,8 @@ co:PMD_0050155 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0050156
 co:PMD_0050156 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0050155 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Markus Schilling" ;
                obo:IAO_0000119 "DIN EN ISO 6892-1:2019" ;
                rdfs:label "Geometrische Form"@de ,
                           "geometry shape"@en ;
@@ -5715,6 +6086,8 @@ co:PMD_0050156 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0050157
 co:PMD_0050157 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0050156 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Markus Schilling" ;
                rdfs:label "3D Geometrie"@de ,
                           "shape 3d"@en ;
                skos:definition "A shape 3D is a geometry shape that exists in three dimensions, having length, width, and height, and can be defined by its spatial properties such as volume and surface area."@en ,
@@ -5725,7 +6098,13 @@ co:PMD_0050157 rdf:type owl:Class ;
 
 ###  https://w3id.org/pmd/co/PMD_0060006
 co:PMD_0060006 rdf:type owl:Class ;
-               rdfs:subClassOf obo:IAO_0000033 ;
+               rdfs:subClassOf obo:IAO_0000033 ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty obo:IAO_0000136 ;
+                                 owl:someValuesFrom co:PMD_0000602
+                               ] ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Hossein Beygi Nasrabadi" ;
                rdfs:label "device specification"@en ;
                skos:definition "A directive information entity that outlines the technical requirements, features, constraints, and performance criteria of a specific device, guiding its design, manufacturing, operation, or maintenance."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
@@ -6390,6 +6769,13 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
                                              skos:definition "Motor of a fatigue testing machine is a part of such machine which is essential for the applicaiton of loading on a sample."@en .
 
 
+###  https://w3id.org/pmd/distel/DISTEL_0002002
+<https://w3id.org/pmd/distel/DISTEL_0002002> rdf:type owl:Class ;
+                                             rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000038> ;
+                                             rdfs:label "percentage reduction of area at fracture"@en ;
+                                             skos:definition "change in cross-sectional area of a specimen after fracture (S_o − S_f), expressed as a percentage of the original cross-sectional area, S_o"@en .
+
+
 ###  https://w3id.org/pmd/distel/DISTEL_0025001
 <https://w3id.org/pmd/distel/DISTEL_0025001> rdf:type owl:Class ;
                                              owl:equivalentClass [ owl:intersectionOf ( co:PMD_0000974
@@ -6534,13 +6920,21 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
                                              skos:definition "Loading amplitute increment is a value of an incease of a loading amplitude in a load increasing fatigue testing process."@en .
 
 
+###  https://w3id.org/pmd/tto/TTO_0000002
+<https://w3id.org/pmd/tto/TTO_0000002> rdf:type owl:Class ;
+                                       rdfs:subClassOf co:PMD_0040001 ;
+                                       rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
+                                       rdfs:label "Durchmesser"@de ,
+                                                  "diameter"@en ;
+                                       rdfs:seeAlso <https://w3id.org/pmd/co/2.0.8/Diameter> ;
+                                       skos:definition "Die Länge einer geraden Linie durch den Mittelpunkt eines Objekts oder Raums."@de ,
+                                                       "The length of a straight line through the center of an object or space."@en ;
+                                       co:definitionSource "“Diameter.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/diameter. Accessed 5 Dec. 2022." .
+
+
 ###  https://w3id.org/pmd/tto/TTO_0000004
 <https://w3id.org/pmd/tto/TTO_0000004> rdf:type owl:Class ;
-                                       rdfs:subClassOf co:PMD_0040001 ,
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty co:relatesTo ;
-                                                         owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000028>
-                                                       ] ;
+                                       rdfs:subClassOf co:PMD_0040001 ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Verlängerung"@de ,
                                                   "elongation"@en ;
@@ -6553,6 +6947,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
 ###  https://w3id.org/pmd/tto/TTO_0000005
 <https://w3id.org/pmd/tto/TTO_0000005> rdf:type owl:Class ;
                                        rdfs:subClassOf co:PMD_0000848 ;
+                                       obo:IAO_0000114 obo:IAO_0000428 ;
                                        rdfs:comment """Dimensional analysis: L
 Unit (e.g. SI): mm"""@en ,
                                                     """Hinweis: Die Dehnung kann mit verschiedenen Kanälen gemessen werden (z. B. bei Verwendung von einem oder zwei Dehnungsmesserkanälen); in der Regel wird als Dehnungswert der mittlere Durchschnittswert der beteiligten Kanäle angegeben, falls zutreffend.
@@ -6570,6 +6965,17 @@ Note: Optical extensometry may require a specific data storage method."""@en ;
                                        co:definitionSource "DIN EN ISO 6892-1:2019" .
 
 
+###  https://w3id.org/pmd/tto/TTO_0000006
+<https://w3id.org/pmd/tto/TTO_0000006> rdf:type owl:Class ;
+                                       rdfs:subClassOf co:PMD_0040001 ;
+                                       rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
+                                       rdfs:label "Dicke"@de ,
+                                                  "thickness"@en ;
+                                       rdfs:seeAlso <https://w3id.org/pmd/co/2.0.8/Thickness> ;
+                                       skos:definition "Diese Klasse beschreibt das gemessene Maß in einer Richtung eines Prüfkörpers."@de ,
+                                                       "This class describes the measured dimension in one direction of a test piece."@en .
+
+
 ###  https://w3id.org/pmd/tto/TTO_0000009
 <https://w3id.org/pmd/tto/TTO_0000009> rdf:type owl:Class ;
                                        rdfs:subClassOf co:PMD_0000952 ;
@@ -6582,9 +6988,21 @@ Note: Optical extensometry may require a specific data storage method."""@en ;
                                        co:definitionSource "DIN EN ISO 6892-1:2019"@en .
 
 
+###  https://w3id.org/pmd/tto/TTO_0000010
+<https://w3id.org/pmd/tto/TTO_0000010> rdf:type owl:Class ;
+                                       rdfs:subClassOf co:PMD_0040001 ;
+                                       rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
+                                       rdfs:label "Breite"@de ,
+                                                  "width"@en ;
+                                       rdfs:seeAlso <https://w3id.org/pmd/co/2.0.8/Width> ;
+                                       skos:definition "Diese Klasse beschreibt eine horizontale Messung eines Objekts, die im rechten Winkel zur Länge des Objekts vorgenommen wird."@de ,
+                                                       "This class describes a horizontal measurement of an object taken at right angles to the length of the object."@en ;
+                                       co:definitionSource <https://www.merriam-webster.com/dictionary/width> .
+
+
 ###  https://w3id.org/pmd/tto/TTO_0000012
 <https://w3id.org/pmd/tto/TTO_0000012> rdf:type owl:Class ;
-                                       rdfs:subClassOf co:PMD_0020132 ;
+                                       rdfs:subClassOf co:PMD_0020199 ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Querschnittsfläche"@de ,
                                                   "cross section area"@en ;
@@ -6596,7 +7014,8 @@ Note: Optical extensometry may require a specific data storage method."""@en ;
 
 ###  https://w3id.org/pmd/tto/TTO_0000015
 <https://w3id.org/pmd/tto/TTO_0000015> rdf:type owl:Class ;
-                                       rdfs:subClassOf co:PMD_0050051 ;
+                                       rdfs:subClassOf co:PMD_0050051 ,
+                                                       <https://w3id.org/pmd/tto/TTO_0000002> ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "End-Probendurchmesser"@de ,
                                                   "diameter after fracture"@en ;
@@ -6684,25 +7103,7 @@ Note: For materials which display discontinuous yielding, but where no work-hard
 
 ###  https://w3id.org/pmd/tto/TTO_0000024
 <https://w3id.org/pmd/tto/TTO_0000024> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000012> ,
-                                                       [ rdf:type owl:Class ;
-                                                         owl:unionOf ( [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                                                                owl:onProperty co:relatesTo ;
-                                                                                                owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000056>
-                                                                                              ]
-                                                                                              [ rdf:type owl:Restriction ;
-                                                                                                owl:onProperty co:relatesTo ;
-                                                                                                owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000060>
-                                                                                              ]
-                                                                                            ) ;
-                                                                         rdf:type owl:Class
-                                                                       ]
-                                                                       [ rdf:type owl:Restriction ;
-                                                                         owl:onProperty co:relatesTo ;
-                                                                         owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000015>
-                                                                       ]
-                                                                     )
-                                                       ] ;
+                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000012> ;
                                        rdfs:comment "Symbol: S_u" ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Kleinster Querschnitt nach dem Bruch"@de ,
@@ -6721,27 +7122,20 @@ Note: It is recommended to measure the original cross-sectional area of the para
                                        co:definitionSource "DIN EN ISO 6892-1:2019" .
 
 
+###  https://w3id.org/pmd/tto/TTO_0000025
+<https://w3id.org/pmd/tto/TTO_0000025> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000042> ;
+                                       rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
+                                       rdfs:label "Bewegungsqualität"@de ,
+                                                  "movement quality"@en ;
+                                       rdfs:seeAlso <https://w3id.org/pmd/tto/MovementQuality> ;
+                                       skos:definition "A movement quality is a physical quality that inheres in a material entity and represents a property of the entity's motion or change of position over time."@en ,
+                                                       "Eine Bewegungsqualität ist eine physikalische Qualität, die einer materiellen Entität innewohnt und eine Eigenschaft der Bewegung oder Positionsänderung der Entität im Laufe der Zeit darstellt."@de .
+
+
 ###  https://w3id.org/pmd/tto/TTO_0000026
 <https://w3id.org/pmd/tto/TTO_0000026> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000012> ,
-                                                       [ rdf:type owl:Class ;
-                                                         owl:unionOf ( [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                                                                owl:onProperty co:relatesTo ;
-                                                                                                owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000029>
-                                                                                              ]
-                                                                                              [ rdf:type owl:Restriction ;
-                                                                                                owl:onProperty co:relatesTo ;
-                                                                                                owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000030>
-                                                                                              ]
-                                                                                            ) ;
-                                                                         rdf:type owl:Class
-                                                                       ]
-                                                                       [ rdf:type owl:Restriction ;
-                                                                         owl:onProperty co:relatesTo ;
-                                                                         owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000027>
-                                                                       ]
-                                                                     )
-                                                       ] ;
+                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000012> ;
                                        rdfs:comment "Symbol: S_o" ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Anfangsquerschnitt innerhalb der parallelen Länge"@de ,
@@ -6754,7 +7148,8 @@ Note: It is recommended to measure the original cross-sectional area of the para
 
 ###  https://w3id.org/pmd/tto/TTO_0000027
 <https://w3id.org/pmd/tto/TTO_0000027> rdf:type owl:Class ;
-                                       rdfs:subClassOf co:PMD_0050051 ;
+                                       rdfs:subClassOf co:PMD_0050051 ,
+                                                       <https://w3id.org/pmd/tto/TTO_0000002> ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Anfangs-Probendurchmesser"@de ,
                                                   "original diameter"@en ;
@@ -6779,7 +7174,8 @@ Note: It is recommended to measure the original cross-sectional area of the para
 
 ###  https://w3id.org/pmd/tto/TTO_0000029
 <https://w3id.org/pmd/tto/TTO_0000029> rdf:type owl:Class ;
-                                       rdfs:subClassOf co:PMD_0050153 ;
+                                       rdfs:subClassOf co:PMD_0050153 ,
+                                                       <https://w3id.org/pmd/tto/TTO_0000006> ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Anfangs-Dicke"@de ,
                                                   "original thickness"@en ;
@@ -6790,7 +7186,8 @@ Note: It is recommended to measure the original cross-sectional area of the para
 
 ###  https://w3id.org/pmd/tto/TTO_0000030
 <https://w3id.org/pmd/tto/TTO_0000030> rdf:type owl:Class ;
-                                       rdfs:subClassOf co:PMD_0050154 ;
+                                       rdfs:subClassOf co:PMD_0050154 ,
+                                                       <https://w3id.org/pmd/tto/TTO_0000010> ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Anfangs-Breite"@de ,
                                                   "original width"@en ;
@@ -6843,15 +7240,7 @@ Note: The concept of parallel length is replaced by the concept of distance betw
 
 ###  https://w3id.org/pmd/tto/TTO_0000034
 <https://w3id.org/pmd/tto/TTO_0000034> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000005> ,
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty co:relatesTo ;
-                                                         owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000017>
-                                                       ] ,
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty obo:RO_0000052 ;
-                                                         owl:allValuesFrom co:PMD_0000000
-                                                       ] ;
+                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000005> ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Extensometer-Dehnung"@de ,
                                                   "percentage extension"@en ;
@@ -6881,15 +7270,7 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
 
 ###  https://w3id.org/pmd/tto/TTO_0000036
 <https://w3id.org/pmd/tto/TTO_0000036> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000005> ,
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty co:relatesTo ;
-                                                         owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000017>
-                                                       ] ,
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty obo:RO_0000052 ;
-                                                         owl:allValuesFrom co:PMD_0000000
-                                                       ] ;
+                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000005> ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Bleibende Extensometer-Dehnung"@de ,
                                                   "percentage permanent extension"@en ;
@@ -6901,22 +7282,7 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
 
 ###  https://w3id.org/pmd/tto/TTO_0000037
 <https://w3id.org/pmd/tto/TTO_0000037> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000005> ,
-                                                       [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty co:relatesTo ;
-                                                                                owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000017>
-                                                                              ]
-                                                                              [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty co:relatesTo ;
-                                                                                owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000023>
-                                                                              ]
-                                                                            ) ;
-                                                         rdf:type owl:Class
-                                                       ] ,
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty obo:RO_0000052 ;
-                                                         owl:allValuesFrom co:PMD_0000000
-                                                       ] ;
+                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000005> ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Plastische Extensometer-Dehnung bei Höchstkraft"@de ,
                                                   "percentage plastic extension at maximum force"@en ;
@@ -6930,17 +7296,7 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
 ###  https://w3id.org/pmd/tto/TTO_0000038
 <https://w3id.org/pmd/tto/TTO_0000038> rdf:type owl:Class ;
                                        rdfs:subClassOf co:PMD_0025018 ,
-                                                       [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty co:relatesTo ;
-                                                                                owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000024>
-                                                                              ]
-                                                                              [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty co:relatesTo ;
-                                                                                owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000026>
-                                                                              ]
-                                                                            ) ;
-                                                         rdf:type owl:Class
-                                                       ] ;
+                                                       <https://w3id.org/pmd/tto/TTO_0000049> ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Brucheinschnürung"@de ,
                                                   "percentage reduction of area"@en ;
@@ -6953,15 +7309,7 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
 
 ###  https://w3id.org/pmd/tto/TTO_0000039
 <https://w3id.org/pmd/tto/TTO_0000039> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000005> ,
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty co:relatesTo ;
-                                                         owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000017>
-                                                       ] ,
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty obo:RO_0000052 ;
-                                                         owl:allValuesFrom co:PMD_0000000
-                                                       ] ;
+                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000005> ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Gesamte Extensometer-Dehnung beim Bruch"@de ,
                                                   "percentage total extension at fracture"@en ;
@@ -6974,22 +7322,7 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
 
 ###  https://w3id.org/pmd/tto/TTO_0000040
 <https://w3id.org/pmd/tto/TTO_0000040> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000005> ,
-                                                       [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty co:relatesTo ;
-                                                                                owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000017>
-                                                                              ]
-                                                                              [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty co:relatesTo ;
-                                                                                owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000023>
-                                                                              ]
-                                                                            ) ;
-                                                         rdf:type owl:Class
-                                                       ] ,
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty obo:RO_0000052 ;
-                                                         owl:allValuesFrom co:PMD_0000000
-                                                       ] ;
+                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000005> ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Gesamte Extensometer-Dehnung bei Höchstkraft"@de ,
                                                   "percentage total extension at maximum force"@en ;
@@ -7002,11 +7335,7 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
 
 ###  https://w3id.org/pmd/tto/TTO_0000041
 <https://w3id.org/pmd/tto/TTO_0000041> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000005> ,
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty obo:RO_0000052 ;
-                                                         owl:allValuesFrom co:PMD_0000000
-                                                       ] ;
+                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000005> ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Streckgrenzen-Extensometer-Dehnung"@de ,
                                                   "percentage yield point extension"@en ;
@@ -7015,6 +7344,17 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
                                                        "For discontinuous yielding materials: extension between the start of yielding and the start of uniform work-hardening, expressed as a percentage of the extensometer gauge length"@en ;
                                        co:definitionSource "DIN EN ISO 6892-1:2019"@en ;
                                        co:symbol "A_e"@en .
+
+
+###  https://w3id.org/pmd/tto/TTO_0000042
+<https://w3id.org/pmd/tto/TTO_0000042> rdf:type owl:Class ;
+                                       rdfs:subClassOf obo:BFO_0000019 ;
+                                       rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
+                                       rdfs:label "Physikalische Qualität"@de ,
+                                                  "physical quality"@en ;
+                                       rdfs:seeAlso <https://w3id.org/pmd/tto/PhysicalQuality> ;
+                                       skos:definition "A physical quality is a quality that inheres in a material entity and represents a measurable or observable property related to its physical state."@en ,
+                                                       "Eine physikalische Qualität ist eine Eigenschaft, die einer materiellen Einheit innewohnt und eine messbare oder beobachtbare Eigenschaft darstellt, die mit ihrem physikalischen Zustand zusammenhängt."@de .
 
 
 ###  https://w3id.org/pmd/tto/TTO_0000043
@@ -7073,9 +7413,19 @@ Source: ISO 6892-1:2019"""@en ;
                                        co:symbol "R_p_0.2"@en .
 
 
+###  https://w3id.org/pmd/tto/TTO_0000049
+<https://w3id.org/pmd/tto/TTO_0000049> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000042> ;
+                                       obo:IAO_0000114 obo:IAO_0000428 ;
+                                       rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
+                                       rdfs:label "Größenrelation"@de ,
+                                                  "size relation"@en ;
+                                       rdfs:seeAlso <https://w3id.org/pmd/tto/SizeRelation> .
+
+
 ###  https://w3id.org/pmd/tto/TTO_0000051
 <https://w3id.org/pmd/tto/TTO_0000051> rdf:type owl:Class ;
-                                       rdfs:subClassOf co:PMD_0025019 ;
+                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000025> ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Dehngeschwindigkeit"@de ,
                                                   "strain rate"@en ;
@@ -7088,7 +7438,7 @@ Source: ISO 6892-1:2019"""@en ;
 
 ###  https://w3id.org/pmd/tto/TTO_0000052
 <https://w3id.org/pmd/tto/TTO_0000052> rdf:type owl:Class ;
-                                       rdfs:subClassOf co:PMD_0025019 ;
+                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000025> ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Spannungsgeschwindigkeit"@de ,
                                                   "stress rate"@en ;
@@ -7106,6 +7456,7 @@ Note: Stress rate is only used in the elastic part of the test."""@en ;
 ###  https://w3id.org/pmd/tto/TTO_0000053
 <https://w3id.org/pmd/tto/TTO_0000053> rdf:type owl:Class ;
                                        rdfs:subClassOf co:PMD_0000952 ;
+                                       obo:IAO_0000114 obo:IAO_0000428 ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Zugfestigkeit"@de ,
                                                   "tensile strength"@en ;
@@ -7118,7 +7469,8 @@ Note: Stress rate is only used in the elastic part of the test."""@en ;
 
 ###  https://w3id.org/pmd/tto/TTO_0000056
 <https://w3id.org/pmd/tto/TTO_0000056> rdf:type owl:Class ;
-                                       rdfs:subClassOf co:PMD_0050153 ;
+                                       rdfs:subClassOf co:PMD_0050153 ,
+                                                       <https://w3id.org/pmd/tto/TTO_0000006> ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "End-Dicke"@de ,
                                                   "thickness after fracture"@en ;
@@ -7142,7 +7494,8 @@ Note: Stress rate is only used in the elastic part of the test."""@en ;
 
 ###  https://w3id.org/pmd/tto/TTO_0000060
 <https://w3id.org/pmd/tto/TTO_0000060> rdf:type owl:Class ;
-                                       rdfs:subClassOf co:PMD_0050154 ;
+                                       rdfs:subClassOf co:PMD_0050154 ,
+                                                       <https://w3id.org/pmd/tto/TTO_0000010> ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "End-Breite"@de ,
                                                   "width after fracture"@en ;
@@ -7154,6 +7507,118 @@ Note: Stress rate is only used in the elastic part of the test."""@en ;
 #################################################################
 #    Individuals
 #################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000002
+obo:IAO_0000002 rdf:type owl:NamedIndividual ;
+                rdfs:label "example to be eventually removed"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000103
+obo:IAO_0000103 rdf:type owl:NamedIndividual ;
+                obo:IAO_0000115 "The term was used in an attempt to structure part of the ontology but in retrospect failed to do a good job"@en ;
+                rdfs:label "failed exploratory term"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000120
+obo:IAO_0000120 rdf:type owl:NamedIndividual ;
+                obo:IAO_0000115 "Class has all its metadata, but is either not guaranteed to be in its final location in the asserted IS_A hierarchy or refers to another class that is not complete."@en ;
+                rdfs:label "metadata complete"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000121
+obo:IAO_0000121 rdf:type owl:NamedIndividual ;
+                obo:IAO_0000115 "Term created to ease viewing/sort terms for development purpose, and will not be included in a release"@en ;
+                rdfs:label "organizational term"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000122
+obo:IAO_0000122 rdf:type owl:NamedIndividual ;
+                obo:IAO_0000115 "Class has undergone final review, is ready for use, and will be included in the next release. Any class lacking \"ready_for_release\" should be considered likely to change place in hierarchy, have its definition refined, or be obsoleted in the next release.  Those classes deemed \"ready_for_release\" will also derived from a chain of ancestor classes that are also \"ready_for_release.\""@en ;
+                rdfs:label "ready for release"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000123
+obo:IAO_0000123 rdf:type owl:NamedIndividual ;
+                obo:IAO_0000115 "Class is being worked on; however, the metadata (including definition) are not complete or sufficiently clear to the branch editors."@en ;
+                rdfs:label "metadata incomplete"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000124
+obo:IAO_0000124 rdf:type owl:NamedIndividual ;
+                obo:IAO_0000115 "Nothing done yet beyond assigning a unique class ID and proposing a preferred term."@en ;
+                rdfs:label "uncurated"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000125
+obo:IAO_0000125 rdf:type owl:NamedIndividual ;
+                obo:IAO_0000115 "All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the term editor."@en ;
+                rdfs:label "pending final vetting"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000226
+obo:IAO_0000226 rdf:type owl:NamedIndividual ;
+                rdfs:label "placeholder removed"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000227
+obo:IAO_0000227 rdf:type owl:NamedIndividual ;
+                obo:IAO_0000116 "An editor note should explain what were the merged terms and the reason for the merge."@en ;
+                rdfs:label "terms merged"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000228
+obo:IAO_0000228 rdf:type owl:NamedIndividual ;
+                obo:IAO_0000116 "This is to be used when the original term has been replaced by a term imported from an other ontology. An editor note should indicate what is the URI of the new term to use."@en ;
+                rdfs:label "term imported"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000229
+obo:IAO_0000229 rdf:type owl:NamedIndividual ;
+                obo:IAO_0000116 "This is to be used when a term has been split in two or more new terms. An editor note should indicate the reason for the split and indicate the URIs of the new terms created."@en ;
+                rdfs:label "term split"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000410
+obo:IAO_0000410 rdf:type owl:NamedIndividual ;
+                obo:IAO_0000116 "Hard to give a definition for. Intuitively a \"natural kind\" rather than a collection of any old things, which a class is able to be, formally. At the meta level, universals are defined as positives, are disjoint with their siblings, have single asserted parents."@en ;
+                obo:IAO_0000119 "A Formal Theory of Substances, Qualities, and Universals, http://ontology.buffalo.edu/bfo/SQU.pdf"@en ;
+                rdfs:label "universal"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000420
+obo:IAO_0000420 rdf:type owl:NamedIndividual ;
+                obo:IAO_0000115 "A defined class is a class that is defined by a set of logically necessary and sufficient conditions but is not a universal"@en ;
+                obo:IAO_0000116 "\"definitions\", in some readings, always are given by necessary and sufficient conditions. So one must be careful (and this is difficult sometimes) to distinguish between defined classes and universal."@en ;
+                rdfs:label "defined class"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000421
+obo:IAO_0000421 rdf:type owl:NamedIndividual ;
+                obo:IAO_0000115 "A named class expression is a logical expression that is given a name. The name can be used in place of the expression."@en ;
+                obo:IAO_0000116 "named class expressions are used in order to have more concise logical definition but their extensions may not be interesting classes on their own. In languages such as OWL, with no provisions for macros, these show up as actuall classes. Tools may with to not show them as such, and to replace uses of the macros with their expansions"@en ;
+                rdfs:label "named class expression"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000423
+obo:IAO_0000423 rdf:type owl:NamedIndividual ;
+                obo:IAO_0000115 "Terms with this status should eventually replaced with a term from another ontology."@en ;
+                obo:IAO_0000119 "group:OBI"@en ;
+                rdfs:label "to be replaced with external ontology term"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000428
+obo:IAO_0000428 rdf:type owl:NamedIndividual ;
+                obo:IAO_0000115 "A term that is metadata complete, has been reviewed, and problems have been identified that require discussion before release. Such a term requires editor note(s) to identify the outstanding issues."@en ;
+                obo:IAO_0000119 "group:OBI"@en ;
+                rdfs:label "requires discussion"@en .
+
+
+###  http://purl.obolibrary.org/obo/OMO_0001000
+obo:OMO_0001000 rdf:type owl:NamedIndividual ;
+                obo:IAO_0000115 "The term was added to the ontology on the assumption it was in scope, but it turned out later that it was not."@en ;
+                obo:IAO_0000116 "This obsolesence reason should be used conservatively. Typical valid examples are: un-necessary grouping classes in disease ontologies, a phenotype term added on the assumption it was a disease."@en ;
+                rdfs:label "out of scope" .
+
 
 ###  http://purl.obolibrary.org/obo/UO_0000010
 obo:UO_0000010 rdf:type owl:NamedIndividual .
@@ -7207,17 +7672,23 @@ obo:UO_0000185 rdf:type owl:NamedIndividual .
 obo:UO_0000228 rdf:type owl:NamedIndividual .
 
 
+###  http://qudt.org/schema/qudt/DerivedUnit
+qudt:DerivedUnit rdf:type owl:NamedIndividual .
+
+
 ###  http://qudt.org/vocab/unit/HZ
 <http://qudt.org/vocab/unit/HZ> rdf:type owl:NamedIndividual ,
                                          qudt:DerivedUnit ,
                                          qudt:Unit ;
                                 dcterms:description """
-  $\\textit{Hertz}$ (symbol $Hz$) is the SI unit of frequency defined as the number of cycles per second of a periodic phenomenon. 
-  One of its most common uses is the description of the sine wave, particularly those used in radio and audio applications, such as the frequency of musical tones. 
+  $\\textit{Hertz}$ (symbol $Hz$) is the SI unit of frequency defined as the number of cycles per second of a periodic phenomenon.
+  One of its most common uses is the description of the sine wave, particularly those used in radio and audio applications, such as the frequency of musical tones.
   The word $\\bf{hertz}$ is named for Heinrich Rudolf Hertz, who was the first to conclusively prove the existence of electromagnetic waves.
   """^^qudt:LatexString ;
-                                qudt:dbpediaMatch "http://dbpedia.org/resource/Hertz"^^xsd:anyURI ;
                                 qudt:informativeReference "https://cdd.iec.ch/cdd/iec62720/iec62720.nsf/Units/0112-2---62720%23UAA170"^^xsd:anyURI ;
+                                qudt:omUnit <http://www.ontology-of-units-of-measure.org/resource/om-2/hertz> ;
+                                qudt:siExactMatch <https://si-digital-framework.org/SI/units/hertz> ;
+                                qudt:symbol "Hz" ;
                                 qudt:wikidataMatch <http://www.wikidata.org/entity/Q39369> ;
                                 rdfs:isDefinedBy <http://qudt.org/vocab/unit> ;
                                 rdfs:label "Herc"@pl ,
@@ -7250,18 +7721,20 @@ obo:UO_0000228 rdf:type owl:NamedIndividual .
 <http://qudt.org/vocab/unit/K> rdf:type owl:NamedIndividual ,
                                         qudt:Unit ;
                                dcterms:description """
-  The unit $\\textit{Kelvin}$ is the SI base unit of temperature, previously called the degree Kelvin. 
-  One kelvin represents the same temperature difference as one degree Celsius. 
+  The unit $\\textit{Kelvin}$ is the SI base unit of temperature, previously called the degree Kelvin.
+  One kelvin represents the same temperature difference as one degree Celsius.
   In 1967 the General Conference on Weights and Measures defined the temperature of the triple point of water
-   (the temperature at which water exists simultaneously in the gaseous, liquid, and solid states) to be exactly 273.16 kelvins. 
-  Since this temperature is also equal to 0.01 u00b0C, the temperature in kelvins is always equal to 273.15 plus the temperature in degrees Celsius. 
-  The kelvin equals exactly 1.8 degrees Fahrenheit. 
+   (the temperature at which water exists simultaneously in the gaseous, liquid, and solid states) to be exactly 273.16 kelvins.
+  Since this temperature is also equal to 0.01 u00b0C, the temperature in kelvins is always equal to 273.15 plus the temperature in degrees Celsius.
+  The kelvin equals exactly 1.8 degrees Fahrenheit.
   The unit is named for the British mathematician and physicist William Thomson (1824-1907),
    later known as Lord Kelvin after he was named Baron Kelvin of Largs.
   """^^qudt:LatexString ;
-                               qudt:dbpediaMatch "http://dbpedia.org/resource/Kelvin"^^xsd:anyURI ;
-                               qudt:informativeReference "http://en.wikipedia.org/wiki/Kelvin?oldid=495075694"^^xsd:anyURI ,
-                                                         "https://cdd.iec.ch/cdd/iec62720/iec62720.nsf/Units/0112-2---62720%23UAA185"^^xsd:anyURI ;
+                               qudt:informativeReference "https://cdd.iec.ch/cdd/iec62720/iec62720.nsf/Units/0112-2---62720%23UAA185"^^xsd:anyURI ,
+                                                         "https://en.wikipedia.org/wiki/Kelvin?oldid=495075694"^^xsd:anyURI ;
+                               qudt:omUnit <http://www.ontology-of-units-of-measure.org/resource/om-2/kelvin> ;
+                               qudt:siExactMatch <https://si-digital-framework.org/SI/units/kelvin> ;
+                               qudt:symbol "K" ;
                                qudt:wikidataMatch <http://www.wikidata.org/entity/Q11579> ;
                                rdfs:isDefinedBy <http://qudt.org/vocab/unit> ;
                                rdfs:label "Kelvin" ,
@@ -7295,10 +7768,10 @@ obo:UO_0000228 rdf:type owl:NamedIndividual .
                                          qudt:DerivedUnit ,
                                          qudt:Unit ;
                                 dcterms:description "The S I unit of area is the square metre."^^rdf:HTML ;
-                                qudt:dbpediaMatch "http://dbpedia.org/resource/Square_metre"^^xsd:anyURI ;
                                 qudt:expression "$sq-m$"^^qudt:LatexString ;
-                                qudt:informativeReference "http://en.wikipedia.org/wiki/Square_metre?oldid=490945508"^^xsd:anyURI ,
-                                                          "https://cdd.iec.ch/cdd/iec62720/iec62720.nsf/Units/0112-2---62720%23UAA744"^^xsd:anyURI ;
+                                qudt:informativeReference "https://cdd.iec.ch/cdd/iec62720/iec62720.nsf/Units/0112-2---62720%23UAA744"^^xsd:anyURI ,
+                                                          "https://en.wikipedia.org/wiki/Square_metre?oldid=490945508"^^xsd:anyURI ;
+                                qudt:symbol "m²" ;
                                 qudt:wikidataMatch <http://www.wikidata.org/entity/Q25343> ;
                                 rdfs:isDefinedBy <http://qudt.org/vocab/unit> ;
                                 rdfs:label "Kvadratni Meter"@sl ,
@@ -7330,7 +7803,8 @@ obo:UO_0000228 rdf:type owl:NamedIndividual .
 
 ###  https://w3id.org/pmd/co/PMD_0020006
 co:PMD_0020006 rdf:type owl:NamedIndividual ;
-               rdfs:label "bravais lattice triclinic primitive"@en ;
+               rdfs:label "bravais lattice triclinic primitive"@en ,
+                          "bravais lattice triclinic primitve"@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -7457,20 +7931,23 @@ co:PMD_0020111 rdf:type owl:NamedIndividual ;
 ###  https://w3id.org/pmd/co/PMD_0020117
 co:PMD_0020117 rdf:type owl:NamedIndividual ;
                rdfs:label "aggregate state solid"@en ;
-               skos:definition "A state where the bonds between entities transmit shear forces."@en ;
+               skos:definition "A state where the bonds between entites trasmit shear forces."@en ,
+                               "A state where the bonds between entities transmit shear forces."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020118
 co:PMD_0020118 rdf:type owl:NamedIndividual ;
                rdfs:label "aggregate state liquid"@en ;
-               skos:definition "A state where the bonds of the entities transmit no shear force."@en ;
+               skos:definition "A state where the bonds of the entites transmit no shear force."@en ,
+                               "A state where the bonds of the entities transmit no shear force."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020119
 co:PMD_0020119 rdf:type owl:NamedIndividual ;
-               rdfs:label "aggregate state gaseous"@en ;
+               rdfs:label "aggregate state gaseous"@en ,
+                          "aggregate state gasous"@en ;
                skos:definition "A state where the entities have no bonding."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
@@ -7478,7 +7955,8 @@ co:PMD_0020119 rdf:type owl:NamedIndividual ;
 ###  https://w3id.org/pmd/co/PMD_0020120
 co:PMD_0020120 rdf:type owl:NamedIndividual ;
                rdfs:label "aggregate state plasma"@en ;
-               skos:definition "An aggregate state where the entities are atom nuclei and have no bonds."@en ;
+               skos:definition "An aggregate state where the entites are atom nuclei and have no bonds."@en ,
+                               "An aggregate state where the entities are atom nuclei and have no bonds."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -7492,7 +7970,8 @@ co:PMD_0020121 rdf:type owl:NamedIndividual ;
 ###  https://w3id.org/pmd/co/PMD_0020122
 co:PMD_0020122 rdf:type owl:NamedIndividual ;
                rdfs:label "aggregate state supercritical fluid"@en ;
-               skos:definition "A state with strong bindings between entities that do not transmit shear force."@en ;
+               skos:definition "A state with strong bindings between entites that do not transmit shear force."@en ,
+                               "A state with strong bindings between entities that do not transmit shear force."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -7506,7 +7985,8 @@ co:PMD_0020123 rdf:type owl:NamedIndividual ;
 ###  https://w3id.org/pmd/co/PMD_0020124
 co:PMD_0020124 rdf:type owl:NamedIndividual ;
                rdfs:label "aggregate state suprafluid"@en ;
-               skos:definition "A state with frictionless binding that transmits no shear force between entities."@en ;
+               skos:definition "A state with frictionless binding that transmits no shear force between entites."@en ,
+                               "A state with frictionless binding that transmits no shear force between entities."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -7621,60 +8101,6 @@ co:PMD_0020242 rdf:type owl:NamedIndividual ;
 #################################################################
 #    Annotations
 #################################################################
-
-obo:IAO_0000002 rdfs:label "example to be eventually removed"@en .
-
-
-obo:IAO_0000103 rdfs:label "failed exploratory term"@en .
-
-
-obo:IAO_0000120 rdfs:label "metadata complete"@en .
-
-
-obo:IAO_0000121 rdfs:label "organizational term"@en .
-
-
-obo:IAO_0000122 rdfs:label "ready for release"@en .
-
-
-obo:IAO_0000123 rdfs:label "metadata incomplete"@en .
-
-
-obo:IAO_0000124 rdfs:label "uncurated"@en .
-
-
-obo:IAO_0000125 rdfs:label "pending final vetting"@en .
-
-
-obo:IAO_0000226 rdfs:label "placeholder removed"@en .
-
-
-obo:IAO_0000227 rdfs:label "terms merged"@en .
-
-
-obo:IAO_0000228 rdfs:label "term imported"@en .
-
-
-obo:IAO_0000229 rdfs:label "term split"@en .
-
-
-obo:IAO_0000410 rdfs:label "universal"@en .
-
-
-obo:IAO_0000420 rdfs:label "defined class"@en .
-
-
-obo:IAO_0000421 rdfs:label "named class expression"@en .
-
-
-obo:IAO_0000423 rdfs:label "to be replaced with external ontology term"@en .
-
-
-obo:IAO_0000428 rdfs:label "requires discussion"@en .
-
-
-obo:OMO_0001000 rdfs:label "out of scope" .
-
 
 obo:UO_0000010 obo:IAO_0000115 "A time unit which is equal to the duration of 9 192 631 770 periods of the radiation corresponding to the transition between the two hyperfine levels of the ground state of the caesium 133 atom." ;
                oboInOwl:hasExactSynonym "s" ;
@@ -7839,18 +8265,11 @@ obo:UO_0000228 obo:IAO_0000115 "A magnetic flux density unit which is equal to o
  ] .
 
 
-co:PMD_0020199 rdfs:label "Fläche"@de ,
-                          "area"@en ;
-               skos:definition "Area a two dimesional size"@en ;
-               skos:example "Section area or a surface area"@en .
-
-
-<https://w3id.org/pmd/tto/TTO_0000042> rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
-                                       rdfs:label "Physikalische Qualität"@de ,
-                                                  "physical quality"@en ;
-                                       rdfs:seeAlso <https://w3id.org/pmd/tto/PhysicalQuality> ;
-                                       skos:definition "A physical quality is a quality that inheres in a material entity and represents a measurable or observable property related to its physical state."@en ,
-                                                       "Eine physikalische Qualität ist eine Eigenschaft, die einer materiellen Einheit innewohnt und eine messbare oder beobachtbare Eigenschaft darstellt, die mit ihrem physikalischen Zustand zusammenhängt."@de .
+qudt:DerivedUnit dcterms:description """
+  <p>A <em>Derived Unit</em> is a type specification for units that are derived from other units.
+  </p>"""^^rdf:HTML ;
+                 rdfs:isDefinedBy <http://qudt.org/schema/qudt> ;
+                 rdfs:label "Derived Unit" .
 
 
 #################################################################
@@ -7995,31 +8414,6 @@ co:PMD_0020199 rdfs:label "Fläche"@de ,
                          ] ;
                rdf:rest [ rdf:type swrl:AtomList ;
                           rdf:first [ rdf:type swrl:ClassAtom ;
-                                      swrl:classPredicate obo:BFO_0000016 ;
-                                      swrl:argument1 <urn:swrl:var#d>
-                                    ] ;
-                          rdf:rest rdf:nil
-                        ]
-             ] ;
-   swrl:head [ rdf:type swrl:AtomList ;
-               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
-                           swrl:propertyPredicate obo:RO_0000091 ;
-                           swrl:argument1 <urn:swrl:var#e> ;
-                           swrl:argument2 <urn:swrl:var#d>
-                         ] ;
-               rdf:rest rdf:nil
-             ]
- ] .
-
-[ rdf:type swrl:Imp ;
-   swrl:body [ rdf:type swrl:AtomList ;
-               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
-                           swrl:propertyPredicate obo:RO_0000053 ;
-                           swrl:argument1 <urn:swrl:var#e> ;
-                           swrl:argument2 <urn:swrl:var#d>
-                         ] ;
-               rdf:rest [ rdf:type swrl:AtomList ;
-                          rdf:first [ rdf:type swrl:ClassAtom ;
                                       swrl:classPredicate obo:BFO_0000019 ;
                                       swrl:argument1 <urn:swrl:var#d>
                                     ] ;
@@ -8079,6 +8473,31 @@ co:PMD_0020199 rdfs:label "Fläche"@de ,
    swrl:head [ rdf:type swrl:AtomList ;
                rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
                            swrl:propertyPredicate obo:RO_0000085 ;
+                           swrl:argument1 <urn:swrl:var#e> ;
+                           swrl:argument2 <urn:swrl:var#d>
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate obo:RO_0000053 ;
+                           swrl:argument1 <urn:swrl:var#e> ;
+                           swrl:argument2 <urn:swrl:var#d>
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate obo:BFO_0000016 ;
+                                      swrl:argument1 <urn:swrl:var#d>
+                                    ] ;
+                          rdf:rest rdf:nil
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate obo:RO_0000091 ;
                            swrl:argument1 <urn:swrl:var#e> ;
                            swrl:argument2 <urn:swrl:var#d>
                          ] ;
