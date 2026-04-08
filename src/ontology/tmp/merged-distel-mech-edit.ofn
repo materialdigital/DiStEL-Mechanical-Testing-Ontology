@@ -136,11 +136,15 @@ Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000010>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000033>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000078>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000100>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000101>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000102>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000104>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000109>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000225>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000308>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000409>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0020000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0020010>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9606>))
@@ -356,6 +360,7 @@ Declaration(Class(<https://w3id.org/pmd/co/PMD_0020148>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020149>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020150>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020161>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0020199>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020200>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020207>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020210>))
@@ -454,9 +459,12 @@ Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0025006>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0025007>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0025008>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0025009>))
+Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000002>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000004>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000005>))
+Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000006>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000009>))
+Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000010>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000012>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000015>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000017>))
@@ -465,6 +473,7 @@ Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000019>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000022>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000023>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000024>))
+Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000025>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000026>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000027>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000028>))
@@ -481,10 +490,12 @@ Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000038>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000039>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000040>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000041>))
+Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000042>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000043>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000044>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000046>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000047>))
+Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000049>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000051>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000052>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000053>))
@@ -563,10 +574,27 @@ Declaration(ObjectProperty(<https://w3id.org/pmd/co/PMD_0020127>))
 Declaration(ObjectProperty(<https://w3id.org/pmd/co/PMD_0025006>))
 Declaration(ObjectProperty(<https://w3id.org/pmd/co/PMD_0025998>))
 Declaration(ObjectProperty(<https://w3id.org/pmd/co/PMD_0025999>))
-Declaration(ObjectProperty(<https://w3id.org/pmd/co/relatesTo>))
 Declaration(DataProperty(<http://purl.obolibrary.org/obo/OBI_0001937>))
 Declaration(DataProperty(<http://purl.obolibrary.org/obo/OBI_0002135>))
 Declaration(DataProperty(<https://w3id.org/pmd/co/PMD_0000006>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000002>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000103>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000120>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000121>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000122>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000123>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000124>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000125>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000226>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000227>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000228>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000229>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000410>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000420>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000421>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000423>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000428>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OMO_0001000>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000010>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000012>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000016>))
@@ -580,6 +608,7 @@ Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000163>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000164>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000185>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000228>))
+Declaration(NamedIndividual(<http://qudt.org/schema/qudt/DerivedUnit>))
 Declaration(NamedIndividual(<http://qudt.org/vocab/unit/HZ>))
 Declaration(NamedIndividual(<http://qudt.org/vocab/unit/K>))
 Declaration(NamedIndividual(<http://qudt.org/vocab/unit/M2>))
@@ -642,9 +671,11 @@ Declaration(AnnotationProperty(dcterms:creator))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
-Declaration(AnnotationProperty(<http://qudt.org/schema/qudt/dbpediaMatch>))
 Declaration(AnnotationProperty(<http://qudt.org/schema/qudt/expression>))
 Declaration(AnnotationProperty(<http://qudt.org/schema/qudt/informativeReference>))
+Declaration(AnnotationProperty(<http://qudt.org/schema/qudt/omUnit>))
+Declaration(AnnotationProperty(<http://qudt.org/schema/qudt/siExactMatch>))
+Declaration(AnnotationProperty(<http://qudt.org/schema/qudt/symbol>))
 Declaration(AnnotationProperty(<http://qudt.org/schema/qudt/wikidataMatch>))
 Declaration(AnnotationProperty(<http://usefulinc.com/ns/doap#repository>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
@@ -2441,6 +2472,16 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000033> "dir
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000033> <http://purl.obolibrary.org/obo/IAO_0000030>)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000033> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/BFO_0000017>))
 
+# Class: <http://purl.obolibrary.org/obo/IAO_0000078> (curation status specification)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000078> "The curation status of the term. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000078> "Better to represent curation as a process with parts and then relate labels to that process (in IAO meeting)"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000078> "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000078> "OBI_0000266"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000078> "curation status specification"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0000078> ObjectOneOf(<http://purl.obolibrary.org/obo/IAO_0000002> <http://purl.obolibrary.org/obo/IAO_0000120> <http://purl.obolibrary.org/obo/IAO_0000121> <http://purl.obolibrary.org/obo/IAO_0000122> <http://purl.obolibrary.org/obo/IAO_0000123> <http://purl.obolibrary.org/obo/IAO_0000124> <http://purl.obolibrary.org/obo/IAO_0000125> <http://purl.obolibrary.org/obo/IAO_0000423> <http://purl.obolibrary.org/obo/IAO_0000428>))
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000078> <http://purl.obolibrary.org/obo/IAO_0000102>)
+
 # Class: <http://purl.obolibrary.org/obo/IAO_0000100> (data set)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/IAO_0000100> "Intensity values in a CEL file or from multiple CEL files comprise a data set (as opposed to the CEL files themselves)."@en)
@@ -2456,6 +2497,12 @@ SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000100> <http://purl.obolibrary.
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000101> "image"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000101> <http://purl.obolibrary.org/obo/IAO_0000308>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000102> (data about an ontology part)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000102> "Data about an ontology part is a data item about a part of an ontology, for example a term"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000102> "data about an ontology part"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000102> <http://purl.obolibrary.org/obo/IAO_0000027>)
 
 # Class: <http://purl.obolibrary.org/obo/IAO_0000104> (plan specification)
 
@@ -2490,10 +2537,27 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000109> "mea
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000109> <http://purl.obolibrary.org/obo/IAO_0000027>)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000109> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0001938> <http://purl.obolibrary.org/obo/OBI_0001933>))
 
+# Class: <http://purl.obolibrary.org/obo/IAO_0000225> (obsolescence reason specification)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000225> "The reason for which a term has been deprecated. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000225> "The creation of this class has been inspired in part by Werner Ceusters' paper, Applying evolutionary terminology auditing to the Gene Ontology."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000225> "obsolescence reason specification"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0000225> ObjectOneOf(<http://purl.obolibrary.org/obo/IAO_0000103> <http://purl.obolibrary.org/obo/IAO_0000226> <http://purl.obolibrary.org/obo/IAO_0000227> <http://purl.obolibrary.org/obo/IAO_0000228> <http://purl.obolibrary.org/obo/IAO_0000229> <http://purl.obolibrary.org/obo/OMO_0001000>))
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000225> <http://purl.obolibrary.org/obo/IAO_0000102>)
+
 # Class: <http://purl.obolibrary.org/obo/IAO_0000308> (figure)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000308> "figure"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000308> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000409> (denotator type)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/IAO_0000409> "The Basic Formal Ontology ontology makes a distinction between Universals and defined classes, where the formal are \"natural kinds\" and the latter arbitrary collections of entities."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000409> "A denotator type indicates how a term should be interpreted from an ontological perspective."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000409> "Barry Smith, Werner Ceusters"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000409> "denotator type"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0000409> ObjectOneOf(<http://purl.obolibrary.org/obo/IAO_0000410> <http://purl.obolibrary.org/obo/IAO_0000420> <http://purl.obolibrary.org/obo/IAO_0000421>))
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000409> <http://purl.obolibrary.org/obo/IAO_0000102>)
 
 # Class: <http://purl.obolibrary.org/obo/IAO_0020000> (identifier)
 
@@ -2516,7 +2580,7 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0020010> ObjectIntersectio
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020010> <http://purl.obolibrary.org/obo/COB_0000035>)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/IAO_0020000>))
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (homo sapiens)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (Homo sapiens)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "Homo sapiens")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "homo sapiens")
@@ -2852,8 +2916,9 @@ SubClassOf(<http://purl.obolibrary.org/obo/UO_1000228> <http://purl.obolibrary.o
 
 # Class: <http://qudt.org/schema/qudt/DerivedUnit> (Derived Unit)
 
-AnnotationAssertion(<http://qudt.org/schema/qudt/dbpediaMatch> <http://qudt.org/schema/qudt/DerivedUnit> "http://dbpedia.org/resource/Category:SI_derived_units"^^xsd:anyURI)
-AnnotationAssertion(rdfs:comment <http://qudt.org/schema/qudt/DerivedUnit> "A DerivedUnit is a type specification for units that are derived from other units."^^rdf:HTML)
+AnnotationAssertion(dcterms:description <http://qudt.org/schema/qudt/DerivedUnit> "
+  <p>A <em>Derived Unit</em> is a type specification for units that are derived from other units.
+  </p>"^^rdf:HTML)
 AnnotationAssertion(rdfs:isDefinedBy <http://qudt.org/schema/qudt/DerivedUnit> <http://qudt.org/schema/qudt>)
 AnnotationAssertion(rdfs:label <http://qudt.org/schema/qudt/DerivedUnit> "Derived Unit")
 SubClassOf(<http://qudt.org/schema/qudt/DerivedUnit> <http://qudt.org/schema/qudt/Unit>)
@@ -2944,6 +3009,7 @@ We only deal with intensive (system-size independent) materrial properties. Exte
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000005> "a disposition of a portion of matter that is realized in a compatible process and whose realization is grounded in the portions intensive qualities"@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000005> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000005> <http://purl.obolibrary.org/obo/BFO_0000016>)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000005> <http://purl.obolibrary.org/obo/BFO_0000017>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000005> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000915> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))))) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001029> <https://w3id.org/pmd/co/PMD_0000915>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000950>)))
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <https://w3id.org/pmd/co/PMD_0000950>))
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/BFO_0000015>))))
@@ -3347,9 +3413,6 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000773> "hardness"@
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000773> "The hardness is a mechanical property used as a measure of a material's resistance to localized plastic deformation, often tested by indentation or scratch methods."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000773> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000773> <https://w3id.org/pmd/co/PMD_0000848>)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0000773> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000915> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))))) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001029> <https://w3id.org/pmd/co/PMD_0000915>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000950>)))
-SubClassOf(<https://w3id.org/pmd/co/PMD_0000773> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000522>))
-SubClassOf(<https://w3id.org/pmd/co/PMD_0000773> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000000>))
 
 # Class: <https://w3id.org/pmd/co/PMD_0000776> (hardness testing process)
 
@@ -3426,7 +3489,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<http://pu
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000000>))
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000522>))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000849> (mechanical property analyzing process)
+# Class: <https://w3id.org/pmd/co/PMD_0000849> (Mechanische Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000849> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0000849> "PERSON: Joerg Waitelonis")
@@ -3572,9 +3635,6 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000952> "The strength is a mechanical property describing the maximum stress a material can withstand before failure."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000952> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000952> <https://w3id.org/pmd/co/PMD_0000848>)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0000952> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000915> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))))) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001029> <https://w3id.org/pmd/co/PMD_0000915>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000950>)))
-SubClassOf(<https://w3id.org/pmd/co/PMD_0000952> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000522>))
-SubClassOf(<https://w3id.org/pmd/co/PMD_0000952> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000000>))
 
 # Class: <https://w3id.org/pmd/co/PMD_0000953> (structural and chemical decay)
 
@@ -3585,7 +3645,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000953> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000953> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000957> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0000957> "PERSON: Joerg Waitelonis")
@@ -4499,6 +4559,14 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020161> "activity (
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020161> "Thermodynamic activity is a relational quality that inheres between a chemical species and a non-ideal solution and represents the effective concentration of the species accounting for particle interactions."@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020161> <http://purl.obolibrary.org/obo/BFO_0000145>)
 
+# Class: <https://w3id.org/pmd/co/PMD_0020199> (Fläche)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020199> "Fläche"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020199> "area"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020199> "Area a two dimesional size"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0020199> "Section area or a surface area"@en)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0020199> <https://w3id.org/pmd/co/PMD_0020132>)
+
 # Class: <https://w3id.org/pmd/co/PMD_0020200> (force)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020200> "force"@en)
@@ -5270,6 +5338,17 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0025009> <https://w3id.org/pmd/co/PMD_0000008>)
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0025009> ObjectAllValuesFrom(<https://w3id.org/pmd/co/PMD_0025006> <https://w3id.org/pmd/distel/DISTEL_0025007>))
 
+# Class: <https://w3id.org/pmd/tto/TTO_0000002> (Durchmesser)
+
+AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000002> <https://w3id.org/pmd/tto>)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000002> "Durchmesser"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000002> "diameter"@en)
+AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/tto/TTO_0000002> <https://w3id.org/pmd/co/2.0.8/Diameter>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000002> "Die Länge einer geraden Linie durch den Mittelpunkt eines Objekts oder Raums."@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000002> "The length of a straight line through the center of an object or space."@en)
+AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000002> "“Diameter.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/diameter. Accessed 5 Dec. 2022.")
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000002> <https://w3id.org/pmd/co/PMD_0040001>)
+
 # Class: <https://w3id.org/pmd/tto/TTO_0000004> (elongation)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000004> <https://w3id.org/pmd/tto>)
@@ -5280,10 +5359,10 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000004> "increase in the original gauge length at any moment during the test"@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000004> "DIN EN ISO 6892-1:2019"@en)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000004> <https://w3id.org/pmd/co/PMD_0040001>)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000004> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/relatesTo> <https://w3id.org/pmd/tto/TTO_0000028>))
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000005> (extension)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/tto/TTO_0000005> <http://purl.obolibrary.org/obo/IAO_0000428>)
 AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/tto/TTO_0000005> "Dimensional analysis: L
 Unit (e.g. SI): mm"@en)
 AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/tto/TTO_0000005> "Hinweis: Die Dehnung kann mit verschiedenen Kanälen gemessen werden (z. B. bei Verwendung von einem oder zwei Dehnungsmesserkanälen); in der Regel wird als Dehnungswert der mittlere Durchschnittswert der beteiligten Kanäle angegeben, falls zutreffend.
@@ -5301,6 +5380,16 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000005> "DIN EN ISO 6892-1:2019")
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000005> <https://w3id.org/pmd/co/PMD_0000848>)
 
+# Class: <https://w3id.org/pmd/tto/TTO_0000006> (Dicke)
+
+AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000006> <https://w3id.org/pmd/tto>)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000006> "Dicke"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000006> "thickness"@en)
+AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/tto/TTO_0000006> <https://w3id.org/pmd/co/2.0.8/Thickness>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000006> "Diese Klasse beschreibt das gemessene Maß in einer Richtung eines Prüfkörpers."@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000006> "This class describes the measured dimension in one direction of a test piece."@en)
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000006> <https://w3id.org/pmd/co/PMD_0040001>)
+
 # Class: <https://w3id.org/pmd/tto/TTO_0000009> (Streckgrenze)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000009> <https://w3id.org/pmd/tto>)
@@ -5312,6 +5401,17 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000009> "DIN EN ISO 6892-1:2019"@en)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000009> <https://w3id.org/pmd/co/PMD_0000952>)
 
+# Class: <https://w3id.org/pmd/tto/TTO_0000010> (width)
+
+AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000010> <https://w3id.org/pmd/tto>)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000010> "Breite"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000010> "width"@en)
+AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/tto/TTO_0000010> <https://w3id.org/pmd/co/2.0.8/Width>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000010> "Diese Klasse beschreibt eine horizontale Messung eines Objekts, die im rechten Winkel zur Länge des Objekts vorgenommen wird."@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000010> "This class describes a horizontal measurement of an object taken at right angles to the length of the object."@en)
+AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000010> <https://www.merriam-webster.com/dictionary/width>)
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000010> <https://w3id.org/pmd/co/PMD_0040001>)
+
 # Class: <https://w3id.org/pmd/tto/TTO_0000012> (cross section area)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000012> <https://w3id.org/pmd/tto>)
@@ -5321,7 +5421,7 @@ AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/tto/TTO_0000012> <https:/
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000012> "Die Querschnittsfläche ist die Fläche eines Schnittes oder eines rechtwinklig geschnittenen oder gebrochenen Stücks eines Objektes in Bezug auf eine Achse."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000012> "The cross section area is an area of a cutting or piece of an object cut off or broken at right angles or related to an axis."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000012> <https://www.merriam-webster.com/dictionary/cross%20section>)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000012> <https://w3id.org/pmd/co/PMD_0020132>)
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000012> <https://w3id.org/pmd/co/PMD_0020199>)
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000015> (End-Probendurchmesser)
 
@@ -5331,10 +5431,10 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000015> "diameter 
 AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/tto/TTO_0000015> <https://w3id.org/pmd/tto/DiameterAfterFracture>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000015> "Die Länge einer geraden Linie durch den Mittelpunkt eines Objekts (Zugprüfstücks), gemessen nach einem Bruch, der während einer Prüfung aufgetreten ist."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000015> "The length of a straight line through the center of an object (tensile test piece) as measured after a fracture occured during a test."@en)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000015> <https://w3id.org/pmd/co/PMD_0040001>)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000015> <https://w3id.org/pmd/co/PMD_0050051>)
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000015> <https://w3id.org/pmd/tto/TTO_0000002>)
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000017> (extensometer gauge length)
+# Class: <https://w3id.org/pmd/tto/TTO_0000017> (Extensometer-Messlänge)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000017> <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000017> "Extensometer-Messlänge"@de)
@@ -5425,7 +5525,16 @@ Note: It is typically measured perpendicular to the direction of the applied for
 Note: It is recommended to measure the original cross-sectional area of the parallel length to an accuracy of ±2 %. However, measuring the original cross-sectional area of the parallel length with an accuracy of ±2 % on small diameter round test pieces, or test pieces with other cross-sectional geometries, may not be possible."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000024> "DIN EN ISO 6892-1:2019")
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000024> <https://w3id.org/pmd/tto/TTO_0000012>)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000024> ObjectUnionOf(ObjectIntersectionOf(ObjectSomeValuesFrom(<https://w3id.org/pmd/co/relatesTo> <https://w3id.org/pmd/tto/TTO_0000056>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/relatesTo> <https://w3id.org/pmd/tto/TTO_0000060>)) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/relatesTo> <https://w3id.org/pmd/tto/TTO_0000015>)))
+
+# Class: <https://w3id.org/pmd/tto/TTO_0000025> (Bewegungsqualität)
+
+AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000025> <https://w3id.org/pmd/tto>)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000025> "Bewegungsqualität"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000025> "movement quality"@en)
+AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/tto/TTO_0000025> <https://w3id.org/pmd/tto/MovementQuality>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000025> "A movement quality is a physical quality that inheres in a material entity and represents a property of the entity's motion or change of position over time."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000025> "Eine Bewegungsqualität ist eine physikalische Qualität, die einer materiellen Entität innewohnt und eine Eigenschaft der Bewegung oder Positionsänderung der Entität im Laufe der Zeit darstellt."@de)
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000025> <https://w3id.org/pmd/tto/TTO_0000042>)
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000026> (Anfangsquerschnitt innerhalb der parallelen Länge)
 
@@ -5438,7 +5547,6 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000026> "This concept describes the initial area of the tensile test piece before any deformation occurs."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000026> "DIN EN ISO 6892-1:2019")
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000026> <https://w3id.org/pmd/tto/TTO_0000012>)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000026> ObjectUnionOf(ObjectIntersectionOf(ObjectSomeValuesFrom(<https://w3id.org/pmd/co/relatesTo> <https://w3id.org/pmd/tto/TTO_0000029>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/relatesTo> <https://w3id.org/pmd/tto/TTO_0000030>)) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/relatesTo> <https://w3id.org/pmd/tto/TTO_0000027>)))
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000027> (original diameter)
 
@@ -5449,8 +5557,8 @@ AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/tto/TTO_0000027> <https:/
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000027> "Die Länge einer geraden Linie durch den Mittelpunkt eines Objekts (Zugprüfkörpers), die vor einer Prüfung gemessen wird."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000027> "The length of a straight line through the center of an object (tensile test piece) as measured prior to a tensile test."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000027> "DIN EN ISO 6892-1:2019"@en)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000027> <https://w3id.org/pmd/co/PMD_0040001>)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000027> <https://w3id.org/pmd/co/PMD_0050051>)
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000027> <https://w3id.org/pmd/tto/TTO_0000002>)
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000028> (original gauge length)
 
@@ -5472,8 +5580,8 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000029> "original 
 AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/tto/TTO_0000029> <https://w3id.org/pmd/tto/OriginalThickness>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000029> "Diese Entität beschreibt die gemessene Dimension in einer Richtung eines Prüfstücks, wie sie vor der Prüfung gemessen wurde."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000029> "This entity describes the measured dimension in one direction of a test piece, as measured before the test."@en)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000029> <https://w3id.org/pmd/co/PMD_0040001>)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000029> <https://w3id.org/pmd/co/PMD_0050153>)
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000029> <https://w3id.org/pmd/tto/TTO_0000006>)
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000030> (original width)
 
@@ -5483,8 +5591,8 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000030> "original 
 AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/tto/TTO_0000030> <https://w3id.org/pmd/tto/OriginalWidth>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000030> "Diese Entität beschreibt eine horizontale Messung eines Objekts (Prüfkörpers) im rechten Winkel zur Länge des Objekts (Prüfkörpers), wie sie vor einer Prüfung gemessen wird."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000030> "This entity describes a horizontal measurement of an object (test piece) taken at right angles to the length of the object (test piece), as measured before a test."@en)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000030> <https://w3id.org/pmd/co/PMD_0040001>)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000030> <https://w3id.org/pmd/co/PMD_0050154>)
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000030> <https://w3id.org/pmd/tto/TTO_0000010>)
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000031> (Parallele Länge)
 
@@ -5541,10 +5649,6 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bezeichnet.")
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000034> "DIN EN ISO 6892-1:2019")
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000034> <https://w3id.org/pmd/tto/TTO_0000005>)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000034> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000915> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))))) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001029> <https://w3id.org/pmd/co/PMD_0000915>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000950>)))
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000034> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000522>))
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000034> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/relatesTo> <https://w3id.org/pmd/tto/TTO_0000017>))
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000034> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000000>))
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000035> (percentage permanent elongation)
 
@@ -5567,10 +5671,6 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000036> "increase in the extensometer gauge length, after removal of a specified stress from the test piece, expressed as a percentage of the extensometer gauge length"@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000036> "DIN EN ISO 6892-1:2019"@en)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000036> <https://w3id.org/pmd/tto/TTO_0000005>)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000036> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000915> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))))) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001029> <https://w3id.org/pmd/co/PMD_0000915>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000950>)))
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000036> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000522>))
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000036> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/relatesTo> <https://w3id.org/pmd/tto/TTO_0000017>))
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000036> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000000>))
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000037> (percentage plastic extension at maximum force)
 
@@ -5583,10 +5683,6 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000037> "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/symbol> <https://w3id.org/pmd/tto/TTO_0000037> "A_g"@en)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000037> <https://w3id.org/pmd/tto/TTO_0000005>)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000037> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000915> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))))) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001029> <https://w3id.org/pmd/co/PMD_0000915>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000950>)))
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000037> ObjectIntersectionOf(ObjectSomeValuesFrom(<https://w3id.org/pmd/co/relatesTo> <https://w3id.org/pmd/tto/TTO_0000017>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/relatesTo> <https://w3id.org/pmd/tto/TTO_0000023>)))
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000037> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000522>))
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000037> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000000>))
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000038> (percentage reduction of area)
 
@@ -5599,7 +5695,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000038> "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/symbol> <https://w3id.org/pmd/tto/TTO_0000038> "Z")
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000038> <https://w3id.org/pmd/co/PMD_0025018>)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000038> ObjectIntersectionOf(ObjectSomeValuesFrom(<https://w3id.org/pmd/co/relatesTo> <https://w3id.org/pmd/tto/TTO_0000024>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/relatesTo> <https://w3id.org/pmd/tto/TTO_0000026>)))
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000038> <https://w3id.org/pmd/tto/TTO_0000049>)
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000039> (percentage total extension at fracture)
 
@@ -5612,10 +5708,6 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000039> "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/symbol> <https://w3id.org/pmd/tto/TTO_0000039> "A_t"@en)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000039> <https://w3id.org/pmd/tto/TTO_0000005>)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000039> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000915> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))))) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001029> <https://w3id.org/pmd/co/PMD_0000915>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000950>)))
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000039> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000522>))
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000039> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/relatesTo> <https://w3id.org/pmd/tto/TTO_0000017>))
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000039> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000000>))
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000040> (Gesamte Extensometer-Dehnung bei Höchstkraft)
 
@@ -5628,10 +5720,6 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000040> "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/symbol> <https://w3id.org/pmd/tto/TTO_0000040> "A_gt"@en)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000040> <https://w3id.org/pmd/tto/TTO_0000005>)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000040> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000915> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))))) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001029> <https://w3id.org/pmd/co/PMD_0000915>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000950>)))
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000040> ObjectIntersectionOf(ObjectSomeValuesFrom(<https://w3id.org/pmd/co/relatesTo> <https://w3id.org/pmd/tto/TTO_0000017>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/relatesTo> <https://w3id.org/pmd/tto/TTO_0000023>)))
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000040> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000522>))
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000040> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000000>))
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000041> (Streckgrenzen-Extensometer-Dehnung)
 
@@ -5644,9 +5732,16 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000041> "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/symbol> <https://w3id.org/pmd/tto/TTO_0000041> "A_e"@en)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000041> <https://w3id.org/pmd/tto/TTO_0000005>)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000041> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000915> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <http://purl.obolibrary.org/obo/BFO_0000008>))))) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001029> <https://w3id.org/pmd/co/PMD_0000915>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000950>)))
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000041> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001030> <https://w3id.org/pmd/co/PMD_0000522>))
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000041> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000000>))
+
+# Class: <https://w3id.org/pmd/tto/TTO_0000042> (physical quality)
+
+AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000042> <https://w3id.org/pmd/tto>)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000042> "Physikalische Qualität"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000042> "physical quality"@en)
+AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/tto/TTO_0000042> <https://w3id.org/pmd/tto/PhysicalQuality>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000042> "A physical quality is a quality that inheres in a material entity and represents a measurable or observable property related to its physical state."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000042> "Eine physikalische Qualität ist eine Eigenschaft, die einer materiellen Einheit innewohnt und eine messbare oder beobachtbare Eigenschaft darstellt, die mit ihrem physikalischen Zustand zusammenhängt."@de)
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000042> <http://purl.obolibrary.org/obo/BFO_0000019>)
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000043> (proof strength)
 
@@ -5700,6 +5795,15 @@ AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org
 AnnotationAssertion(<https://w3id.org/pmd/co/symbol> <https://w3id.org/pmd/tto/TTO_0000047> "R_p_0.2"@en)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000047> <https://w3id.org/pmd/tto/TTO_0000044>)
 
+# Class: <https://w3id.org/pmd/tto/TTO_0000049> (size relation)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/tto/TTO_0000049> <http://purl.obolibrary.org/obo/IAO_0000428>)
+AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000049> <https://w3id.org/pmd/tto>)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000049> "Größenrelation"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000049> "size relation"@en)
+AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/tto/TTO_0000049> <https://w3id.org/pmd/tto/SizeRelation>)
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000049> <https://w3id.org/pmd/tto/TTO_0000042>)
+
 # Class: <https://w3id.org/pmd/tto/TTO_0000051> (strain rate)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000051> <https://w3id.org/pmd/tto>)
@@ -5710,6 +5814,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000051> "increase of strain, measured with an extensometer, in extensometer gauge length, per time"@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000051> "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/symbol> <https://w3id.org/pmd/tto/TTO_0000051> "e^._L_e"@en)
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000051> <https://w3id.org/pmd/tto/TTO_0000025>)
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000052> (stress rate)
 
@@ -5725,9 +5830,11 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 Note: Stress rate is only used in the elastic part of the test."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000052> "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/symbol> <https://w3id.org/pmd/tto/TTO_0000052> "R"@en)
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000052> <https://w3id.org/pmd/tto/TTO_0000025>)
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000053> (tensile strength)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/tto/TTO_0000053> <http://purl.obolibrary.org/obo/IAO_0000428>)
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000053> <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000053> "Zugfestigkeit"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000053> "tensile strength"@en)
@@ -5746,8 +5853,8 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000056> "thickness
 AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/tto/TTO_0000056> <https://w3id.org/pmd/tto/ThicknessAfterFracture>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000056> "Diese Entität beschreibt die gemessene Dimension in einer Richtung eines Prüfstücks, wie sie vor der Prüfung gemessen wurde."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000056> "This entity describes the measured dimension in one direction of a test piece, as measured after the test."@en)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000056> <https://w3id.org/pmd/co/PMD_0040001>)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000056> <https://w3id.org/pmd/co/PMD_0050153>)
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000056> <https://w3id.org/pmd/tto/TTO_0000006>)
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000059> (Obere Streckgrenze)
 
@@ -5769,23 +5876,119 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000060> "width aft
 AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/tto/TTO_0000060> <https://w3id.org/pmd/tto/WidthAfterFracture>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000060> "Diese Entität beschreibt eine horizontale Messung eines Objekts (Prüfkörpers) im rechten Winkel zur Länge des Objekts (Prüfkörpers), wie sie nach einer Prüfung gemessen wird."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000060> "This entity describes a horizontal measurement of an object (test piece) taken at right angles to the length of the object (test piece), as measured after a test."@en)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000060> <https://w3id.org/pmd/co/PMD_0040001>)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000060> <https://w3id.org/pmd/co/PMD_0050154>)
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000060> <https://w3id.org/pmd/tto/TTO_0000010>)
 
 
 ############################
 #   Named Individuals
 ############################
 
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000002> (example to be eventually removed)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000002> "example to be eventually removed"@en)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000103> (failed exploratory term)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000103> "The term was used in an attempt to structure part of the ontology but in retrospect failed to do a good job"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000103> "failed exploratory term"@en)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000120> (metadata complete)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000120> "Class has all its metadata, but is either not guaranteed to be in its final location in the asserted IS_A hierarchy or refers to another class that is not complete."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000120> "metadata complete"@en)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000121> (organizational term)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000121> "Term created to ease viewing/sort terms for development purpose, and will not be included in a release"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000121> "organizational term"@en)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000122> (ready for release)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000122> "Class has undergone final review, is ready for use, and will be included in the next release. Any class lacking \"ready_for_release\" should be considered likely to change place in hierarchy, have its definition refined, or be obsoleted in the next release.  Those classes deemed \"ready_for_release\" will also derived from a chain of ancestor classes that are also \"ready_for_release.\""@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000122> "ready for release"@en)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000123> (metadata incomplete)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000123> "Class is being worked on; however, the metadata (including definition) are not complete or sufficiently clear to the branch editors."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000123> "metadata incomplete"@en)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000124> (uncurated)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000124> "Nothing done yet beyond assigning a unique class ID and proposing a preferred term."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000124> "uncurated"@en)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000125> (pending final vetting)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000125> "All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the term editor."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000125> "pending final vetting"@en)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000226> (placeholder removed)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000226> "placeholder removed"@en)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000227> (terms merged)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000227> "An editor note should explain what were the merged terms and the reason for the merge."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000227> "terms merged"@en)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000228> (term imported)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000228> "This is to be used when the original term has been replaced by a term imported from an other ontology. An editor note should indicate what is the URI of the new term to use."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000228> "term imported"@en)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000229> (term split)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000229> "This is to be used when a term has been split in two or more new terms. An editor note should indicate the reason for the split and indicate the URIs of the new terms created."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000229> "term split"@en)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000410> (universal)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000410> "Hard to give a definition for. Intuitively a \"natural kind\" rather than a collection of any old things, which a class is able to be, formally. At the meta level, universals are defined as positives, are disjoint with their siblings, have single asserted parents."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000410> "A Formal Theory of Substances, Qualities, and Universals, http://ontology.buffalo.edu/bfo/SQU.pdf"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000410> "universal"@en)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000420> (defined class)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000420> "A defined class is a class that is defined by a set of logically necessary and sufficient conditions but is not a universal"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000420> "\"definitions\", in some readings, always are given by necessary and sufficient conditions. So one must be careful (and this is difficult sometimes) to distinguish between defined classes and universal."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000420> "defined class"@en)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000421> (named class expression)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000421> "A named class expression is a logical expression that is given a name. The name can be used in place of the expression."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000421> "named class expressions are used in order to have more concise logical definition but their extensions may not be interesting classes on their own. In languages such as OWL, with no provisions for macros, these show up as actuall classes. Tools may with to not show them as such, and to replace uses of the macros with their expansions"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000421> "named class expression"@en)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000423> (to be replaced with external ontology term)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000423> "Terms with this status should eventually replaced with a term from another ontology."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000423> "group:OBI"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000423> "to be replaced with external ontology term"@en)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000428> (requires discussion)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000428> "A term that is metadata complete, has been reviewed, and problems have been identified that require discussion before release. Such a term requires editor note(s) to identify the outstanding issues."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000428> "group:OBI"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000428> "requires discussion"@en)
+
+# Individual: <http://purl.obolibrary.org/obo/OMO_0001000> (out of scope)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMO_0001000> "The term was added to the ontology on the assumption it was in scope, but it turned out later that it was not."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/OMO_0001000> "This obsolesence reason should be used conservatively. Typical valid examples are: un-necessary grouping classes in disease ontologies, a phenotype term added on the assumption it was a disease."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMO_0001000> "out of scope")
+
 # Individual: <http://qudt.org/vocab/unit/HZ> (हर्ट्ज)
 
 AnnotationAssertion(dcterms:description <http://qudt.org/vocab/unit/HZ> "
-  $\\textit{Hertz}$ (symbol $Hz$) is the SI unit of frequency defined as the number of cycles per second of a periodic phenomenon. 
-  One of its most common uses is the description of the sine wave, particularly those used in radio and audio applications, such as the frequency of musical tones. 
+  $\\textit{Hertz}$ (symbol $Hz$) is the SI unit of frequency defined as the number of cycles per second of a periodic phenomenon.
+  One of its most common uses is the description of the sine wave, particularly those used in radio and audio applications, such as the frequency of musical tones.
   The word $\\bf{hertz}$ is named for Heinrich Rudolf Hertz, who was the first to conclusively prove the existence of electromagnetic waves.
   "^^<http://qudt.org/schema/qudt/LatexString>)
-AnnotationAssertion(<http://qudt.org/schema/qudt/dbpediaMatch> <http://qudt.org/vocab/unit/HZ> "http://dbpedia.org/resource/Hertz"^^xsd:anyURI)
 AnnotationAssertion(<http://qudt.org/schema/qudt/informativeReference> <http://qudt.org/vocab/unit/HZ> "https://cdd.iec.ch/cdd/iec62720/iec62720.nsf/Units/0112-2---62720%23UAA170"^^xsd:anyURI)
+AnnotationAssertion(<http://qudt.org/schema/qudt/omUnit> <http://qudt.org/vocab/unit/HZ> <http://www.ontology-of-units-of-measure.org/resource/om-2/hertz>)
+AnnotationAssertion(<http://qudt.org/schema/qudt/siExactMatch> <http://qudt.org/vocab/unit/HZ> <https://si-digital-framework.org/SI/units/hertz>)
+AnnotationAssertion(<http://qudt.org/schema/qudt/symbol> <http://qudt.org/vocab/unit/HZ> "Hz")
 AnnotationAssertion(<http://qudt.org/schema/qudt/wikidataMatch> <http://qudt.org/vocab/unit/HZ> <http://www.wikidata.org/entity/Q39369>)
 AnnotationAssertion(rdfs:isDefinedBy <http://qudt.org/vocab/unit/HZ> <http://qudt.org/vocab/unit>)
 AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/HZ> "Herc"@pl)
@@ -5818,18 +6021,20 @@ ClassAssertion(<http://qudt.org/schema/qudt/Unit> <http://qudt.org/vocab/unit/HZ
 # Individual: <http://qudt.org/vocab/unit/K> (Kelvin)
 
 AnnotationAssertion(dcterms:description <http://qudt.org/vocab/unit/K> "
-  The unit $\\textit{Kelvin}$ is the SI base unit of temperature, previously called the degree Kelvin. 
-  One kelvin represents the same temperature difference as one degree Celsius. 
+  The unit $\\textit{Kelvin}$ is the SI base unit of temperature, previously called the degree Kelvin.
+  One kelvin represents the same temperature difference as one degree Celsius.
   In 1967 the General Conference on Weights and Measures defined the temperature of the triple point of water
-   (the temperature at which water exists simultaneously in the gaseous, liquid, and solid states) to be exactly 273.16 kelvins. 
-  Since this temperature is also equal to 0.01 u00b0C, the temperature in kelvins is always equal to 273.15 plus the temperature in degrees Celsius. 
-  The kelvin equals exactly 1.8 degrees Fahrenheit. 
+   (the temperature at which water exists simultaneously in the gaseous, liquid, and solid states) to be exactly 273.16 kelvins.
+  Since this temperature is also equal to 0.01 u00b0C, the temperature in kelvins is always equal to 273.15 plus the temperature in degrees Celsius.
+  The kelvin equals exactly 1.8 degrees Fahrenheit.
   The unit is named for the British mathematician and physicist William Thomson (1824-1907),
    later known as Lord Kelvin after he was named Baron Kelvin of Largs.
   "^^<http://qudt.org/schema/qudt/LatexString>)
-AnnotationAssertion(<http://qudt.org/schema/qudt/dbpediaMatch> <http://qudt.org/vocab/unit/K> "http://dbpedia.org/resource/Kelvin"^^xsd:anyURI)
-AnnotationAssertion(<http://qudt.org/schema/qudt/informativeReference> <http://qudt.org/vocab/unit/K> "http://en.wikipedia.org/wiki/Kelvin?oldid=495075694"^^xsd:anyURI)
 AnnotationAssertion(<http://qudt.org/schema/qudt/informativeReference> <http://qudt.org/vocab/unit/K> "https://cdd.iec.ch/cdd/iec62720/iec62720.nsf/Units/0112-2---62720%23UAA185"^^xsd:anyURI)
+AnnotationAssertion(<http://qudt.org/schema/qudt/informativeReference> <http://qudt.org/vocab/unit/K> "https://en.wikipedia.org/wiki/Kelvin?oldid=495075694"^^xsd:anyURI)
+AnnotationAssertion(<http://qudt.org/schema/qudt/omUnit> <http://qudt.org/vocab/unit/K> <http://www.ontology-of-units-of-measure.org/resource/om-2/kelvin>)
+AnnotationAssertion(<http://qudt.org/schema/qudt/siExactMatch> <http://qudt.org/vocab/unit/K> <https://si-digital-framework.org/SI/units/kelvin>)
+AnnotationAssertion(<http://qudt.org/schema/qudt/symbol> <http://qudt.org/vocab/unit/K> "K")
 AnnotationAssertion(<http://qudt.org/schema/qudt/wikidataMatch> <http://qudt.org/vocab/unit/K> <http://www.wikidata.org/entity/Q11579>)
 AnnotationAssertion(rdfs:isDefinedBy <http://qudt.org/vocab/unit/K> <http://qudt.org/vocab/unit>)
 AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/K> "Kelvin")
@@ -5861,10 +6066,10 @@ ClassAssertion(<http://qudt.org/schema/qudt/Unit> <http://qudt.org/vocab/unit/K>
 # Individual: <http://qudt.org/vocab/unit/M2> (Meter Persegi)
 
 AnnotationAssertion(dcterms:description <http://qudt.org/vocab/unit/M2> "The S I unit of area is the square metre."^^rdf:HTML)
-AnnotationAssertion(<http://qudt.org/schema/qudt/dbpediaMatch> <http://qudt.org/vocab/unit/M2> "http://dbpedia.org/resource/Square_metre"^^xsd:anyURI)
 AnnotationAssertion(<http://qudt.org/schema/qudt/expression> <http://qudt.org/vocab/unit/M2> "$sq-m$"^^<http://qudt.org/schema/qudt/LatexString>)
-AnnotationAssertion(<http://qudt.org/schema/qudt/informativeReference> <http://qudt.org/vocab/unit/M2> "http://en.wikipedia.org/wiki/Square_metre?oldid=490945508"^^xsd:anyURI)
 AnnotationAssertion(<http://qudt.org/schema/qudt/informativeReference> <http://qudt.org/vocab/unit/M2> "https://cdd.iec.ch/cdd/iec62720/iec62720.nsf/Units/0112-2---62720%23UAA744"^^xsd:anyURI)
+AnnotationAssertion(<http://qudt.org/schema/qudt/informativeReference> <http://qudt.org/vocab/unit/M2> "https://en.wikipedia.org/wiki/Square_metre?oldid=490945508"^^xsd:anyURI)
+AnnotationAssertion(<http://qudt.org/schema/qudt/symbol> <http://qudt.org/vocab/unit/M2> "m²")
 AnnotationAssertion(<http://qudt.org/schema/qudt/wikidataMatch> <http://qudt.org/vocab/unit/M2> <http://www.wikidata.org/entity/Q25343>)
 AnnotationAssertion(rdfs:isDefinedBy <http://qudt.org/vocab/unit/M2> <http://qudt.org/vocab/unit>)
 AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Kvadratni Meter"@sl)
@@ -5898,6 +6103,7 @@ ClassAssertion(<http://qudt.org/schema/qudt/Unit> <http://qudt.org/vocab/unit/M2
 # Individual: <https://w3id.org/pmd/co/PMD_0020006> (bravais lattice triclinic primitive)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020006> "bravais lattice triclinic primitive"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020006> "bravais lattice triclinic primitve"@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020006> "true"^^xsd:boolean)
 
 # Individual: <https://w3id.org/pmd/co/PMD_0020007> (bravais lattice monoclinic primitive)
@@ -6003,24 +6209,28 @@ AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/
 # Individual: <https://w3id.org/pmd/co/PMD_0020117> (aggregate state solid)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020117> "aggregate state solid"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020117> "A state where the bonds between entites trasmit shear forces."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020117> "A state where the bonds between entities transmit shear forces."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020117> "true"^^xsd:boolean)
 
 # Individual: <https://w3id.org/pmd/co/PMD_0020118> (aggregate state liquid)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020118> "aggregate state liquid"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020118> "A state where the bonds of the entites transmit no shear force."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020118> "A state where the bonds of the entities transmit no shear force."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020118> "true"^^xsd:boolean)
 
 # Individual: <https://w3id.org/pmd/co/PMD_0020119> (aggregate state gaseous)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020119> "aggregate state gaseous"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020119> "aggregate state gasous"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020119> "A state where the entities have no bonding."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020119> "true"^^xsd:boolean)
 
 # Individual: <https://w3id.org/pmd/co/PMD_0020120> (aggregate state plasma)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020120> "aggregate state plasma"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020120> "An aggregate state where the entites are atom nuclei and have no bonds."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020120> "An aggregate state where the entities are atom nuclei and have no bonds."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020120> "true"^^xsd:boolean)
 
@@ -6033,6 +6243,7 @@ AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/
 # Individual: <https://w3id.org/pmd/co/PMD_0020122> (aggregate state supercritical fluid)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020122> "aggregate state supercritical fluid"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020122> "A state with strong bindings between entites that do not transmit shear force."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020122> "A state with strong bindings between entities that do not transmit shear force."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020122> "true"^^xsd:boolean)
 
@@ -6045,6 +6256,7 @@ AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/
 # Individual: <https://w3id.org/pmd/co/PMD_0020124> (aggregate state suprafluid)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020124> "aggregate state suprafluid"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020124> "A state with frictionless binding that transmits no shear force between entites."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020124> "A state with frictionless binding that transmits no shear force between entities."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020124> "true"^^xsd:boolean)
 
@@ -6162,32 +6374,4 @@ DLSafeRule(Body(ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000016> Variable(
 DLSafeRule(Body(ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000019> Variable(<urn:swrl:var#d>)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000053> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000086> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
 DLSafeRule(Body(ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000023> Variable(<urn:swrl:var#d>)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000053> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000087> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
 DLSafeRule(Body(ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000034> Variable(<urn:swrl:var#d>)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000053> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000085> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000002> "example to be eventually removed"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000103> "failed exploratory term"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000120> "metadata complete"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000121> "organizational term"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000122> "ready for release"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000123> "metadata incomplete"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000124> "uncurated"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000125> "pending final vetting"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000226> "placeholder removed"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000227> "terms merged"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000228> "term imported"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000229> "term split"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000410> "universal"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000420> "defined class"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000421> "named class expression"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000423> "to be replaced with external ontology term"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000428> "requires discussion"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMO_0001000> "out of scope")
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020199> "Fläche"@de)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020199> "area"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020199> "Area a two dimesional size"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0020199> "Section area or a surface area"@en)
-AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000042> <https://w3id.org/pmd/tto>)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000042> "Physikalische Qualität"@de)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000042> "physical quality"@en)
-AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/tto/TTO_0000042> <https://w3id.org/pmd/tto/PhysicalQuality>)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000042> "A physical quality is a quality that inheres in a material entity and represents a measurable or observable property related to its physical state."@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000042> "Eine physikalische Qualität ist eine Eigenschaft, die einer materiellen Einheit innewohnt und eine messbare oder beobachtbare Eigenschaft darstellt, die mit ihrem physikalischen Zustand zusammenhängt."@de)
 )

@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                6ece15b5c09b51a1fea902d9f6ee494f94583f5ee5f1bd1ba32327c989ccced1
+CONFIG_HASH=                39d5826f56fbe0beb6b52f105ba6df89222f93c34f04ed250be370b5f667db98
 
 
 # ----------------------------------------
@@ -535,7 +535,7 @@ mirror-pmdco: | $(TMPDIR)
 .PHONY: mirror-tto
 .PRECIOUS: $(MIRRORDIR)/tto.owl
 mirror-tto: | $(TMPDIR)
-	$(ROBOT) convert -I https://raw.githubusercontent.com/materialdigital/tensile-test-ontology/refs/heads/main/tto-full.owl -o $(TMPDIR)/$@.owl
+	$(ROBOT) convert -I https://raw.githubusercontent.com/materialdigital/tensile-test-ontology/refs/heads/main/src/ontology/tto-full.owl -o $(TMPDIR)/$@.owl
 
 
 ## ONTOLOGY: uo
