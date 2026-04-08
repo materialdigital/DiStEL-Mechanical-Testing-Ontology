@@ -43,14 +43,6 @@
     
 
 
-    <!-- https://w3id.org/pmd/tto/TTO_0000004 -->
-
-    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000004">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
-    </rdf:Description>
-    
-
-
     <!-- https://w3id.org/pmd/tto/TTO_0000005 -->
 
     <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000005">
@@ -59,26 +51,10 @@
     
 
 
-    <!-- https://w3id.org/pmd/tto/TTO_0000012 -->
-
-    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000012">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020132"/>
-    </rdf:Description>
-    
-
-
     <!-- https://w3id.org/pmd/tto/TTO_0000015 -->
 
     <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000015">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0050051"/>
-    </rdf:Description>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000019 -->
-
-    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000019">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
     </rdf:Description>
     
 
@@ -103,14 +79,6 @@
 
     <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000030">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0050154"/>
-    </rdf:Description>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000031 -->
-
-    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000031">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
     </rdf:Description>
     
 
