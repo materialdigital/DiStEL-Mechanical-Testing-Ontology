@@ -198,6 +198,7 @@
     <!-- https://w3id.org/pmd/distel/DISTEL_0002002 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0002002">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000068"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000038"/>
         <rdfs:label xml:lang="en">percentage reduction of area at fracture</rdfs:label>
         <skos:definition xml:lang="en">change in cross-sectional area of a specimen after fracture (S_o − S_f), expressed as a percentage of the original cross-sectional area, S_o</skos:definition>
