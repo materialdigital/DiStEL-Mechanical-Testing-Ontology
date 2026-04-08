@@ -2427,7 +2427,7 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0020010> ObjectIntersectio
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020010> <http://purl.obolibrary.org/obo/COB_0000035>)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/IAO_0020000>))
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (Homo sapiens)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (homo sapiens)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "Homo sapiens")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "homo sapiens")
@@ -3315,7 +3315,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> <https://w3id.org/pmd/co/PMD_00
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <https://w3id.org/pmd/co/PMD_0000522>))
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000000>))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000849> (mechanical property analyzing process)
+# Class: <https://w3id.org/pmd/co/PMD_0000849> (Mechanische Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000849> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0000849> "PERSON: Joerg Waitelonis")
@@ -3462,7 +3462,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000953> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000953> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000957> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0000957> "PERSON: Joerg Waitelonis")
@@ -5102,6 +5102,7 @@ SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000100> ObjectSomeValuesFrom(<ht
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0002002> "percentage reduction of area at fracture"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0002002> "change in cross-sectional area of a specimen after fracture (S_o − S_f), expressed as a percentage of the original cross-sectional area, S_o"@en)
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0002002> <https://w3id.org/pmd/distel/DISTEL_0000068>)
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0002002> <https://w3id.org/pmd/tto/TTO_0000038>)
 
 # Class: <https://w3id.org/pmd/distel/DISTEL_0025001> (hot tensile testing process)
@@ -5461,7 +5462,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000035> "DIN EN ISO 6892-1:2019"@en)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000035> <https://w3id.org/pmd/tto/TTO_0000004>)
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000036> (Bleibende Extensometer-Dehnung)
+# Class: <https://w3id.org/pmd/tto/TTO_0000036> (percentage permanent extension)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000036> <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000036> "Bleibende Extensometer-Dehnung"@de)
@@ -5494,7 +5495,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000038> "maximum change in cross-sectional area which has occurred during the test (S_o − S_u), expressed as a percentage of the original cross-sectional area, S_o"@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000038> "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/symbol> <https://w3id.org/pmd/tto/TTO_0000038> "Z")
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000038> <https://w3id.org/pmd/co/PMD_0025018>)
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000038> <https://w3id.org/pmd/co/PMD_0000848>)
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000039> (percentage total extension at fracture)
 
