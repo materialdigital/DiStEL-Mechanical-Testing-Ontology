@@ -5453,7 +5453,7 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
         <rdfs:label xml:lang="en">fatigue loading type value</rdfs:label>
-        <skos:definition xml:lang="en">Fatigue loading type values is a categotical value specification which describes the direction of an applied force in respect to the specimen.</skos:definition>
+        <skos:definition xml:lang="en">Fatigue loading type values is a categotical value specification which describes the direction of an applied force in respect to the specimen during fatigue testing.</skos:definition>
     </owl:Class>
     
 
@@ -5491,7 +5491,7 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Note: some of the loading type can be performed only with a specific control type. It will be proved using SWRL rules.</rdfs:comment>
         <rdfs:label xml:lang="en">fatigue loading type</rdfs:label>
-        <skos:definition xml:lang="en">Fatigue loading type  is process attribute which describes the direction of an applied force in respect to the specimen.</skos:definition>
+        <skos:definition xml:lang="en">Fatigue loading type is process attribute which describes the direction of an applied force in respect to the specimen during fatigue testing.</skos:definition>
     </owl:Class>
     
 
