@@ -17,14 +17,14 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/pmd/distel/">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/distel/2026-04-08"/>
-        <dcterms:bibliographicCitation>distel-mech: DiStEL Mechanical Testing Ontology. Version 2026-04-08, https://w3id.org/pmd/distel/</dcterms:bibliographicCitation>
-        <dcterms:created>2026-04-08</dcterms:created>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/distel/2026-04-16"/>
+        <dcterms:bibliographicCitation>distel-mech: DiStEL Mechanical Testing Ontology. Version 2026-04-16, https://w3id.org/pmd/distel/</dcterms:bibliographicCitation>
+        <dcterms:created>2026-04-16</dcterms:created>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>DiStEL Mechanical Testing Ontology</dcterms:title>
         <owl:priorVersion rdf:resource="https://w3id.org/pmd/distel/"/>
-        <owl:versionInfo>2026-04-08</owl:versionInfo>
+        <owl:versionInfo>2026-04-16</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -8919,6 +8919,41 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000069 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000069">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0025006"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000581"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Compression loading type is a process attribute which describes the direction of an applied load to a specimen in a compression test.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">compression loading type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000070 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000070">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0000071"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0000072"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0000073"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
+        <obo:IAO_0000115 xml:lang="en">Compression loading type value is a categical value specification which efines the exact type of compression loading type</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">compression loading type value</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/distel/DISTEL_0000100 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000100">
@@ -10531,6 +10566,34 @@ Note: Stress rate is only used in the elastic part of the test.</skos:definition
     
 
 
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000071 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000071">
+        <obo:IAO_0000115 xml:lang="en">uniaxial compression loading is a compression loading type characterized by load applied along a single axis without any confinment along two other axes.</obo:IAO_0000115>
+        <rdfs:label>uniaxial compression loading</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000072 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000072">
+        <rdfs:comment xml:lang="en">plain strain compression loading is a compression loading type characterized by specimen load applied along a single axis and the the deformation occurs in-plane.</rdfs:comment>
+        <rdfs:label xml:lang="en">plain strain compression loading</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000073 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000073">
+        <obo:IAO_0000115>axisymmetric compression loading
+TODO</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">axisymmetric compression loading</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -10917,6 +10980,49 @@ Note: Stress rate is only used in the elastic part of the test.</skos:definition
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#d"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#e"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#e"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                 <swrl:classPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#d"/>
                             </rdf:Description>
@@ -11019,49 +11125,6 @@ Note: Stress rate is only used in the elastic part of the test.</skos:definition
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#e"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#d"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#e"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#d"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-                                <swrl:argument1 rdf:resource="urn:swrl:var#d"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#e"/>
                         <swrl:argument2 rdf:resource="urn:swrl:var#d"/>
                     </rdf:Description>

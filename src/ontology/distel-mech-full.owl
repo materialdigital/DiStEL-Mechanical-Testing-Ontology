@@ -17,11 +17,11 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/pmd/distel/distel-mech-full.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/distel/releases/2026-04-08/distel-mech-full.owl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/distel/releases/2026-04-16/distel-mech-full.owl"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>DiStEL Mechanical Testing Ontology</dcterms:title>
-        <owl:versionInfo>2026-04-08</owl:versionInfo>
+        <owl:versionInfo>2026-04-16</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -8904,6 +8904,41 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000069 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000069">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0025006"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000581"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Compression loading type is a process attribute which describes the direction of an applied load to a specimen in a compression test.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">compression loading type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000070 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000070">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0000071"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0000072"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0000073"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
+        <obo:IAO_0000115 xml:lang="en">Compression loading type value is a categical value specification which efines the exact type of compression loading type</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">compression loading type value</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/distel/DISTEL_0000100 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000100">
@@ -10512,6 +10547,34 @@ Note: Stress rate is only used in the elastic part of the test.</skos:definition
         <rdf:type rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000028"/>
         <rdfs:comment>TODO write defintion</rdfs:comment>
         <rdfs:label xml:lang="en">fully reversed loading</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000071 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000071">
+        <obo:IAO_0000115 xml:lang="en">uniaxial compression loading is a compression loading type characterized by load applied along a single axis without any confinment along two other axes.</obo:IAO_0000115>
+        <rdfs:label>uniaxial compression loading</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000072 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000072">
+        <rdfs:comment xml:lang="en">plain strain compression loading is a compression loading type characterized by specimen load applied along a single axis and the the deformation occurs in-plane.</rdfs:comment>
+        <rdfs:label xml:lang="en">plain strain compression loading</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000073 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000073">
+        <obo:IAO_0000115>axisymmetric compression loading
+TODO</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">axisymmetric compression loading</rdfs:label>
     </owl:NamedIndividual>
     
 

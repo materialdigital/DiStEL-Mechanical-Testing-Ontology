@@ -65,3 +65,6 @@ WARN	missing_definition	target strain	textual definition
 WARN	missing_definition	load increasing fatigue testing process	textual definition	
 WARN	missing_definition	initial loading amplitute	textual definition	
 WARN	missing_definition	loading amplitude increment	textual definition	
+INFO	lowercase_definition	uniaxial compression loading	textual definition	uniaxial compression loading is a compression loading type characterized by load applied along a single axis without any confinment along two other axes.@en
+INFO	lowercase_definition	axisymmetric compression loading	textual definition	"axisymmetric compression loading
+TODO"

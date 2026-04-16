@@ -17,11 +17,11 @@
 @base <https://w3id.org/pmd/distel-mech.ttl> .
 
 <https://w3id.org/pmd/distel-mech.ttl> rdf:type owl:Ontology ;
-                                        owl:versionIRI <https://w3id.org/pmd/distel/releases/2026-04-08/distel-mech.ttl> ;
+                                        owl:versionIRI <https://w3id.org/pmd/distel/releases/2026-04-16/distel-mech.ttl> ;
                                         dcterms:description "None" ;
                                         dcterms:license <https://creativecommons.org/licenses/unspecified> ;
                                         dcterms:title "DiStEL Mechanical Testing Ontology" ;
-                                        owl:versionInfo "2026-04-08" .
+                                        owl:versionInfo "2026-04-16" .
 
 #################################################################
 #    Annotation properties
@@ -6572,6 +6572,30 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
                                              skos:definition "Ductlity is a mechanical property which describes the ability of a material to sustain  plastic deformation under tensile load before fracture."@en .
 
 
+###  https://w3id.org/pmd/distel/DISTEL_0000069
+<https://w3id.org/pmd/distel/DISTEL_0000069> rdf:type owl:Class ;
+                                             rdfs:subClassOf co:PMD_0000008 ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty co:PMD_0025006 ;
+                                                               owl:someValuesFrom co:PMD_0000581
+                                                             ] ;
+                                             obo:IAO_0000115 "Compression loading type is a process attribute which describes the direction of an applied load to a specimen in a compression test."@en ;
+                                             rdfs:label "compression loading type"@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000070
+<https://w3id.org/pmd/distel/DISTEL_0000070> rdf:type owl:Class ;
+                                             owl:equivalentClass [ rdf:type owl:Class ;
+                                                                   owl:oneOf ( <https://w3id.org/pmd/distel/DISTEL_0000071>
+                                                                               <https://w3id.org/pmd/distel/DISTEL_0000072>
+                                                                               <https://w3id.org/pmd/distel/DISTEL_0000073>
+                                                                             )
+                                                                 ] ;
+                                             rdfs:subClassOf obo:OBI_0001933 ;
+                                             obo:IAO_0000115 "Compression loading type value is a categical value specification which efines the exact type of compression loading type"@en ;
+                                             rdfs:label "compression loading type value"@en .
+
+
 ###  https://w3id.org/pmd/distel/DISTEL_0000100
 <https://w3id.org/pmd/distel/DISTEL_0000100> rdf:type owl:Class ;
                                              rdfs:subClassOf <https://w3id.org/pmd/distel/DISTEL_0000057> ,
@@ -7798,6 +7822,25 @@ co:PMD_0020242 rdf:type owl:NamedIndividual ;
                                              rdfs:label "fully reversed loading"@en .
 
 
+###  https://w3id.org/pmd/distel/DISTEL_0000071
+<https://w3id.org/pmd/distel/DISTEL_0000071> rdf:type owl:NamedIndividual ;
+                                             obo:IAO_0000115 "uniaxial compression loading is a compression loading type characterized by load applied along a single axis without any confinment along two other axes."@en ;
+                                             rdfs:label "uniaxial compression loading" .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000072
+<https://w3id.org/pmd/distel/DISTEL_0000072> rdf:type owl:NamedIndividual ;
+                                             rdfs:comment "plain strain compression loading is a compression loading type characterized by specimen load applied along a single axis and the the deformation occurs in-plane."@en ;
+                                             rdfs:label "plain strain compression loading"@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000073
+<https://w3id.org/pmd/distel/DISTEL_0000073> rdf:type owl:NamedIndividual ;
+                                             obo:IAO_0000115 """axisymmetric compression loading
+TODO""" ;
+                                             rdfs:label "axisymmetric compression loading"@en .
+
+
 #################################################################
 #    Annotations
 #################################################################
@@ -8168,6 +8211,31 @@ qudt:DerivedUnit dcterms:description """
                          ] ;
                rdf:rest [ rdf:type swrl:AtomList ;
                           rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate obo:BFO_0000023 ;
+                                      swrl:argument1 <urn:swrl:var#d>
+                                    ] ;
+                          rdf:rest rdf:nil
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate obo:RO_0000087 ;
+                           swrl:argument1 <urn:swrl:var#e> ;
+                           swrl:argument2 <urn:swrl:var#d>
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate obo:RO_0000053 ;
+                           swrl:argument1 <urn:swrl:var#e> ;
+                           swrl:argument2 <urn:swrl:var#d>
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
                                       swrl:classPredicate obo:BFO_0000034 ;
                                       swrl:argument1 <urn:swrl:var#d>
                                     ] ;
@@ -8227,31 +8295,6 @@ qudt:DerivedUnit dcterms:description """
    swrl:head [ rdf:type swrl:AtomList ;
                rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
                            swrl:propertyPredicate obo:RO_0000086 ;
-                           swrl:argument1 <urn:swrl:var#e> ;
-                           swrl:argument2 <urn:swrl:var#d>
-                         ] ;
-               rdf:rest rdf:nil
-             ]
- ] .
-
-[ rdf:type swrl:Imp ;
-   swrl:body [ rdf:type swrl:AtomList ;
-               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
-                           swrl:propertyPredicate obo:RO_0000053 ;
-                           swrl:argument1 <urn:swrl:var#e> ;
-                           swrl:argument2 <urn:swrl:var#d>
-                         ] ;
-               rdf:rest [ rdf:type swrl:AtomList ;
-                          rdf:first [ rdf:type swrl:ClassAtom ;
-                                      swrl:classPredicate obo:BFO_0000023 ;
-                                      swrl:argument1 <urn:swrl:var#d>
-                                    ] ;
-                          rdf:rest rdf:nil
-                        ]
-             ] ;
-   swrl:head [ rdf:type swrl:AtomList ;
-               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
-                           swrl:propertyPredicate obo:RO_0000087 ;
                            swrl:argument1 <urn:swrl:var#e> ;
                            swrl:argument2 <urn:swrl:var#d>
                          ] ;
