@@ -631,6 +631,11 @@ https://w3id.org/pmd/distel/DISTEL_0000070
 https://w3id.org/pmd/distel/DISTEL_0000071
 https://w3id.org/pmd/distel/DISTEL_0000072
 https://w3id.org/pmd/distel/DISTEL_0000073
+https://w3id.org/pmd/distel/DISTEL_0000074
+https://w3id.org/pmd/distel/DISTEL_0000075
+https://w3id.org/pmd/distel/DISTEL_0000076
+https://w3id.org/pmd/distel/DISTEL_0000077
+https://w3id.org/pmd/distel/DISTEL_0000078
 https://w3id.org/pmd/distel/DISTEL_0000100
 https://w3id.org/pmd/distel/DISTEL_0002002
 https://w3id.org/pmd/distel/DISTEL_0025001

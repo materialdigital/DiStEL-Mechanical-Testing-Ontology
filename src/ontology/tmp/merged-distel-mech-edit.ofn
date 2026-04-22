@@ -447,6 +447,11 @@ Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000067>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000068>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000069>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000070>))
+Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000074>))
+Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000075>))
+Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000076>))
+Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000077>))
+Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000078>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000100>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0002002>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0025001>))
@@ -3320,7 +3325,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> <https://w3id.org/pmd/co/PMD_00
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <https://w3id.org/pmd/co/PMD_0000522>))
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000000>))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000849> (mechanical property analyzing process)
+# Class: <https://w3id.org/pmd/co/PMD_0000849> (Mechanische Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000849> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0000849> "PERSON: Joerg Waitelonis")
@@ -3467,7 +3472,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000953> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000953> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000957> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0000957> "PERSON: Joerg Waitelonis")
@@ -5108,7 +5113,39 @@ SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000069> ObjectSomeValuesFrom(<ht
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/pmd/distel/DISTEL_0000070> "Compression loading type value is a categical value specification which efines the exact type of compression loading type"@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000070> "compression loading type value"@en)
 EquivalentClasses(<https://w3id.org/pmd/distel/DISTEL_0000070> ObjectOneOf(<https://w3id.org/pmd/distel/DISTEL_0000071> <https://w3id.org/pmd/distel/DISTEL_0000072> <https://w3id.org/pmd/distel/DISTEL_0000073>))
-SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000070> <http://purl.obolibrary.org/obo/OBI_0001933>)
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000070> <http://purl.obolibrary.org/obo/OBI_0001930>)
+
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000074> (height reduction)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000074> "height reduction"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000074> "Height reduction is a mechanical property realized in a compression test. It is defined as a decrease of specimen's length before and after process in the direction of applied load."@en)
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000074> <https://w3id.org/pmd/co/PMD_0000848>)
+
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000075> (strain rate sensitivity)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000075> "strain rate sensitivity"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000075> "Strain rate sensitivity is a mechanical property of a material which is evaluated in a series of tensile or compression tests. It is determined as a relation between change in stress and change in strain expressed in log scale."@en)
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000075> <https://w3id.org/pmd/co/PMD_0000848>)
+
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000076> (defomation activation energy)
+
+AnnotationAssertion(<http://qudt.org/schema/qudt/symbol> <https://w3id.org/pmd/distel/DISTEL_0000076> "Q")
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000076> "defomation activation energy"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000076> "Energy required to activate plastic deformation mechanisms at high temperatures.")
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000076> <https://w3id.org/pmd/co/PMD_0000848>)
+
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000077> (dynamic recrystallization onset)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000077> "dynamic recrystallization onset"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/pmd/distel/DISTEL_0000077> "DRX"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000077> "The strain at which new grains start forming during compression deformation due to  sufficient strain accumulation."@en)
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000077> <https://w3id.org/pmd/co/PMD_0000848>)
+
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000078> (load step cycles)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000078> "load step cycles"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000078> "Load step cycles is a process attribute of  a load increasing fatigue testing which describes a constant numer of cycles a specimen undergoes in each test with a given load."@en)
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000078> <https://w3id.org/pmd/co/PMD_0000008>)
 
 # Class: <https://w3id.org/pmd/distel/DISTEL_0000100> (motor)
 
@@ -5266,7 +5303,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000015> "The length of a straight line through the center of an object (tensile test piece) as measured after a fracture occured during a test."@en)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000015> <https://w3id.org/pmd/co/PMD_0050051>)
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000017> (extensometer gauge length)
+# Class: <https://w3id.org/pmd/tto/TTO_0000017> (Extensometer-Messlänge)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000017> <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000017> "Extensometer-Messlänge"@de)
@@ -5393,7 +5430,7 @@ AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org
 AnnotationAssertion(<https://w3id.org/pmd/co/symbol> <https://w3id.org/pmd/tto/TTO_0000028> "L_o"@en)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000028> <https://w3id.org/pmd/tto/TTO_0000019>)
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000029> (original thickness)
+# Class: <https://w3id.org/pmd/tto/TTO_0000029> (Anfangs-Dicke)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000029> <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000029> "Anfangs-Dicke"@de)
@@ -5697,7 +5734,7 @@ SubClassOf(<https://w3id.org/pmd/tto/TTO_1000000> <https://w3id.org/pmd/co/PMD_0
 #   Named Individuals
 ############################
 
-# Individual: <http://qudt.org/vocab/unit/HZ> (Hertz)
+# Individual: <http://qudt.org/vocab/unit/HZ> (हर्ट्ज)
 
 AnnotationAssertion(dcterms:description <http://qudt.org/vocab/unit/HZ> "
   $\\textit{Hertz}$ (symbol $Hz$) is the SI unit of frequency defined as the number of cycles per second of a periodic phenomenon.
@@ -6065,19 +6102,19 @@ ClassAssertion(<https://w3id.org/pmd/distel/DISTEL_0000028> <https://w3id.org/pm
 
 # Individual: <https://w3id.org/pmd/distel/DISTEL_0000071> (uniaxial compression loading)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/pmd/distel/DISTEL_0000071> "uniaxial compression loading is a compression loading type characterized by load applied along a single axis without any confinment along two other axes."@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000071> "uniaxial compression loading")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000071> "uniaxial compression loading is a compression loading type characterized by load applied along a single axis without any confinment along two other axes."@en)
 
 # Individual: <https://w3id.org/pmd/distel/DISTEL_0000072> (plain strain compression loading)
 
-AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/distel/DISTEL_0000072> "plain strain compression loading is a compression loading type characterized by specimen load applied along a single axis and the the deformation occurs in-plane."@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000072> "plain strain compression loading"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000072> "plain strain compression loading is a compression loading type characterized by specimen load applied along a single axis and the the deformation occurs in-plane."@en)
 
 # Individual: <https://w3id.org/pmd/distel/DISTEL_0000073> (axisymmetric compression loading)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/pmd/distel/DISTEL_0000073> "axisymmetric compression loading
-TODO")
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000073> "axisymmetric compression loading"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000073> "axisymmetric compression loading
+TODO")
 
 
 SubClassOf(ObjectUnionOf(<https://w3id.org/pmd/co/PMD_0000773> <https://w3id.org/pmd/co/PMD_0000952>) <https://w3id.org/pmd/co/PMD_0000848>)

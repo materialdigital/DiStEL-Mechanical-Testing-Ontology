@@ -56,6 +56,11 @@ WARN	missing_definition	compressive proof strength	textual definition
 WARN	missing_definition	compressive proof strength dp02	textual definition	
 WARN	missing_definition	compressive strength	textual definition	
 WARN	missing_definition	ductility	textual definition	
+WARN	missing_definition	height reduction	textual definition	
+WARN	missing_definition	strain rate sensitivity	textual definition	
+WARN	missing_definition	defomation activation energy	textual definition	
+WARN	missing_definition	dynamic recrystallization onset	textual definition	
+WARN	missing_definition	load step cycles	textual definition	
 WARN	missing_definition	motor	textual definition	
 WARN	missing_definition	percentage reduction of area at fracture	textual definition	
 WARN	missing_definition	hot tensile testing process	textual definition	
@@ -65,6 +70,3 @@ WARN	missing_definition	target strain	textual definition
 WARN	missing_definition	load increasing fatigue testing process	textual definition	
 WARN	missing_definition	initial loading amplitute	textual definition	
 WARN	missing_definition	loading amplitude increment	textual definition	
-INFO	lowercase_definition	uniaxial compression loading	textual definition	uniaxial compression loading is a compression loading type characterized by load applied along a single axis without any confinment along two other axes.@en
-INFO	lowercase_definition	axisymmetric compression loading	textual definition	"axisymmetric compression loading
-TODO"
