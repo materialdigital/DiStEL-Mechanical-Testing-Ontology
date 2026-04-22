@@ -690,6 +690,16 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000078 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000078">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
+        <rdfs:label xml:lang="en">load step cycles</rdfs:label>
+        <skos:definition xml:lang="en">Load step cycles is a process attribute of  a load increasing fatigue testing which describes a constant numer of cycles a specimen undergoes in each test with a given load.</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/distel/DISTEL_0000100 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000100">

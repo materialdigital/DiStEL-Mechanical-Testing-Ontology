@@ -223,9 +223,51 @@
                 </owl:oneOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
         <obo:IAO_0000115 xml:lang="en">Compression loading type value is a categical value specification which efines the exact type of compression loading type</obo:IAO_0000115>
         <rdfs:label xml:lang="en">compression loading type value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000074 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000074">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:label xml:lang="en">height reduction</rdfs:label>
+        <skos:definition xml:lang="en">Height reduction is a mechanical property realized in a compression test. It is defined as a decrease of specimen&apos;s length before and after process in the direction of applied load.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000075 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000075">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:label xml:lang="en">strain rate sensitivity</rdfs:label>
+        <skos:definition xml:lang="en">Strain rate sensitivity is a mechanical property of a material which is evaluated in a series of tensile or compression tests. It is determined as a relation between change in stress and change in strain expressed in log scale.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000076 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000076">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <qudt:symbol>Q</qudt:symbol>
+        <rdfs:label xml:lang="en">defomation activation energy</rdfs:label>
+        <skos:definition>Energy required to activate plastic deformation mechanisms at high temperatures.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000077 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000077">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:label xml:lang="en">dynamic recrystallization onset</rdfs:label>
+        <skos:altLabel xml:lang="en">DRX</skos:altLabel>
+        <skos:definition xml:lang="en">The strain at which new grains start forming during compression deformation due to  sufficient strain accumulation.</skos:definition>
     </owl:Class>
     
 
@@ -360,8 +402,8 @@
     <!-- https://w3id.org/pmd/distel/DISTEL_0000071 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000071">
-        <obo:IAO_0000115 xml:lang="en">uniaxial compression loading is a compression loading type characterized by load applied along a single axis without any confinment along two other axes.</obo:IAO_0000115>
         <rdfs:label>uniaxial compression loading</rdfs:label>
+        <skos:definition xml:lang="en">uniaxial compression loading is a compression loading type characterized by load applied along a single axis without any confinment along two other axes.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -369,8 +411,8 @@
     <!-- https://w3id.org/pmd/distel/DISTEL_0000072 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000072">
-        <rdfs:comment xml:lang="en">plain strain compression loading is a compression loading type characterized by specimen load applied along a single axis and the the deformation occurs in-plane.</rdfs:comment>
         <rdfs:label xml:lang="en">plain strain compression loading</rdfs:label>
+        <skos:definition xml:lang="en">plain strain compression loading is a compression loading type characterized by specimen load applied along a single axis and the the deformation occurs in-plane.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -378,9 +420,9 @@
     <!-- https://w3id.org/pmd/distel/DISTEL_0000073 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000073">
-        <obo:IAO_0000115>axisymmetric compression loading
-TODO</obo:IAO_0000115>
         <rdfs:label xml:lang="en">axisymmetric compression loading</rdfs:label>
+        <skos:definition>axisymmetric compression loading
+TODO</skos:definition>
     </owl:NamedIndividual>
 </rdf:RDF>
 
