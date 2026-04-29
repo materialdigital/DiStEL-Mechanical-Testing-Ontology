@@ -700,6 +700,69 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000079 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000079">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:label xml:lang="en">energy dissipation under cyclic loading</rdfs:label>
+        <skos:definition xml:lang="en">Energy dissipation under cyclic loading is a mechanical property that defines the energy lost per loading cycle due to irreversible plastic deformation. It is determined by the area inside the stress–strain hysteresis loop.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000080 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000080">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000502"/>
+        <rdfs:label xml:lang="en">stress-strain hysteresis curve</rdfs:label>
+        <skos:definition xml:lang="en">Stress-strain hysteresis curve is a 2D data item, which is an output of assay featuring cycling loading.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000081 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000081">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000502"/>
+        <rdfs:label xml:lang="en">plastic strain vs number of cycles curve</rdfs:label>
+        <skos:definition xml:lang="en">Plastic strain vs number of cycles curve is 2d data item  which indicates accumulation of irreversible deformation under cycling loading.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000082 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000082">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:label xml:lang="en">fatigue damage indicator</rdfs:label>
+        <skos:definition xml:lang="en">Fatigue damage indicator is a mechanical property characterizing fatigue damage in the material. It is derived from changes in plastic strain, energy dissipation, and hysteresis loop during cyclic loading.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000083 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000083">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000017"/>
+        <obo:IAO_0000119>https://sdcverifier.com/structural-engineering-101/how-to-calculate-fatigue-strength-hand-calculations/</obo:IAO_0000119>
+        <qudt:symbol>σ′f</qudt:symbol>
+        <rdfs:label xml:lang="en">fatigue strength coefficient</rdfs:label>
+        <skos:definition xml:lang="en">The fatigue strength coefficient is a material parameter used in the Basquin equation. It helps define the stress-life curve in the high-cycle regime.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000084 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000084">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <qudt:symbol>b</qudt:symbol>
+        <rdfs:label xml:lang="en">fatigue strength exponent</rdfs:label>
+        <skos:definition xml:lang="en">fatigue strength exponent is s a material parameter used in the Basquin equation. It helps define the stress-life curve in the high-cycle regime.</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/distel/DISTEL_0000100 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000100">

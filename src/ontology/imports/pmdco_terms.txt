@@ -31,6 +31,7 @@ https://w3id.org/pmd/co/PMD_0020104  # volume proportion
 https://w3id.org/pmd/co/PMD_0020207  # amount of substance
 https://w3id.org/pmd/co/PMD_0020102  # mass proportion 
 https://w3id.org/pmd/co/PMD_0000952  # strength
+https://w3id.org/pmd/co/PMD_0000618  # elastic modulus
 https://w3id.org/pmd/co/PMD_0025018  # geometric relational quality
 https://w3id.org/pmd/co/PMD_0025025 # lubricant role
 

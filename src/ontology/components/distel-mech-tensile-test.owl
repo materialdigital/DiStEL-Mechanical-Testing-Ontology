@@ -255,7 +255,7 @@
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000076">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
         <qudt:symbol>Q</qudt:symbol>
-        <rdfs:label xml:lang="en">defomation activation energy</rdfs:label>
+        <rdfs:label xml:lang="en">deformation activation energy</rdfs:label>
         <skos:definition>Energy required to activate plastic deformation mechanisms at high temperatures.</skos:definition>
     </owl:Class>
     
