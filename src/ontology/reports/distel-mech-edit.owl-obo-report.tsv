@@ -58,9 +58,15 @@ WARN	missing_definition	compressive strength	textual definition
 WARN	missing_definition	ductility	textual definition	
 WARN	missing_definition	height reduction	textual definition	
 WARN	missing_definition	strain rate sensitivity	textual definition	
-WARN	missing_definition	defomation activation energy	textual definition	
+WARN	missing_definition	deformation activation energy	textual definition	
 WARN	missing_definition	dynamic recrystallization onset	textual definition	
 WARN	missing_definition	load step cycles	textual definition	
+WARN	missing_definition	energy dissipation under cyclic loading	textual definition	
+WARN	missing_definition	stress-strain hysteresis curve	textual definition	
+WARN	missing_definition	plastic strain vs number of cycles curve	textual definition	
+WARN	missing_definition	fatigue damage indicator	textual definition	
+WARN	missing_definition	fatigue strength coefficient	textual definition	
+WARN	missing_definition	fatigue strength exponent	textual definition	
 WARN	missing_definition	motor	textual definition	
 WARN	missing_definition	percentage reduction of area at fracture	textual definition	
 WARN	missing_definition	hot tensile testing process	textual definition	

@@ -135,8 +135,10 @@ http://purl.obolibrary.org/obo/IAO_0000027
 http://purl.obolibrary.org/obo/IAO_0000030
 http://purl.obolibrary.org/obo/IAO_0000033
 http://purl.obolibrary.org/obo/IAO_0000039
+http://purl.obolibrary.org/obo/IAO_0000078
 http://purl.obolibrary.org/obo/IAO_0000100
 http://purl.obolibrary.org/obo/IAO_0000101
+http://purl.obolibrary.org/obo/IAO_0000102
 http://purl.obolibrary.org/obo/IAO_0000103
 http://purl.obolibrary.org/obo/IAO_0000104
 http://purl.obolibrary.org/obo/IAO_0000109
@@ -155,6 +157,7 @@ http://purl.obolibrary.org/obo/IAO_0000125
 http://purl.obolibrary.org/obo/IAO_0000136
 http://purl.obolibrary.org/obo/IAO_0000219
 http://purl.obolibrary.org/obo/IAO_0000221
+http://purl.obolibrary.org/obo/IAO_0000225
 http://purl.obolibrary.org/obo/IAO_0000226
 http://purl.obolibrary.org/obo/IAO_0000227
 http://purl.obolibrary.org/obo/IAO_0000228
@@ -163,6 +166,7 @@ http://purl.obolibrary.org/obo/IAO_0000232
 http://purl.obolibrary.org/obo/IAO_0000233
 http://purl.obolibrary.org/obo/IAO_0000235
 http://purl.obolibrary.org/obo/IAO_0000308
+http://purl.obolibrary.org/obo/IAO_0000409
 http://purl.obolibrary.org/obo/IAO_0000410
 http://purl.obolibrary.org/obo/IAO_0000417
 http://purl.obolibrary.org/obo/IAO_0000418
@@ -294,6 +298,7 @@ http://www.wikidata.org/entity/Q25343
 http://www.wikidata.org/entity/Q39369
 https://creativecommons.org/licenses/unspecified
 https://github.com/information-artifact-ontology/IAO/issues/206
+https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000226
 https://si-digital-framework.org/SI/units/hertz
 https://si-digital-framework.org/SI/units/kelvin
 https://w3id.org/pmd/DISTEL-MECH_0000000
@@ -341,6 +346,7 @@ https://w3id.org/pmd/co/PMD_0000597
 https://w3id.org/pmd/co/PMD_0000602
 https://w3id.org/pmd/co/PMD_0000611
 https://w3id.org/pmd/co/PMD_0000614
+https://w3id.org/pmd/co/PMD_0000618
 https://w3id.org/pmd/co/PMD_0000619
 https://w3id.org/pmd/co/PMD_0000636
 https://w3id.org/pmd/co/PMD_0000637
@@ -370,6 +376,7 @@ https://w3id.org/pmd/co/PMD_0000914
 https://w3id.org/pmd/co/PMD_0000927
 https://w3id.org/pmd/co/PMD_0000942
 https://w3id.org/pmd/co/PMD_0000946
+https://w3id.org/pmd/co/PMD_0000949
 https://w3id.org/pmd/co/PMD_0000950
 https://w3id.org/pmd/co/PMD_0000952
 https://w3id.org/pmd/co/PMD_0000953
@@ -636,6 +643,12 @@ https://w3id.org/pmd/distel/DISTEL_0000075
 https://w3id.org/pmd/distel/DISTEL_0000076
 https://w3id.org/pmd/distel/DISTEL_0000077
 https://w3id.org/pmd/distel/DISTEL_0000078
+https://w3id.org/pmd/distel/DISTEL_0000079
+https://w3id.org/pmd/distel/DISTEL_0000080
+https://w3id.org/pmd/distel/DISTEL_0000081
+https://w3id.org/pmd/distel/DISTEL_0000082
+https://w3id.org/pmd/distel/DISTEL_0000083
+https://w3id.org/pmd/distel/DISTEL_0000084
 https://w3id.org/pmd/distel/DISTEL_0000100
 https://w3id.org/pmd/distel/DISTEL_0002002
 https://w3id.org/pmd/distel/DISTEL_0025001

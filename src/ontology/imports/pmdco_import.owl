@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<https://w3id.org/pmd/distel/imports/pmdco_import.owl>
-<https://w3id.org/pmd/distel/releases/2026-04-22/imports/pmdco_import.owl>
+<https://w3id.org/pmd/distel/releases/2026-04-29/imports/pmdco_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <https://w3id.org/pmd/co/releases/2026-04-07/pmdco.ttl>)
-Annotation(owl:versionInfo "2026-04-22")
+Annotation(owl:versionInfo "2026-04-29")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -186,6 +186,7 @@ Declaration(Class(<https://w3id.org/pmd/co/PMD_0000597>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000602>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000611>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000614>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0000618>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000619>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000636>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000637>))
@@ -215,6 +216,7 @@ Declaration(Class(<https://w3id.org/pmd/co/PMD_0000914>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000927>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000942>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000946>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0000949>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000950>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000952>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000953>))
@@ -2750,6 +2752,16 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0000614> "Shearing, Cracking"@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000614> <https://w3id.org/pmd/co/PMD_0000927>)
 
+# Class: <https://w3id.org/pmd/co/PMD_0000618> (elastic modulus)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000618> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0000618> "PERSON: Joerg Waitelonis")
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000618> "elastic modulus"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000618> "represents a material's stiffness, defined as the ratio of stress to strain in the elastic deformation region."@en)
+AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000618> "true"^^xsd:boolean)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000618> <https://w3id.org/pmd/co/PMD_0000949>)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000618> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000027> <http://purl.obolibrary.org/obo/BFO_0000030> <https://w3id.org/pmd/co/PMD_0000538>)))
+
 # Class: <https://w3id.org/pmd/co/PMD_0000619> (electric potential)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000619> <http://purl.obolibrary.org/obo/IAO_0000122>)
@@ -3046,6 +3058,17 @@ AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000946> <https://w3id.org/pmd/co/PMD_0000501>)
 DisjointClasses(<https://w3id.org/pmd/co/PMD_0000946> <https://w3id.org/pmd/co/PMD_0000992>)
 
+# Class: <https://w3id.org/pmd/co/PMD_0000949> (stiffness)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000949> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0000949> "PERSON: Joerg Waitelonis")
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000949> "stiffness"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000949> "The stiffness is a material property describing the resistance of a material to deformation under an applied force."@en)
+AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000949> "true"^^xsd:boolean)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000949> <https://w3id.org/pmd/co/PMD_0000848>)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000949> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0001029> <https://w3id.org/pmd/co/PMD_0000596>))
+DisjointClasses(<https://w3id.org/pmd/co/PMD_0000949> <https://w3id.org/pmd/co/PMD_0000952>)
+
 # Class: <https://w3id.org/pmd/co/PMD_0000950> (stimulating process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000950> <http://purl.obolibrary.org/obo/IAO_0000122>)
@@ -3075,7 +3098,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000953> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000953> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000957> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0000957> "PERSON: Joerg Waitelonis")

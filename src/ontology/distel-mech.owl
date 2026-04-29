@@ -17,11 +17,11 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/pmd/distel-mech.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/distel/releases/2026-04-22/distel-mech.owl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/distel/releases/2026-04-29/distel-mech.owl"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>DiStEL Mechanical Testing Ontology</dcterms:title>
-        <owl:versionInfo>2026-04-22</owl:versionInfo>
+        <owl:versionInfo>2026-04-29</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -4559,6 +4559,33 @@ See the pattern example of composition to underatand the difference between comp
     
 
 
+    <!-- https://w3id.org/pmd/co/PMD_0000618 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000618">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000949"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000027"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+                            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000538"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117>PERSON: Joerg Waitelonis</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">elastic modulus</rdfs:label>
+        <skos:definition xml:lang="en">represents a material&apos;s stiffness, defined as the ratio of stress to strain in the elastic deformation region.</skos:definition>
+        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/co/PMD_0000619 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000619">
@@ -5123,6 +5150,26 @@ A manufacturing process is always a transformative process.</skos:definition>
         <obo:IAO_0000117>PERSON: Joerg Waitelonis</obo:IAO_0000117>
         <rdfs:label xml:lang="en">spectrum</rdfs:label>
         <skos:definition xml:lang="en">A spectrum is a 1-D information content entity that describes the range of wavelengths or frequencies of a physical property, often used in reference to light, sound, or electromagnetic radiation.</skos:definition>
+        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0000949 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000949">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0001029"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000596"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://w3id.org/pmd/co/PMD_0000952"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117>PERSON: Joerg Waitelonis</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">stiffness</rdfs:label>
+        <skos:definition xml:lang="en">The stiffness is a material property describing the resistance of a material to deformation under an applied force.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
     
@@ -7243,7 +7290,7 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020131">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <rdfs:subClassOf rdf:nodeID="genid638"/>
+        <rdfs:subClassOf rdf:nodeID="genid644"/>
         <owl:disjointWith rdf:resource="https://w3id.org/pmd/co/PMD_0020148"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000117>PERSON: Philipp von Hartrott</obo:IAO_0000117>
@@ -7252,14 +7299,14 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
         <skos:definition xml:lang="en">An intensive quality is a quality that inheres in only portion of matter and thus is independent of the bearers (system-) size.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid638">
+    <owl:Restriction rdf:nodeID="genid644">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
         <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000001"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/pmd/co/PMD_0020131"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid638"/>
+        <owl:annotatedTarget rdf:nodeID="genid644"/>
         <rdfs:comment xml:lang="en">Due to the duality of object and portion of matter this axiom can not be an equivalent class axiom.</rdfs:comment>
     </owl:Axiom>
     
@@ -9131,7 +9178,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000076">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
         <qudt:symbol>Q</qudt:symbol>
-        <rdfs:label xml:lang="en">defomation activation energy</rdfs:label>
+        <rdfs:label xml:lang="en">deformation activation energy</rdfs:label>
         <skos:definition>Energy required to activate plastic deformation mechanisms at high temperatures.</skos:definition>
     </owl:Class>
     
@@ -9154,6 +9201,69 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
         <rdfs:label xml:lang="en">load step cycles</rdfs:label>
         <skos:definition xml:lang="en">Load step cycles is a process attribute of  a load increasing fatigue testing which describes a constant numer of cycles a specimen undergoes in each test with a given load.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000079 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000079">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:label xml:lang="en">energy dissipation under cyclic loading</rdfs:label>
+        <skos:definition xml:lang="en">Energy dissipation under cyclic loading is a mechanical property that defines the energy lost per loading cycle due to irreversible plastic deformation. It is determined by the area inside the stress–strain hysteresis loop.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000080 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000080">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000502"/>
+        <rdfs:label xml:lang="en">stress-strain hysteresis curve</rdfs:label>
+        <skos:definition xml:lang="en">Stress-strain hysteresis curve is a 2D data item, which is an output of assay featuring cycling loading.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000081 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000081">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000502"/>
+        <rdfs:label xml:lang="en">plastic strain vs number of cycles curve</rdfs:label>
+        <skos:definition xml:lang="en">Plastic strain vs number of cycles curve is 2d data item  which indicates accumulation of irreversible deformation under cycling loading.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000082 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000082">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:label xml:lang="en">fatigue damage indicator</rdfs:label>
+        <skos:definition xml:lang="en">Fatigue damage indicator is a mechanical property characterizing fatigue damage in the material. It is derived from changes in plastic strain, energy dissipation, and hysteresis loop during cyclic loading.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000083 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000083">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000017"/>
+        <obo:IAO_0000119>https://sdcverifier.com/structural-engineering-101/how-to-calculate-fatigue-strength-hand-calculations/</obo:IAO_0000119>
+        <qudt:symbol>σ′f</qudt:symbol>
+        <rdfs:label xml:lang="en">fatigue strength coefficient</rdfs:label>
+        <skos:definition xml:lang="en">The fatigue strength coefficient is a material parameter used in the Basquin equation. It helps define the stress-life curve in the high-cycle regime.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000084 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000084">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <qudt:symbol>b</qudt:symbol>
+        <rdfs:label xml:lang="en">fatigue strength exponent</rdfs:label>
+        <skos:definition xml:lang="en">fatigue strength exponent is s a material parameter used in the Basquin equation. It helps define the stress-life curve in the high-cycle regime.</skos:definition>
     </owl:Class>
     
 
@@ -9547,6 +9657,22 @@ Note: Optical extensometry may require a specific data storage method.</rdfs:com
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/DiameterAfterFracture"/>
         <skos:definition xml:lang="de">Die Länge einer geraden Linie durch den Mittelpunkt eines Objekts (Zugprüfstücks), gemessen nach einem Bruch, der während einer Prüfung aufgetreten ist.</skos:definition>
         <skos:definition xml:lang="en">The length of a straight line through the center of an object (tensile test piece) as measured after a fracture occured during a test.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000016 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000016">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge</rdfs:label>
+        <rdfs:label xml:lang="en">estimated strain rate over the parallel length</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/EstimatedStrainRateOverTheParallelLength"/>
+        <skos:definition xml:lang="de">Zunahme der Dehnung über die parallele Länge der Probe je Zeiteinheit, basierend auf der Traversengeschwindigkeit und der parallelen Länge der Probe</skos:definition>
+        <skos:definition xml:lang="en">value of the increase of strain over the parallel length of the test piece per time based on the crosshead separation rate and the parallel length of the test piece</skos:definition>
+        <co:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</co:definitionSource>
+        <co:symbol xml:lang="en">e^._L_c</co:symbol>
     </owl:Class>
     
 
@@ -9961,6 +10087,26 @@ Source: ISO 6892-1:2019</skos:definition>
     
 
 
+    <!-- https://w3id.org/pmd/tto/TTO_0000045 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000045">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000043"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Dehngrenze bei gesamter Extensometer-Dehnung</rdfs:label>
+        <rdfs:label xml:lang="en">proof strength total extension</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/ProofStrengthTotalExtension"/>
+        <skos:definition xml:lang="de">Spannung, bei der die gesamte Extensometer-Dehnung (elastische und plastische Extensometer-Dehnung) einem vorgegebenen Prozentanteil der Extensometer-Messlänge entspricht
+
+Anmerkung: Der Index wird durch den Zahlenwert ergänzt, der den vorgegebenen Zahlenwert der gesamten Extensometer-Dehnung in Prozent angibt, z. B. R_t_0,5.</skos:definition>
+        <skos:definition xml:lang="en">stress at which total extension (elastic extension plus plastic extension) is equal to a specified percentage of the extensometer gauge length
+
+Note: A suffix is added to the subscript to indicate the prescribed percentage, e.g. R_t_0.5.</skos:definition>
+        <co:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</co:definitionSource>
+        <co:symbol xml:lang="en">R_t</co:symbol>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/tto/TTO_0000046 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000046">
@@ -10086,6 +10232,312 @@ Note: Stress rate is only used in the elastic part of the test.</skos:definition
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/WidthAfterFracture"/>
         <skos:definition xml:lang="de">Diese Entität beschreibt eine horizontale Messung eines Objekts (Prüfkörpers) im rechten Winkel zur Länge des Objekts (Prüfkörpers), wie sie nach einer Prüfung gemessen wird.</skos:definition>
         <skos:definition xml:lang="en">This entity describes a horizontal measurement of an object (test piece) taken at right angles to the length of the object (test piece), as measured after a test.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000100 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000100">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000974"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000975"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000006"/>
+                                                    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000007"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000008"/>
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000029"/>
+                                                    </owl:Restriction>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000030"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000027"/>
+                                            </owl:Restriction>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000016"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000051"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000052"/>
+                                            </owl:Restriction>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000022"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000044"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000045"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000059"/>
+                                            </owl:Restriction>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000033"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000037"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000038"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000039"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000040"/>
+                                            </owl:Restriction>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000017"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000018"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000023"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000024"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000026"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000028"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000031"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000053"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000973"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000974"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000008"/>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000029"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000030"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000027"/>
+                                    </owl:Restriction>
+                                </owl:unionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000016"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000051"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000052"/>
+                                    </owl:Restriction>
+                                </owl:unionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000022"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000044"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000045"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000059"/>
+                                    </owl:Restriction>
+                                </owl:unionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000033"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000037"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000038"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000039"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000040"/>
+                                    </owl:Restriction>
+                                </owl:unionOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000017"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000018"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000023"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000024"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000026"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000028"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000031"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000053"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="de">Strenges ISO-Profil auf Basis der bereits in TTO vorhandenen Klassen. Diese Klasse ist als inferenzfähige Profilklasse gedacht und sollte für automatische Klassifikation über EquivalentClasses definiert werden.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Strict ISO profile based on classes already present in TTO. This class is intended as an inference-oriented profiling class and should be defined via EquivalentClasses for automatic classification.</rdfs:comment>
+        <rdfs:label xml:lang="en">ISO tensile testing process</rdfs:label>
+        <rdfs:label xml:lang="de">ISO-konformer Zugversuchsprozess</rdfs:label>
+        <skos:definition xml:lang="en">An ISO tensile testing process (full profile) is a tensile testing process in the sense of the TTO whose documented inputs, participating apparatus, and outputs are described with sufficient completeness such that the essential geometry-related initial quantities, testing-rate/strain-rate information, and mechanical properties specified in ISO 6892-1 for metallic materials at room temperature are represented in a form suitable for inference. This includes, in particular, a test-piece input, a tensile testing machine, and a result object containing initial geometry, gauge lengths, maximum force, tensile strength, yield/proof-strength information, and fracture-related result quantities.</skos:definition>
+        <skos:definition xml:lang="de">Ein ISO-konformer Zugversuchsprozess (Vollprofil) ist ein Zugprüfverfahren im Sinne der TTO, dessen dokumentierte Eingaben, beteiligte Apparatur und Ausgaben so vollständig beschrieben sind, dass die wesentlichen in ISO 6892-1 vorgesehenen geometrischen Ausgangsgrößen, Prüfgeschwindigkeits-/Dehngeschwindigkeitsangaben und mechanischen Kennwerte des Zugversuchs für metallische Werkstoffe bei Raumtemperatur inferenzfähig repräsentiert sind. Dazu gehören insbesondere Prüfkörperinput, Zugprüfmaschine, Ergebnisobjekt mit Anfangsgeometrie, Messlängen, Höchstkraft, Zugfestigkeit, Streck- oder Dehngrenzenangaben sowie bruchbezogene Ergebnisgrößen.</skos:definition>
     </owl:Class>
     
 
