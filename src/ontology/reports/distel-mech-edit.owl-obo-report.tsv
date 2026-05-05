@@ -77,6 +77,7 @@ WARN	missing_definition	stress intensity factor range	textual definition
 WARN	missing_definition	fracture toughness	textual definition	
 WARN	missing_definition	scatter band of a fatigue curve	textual definition	
 WARN	missing_definition	fatigue scatter bandwidth	textual definition	
+WARN	missing_definition	crack length	textual definition	
 WARN	missing_definition	motor	textual definition	
 WARN	missing_definition	percentage reduction of area at fracture	textual definition	
 WARN	missing_definition	hot tensile testing process	textual definition	

@@ -8938,7 +8938,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     <!-- https://w3id.org/pmd/distel/DISTEL_0000059 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000059">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000095"/>
         <rdfs:label xml:lang="en">initial crack length</rdfs:label>
         <skos:definition xml:lang="en">Initial crack length is a length of a crack in a specimen which is an input to the crack propagation fatigue testing process.</skos:definition>
     </owl:Class>
@@ -9454,6 +9454,22 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
         <rdfs:label xml:lang="en">fatigue scatter bandwidth</rdfs:label>
         <skos:definition>+-K_D</skos:definition>
         <skos:definition xml:lang="en">Fatigue scatter bandwidth is a scalar value specification which defines absolute value of maximal deviation from a fatigue curve.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/distel/DISTEL_0000095 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000095">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020202"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">crack length</rdfs:label>
+        <skos:definition xml:lang="en">Crack length is a length of a crack.</skos:definition>
     </owl:Class>
     
 
