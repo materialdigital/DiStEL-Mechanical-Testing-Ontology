@@ -93,7 +93,8 @@ https://w3id.org/pmd/co/PMD_0000891 # 'disconnected material entity aggregate'
 http://purl.obolibrary.org/obo/OBI_0000835 # manufacturer
 https://w3id.org/pmd/co/PMD_0000637  # fatigue testing machine
 https://w3id.org/pmd/co/PMD_0000820  # load cell
-
+https://w3id.org/pmd/co/PMD_0020202  # crack
+https://w3id.org/pmd/co/PMD_0020203  # notch
 
 # OPs
 https://w3id.org/pmd/co/PMD_0000009  # has process attribute
