@@ -521,6 +521,9 @@ https://w3id.org/pmd/co/PMD_0020149
 https://w3id.org/pmd/co/PMD_0020150
 https://w3id.org/pmd/co/PMD_0020161
 https://w3id.org/pmd/co/PMD_0020200
+https://w3id.org/pmd/co/PMD_0020202
+https://w3id.org/pmd/co/PMD_0020203
+https://w3id.org/pmd/co/PMD_0020204
 https://w3id.org/pmd/co/PMD_0020207
 https://w3id.org/pmd/co/PMD_0020210
 https://w3id.org/pmd/co/PMD_0020216
@@ -649,6 +652,16 @@ https://w3id.org/pmd/distel/DISTEL_0000081
 https://w3id.org/pmd/distel/DISTEL_0000082
 https://w3id.org/pmd/distel/DISTEL_0000083
 https://w3id.org/pmd/distel/DISTEL_0000084
+https://w3id.org/pmd/distel/DISTEL_0000085
+https://w3id.org/pmd/distel/DISTEL_0000086
+https://w3id.org/pmd/distel/DISTEL_0000087
+https://w3id.org/pmd/distel/DISTEL_0000088
+https://w3id.org/pmd/distel/DISTEL_0000089
+https://w3id.org/pmd/distel/DISTEL_0000090
+https://w3id.org/pmd/distel/DISTEL_0000091
+https://w3id.org/pmd/distel/DISTEL_0000092
+https://w3id.org/pmd/distel/DISTEL_0000093
+https://w3id.org/pmd/distel/DISTEL_0000094
 https://w3id.org/pmd/distel/DISTEL_0000100
 https://w3id.org/pmd/distel/DISTEL_0002002
 https://w3id.org/pmd/distel/DISTEL_0025001
@@ -661,6 +674,7 @@ https://w3id.org/pmd/distel/DISTEL_0025009
 https://w3id.org/pmd/tto
 https://w3id.org/pmd/tto/DiameterAfterFracture
 https://w3id.org/pmd/tto/Elongation
+https://w3id.org/pmd/tto/EstimatedStrainRateOverTheParallelLength
 https://w3id.org/pmd/tto/ExtensometerGaugeLength
 https://w3id.org/pmd/tto/FinalGaugeLengthAfterFracture
 https://w3id.org/pmd/tto/GaugeLength
@@ -684,6 +698,7 @@ https://w3id.org/pmd/tto/PercentageTotalExtensionAtMaximumForce
 https://w3id.org/pmd/tto/PercentageYieldPointExtension
 https://w3id.org/pmd/tto/ProofStrength
 https://w3id.org/pmd/tto/ProofStrengthPlasticExtension
+https://w3id.org/pmd/tto/ProofStrengthTotalExtension
 https://w3id.org/pmd/tto/Rp01
 https://w3id.org/pmd/tto/Rp02
 https://w3id.org/pmd/tto/StrainRate
@@ -696,6 +711,7 @@ https://w3id.org/pmd/tto/TTO_0000008
 https://w3id.org/pmd/tto/TTO_0000009
 https://w3id.org/pmd/tto/TTO_0000012
 https://w3id.org/pmd/tto/TTO_0000015
+https://w3id.org/pmd/tto/TTO_0000016
 https://w3id.org/pmd/tto/TTO_0000017
 https://w3id.org/pmd/tto/TTO_0000018
 https://w3id.org/pmd/tto/TTO_0000019
@@ -720,6 +736,7 @@ https://w3id.org/pmd/tto/TTO_0000040
 https://w3id.org/pmd/tto/TTO_0000041
 https://w3id.org/pmd/tto/TTO_0000043
 https://w3id.org/pmd/tto/TTO_0000044
+https://w3id.org/pmd/tto/TTO_0000045
 https://w3id.org/pmd/tto/TTO_0000046
 https://w3id.org/pmd/tto/TTO_0000047
 https://w3id.org/pmd/tto/TTO_0000051
@@ -728,6 +745,7 @@ https://w3id.org/pmd/tto/TTO_0000053
 https://w3id.org/pmd/tto/TTO_0000056
 https://w3id.org/pmd/tto/TTO_0000059
 https://w3id.org/pmd/tto/TTO_0000060
+https://w3id.org/pmd/tto/TTO_0000100
 https://w3id.org/pmd/tto/TTO_0050000
 https://w3id.org/pmd/tto/TTO_1000000
 https://w3id.org/pmd/tto/TensileStrength

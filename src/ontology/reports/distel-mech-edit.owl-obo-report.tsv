@@ -67,6 +67,16 @@ WARN	missing_definition	plastic strain vs number of cycles curve	textual definit
 WARN	missing_definition	fatigue damage indicator	textual definition	
 WARN	missing_definition	fatigue strength coefficient	textual definition	
 WARN	missing_definition	fatigue strength exponent	textual definition	
+WARN	missing_definition	crack propagation fatigue testing process	textual definition	
+WARN	missing_definition	crack length vs number of cycles curve	textual definition	
+WARN	missing_definition	crack growth rate	textual definition	
+WARN	missing_definition	scaling factor of Paris law	textual definition	
+WARN	missing_definition	slope of Paris law	textual definition	
+WARN	missing_definition	threshold stress intensity factor	textual definition	
+WARN	missing_definition	stress intensity factor range	textual definition	
+WARN	missing_definition	fracture toughness	textual definition	
+WARN	missing_definition	scatter band of a fatigue curve	textual definition	
+WARN	missing_definition	fatigue scatter bandwidth	textual definition	
 WARN	missing_definition	motor	textual definition	
 WARN	missing_definition	percentage reduction of area at fracture	textual definition	
 WARN	missing_definition	hot tensile testing process	textual definition	

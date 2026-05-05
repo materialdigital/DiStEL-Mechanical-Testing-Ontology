@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<https://w3id.org/pmd/distel/imports/pmdco_import.owl>
-<https://w3id.org/pmd/distel/releases/2026-04-29/imports/pmdco_import.owl>
+<https://w3id.org/pmd/distel/releases/2026-05-05/imports/pmdco_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <https://w3id.org/pmd/co/releases/2026-04-07/pmdco.ttl>)
-Annotation(owl:versionInfo "2026-04-29")
+Annotation(owl:versionInfo "2026-05-05")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -324,6 +324,9 @@ Declaration(Class(<https://w3id.org/pmd/co/PMD_0020148>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020149>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020150>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020161>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0020202>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0020203>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0020204>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020207>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020210>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020216>))
@@ -2227,7 +2230,7 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0020010> ObjectIntersectio
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020010> <http://purl.obolibrary.org/obo/COB_0000035>)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/IAO_0020000>))
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (Homo sapiens)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (homo sapiens)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "Homo sapiens")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "homo sapiens")
@@ -2940,7 +2943,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> <https://w3id.org/pmd/co/PMD_00
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <https://w3id.org/pmd/co/PMD_0000522>))
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000000>))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000849> (Mechanische Eigenschaften Analyseverfahren)
+# Class: <https://w3id.org/pmd/co/PMD_0000849> (mechanical property analyzing process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000849> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0000849> "PERSON: Joerg Waitelonis")
@@ -3991,6 +3994,33 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020161> "activity (
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020161> "Thermodynamic activity is a relational quality that inheres between a chemical species and a non-ideal solution and represents the effective concentration of the species accounting for particle interactions."@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020161> <http://purl.obolibrary.org/obo/BFO_0000145>)
 
+# Class: <https://w3id.org/pmd/co/PMD_0020202> (crack)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0020202> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0020202> "PERSON: Philipp von Hartrott")
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020202> "crack"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020202> "A crack is a site that consists of a physical separation within a material entity occurring at the level of atomic bonds."@en)
+AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020202> "true"^^xsd:boolean)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0020202> <http://purl.obolibrary.org/obo/BFO_0000029>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0020203> (notch)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0020203> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0020203> "PERSON: Philipp von Hartrott")
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020203> "notch"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020203> "A notch is a site that consists of a geometric surface feature of an object characterized by a strong local change in shape or cross-section."@en)
+AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020203> "true"^^xsd:boolean)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0020203> <http://purl.obolibrary.org/obo/BFO_0000029>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0020204> (pore)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0020204> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0020204> "PERSON: Philipp von Hartrott")
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020204> "pore"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020204> "A pore is a site that consists of a cavity located within the bulk of a material entity."@en)
+AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020204> "true"^^xsd:boolean)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0020204> <http://purl.obolibrary.org/obo/BFO_0000029>)
+
 # Class: <https://w3id.org/pmd/co/PMD_0020207> (amount of substance)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0020207> <http://purl.obolibrary.org/obo/IAO_0000122>)
@@ -4507,6 +4537,7 @@ DisjointClasses(<https://w3id.org/pmd/co/PMD_0000503> <https://w3id.org/pmd/co/P
 DisjointClasses(<https://w3id.org/pmd/co/PMD_0000553> <https://w3id.org/pmd/co/PMD_0000619> <https://w3id.org/pmd/co/PMD_0020132> <https://w3id.org/pmd/co/PMD_0020133> <https://w3id.org/pmd/co/PMD_0020142> <https://w3id.org/pmd/co/PMD_0020161> <https://w3id.org/pmd/co/PMD_0050155>)
 DisjointClasses(<https://w3id.org/pmd/co/PMD_0000587> <https://w3id.org/pmd/co/PMD_0000889> <https://w3id.org/pmd/co/PMD_0000953>)
 DisjointClasses(<https://w3id.org/pmd/co/PMD_0020102> <https://w3id.org/pmd/co/PMD_0020103> <https://w3id.org/pmd/co/PMD_0020104>)
+DisjointClasses(<https://w3id.org/pmd/co/PMD_0020202> <https://w3id.org/pmd/co/PMD_0020203> <https://w3id.org/pmd/co/PMD_0020204>)
 DifferentIndividuals(<https://w3id.org/pmd/co/PMD_0020006> <https://w3id.org/pmd/co/PMD_0020007> <https://w3id.org/pmd/co/PMD_0020008> <https://w3id.org/pmd/co/PMD_0020009> <https://w3id.org/pmd/co/PMD_0020010> <https://w3id.org/pmd/co/PMD_0020011> <https://w3id.org/pmd/co/PMD_0020012> <https://w3id.org/pmd/co/PMD_0020013> <https://w3id.org/pmd/co/PMD_0020014> <https://w3id.org/pmd/co/PMD_0020015> <https://w3id.org/pmd/co/PMD_0020016> <https://w3id.org/pmd/co/PMD_0020017> <https://w3id.org/pmd/co/PMD_0020018> <https://w3id.org/pmd/co/PMD_0020019>)
 DifferentIndividuals(<https://w3id.org/pmd/co/PMD_0020117> <https://w3id.org/pmd/co/PMD_0020118> <https://w3id.org/pmd/co/PMD_0020119> <https://w3id.org/pmd/co/PMD_0020120> <https://w3id.org/pmd/co/PMD_0020121> <https://w3id.org/pmd/co/PMD_0020122> <https://w3id.org/pmd/co/PMD_0020123> <https://w3id.org/pmd/co/PMD_0020124> <https://w3id.org/pmd/co/PMD_0020125>)
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/RO_0000057>) <http://purl.obolibrary.org/obo/RO_0000057>)

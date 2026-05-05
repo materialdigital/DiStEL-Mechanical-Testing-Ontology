@@ -17,11 +17,11 @@
 @base <https://w3id.org/pmd/distel-mech.ttl> .
 
 <https://w3id.org/pmd/distel-mech.ttl> rdf:type owl:Ontology ;
-                                        owl:versionIRI <https://w3id.org/pmd/distel/releases/2026-04-29/distel-mech.ttl> ;
+                                        owl:versionIRI <https://w3id.org/pmd/distel/releases/2026-05-05/distel-mech.ttl> ;
                                         dcterms:description "None" ;
                                         dcterms:license <https://creativecommons.org/licenses/unspecified> ;
                                         dcterms:title "DiStEL Mechanical Testing Ontology" ;
-                                        owl:versionInfo "2026-04-29" .
+                                        owl:versionInfo "2026-05-05" .
 
 #################################################################
 #    Annotation properties
@@ -5548,6 +5548,36 @@ co:PMD_0020200 rdf:type owl:Class ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
+###  https://w3id.org/pmd/co/PMD_0020202
+co:PMD_0020202 rdf:type owl:Class ;
+               rdfs:subClassOf obo:BFO_0000029 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Philipp von Hartrott" ;
+               rdfs:label "crack"@en ;
+               skos:definition "A crack is a site that consists of a physical separation within a material entity occurring at the level of atomic bonds."@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0020203
+co:PMD_0020203 rdf:type owl:Class ;
+               rdfs:subClassOf obo:BFO_0000029 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Philipp von Hartrott" ;
+               rdfs:label "notch"@en ;
+               skos:definition "A notch is a site that consists of a geometric surface feature of an object characterized by a strong local change in shape or cross-section."@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0020204
+co:PMD_0020204 rdf:type owl:Class ;
+               rdfs:subClassOf obo:BFO_0000029 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Philipp von Hartrott" ;
+               rdfs:label "pore"@en ;
+               skos:definition "A pore is a site that consists of a cavity located within the bulk of a material entity."@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
 ###  https://w3id.org/pmd/co/PMD_0020207
 co:PMD_0020207 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020103 ;
@@ -6595,7 +6625,8 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
 ###  https://w3id.org/pmd/distel/DISTEL_0000059
 <https://w3id.org/pmd/distel/DISTEL_0000059> rdf:type owl:Class ;
                                              rdfs:subClassOf co:PMD_0040001 ;
-                                             rdfs:label "initial crack length"@en .
+                                             rdfs:label "initial crack length"@en ;
+                                             skos:definition "Initial crack length is a length of a crack in a specimen which is an input to the crack propagation fatigue testing process."@en .
 
 
 ###  https://w3id.org/pmd/distel/DISTEL_0000060
@@ -6840,7 +6871,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
 
 ###  https://w3id.org/pmd/distel/DISTEL_0000083
 <https://w3id.org/pmd/distel/DISTEL_0000083> rdf:type owl:Class ;
-                                             rdfs:subClassOf <https://w3id.org/pmd/distel/DISTEL_0000017> ;
+                                             rdfs:subClassOf co:PMD_0000952 ;
                                              obo:IAO_0000119 "https://sdcverifier.com/structural-engineering-101/how-to-calculate-fatigue-strength-hand-calculations/" ;
                                              qudt:symbol "σ′f" ;
                                              rdfs:label "fatigue strength coefficient"@en ;
@@ -6853,6 +6884,114 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
                                              qudt:symbol "b" ;
                                              rdfs:label "fatigue strength exponent"@en ;
                                              skos:definition "fatigue strength exponent is s a material parameter used in the Basquin equation. It helps define the stress-life curve in the high-cycle regime."@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000085
+<https://w3id.org/pmd/distel/DISTEL_0000085> rdf:type owl:Class ;
+                                             rdfs:subClassOf co:PMD_0025020 ;
+                                             rdfs:label "crack propagation fatigue testing process"@en ;
+                                             skos:definition "Crack propagation fatigue testing process is a type of fatigue testing in which specimen has an intial crack."@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000086
+<https://w3id.org/pmd/distel/DISTEL_0000086> rdf:type owl:Class ;
+                                             rdfs:subClassOf co:PMD_0000502 ;
+                                             rdfs:label "crack length vs number of cycles curve"@en ;
+                                             skos:definition "Crack length vs number of cycles curve is 2D data item  which indicates the propagation of crack under cycling loading."@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000087
+<https://w3id.org/pmd/distel/DISTEL_0000087> rdf:type owl:Class ;
+                                             rdfs:subClassOf co:PMD_0025019 ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty co:PMD_0025006 ;
+                                                               owl:someValuesFrom [ owl:intersectionOf ( co:PMD_0000587
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty obo:BFO_0000132 ;
+                                                                                                           owl:someValuesFrom <https://w3id.org/pmd/distel/DISTEL_0000085>
+                                                                                                         ]
+                                                                                                       ) ;
+                                                                                    rdf:type owl:Class
+                                                                                  ]
+                                                             ] ;
+                                             qudt:symbol "da/dN" ;
+                                             rdfs:label "crack growth rate"@en ;
+                                             skos:definition "Crack growth rate is a process attribute of a crack growth, which is an occurent part of a crack propagation fatigue testing process. It is defined as an increase of crack length over a single fatigue cycle."@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000088
+<https://w3id.org/pmd/distel/DISTEL_0000088> rdf:type owl:Class ;
+                                             rdfs:subClassOf co:PMD_0000848 ;
+                                             qudt:symbol "C" ,
+                                                         "scaling factor of Paris law is a mechanical property of material used in the Paris law to analytically determine the crack growth rate."@en ;
+                                             rdfs:label "scaling factor of Paris law"@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000089
+<https://w3id.org/pmd/distel/DISTEL_0000089> rdf:type owl:Class ;
+                                             rdfs:subClassOf co:PMD_0000848 ;
+                                             qudt:symbol "m" ;
+                                             rdfs:label "slope of Paris law"@en ;
+                                             skos:definition "Slope of Paris law is a mechanical property of a material which characerizes material's sensitivity to crack propagation depending on stress intensity factor deltaK"@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000090
+<https://w3id.org/pmd/distel/DISTEL_0000090> rdf:type owl:Class ;
+                                             rdfs:subClassOf co:PMD_0000848 ;
+                                             qudt:symbol "ΔK_th" ;
+                                             rdfs:label "threshold stress intensity factor"@en ;
+                                             skos:definition "Threshold stress intensity factor is a mechanical property which defines the maximum ΔK below which crack does not grow."@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000091
+<https://w3id.org/pmd/distel/DISTEL_0000091> rdf:type owl:Class ;
+                                             rdfs:subClassOf co:PMD_0000848 ;
+                                             qudt:symbol "ΔK" ;
+                                             rdfs:comment "K depends on crack length, stress, and geometry, Higher ΔK - faster crack growth."@en ;
+                                             rdfs:label "stress intensity factor range"@en ;
+                                             skos:definition "Stress intensity factor is a mechanical property which characterizes the range of stress intensity during a loading cycle in a crack propagation test."@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000092
+<https://w3id.org/pmd/distel/DISTEL_0000092> rdf:type owl:Class ;
+                                             rdfs:subClassOf co:PMD_0000848 ;
+                                             qudt:symbol "K_IC" ;
+                                             rdfs:comment "fracture toughness is a mechanical property which characterizes the critical stress intensity factor K at which unstable fracture occurs during a crack propagation fatigue testing."@en ;
+                                             rdfs:label "fracture toughness"@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000093
+<https://w3id.org/pmd/distel/DISTEL_0000093> rdf:type owl:Class ;
+                                             rdfs:subClassOf co:PMD_0000502 ,
+                                                             [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty obo:BFO_0000050 ;
+                                                                                      owl:someValuesFrom <https://w3id.org/pmd/distel/DISTEL_0000045>
+                                                                                    ]
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty obo:BFO_0000050 ;
+                                                                                      owl:allValuesFrom <https://w3id.org/pmd/distel/DISTEL_0000045>
+                                                                                    ]
+                                                                                  ) ;
+                                                               rdf:type owl:Class
+                                                             ] ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty obo:BFO_0000050 ;
+                                                               owl:someValuesFrom <https://w3id.org/pmd/distel/DISTEL_0000045>
+                                                             ] ;
+                                             rdfs:label "scatter band of a fatigue curve"@en ;
+                                             skos:definition "Scatter band of a fatigue curve is a 2D information content entity which defines the range of variation in fatigue life from multiple tests under the same conditions."@en .
+
+
+###  https://w3id.org/pmd/distel/DISTEL_0000094
+<https://w3id.org/pmd/distel/DISTEL_0000094> rdf:type owl:Class ;
+                                             rdfs:subClassOf obo:OBI_0001931 ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty obo:OBI_0001927 ;
+                                                               owl:someValuesFrom <https://w3id.org/pmd/distel/DISTEL_0000093>
+                                                             ] ;
+                                             rdfs:label "fatigue scatter bandwidth"@en ;
+                                             skos:definition "+-K_D" ,
+                                                             "Fatigue scatter bandwidth is a scalar value specification which defines absolute value of maximal deviation from a fatigue curve."@en .
 
 
 ###  https://w3id.org/pmd/distel/DISTEL_0000100
@@ -8778,6 +8917,14 @@ qudt:DerivedUnit dcterms:description """
   owl:members ( co:PMD_0020102
                 co:PMD_0020103
                 co:PMD_0020104
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( co:PMD_0020202
+                co:PMD_0020203
+                co:PMD_0020204
               )
 ] .
 
