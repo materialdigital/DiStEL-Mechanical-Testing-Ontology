@@ -17,11 +17,11 @@
 @base <https://w3id.org/pmd/distel-mech.ttl> .
 
 <https://w3id.org/pmd/distel-mech.ttl> rdf:type owl:Ontology ;
-                                        owl:versionIRI <https://w3id.org/pmd/distel/releases/2026-05-05/distel-mech.ttl> ;
+                                        owl:versionIRI <https://w3id.org/pmd/distel/releases/2026-05-15/distel-mech.ttl> ;
                                         dcterms:description "None" ;
                                         dcterms:license <https://creativecommons.org/licenses/unspecified> ;
                                         dcterms:title "DiStEL Mechanical Testing Ontology" ;
-                                        owl:versionInfo "2026-05-05" .
+                                        owl:versionInfo "2026-05-15" .
 
 #################################################################
 #    Annotation properties
@@ -8619,10 +8619,10 @@ co:PMD_0020242 rdf:type owl:NamedIndividual ;
 
 ###  https://w3id.org/pmd/distel/DISTEL_0000012
 <https://w3id.org/pmd/distel/DISTEL_0000012> rdf:type owl:NamedIndividual ;
-                                             rdfs:label "stress-controlled"@en ;
+                                             rdfs:label "load-controlled"@en ;
                                              skos:altLabel "force-controlled"@en ,
-                                                           "load-controlled"@en ;
-                                             skos:definition "A fatigue test is considered stress-controlled if a laod/force ratio of a load exerted on a specimen is kept constant."@en .
+                                                           "stress-controlled"@en ;
+                                             skos:definition "A fatigue test is considered load-controlled if a load/force ratio of a load exerted on a specimen is kept constant."@en .
 
 
 ###  https://w3id.org/pmd/distel/DISTEL_0000015
