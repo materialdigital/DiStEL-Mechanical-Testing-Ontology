@@ -1082,10 +1082,10 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     <!-- https://w3id.org/pmd/distel/DISTEL_0000012 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000012">
-        <rdfs:label xml:lang="en">stress-controlled</rdfs:label>
+        <rdfs:label xml:lang="en">load-controlled</rdfs:label>
         <skos:altLabel xml:lang="en">force-controlled</skos:altLabel>
-        <skos:altLabel xml:lang="en">load-controlled</skos:altLabel>
-        <skos:definition xml:lang="en">A fatigue test is considered stress-controlled if a laod/force ratio of a load exerted on a specimen is kept constant.</skos:definition>
+        <skos:altLabel xml:lang="en">stress-controlled</skos:altLabel>
+        <skos:definition xml:lang="en">A fatigue test is considered load-controlled if a load/force ratio of a load exerted on a specimen is kept constant.</skos:definition>
     </owl:NamedIndividual>
     
 
