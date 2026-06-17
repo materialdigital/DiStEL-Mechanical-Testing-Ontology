@@ -52,6 +52,10 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 #   Classes
 ############################
 
+# Class: <http://purl.obolibrary.org/obo/BFO_0000015> (process)
+
+EquivalentClasses(<http://purl.obolibrary.org/obo/BFO_0000015> <https://w3id.org/pmd/co/PMD_0020141>)
+
 # Class: <https://w3id.org/pmd/DISTEL-MECH_0000000> (root node)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/DISTEL-MECH_0000000> "root node"@en)
