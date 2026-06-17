@@ -5,4 +5,5 @@ http://qudt.org/schema/qudt/DerivedUnit
 # Individuals
 http://qudt.org/vocab/unit/HZ  # Hertz
 http://qudt.org/vocab/unit/K   # Kelvin
-http://qudt.org/vocab/unit/M2  # square metre
+https://qudt.org/vocab/unit/PER-SEC
+https://qudt.org/vocab/unit/K-PER-SEC

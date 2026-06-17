@@ -13,3 +13,4 @@ http://purl.obolibrary.org/obo/UO_0000010 # second
 http://purl.obolibrary.org/obo/UO_0000110 # Pascal
 http://purl.obolibrary.org/obo/UO_0000185 # degree (angle)
 http://purl.obolibrary.org/obo/UO_0000032 # hour
+http://purl.obolibrary.org/obo/UO_0000082 # square mm
