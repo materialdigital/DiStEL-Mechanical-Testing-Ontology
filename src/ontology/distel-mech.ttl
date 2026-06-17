@@ -152,10 +152,6 @@ dcterms:title rdf:type owl:AnnotationProperty ;
               rdfs:label "title" .
 
 
-###  http://qudt.org/schema/qudt/expression
-qudt:expression rdf:type owl:AnnotationProperty .
-
-
 ###  http://qudt.org/schema/qudt/informativeReference
 qudt:informativeReference rdf:type owl:AnnotationProperty .
 
@@ -2709,6 +2705,11 @@ obo:UO_0000076 rdf:type owl:Class ;
                rdfs:subClassOf obo:UO_1000076 .
 
 
+###  http://purl.obolibrary.org/obo/UO_0000082
+obo:UO_0000082 rdf:type owl:Class ;
+               rdfs:subClassOf obo:UO_1000082 .
+
+
 ###  http://purl.obolibrary.org/obo/UO_0000106
 obo:UO_0000106 rdf:type owl:Class ;
                rdfs:subClassOf obo:UO_1000106 .
@@ -2822,6 +2823,12 @@ obo:UO_1000032 rdf:type owl:Class ;
 obo:UO_1000076 rdf:type owl:Class ;
                rdfs:subClassOf obo:UO_0000000 ;
                rdfs:label "mole fraction based unit" .
+
+
+###  http://purl.obolibrary.org/obo/UO_1000082
+obo:UO_1000082 rdf:type owl:Class ;
+               rdfs:subClassOf obo:UO_0000000 ;
+               rdfs:label "square millimeter based unit" .
 
 
 ###  http://purl.obolibrary.org/obo/UO_1000106
@@ -10934,6 +10941,10 @@ obo:UO_0000032 rdf:type owl:NamedIndividual .
 obo:UO_0000076 rdf:type owl:NamedIndividual .
 
 
+###  http://purl.obolibrary.org/obo/UO_0000082
+obo:UO_0000082 rdf:type owl:NamedIndividual .
+
+
 ###  http://purl.obolibrary.org/obo/UO_0000106
 obo:UO_0000106 rdf:type owl:NamedIndividual .
 
@@ -11047,44 +11058,6 @@ qudt:DerivedUnit rdf:type owl:NamedIndividual .
                                           "कैल्विन"@hi ,
                                           "ケルビン"@ja ,
                                           "开尔文"@zh .
-
-
-###  http://qudt.org/vocab/unit/M2
-<http://qudt.org/vocab/unit/M2> rdf:type owl:NamedIndividual ,
-                                         qudt:DerivedUnit ,
-                                         qudt:Unit ;
-                                dcterms:description "The S I unit of area is the square metre."^^rdf:HTML ;
-                                qudt:expression "$sq-m$"^^qudt:LatexString ;
-                                qudt:informativeReference "https://cdd.iec.ch/cdd/iec62720/iec62720.nsf/Units/0112-2---62720%23UAA744"^^xsd:anyURI ,
-                                                          "https://en.wikipedia.org/wiki/Square_metre?oldid=490945508"^^xsd:anyURI ;
-                                qudt:symbol "m²" ;
-                                qudt:wikidataMatch <http://www.wikidata.org/entity/Q25343> ;
-                                rdfs:isDefinedBy <http://qudt.org/vocab/unit> ;
-                                rdfs:label "Kvadratni Meter"@sl ,
-                                           "Meter Persegi"@ms ,
-                                           "Metr Kwadratowy"@pl ,
-                                           "Metrekare"@tr ,
-                                           "Metro Cuadrado"@es ,
-                                           "Metro Quadrado"@pt ,
-                                           "Metro Quadrato"@it ,
-                                           "Metru Pătrat"@ro ,
-                                           "Metrum Quadratum"@la ,
-                                           "Mètre Carré"@fr ,
-                                           "Négyzetméter"@hu ,
-                                           "Quadratmeter"@de ,
-                                           "Square Meter"@en-us ,
-                                           "Square Metre" ,
-                                           "Square Metre"@en ,
-                                           "Čtvereční Metr"@cs ,
-                                           "Τετραγωνικό Μέτρο"@el ,
-                                           "Квадратен Метър"@bg ,
-                                           "Квадратный Метр"@ru ,
-                                           "מטר רבוע"@he ,
-                                           "متر مربع"@ar ,
-                                           "متر مربع"@fa ,
-                                           "वर्ग मीटर"@hi ,
-                                           "平方メートル"@ja ,
-                                           "平方米"@zh .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020006
@@ -11485,6 +11458,19 @@ obo:UO_0000076 obo:IAO_0000115 "A concentration unit which denotes the number of
    owl:annotatedProperty obo:IAO_0000115 ;
    owl:annotatedTarget "A concentration unit which denotes the number of moles of solute as a proportion of the total number of moles in a solution." ;
    oboInOwl:hasDbXref "Wikipedia:Wikipedia"
+ ] .
+
+
+obo:UO_0000082 obo:IAO_0000115 "An area unit which is equal to one millionth of a square meter or 10^[-6] m^[2]." ;
+               oboInOwl:hasExactSynonym "mm^[2]" ,
+                                        "square millimetre" ;
+               rdfs:label "square millimeter" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:UO_0000082 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "An area unit which is equal to one millionth of a square meter or 10^[-6] m^[2]." ;
+   oboInOwl:hasDbXref "NIST:NIST"
  ] .
 
 

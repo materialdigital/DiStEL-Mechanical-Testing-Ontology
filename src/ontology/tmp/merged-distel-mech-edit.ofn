@@ -5859,7 +5859,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000015> "The length of a straight line through the center of an object (tensile test piece) as measured after a fracture occured during a test."@en)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000015> <https://w3id.org/pmd/co/PMD_0050051>)
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000016> (estimated strain rate over the parallel length)
+# Class: <https://w3id.org/pmd/tto/TTO_0000016> (Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000016> <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000016> "Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge"@de)
@@ -6086,7 +6086,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000035> "DIN EN ISO 6892-1:2019"@en)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000035> <https://w3id.org/pmd/tto/TTO_0000004>)
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000036> (percentage permanent extension)
+# Class: <https://w3id.org/pmd/tto/TTO_0000036> (Bleibende Extensometer-Dehnung)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000036> <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000036> "Bleibende Extensometer-Dehnung"@de)
@@ -6425,7 +6425,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/OMO_0001000> "https://github.com/information-artifact-ontology/ontology-metadata/issues/77")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMO_0001000> "out of scope")
 
-# Individual: <http://qudt.org/vocab/unit/HZ> (Hertz)
+# Individual: <http://qudt.org/vocab/unit/HZ> (हर्ट्ज)
 
 AnnotationAssertion(dcterms:description <http://qudt.org/vocab/unit/HZ> "
   $\\textit{Hertz}$ (symbol $Hz$) is the SI unit of frequency defined as the number of cycles per second of a periodic phenomenon.

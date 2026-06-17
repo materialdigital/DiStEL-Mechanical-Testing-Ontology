@@ -18,6 +18,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000031>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000032>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000045>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000082>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000106>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000110>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000163>))
@@ -32,6 +33,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000012>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000031>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000032>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000082>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000106>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000110>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000163>))
@@ -43,6 +45,7 @@ Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000016>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000027>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000031>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000032>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000082>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000106>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000110>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000163>))
@@ -112,6 +115,14 @@ SubClassOf(<http://purl.obolibrary.org/obo/UO_0000032> <http://purl.obolibrary.o
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "NIST:NIST") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0000045> "A unit which is one of a particular measure to which all measures of that type can be related.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000045> "base unit")
 SubClassOf(<http://purl.obolibrary.org/obo/UO_0000045> <http://purl.obolibrary.org/obo/UO_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/UO_0000082> (square millimeter)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "NIST:NIST") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0000082> "An area unit which is equal to one millionth of a square meter or 10^[-6] m^[2].")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000082> "mm^[2]")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000082> "square millimetre")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000082> "square millimeter")
+SubClassOf(<http://purl.obolibrary.org/obo/UO_0000082> <http://purl.obolibrary.org/obo/UO_1000082>)
 
 # Class: <http://purl.obolibrary.org/obo/UO_0000106> (hertz)
 
@@ -198,6 +209,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/UO_1000031> <http://purl.obolibrary.o
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000032> "hour based unit")
 SubClassOf(<http://purl.obolibrary.org/obo/UO_1000032> <http://purl.obolibrary.org/obo/UO_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/UO_1000082> (square millimeter based unit)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000082> "square millimeter based unit")
+SubClassOf(<http://purl.obolibrary.org/obo/UO_1000082> <http://purl.obolibrary.org/obo/UO_0000000>)
 
 # Class: <http://purl.obolibrary.org/obo/UO_1000106> (hertz based unit)
 

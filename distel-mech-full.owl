@@ -210,12 +210,6 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://qudt.org/schema/qudt/expression -->
-
-    <owl:AnnotationProperty rdf:about="http://qudt.org/schema/qudt/expression"/>
-    
-
-
     <!-- http://qudt.org/schema/qudt/informativeReference -->
 
     <owl:AnnotationProperty rdf:about="http://qudt.org/schema/qudt/informativeReference"/>
@@ -3674,6 +3668,14 @@ for now.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UO_0000082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000082">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_1000082"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UO_0000106 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000106">
@@ -3830,6 +3832,15 @@ for now.</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_1000076">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
         <rdfs:label>mole fraction based unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_1000082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_1000082">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
+        <rdfs:label>square millimeter based unit</rdfs:label>
     </owl:Class>
     
 
@@ -14702,6 +14713,12 @@ Note: Stress rate is only used in the elastic part of the test.</skos:definition
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UO_0000082 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/UO_0000082"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UO_0000106 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/UO_0000106"/>
@@ -14833,47 +14850,6 @@ Note: Stress rate is only used in the elastic part of the test.</skos:definition
         <rdfs:label xml:lang="hi">कैल्विन</rdfs:label>
         <rdfs:label xml:lang="ja">ケルビン</rdfs:label>
         <rdfs:label xml:lang="zh">开尔文</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://qudt.org/vocab/unit/M2 -->
-
-    <owl:NamedIndividual rdf:about="http://qudt.org/vocab/unit/M2">
-        <rdf:type rdf:resource="http://qudt.org/schema/qudt/DerivedUnit"/>
-        <rdf:type rdf:resource="http://qudt.org/schema/qudt/Unit"/>
-        <dcterms:description rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML">The S I unit of area is the square metre.</dcterms:description>
-        <qudt:expression rdf:datatype="http://qudt.org/schema/qudt/LatexString">$sq-m$</qudt:expression>
-        <qudt:informativeReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://cdd.iec.ch/cdd/iec62720/iec62720.nsf/Units/0112-2---62720%23UAA744</qudt:informativeReference>
-        <qudt:informativeReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Square_metre?oldid=490945508</qudt:informativeReference>
-        <qudt:symbol>m²</qudt:symbol>
-        <qudt:wikidataMatch rdf:resource="http://www.wikidata.org/entity/Q25343"/>
-        <rdfs:isDefinedBy rdf:resource="http://qudt.org/vocab/unit"/>
-        <rdfs:label xml:lang="sl">Kvadratni Meter</rdfs:label>
-        <rdfs:label xml:lang="ms">Meter Persegi</rdfs:label>
-        <rdfs:label xml:lang="pl">Metr Kwadratowy</rdfs:label>
-        <rdfs:label xml:lang="tr">Metrekare</rdfs:label>
-        <rdfs:label xml:lang="es">Metro Cuadrado</rdfs:label>
-        <rdfs:label xml:lang="pt">Metro Quadrado</rdfs:label>
-        <rdfs:label xml:lang="it">Metro Quadrato</rdfs:label>
-        <rdfs:label xml:lang="ro">Metru Pătrat</rdfs:label>
-        <rdfs:label xml:lang="la">Metrum Quadratum</rdfs:label>
-        <rdfs:label xml:lang="fr">Mètre Carré</rdfs:label>
-        <rdfs:label xml:lang="hu">Négyzetméter</rdfs:label>
-        <rdfs:label xml:lang="de">Quadratmeter</rdfs:label>
-        <rdfs:label xml:lang="en-us">Square Meter</rdfs:label>
-        <rdfs:label>Square Metre</rdfs:label>
-        <rdfs:label xml:lang="en">Square Metre</rdfs:label>
-        <rdfs:label xml:lang="cs">Čtvereční Metr</rdfs:label>
-        <rdfs:label xml:lang="el">Τετραγωνικό Μέτρο</rdfs:label>
-        <rdfs:label xml:lang="bg">Квадратен Метър</rdfs:label>
-        <rdfs:label xml:lang="ru">Квадратный Метр</rdfs:label>
-        <rdfs:label xml:lang="he">מטר רבוע</rdfs:label>
-        <rdfs:label xml:lang="ar">متر مربع</rdfs:label>
-        <rdfs:label xml:lang="fa">متر مربع</rdfs:label>
-        <rdfs:label xml:lang="hi">वर्ग मीटर</rdfs:label>
-        <rdfs:label xml:lang="ja">平方メートル</rdfs:label>
-        <rdfs:label xml:lang="zh">平方米</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -15422,6 +15398,18 @@ TODO</skos:definition>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A concentration unit which denotes the number of moles of solute as a proportion of the total number of moles in a solution.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>Wikipedia:Wikipedia</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000082">
+        <obo:IAO_0000115>An area unit which is equal to one millionth of a square meter or 10^[-6] m^[2].</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>mm^[2]</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>square millimetre</oboInOwl:hasExactSynonym>
+        <rdfs:label>square millimeter</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UO_0000082"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An area unit which is equal to one millionth of a square meter or 10^[-6] m^[2].</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>NIST:NIST</oboInOwl:hasDbXref>
     </owl:Axiom>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000106">
         <obo:IAO_0000115>A frequency unit which is equal to 1 complete cycle of a recurring phenomenon in 1 second.</obo:IAO_0000115>
