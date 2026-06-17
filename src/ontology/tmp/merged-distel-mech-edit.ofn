@@ -166,6 +166,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000031>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000032>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000045>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000076>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000082>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000106>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000110>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000163>))
@@ -182,6 +183,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000031>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000032>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000076>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000082>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000106>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000110>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000163>))
@@ -568,6 +570,8 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000054>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000055>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000062>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000063>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000066>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000108>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000117>))
@@ -663,6 +667,7 @@ Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000027>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000031>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000032>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000076>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000082>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000106>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000110>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000163>))
@@ -672,7 +677,6 @@ Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000228>))
 Declaration(NamedIndividual(<http://qudt.org/schema/qudt/DerivedUnit>))
 Declaration(NamedIndividual(<http://qudt.org/vocab/unit/HZ>))
 Declaration(NamedIndividual(<http://qudt.org/vocab/unit/K>))
-Declaration(NamedIndividual(<http://qudt.org/vocab/unit/M2>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020006>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020007>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020008>))
@@ -735,7 +739,6 @@ Declaration(AnnotationProperty(dcterms:creator))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
-Declaration(AnnotationProperty(<http://qudt.org/schema/qudt/expression>))
 Declaration(AnnotationProperty(<http://qudt.org/schema/qudt/informativeReference>))
 Declaration(AnnotationProperty(<http://qudt.org/schema/qudt/omUnit>))
 Declaration(AnnotationProperty(<http://qudt.org/schema/qudt/siExactMatch>))
@@ -940,6 +943,27 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://pur
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000055> "A balding process realizes a disposition to go bald; a studying process realizes a student role; a process of pumping blood realizes the pumping function of a heart"@en)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/BFO_0000015>)
 ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/BFO_0000017>)
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000062> (preceded by)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000062> "x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000062> "preceded by"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/BFO_0000062> "b preceded by c =Def b precedes c"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000062> "The temporal region occupied by the second half of the match is preceded by the temporal region occupied by the first half of the match"@en)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/BFO_0000062> <http://purl.obolibrary.org/obo/BFO_0000063>)
+TransitiveObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000062>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000062> <http://purl.obolibrary.org/obo/BFO_0000003>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000062> <http://purl.obolibrary.org/obo/BFO_0000003>)
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000063> (precedes)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000063> "x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000063> "precedes"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/BFO_0000063> "(Elucidation) precedes is a relation between occurrents o, o' such that if t is the temporal extent of o & t' is the temporal extent of o' then either the last instant of o is before the first instant of o' or the last instant of o is the first instant of o' & neither o nor o' are temporal instants"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000063> "The temporal region occupied by Mary's birth precedes the temporal region occupied by Mary's death."@en)
+TransitiveObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000063>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000063> <http://purl.obolibrary.org/obo/BFO_0000003>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000063> <http://purl.obolibrary.org/obo/BFO_0000003>)
 
 # Object Property: <http://purl.obolibrary.org/obo/BFO_0000066> (occurs in)
 
@@ -2632,7 +2656,7 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0020010> ObjectIntersectio
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020010> <http://purl.obolibrary.org/obo/COB_0000035>)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/IAO_0020000>))
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (homo sapiens)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (Homo sapiens)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "Homo sapiens")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "homo sapiens")
@@ -2836,6 +2860,14 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000076> "mole fraction")
 SubClassOf(<http://purl.obolibrary.org/obo/UO_0000076> <http://purl.obolibrary.org/obo/UO_1000076>)
 
+# Class: <http://purl.obolibrary.org/obo/UO_0000082> (square millimeter)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "NIST:NIST") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0000082> "An area unit which is equal to one millionth of a square meter or 10^[-6] m^[2].")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000082> "mm^[2]")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000082> "square millimetre")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000082> "square millimeter")
+SubClassOf(<http://purl.obolibrary.org/obo/UO_0000082> <http://purl.obolibrary.org/obo/UO_1000082>)
+
 # Class: <http://purl.obolibrary.org/obo/UO_0000106> (hertz)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "NIST:NIST") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0000106> "A frequency unit which is equal to 1 complete cycle of a recurring phenomenon in 1 second.")
@@ -2934,6 +2966,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/UO_1000032> <http://purl.obolibrary.o
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000076> "mole fraction based unit")
 SubClassOf(<http://purl.obolibrary.org/obo/UO_1000076> <http://purl.obolibrary.org/obo/UO_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/UO_1000082> (square millimeter based unit)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000082> "square millimeter based unit")
+SubClassOf(<http://purl.obolibrary.org/obo/UO_1000082> <http://purl.obolibrary.org/obo/UO_0000000>)
 
 # Class: <http://purl.obolibrary.org/obo/UO_1000106> (hertz based unit)
 
@@ -3688,7 +3725,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000953> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000953> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000957> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0000957> "PERSON: Joerg Waitelonis")
@@ -6086,7 +6123,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000035> "DIN EN ISO 6892-1:2019"@en)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000035> <https://w3id.org/pmd/tto/TTO_0000004>)
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000036> (Bleibende Extensometer-Dehnung)
+# Class: <https://w3id.org/pmd/tto/TTO_0000036> (percentage permanent extension)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000036> <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000036> "Bleibende Extensometer-Dehnung"@de)
@@ -6425,7 +6462,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/OMO_0001000> "https://github.com/information-artifact-ontology/ontology-metadata/issues/77")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMO_0001000> "out of scope")
 
-# Individual: <http://qudt.org/vocab/unit/HZ> (हर्ट्ज)
+# Individual: <http://qudt.org/vocab/unit/HZ> (Hertz)
 
 AnnotationAssertion(dcterms:description <http://qudt.org/vocab/unit/HZ> "
   $\\textit{Hertz}$ (symbol $Hz$) is the SI unit of frequency defined as the number of cycles per second of a periodic phenomenon.
@@ -6509,43 +6546,6 @@ AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/K> "कैल्व�
 AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/K> "ケルビン"@ja)
 AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/K> "开尔文"@zh)
 ClassAssertion(<http://qudt.org/schema/qudt/Unit> <http://qudt.org/vocab/unit/K>)
-
-# Individual: <http://qudt.org/vocab/unit/M2> (Meter Persegi)
-
-AnnotationAssertion(dcterms:description <http://qudt.org/vocab/unit/M2> "The S I unit of area is the square metre."^^rdf:HTML)
-AnnotationAssertion(<http://qudt.org/schema/qudt/expression> <http://qudt.org/vocab/unit/M2> "$sq-m$"^^<http://qudt.org/schema/qudt/LatexString>)
-AnnotationAssertion(<http://qudt.org/schema/qudt/informativeReference> <http://qudt.org/vocab/unit/M2> "https://cdd.iec.ch/cdd/iec62720/iec62720.nsf/Units/0112-2---62720%23UAA744"^^xsd:anyURI)
-AnnotationAssertion(<http://qudt.org/schema/qudt/informativeReference> <http://qudt.org/vocab/unit/M2> "https://en.wikipedia.org/wiki/Square_metre?oldid=490945508"^^xsd:anyURI)
-AnnotationAssertion(<http://qudt.org/schema/qudt/symbol> <http://qudt.org/vocab/unit/M2> "m²")
-AnnotationAssertion(<http://qudt.org/schema/qudt/wikidataMatch> <http://qudt.org/vocab/unit/M2> <http://www.wikidata.org/entity/Q25343>)
-AnnotationAssertion(rdfs:isDefinedBy <http://qudt.org/vocab/unit/M2> <http://qudt.org/vocab/unit>)
-AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Kvadratni Meter"@sl)
-AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Meter Persegi"@ms)
-AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Metr Kwadratowy"@pl)
-AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Metrekare"@tr)
-AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Metro Cuadrado"@es)
-AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Metro Quadrado"@pt)
-AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Metro Quadrato"@it)
-AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Metru Pătrat"@ro)
-AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Metrum Quadratum"@la)
-AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Mètre Carré"@fr)
-AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Négyzetméter"@hu)
-AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Quadratmeter"@de)
-AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Square Meter"@en-us)
-AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Square Metre")
-AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Square Metre"@en)
-AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Čtvereční Metr"@cs)
-AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Τετραγωνικό Μέτρο"@el)
-AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Квадратен Метър"@bg)
-AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "Квадратный Метр"@ru)
-AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "מטר רבוע"@he)
-AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "متر مربع"@ar)
-AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "متر مربع"@fa)
-AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "वर्ग मीटर"@hi)
-AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "平方メートル"@ja)
-AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/M2> "平方米"@zh)
-ClassAssertion(<http://qudt.org/schema/qudt/DerivedUnit> <http://qudt.org/vocab/unit/M2>)
-ClassAssertion(<http://qudt.org/schema/qudt/Unit> <http://qudt.org/vocab/unit/M2>)
 
 # Individual: <https://w3id.org/pmd/co/PMD_0020006> (bravais lattice triclinic primitive)
 

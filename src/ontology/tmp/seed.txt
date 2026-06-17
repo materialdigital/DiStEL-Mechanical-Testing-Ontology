@@ -29,6 +29,8 @@ http://purl.obolibrary.org/obo/BFO_0000050
 http://purl.obolibrary.org/obo/BFO_0000051
 http://purl.obolibrary.org/obo/BFO_0000054
 http://purl.obolibrary.org/obo/BFO_0000055
+http://purl.obolibrary.org/obo/BFO_0000062
+http://purl.obolibrary.org/obo/BFO_0000063
 http://purl.obolibrary.org/obo/BFO_0000066
 http://purl.obolibrary.org/obo/BFO_0000108
 http://purl.obolibrary.org/obo/BFO_0000117
@@ -238,6 +240,7 @@ http://purl.obolibrary.org/obo/UO_0000031
 http://purl.obolibrary.org/obo/UO_0000032
 http://purl.obolibrary.org/obo/UO_0000045
 http://purl.obolibrary.org/obo/UO_0000076
+http://purl.obolibrary.org/obo/UO_0000082
 http://purl.obolibrary.org/obo/UO_0000106
 http://purl.obolibrary.org/obo/UO_0000110
 http://purl.obolibrary.org/obo/UO_0000163
@@ -254,6 +257,7 @@ http://purl.obolibrary.org/obo/UO_1000027
 http://purl.obolibrary.org/obo/UO_1000031
 http://purl.obolibrary.org/obo/UO_1000032
 http://purl.obolibrary.org/obo/UO_1000076
+http://purl.obolibrary.org/obo/UO_1000082
 http://purl.obolibrary.org/obo/UO_1000106
 http://purl.obolibrary.org/obo/UO_1000110
 http://purl.obolibrary.org/obo/UO_1000163
@@ -269,7 +273,6 @@ http://qudt.org/schema/qudt
 http://qudt.org/schema/qudt/DerivedUnit
 http://qudt.org/schema/qudt/LatexString
 http://qudt.org/schema/qudt/Unit
-http://qudt.org/schema/qudt/expression
 http://qudt.org/schema/qudt/informativeReference
 http://qudt.org/schema/qudt/omUnit
 http://qudt.org/schema/qudt/siExactMatch
@@ -278,7 +281,6 @@ http://qudt.org/schema/qudt/wikidataMatch
 http://qudt.org/vocab/unit
 http://qudt.org/vocab/unit/HZ
 http://qudt.org/vocab/unit/K
-http://qudt.org/vocab/unit/M2
 http://usefulinc.com/ns/doap#repository
 http://www.geneontology.org/formats/oboInOwl#hasDbXref
 http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
@@ -294,7 +296,6 @@ http://www.w3.org/2004/02/skos/core#altLabel
 http://www.w3.org/2004/02/skos/core#definition
 http://www.w3.org/2004/02/skos/core#example
 http://www.wikidata.org/entity/Q11579
-http://www.wikidata.org/entity/Q25343
 http://www.wikidata.org/entity/Q39369
 https://creativecommons.org/licenses/unspecified
 https://github.com/information-artifact-ontology/IAO/issues/206
