@@ -347,6 +347,7 @@ Declaration(Class(<https://w3id.org/pmd/co/PMD_0020103>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020104>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020106>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020112>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0020114>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020116>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020128>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020131>))
@@ -373,19 +374,43 @@ Declaration(Class(<https://w3id.org/pmd/co/PMD_0020243>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025001>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025002>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025003>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0025004>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0025005>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025007>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0025008>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025009>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025010>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025011>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025012>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0025013>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0025014>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025015>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025016>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025017>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025018>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025019>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025020>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0025021>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025022>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025023>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0025024>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0025025>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0025026>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0025027>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0025028>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0025029>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0025030>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0025031>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0025033>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0025034>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0025035>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0025036>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0025037>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0025038>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0025039>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0025040>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0025041>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0025042>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025997>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0040001>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0050000>))
@@ -478,7 +503,14 @@ Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000092>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000093>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000094>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000095>))
+Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000096>))
+Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000097>))
+Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000098>))
+Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000099>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000100>))
+Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000101>))
+Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000102>))
+Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0000103>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0002002>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0025001>))
 Declaration(Class(<https://w3id.org/pmd/distel/DISTEL_0025002>))
@@ -1711,6 +1743,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000015> "pro
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://purl.obolibrary.org/obo/BFO_0000015> "event"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/BFO_0000015> "(Elucidation) p is a process means p is an occurrent that has some temporal proper part and for some time t, p has some material entity as participant"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000015> "An act of selling; the life of an organism; a process of sleeping; a process of cell-division; a beating of the heart; a process of meiosis; the taxiing of an aircraft; the programming of a computer"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/BFO_0000015> <https://w3id.org/pmd/co/PMD_0020141>)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000015> <http://purl.obolibrary.org/obo/BFO_0000003>)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000015> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000117> ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000015> <http://purl.obolibrary.org/obo/BFO_0000035>)))
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000015> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000132> <http://purl.obolibrary.org/obo/BFO_0000015>))
@@ -2599,7 +2632,7 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0020010> ObjectIntersectio
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020010> <http://purl.obolibrary.org/obo/COB_0000035>)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/IAO_0020000>))
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (Homo sapiens)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (homo sapiens)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "Homo sapiens")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "homo sapiens")
@@ -4444,6 +4477,15 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020112> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020112> <https://w3id.org/pmd/co/PMD_0020131>)
 
+# Class: <https://w3id.org/pmd/co/PMD_0020114> (medium role)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0020114> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0020114> "PERSON: Philipp von Hartrott")
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020114> "medium role"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020114> "Medium role is a role beared by an object which implies that the object serves as an intermediary for the transmission of something else, like energy, force, or information."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0020114> "Air in the air cooling process, N2 atmosphere in a furnace cooling process, oil in a quenching process, crystal lattice in a solid state diffusion"@en)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0020114> <http://purl.obolibrary.org/obo/BFO_0000023>)
+
 # Class: <https://w3id.org/pmd/co/PMD_0020116> (aggregate state value)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0020116> <http://purl.obolibrary.org/obo/IAO_0000122>)
@@ -4685,6 +4727,18 @@ EquivalentClasses(<https://w3id.org/pmd/co/PMD_0025003> ObjectExactCardinality(1
 SubClassOf(<https://w3id.org/pmd/co/PMD_0025003> <https://w3id.org/pmd/co/PMD_0020131>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0025003> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/co/PMD_0020023>))
 
+# Class: <https://w3id.org/pmd/co/PMD_0025004> (fracture strength at 1050°C and air atmosphere)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025004> "fracture strength at 1050°C and air atmosphere"@en)
+EquivalentClasses(<https://w3id.org/pmd/co/PMD_0025004> ObjectIntersectionOf(<https://w3id.org/pmd/distel/DISTEL_0025002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009007> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000974> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <https://w3id.org/pmd/distel/DISTEL_0000103>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000009> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000008> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0020127> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000967> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0001931> ObjectHasValue(<http://purl.obolibrary.org/obo/IAO_0000039> <http://purl.obolibrary.org/obo/UO_0000027>) DataHasValue(<http://purl.obolibrary.org/obo/OBI_0001937> "1050"^^xsd:integer)))))))))))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0025004> <https://w3id.org/pmd/distel/DISTEL_0025002>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0025005> (fracture strength at 1150°C and air atmosphere)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025005> "fracture strength at 1150°C and air atmosphere"@en)
+EquivalentClasses(<https://w3id.org/pmd/co/PMD_0025005> ObjectIntersectionOf(<https://w3id.org/pmd/distel/DISTEL_0025002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009007> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000974> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <https://w3id.org/pmd/distel/DISTEL_0000103>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000009> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000008> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0020127> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000967> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0001931> ObjectHasValue(<http://purl.obolibrary.org/obo/IAO_0000039> <http://purl.obolibrary.org/obo/UO_0000027>) DataHasValue(<http://purl.obolibrary.org/obo/OBI_0001937> "1150"^^xsd:integer)))))))))))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0025005> <https://w3id.org/pmd/distel/DISTEL_0025002>)
+
 # Class: <https://w3id.org/pmd/co/PMD_0025007> (frequency)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0025007> <http://purl.obolibrary.org/obo/IAO_0000122>)
@@ -4693,6 +4747,12 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025007> "frequency"
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0025007> "Frequency is a process attribute which characterizes the rate per second of oscillation or vibration."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0025007> "Frequency of electromagnetic wave, Frequency of sound wave."@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0025007> <https://w3id.org/pmd/co/PMD_0000008>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0025008> (fracture strength at 1100°C and air atmosphere)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025008> "fracture strength at 1100°C and air atmosphere"@en)
+EquivalentClasses(<https://w3id.org/pmd/co/PMD_0025008> ObjectIntersectionOf(<https://w3id.org/pmd/distel/DISTEL_0025002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009007> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000974> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <https://w3id.org/pmd/distel/DISTEL_0000103>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000009> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000008> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0020127> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000967> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0001931> ObjectHasValue(<http://purl.obolibrary.org/obo/IAO_0000039> <http://purl.obolibrary.org/obo/UO_0000027>) DataHasValue(<http://purl.obolibrary.org/obo/OBI_0001937> "1100"^^xsd:integer)))))))))))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0025008> <https://w3id.org/pmd/distel/DISTEL_0025002>)
 
 # Class: <https://w3id.org/pmd/co/PMD_0025009> (material reacting process)
 
@@ -4731,6 +4791,18 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.o
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025012> "analytical calculation"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0025012> "Analytical calculation is a computing process which has value specification or measurement datum as a specified output. It applies a closed-form mathematical expression or formula to a set it specified inputs (value specifications) without requiring stochastic sampling, iterative numerical solving, or data-driven training."@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0025012> <https://w3id.org/pmd/co/PMD_0000583>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0025013> (fracture strength at 1050°C and argon atmosphere)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025013> "fracture strength at 1050°C and argon atmosphere"@en)
+EquivalentClasses(<https://w3id.org/pmd/co/PMD_0025013> ObjectIntersectionOf(<https://w3id.org/pmd/distel/DISTEL_0025002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009007> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000974> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <https://w3id.org/pmd/co/PMD_0020041>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000009> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000008> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0020127> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000967> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0001931> ObjectHasValue(<http://purl.obolibrary.org/obo/IAO_0000039> <http://purl.obolibrary.org/obo/UO_0000027>) DataHasValue(<http://purl.obolibrary.org/obo/OBI_0001937> "1050"^^xsd:integer)))))))))))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0025013> <https://w3id.org/pmd/distel/DISTEL_0025002>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0025014> (fracture strength at 1150°C and argon atmosphere)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025014> "fracture strength at 1150°C and argon atmosphere"@en)
+EquivalentClasses(<https://w3id.org/pmd/co/PMD_0025014> ObjectIntersectionOf(<https://w3id.org/pmd/distel/DISTEL_0025002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009007> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000974> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <https://w3id.org/pmd/co/PMD_0020041>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000009> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000008> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0020127> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000967> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0001931> ObjectHasValue(<http://purl.obolibrary.org/obo/IAO_0000039> <http://purl.obolibrary.org/obo/UO_0000027>) DataHasValue(<http://purl.obolibrary.org/obo/OBI_0001937> "1150"^^xsd:integer)))))))))))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0025014> <https://w3id.org/pmd/distel/DISTEL_0025002>)
 
 # Class: <https://w3id.org/pmd/co/PMD_0025015> (portion of lanthanum)
 
@@ -4788,6 +4860,12 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025020> "single fat
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0025020> "Mechanical property analyzing process that is an occurent part of a fatigue testing process (S-N testing process). A single fatigue testing process assesses how many cycles a material can withstand under the given loading."@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0025020> <https://w3id.org/pmd/co/PMD_0000849>)
 
+# Class: <https://w3id.org/pmd/co/PMD_0025021> (fracture strength at 1100°C and argon atmosphere)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025021> "fracture strength at 1100°C and argon atmosphere"@en)
+EquivalentClasses(<https://w3id.org/pmd/co/PMD_0025021> ObjectIntersectionOf(<https://w3id.org/pmd/distel/DISTEL_0025002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009007> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000974> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <https://w3id.org/pmd/co/PMD_0020041>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000009> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000008> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0020127> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000967> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0001931> ObjectHasValue(<http://purl.obolibrary.org/obo/IAO_0000039> <http://purl.obolibrary.org/obo/UO_0000027>) DataHasValue(<http://purl.obolibrary.org/obo/OBI_0001937> "1100"^^xsd:integer)))))))))))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0025021> <https://w3id.org/pmd/distel/DISTEL_0025002>)
+
 # Class: <https://w3id.org/pmd/co/PMD_0025022> (cooling rate)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0025022> <http://purl.obolibrary.org/obo/IAO_0000122>)
@@ -4807,6 +4885,114 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0025023> "1000 K/s"@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0025023> <https://w3id.org/pmd/co/PMD_0025019>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0025023> ObjectIntersectionOf(ObjectAllValuesFrom(<https://w3id.org/pmd/co/PMD_0020127> <https://w3id.org/pmd/co/PMD_0000967>) ObjectAllValuesFrom(<https://w3id.org/pmd/co/PMD_0025006> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0025010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> ObjectIntersectionOf(ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000040> <https://w3id.org/pmd/co/PMD_0000068>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <https://w3id.org/pmd/co/PMD_0000967>)))))))
+
+# Class: <https://w3id.org/pmd/co/PMD_0025024> (tensile strength at 1050°C and argon atmosphere)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025024> "tensile strength at 1050°C and argon atmosphere"@en)
+EquivalentClasses(<https://w3id.org/pmd/co/PMD_0025024> ObjectIntersectionOf(<https://w3id.org/pmd/tto/TTO_0000053> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009007> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000974> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <https://w3id.org/pmd/co/PMD_0020041>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000009> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000008> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0020127> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000967> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0001931> ObjectHasValue(<http://purl.obolibrary.org/obo/IAO_0000039> <http://purl.obolibrary.org/obo/UO_0000027>) DataHasValue(<http://purl.obolibrary.org/obo/OBI_0001937> "1050"^^xsd:integer)))))))))))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0025024> <https://w3id.org/pmd/tto/TTO_0000053>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0025025> (tensile strength at 1150°C and argon atmosphere)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025025> "tensile strength at 1150°C and argon atmosphere"@en)
+EquivalentClasses(<https://w3id.org/pmd/co/PMD_0025025> ObjectIntersectionOf(<https://w3id.org/pmd/tto/TTO_0000053> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009007> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000974> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <https://w3id.org/pmd/co/PMD_0020041>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000009> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000008> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0020127> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000967> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0001931> ObjectHasValue(<http://purl.obolibrary.org/obo/IAO_0000039> <http://purl.obolibrary.org/obo/UO_0000027>) DataHasValue(<http://purl.obolibrary.org/obo/OBI_0001937> "1150"^^xsd:integer)))))))))))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0025025> <https://w3id.org/pmd/tto/TTO_0000053>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0025026> (tensile strength at 1100°C and argon atmosphere)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025026> "tensile strength at 1100°C and argon atmosphere"@en)
+EquivalentClasses(<https://w3id.org/pmd/co/PMD_0025026> ObjectIntersectionOf(<https://w3id.org/pmd/tto/TTO_0000053> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009007> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000974> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <https://w3id.org/pmd/co/PMD_0020041>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000009> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000008> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0020127> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000967> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0001931> ObjectHasValue(<http://purl.obolibrary.org/obo/IAO_0000039> <http://purl.obolibrary.org/obo/UO_0000027>) DataHasValue(<http://purl.obolibrary.org/obo/OBI_0001937> "1100"^^xsd:integer)))))))))))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0025026> <https://w3id.org/pmd/tto/TTO_0000053>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0025027> (tensile strength at 1050°C and air atmosphere)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025027> "tensile strength at 1050°C and air atmosphere"@en)
+EquivalentClasses(<https://w3id.org/pmd/co/PMD_0025027> ObjectIntersectionOf(<https://w3id.org/pmd/tto/TTO_0000053> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009007> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000974> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <https://w3id.org/pmd/distel/DISTEL_0000103>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000009> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000008> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0020127> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000967> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0001931> ObjectHasValue(<http://purl.obolibrary.org/obo/IAO_0000039> <http://purl.obolibrary.org/obo/UO_0000027>) DataHasValue(<http://purl.obolibrary.org/obo/OBI_0001937> "1050"^^xsd:integer)))))))))))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0025027> <https://w3id.org/pmd/tto/TTO_0000053>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0025028> (tensile strength at 1150°C and air atmosphere)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025028> "tensile strength at 1150°C and air atmosphere"@en)
+EquivalentClasses(<https://w3id.org/pmd/co/PMD_0025028> ObjectIntersectionOf(<https://w3id.org/pmd/tto/TTO_0000053> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009007> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000974> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <https://w3id.org/pmd/distel/DISTEL_0000103>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000009> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000008> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0020127> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000967> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0001931> ObjectHasValue(<http://purl.obolibrary.org/obo/IAO_0000039> <http://purl.obolibrary.org/obo/UO_0000027>) DataHasValue(<http://purl.obolibrary.org/obo/OBI_0001937> "1150"^^xsd:integer)))))))))))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0025028> <https://w3id.org/pmd/tto/TTO_0000053>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0025029> (tensile strength at 1100°C and air atmosphere)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025029> "tensile strength at 1100°C and air atmosphere"@en)
+EquivalentClasses(<https://w3id.org/pmd/co/PMD_0025029> ObjectIntersectionOf(<https://w3id.org/pmd/tto/TTO_0000053> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009007> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000974> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <https://w3id.org/pmd/distel/DISTEL_0000103>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000009> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000008> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0020127> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000967> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0001931> ObjectHasValue(<http://purl.obolibrary.org/obo/IAO_0000039> <http://purl.obolibrary.org/obo/UO_0000027>) DataHasValue(<http://purl.obolibrary.org/obo/OBI_0001937> "1100"^^xsd:integer)))))))))))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0025029> <https://w3id.org/pmd/tto/TTO_0000053>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0025030> (percentage elongatation at fracture at 1050°C and air atmosphere)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025030> "percentage elongatation at fracture at 1050°C and air atmosphere"@en)
+EquivalentClasses(<https://w3id.org/pmd/co/PMD_0025030> ObjectIntersectionOf(<https://w3id.org/pmd/tto/TTO_0000033> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009007> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000974> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <https://w3id.org/pmd/distel/DISTEL_0000103>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000009> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000008> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0020127> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000967> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0001931> ObjectHasValue(<http://purl.obolibrary.org/obo/IAO_0000039> <http://purl.obolibrary.org/obo/UO_0000027>) DataHasValue(<http://purl.obolibrary.org/obo/OBI_0001937> "1050"^^xsd:integer)))))))))))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0025030> <https://w3id.org/pmd/tto/TTO_0000033>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0025031> (percentage elongatation at fracture at 1150°C and air atmosphere)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025031> "percentage elongatation at fracture at 1150°C and air atmosphere"@en)
+EquivalentClasses(<https://w3id.org/pmd/co/PMD_0025031> ObjectIntersectionOf(<https://w3id.org/pmd/tto/TTO_0000033> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009007> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000974> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <https://w3id.org/pmd/distel/DISTEL_0000103>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000009> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000008> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0020127> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000967> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0001931> ObjectHasValue(<http://purl.obolibrary.org/obo/IAO_0000039> <http://purl.obolibrary.org/obo/UO_0000027>) DataHasValue(<http://purl.obolibrary.org/obo/OBI_0001937> "1150"^^xsd:integer)))))))))))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0025031> <https://w3id.org/pmd/tto/TTO_0000033>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0025033> (percentage elongatation at fracture at 1100°C and air atmosphere)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025033> "percentage elongatation at fracture at 1100°C and air atmosphere"@en)
+EquivalentClasses(<https://w3id.org/pmd/co/PMD_0025033> ObjectIntersectionOf(<https://w3id.org/pmd/tto/TTO_0000033> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009007> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000974> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <https://w3id.org/pmd/distel/DISTEL_0000103>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000009> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000008> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0020127> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000967> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0001931> ObjectHasValue(<http://purl.obolibrary.org/obo/IAO_0000039> <http://purl.obolibrary.org/obo/UO_0000027>) DataHasValue(<http://purl.obolibrary.org/obo/OBI_0001937> "1100"^^xsd:integer)))))))))))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0025033> <https://w3id.org/pmd/tto/TTO_0000033>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0025034> (percentage elongatation at fracture at 1150°C and argon atmosphere)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025034> "percentage elongatation at fracture at 1150°C and argon atmosphere"@en)
+EquivalentClasses(<https://w3id.org/pmd/co/PMD_0025034> ObjectIntersectionOf(<https://w3id.org/pmd/tto/TTO_0000033> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009007> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000974> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <https://w3id.org/pmd/co/PMD_0020041>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000009> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000008> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0020127> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000967> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0001931> ObjectHasValue(<http://purl.obolibrary.org/obo/IAO_0000039> <http://purl.obolibrary.org/obo/UO_0000027>) DataHasValue(<http://purl.obolibrary.org/obo/OBI_0001937> "1150"^^xsd:integer)))))))))))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0025034> <https://w3id.org/pmd/tto/TTO_0000033>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0025035> (percentage elongatation at fracture at 1050°C and argon atmosphere)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025035> "percentage elongatation at fracture at 1050°C and argon atmosphere"@en)
+EquivalentClasses(<https://w3id.org/pmd/co/PMD_0025035> ObjectIntersectionOf(<https://w3id.org/pmd/tto/TTO_0000033> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009007> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000974> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <https://w3id.org/pmd/co/PMD_0020041>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000009> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000008> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0020127> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000967> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0001931> ObjectHasValue(<http://purl.obolibrary.org/obo/IAO_0000039> <http://purl.obolibrary.org/obo/UO_0000027>) DataHasValue(<http://purl.obolibrary.org/obo/OBI_0001937> "1050"^^xsd:integer)))))))))))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0025035> <https://w3id.org/pmd/tto/TTO_0000033>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0025036> (percentage elongatation at fracture at 1100°C and argon atmosphere)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025036> "percentage elongatation at fracture at 1100°C and argon atmosphere"@en)
+EquivalentClasses(<https://w3id.org/pmd/co/PMD_0025036> ObjectIntersectionOf(<https://w3id.org/pmd/tto/TTO_0000033> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009007> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000974> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <https://w3id.org/pmd/co/PMD_0020041>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000009> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000008> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0020127> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000967> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0001931> ObjectHasValue(<http://purl.obolibrary.org/obo/IAO_0000039> <http://purl.obolibrary.org/obo/UO_0000027>) DataHasValue(<http://purl.obolibrary.org/obo/OBI_0001937> "1100"^^xsd:integer)))))))))))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0025036> <https://w3id.org/pmd/tto/TTO_0000033>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0025037> (percentage reduction of area at fracture at 1150°C and argon atmosphere)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025037> "percentage reduction of area at fracture at 1150°C and argon atmosphere"@en)
+EquivalentClasses(<https://w3id.org/pmd/co/PMD_0025037> ObjectIntersectionOf(<https://w3id.org/pmd/distel/DISTEL_0002002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009007> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000974> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <https://w3id.org/pmd/co/PMD_0020041>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000009> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000008> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0020127> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000967> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0001931> ObjectHasValue(<http://purl.obolibrary.org/obo/IAO_0000039> <http://purl.obolibrary.org/obo/UO_0000027>) DataHasValue(<http://purl.obolibrary.org/obo/OBI_0001937> "1150"^^xsd:integer)))))))))))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0025037> <https://w3id.org/pmd/distel/DISTEL_0002002>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0025038> (percentage reduction of area at fracture at 1050°C and argon atmosphere)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025038> "percentage reduction of area at fracture at 1050°C and argon atmosphere"@en)
+EquivalentClasses(<https://w3id.org/pmd/co/PMD_0025038> ObjectIntersectionOf(<https://w3id.org/pmd/distel/DISTEL_0002002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009007> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000974> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <https://w3id.org/pmd/co/PMD_0020041>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000009> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000008> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0020127> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000967> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0001931> ObjectHasValue(<http://purl.obolibrary.org/obo/IAO_0000039> <http://purl.obolibrary.org/obo/UO_0000027>) DataHasValue(<http://purl.obolibrary.org/obo/OBI_0001937> "1050"^^xsd:integer)))))))))))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0025038> <https://w3id.org/pmd/distel/DISTEL_0002002>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0025039> (percentage reduction of area at fracture at 1100°C and argon atmosphere)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025039> "percentage reduction of area at fracture at 1100°C and argon atmosphere"@en)
+EquivalentClasses(<https://w3id.org/pmd/co/PMD_0025039> ObjectIntersectionOf(<https://w3id.org/pmd/distel/DISTEL_0002002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009007> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000974> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <https://w3id.org/pmd/co/PMD_0020041>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000009> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000008> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0020127> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000967> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0001931> ObjectHasValue(<http://purl.obolibrary.org/obo/IAO_0000039> <http://purl.obolibrary.org/obo/UO_0000027>) DataHasValue(<http://purl.obolibrary.org/obo/OBI_0001937> "1100"^^xsd:integer)))))))))))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0025039> <https://w3id.org/pmd/distel/DISTEL_0002002>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0025040> (percentage reduction of area at fracture at 1150°C and air atmosphere)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025040> "percentage reduction of area at fracture at 1150°C and air atmosphere"@en)
+EquivalentClasses(<https://w3id.org/pmd/co/PMD_0025040> ObjectIntersectionOf(<https://w3id.org/pmd/distel/DISTEL_0002002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009007> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000974> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <https://w3id.org/pmd/distel/DISTEL_0000103>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000009> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000008> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0020127> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000967> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0001931> ObjectHasValue(<http://purl.obolibrary.org/obo/IAO_0000039> <http://purl.obolibrary.org/obo/UO_0000027>) DataHasValue(<http://purl.obolibrary.org/obo/OBI_0001937> "1150"^^xsd:integer)))))))))))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0025040> <https://w3id.org/pmd/distel/DISTEL_0002002>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0025041> (percentage reduction of area at fracture at 1050°C and air atmosphere)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025041> "percentage reduction of area at fracture at 1050°C and air atmosphere"@en)
+EquivalentClasses(<https://w3id.org/pmd/co/PMD_0025041> ObjectIntersectionOf(<https://w3id.org/pmd/distel/DISTEL_0002002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009007> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000974> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <https://w3id.org/pmd/distel/DISTEL_0000103>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000009> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000008> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0020127> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000967> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0001931> ObjectHasValue(<http://purl.obolibrary.org/obo/IAO_0000039> <http://purl.obolibrary.org/obo/UO_0000027>) DataHasValue(<http://purl.obolibrary.org/obo/OBI_0001937> "1050"^^xsd:integer)))))))))))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0025041> <https://w3id.org/pmd/distel/DISTEL_0002002>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0025042> (percentage reduction of area at fracture at 1100°C and air atmosphere)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025042> "percentage reduction of area at fracture at 1100°C and air atmosphere"@en)
+EquivalentClasses(<https://w3id.org/pmd/co/PMD_0025042> ObjectIntersectionOf(<https://w3id.org/pmd/distel/DISTEL_0002002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009007> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000974> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <https://w3id.org/pmd/distel/DISTEL_0000103>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000009> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000008> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0020127> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000967> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0001931> ObjectHasValue(<http://purl.obolibrary.org/obo/IAO_0000039> <http://purl.obolibrary.org/obo/UO_0000027>) DataHasValue(<http://purl.obolibrary.org/obo/OBI_0001937> "1100"^^xsd:integer)))))))))))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0025042> <https://w3id.org/pmd/distel/DISTEL_0002002>)
 
 # Class: <https://w3id.org/pmd/co/PMD_0025997> (fraction value specification)
 
@@ -5475,12 +5661,54 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000095> <https://w3id.org/pmd/co/PMD_0040001>)
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000095> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> <https://w3id.org/pmd/co/PMD_0020202>))
 
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000096> (yield strength at 1050°C and argon atmosphere)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000096> "yield strength at 1050°C and argon atmosphere"@en)
+EquivalentClasses(<https://w3id.org/pmd/distel/DISTEL_0000096> ObjectIntersectionOf(<https://w3id.org/pmd/tto/TTO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009007> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000974> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <https://w3id.org/pmd/co/PMD_0020041>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000009> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000008> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0020127> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000967> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0001931> ObjectHasValue(<http://purl.obolibrary.org/obo/IAO_0000039> <http://purl.obolibrary.org/obo/UO_0000027>) DataHasValue(<http://purl.obolibrary.org/obo/OBI_0001937> "1050"^^xsd:integer)))))))))))
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000096> <https://w3id.org/pmd/tto/TTO_0000009>)
+
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000097> (yield strength at 1100°C and argon atmosphere)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000097> "yield strength at 1100°C and argon atmosphere"@en)
+EquivalentClasses(<https://w3id.org/pmd/distel/DISTEL_0000097> ObjectIntersectionOf(<https://w3id.org/pmd/tto/TTO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009007> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000974> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <https://w3id.org/pmd/co/PMD_0020041>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000009> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000008> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0020127> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000967> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0001931> ObjectHasValue(<http://purl.obolibrary.org/obo/IAO_0000039> <http://purl.obolibrary.org/obo/UO_0000027>) DataHasValue(<http://purl.obolibrary.org/obo/OBI_0001937> "1100"^^xsd:integer)))))))))))
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000097> <https://w3id.org/pmd/tto/TTO_0000009>)
+
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000098> (yield strength at 1150°C and argon atmosphere)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000098> "yield strength at 1150°C and argon atmosphere"@en)
+EquivalentClasses(<https://w3id.org/pmd/distel/DISTEL_0000098> ObjectIntersectionOf(<https://w3id.org/pmd/tto/TTO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009007> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000974> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <https://w3id.org/pmd/co/PMD_0020041>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000009> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000008> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0020127> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000967> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0001931> ObjectHasValue(<http://purl.obolibrary.org/obo/IAO_0000039> <http://purl.obolibrary.org/obo/UO_0000027>) DataHasValue(<http://purl.obolibrary.org/obo/OBI_0001937> "1150"^^xsd:integer)))))))))))
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000098> <https://w3id.org/pmd/tto/TTO_0000009>)
+
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000099> (yield strength at 1050°C and air atmosphere)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000099> "yield strength at 1050°C and air atmosphere"@en)
+EquivalentClasses(<https://w3id.org/pmd/distel/DISTEL_0000099> ObjectIntersectionOf(<https://w3id.org/pmd/tto/TTO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009007> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000974> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <https://w3id.org/pmd/distel/DISTEL_0000103>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000009> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000008> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0020127> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000967> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0001931> ObjectHasValue(<http://purl.obolibrary.org/obo/IAO_0000039> <http://purl.obolibrary.org/obo/UO_0000027>) DataHasValue(<http://purl.obolibrary.org/obo/OBI_0001937> "1050"^^xsd:integer)))))))))))
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000099> <https://w3id.org/pmd/tto/TTO_0000009>)
+
 # Class: <https://w3id.org/pmd/distel/DISTEL_0000100> (motor)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000100> "motor"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000100> "Motor of a fatigue testing machine is a part of such machine which is essential for the applicaiton of loading on a sample."@en)
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000100> <https://w3id.org/pmd/distel/DISTEL_0000057>)
 SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000100> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/pmd/co/PMD_0000637>))
+
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000101> (yield strength at 1150°C and air atmosphere)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000101> "yield strength at 1150°C and air atmosphere"@en)
+EquivalentClasses(<https://w3id.org/pmd/distel/DISTEL_0000101> ObjectIntersectionOf(<https://w3id.org/pmd/tto/TTO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009007> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000974> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <https://w3id.org/pmd/distel/DISTEL_0000103>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000009> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000008> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0020127> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000967> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0001931> ObjectHasValue(<http://purl.obolibrary.org/obo/IAO_0000039> <http://purl.obolibrary.org/obo/UO_0000027>) DataHasValue(<http://purl.obolibrary.org/obo/OBI_0001937> "1150"^^xsd:integer)))))))))))
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000101> <https://w3id.org/pmd/tto/TTO_0000009>)
+
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000102> (yield strength at 1100°C and air atmosphere)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000102> "yield strength at 1100°C and air atmosphere"@en)
+EquivalentClasses(<https://w3id.org/pmd/distel/DISTEL_0000102> ObjectIntersectionOf(<https://w3id.org/pmd/tto/TTO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009007> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000974> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <https://w3id.org/pmd/distel/DISTEL_0000103>) ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000009> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000008> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0020127> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000967> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0001931> ObjectHasValue(<http://purl.obolibrary.org/obo/IAO_0000039> <http://purl.obolibrary.org/obo/UO_0000027>) DataHasValue(<http://purl.obolibrary.org/obo/OBI_0001937> "1100"^^xsd:integer)))))))))))
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000102> <https://w3id.org/pmd/tto/TTO_0000009>)
+
+# Class: <https://w3id.org/pmd/distel/DISTEL_0000103> (air)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/distel/DISTEL_0000103> "air"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/distel/DISTEL_0000103> "air is a portion of matter which corresponds to the molecular composition of air."@en)
+SubClassOf(<https://w3id.org/pmd/distel/DISTEL_0000103> <https://w3id.org/pmd/co/PMD_0000001>)
 
 # Class: <https://w3id.org/pmd/distel/DISTEL_0002002> (percentage reduction of area at fracture)
 
@@ -5631,7 +5859,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000015> "The length of a straight line through the center of an object (tensile test piece) as measured after a fracture occured during a test."@en)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000015> <https://w3id.org/pmd/co/PMD_0050051>)
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000016> (Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge)
+# Class: <https://w3id.org/pmd/tto/TTO_0000016> (estimated strain rate over the parallel length)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000016> <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000016> "Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge"@de)
@@ -5858,7 +6086,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000035> "DIN EN ISO 6892-1:2019"@en)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000035> <https://w3id.org/pmd/tto/TTO_0000004>)
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000036> (Bleibende Extensometer-Dehnung)
+# Class: <https://w3id.org/pmd/tto/TTO_0000036> (percentage permanent extension)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000036> <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000036> "Bleibende Extensometer-Dehnung"@de)

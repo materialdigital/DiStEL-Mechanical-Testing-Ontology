@@ -78,7 +78,14 @@ WARN	missing_definition	fracture toughness	textual definition
 WARN	missing_definition	scatter band of a fatigue curve	textual definition	
 WARN	missing_definition	fatigue scatter bandwidth	textual definition	
 WARN	missing_definition	crack length	textual definition	
+WARN	missing_definition	yield strength at 1050°C and argon atmosphere	textual definition	
+WARN	missing_definition	yield strength at 1100°C and argon atmosphere	textual definition	
+WARN	missing_definition	yield strength at 1150°C and argon atmosphere	textual definition	
+WARN	missing_definition	yield strength at 1050°C and air atmosphere	textual definition	
 WARN	missing_definition	motor	textual definition	
+WARN	missing_definition	yield strength at 1150°C and air atmosphere	textual definition	
+WARN	missing_definition	yield strength at 1100°C and air atmosphere	textual definition	
+WARN	missing_definition	air	textual definition	
 WARN	missing_definition	percentage reduction of area at fracture	textual definition	
 WARN	missing_definition	hot tensile testing process	textual definition	
 WARN	missing_definition	fracture strength	textual definition	
