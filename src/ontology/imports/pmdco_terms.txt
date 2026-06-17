@@ -34,6 +34,7 @@ https://w3id.org/pmd/co/PMD_0000952  # strength
 https://w3id.org/pmd/co/PMD_0000618  # elastic modulus
 https://w3id.org/pmd/co/PMD_0025018  # geometric relational quality
 https://w3id.org/pmd/co/PMD_0025025 # lubricant role
+http://purl.obolibrary.org/obo/BFO_0000063 # precedes
 
 ### Occurents
 https://w3id.org/pmd/co/PMD_0000008  # process attribute
