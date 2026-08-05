@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/pmd/distel/imports/tto_import.owl#"
-     xml:base="https://w3id.org/pmd/distel/imports/tto_import.owl"
+<rdf:RDF xmlns="https://w3id.org/pmd/mech/imports/tto_import.owl#"
+     xml:base="https://w3id.org/pmd/mech/imports/tto_import.owl"
      xmlns:co="https://w3id.org/pmd/co/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
@@ -12,10 +12,10 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
-    <owl:Ontology rdf:about="https://w3id.org/pmd/distel/imports/tto_import.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/distel/releases/2026-06-17/imports/tto_import.owl"/>
+    <owl:Ontology rdf:about="https://w3id.org/pmd/mech/imports/tto_import.owl">
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/mech/releases/2026-08-05/imports/tto_import.owl"/>
         <dc:source rdf:resource="https://w3id.org/pmd/tto/releases/2026-04-28/tto-full.owl"/>
-        <owl:versionInfo>2026-06-17</owl:versionInfo>
+        <owl:versionInfo>2026-08-05</owl:versionInfo>
     </owl:Ontology>
     
 
