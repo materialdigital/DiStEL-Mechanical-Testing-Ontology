@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/mech
+
+idspace: MECH
+base_url: /obo/mech
+
+products:
+- mech.owl: https://raw.githubusercontent.com/materialdigital/Mechanical-Testing-Ontology/main/mech.owl
+- mech.obo: https://raw.githubusercontent.com/materialdigital/Mechanical-Testing-Ontology/main/mech.obo
+
+term_browser: ontobee
+example_terms:
+- MECH_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/materialdigital/Mechanical-Testing-Ontology/v
+
+- prefix: /tracker/
+  replacement: https://github.com/materialdigital/Mechanical-Testing-Ontology/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/MECH?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/materialdigital/Mechanical-Testing-Ontology/main/

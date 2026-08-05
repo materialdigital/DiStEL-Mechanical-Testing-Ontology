@@ -1,11 +1,11 @@
-id: distel-mech
-title: "DiStEL Mechanical Testing Ontology"
+id: mech
+title: "Mechanical Testing Ontology"
 github_org: materialdigital
 git_main_branch: main
-repo: DiStEL-Mechanical-Testing-Ontology
+repo: Mechanical-Testing-Ontology
 uribase: https://w3id.org/pmd
-uribase_suffix: distel
-preferredPrefix: DISTEL
+uribase_suffix: mech
+preferredPrefix: MECH
 edit_format: owl
 
 # DISABLE Templates for now
@@ -39,13 +39,13 @@ import_group:
 components:
   products:
     - filename: imports-edit.owl
-    - filename: distel-mech-axioms-shared.owl
-    - filename: distel-mech-tensile-test.owl
-    - filename: distel-mech-fatigue.owl
-    - filename: distel-mech-hardness.owl
-    - filename: distel-mech-devices.owl
-    - filename: distel-mech-materials.owl
-    - filename: distel-mech-shared.owl
+    - filename: mech-axioms-shared.owl
+    - filename: mech-tensile-test.owl
+    - filename: mech-fatigue.owl
+    - filename: mech-hardness.owl
+    - filename: mech-devices.owl
+    - filename: mech-materials.owl
+    - filename: mech-shared.owl
 
 # Release
 primary_release: full
@@ -60,14 +60,5 @@ ci:
   - github_actions
 
 namespaces:
-  - https://w3id.org/pmd/distel/
-idranges:
-  - idsfor: distel
-    idprefix: https://w3id.org/pmd/distel/DISTEL_
-    iddigits: 7
-
-idranges:
-  - idsfor: distel
-    idprefix: https://w3id.org/pmd/distel/DISTEL_
-    iddigits: 7
+  - https://w3id.org/pmd/mech/
 

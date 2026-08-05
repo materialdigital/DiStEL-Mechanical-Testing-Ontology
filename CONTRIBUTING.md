@@ -1,8 +1,8 @@
-# Contributing to DiStEL Mechanical Testing Ontology
+# Contributing to Mechanical Testing Ontology
 
 :+1: First of all: Thank you for taking the time to contribute!
 
-The following is a set of guidelines for contributing to DISTEL. 
+The following is a set of guidelines for contributing to MECH. 
 These guidelines are not strict rules. Use your best judgment, and feel free to propose 
 changes to this document in a pull request.
 
@@ -24,7 +24,7 @@ changes to this document in a pull request.
 
 ### Reporting problems with the ontology
 
-Please use our [Issue Tracker](https://github.com/materialdigital/DiStEL-Mechanical-Testing-Ontology/issues/) for reporting problems with the ontology. 
+Please use our [Issue Tracker](https://github.com/materialdigital/Mechanical-Testing-Ontology/issues/) for reporting problems with the ontology. 
 To learn how to write a good issue [see here](#great-issues).
 
 <a id="requesting-terms"></a>
@@ -34,7 +34,7 @@ To learn how to write a good issue [see here](#great-issues).
 Before you write a new request, please consider the following: 
 
 - **Does the term already exist?** Before submitting suggestions for new ontology terms, check whether the term exist, 
-either as a primary term or a synonym term. You can search for your term using [OLS](http://www.ebi.ac.uk/ols/ontologies/distel).
+either as a primary term or a synonym term. You can search for your term using [OLS](http://www.ebi.ac.uk/ols/ontologies/mech).
 - **Can you provide a definition for the term?** It should be very clear what the term means, and you should be
 able to provide a concise definition, ideally with a scientific reference.
 - **Is the ontology in scope for the term?** Sometimes, it is hard to tell whether a term "belongs" in
@@ -48,10 +48,10 @@ community resource, it is often necessary to do at least some of the work of add
 
 #### How to write a new term request
 
-Request a new term _via_ the GitHub [Issue Tracker](https://github.com/materialdigital/DiStEL-Mechanical-Testing-Ontology/issues/).
+Request a new term _via_ the GitHub [Issue Tracker](https://github.com/materialdigital/Mechanical-Testing-Ontology/issues/).
 
 It is important to remember that it takes a lot of time for curators to process issues submitted to the tracker.
-To make this work easier, please always use issue templates if they are available (https://github.com/materialdigital/DiStEL-Mechanical-Testing-Ontology/issues/new/choose).
+To make this work easier, please always use issue templates if they are available (https://github.com/materialdigital/Mechanical-Testing-Ontology/issues/new/choose).
 
 For how to write a good term request, please read the [best practices carefully](#great-issues).
 
@@ -65,7 +65,7 @@ If you have never editted this ontology before, first follow a [general tutorial
 
 1. Clone the repository (In case you are not an offical team member, create a fork first)
 1. Create new branch in git, for example `git checkout -b issue123`
-1. Open src/ontology/distel-edit.owl in your favourite editor, i.e. [Protege](https://protege.stanford.edu/). **Careful:** double check you are editing the correct file. There are many ontology files in this repository, but only one _editors file_!
+1. Open src/ontology/mech-edit.owl in your favourite editor, i.e. [Protege](https://protege.stanford.edu/). **Careful:** double check you are editing the correct file. There are many ontology files in this repository, but only one _editors file_!
 1. Perform your edit and save your changes
 1. Commit changes to branch
 1. Push changes upstream

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/pmd/distel/components/distel-mech-tensile-test.owl/"
-     xml:base="https://w3id.org/pmd/distel/components/distel-mech-tensile-test.owl/"
+<rdf:RDF xmlns="https://w3id.org/pmd/mech/components/mech-tensile-test.owl/"
+     xml:base="https://w3id.org/pmd/mech/components/mech-tensile-test.owl/"
      xmlns:co="https://w3id.org/pmd/co/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
@@ -14,8 +14,8 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="https://w3id.org/pmd/distel/components/distel-mech-tensile-test.owl">
-        <owl:imports rdf:resource="https://w3id.org/pmd/distel/components/distel-mech-shared.owl"/>
+    <owl:Ontology rdf:about="https://w3id.org/pmd/mech/components/mech-tensile-test.owl">
+        <owl:imports rdf:resource="https://w3id.org/pmd/mech/components/mech-shared.owl"/>
     </owl:Ontology>
     
 
@@ -37,7 +37,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0025002"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0025002"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
                         <owl:someValuesFrom>
@@ -46,7 +46,7 @@
                                     <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000974"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000103"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0000103"/>
                                     </owl:Restriction>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000009"/>
@@ -93,7 +93,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0025002"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0025002"/>
         <rdfs:label xml:lang="en">fracture strength at 1050°C and air atmosphere</rdfs:label>
     </owl:Class>
     
@@ -105,7 +105,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0025002"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0025002"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
                         <owl:someValuesFrom>
@@ -114,7 +114,7 @@
                                     <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000974"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000103"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0000103"/>
                                     </owl:Restriction>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000009"/>
@@ -161,7 +161,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0025002"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0025002"/>
         <rdfs:label xml:lang="en">fracture strength at 1150°C and air atmosphere</rdfs:label>
     </owl:Class>
     
@@ -173,7 +173,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0025002"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0025002"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
                         <owl:someValuesFrom>
@@ -182,7 +182,7 @@
                                     <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000974"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000103"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0000103"/>
                                     </owl:Restriction>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000009"/>
@@ -229,7 +229,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0025002"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0025002"/>
         <rdfs:label xml:lang="en">fracture strength at 1100°C and air atmosphere</rdfs:label>
     </owl:Class>
     
@@ -241,7 +241,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0025002"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0025002"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
                         <owl:someValuesFrom>
@@ -297,7 +297,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0025002"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0025002"/>
         <rdfs:label xml:lang="en">fracture strength at 1050°C and argon atmosphere</rdfs:label>
     </owl:Class>
     
@@ -309,7 +309,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0025002"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0025002"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
                         <owl:someValuesFrom>
@@ -365,7 +365,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0025002"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0025002"/>
         <rdfs:label xml:lang="en">fracture strength at 1150°C and argon atmosphere</rdfs:label>
     </owl:Class>
     
@@ -377,7 +377,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0025002"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0025002"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
                         <owl:someValuesFrom>
@@ -433,7 +433,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0025002"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0025002"/>
         <rdfs:label xml:lang="en">fracture strength at 1100°C and argon atmosphere</rdfs:label>
     </owl:Class>
     
@@ -658,7 +658,7 @@
                                     <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000974"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000103"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0000103"/>
                                     </owl:Restriction>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000009"/>
@@ -726,7 +726,7 @@
                                     <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000974"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000103"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0000103"/>
                                     </owl:Restriction>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000009"/>
@@ -794,7 +794,7 @@
                                     <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000974"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000103"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0000103"/>
                                     </owl:Restriction>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000009"/>
@@ -862,7 +862,7 @@
                                     <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000974"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000103"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0000103"/>
                                     </owl:Restriction>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000009"/>
@@ -930,7 +930,7 @@
                                     <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000974"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000103"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0000103"/>
                                     </owl:Restriction>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000009"/>
@@ -998,7 +998,7 @@
                                     <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000974"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000103"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0000103"/>
                                     </owl:Restriction>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000009"/>
@@ -1261,7 +1261,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0002002"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0002002"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
                         <owl:someValuesFrom>
@@ -1317,7 +1317,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0002002"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0002002"/>
         <rdfs:label xml:lang="en">percentage reduction of area at fracture at 1150°C and argon atmosphere</rdfs:label>
     </owl:Class>
     
@@ -1329,7 +1329,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0002002"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0002002"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
                         <owl:someValuesFrom>
@@ -1385,7 +1385,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0002002"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0002002"/>
         <rdfs:label xml:lang="en">percentage reduction of area at fracture at 1050°C and argon atmosphere</rdfs:label>
     </owl:Class>
     
@@ -1397,7 +1397,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0002002"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0002002"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
                         <owl:someValuesFrom>
@@ -1453,7 +1453,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0002002"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0002002"/>
         <rdfs:label xml:lang="en">percentage reduction of area at fracture at 1100°C and argon atmosphere</rdfs:label>
     </owl:Class>
     
@@ -1465,7 +1465,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0002002"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0002002"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
                         <owl:someValuesFrom>
@@ -1474,7 +1474,7 @@
                                     <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000974"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000103"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0000103"/>
                                     </owl:Restriction>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000009"/>
@@ -1521,7 +1521,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0002002"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0002002"/>
         <rdfs:label xml:lang="en">percentage reduction of area at fracture at 1150°C and air atmosphere</rdfs:label>
     </owl:Class>
     
@@ -1533,7 +1533,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0002002"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0002002"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
                         <owl:someValuesFrom>
@@ -1542,7 +1542,7 @@
                                     <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000974"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000103"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0000103"/>
                                     </owl:Restriction>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000009"/>
@@ -1589,7 +1589,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0002002"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0002002"/>
         <rdfs:label xml:lang="en">percentage reduction of area at fracture at 1050°C and air atmosphere</rdfs:label>
     </owl:Class>
     
@@ -1601,7 +1601,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0002002"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0002002"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009007"/>
                         <owl:someValuesFrom>
@@ -1610,7 +1610,7 @@
                                     <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000974"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000103"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0000103"/>
                                     </owl:Restriction>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000009"/>
@@ -1657,15 +1657,15 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0002002"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0002002"/>
         <rdfs:label xml:lang="en">percentage reduction of area at fracture at 1100°C and air atmosphere</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000060 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000060 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000060">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000060">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000502"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1679,9 +1679,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000061 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000061 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000061">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000061">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000502"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1695,9 +1695,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000062 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000062 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000062">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000062">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000502"/>
         <rdfs:label xml:lang="en">true stress-compression curve</rdfs:label>
         <skos:definition xml:lang="en">True stress-compression curve is a 2D data-item which is a specified output of a compression testing process. The x-axis is a compression, i.e., the change of gauge length relative to its inital value, the y-axis is a true stress, i.e., force normalized to the instantaneous cross-sectional area of a specimen.</skos:definition>
@@ -1705,9 +1705,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000063 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000063 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000063">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000063">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1769,9 +1769,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000064 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000064 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000064">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000064">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
         <obo:IAO_0000119>DIN 50106</obo:IAO_0000119>
         <obo:IAO_0000119>TODO add upper and lower</obo:IAO_0000119>
@@ -1782,9 +1782,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000065 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000065 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000065">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000065">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
         <obo:IAO_0000119>DIN 50106</obo:IAO_0000119>
         <rdfs:label xml:lang="en">compressive proof strength</rdfs:label>
@@ -1794,10 +1794,10 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000066 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000066 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000066">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000065"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000066">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0000065"/>
         <rdfs:label xml:lang="en">compressive proof strength dp02</rdfs:label>
         <skos:definition xml:lang="en">stress at which the plastic compression  is equal to 0.2 percent of the extensometer gauge length.</skos:definition>
         <co:symbol xml:lang="en">R_dp0,2</co:symbol>
@@ -1805,9 +1805,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000067 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000067 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000067">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000067">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
         <obo:IAO_0000119>DIN 50106</obo:IAO_0000119>
         <rdfs:label xml:lang="en">compressive strength</rdfs:label>
@@ -1817,9 +1817,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000068 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000068 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000068">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000068">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
         <rdfs:label xml:lang="en">ductility</rdfs:label>
         <skos:definition xml:lang="en">Ductlity is a mechanical property which describes the ability of a material to sustain  plastic deformation under tensile load before fracture.</skos:definition>
@@ -1827,9 +1827,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000069 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000069 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000069">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000069">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1843,15 +1843,15 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000070 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000070 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000070">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000070">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:oneOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0000071"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0000072"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0000073"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0000071"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0000072"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0000073"/>
                 </owl:oneOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -1862,9 +1862,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000074 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000074 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000074">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000074">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
         <rdfs:label xml:lang="en">height reduction</rdfs:label>
         <skos:definition xml:lang="en">Height reduction is a mechanical property realized in a compression test. It is defined as a decrease of specimen&apos;s length before and after process in the direction of applied load.</skos:definition>
@@ -1872,9 +1872,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000075 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000075 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000075">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000075">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
         <rdfs:label xml:lang="en">strain rate sensitivity</rdfs:label>
         <skos:definition xml:lang="en">Strain rate sensitivity is a mechanical property of a material which is evaluated in a series of tensile or compression tests. It is determined as a relation between change in stress and change in strain expressed in log scale.</skos:definition>
@@ -1882,9 +1882,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000076 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000076 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000076">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000076">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
         <qudt:symbol>Q</qudt:symbol>
         <rdfs:label xml:lang="en">deformation activation energy</rdfs:label>
@@ -1893,9 +1893,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000077 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000077 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000077">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000077">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
         <rdfs:label xml:lang="en">dynamic recrystallization onset</rdfs:label>
         <skos:altLabel xml:lang="en">DRX</skos:altLabel>
@@ -1904,9 +1904,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000096 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000096 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000096">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000096">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1972,9 +1972,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000097 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000097 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000097">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000097">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -2040,9 +2040,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000098 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000098 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000098">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000098">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -2108,9 +2108,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000099 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000099 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000099">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000099">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -2123,7 +2123,7 @@
                                     <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000974"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000103"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0000103"/>
                                     </owl:Restriction>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000009"/>
@@ -2176,9 +2176,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000101 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000101 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000101">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000101">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -2191,7 +2191,7 @@
                                     <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000974"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000103"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0000103"/>
                                     </owl:Restriction>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000009"/>
@@ -2244,9 +2244,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000102 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000102 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000102">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000102">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -2259,7 +2259,7 @@
                                     <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000974"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000103"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0000103"/>
                                     </owl:Restriction>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000009"/>
@@ -2312,9 +2312,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000103 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000103 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000103">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000103">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000001"/>
         <rdfs:label xml:lang="en">air</rdfs:label>
         <skos:definition xml:lang="en">air is a portion of matter which corresponds to the molecular composition of air.</skos:definition>
@@ -2322,10 +2322,10 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0002002 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0002002 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0002002">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000068"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002002">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0000068"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000038"/>
         <rdfs:label xml:lang="en">percentage reduction of area at fracture</rdfs:label>
         <skos:definition xml:lang="en">change in cross-sectional area of a specimen after fracture (S_o − S_f), expressed as a percentage of the original cross-sectional area, S_o</skos:definition>
@@ -2333,9 +2333,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0025001 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0025001 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0025001">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0025001">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -2397,9 +2397,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0025002 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0025002 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0025002">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0025002">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000952"/>
         <rdfs:label xml:lang="en">fracture strength</rdfs:label>
         <skos:definition xml:lang="en">Fracture strength is a strength which describes the stress at the breaking point of a test piece.</skos:definition>
@@ -2407,9 +2407,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0025004 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0025004 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0025004">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0025004">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Strain_hardening_exponent</obo:IAO_0000119>
         <rdfs:label xml:lang="en">strain hardening exponent</rdfs:label>
@@ -2420,9 +2420,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0025006 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0025006 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0025006">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0025006">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
         <rdfs:label xml:lang="en">target strain</rdfs:label>
         <skos:definition xml:lang="en">Target strain is a process attribute of a compression test or a hot tensile test which defines the final strain that a test piece should achieve in the test.</skos:definition>
@@ -2433,7 +2433,7 @@
     <!-- https://w3id.org/pmd/tto/TTO_0000033 -->
 
     <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000033">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000068"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0000068"/>
     </rdf:Description>
     
 
@@ -2449,27 +2449,27 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000071 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000071 -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000071">
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/mech/MECH_0000071">
         <rdfs:label>uniaxial compression loading</rdfs:label>
         <skos:definition xml:lang="en">uniaxial compression loading is a compression loading type characterized by load applied along a single axis without any confinment along two other axes.</skos:definition>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000072 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000072 -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000072">
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/mech/MECH_0000072">
         <rdfs:label xml:lang="en">plain strain compression loading</rdfs:label>
         <skos:definition xml:lang="en">plain strain compression loading is a compression loading type characterized by specimen load applied along a single axis and the the deformation occurs in-plane.</skos:definition>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000073 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000073 -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000073">
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/mech/MECH_0000073">
         <rdfs:label xml:lang="en">axisymmetric compression loading</rdfs:label>
         <skos:definition>axisymmetric compression loading
 TODO</skos:definition>

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/pmd/distel/components/distel-mech-fatigue.owl/"
-     xml:base="https://w3id.org/pmd/distel/components/distel-mech-fatigue.owl/"
+<rdf:RDF xmlns="https://w3id.org/pmd/mech/components/mech-fatigue.owl/"
+     xml:base="https://w3id.org/pmd/mech/components/mech-fatigue.owl/"
      xmlns:co="https://w3id.org/pmd/co/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
@@ -14,8 +14,8 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="https://w3id.org/pmd/distel/components/distel-mech-fatigue.owl">
-        <owl:imports rdf:resource="https://w3id.org/pmd/distel/components/distel-mech-shared.owl"/>
+    <owl:Ontology rdf:about="https://w3id.org/pmd/mech/components/mech-fatigue.owl">
+        <owl:imports rdf:resource="https://w3id.org/pmd/mech/components/mech-shared.owl"/>
     </owl:Ontology>
     
 
@@ -31,19 +31,19 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000000 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000000 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000000">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000000">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:oneOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0000001"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0000002"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0000003"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0000004"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0000005"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0000006"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0000007"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0000001"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0000002"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0000003"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0000004"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0000005"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0000006"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0000007"/>
                 </owl:oneOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -54,20 +54,20 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000008 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000008 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000008">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000008">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000000"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0000000"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
-                        <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000000"/>
+                        <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0000000"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -92,14 +92,14 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000009 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000009 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000009">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000009">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:oneOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0000011"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0000012"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0000011"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0000012"/>
                 </owl:oneOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -110,20 +110,20 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000010 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000010 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000010">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000010">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000009"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0000009"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
-                        <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000009"/>
+                        <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0000009"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -136,7 +136,7 @@
                         <owl:unionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000638"/>
                             <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0025020"/>
-                            <rdf:Description rdf:about="https://w3id.org/pmd/distel/DISTEL_0025001"/>
+                            <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0025001"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
@@ -148,9 +148,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000013 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000013 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000013">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000013">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -171,9 +171,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000014 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000014 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000014">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000014">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0025007"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -194,9 +194,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000017 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000017 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000017">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000017">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000952"/>
         <rdfs:label xml:lang="en">fatigue strength</rdfs:label>
         <skos:definition xml:lang="en">Fatigue strength is a strength which is realized in the fatigue process and desribes the maximum cyclic stress amplitude that a material can withstand without failure.</skos:definition>
@@ -204,9 +204,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000018 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000018 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000018">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000018">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -227,9 +227,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000019 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000019 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000019">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000019">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
         <rdfs:label xml:lang="en">fatigue mean stress</rdfs:label>
         <skos:definition xml:lang="en">Fatigue mean stress is a average value of a stress that the specimen experiences during fatigue testing.</skos:definition>
@@ -237,9 +237,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000020 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000020 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000020">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000020">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
         <rdfs:comment>TODO write axioms for the specific loading ratios</rdfs:comment>
         <rdfs:label xml:lang="en">loading ratio</rdfs:label>
@@ -249,30 +249,30 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000021 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000021 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000021">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000020"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000021">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0000020"/>
         <rdfs:label xml:lang="en">stress ratio</rdfs:label>
         <skos:definition xml:lang="en">Stress ratio is a loading ratio process attribute of a fatigue test which is determined as a ratio between the maximum and minimum value of a stress applied to the specimen.</skos:definition>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000022 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000022 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000022">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000020"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000022">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0000020"/>
         <rdfs:label xml:lang="en">strain ratio</rdfs:label>
         <skos:definition xml:lang="en">Strain ratio is a loading ratio process attribute of a fatigue test which is determined as a ratio between the maximum and minimum value of a strain which the specimen experiences.</skos:definition>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000023 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000023 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000023">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000020"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000023">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0000020"/>
         <rdfs:label xml:lang="en">load ratio</rdfs:label>
         <skos:altLabel xml:lang="en">force ratio</skos:altLabel>
         <skos:definition xml:lang="en">Load ratio is a loading ratio process attribute of a fatigue test which is determined as a ratio between the maximum and minimum value of an applied load (force).</skos:definition>
@@ -280,29 +280,29 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000024 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000024 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000024">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000018"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000024">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0000018"/>
         <rdfs:label xml:lang="en">stress amplitude</rdfs:label>
         <skos:definition xml:lang="en">Stress amplitude is a maximal difference between a minimal and maximal stress that the specimen experiences during a fatigue testing.</skos:definition>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000025 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000025 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000025">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000018"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000025">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0000018"/>
         <rdfs:label xml:lang="en">strain amplitude</rdfs:label>
         <skos:definition xml:lang="en">Strain amplitude is a maximal difference between a minimal and maximal strain that the specimen experiences during a fatigue testing.</skos:definition>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000026 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000026 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000026">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000026">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
         <rdfs:label xml:lang="en">fatigue maximum stress</rdfs:label>
         <skos:definition xml:lang="en">Fatigue maximum stress is a process attribute of a fatigue testing process which describes the maximum stress that the specimen experiences. Its value corresponds to the max peak of a fatigue waveform.</skos:definition>
@@ -310,9 +310,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000027 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000027 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000027">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000027">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
         <rdfs:label xml:lang="en">fatigue minimum stress</rdfs:label>
         <skos:definition xml:lang="en">Fatigue minimum stress is a process attribute of a fatigue testing process which describes the minimum stress that the specimen experiences. Its value corresponds to the min peak of a fatigue waveform.</skos:definition>
@@ -320,9 +320,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000028 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000028 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000028">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000028">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
         <rdfs:comment>TODO add other individuals</rdfs:comment>
         <rdfs:label xml:lang="en">loading ratio type value</rdfs:label>
@@ -331,9 +331,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000030 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000030 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000030">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000030">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
         <rdfs:label xml:lang="en">fatigue cycle limit</rdfs:label>
         <skos:definition xml:lang="en">Fatigue cycle limit is a process attribute of a fatigue testing process which describes the maximum number of loading cycles that would be performed if the specimen does not fail (break) before undergoing this number of cycles.</skos:definition>
@@ -341,10 +341,10 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000031 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000031 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000031">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000017"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000031">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0000017"/>
         <rdfs:label xml:lang="en">fatigue strength at cycle limit</rdfs:label>
         <skos:definition xml:lang="en">Fatigue strength at cycle limit is a fatigue strength which desribes the maximum cyclic stress amplitude that a material must withstand without failure for a predetermined number of cycles.</skos:definition>
         <skos:example xml:lang="en">if a material has a fatigue strength of 200 MPa at 10^6 cycles, this means that when subjected to a cyclic stress of 200 MPa, the material is expected to fail after approximately 10^6 cycles.</skos:example>
@@ -352,10 +352,10 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000032 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000032 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000032">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000017"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000032">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0000017"/>
         <rdfs:comment xml:lang="en">This limit is characteristic of certain ferrous (iron-based) and titanium alloys, for which the S-N curve and underlying data points level off at high cycle counts, indicating that failure is unlikely to occur below the limit. In contrast, materials like aluminium and copper typically do not exhibit a distinct endurance limit.</rdfs:comment>
         <rdfs:label xml:lang="en">fatigue endurance limit</rdfs:label>
         <skos:definition xml:lang="en">Fatigue endurance limit is a fatigue strength which desribes the maximum cyclic stress amplitude that a material must withstand without failure assuming an infinite number of load cycles.</skos:definition>
@@ -363,9 +363,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000033 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000033 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000033">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000033">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
         <rdfs:label xml:lang="en">knee point</rdfs:label>
         <skos:definition xml:lang="en">Knee point is a mechnical property realized in a fatigue process which describes the number of cycles at which the slope of a fatigue curve changes.</skos:definition>
@@ -373,9 +373,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000034 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000034 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000034">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000034">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
         <rdfs:label xml:lang="en">slope of S-N curve</rdfs:label>
         <skos:definition xml:lang="en">Slope of S-N curve is a mechanical property realized in the fatigue testing which defines the inclination of the S-N curve in the finite life fatigue region.</skos:definition>
@@ -383,9 +383,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000035 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000035 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000035">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000035">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
         <rdfs:comment xml:lang="en">For now a free text description, i.e., pointing to a value specification</rdfs:comment>
         <rdfs:label xml:lang="en">failure criterion</rdfs:label>
@@ -395,9 +395,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000036 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000036 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000036">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000036">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000637"/>
         <rdfs:label xml:lang="en">tensile fatigue testing machine</rdfs:label>
         <skos:definition xml:lang="en">Tensile fatigue testing machine is a type of a fatigue testing machine which are designed to evaluate the mechanical fatigue of materials by applying repeated cyclic tension or compression loads. Such machines are primarly designed for uniaxial tension-tension or tension-compression fatigue.</skos:definition>
@@ -405,9 +405,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000037 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000037 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000037">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000037">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000637"/>
         <obo:IAO_0000119>https://www.sciencedirect.com/science/article/pii/S0142112325002257</obo:IAO_0000119>
         <rdfs:label xml:lang="en">ultrasonic fatigue testing machine</rdfs:label>
@@ -416,10 +416,10 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000038 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000038 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000038">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000045"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000038">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0000045"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -440,9 +440,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000039 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000039 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000039">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000039">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000009"/>
         <rdfs:label xml:lang="en">axis label of fatigue curve</rdfs:label>
         <skos:definition xml:lang="en">Axis label of S-N curve is a datum label which desribes the label of the axis (x- or y-) in the S-N curve.</skos:definition>
@@ -450,57 +450,57 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000040 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000040 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000040">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000039"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000040">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0000039"/>
         <rdfs:label xml:lang="en">y-axis label of fatigue curve</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000041 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000041 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000041">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000039"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000041">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0000039"/>
         <rdfs:label xml:lang="en">x-axis label of fatigue curve</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000042 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000042 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000042">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000038"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000042">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0000038"/>
         <rdfs:label xml:lang="en">semi-log S-N curve</rdfs:label>
         <skos:definition xml:lang="en">Semi-log S-N curve is a type of S-N curve, where both x-axis (the time variable) is given in logarithmic scale, while y-axis (loading variable) is given in its original scale.</skos:definition>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000043 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000043 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000043">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000038"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000043">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0000038"/>
         <rdfs:label xml:lang="en">log-log S-N curve</rdfs:label>
         <skos:definition xml:lang="en">Log-log S-N curve is a type of S-N curve, where both x-axis (the time variable) and y-axis (loading variable) are given in the logarithm scale.</skos:definition>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000044 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000044 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000044">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000038"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000044">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0000038"/>
         <rdfs:label xml:lang="en">linear S-N curve</rdfs:label>
         <skos:definition xml:lang="en">Linear S-N curve is a type of S-N curve, where both x-axis (the time variable) and y-axis (loading variable) are given in its original scaling.</skos:definition>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000045 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000045 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000045">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000045">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000502"/>
         <rdfs:label xml:lang="en">fatigue life curve</rdfs:label>
         <skos:definition xml:lang="en">Fatigue life curve is a 2D data item which is an output from a fatigue testing process, and it is about the performance of a material under cyclic load.</skos:definition>
@@ -508,18 +508,18 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000046 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000046 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000046">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000045"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000046">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0000045"/>
         <rdfs:label xml:lang="en">ε-N curve</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000047 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000047 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000047">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000047">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000638"/>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Rolling_contact_fatigue</obo:IAO_0000119>
         <rdfs:label xml:lang="en">rolling contact fatigue testing process</rdfs:label>
@@ -529,9 +529,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000048 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000048 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000048">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000048">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000638"/>
         <obo:IAO_0000119 xml:lang="en">Tensile fatigue testing process is a fatigue testing process  that evaluates material performance under repeated loading while applying cyclic, axial tensile stress. The test can involve constant amplitude or variable amplitude loading.</obo:IAO_0000119>
         <rdfs:label xml:lang="en">tensile fatigue testing process</rdfs:label>
@@ -539,9 +539,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000049 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000049 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000049">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000049">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000005"/>
         <rdfs:label xml:lang="en">number of sustained loading cycles</rdfs:label>
         <skos:altLabel xml:lang="en">fatigue lifetime</skos:altLabel>
@@ -550,11 +550,11 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000050 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000050 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000050">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000050">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0025020"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000052"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/pmd/mech/MECH_0000052"/>
         <rdfs:comment xml:lang="en">The axioms about NOT having a failure: 
 Option 1 (easy): SHACL Shape specifically for this class, stating that it cannot have fatigue specimen failure as occurent part.
 Option 2 (ontology advanced): make an equv. class axiom with some and only to make a an exaustive and close list of triples the class is allowed to have. Then, if the failure is an occurent part, it will be automatically inferred as &quot;.. test with failed specimen&quot;. If no failure is explicitly given, but all the other essential triples are asserted, it will be classified as &quot;.. test with run out&quot;</rdfs:comment>
@@ -564,9 +564,9 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000051 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000051 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000051">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000051">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -581,16 +581,16 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000052 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000052 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000052">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000052">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0025020"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000051"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0000051"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -603,9 +603,9 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000053 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000053 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000053">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000053">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -618,7 +618,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
                                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000067"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000050"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0000050"/>
                                     </owl:Restriction>
                                 </owl:intersectionOf>
                             </owl:Class>
@@ -634,9 +634,9 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000054 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000054 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000054">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000054">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0060006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -651,7 +651,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
                         <owl:inverseOf rdf:resource="https://w3id.org/pmd/co/PMD_0001026"/>
                     </rdf:Description>
                 </owl:onProperty>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000057"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0000057"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>TODO which defines what?</rdfs:comment>
@@ -661,9 +661,9 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000057 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000057 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000057">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000057">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000602"/>
         <rdfs:comment>TODO defintion</rdfs:comment>
         <rdfs:label xml:lang="en">actuator</rdfs:label>
@@ -671,29 +671,29 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000058 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000058 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000058">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000057"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000058">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0000057"/>
         <rdfs:comment>TODO defintion</rdfs:comment>
         <rdfs:label xml:lang="en">piezo actuator</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000059 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000059 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000059">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000095"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000059">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0000095"/>
         <rdfs:label xml:lang="en">initial crack length</rdfs:label>
         <skos:definition xml:lang="en">Initial crack length is a length of a crack in a specimen which is an input to the crack propagation fatigue testing process.</skos:definition>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000078 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000078 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000078">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000078">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
         <rdfs:label xml:lang="en">load step cycles</rdfs:label>
         <skos:definition xml:lang="en">Load step cycles is a process attribute of  a load increasing fatigue testing which describes a constant numer of cycles a specimen undergoes in each test with a given load.</skos:definition>
@@ -701,9 +701,9 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000079 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000079 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000079">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000079">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
         <rdfs:label xml:lang="en">energy dissipation under cyclic loading</rdfs:label>
         <skos:definition xml:lang="en">Energy dissipation under cyclic loading is a mechanical property that defines the energy lost per loading cycle due to irreversible plastic deformation. It is determined by the area inside the stress–strain hysteresis loop.</skos:definition>
@@ -711,9 +711,9 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000080 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000080 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000080">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000080">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000502"/>
         <rdfs:label xml:lang="en">stress-strain hysteresis curve</rdfs:label>
         <skos:definition xml:lang="en">Stress-strain hysteresis curve is a 2D data item, which is an output of assay featuring cycling loading.</skos:definition>
@@ -721,9 +721,9 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000081 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000081 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000081">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000081">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000502"/>
         <rdfs:label xml:lang="en">plastic strain vs number of cycles curve</rdfs:label>
         <skos:definition xml:lang="en">Plastic strain vs number of cycles curve is 2d data item  which indicates accumulation of irreversible deformation under cycling loading.</skos:definition>
@@ -731,9 +731,9 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000082 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000082 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000082">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000082">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
         <rdfs:label xml:lang="en">fatigue damage indicator</rdfs:label>
         <skos:definition xml:lang="en">Fatigue damage indicator is a mechanical property characterizing fatigue damage in the material. It is derived from changes in plastic strain, energy dissipation, and hysteresis loop during cyclic loading.</skos:definition>
@@ -741,9 +741,9 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000083 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000083 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000083">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000083">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000952"/>
         <obo:IAO_0000119>https://sdcverifier.com/structural-engineering-101/how-to-calculate-fatigue-strength-hand-calculations/</obo:IAO_0000119>
         <qudt:symbol>σ′f</qudt:symbol>
@@ -753,9 +753,9 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000084 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000084 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000084">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000084">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
         <qudt:symbol>b</qudt:symbol>
         <rdfs:label xml:lang="en">fatigue strength exponent</rdfs:label>
@@ -764,9 +764,9 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000085 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000085 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000085">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000085">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0025020"/>
         <rdfs:label xml:lang="en">crack propagation fatigue testing process</rdfs:label>
         <skos:definition xml:lang="en">Crack propagation fatigue testing process is a type of fatigue testing in which specimen has an intial crack.</skos:definition>
@@ -774,9 +774,9 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000086 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000086 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000086">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000086">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000502"/>
         <rdfs:label xml:lang="en">crack length vs number of cycles curve</rdfs:label>
         <skos:definition xml:lang="en">Crack length vs number of cycles curve is 2D data item  which indicates the propagation of crack under cycling loading.</skos:definition>
@@ -784,9 +784,9 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000087 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000087 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000087">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000087">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0025019"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -797,7 +797,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
                             <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000587"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000132"/>
-                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000085"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0000085"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -811,9 +811,9 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000088 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000088 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000088">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000088">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
         <qudt:symbol>C</qudt:symbol>
         <qudt:symbol xml:lang="en">scaling factor of Paris law is a mechanical property of material used in the Paris law to analytically determine the crack growth rate.</qudt:symbol>
@@ -822,9 +822,9 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000089 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000089 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000089">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000089">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
         <qudt:symbol>m</qudt:symbol>
         <rdfs:label xml:lang="en">slope of Paris law</rdfs:label>
@@ -833,9 +833,9 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000090 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000090 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000090">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000090">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
         <qudt:symbol>ΔK_th</qudt:symbol>
         <rdfs:label xml:lang="en">threshold stress intensity factor</rdfs:label>
@@ -844,9 +844,9 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000091 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000091 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000091">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000091">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
         <qudt:symbol>ΔK</qudt:symbol>
         <rdfs:comment xml:lang="en">K depends on crack length, stress, and geometry, Higher ΔK - faster crack growth.</rdfs:comment>
@@ -856,9 +856,9 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000092 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000092 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000092">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000092">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
         <qudt:symbol>K_IC</qudt:symbol>
         <rdfs:comment xml:lang="en">fracture toughness is a mechanical property which characterizes the critical stress intensity factor K at which unstable fracture occurs during a crack propagation fatigue testing.</rdfs:comment>
@@ -867,20 +867,20 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000093 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000093 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000093">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000093">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000502"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000045"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0000045"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                        <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000045"/>
+                        <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0000045"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -891,14 +891,14 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000094 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000094 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000094">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000094">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001931"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001927"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000093"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0000093"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">fatigue scatter bandwidth</rdfs:label>
@@ -908,9 +908,9 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000095 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000095 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000095">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000095">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -924,10 +924,10 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000100 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000100 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000100">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000057"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000100">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0000057"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -940,15 +940,15 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0025001 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0025001 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0025001"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0025001"/>
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0025007 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0025007 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0025007">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0025007">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0025020"/>
         <rdfs:label xml:lang="en">load increasing fatigue testing process</rdfs:label>
         <skos:definition xml:lang="en">Load increasing fatigue testing process is a single fatigue testing process in which the load is gradually increased by a given load increment value after a given number of cycles.</skos:definition>
@@ -956,20 +956,20 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0025008 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0025008 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0025008">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000018"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0025008">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0000018"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0025006"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0025007"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0025007"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0025006"/>
-                        <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0025007"/>
+                        <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0025007"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -980,14 +980,14 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0025009 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0025009 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0025009">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0025009">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0025006"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/distel/DISTEL_0025007"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0025007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>TODO think if this is necessary (&apos;process attribute of&apos; some &apos;load increasing fatigue testing process&apos;)</rdfs:comment>
@@ -1008,44 +1008,44 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000001 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000001 -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000001">
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/mech/MECH_0000001">
         <rdfs:label xml:lang="en">axial loading</rdfs:label>
         <skos:altLabel xml:lang="en">push-pull loading</skos:altLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000002 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000002 -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000002">
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/mech/MECH_0000002">
         <rdfs:label xml:lang="en">tension-tension loading</rdfs:label>
         <skos:definition>Tension-tension loading is a type of axial loading. A specimen is pulled in tension and then returned to its original length.</skos:definition>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000003 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000003 -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000003">
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/mech/MECH_0000003">
         <rdfs:label xml:lang="en">tension-compression loading</rdfs:label>
         <skos:definition>Tension-compression loading is a type of axial loading. A specimen is pulled in tension and then compressed.</skos:definition>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000004 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000004 -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000004">
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/mech/MECH_0000004">
         <rdfs:label xml:lang="en">bending loading</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000005 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000005 -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000005">
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/mech/MECH_0000005">
         <rdfs:label xml:lang="en">torsional loading</rdfs:label>
         <skos:altLabel xml:lang="en">twist loading</skos:altLabel>
         <skos:definition xml:lang="en">During a fatigue test with torsional loading type the specimen is twisted and experienced shear stress.</skos:definition>
@@ -1053,25 +1053,25 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000006 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000006 -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000006">
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/mech/MECH_0000006">
         <rdfs:label xml:lang="en">rotating bending loading</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000007 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000007 -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000007">
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/mech/MECH_0000007">
         <rdfs:label xml:lang="en">shear loading</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000011 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000011 -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000011">
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/mech/MECH_0000011">
         <rdfs:label xml:lang="en">strain-controlled</rdfs:label>
         <skos:altLabel xml:lang="en">displacement-controlled</skos:altLabel>
         <skos:definition xml:lang="en">A fatigue test is considered stain-controlled if the strain ratio of a strain that the sample exhibits is kept constant.</skos:definition>
@@ -1079,9 +1079,9 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000012 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000012 -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000012">
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/mech/MECH_0000012">
         <rdfs:label xml:lang="en">load-controlled</rdfs:label>
         <skos:altLabel xml:lang="en">force-controlled</skos:altLabel>
         <skos:altLabel xml:lang="en">stress-controlled</skos:altLabel>
@@ -1090,18 +1090,18 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000015 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000015 -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000015">
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/mech/MECH_0000015">
         <rdfs:label xml:lang="en">compression-compression loading</rdfs:label>
         <skos:definition xml:lang="en">Compression-compression loading is a type of axial loading. A specimen is compresed and then returned to its original length.</skos:definition>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000016 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000016 -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000016">
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/mech/MECH_0000016">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
         <rdfs:comment>TODO there is abn abbreviation AP in PMDco</rdfs:comment>
         <rdfs:label xml:lang="en">room temperature</rdfs:label>
@@ -1111,10 +1111,10 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000029 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000029 -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/distel/DISTEL_0000029">
-        <rdf:type rdf:resource="https://w3id.org/pmd/distel/DISTEL_0000028"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/mech/MECH_0000029">
+        <rdf:type rdf:resource="https://w3id.org/pmd/mech/MECH_0000028"/>
         <rdfs:comment>TODO write defintion</rdfs:comment>
         <rdfs:label xml:lang="en">fully reversed loading</rdfs:label>
     </owl:NamedIndividual>

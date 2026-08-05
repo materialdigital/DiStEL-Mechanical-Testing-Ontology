@@ -1,8 +1,8 @@
-## Customize Makefile settings for distel
+## Customize Makefile settings for mech
 ## 
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
-## Customize Makefile settings for distel
+## Customize Makefile settings for mech
 
 
 PMDCO_DISJOINTNESS_REMOVAL_TERMS = $(IMPORTDIR)/pmdco_remove_disjoint.txt
@@ -30,7 +30,7 @@ PMDCO_CLASSES_TO_REMOVE = $(IMPORTDIR)/pmdco_classes_to_remove.txt
 #			remove --term-file $(IMPORTDIR)/tto_to_remove.txt \
 #				   --select "classes"\
 #			remove --select individuals \
-#			odk:normalize --base-iri https://w3id.org/pmd/distel \
+#			odk:normalize --base-iri https://w3id.org/pmd/mech \
 #							--subset-decls true --synonym-decls true \
 #			remove --term http://purl.obolibrary.org/obo/IAO_0000412 \
 #					--select annotation \
@@ -50,7 +50,7 @@ $(IMPORTDIR)/tto_import.owl: $(MIRRORDIR)/tto.owl $(IMPORTDIR)/tto_terms.txt $(I
 			remove --term "https://w3id.org/pmd/co/relatesTo" \
 				   --select "self" \
 				   --trim true \
-			odk:normalize --base-iri https://w3id.org/pmd/distel \
+			odk:normalize --base-iri https://w3id.org/pmd/mech \
 							--subset-decls true --synonym-decls true \
 			annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 			convert -f owl --output $@.tmp.owl && mv $@.tmp.owl $@
@@ -143,21 +143,21 @@ $(ONT)-base.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES)
 		--output $@.tmp.owl && mv $@.tmp.owl $@
 
 
-CITATION=distel-mech: DiStEL Mechanical Testing Ontology. Version $(VERSION), https://w3id.org/pmd/distel/
+CITATION=mech: Mechanical Testing Ontology. Version $(VERSION), https://w3id.org/pmd/mech/
 
-ALL_ANNOTATIONS=--ontology-iri https://w3id.org/pmd/distel/ -V https://w3id.org/pmd/distel/$(VERSION) \
+ALL_ANNOTATIONS=--ontology-iri https://w3id.org/pmd/mech/ -V https://w3id.org/pmd/mech/$(VERSION) \
 	--annotation http://purl.org/dc/terms/created "$(TODAY)" \
 	--annotation owl:versionInfo "$(VERSION)" \
 	--annotation http://purl.org/dc/terms/bibliographicCitation "$(CITATION)" \
-	--link-annotation owl:priorVersion https://w3id.org/pmd/distel/$(PRIOR_VERSION)
+	--link-annotation owl:priorVersion https://w3id.org/pmd/mech/$(PRIOR_VERSION)
 
 update-ontology-annotations: 
-	$(ROBOT) annotate --input distel-mech.owl $(ALL_ANNOTATIONS) --output ../../distel-mech.owl
-	$(ROBOT) annotate --input distel-mech.ttl $(ALL_ANNOTATIONS) --output ../../distel-mech.ttl
-	$(ROBOT) annotate --input distel-mech-full.owl $(ALL_ANNOTATIONS) --output ../../distel-mech-full.owl
-	$(ROBOT) annotate --input distel-mech-full.ttl $(ALL_ANNOTATIONS) --output ../../distel-mech-full.ttl
-	$(ROBOT) annotate --input distel-mech-base.owl $(ALL_ANNOTATIONS) --output ../../distel-mech-base.owl
-	$(ROBOT) annotate --input distel-mech-base.ttl $(ALL_ANNOTATIONS) --output ../../distel-mech-base.ttl
-	@if [ -f distel-mech-simple.owl ]; then $(ROBOT) annotate --input distel-mech-simple.owl $(ALL_ANNOTATIONS) --output ../../distel-mech-simple.owl; fi
+	$(ROBOT) annotate --input mech.owl $(ALL_ANNOTATIONS) --output ../../mech.owl
+	$(ROBOT) annotate --input mech.ttl $(ALL_ANNOTATIONS) --output ../../mech.ttl
+	$(ROBOT) annotate --input mech-full.owl $(ALL_ANNOTATIONS) --output ../../mech-full.owl
+	$(ROBOT) annotate --input mech-full.ttl $(ALL_ANNOTATIONS) --output ../../mech-full.ttl
+	$(ROBOT) annotate --input mech-base.owl $(ALL_ANNOTATIONS) --output ../../mech-base.owl
+	$(ROBOT) annotate --input mech-base.ttl $(ALL_ANNOTATIONS) --output ../../mech-base.ttl
+	@if [ -f mech-simple.owl ]; then $(ROBOT) annotate --input mech-simple.owl $(ALL_ANNOTATIONS) --output ../../mech-simple.owl; fi
 
 all_assets: update-ontology-annotations

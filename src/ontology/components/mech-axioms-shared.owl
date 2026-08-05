@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/pmd/distel/components/distel-mech-axioms-shared.owl/"
-     xml:base="https://w3id.org/pmd/distel/components/distel-mech-axioms-shared.owl/"
+<rdf:RDF xmlns="https://w3id.org/pmd/mech/components/mech-axioms-shared.owl/"
+     xml:base="https://w3id.org/pmd/mech/components/mech-axioms-shared.owl/"
      xmlns:co="https://w3id.org/pmd/co/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
@@ -14,12 +14,12 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="https://w3id.org/pmd/distel/components/distel-mech-axioms-shared.owl">
-        <owl:imports rdf:resource="https://w3id.org/pmd/distel/components/distel-mech-devices.owl"/>
-        <owl:imports rdf:resource="https://w3id.org/pmd/distel/components/distel-mech-fatigue.owl"/>
-        <owl:imports rdf:resource="https://w3id.org/pmd/distel/components/distel-mech-hardness.owl"/>
-        <owl:imports rdf:resource="https://w3id.org/pmd/distel/components/distel-mech-materials.owl"/>
-        <owl:imports rdf:resource="https://w3id.org/pmd/distel/components/distel-mech-tensile-test.owl"/>
+    <owl:Ontology rdf:about="https://w3id.org/pmd/mech/components/mech-axioms-shared.owl">
+        <owl:imports rdf:resource="https://w3id.org/pmd/mech/components/mech-devices.owl"/>
+        <owl:imports rdf:resource="https://w3id.org/pmd/mech/components/mech-fatigue.owl"/>
+        <owl:imports rdf:resource="https://w3id.org/pmd/mech/components/mech-hardness.owl"/>
+        <owl:imports rdf:resource="https://w3id.org/pmd/mech/components/mech-materials.owl"/>
+        <owl:imports rdf:resource="https://w3id.org/pmd/mech/components/mech-tensile-test.owl"/>
     </owl:Ontology>
     
 
@@ -35,9 +35,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000055 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000055 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000055">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000055">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:label xml:lang="en">evaluation software</rdfs:label>
         <skos:definition xml:lang="en">Software used to evaluate results of assays or computing processes</skos:definition>
@@ -45,9 +45,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0000056 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0000056 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0000056">
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000056">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:label xml:lang="en">fatigue test control software</rdfs:label>
         <skos:definition xml:lang="en">Software used to control the course of a fatigue testing process.</skos:definition>
@@ -55,9 +55,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/distel/DISTEL_0025002 -->
+    <!-- https://w3id.org/pmd/mech/MECH_0025002 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/distel/DISTEL_0025002"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0025002"/>
 </rdf:RDF>
 
 

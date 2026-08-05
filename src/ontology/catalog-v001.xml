@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="public">
   <group id="odk-managed-catalog" prefer="public">
-    <uri name="https://w3id.org/pmd/distel/imports/pmdco_import.owl" uri="imports/pmdco_import.owl" />
-    <uri name="https://w3id.org/pmd/distel/imports/tto_import.owl" uri="imports/tto_import.owl" />
-    <uri name="https://w3id.org/pmd/distel/imports/uo_import.owl" uri="imports/uo_import.owl" />
-    <uri name="https://w3id.org/pmd/distel/imports/qudt_import.owl" uri="imports/qudt_import.owl" />
-    <uri name="https://w3id.org/pmd/distel/imports/iao_import.owl" uri="imports/iao_import.owl" />
-    <uri name="https://w3id.org/pmd/distel/components/imports-edit.owl" uri="components/imports-edit.owl" />
-    <uri name="https://w3id.org/pmd/distel/components/distel-mech-axioms-shared.owl" uri="components/distel-mech-axioms-shared.owl" />
-    <uri name="https://w3id.org/pmd/distel/components/distel-mech-tensile-test.owl" uri="components/distel-mech-tensile-test.owl" />
-    <uri name="https://w3id.org/pmd/distel/components/distel-mech-fatigue.owl" uri="components/distel-mech-fatigue.owl" />
-    <uri name="https://w3id.org/pmd/distel/components/distel-mech-hardness.owl" uri="components/distel-mech-hardness.owl" />
-    <uri name="https://w3id.org/pmd/distel/components/distel-mech-devices.owl" uri="components/distel-mech-devices.owl" />
-    <uri name="https://w3id.org/pmd/distel/components/distel-mech-materials.owl" uri="components/distel-mech-materials.owl" />
-    <uri name="https://w3id.org/pmd/distel/components/distel-mech-shared.owl" uri="components/distel-mech-shared.owl" />
+    <uri name="https://w3id.org/pmd/mech/imports/pmdco_import.owl" uri="imports/pmdco_import.owl" />
+    <uri name="https://w3id.org/pmd/mech/imports/tto_import.owl" uri="imports/tto_import.owl" />
+    <uri name="https://w3id.org/pmd/mech/imports/uo_import.owl" uri="imports/uo_import.owl" />
+    <uri name="https://w3id.org/pmd/mech/imports/qudt_import.owl" uri="imports/qudt_import.owl" />
+    <uri name="https://w3id.org/pmd/mech/imports/iao_import.owl" uri="imports/iao_import.owl" />
+    <uri name="https://w3id.org/pmd/mech/components/imports-edit.owl" uri="components/imports-edit.owl" />
+    <uri name="https://w3id.org/pmd/mech/components/mech-axioms-shared.owl" uri="components/mech-axioms-shared.owl" />
+    <uri name="https://w3id.org/pmd/mech/components/mech-tensile-test.owl" uri="components/mech-tensile-test.owl" />
+    <uri name="https://w3id.org/pmd/mech/components/mech-fatigue.owl" uri="components/mech-fatigue.owl" />
+    <uri name="https://w3id.org/pmd/mech/components/mech-hardness.owl" uri="components/mech-hardness.owl" />
+    <uri name="https://w3id.org/pmd/mech/components/mech-devices.owl" uri="components/mech-devices.owl" />
+    <uri name="https://w3id.org/pmd/mech/components/mech-materials.owl" uri="components/mech-materials.owl" />
+    <uri name="https://w3id.org/pmd/mech/components/mech-shared.owl" uri="components/mech-shared.owl" />
   </group>
 </catalog>

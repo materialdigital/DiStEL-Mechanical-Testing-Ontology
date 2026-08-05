@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/pmd/distel/components/imports-edit.owl/"
-     xml:base="https://w3id.org/pmd/distel/components/imports-edit.owl/"
+<rdf:RDF xmlns="https://w3id.org/pmd/mech/components/imports-edit.owl/"
+     xml:base="https://w3id.org/pmd/mech/components/imports-edit.owl/"
      xmlns:co="https://w3id.org/pmd/co/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
@@ -14,12 +14,12 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="https://w3id.org/pmd/distel/components/imports-edit.owl">
-        <owl:imports rdf:resource="https://w3id.org/pmd/distel/imports/iao_import.owl"/>
-        <owl:imports rdf:resource="https://w3id.org/pmd/distel/imports/pmdco_import.owl"/>
-        <owl:imports rdf:resource="https://w3id.org/pmd/distel/imports/qudt_import.owl"/>
-        <owl:imports rdf:resource="https://w3id.org/pmd/distel/imports/tto_import.owl"/>
-        <owl:imports rdf:resource="https://w3id.org/pmd/distel/imports/uo_import.owl"/>
+    <owl:Ontology rdf:about="https://w3id.org/pmd/mech/components/imports-edit.owl">
+        <owl:imports rdf:resource="https://w3id.org/pmd/mech/imports/iao_import.owl"/>
+        <owl:imports rdf:resource="https://w3id.org/pmd/mech/imports/pmdco_import.owl"/>
+        <owl:imports rdf:resource="https://w3id.org/pmd/mech/imports/qudt_import.owl"/>
+        <owl:imports rdf:resource="https://w3id.org/pmd/mech/imports/tto_import.owl"/>
+        <owl:imports rdf:resource="https://w3id.org/pmd/mech/imports/uo_import.owl"/>
     </owl:Ontology>
     
 

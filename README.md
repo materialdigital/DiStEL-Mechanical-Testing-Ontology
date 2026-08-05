@@ -1,10 +1,10 @@
 
-![Build Status](https://github.com/materialdigital/DiStEL-Mechanical-Testing-Ontology/actions/workflows/qc.yml/badge.svg)
-# DiStEL Mechanical Testing Ontology
+![Build Status](https://github.com/materialdigital/Mechanical-Testing-Ontology/actions/workflows/qc.yml/badge.svg)
+# Mechanical Testing Ontology
 
 Description: None
 
-More information can be found at http://obofoundry.org/ontology/distel
+More information can be found at http://obofoundry.org/ontology/mech
 
 ## Versions
 
@@ -12,17 +12,17 @@ More information can be found at http://obofoundry.org/ontology/distel
 
 The latest version of the ontology can always be found at:
 
-https://w3id.org/pmd/distel.owl
+https://w3id.org/pmd/mech.owl
 
 (note this will not show up until the request has been approved by obofoundry.org)
 
 ### Editors' version
 
-Editors of this ontology should use the edit version, [src/ontology/distel-edit.owl](src/ontology/distel-edit.owl)
+Editors of this ontology should use the edit version, [src/ontology/mech-edit.owl](src/ontology/mech-edit.owl)
 
 ## Contact
 
-Please use this GitHub repository's [Issue tracker](https://github.com/materialdigital/DiStEL-Mechanical-Testing-Ontology/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
+Please use this GitHub repository's [Issue tracker](https://github.com/materialdigital/Mechanical-Testing-Ontology/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
 
 ## Acknowledgements
 
