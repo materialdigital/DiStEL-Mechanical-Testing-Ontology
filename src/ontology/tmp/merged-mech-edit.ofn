@@ -2590,7 +2590,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000010> "software"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000010> <http://purl.obolibrary.org/obo/IAO_0000104>)
 
-# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (data entity)
+# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (data item)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/IAO_0000027> "Data items include counts of things, analyte concentrations, and statistical summaries."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000027> "An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements."@en)
@@ -2755,7 +2755,7 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0020010> ObjectIntersectio
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020010> <http://purl.obolibrary.org/obo/COB_0000035>)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/IAO_0020000>))
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (homo sapiens)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (Homo sapiens)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "Homo sapiens")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "homo sapiens")
@@ -3333,7 +3333,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000552> <https://w3id.org/pmd/co/PMD_0000957>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000552> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009006> <https://w3id.org/pmd/co/PMD_0000551>))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000553> (chemical potential)
+# Class: <https://w3id.org/pmd/co/PMD_0000553> (chemisches Potential)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000553> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0000553> "PERSON: Joerg Waitelonis")
@@ -3671,7 +3671,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> <https://w3id.org/pmd/co/PMD_00
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <https://w3id.org/pmd/co/PMD_0000522>))
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000848> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000000>))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000849> (mechanical property analyzing process)
+# Class: <https://w3id.org/pmd/co/PMD_0000849> (Mechanische Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000849> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0000849> "PERSON: Joerg Waitelonis")
@@ -3813,7 +3813,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000953> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000953> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000957> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0000957> "PERSON: Joerg Waitelonis")
@@ -3823,7 +3823,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000957> "Eine Analyse, die die äußere und innere Struktur und Morphologie von Materialien untersucht, einschließlich der Anordnung von Atomen, Kristallen, Körnern und Phasen, oft unter Verwendung von Techniken wie Mikroskopie und Beugung."@de)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000957> <http://purl.obolibrary.org/obo/OBI_0000070>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000965> (surface layer (fiat object part))
+# Class: <https://w3id.org/pmd/co/PMD_0000965> (Oberflächenschicht (Fiat-Objektteil))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000965> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0000965> "PERSON: Joerg Waitelonis")
@@ -6447,7 +6447,7 @@ AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org
 AnnotationAssertion(<https://w3id.org/pmd/co/symbol> <https://w3id.org/pmd/tto/TTO_0000016> "e^._L_c"@en)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000016> <https://w3id.org/pmd/co/PMD_0000008>)
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000017> (Extensometer-Messlänge)
+# Class: <https://w3id.org/pmd/tto/TTO_0000017> (extensometer gauge length)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000017> <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000017> "Extensometer-Messlänge"@de)
@@ -7003,10 +7003,10 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMO_0001000> "out
 
 # Individual: <http://qudt.org/vocab/unit/HZ> (Hertz)
 
-AnnotationAssertion(dcterms:description <http://qudt.org/vocab/unit/HZ> "
-  $\\textit{Hertz}$ (symbol $Hz$) is the SI unit of frequency defined as the number of cycles per second of a periodic phenomenon.
-  One of its most common uses is the description of the sine wave, particularly those used in radio and audio applications, such as the frequency of musical tones.
-  The word $\\bf{hertz}$ is named for Heinrich Rudolf Hertz, who was the first to conclusively prove the existence of electromagnetic waves.
+AnnotationAssertion(dcterms:description <http://qudt.org/vocab/unit/HZ> "$\\textit{Hertz}$ (symbol $Hz$) is the SI unit of frequency defined as the number of cycles per second of
+    a periodic phenomenon. One of its most common uses is the description of the sine wave, particularly those used in radio and
+    audio applications, such as the frequency of musical tones. The word $\\bf{hertz}$ is named for Heinrich Rudolf Hertz, who was
+    the first to conclusively prove the existence of electromagnetic waves.
   "^^<http://qudt.org/schema/qudt/LatexString>)
 AnnotationAssertion(<http://qudt.org/schema/qudt/informativeReference> <http://qudt.org/vocab/unit/HZ> "https://cdd.iec.ch/cdd/iec62720/iec62720.nsf/Units/0112-2---62720%23UAA170"^^xsd:anyURI)
 AnnotationAssertion(<http://qudt.org/schema/qudt/omUnit> <http://qudt.org/vocab/unit/HZ> <http://www.ontology-of-units-of-measure.org/resource/om-2/hertz>)
@@ -7043,15 +7043,13 @@ ClassAssertion(<http://qudt.org/schema/qudt/Unit> <http://qudt.org/vocab/unit/HZ
 
 # Individual: <http://qudt.org/vocab/unit/K> (Kelvin)
 
-AnnotationAssertion(dcterms:description <http://qudt.org/vocab/unit/K> "
-  The unit $\\textit{Kelvin}$ is the SI base unit of temperature, previously called the degree Kelvin.
-  One kelvin represents the same temperature difference as one degree Celsius.
-  In 1967 the General Conference on Weights and Measures defined the temperature of the triple point of water
-   (the temperature at which water exists simultaneously in the gaseous, liquid, and solid states) to be exactly 273.16 kelvins.
-  Since this temperature is also equal to 0.01 u00b0C, the temperature in kelvins is always equal to 273.15 plus the temperature in degrees Celsius.
-  The kelvin equals exactly 1.8 degrees Fahrenheit.
-  The unit is named for the British mathematician and physicist William Thomson (1824-1907),
-   later known as Lord Kelvin after he was named Baron Kelvin of Largs.
+AnnotationAssertion(dcterms:description <http://qudt.org/vocab/unit/K> "The unit $\\textit{Kelvin}$ is the SI base unit of temperature, previously called the degree Kelvin. One
+    kelvin represents the same temperature difference as one degree Celsius. In 1967 the General Conference on Weights and
+    Measures defined the temperature of the triple point of water (the temperature at which water exists simultaneously in the
+    gaseous, liquid, and solid states) to be exactly 273.16 kelvins. Since this temperature is also equal to 0.01 u00b0C, the
+    temperature in kelvins is always equal to 273.15 plus the temperature in degrees Celsius. The kelvin equals exactly 1.8
+    degrees Fahrenheit. The unit is named for the British mathematician and physicist William Thomson (1824-1907), later known as
+    Lord Kelvin after he was named Baron Kelvin of Largs.
   "^^<http://qudt.org/schema/qudt/LatexString>)
 AnnotationAssertion(<http://qudt.org/schema/qudt/informativeReference> <http://qudt.org/vocab/unit/K> "https://cdd.iec.ch/cdd/iec62720/iec62720.nsf/Units/0112-2---62720%23UAA185"^^xsd:anyURI)
 AnnotationAssertion(<http://qudt.org/schema/qudt/informativeReference> <http://qudt.org/vocab/unit/K> "https://en.wikipedia.org/wiki/Kelvin?oldid=495075694"^^xsd:anyURI)
