@@ -13,12 +13,12 @@
 @base <https://w3id.org/pmd/mech/mech-base.ttl> .
 
 <https://w3id.org/pmd/mech/mech-base.ttl> rdf:type owl:Ontology ;
-                                           owl:versionIRI <https://w3id.org/pmd/mech/releases/2026-08-05/mech-base.ttl> ;
+                                           owl:versionIRI <https://w3id.org/pmd/mech/releases/2026-08-06/mech-base.ttl> ;
                                            dce:type obo:IAO_8000001 ;
                                            dcterms:description "None" ;
                                            dcterms:license <https://creativecommons.org/licenses/unspecified> ;
                                            dcterms:title "Mechanical Testing Ontology" ;
-                                           owl:versionInfo "2026-08-05" .
+                                           owl:versionInfo "2026-08-06" .
 
 #################################################################
 #    Annotation properties
@@ -7439,6 +7439,7 @@ This is the spatial analogue: instead of asking \"how does energy change per uni
                                                                            <https://w3id.org/pmd/mech/MECH_0000005>
                                                                            <https://w3id.org/pmd/mech/MECH_0000006>
                                                                            <https://w3id.org/pmd/mech/MECH_0000007>
+                                                                           <https://w3id.org/pmd/mech/MECH_0002000>
                                                                          )
                                                              ] ;
                                          rdfs:subClassOf obo:OBI_0001930 ;
@@ -8853,6 +8854,13 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
                                          skos:definition "air is a portion of matter which corresponds to the molecular composition of air."@en .
 
 
+###  https://w3id.org/pmd/mech/MECH_0002001
+<https://w3id.org/pmd/mech/MECH_0002001> rdf:type owl:Class ;
+                                         rdfs:subClassOf <https://w3id.org/pmd/mech/MECH_0000032> ;
+                                         rdfs:label "fatigue alternating strength"@en ;
+                                         skos:definition "Fatigue alternating strength is an endurance limit which desribes the maximum cyclic stress amplitude that a material must withstand without failure assuming an infinite number of load cycles under load ratio of -1."@en .
+
+
 ###  https://w3id.org/pmd/mech/MECH_0002002
 <https://w3id.org/pmd/mech/MECH_0002002> rdf:type owl:Class ;
                                          rdfs:subClassOf <https://w3id.org/pmd/mech/MECH_0000068> ,
@@ -10244,6 +10252,11 @@ co:PMD_0020368 rdf:type owl:NamedIndividual ,
                                          rdfs:label "axisymmetric compression loading"@en ;
                                          skos:definition """axisymmetric compression loading
 TODO""" .
+
+
+###  https://w3id.org/pmd/mech/MECH_0002000
+<https://w3id.org/pmd/mech/MECH_0002000> rdf:type owl:NamedIndividual ;
+                                         rdfs:label "multiaxial loading"@en .
 
 
 #################################################################

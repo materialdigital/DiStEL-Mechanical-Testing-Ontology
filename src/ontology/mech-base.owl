@@ -13,12 +13,12 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/pmd/mech/mech-base.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/mech/releases/2026-08-05/mech-base.owl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/mech/releases/2026-08-06/mech-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>Mechanical Testing Ontology</dcterms:title>
-        <owl:versionInfo>2026-08-05</owl:versionInfo>
+        <owl:versionInfo>2026-08-06</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -10087,6 +10087,7 @@ This is the spatial analogue: instead of asking &quot;how does energy change per
                     <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0000005"/>
                     <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0000006"/>
                     <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0000007"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0002000"/>
                 </owl:oneOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -12058,6 +12059,16 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
+    <!-- https://w3id.org/pmd/mech/MECH_0002001 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002001">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0000032"/>
+        <rdfs:label xml:lang="en">fatigue alternating strength</rdfs:label>
+        <skos:definition xml:lang="en">Fatigue alternating strength is an endurance limit which desribes the maximum cyclic stress amplitude that a material must withstand without failure assuming an infinite number of load cycles under load ratio of -1.</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/mech/MECH_0002002 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002002">
@@ -13844,6 +13855,14 @@ Note: Stress rate is only used in the elastic part of the test.</skos:definition
         <rdfs:label xml:lang="en">axisymmetric compression loading</rdfs:label>
         <skos:definition>axisymmetric compression loading
 TODO</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0002000 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/mech/MECH_0002000">
+        <rdfs:label xml:lang="en">multiaxial loading</rdfs:label>
     </owl:NamedIndividual>
     
 

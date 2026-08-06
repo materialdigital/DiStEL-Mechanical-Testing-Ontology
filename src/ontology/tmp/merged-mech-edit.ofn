@@ -556,6 +556,7 @@ Declaration(Class(<https://w3id.org/pmd/mech/MECH_0000100>))
 Declaration(Class(<https://w3id.org/pmd/mech/MECH_0000101>))
 Declaration(Class(<https://w3id.org/pmd/mech/MECH_0000102>))
 Declaration(Class(<https://w3id.org/pmd/mech/MECH_0000103>))
+Declaration(Class(<https://w3id.org/pmd/mech/MECH_0002001>))
 Declaration(Class(<https://w3id.org/pmd/mech/MECH_0002002>))
 Declaration(Class(<https://w3id.org/pmd/mech/MECH_0025001>))
 Declaration(Class(<https://w3id.org/pmd/mech/MECH_0025002>))
@@ -772,6 +773,7 @@ Declaration(NamedIndividual(<https://w3id.org/pmd/mech/MECH_0000029>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/mech/MECH_0000071>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/mech/MECH_0000072>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/mech/MECH_0000073>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/mech/MECH_0002000>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000112>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000114>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
@@ -2590,7 +2592,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000010> "software"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000010> <http://purl.obolibrary.org/obo/IAO_0000104>)
 
-# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (data item)
+# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (data entity)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/IAO_0000027> "Data items include counts of things, analyte concentrations, and statistical summaries."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000027> "An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements."@en)
@@ -2755,7 +2757,7 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0020010> ObjectIntersectio
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020010> <http://purl.obolibrary.org/obo/COB_0000035>)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/IAO_0020000>))
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (Homo sapiens)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (homo sapiens)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "Homo sapiens")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "homo sapiens")
@@ -3333,7 +3335,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000552> <https://w3id.org/pmd/co/PMD_0000957>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000552> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009006> <https://w3id.org/pmd/co/PMD_0000551>))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000553> (chemisches Potential)
+# Class: <https://w3id.org/pmd/co/PMD_0000553> (chemical potential)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000553> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0000553> "PERSON: Joerg Waitelonis")
@@ -3813,7 +3815,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000953> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000953> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000957> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0000957> "PERSON: Joerg Waitelonis")
@@ -3823,7 +3825,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000957> "Eine Analyse, die die äußere und innere Struktur und Morphologie von Materialien untersucht, einschließlich der Anordnung von Atomen, Kristallen, Körnern und Phasen, oft unter Verwendung von Techniken wie Mikroskopie und Beugung."@de)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000957> <http://purl.obolibrary.org/obo/OBI_0000070>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000965> (Oberflächenschicht (Fiat-Objektteil))
+# Class: <https://w3id.org/pmd/co/PMD_0000965> (surface layer (fiat object part))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000965> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0000965> "PERSON: Joerg Waitelonis")
@@ -5296,7 +5298,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0025017> "Outer diameter is a length of a straight line from one outer surface of an object or space to the other side of its outer surface through the center of an object or space when it has the inside and outside surface."@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0025017> <https://w3id.org/pmd/co/PMD_0050051>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0025018> (geometrische relationale Qualität)
+# Class: <https://w3id.org/pmd/co/PMD_0025018> (geometric relational quality)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0025018> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0025018> "PERSON: Kamilla Zaripova")
@@ -5693,7 +5695,7 @@ This is the spatial analogue: instead of asking \"how does energy change per uni
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/mech/MECH_0000000> "fatigue loading type value"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/mech/MECH_0000000> "Fatigue loading type values is a categotical value specification which describes the direction of an applied force in respect to the specimen during fatigue testing."@en)
-EquivalentClasses(<https://w3id.org/pmd/mech/MECH_0000000> ObjectOneOf(<https://w3id.org/pmd/mech/MECH_0000001> <https://w3id.org/pmd/mech/MECH_0000002> <https://w3id.org/pmd/mech/MECH_0000003> <https://w3id.org/pmd/mech/MECH_0000004> <https://w3id.org/pmd/mech/MECH_0000005> <https://w3id.org/pmd/mech/MECH_0000006> <https://w3id.org/pmd/mech/MECH_0000007>))
+EquivalentClasses(<https://w3id.org/pmd/mech/MECH_0000000> ObjectOneOf(<https://w3id.org/pmd/mech/MECH_0000001> <https://w3id.org/pmd/mech/MECH_0000002> <https://w3id.org/pmd/mech/MECH_0000003> <https://w3id.org/pmd/mech/MECH_0000004> <https://w3id.org/pmd/mech/MECH_0000005> <https://w3id.org/pmd/mech/MECH_0000006> <https://w3id.org/pmd/mech/MECH_0000007> <https://w3id.org/pmd/mech/MECH_0002000>))
 SubClassOf(<https://w3id.org/pmd/mech/MECH_0000000> <http://purl.obolibrary.org/obo/OBI_0001930>)
 
 # Class: <https://w3id.org/pmd/mech/MECH_0000008> (fatigue loading type)
@@ -6286,6 +6288,12 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/mech/MECH_0000103> "air"@en
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/mech/MECH_0000103> "air is a portion of matter which corresponds to the molecular composition of air."@en)
 SubClassOf(<https://w3id.org/pmd/mech/MECH_0000103> <https://w3id.org/pmd/co/PMD_0000001>)
 
+# Class: <https://w3id.org/pmd/mech/MECH_0002001> (fatigue alternating strength)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/mech/MECH_0002001> "fatigue alternating strength"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/mech/MECH_0002001> "Fatigue alternating strength is an endurance limit which desribes the maximum cyclic stress amplitude that a material must withstand without failure assuming an infinite number of load cycles under load ratio of -1."@en)
+SubClassOf(<https://w3id.org/pmd/mech/MECH_0002001> <https://w3id.org/pmd/mech/MECH_0000032>)
+
 # Class: <https://w3id.org/pmd/mech/MECH_0002002> (percentage reduction of area at fracture)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/mech/MECH_0002002> "percentage reduction of area at fracture"@en)
@@ -6447,7 +6455,7 @@ AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org
 AnnotationAssertion(<https://w3id.org/pmd/co/symbol> <https://w3id.org/pmd/tto/TTO_0000016> "e^._L_c"@en)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000016> <https://w3id.org/pmd/co/PMD_0000008>)
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000017> (extensometer gauge length)
+# Class: <https://w3id.org/pmd/tto/TTO_0000017> (Extensometer-Messlänge)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000017> <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000017> "Extensometer-Messlänge"@de)
@@ -7001,7 +7009,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/OMO_0001000> "https://github.com/information-artifact-ontology/ontology-metadata/issues/77")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMO_0001000> "out of scope")
 
-# Individual: <http://qudt.org/vocab/unit/HZ> (Hertz)
+# Individual: <http://qudt.org/vocab/unit/HZ> (हर्ट्ज)
 
 AnnotationAssertion(dcterms:description <http://qudt.org/vocab/unit/HZ> "$\\textit{Hertz}$ (symbol $Hz$) is the SI unit of frequency defined as the number of cycles per second of
     a periodic phenomenon. One of its most common uses is the description of the sine wave, particularly those used in radio and
@@ -7379,6 +7387,10 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/mech/MECH_0000073> "axisymmetric compression loading"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/mech/MECH_0000073> "axisymmetric compression loading
 TODO")
+
+# Individual: <https://w3id.org/pmd/mech/MECH_0002000> (multiaxial loading)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/mech/MECH_0002000> "multiaxial loading"@en)
 
 
 SubClassOf(ObjectUnionOf(<https://w3id.org/pmd/co/PMD_0000773> <https://w3id.org/pmd/co/PMD_0000952>) <https://w3id.org/pmd/co/PMD_0000848>)

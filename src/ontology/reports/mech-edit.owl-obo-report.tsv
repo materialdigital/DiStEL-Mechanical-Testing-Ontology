@@ -86,6 +86,7 @@ WARN	missing_definition	motor	definition
 WARN	missing_definition	yield strength at 1150°C and air atmosphere	definition	
 WARN	missing_definition	yield strength at 1100°C and air atmosphere	definition	
 WARN	missing_definition	air	definition	
+WARN	missing_definition	fatigue alternating strength	definition	
 WARN	missing_definition	percentage reduction of area at fracture	definition	
 WARN	missing_definition	hot tensile testing process	definition	
 WARN	missing_definition	fracture strength	definition	
