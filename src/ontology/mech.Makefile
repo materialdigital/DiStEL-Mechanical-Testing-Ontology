@@ -97,6 +97,24 @@ $(IMPORTDIR)/qudt_import.owl: $(MIRRORDIR)/qudt.owl $(IMPORTDIR)/qudt_terms.txt
 		--select "annotations self" \
 		$(ANNOTATE_CONVERT_FILE)
 
+$(IMPORTDIR)/vto_import.owl: $(MIRRORDIR)/vto.owl $(IMPORTDIR)/vto_terms.txt $(IMPORTSEED) | all_robot_plugins
+	@echo "Generating import module from VTO mirror..."
+	$(ROBOT) annotate --input $< --remove-annotations \
+			odk:normalize --add-source true \
+			extract --term-file $(IMPORTDIR)/vto_terms.txt \
+						--force true \
+						--copy-ontology-annotations true \
+						--individuals exclude \
+						--intermediates all \
+						--method BOT \
+			remove --term "https://w3id.org/pmd/co/relatesTo" \
+				   --select "self" \
+				   --trim true \
+			odk:normalize --base-iri https://w3id.org/pmd/mech \
+							--subset-decls true --synonym-decls true \
+			annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+			convert -f owl --output $@.tmp.owl && mv $@.tmp.owl $@
+
 $(IMPORTDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl $(IMPORTDIR)/obi_terms.txt \
 			   $(IMPORTSEED) | all_robot_plugins
 	$(ROBOT) annotate --input $< --remove-annotations \

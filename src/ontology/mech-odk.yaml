@@ -34,6 +34,9 @@ import_group:
       title: "Information Artifact Ontology"
       mirror_from: https://raw.githubusercontent.com/information-artifact-ontology/IAO/refs/heads/master/iao.owl
       module_type: custom
+    - id: vto
+      mirror_from: https://raw.githubusercontent.com/materialdigital/vickers-testing-ontology/refs/heads/main/vto.owl 
+      module_type: custom
 
 # Components
 components:
