@@ -44,6 +44,7 @@
                     <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0000005"/>
                     <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0000006"/>
                     <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0000007"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/mech/MECH_0002000"/>
                 </owl:oneOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -940,6 +941,16 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
+    <!-- https://w3id.org/pmd/mech/MECH_0002001 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002001">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0000032"/>
+        <rdfs:label xml:lang="en">fatigue alternating strength</rdfs:label>
+        <skos:definition xml:lang="en">Fatigue alternating strength is an endurance limit which desribes the maximum cyclic stress amplitude that a material must withstand without failure assuming an infinite number of load cycles under load ratio of -1.</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/mech/MECH_0025001 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0025001"/>
@@ -1117,6 +1128,14 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
         <rdf:type rdf:resource="https://w3id.org/pmd/mech/MECH_0000028"/>
         <rdfs:comment>TODO write defintion</rdfs:comment>
         <rdfs:label xml:lang="en">fully reversed loading</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0002000 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/mech/MECH_0002000">
+        <rdfs:label xml:lang="en">multiaxial loading</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 
