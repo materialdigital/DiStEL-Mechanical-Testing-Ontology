@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                4a7a40e90d2a2374b23deb643a0c2de2778299b38a7475b7ac91f091dc12531e
+CONFIG_HASH=                6751ea9025ac8ba14e443adcb69a8b4df5625695fe4f0a158e4369f4f773545f
 
 
 # ----------------------------------------
@@ -187,7 +187,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  pmdco tto uo qudt iao
+IMPORTS =  pmdco tto uo qudt iao vto
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -439,6 +439,12 @@ $(IMPORTDIR)/iao_import.owl: $(MIRRORDIR)/iao.owl
 	@echo "       This rule needs to be overwritten in mech.Makefile!"
 	@false
 
+## Module for ontology: vto (custom)
+$(IMPORTDIR)/vto_import.owl: $(MIRRORDIR)/vto.owl
+	@echo "ERROR: You have configured vto as a custom module;"
+	@echo "       This rule needs to be overwritten in mech.Makefile!"
+	@false
+
 endif # IMP=true
 
 .PHONY: refresh-imports
@@ -557,6 +563,13 @@ mirror-qudt: | $(TMPDIR)
 .PRECIOUS: $(MIRRORDIR)/iao.owl
 mirror-iao: | $(TMPDIR)
 	$(ROBOT) convert -I https://raw.githubusercontent.com/information-artifact-ontology/IAO/refs/heads/master/iao.owl -o $(TMPDIR)/$@.owl
+
+
+## ONTOLOGY: vto
+.PHONY: mirror-vto
+.PRECIOUS: $(MIRRORDIR)/vto.owl
+mirror-vto: | $(TMPDIR)
+	$(ROBOT) convert -I https://raw.githubusercontent.com/materialdigital/vickers-testing-ontology/refs/heads/main/vto.owl -o $(TMPDIR)/$@.owl
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)
