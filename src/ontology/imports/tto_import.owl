@@ -13,9 +13,9 @@
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
     <owl:Ontology rdf:about="https://w3id.org/pmd/mech/imports/tto_import.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/mech/releases/2026-08-06/imports/tto_import.owl"/>
-        <dc:source rdf:resource="https://w3id.org/pmd/tto/releases/2026-04-28/tto-full.owl"/>
-        <owl:versionInfo>2026-08-06</owl:versionInfo>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/mech/releases/2026-08-25/imports/tto_import.owl"/>
+        <dc:source rdf:resource="https://w3id.org/pmd/tto/releases/2026-08-14/tto-full.owl"/>
+        <owl:versionInfo>2026-08-25</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -52,6 +52,12 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
     
 
 
@@ -109,6 +115,12 @@
     
 
 
+    <!-- https://w3id.org/pmd/co/PMD_0001032 -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/pmd/co/PMD_0001032"/>
+    
+
+
     <!-- https://w3id.org/pmd/co/definitionSource -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/pmd/co/definitionSource"/>
@@ -118,6 +130,23 @@
     <!-- https://w3id.org/pmd/co/symbol -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/pmd/co/symbol"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Literal -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     
 
 
@@ -198,6 +227,53 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000108 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000108">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+        <rdfs:label xml:lang="en">exists at</rdfs:label>
+        <skos:definition xml:lang="en">(Elucidation) exists at is a relation between a particular and some temporal region at which the particular exists</skos:definition>
+        <skos:example xml:lang="en">First World War exists at 1914-1916; Mexico exists at January 1, 2000</skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000117 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000117">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000132"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:label xml:lang="en">has occurrent part</rdfs:label>
+        <skos:definition xml:lang="en">b has occurrent part c =Def c occurrent part of b</skos:definition>
+        <skos:example xml:lang="en">Mary&apos;s life has occurrent part Mary&apos;s 5th birthday</skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000132 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000132">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:label xml:lang="en">occurrent part of</rdfs:label>
+        <skos:definition xml:lang="en">(Elucidation) occurrent part of is a relation between occurrents b and c when b is part of c</skos:definition>
+        <skos:example xml:lang="en">Mary&apos;s 5th birthday is an occurrent part of Mary&apos;s life; the first set of the tennis match is an occurrent part of the tennis match</skos:example>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000132"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <rdfs:comment>&quot;occurrent part of&quot; is not a BFO2020 temporalized relation. It just restricts the domain and range to &quot;occurrent&quot;. That&apos;s why is should be OK to make it sub property of RO &quot;part of&quot;</rdfs:comment>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136">
@@ -224,8 +300,13 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <obo:IAO_0000112 xml:lang="en">see is_input_of example_of_usage</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115>The inverse property of is specified input of</obo:IAO_0000115>
         <obo:IAO_0000116>8/17/09: specified inputs of one process are not necessarily specified inputs of a larger process that it is part of. This is in contrast to how &apos;has participant&apos; works.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Larry Hunter</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Melanie Coutot</obo:IAO_0000117>
         <rdfs:label xml:lang="en">has specified input</rdfs:label>
     </owl:ObjectProperty>
     
@@ -237,7 +318,10 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <obo:IAO_0000112 xml:lang="en">some Autologous EBV(Epstein-Barr virus)-transformed B-LCL (B lymphocyte cell line) is_input_for instance of Chromum Release Assay described at https://wiki.cbil.upenn.edu/obiwiki/index.php/Chromium_Release_assay</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115>A relation between a completely executed planned process and a continuant participating in that process that is not created during the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON:Bjoern Peters</obo:IAO_0000117>
         <rdfs:label xml:lang="en">is specified input of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -246,15 +330,15 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299">
-        <owl:equivalentProperty>
-            <rdf:Description>
-                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-            </rdf:Description>
-        </owl:equivalentProperty>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115>The inverse property of is specified output of</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Larry Hunter</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Melanie Courtot</obo:IAO_0000117>
         <rdfs:label xml:lang="en">has specified output</rdfs:label>
     </owl:ObjectProperty>
     
@@ -265,7 +349,10 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">A relation between a completely executed planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON:Bjoern Peters</obo:IAO_0000117>
         <rdfs:label xml:lang="en">is specified output of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -277,11 +364,26 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
         <obo:IAO_0000112>A cell sorting process achieves the objective specification &apos;material separation objective&apos;</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process.</obo:IAO_0000115>
+        <obo:IAO_0000117>BP, AR, PPPB branch</obo:IAO_0000117>
         <obo:IAO_0000119>PPPB branch derived</obo:IAO_0000119>
         <obo:IAO_0000232>modified according to email thread from 1/23/09 in accordince with DT and PPPB branch</obo:IAO_0000232>
         <rdfs:label>achieves_planned_objective</rdfs:label>
         <co:PMD_0000064>https://github.com/search?q=repo%3Amaterialdigital%2Fcore-ontology+path%3A%2F%5Epatterns%5C%2F%2F+OBI_0000417&amp;type=code</co:PMD_0000064>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001927 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0001927">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115 xml:lang="en">A relation between a value specification and an entity which the specification is about.</obo:IAO_0000115>
+        <rdfs:label>specifies value of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -292,7 +394,9 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A relation between an information content entity and a value specification that specifies its value.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: James A. Overton</obo:IAO_0000117>
         <obo:IAO_0000119>OBI</obo:IAO_0000119>
         <rdfs:label>has value specification</rdfs:label>
     </owl:ObjectProperty>
@@ -533,10 +637,54 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0002328 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002328">
+        <obo:IAO_0000115>A grouping relationship for any relationship directly involving a function, or that holds because of a function of one of the related entities.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This is the soft version of mathematical dependence. We would like to introduce oparator classes later (derivative, quotient, sum, difference, product) with appropriate properties for the terms.
+
+difference === (&apos;has minuend&apos; only entity) and (&apos;has subtrahend&apos; only entity)
+sum === &apos;has addend&apos; some entity
+product === &apos;has factor&apos; some entity
+quotient === (&apos;has numerator&apos; only entity) and (&apos;has denominator&apos; only entity)
+derivative === (&apos;has differential numerator&apos; only entity) and (&apos;has differential denominator&apos; only entity)</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">functionally related to</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/RO_0002328"/>
+        <skos:definition xml:lang="en">A grouping relationship for any relationship directly involving a function, or that holds because of a function of one of the related entities.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002350 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002350">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
+        <obo:IAO_0000112>An organism that is a member of a population of organisms</obo:IAO_0000112>
+        <obo:IAO_0000115>is member of is a mereological relation between a item and a collection.</obo:IAO_0000115>
+        <obo:IAO_0000119>SIO</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">member of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002351 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002351">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <obo:IAO_0000115>has member is a mereological relation between a collection and an item.</obo:IAO_0000115>
+        <obo:IAO_0000119>SIO</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">has member</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002353 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002353">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002328"/>
         <obo:IAO_0000115>inverse of has output</obo:IAO_0000115>
         <rdfs:label xml:lang="en">output of</rdfs:label>
     </owl:ObjectProperty>
@@ -573,6 +721,9 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0000059"/>
         </owl:propertyChainAxiom>
         <obo:IAO_0000115 xml:lang="en">relationship between a planned process and the plan specification that it carries out; it is defined as equivalent to the composed relationship (realizes o concretizes)</obo:IAO_0000115>
+        <obo:IAO_0000117>Alejandra Gonzalez-Beltran</obo:IAO_0000117>
+        <obo:IAO_0000117>Orlaith Burke</obo:IAO_0000117>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119>AGB</obo:IAO_0000119>
         <rdfs:label>executes</rdfs:label>
     </owl:ObjectProperty>
@@ -592,9 +743,168 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <!-- https://w3id.org/pmd/co/PMD_0000004 -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/PMD_0000004">
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117>PERSON: Joerg Waitelonis</obo:IAO_0000117>
         <rdfs:label xml:lang="en">is subject of</rdfs:label>
         <skos:definition xml:lang="en">Inverse of &apos;is about&apos;.</skos:definition>
     </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0000009 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/PMD_0000009">
+        <owl:inverseOf rdf:resource="https://w3id.org/pmd/co/PMD_0025006"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:range rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117>PERSON: Joerg Waitelonis</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">has process attribute</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">has process attribute from OEO https://openenergyplatform.org/ontology/oeo/OEO_00000500</rdfs:seeAlso>
+        <skos:definition xml:lang="en">A relation between a process and a process attribute that depends on it.</skos:definition>
+        <skos:example xml:lang="en">Tensile testing process has process attribute tensile rate</skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0000069 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/PMD_0000069">
+        <owl:inverseOf rdf:resource="https://w3id.org/pmd/co/PMD_0000070"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000002"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="https://w3id.org/pmd/co/PMD_0000068"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://w3id.org/pmd/co/PMD_0000068"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117>PERSON: Joerg Waitelonis</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">has state</rdfs:label>
+        <skos:definition xml:lang="en">relates an anchor continuant to a temporally qualified continuant that represents a specific temporal phase of its existence.</skos:definition>
+        <co:PMD_0001032>https://github.com/materialdigital/core-ontology/issues/185</co:PMD_0001032>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0000070 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/PMD_0000070">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117>PERSON: Joerg Waitelonis</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">is state of</rdfs:label>
+        <skos:definition xml:lang="en">relates a temporally qualified continuant to the unique anchor continuant that it is a temporal phase of</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0000077 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/PMD_0000077">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/co/PMD_0000004"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117>PERSON: Joerg Waitelonis</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">specified by value</rdfs:label>
+        <skos:definition xml:lang="en">A relation between an entity and a value specification which is about this entity.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0025006 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/PMD_0025006">
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117>PERSON: Kamilla Zaripova</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">process attribute of</rdfs:label>
+        <skos:definition xml:lang="en">A relation between a process attribute and a process, which &quot;bears&quot; the attribute.</skos:definition>
+        <skos:example xml:lang="en">Tensile rate is a process attribute of tensile test</skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0025998 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/PMD_0025998">
+        <owl:inverseOf rdf:resource="https://w3id.org/pmd/co/PMD_0025999"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000145"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0025998"/>
+        </owl:propertyChainAxiom>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117>PERSON: Kamilla Zaripova</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">has relational quality</rdfs:label>
+        <rdfs:label xml:lang="de">hat relationale Qualität</rdfs:label>
+        <skos:definition xml:lang="en">a relation between an independent continuant (the bearer) and a relational quality, in which the quality specifically depends on the bearer for its existence</skos:definition>
+        <skos:definition xml:lang="de">eine Beziehung zwischen einem unabhängigen Kontinuum (dem Träger) und einer relationalen Qualität, bei der die Qualität in ihrer Existenz speziell vom Träger abhängt</skos:definition>
+        <skos:example xml:lang="en">material has relational quality mass proportion m, and portion of iron has the same relational quality mass proportion m</skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0025999 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/PMD_0025999">
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0025999"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        </owl:propertyChainAxiom>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000116 xml:lang="en">The &apos;relational quality of&apos; is more strict that &apos;quality of&apos; from RO, since domain is &apos;relational quality&apos;. The motivtion to introduce an object property for relational qualities is the following:
+RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c. The functionality is relevant for most of the SDC -&gt; IC triples, expect for relational qualities, which per definiton can be simultaneously inherited in &gt;=2 ICs. Thus,  &apos;relational quality of&apos;  has the same intention to connect SDC to IC, however, without cardinality constraints.</obo:IAO_0000116>
+        <obo:IAO_0000117>PERSON: Kamilla Zaripova</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">relational quality of</rdfs:label>
+        <rdfs:label xml:lang="de">relationale Qualität von</rdfs:label>
+        <skos:definition xml:lang="en">a relation between a relational quality and an independent continuant (the bearer), in which the quality specifically depends on the bearer for its existence</skos:definition>
+        <skos:definition xml:lang="de">eine Beziehung zwischen einer relationalen Qualität und einem unabhängigen Kontinuum (dem Träger), bei der die Existenz der Qualität speziell vom Träger abhängt</skos:definition>
+        <skos:example xml:lang="en">mass proportion m is relational qualitiy of material, and the same mass proportion m is relational qualitiy of portion of iron</skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001937 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0001937">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002135"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A relation between a value specification and a number that quantifies it.</obo:IAO_0000115>
+        <obo:IAO_0000116>A range of &apos;real&apos; might be better than &apos;float&apos;. For now we follow &apos;has measurement value&apos; until we can consider technical issues with SPARQL queries and reasoning.</obo:IAO_0000116>
+        <obo:IAO_0000117>PERSON: James A. Overton</obo:IAO_0000117>
+        <obo:IAO_0000119>OBI</obo:IAO_0000119>
+        <rdfs:label>has specified numeric value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002135 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0002135">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115 xml:lang="en">A relation between a value specification and a literal.</obo:IAO_0000115>
+        <obo:IAO_0000116>This is not an RDF/OWL object property. It is intended to link a value found in e.g. a database column of &apos;M&apos; (the literal) to an instance of a value specification class, which can then be linked to indicate that this is about the biological gender of a human subject.</obo:IAO_0000116>
+        <obo:IAO_0000119>OBI</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">has specified value</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -704,10 +1014,74 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
+        <rdfs:label xml:lang="en">spatial region</rdfs:label>
+        <skos:definition xml:lang="en">(Elucidation) A spatial region is a continuant entity that is a continuant part of the spatial projection of a portion of spacetime at a given time</skos:definition>
+        <skos:example xml:lang="en">As for zero-dimensional spatial region, one-dimensional spatial region, two-dimensional spatial region, three-dimensional spatial region</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000132"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">temporal region</rdfs:label>
+        <skos:definition xml:lang="en">(Elucidation) A temporal region is an occurrent over which processes can unfold</skos:definition>
+        <skos:example xml:lang="en">As for zero-dimensional temporal region and one-dimensional temporal region</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000132"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">spatiotemporal region</rdfs:label>
+        <skos:definition xml:lang="en">(Elucidation) A spatiotemporal region is an occurrent that is an occurrent part of spacetime</skos:definition>
+        <skos:example xml:lang="en">The spatiotemporal region occupied by the development of a cancer tumour; the spatiotemporal region occupied by an orbiting satellite</skos:example>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000035"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000132"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])</obo:IAO_0000115>
         <rdfs:label xml:lang="en">process</rdfs:label>
         <skos:altLabel xml:lang="en">event</skos:altLabel>
@@ -834,6 +1208,17 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:label xml:lang="en">fiat object part</rdfs:label>
+        <skos:definition xml:lang="en">(Elucidation) A fiat object part b is a material entity &amp; such that if b exists then it is continuant part of some object c &amp; demarcated from the remainder of c by one or more fiat surfaces</skos:definition>
+        <skos:example xml:lang="en">The upper and lower lobes of the left lung; the dorsal and ventral surfaces of the body; the Western hemisphere of the Earth; the FMA:regional parts of an intact human body</skos:example>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000027">
@@ -841,6 +1226,17 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <rdfs:label xml:lang="en">object aggregate</rdfs:label>
         <skos:definition xml:lang="en">(Elucidation) An object aggregate is a material entity consisting exactly of a plurality (≥1) of objects as member parts which together form a unit</skos:definition>
         <skos:example xml:lang="en">The aggregate of the musicians in a symphony orchestra and their instruments; the aggregate of bearings in a constant velocity axle joint; the nitrogen atoms in the atmosphere; a collection of cells in a blood biobank</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
+        <rdfs:label xml:lang="en">site</rdfs:label>
+        <skos:definition xml:lang="en">(Elucidation) A site is a three-dimensional immaterial entity whose boundaries either (partially or wholly) coincide with the boundaries of one or more material entities or have locations determined in relation to some material entity</skos:definition>
+        <skos:example xml:lang="en">A hole in a portion of cheese; a rabbit hole; the Grand Canyon; the Piazza San Marco; the kangaroo-joey-containing hole of a kangaroo pouch; your left nostril (a fiat part - the opening - of your left nasal cavity); the lumen of your gut; the hold of a ship; the interior of the trunk of your car; hole in an engineered floor joist</skos:example>
     </owl:Class>
     
 
@@ -893,10 +1289,41 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000132"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000035"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">process boundary</rdfs:label>
+        <skos:definition xml:lang="en">p is a process boundary =Def p is a temporal part of a process &amp; p has no proper temporal parts</skos:definition>
+        <skos:example xml:lang="en">The boundary between the 2nd and 3rd year of your life</skos:example>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
         <obo:IAO_0000115 xml:lang="en">An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">Elucidation: An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.</obo:IAO_0000116>
         <rdfs:label xml:lang="en">material entity</rdfs:label>
@@ -906,13 +1333,76 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000140 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000140">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
+        <rdfs:label xml:lang="en">continuant fiat boundary</rdfs:label>
+        <skos:definition xml:lang="en">(Elucidation) A continuant fiat boundary b is an immaterial entity that is of zero, one or two dimensions &amp; such that there is no time t when b has a spatial region as continuant part &amp; whose location is determined in relation to some material entity</skos:definition>
+        <skos:example xml:lang="en">As for fiat point, fiat line, fiat surface</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000141 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000141">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:label xml:lang="en">immaterial entity</rdfs:label>
+        <skos:definition xml:lang="en">b is an immaterial entity =Def b is an independent continuant which is such that there is no time t when it has a material entity as continuant part</skos:definition>
+        <skos:example xml:lang="en">As for fiat point, fiat line, fiat surface, site</skos:example>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000145 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000145">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0025999"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">relational quality</rdfs:label>
         <skos:definition xml:lang="en">b is a relational quality =Def b is a quality &amp; there exists c and d such that c and d are not identical &amp; b specifically depends on c &amp; b specifically depends on d</skos:definition>
         <skos:example xml:lang="en">A marriage bond; an instance of love; an obligation between one person and another</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_24431 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24431">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115>A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances.</obo:IAO_0000115>
+        <rdfs:label>chemical entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_59999 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_59999">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000001"/>
+        <obo:IAO_0000115>A chemical substance is a portion of matter of constant composition, composed of molecular entities of the same type or of different types.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Frequently used for fluidic portions of matter and/or in the context of chemical reactions. Boundary to material not always sharp.</rdfs:comment>
+        <rdfs:label>chemical substance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_60003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_60003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_59999"/>
+        <obo:IAO_0000115>A pure substance is a chemical substance composed of multiple molecules, which are all of the same kind.</obo:IAO_0000115>
+        <rdfs:label>pure substance</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/CHEBI_60003"/>
+        <skos:example xml:lang="en">Pure water, a portion of iron atoms. In contrast, salt water &apos;has part&apos; a portion of pure water and a portion of pure NaCl. Steel &apos;has part&apos; a &apos;portion of pure iron&apos;, a &apos;portion of pure carbon&apos; and possibly portions of other alloying- and impurity-elements.</skos:example>
+        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
     
 
@@ -976,6 +1466,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000112 xml:lang="en">Data items include counts of things, analyte concentrations, and statistical summaries.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is intended to be one or more truthful statement(s) about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">2/2/2009 Alan and Bjoern discussing FACS run output data. This is a data item because it is about the cell population. Each element records an event and is typically further composed a set of measurment data items that record the fluorescent intensity stimulated by one of the lasers.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">2009-03-16: data item deliberatly ambiguous: we merged data set and datum to be one entity, not knowing how to define singular versus plural. So data item is more general than datum.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">2009-03-16: removed datum as alternative term as datum specifically refers to singular form, and is thus not an exact synonym.</obo:IAO_0000116>
@@ -987,6 +1478,7 @@ process... I would include lists, tables, sentences... I think I might
 defer to Barry, or to Brian Cantwell Smith
 
 JAR: A data item is an approximately justified approximately true approximate belief</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">data entity</rdfs:label>
         <rdfs:label xml:lang="en">data item</rdfs:label>
     </owl:Class>
     
@@ -1194,9 +1686,11 @@ Request that IAO either clarify these or change definitions not to use them</rdf
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">When a specimen of blood is assayed for glucose concentration, the blood has the evaluant role. When measuring the mass of a mouse, the evaluant is the mouse. When measuring the time of DNA replication, the evaluant is the DNA. When measuring the intensity of light on a surface, the evaluant is the light source.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">a role that inheres in a material entity that is realized in an assay in which data is generated about the bearer of the evaluant role</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">Role call - 17nov-08: JF and MC think an evaluant role is always specified input of a process. Even in the case where we have an assay taking blood as evaluant and outputting blood, the blood is not the specified output at the end of the assay (the concentration of glucose in the blood is)</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">examples of features that could be described in an evaluant: quality.... e.g. &quot;contains 10 pg/ml IL2&quot;, or &quot;no glucose detected&quot;)</obo:IAO_0000116>
+        <obo:IAO_0000117>GROUP:  Role Branch</obo:IAO_0000117>
         <obo:IAO_0000119>OBI</obo:IAO_0000119>
         <obo:IAO_0000232>Feb 10, 2009.  changes after discussion at OBI Consortium Workshop Feb 2-6, 2009.  accepted as core term.</obo:IAO_0000232>
         <rdfs:label xml:lang="en">evaluant role</rdfs:label>
@@ -1290,9 +1784,11 @@ Request that IAO either clarify these or change definitions not to use them</rdf
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112>Assay the wavelength of light emitted by excited Neon atoms. Count of geese flying over a house.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">A planned process that has the objective to produce information about a material entity (the evaluant) by examining it.</obo:IAO_0000115>
         <obo:IAO_0000116>12/3/12: BP: the reference to the &apos;physical examination&apos; is included to point out that a prediction is not an assay, as that does not require physical examiniation.</obo:IAO_0000116>
         <obo:IAO_0000116>Discussion on OBI call 2023-05-01 resulted in an agreement to revise the textual definition of &apos;assay&apos;.  https://github.com/obi-ontology/obi/issues/1683.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
         <rdfs:label xml:lang="en">assay</rdfs:label>
     </owl:Class>
@@ -1310,20 +1806,30 @@ Request that IAO either clarify these or change definitions not to use them</rdf
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112>The plan of researcher X to perform an experiment according to a protocol.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">A plan is a realizable entity that is the inheres in a bearer who is committed to realizing it as a completely executed planned process.</obo:IAO_0000115>
         <obo:IAO_0000116>This class is included to make clear how the plan specification, the plan, and the planned process relate. OBI will however only subclass and work under the &apos;plan specification&apos;, and &apos;planned process&apos; class, as we want to avoid to get deep into discussions of &apos;intend&apos; etc.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">AR, BP, JM, MC, PRS</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">branch derived</obo:IAO_0000119>
         <rdfs:label xml:lang="en">plan</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0001930 -->
+    <!-- http://purl.obolibrary.org/obo/OBI_0001931 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001930">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001931">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
-        <obo:IAO_0000115 xml:lang="en">A value specification that is specifies one category out of a fixed number of nominal categories</obo:IAO_0000115>
-        <rdfs:label>categorical value specification</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001937"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115 xml:lang="en">A value specification that consists of two parts: a numeral and a unit label</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON:Bjoern Peters</obo:IAO_0000117>
+        <rdfs:label>scalar value specification</rdfs:label>
     </owl:Class>
     
 
@@ -1333,8 +1839,10 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001933">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000112>The value of &apos;positive&apos; in a classification scheme of &quot;positive or negative&quot;; the value of &apos;20g&apos; on the quantitative scale of mass.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">An information content entity that specifies a value within a classification scheme or on a quantitative scale.</obo:IAO_0000115>
         <obo:IAO_0000116>This term is currently a descendant of &apos;information content entity&apos;, which requires that it &apos;is about&apos; something. A value specification of &apos;20g&apos; for a measurement data item of the mass of a particular mouse &apos;is about&apos; the mass of that mouse. However there are cases where a value specification is not clearly about any particular. In the future we may change &apos;value specification&apos; to remove the &apos;is about&apos; requirement.</obo:IAO_0000116>
+        <obo:IAO_0000117>PERSON:Bjoern Peters</obo:IAO_0000117>
         <rdfs:label>value specification</rdfs:label>
     </owl:Class>
     
@@ -1349,11 +1857,11 @@ Request that IAO either clarify these or change definitions not to use them</rdf
                     <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000001"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000005"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020131"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002353"/>
@@ -1362,6 +1870,8 @@ Request that IAO either clarify these or change definitions not to use them</rdf
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117>PERSON: Joerg Waitelonis</obo:IAO_0000117>
         <rdfs:comment xml:lang="en">Instances of Portions Of Matter whose shape is relevant for their dispostion to participate in a manufacturing process may be (subclasses of) objects that bear a &apos;blank role&apos; in the context of the manufacturing process.</rdfs:comment>
         <rdfs:comment xml:lang="en">Material is defined in terms of the three main perspectives that material specifications rely on: the structure of the material (&quot;intensive quality&quot;), the performance of the material (&quot;behavoiral material property&quot;) and the processing the material must have undergone (&quot;output of some process&quot;).
 
@@ -1380,6 +1890,8 @@ When defining specific materials/material taxonomies, these three aspects shall 
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117>PERSON: Joerg Waitelonis</obo:IAO_0000117>
         <rdfs:comment xml:lang="en">It is also representing a distinct physical or conceptual part of a material or substance.
 
 The open energy ontology OEO defines portion of matter as a subclass of object aggregate, which implies countability. Our portion is not (precisely) countable and thus bearer of intensive properties.</rdfs:comment>
@@ -1415,7 +1927,7 @@ granularity. At these coarser levels, the individual molecules cannot be differe
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">We recognize that some of the materials in the subclasses also occur naturally. However, these are not within the scope of our consideration for technical use.</rdfs:comment>
         <rdfs:label xml:lang="en">engineered material</rdfs:label>
-        <skos:definition xml:lang="en">An engineered material is a material that is output of a manufacturing process.</skos:definition>
+        <skos:definition xml:lang="en">material that is output of a manufacturing process</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
     
@@ -1424,14 +1936,11 @@ granularity. At these coarser levels, the individual molecules cannot be differe
     <!-- https://w3id.org/pmd/co/PMD_0000005 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000005">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000950"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf rdf:nodeID="genid94"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020353"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0023004"/>
+        <rdfs:subClassOf rdf:nodeID="genid115"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117>PERSON: Joerg Waitelonis</obo:IAO_0000117>
         <rdfs:comment xml:lang="en">A property is a material trait in terms of the kind and magnitude of response to a specific imposed stimulus. Generally, definitions of properties are made independent of material shape and size.
 (Callister, W.D., Rethwisch, D.G., Materials Science and Engineering, Wiley, 2014)
 
@@ -1440,11 +1949,12 @@ As a consequence, material properties in the ontology are differeciated accordin
  The &apos;unit idenifieres&apos; of such properties (e.g. &quot;HV1&quot;, &quot;HV10&quot;, &quot;HBW&quot;) are strictly speaking not units but rather references to the measurement methodology used to determine a numeric value that quantifies the property.
 
 Extensive properties that depend on the object being tested rather than on the portion of matter are (extensive) object- or system-properties.</rdfs:comment>
-        <rdfs:label xml:lang="en">material property</rdfs:label>
+        <rdfs:label xml:lang="de">Materialeigenschaft</rdfs:label>
+        <rdfs:label xml:lang="en">material performance property</rdfs:label>
         <skos:definition xml:lang="en">a disposition of a portion of matter that is realized in a compatible process and whose realization is grounded in the portions intensive qualities</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid94">
+    <owl:Restriction rdf:nodeID="genid115">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
         <owl:someValuesFrom>
             <owl:Class>
@@ -1461,7 +1971,7 @@ Extensive properties that depend on the object being tested rather than on the p
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/pmd/co/PMD_0000005"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid94"/>
+        <owl:annotatedTarget rdf:nodeID="genid115"/>
         <rdfs:comment xml:lang="en">Due to the duality of object and portion of matter this axiom can not be an equivalent class axiom.</rdfs:comment>
     </owl:Axiom>
     
@@ -1471,7 +1981,15 @@ Extensive properties that depend on the object being tested rather than on the p
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0025006"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000116>an attribute of a process</obo:IAO_0000116>
+        <obo:IAO_0000117>PERSON: Joerg Waitelonis</obo:IAO_0000117>
         <rdfs:comment xml:lang="en">Process attribute for a process has a similar application to specifically dependened continuant (SDC) for an independent continuant (IC). Furthermore, process attribute describes how SDCs of some participants, i.e., ICs, change in a process. 
 
 Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subclasses of this class.</rdfs:comment>
@@ -1486,12 +2004,76 @@ Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subcl
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0000522 -->
+    <!-- https://w3id.org/pmd/co/PMD_0000068 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000522">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:label xml:lang="en">mechanical process</rdfs:label>
-        <skos:definition xml:lang="en">is a process in which forces, moments, or imposed displacements to objects or object aggregates occur and/or the equivalent (stresses, strains) to materials or portions of matter</skos:definition>
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000068">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000108"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000070"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
+                                    <owl:Class>
+                                        <owl:complementOf rdf:resource="https://w3id.org/pmd/co/PMD_0000068"/>
+                                    </owl:Class>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000108"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000070"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="https://w3id.org/pmd/co/PMD_0000068"/>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000116 xml:lang="en">For any temporally qualified continuant x@t, there exists a continuant y such that x@t has_state y, meaning that y is the anchor continuant of which x@t is a temporal phase existing at temporal regions t. The relation has_state is functional and signifies that all such temporally qualified continuants are uniquely associated with their basic anchor continuant.</obo:IAO_0000116>
+        <obo:IAO_0000117>PERSON: Joerg Waitelonis</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">temporally qualified continuant</rdfs:label>
+        <skos:definition xml:lang="en">A temporally qualified continuant is a continuant that, by reference to a determinate temporal region, is such as to possess its properties only for so long as that period obtains, being otherwise in its essentiality unchanged.</skos:definition>
+        <co:PMD_0001032>https://github.com/materialdigital/core-ontology/issues/185</co:PMD_0001032>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0000553 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000553">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0080116"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117>PERSON: Joerg Waitelonis</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">chemical potential</rdfs:label>
+        <rdfs:label xml:lang="de">chemisches Potential</rdfs:label>
+        <skos:definition xml:lang="en">a quality of a thermodynamic system describing the energy change associated with the addition of a small quantity of a substance to a system at constant temperature and pressure.</skos:definition>
+        <skos:definition xml:lang="de">eine intensive Qualität eines thermodynamischen Systems, die die Energieänderung beschreibt, die mit der Zugabe einer kleinen Menge einer Substanz zu einem System bei konstanter Temperatur und konstantem Druck verbunden ist.</skos:definition>
+        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
     
 
@@ -1500,6 +2082,8 @@ Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subcl
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000602">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117>PERSON: Joerg Waitelonis</obo:IAO_0000117>
         <rdfs:label xml:lang="de">Gerät</rdfs:label>
         <rdfs:label xml:lang="en">device</rdfs:label>
         <skos:definition xml:lang="en">A device is an object that is designed to perform a specific function or task involving measurement, manipulation, processing, or analysis.</skos:definition>
@@ -1509,10 +2093,29 @@ Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subcl
     
 
 
+    <!-- https://w3id.org/pmd/co/PMD_0000619 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000619">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0080116"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002328"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0080022"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>PERSON: Joerg Waitelonis</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">electric potential</rdfs:label>
+        <skos:definition xml:lang="en">an extensvie quality describing the amount of work needed to move a unit charge from a reference point to a specific location in an electric field.</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/co/PMD_0000636 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000636">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000602"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117>PERSON: Joerg Waitelonis</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">“Extensometer.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/extensometer. Accessed 5 Dec. 2022.</obo:IAO_0000119>
         <rdfs:label xml:lang="en">extensometer</rdfs:label>
         <skos:definition xml:lang="en">A device for measuring minute deformations of test specimens caused by tension, compression, bending, or twisting.</skos:definition>
@@ -1563,18 +2166,7 @@ Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subcl
         </rdfs:subClassOf>
         <obo:IAO_0000116 xml:lang="en">Classified by the role in a system.</obo:IAO_0000116>
         <rdfs:label xml:lang="en">functional material</rdfs:label>
-        <skos:definition xml:lang="en">A functional material F is an engineered material which has the disposition to be used for an object O (O consists of F) and O&apos;s function is other/more than mechanical load carrying.</skos:definition>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0000773 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000773">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
-        <rdfs:label xml:lang="en">hardness</rdfs:label>
-        <skos:definition xml:lang="en">The hardness is a mechanical property used as a measure of a material&apos;s resistance to localized plastic deformation, often tested by indentation or scratch methods.</skos:definition>
+        <skos:definition xml:lang="en">A functional material F is a material which has the function to be used for an object O (O consists of F) and O&apos;s function is other/more than mechanical load carrying.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
     
@@ -1584,6 +2176,8 @@ Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subcl
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000820">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000602"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117>PERSON: Joerg Waitelonis</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Load_cell</obo:IAO_0000119>
         <rdfs:label xml:lang="de">Kraftmessdose</rdfs:label>
         <rdfs:label xml:lang="en">load cell</rdfs:label>
@@ -1667,23 +2261,13 @@ A manufacturing process is always a transformative process.</skos:definition>
     <!-- https://w3id.org/pmd/co/PMD_0000848 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000848">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000005"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000522"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The axiom that mechanical property has realization some application of mechanical load treats only conventional materials and not such effects as magnetostriction etc.</rdfs:comment>
-        <rdfs:label xml:lang="en">mechanical property</rdfs:label>
-        <skos:definition xml:lang="en">A mechanical property is a material property which is a characteristic of material M. Mechanical property has realization in a stimulating process (in most cases, application of mechanical load), and the stimulating process is an occurent part of another process, in which an object O that is an instance of M participates.</skos:definition>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
+        <rdfs:comment xml:lang="en">DEPRECATED The axiom that mechanical property has realization some application of mechanical load treats only conventional materials and not such effects as magnetostriction etc.</rdfs:comment>
+        <rdfs:label xml:lang="en">DEPRECATED mechanical property</rdfs:label>
+        <rdfs:label xml:lang="de">DEPRECATED mechanische Eigenschaft</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/co/PMD_0020311"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <skos:definition xml:lang="en">DEPRECATED A mechanical property is a material property which is a characteristic of material M. Mechanical property has realization in a stimulating process (in most cases, application of mechanical load), and the stimulating process is an occurent part of another process, in which an object O that is an instance of M participates.</skos:definition>
+        <skos:definition xml:lang="de">DEPRECATED Eine mechanische Eigenschaft ist eine Materialeigenschaft, die eine Eigenschaft des Materials M ist. Eine mechanische Eigenschaft wird in einem stimulierenden Prozess (in den meisten Fällen durch Anwendung einer mechanischen Belastung) verwirklicht, und der stimulierende Prozess ist ein stattfindender Teil eines anderen Prozesses, an dem ein Objekt O, das eine Instanz von M ist, teilnimmt.</skos:definition>
     </owl:Class>
     
 
@@ -1695,9 +2279,11 @@ A manufacturing process is always a transformative process.</skos:definition>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0009006"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020311"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117>PERSON: Joerg Waitelonis</obo:IAO_0000117>
         <rdfs:label xml:lang="de">Mechanische Eigenschaften Analyseverfahren</rdfs:label>
         <rdfs:label xml:lang="en">mechanical property analyzing process</rdfs:label>
         <skos:definition xml:lang="en">An assay that evaluates the mechanical characteristics of materials, such as strength, hardness, elasticity, and tensile properties, often through tests that measure response to forces and loads.</skos:definition>
@@ -1706,70 +2292,55 @@ A manufacturing process is always a transformative process.</skos:definition>
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0000950 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000950">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <owl:Class>
-                                        <owl:unionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000016"/>
-                                            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000005"/>
-                                        </owl:unionOf>
-                                    </owl:Class>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000001"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000016"/>
-                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000005"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000001"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">stimulating process</rdfs:label>
-        <skos:definition xml:lang="en">The stimulating process is a process describing the application of an external influence, such as force, heat, or radiation, to study material response.</skos:definition>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/pmd/co/PMD_0000952 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000952">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020335"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0023004"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020258"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000068"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000001"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002328"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020200"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002328"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0080019"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>PERSON: Joerg Waitelonis</obo:IAO_0000117>
+        <rdfs:label xml:lang="de">Festigkeit</rdfs:label>
         <rdfs:label xml:lang="en">strength</rdfs:label>
-        <skos:definition xml:lang="en">The strength is a material property describing the maximum stress a material can withstand before failure.</skos:definition>
+        <skos:definition xml:lang="en">is a material property describing the stress before a characteristic (failure-) event occurs.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
     
@@ -1793,6 +2364,8 @@ A manufacturing process is always a transformative process.</skos:definition>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117>PERSON: Joerg Waitelonis</obo:IAO_0000117>
         <rdfs:label xml:lang="de">Zugprüfmaschine</rdfs:label>
         <rdfs:label xml:lang="en">tensile testing machine</rdfs:label>
         <skos:definition xml:lang="en">A device used to test the tensile strength and elongation of materials by applying a stretching force.</skos:definition>
@@ -1863,6 +2436,8 @@ A manufacturing process is always a transformative process.</skos:definition>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000973"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117>PERSON: Joerg Waitelonis</obo:IAO_0000117>
         <rdfs:label xml:lang="de">Zugprüfverfahren</rdfs:label>
         <rdfs:label xml:lang="en">tensile testing process</rdfs:label>
         <skos:definition xml:lang="en">A mechanical property analyzing process that determines a material&apos;s response to tensile forces, measuring its tensile strength, elongation, and Young&apos;s modulus.</skos:definition>
@@ -1875,148 +2450,205 @@ A manufacturing process is always a transformative process.</skos:definition>
     <!-- https://w3id.org/pmd/co/PMD_0000975 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000975">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <obo:IAO_0000116 xml:lang="de">ANMERKUNG: Ein Test Piece ist ein Teilstück (potenziell alles) eines Specimens, welches die Bedingungen erfüllt, die durch ein anzuwendendes Prüfverfahren gestellt werden. Ein Specimen erfüllt diese Anforderungen im Allgemeinen erst nach weiterer Bearbeitung. CAVE: Diese Anmerkung beschreibt das Objekt, welches die Rolle, die durch diese owl:Class definiert wird, realisiert.
-ANMERKUNG: Die exakte Wortwahl der EN 10021 wurde verallgemeinert.</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">In certain cases, the test piece can be the sample or the specimen itself.</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="de">Mitunter kann der Probenabschnitt (Sample) oder der Prüfling (Specimen) unmittelbar als Probe dienen.</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">NOTE: A Test Piece is a piece that is taken from a specimen (potentially the whole specimen), which fulfills the requirements, that are set by the test procedure in which the test piece is about to be used. A specimen fulfills this requierements generally speaking only after further treatment/processing. CAVE: This note describes the object, that realizes the role defined by this owl:Class.
-NOTE: The wording used in EN 10021 was generalized.</obo:IAO_0000116>
-        <obo:IAO_0000119 xml:lang="en">EN 10021:2006-12 (European standardization committee: CEN/TC 459/SC 12/WG 4)</obo:IAO_0000119>
-        <rdfs:label xml:lang="de">Proben-Rolle</rdfs:label>
-        <rdfs:label xml:lang="en">test piece role</rdfs:label>
-        <skos:definition xml:lang="en">Role of object which is a part taken from a specimen or sample; the part has specified dimensions, is machined or un-machined, brought to a required condition for submission to a given test</skos:definition>
-        <skos:definition xml:lang="de">Rolle eines Objekts, welches eine Probe ist, die aus einem Prüfling (Specimen) oder Probenabschnitt (Sample) entnommen wurde; die Probe hat festgelegte Dimensionen, kann maschinell bearbeitet sein, wurde in einen für die Verwendung in einem Prüfverfahren notwendigen Zustand gebracht</skos:definition>
+        <rdfs:comment>Duplicate</rdfs:comment>
+        <rdfs:label xml:lang="de">DEPRECATED Proben-Rolle</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED test piece role</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/co/PMD_0000919"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <skos:definition xml:lang="en">DEPRECATED Role of object which is a part taken from a specimen or sample; the part has specified dimensions, is machined or un-machined, brought to a required condition for submission to a given test</skos:definition>
+        <skos:definition xml:lang="de">DEPRECATED Rolle eines Objekts, welches eine Probe ist, die aus einem Prüfling (Specimen) oder Probenabschnitt (Sample) entnommen wurde; die Probe hat festgelegte Dimensionen, kann maschinell bearbeitet sein, wurde in einen für die Verwendung in einem Prüfverfahren notwendigen Zustand gebracht</skos:definition>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0020023 -->
+    <!-- https://w3id.org/pmd/co/PMD_0020128 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020023">
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020128">
         <owl:equivalentClass>
             <owl:Class>
-                <owl:oneOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020027"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020097"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020100"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020107"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020109"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020110"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020111"/>
-                </owl:oneOf>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020313"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
-        <rdfs:label xml:lang="en">metallic grain structures</rdfs:label>
-        <skos:definition xml:lang="en">The metallic grain structures is a categorical value specification that specifies value of the  metallic grain structure quality. It describes the morphology of polycrystalline metallic materials. Polycrystalline metallic materials will typically form their grain structures as one of those categories or a transition or mixture state of those.</skos:definition>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020313"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">thermodynamic system</rdfs:label>
+        <skos:definition xml:lang="en">A thermodynamic system is a material entity whose parts are bearer of thermodynamic properties. A thermodynamic system environs a thermodynamic process by which the thermodynamic properties of the objects of the thermodynamic system change over time.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020099 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020099">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:oneOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020006"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020007"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020008"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020009"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020010"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020011"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020012"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020013"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020014"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020015"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020016"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020017"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020018"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020019"/>
-                </owl:oneOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
-        <rdfs:comment xml:lang="en">TODO: possibly extend for 2D (Graphene etc)
-
-More elaborate crystal descriptions may be found in http://emmo.info/domain-crystallography/crystallography or https://purls.helmholtz-metadaten.de/disos/cso</rdfs:comment>
-        <rdfs:label xml:lang="en">bravais lattice (3D)</rdfs:label>
-        <skos:definition xml:lang="en">The bravais lattice is a categorical value specification that specifies value of the crystal structure quality. It describes the possible geometric arrangement of lattice points in a crystal. The present descriptor is limited to the 14 possible three-dimensional arrangements.</skos:definition>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020116 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020116">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:oneOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020117"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020118"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020119"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020120"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020121"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020122"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020123"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020124"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020125"/>
-                </owl:oneOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
-        <rdfs:label xml:lang="en">aggregate state value</rdfs:label>
-        <skos:definition xml:lang="en">The aggregate state value is a categorical value specification that specifies value of the aggregate state quality.</skos:definition>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020131 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020131">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <rdfs:subClassOf rdf:nodeID="genid209"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/pmd/co/PMD_0020148"/>
-        <rdfs:label xml:lang="en">intensive quality</rdfs:label>
-        <skos:altLabel xml:lang="en">Point property</skos:altLabel>
-        <skos:definition xml:lang="en">An intensive quality is a quality that inheres in only portion of matter and thus is independent of the bearers (system-) size.</skos:definition>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:Class>
-    <owl:Restriction rdf:nodeID="genid209">
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000001"/>
-    </owl:Restriction>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/pmd/co/PMD_0020131"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid209"/>
-        <rdfs:comment xml:lang="en">Due to the duality of object and portion of matter this axiom can not be an equivalent class axiom.</rdfs:comment>
-    </owl:Axiom>
     
 
 
     <!-- https://w3id.org/pmd/co/PMD_0020132 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020132">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020148"/>
-        <rdfs:label xml:lang="en">size</rdfs:label>
-        <skos:definition xml:lang="en">an extensive quality of a material entity that describes its spatial extend.</skos:definition>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000019"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000024"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000027"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000029"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000140"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117>PERSON: Philipp von Hartrott</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">spatial extend</rdfs:label>
+        <skos:definition xml:lang="en">Dimension quality is a quality of a material entity that pertains to its measurable spatial extent, such as length, area, or volume</skos:definition>
+        <skos:example xml:lang="en">the wall thickness of a steel pipe is a dimension quality functionally related to its pressure resistance</skos:example>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0020148 -->
+    <!-- https://w3id.org/pmd/co/PMD_0020133 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020148">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <rdfs:label xml:lang="en">extensive quality</rdfs:label>
-        <skos:definition xml:lang="en">An extensive quality is a quality that inheres in only object or object aggregate or fiat object part or chemical entity and is dependent on the bearers (system-) size.</skos:definition>
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020133">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0023000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000024"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000027"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117>PERSON: Philipp von Hartrott</obo:IAO_0000117>
+        <rdfs:label xml:lang="de">Masse</rdfs:label>
+        <rdfs:label xml:lang="en">mass</rdfs:label>
+        <skos:definition xml:lang="en">Mass is fundamental extensive quality.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020142 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020142">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020353"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000024"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000027"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117>PERSON: Philipp von Hartrott</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:resource="http://openenergy-platform.org/ontology/oeo/OEO_00000150"/>
+        <rdfs:label xml:lang="de">Energie</rdfs:label>
+        <rdfs:label xml:lang="en">energy</rdfs:label>
+        <skos:definition xml:lang="en">an extensive quality of material entities which manifests as a capacity to perform work (such as causing motion or the interaction of molecules)</skos:definition>
+        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020150 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020150">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020132"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0023000"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000116 xml:lang="en">Necessary and sufficient conditions for &apos;volume&apos; have not yet been formalized. The term is defined as a specific subtype of &apos;DimensionQuality&apos;. Distinguishing criteria are domain-specific and depend on measurement conventions or source terminology not yet expressed as OWL restrictions. The definition is adapted from: http://purl.obolibrary.org/obo/PATO_0000918.</obo:IAO_0000116>
+        <obo:IAO_0000117>PERSON: Philipp von Hartrott</obo:IAO_0000117>
+        <rdfs:label xml:lang="de">Volumen</rdfs:label>
+        <rdfs:label xml:lang="en">volume</rdfs:label>
+        <skos:definition xml:lang="en">Volume is a three dimensional size.</skos:definition>
+        <skos:definition xml:lang="de">Volumen ist eine dreidimensionale Größe.</skos:definition>
+        <skos:example xml:lang="en">A cylindrical billet has a volume of 0.002 m3, determined from its radius and height</skos:example>
+        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020151 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020151">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020142"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0023000"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117>PERSON: Philipp von Hartrott</obo:IAO_0000117>
+        <rdfs:label xml:lang="de">innere Energie</rdfs:label>
+        <rdfs:label xml:lang="en">internal energy</rdfs:label>
+        <skos:definition xml:lang="de">Innere Energie ist eine universelle umfassende Qualität, die das Potenzial des Trägers zur Arbeit festlegt.</skos:definition>
+        <skos:definition xml:lang="en">Internal energy is a universal extensive quality that specifies the bearers potential to do work.</skos:definition>
+        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020161 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020161">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020313"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0023004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_60003"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020227"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020229"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117>PERSON: Philipp von Hartrott</obo:IAO_0000117>
+        <obo:IAO_0000119>old defintion: 
+Activity (a_X) is a relational property between a chemical species X and a non-ideal solution. a_X is a measure of the effective concentration of a chemical species X in the non-ideal solution, accounting for interactions between particles. It is defined as the product of the concentration and an activity coefficient, where the activity coefficient corrects for non-ideal behavior.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">activity (thermodynamic)</rdfs:label>
+        <rdfs:label xml:lang="de">thermodynamische Aktivität</rdfs:label>
+        <skos:definition xml:lang="en">Thermodynamic activity is a relational quality that inheres between a chemical species and a non-ideal solution and represents the effective concentration of the species accounting for particle interactions.</skos:definition>
+        <skos:definition xml:lang="de">Thermodynamische Aktivität ist eine Beziehungsqualität, die zwischen einer chemischen Spezies und einer nicht idealen Lösung innewohnt und die effektive Konzentration der Spezies darstellt, die für Partikelwechselwirkungen verantwortlich ist.</skos:definition>
     </owl:Class>
     
 
@@ -2024,31 +2656,948 @@ More elaborate crystal descriptions may be found in http://emmo.info/domain-crys
     <!-- https://w3id.org/pmd/co/PMD_0020200 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020200">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020311"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020317"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0025999"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>PERSON: Philipp von Hartrott</obo:IAO_0000117>
         <obo:IAO_0000119>Old definition: Force is a reciprocal relation realized between two objects where the other object exerts the same force with opposite sign onto the first. Force may be responsible for changes in velocity and/or deformation of objects.</obo:IAO_0000119>
         <rdfs:label xml:lang="en">force</rdfs:label>
-        <skos:definition xml:lang="en">A force is a realizable entity that consists of a reciprocal interaction between two objects and is realized as equal and opposite influences capable of changing motion or causing deformation.</skos:definition>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
+        <skos:definition xml:lang="en">A force is an entity that consists of a reciprocal interaction between two objects and is realized as equal and opposite influences capable of changing motion or causing deformation.</skos:definition>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0020216 -->
+    <!-- https://w3id.org/pmd/co/PMD_0020227 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020216">
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020227">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020259"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020229"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://w3id.org/pmd/co/PMD_0020228"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117>PERSON: Philipp von Hartrott</obo:IAO_0000117>
+        <rdfs:label xml:lang="de">gelöste Rolle</rdfs:label>
+        <rdfs:label xml:lang="en">solute role</rdfs:label>
+        <skos:definition xml:lang="de">Rolle einer Entität, die in einer Lösung in geringer Konzentration vorhanden ist</skos:definition>
+        <skos:definition xml:lang="en">role of an entity that is present in minor concentration in a solution</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020228 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020228">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020259"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020229"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117>PERSON: Philipp von Hartrott</obo:IAO_0000117>
+        <rdfs:label xml:lang="de">Lösungsmittelrolle</rdfs:label>
+        <rdfs:label xml:lang="en">solvent role</rdfs:label>
+        <skos:definition xml:lang="de">Rolle einer Entität, die in einer Lösung in großer Konzentration vorhanden ist</skos:definition>
+        <skos:definition xml:lang="en">role of an entity that is present in major concentration in a solution</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020229 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020229">
         <owl:equivalentClass>
             <owl:Class>
-                <owl:oneOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020217"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020218"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020219"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020242"/>
-                </owl:oneOf>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_60003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020227"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_60003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020228"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:onClass>
+                    </owl:Restriction>
+                </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
-        <rdfs:label xml:lang="en">order scale value</rdfs:label>
-        <skos:definition xml:lang="en">possible values of characteristic length over which structural correlations persist in a material</skos:definition>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_60003"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020227"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_60003"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020228"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">solution</rdfs:label>
+        <skos:definition xml:lang="en">A portion of matter that is homogeneous, made up of at least two entity types, one playing the role of sovlent and the others playing the role of solute</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020258 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020258">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+        <rdfs:label xml:lang="en">failure</rdfs:label>
+        <skos:definition xml:lang="en">a process boundary at which a function of a participant ceases to exist</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020259 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020259">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020265"/>
+        <rdfs:label xml:lang="en">chemical property</rdfs:label>
+        <skos:definition xml:lang="en">a property that is commonly associated with the domain of chemistry</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020265 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020265">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <obo:IAO_0000116 xml:lang="en">Do not use this class directly. Use &apos;qualtiy&apos; or &apos;realizable entity&apos;</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">property</rdfs:label>
+        <skos:definition xml:lang="en">property is a collection class for entities that are either qualites (represent a state) or realizable entities (represent a behavior)</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020311 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020311">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020265"/>
+        <rdfs:label xml:lang="en">classical mechanics property</rdfs:label>
+        <skos:definition xml:lang="en">a property that is commonly associated with the domain of classical (Newtonian) mechanics</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020312 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020312">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020265"/>
+        <rdfs:label xml:lang="en">electromagnetic property</rdfs:label>
+        <skos:definition xml:lang="en">a property that is commonly associated with the domain of electricity and magnetics</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020313 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020313">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020265"/>
+        <rdfs:label xml:lang="en">thermodynamic property</rdfs:label>
+        <skos:definition xml:lang="en">a property that is commonly associated with the domain of thermodynamics</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020317 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020317">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0025999"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0023003"/>
+        <rdfs:label xml:lang="en">an objects property</rdfs:label>
+        <skos:definition>a &apos;property by bearer&apos; that indicates that its bearer is an object</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020318 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020318">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002328"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0023000"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_59999"/>
+                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000001"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0023002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_59999"/>
+                            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000001"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">intensive property</rdfs:label>
+        <skos:definition xml:lang="en">a facetted property that is characteristic of some portion of matter or chemical substance</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020319 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020319">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000024"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000027"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000029"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000140"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002328"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0023000"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0023002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000024"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000027"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000029"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000140"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002328"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0023000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">extensive property</rdfs:label>
+        <skos:definition xml:lang="en">a facetted property that is characteristic of some object or object aggregate or fiat object part and that changes with bearers makeup.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020335 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020335">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020265"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000000"/>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000024"/>
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000027"/>
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000029"/>
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000000"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117>PERSON: Philipp von Hartrott</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">characteristic material property</rdfs:label>
+        <skos:definition xml:lang="en">a property that is commonly associated with the domain of materials science and engineering</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020353 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020353">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020265"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000116>Do not use this class directly. It will be deprecated in future releases.</obo:IAO_0000116>
+        <obo:IAO_0000117>PERSON: Philipp von Hartrott</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">unclassified property</rdfs:label>
+        <skos:definition xml:lang="en">a collection of to-be classifed SDCs</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020364 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020364">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0023001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002328"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000001"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020367"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001931"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0023001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002328"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000001"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020367"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001931"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">per count property</rdfs:label>
+        <skos:definition xml:lang="en">a quotient with a denominator that has is a count</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020365 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020365">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002328"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000001"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020150"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0023001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002328"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000001"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020150"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002328"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020150"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001931"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000116 xml:lang="en">TODO axiom wrong</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">per volume property</rdfs:label>
+        <skos:definition xml:lang="en">a quotient where the denominator is a volume</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020366 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020366">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002328"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000001"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020133"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0023001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002328"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000001"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020133"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000116 xml:lang="en">TODO axiom wrong</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">per mass property</rdfs:label>
+        <skos:definition xml:lang="en">a quotient where the denominator is the mass of the bearer</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020367 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020367">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0023000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000116 xml:lang="en">OWL cardinality is restricted to xsd:integer type. Avogardo number is integer but larger that the xsd:integer range. Thus &apos;has member&apos; exactly &apos;avogadro number&apos; can not be axiomatized.</obo:IAO_0000116>
+        <obo:IAO_0000117>PERSON: Philipp von Hartrott</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">member count</rdfs:label>
+        <skos:definition xml:lang="en">the number of similar objects in an object aggregate</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020369 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020369">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0023001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002328"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000001"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020367"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                                                        <owl:hasValue rdf:resource="https://w3id.org/pmd/co/PMD_0020368"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020364"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002328"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000001"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020367"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                                                <owl:hasValue rdf:resource="https://w3id.org/pmd/co/PMD_0020368"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">per mol property</rdfs:label>
+        <skos:definition xml:lang="en">a per count with the count of Avogadro-number</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020370 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020370">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020367"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                                <owl:hasValue rdf:resource="https://w3id.org/pmd/co/PMD_0020368"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020367"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                                <owl:hasValue rdf:resource="https://w3id.org/pmd/co/PMD_0020368"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">a mol of entites</rdfs:label>
+        <skos:definition xml:lang="en">an object aggregate which Avogadro-number coount members of same type</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0023000 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0023000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020133"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020150"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020151"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020367"/>
+        </owl:disjointUnionOf>
+        <obo:IAO_0000116 xml:lang="en">TODO: system requires further precision</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">fundamental quality of system</rdfs:label>
+        <skos:definition xml:lang="en">a quality that is quality of every system made of demarcated materail entites</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0023001 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0023001">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0023002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002328"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020364"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020365"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020366"/>
+        </owl:disjointUnionOf>
+        <rdfs:label xml:lang="en">normalized property</rdfs:label>
+        <skos:definition xml:lang="en">a facetted property that subsumes quotient classes</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0023002 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0023002">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020265"/>
+        <rdfs:label xml:lang="en">facetted property</rdfs:label>
+        <skos:definition xml:lang="en">an specifically dependent continuant that is giving more detail to an other property or about its bearer</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0023003 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0023003">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0023002"/>
+        <rdfs:label xml:lang="en">property by bearer</rdfs:label>
+        <skos:definition>is a facetted property that indicates the type of its bearer</skos:definition>
+        <skos:example>a fluid property is only applicable to fluids.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0023004 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0023004">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000001"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0025999"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000001"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0023003"/>
+        <rdfs:label xml:lang="en">a portions property</rdfs:label>
+        <skos:definition xml:lang="en">a &apos;property by bearer&apos; that indicates that its bearer is a portion of matter</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0023007 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0023007">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0025999"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0023003"/>
+        <rdfs:label xml:lang="en">an object aggregates property</rdfs:label>
+        <skos:definition xml:lang="en">a &apos;property by bearer&apos; that indicates that its bearer is an object aggregate</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0023035 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0023035">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0023002"/>
+        <obo:IAO_0000116 xml:lang="en">the axioms do not allow for differentiation of the subclasses, see comment in &apos;functionally related to&apos;</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">aggregated property</rdfs:label>
+        <skos:definition xml:lang="en">a facetted property that aggregates/condenses multiple values of members of an object aggregate</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0023036 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0023036">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002328"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000027"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                                                        <owl:someValuesFrom>
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <owl:Class>
+                                                                        <owl:unionOf rdf:parseType="Collection">
+                                                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000017"/>
+                                                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000019"/>
+                                                                        </owl:unionOf>
+                                                                    </owl:Class>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001931"/>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                        </owl:someValuesFrom>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020367"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0023035"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002328"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000027"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                                                        <owl:someValuesFrom>
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <owl:Class>
+                                                                        <owl:unionOf rdf:parseType="Collection">
+                                                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000017"/>
+                                                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000019"/>
+                                                                        </owl:unionOf>
+                                                                    </owl:Class>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001931"/>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                        </owl:someValuesFrom>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020367"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">averaged property</rdfs:label>
+        <skos:definition xml:lang="en">an aggregated property that expresses an average of a property value of the members of an object aggregate</skos:definition>
+        <skos:example xml:lang="en">mean diameter of grains of a polychrystaline material</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0023041 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0023041">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0025999"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0023003"/>
+        <rdfs:label xml:lang="en">a sites property</rdfs:label>
+        <skos:definition xml:lang="en">a &apos;property by bearer&apos; that indicates that its bearer is a site</skos:definition>
     </owl:Class>
     
 
@@ -2057,10 +3606,16 @@ More elaborate crystal descriptions may be found in http://emmo.info/domain-crys
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0040001">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020132"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000116 xml:lang="en">Necessary and sufficient conditions for &apos;length&apos; have not yet been formalized. The term is defined as a specific subtype of &apos;DimensionQuality&apos;. Distinguishing criteria are domain-specific and depend on measurement conventions or source terminology not yet expressed as OWL restrictions. The definition is adapted from: http://purl.obolibrary.org/obo/PATO_0000122.</obo:IAO_0000116>
+        <obo:IAO_0000117>PERSON: Lars Vogt</obo:IAO_0000117>
         <rdfs:comment xml:lang="en">Length is a size that describes the spatial extent of its bearer in one dimension.</rdfs:comment>
+        <rdfs:label xml:lang="de">Länge</rdfs:label>
         <rdfs:label xml:lang="en">length</rdfs:label>
         <skos:altLabel xml:lang="en">dimension</skos:altLabel>
+        <skos:definition xml:lang="de">Die Länge ist eine eindimensionale Größe.</skos:definition>
         <skos:definition xml:lang="en">Length is a one dimensional size.</skos:definition>
+        <skos:example xml:lang="en">A steel rod measures 250 mm in length between its two end faces</skos:example>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
     
@@ -2070,6 +3625,8 @@ More elaborate crystal descriptions may be found in http://emmo.info/domain-crys
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0050051">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117>PERSON: Markus Schilling</obo:IAO_0000117>
         <obo:IAO_0000119>“Diameter.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/diameter. Accessed 5 Dec. 2022.</obo:IAO_0000119>
         <rdfs:label xml:lang="de">Durchmesser</rdfs:label>
         <rdfs:label xml:lang="en">diameter</rdfs:label>
@@ -2084,6 +3641,8 @@ More elaborate crystal descriptions may be found in http://emmo.info/domain-crys
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0050153">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117>PERSON: Markus Schilling</obo:IAO_0000117>
         <rdfs:label xml:lang="de">Dicke</rdfs:label>
         <rdfs:label xml:lang="en">thickness</rdfs:label>
         <skos:definition xml:lang="en">A length that describes the measured dimension in one direction of a test piece.</skos:definition>
@@ -2096,6 +3655,8 @@ More elaborate crystal descriptions may be found in http://emmo.info/domain-crys
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0050154">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117>PERSON: Markus Schilling</obo:IAO_0000117>
         <rdfs:label xml:lang="de">Breite</rdfs:label>
         <rdfs:label xml:lang="en">width</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/co/2.0.8/Width"/>
@@ -2106,9 +3667,93 @@ More elaborate crystal descriptions may be found in http://emmo.info/domain-crys
     
 
 
+    <!-- https://w3id.org/pmd/co/PMD_0080019 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0080019">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020132"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000116 xml:lang="en">Necessary and sufficient conditions for &apos;area&apos; have not yet been formalized. The term is defined as a specific subtype of &apos;DimensionQuality&apos;. Distinguishing criteria are domain-specific and depend on measurement conventions or source terminology not yet expressed as OWL restrictions. The definition is adapted from: http://purl.obolibrary.org/obo/PATO_0001323.</obo:IAO_0000116>
+        <obo:IAO_0000117>PERSON: Thomas Hanke</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/PATO_0001323"/>
+        <rdfs:label xml:lang="de">Fläche</rdfs:label>
+        <rdfs:label xml:lang="en">area</rdfs:label>
+        <skos:definition xml:lang="en">Area signifies a 2-D extent quality inhering by virtue of the bearer&apos;s two-dimensional extent</skos:definition>
+        <skos:definition xml:lang="de">Fläche bedeutet eine zweidimensionale Ausdehnungsqualität, die aufgrund der zweidimensionalen Ausdehnung des Trägers inhärent ist</skos:definition>
+        <skos:example xml:lang="en">The cross-sectional area of a tensile specimen at the gauge section is 50 mm2</skos:example>
+        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0080022 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0080022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020312"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000027"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>PERSON: Thomas Hanke</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">electric charge</rdfs:label>
+        <rdfs:label xml:lang="de">elektrische Ladung</rdfs:label>
+        <skos:definition xml:lang="en">Electric charge refers to the physical property of matter causing it to experience a force when placed in an electromagnetic field</skos:definition>
+        <skos:example xml:lang="en">A capacitor stores 10 µC of electric charge at a voltage of 5 V</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0080116 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0080116">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:subClassOf rdf:nodeID="genid473"/>
+        <obo:IAO_0000117>Philipp von Hartrott</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">Every potential in physics is the same mathematical object — a partial derivative of energy with respect to its conjugate extensive quantity. The differences are only in which extensive quality you&apos;re considering.</rdfs:comment>
+        <rdfs:label xml:lang="en">potential</rdfs:label>
+        <skos:definition xml:lang="en">a partial derivative of energy with respect to its conjugate extensive quantity</skos:definition>
+        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
+    </owl:Class>
+    <owl:Class rdf:nodeID="genid473">
+        <owl:intersectionOf rdf:parseType="Collection">
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002328"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020142"/>
+            </owl:Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002328"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020319"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/pmd/co/PMD_0080116"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid473"/>
+        <rdfs:comment xml:lang="en">In field theories (e.g., gravity, electrostatics), the potential becomes a field ϕ(r⃗), and the force is recovered via:
+F=−∇ϕ(r⃗)F
+This is the spatial analogue: instead of asking &quot;how does energy change per unit carrier added?&quot;, you ask &quot;how does energy change per unit carrier moved in space?&quot;</rdfs:comment>
+    </owl:Axiom>
+    
+
+
     <!-- https://w3id.org/pmd/tto/TTO_0000004 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3194,7 +4839,9 @@ Note: Stress rate is only used in the elastic part of the test.</skos:definition
     <!-- http://purl.obolibrary.org/obo/IAO_0000103 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000103">
+        <obo:IAO_0000115 xml:lang="en">The term was initially used in an attempt to structure part of the ontology, but in retrospect failed to do a good job.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">The term was used in an attempt to structure part of the ontology but in retrospect failed to do a good job</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Terms created as placeholders with the expectation of being permanent should instead be deprecated using the &quot;placeholder removed&quot; (obo:IAO_0000226) justification.</obo:IAO_0000116>
         <rdfs:label xml:lang="en">failed exploratory term</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3213,6 +4860,7 @@ Note: Stress rate is only used in the elastic part of the test.</skos:definition
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000121">
         <obo:IAO_0000115 xml:lang="en">Term created to ease viewing/sort terms for development purpose, and will not be included in a release</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The term was created to ease viewing/sorting terms for development purposes, but will not be included in a release.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">organizational term</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3257,6 +4905,8 @@ Note: Stress rate is only used in the elastic part of the test.</skos:definition
     <!-- http://purl.obolibrary.org/obo/IAO_0000226 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000226">
+        <obo:IAO_0000115 xml:lang="en">The term was created to temporarily stand in for a semantic purpose, but is no longer needed, typically due to another permanent term being defined.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This reason is appropriate for a temporary term even if no permanent term is defined; for example if the need for the term no longer exists. If a permanent (replacement) term is defined, the deprecated term should reference the replacement with IAO:0100001. If no replacement is defined, it may be appropriate to reference alternative terms with oboInOwl:consider.</obo:IAO_0000116>
         <rdfs:label xml:lang="en">placeholder removed</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3265,7 +4915,9 @@ Note: Stress rate is only used in the elastic part of the test.</skos:definition
     <!-- http://purl.obolibrary.org/obo/IAO_0000227 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000227">
+        <obo:IAO_0000115 xml:lang="en">The term has been combined with one or more other terms to create a more encompassing (merged) term.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">An editor note should explain what were the merged terms and the reason for the merge.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">The deprecated term should reference the merged term with obo:IAO_0100001. The replacement term should reference the original terms as sources using obo:RO_0001000 (derives_from). An editor note should explain what were the merged terms and the reason for the merge.</obo:IAO_0000116>
         <rdfs:label xml:lang="en">terms merged</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3274,7 +4926,9 @@ Note: Stress rate is only used in the elastic part of the test.</skos:definition
     <!-- http://purl.obolibrary.org/obo/IAO_0000228 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000228">
+        <obo:IAO_0000115 xml:lang="en">The term has been replaced by a term imported from another ontology.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">This is to be used when the original term has been replaced by a term imported from an other ontology. An editor note should indicate what is the URI of the new term to use.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">This is to be used when the original term has been replaced by a term imported from an other ontology. The deprecated term should reference the imported term with obo:IAO_0100001.</obo:IAO_0000116>
         <rdfs:label xml:lang="en">term imported</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3283,7 +4937,9 @@ Note: Stress rate is only used in the elastic part of the test.</skos:definition
     <!-- http://purl.obolibrary.org/obo/IAO_0000229 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000229">
+        <obo:IAO_0000115 xml:lang="en">The term has been split into two or more new terms.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">This is to be used when a term has been split in two or more new terms. An editor note should indicate the reason for the split and indicate the URIs of the new terms created.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">This is to be used when a term has been split in two or more new terms. An editor note should indicate the reason for the split. The deprecated term should reference the replacement terms with obo:IAO_0100001.</obo:IAO_0000116>
         <rdfs:label xml:lang="en">term split</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3344,323 +5000,18 @@ Note: Stress rate is only used in the elastic part of the test.</skos:definition
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OMO_0001000">
         <obo:IAO_0000115 xml:lang="en">The term was added to the ontology on the assumption it was in scope, but it turned out later that it was not.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">This obsolesence reason should be used conservatively. Typical valid examples are: un-necessary grouping classes in disease ontologies, a phenotype term added on the assumption it was a disease.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">This obsolesence reason should be used conservatively. Typical valid examples in disease ontologies are: unnecessary class grouping; mistaked creation of a disease associated to a phenotype.</obo:IAO_0000116>
         <obo:IAO_0000233>https://github.com/information-artifact-ontology/ontology-metadata/issues/77</obo:IAO_0000233>
         <rdfs:label>out of scope</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0020006 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020006">
-        <rdfs:label xml:lang="en">bravais lattice triclinic primitive</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020007 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020007">
-        <rdfs:label xml:lang="en">bravais lattice monoclinic primitive</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020008 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020008">
-        <rdfs:label xml:lang="en">bravais lattice monoclinic base-centered</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020009 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020009">
-        <rdfs:label xml:lang="en">bravais lattice orthorombic primitive</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020010 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020010">
-        <rdfs:label xml:lang="en">bravais lattice orthorhombic base-centered</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020011 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020011">
-        <rdfs:label xml:lang="en">bravais lattice orthorhombic body-centered</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020012 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020012">
-        <rdfs:label xml:lang="en">bravais lattice orthorhombic face-centered</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020013 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020013">
-        <rdfs:label xml:lang="en">bravais lattice tetragonal primitive</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020014 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020014">
-        <rdfs:label xml:lang="en">bravais lattice tetragonal body-centered</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020015 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020015">
-        <rdfs:label xml:lang="en">bravais lattice hexagonal rhombohedral primitive</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020016 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020016">
-        <rdfs:label xml:lang="en">bravais lattice hexagonal hexagonal primitive</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020017 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020017">
-        <rdfs:label xml:lang="en">bravais lattice cubic primitive</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020018 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020018">
-        <rdfs:label xml:lang="en">bravais lattice cubic body-centered</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020019 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020019">
-        <rdfs:label xml:lang="en">bravais lattice cubic face-centered</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020027 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020027">
-        <rdfs:label xml:lang="en">bainite</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020097 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020097">
-        <rdfs:label xml:lang="en">austenite</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020100 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020100">
-        <rdfs:label xml:lang="en">ferrite</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020107 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020107">
-        <rdfs:label xml:lang="en">ledeburite</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020109 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020109">
-        <rdfs:label xml:lang="en">pearlite</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020110 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020110">
-        <rdfs:label xml:lang="en">widmanstatten structure</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020111 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020111">
-        <rdfs:label xml:lang="en">martensite</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020117 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020117">
-        <rdfs:label xml:lang="en">aggregate state solid</rdfs:label>
-        <skos:definition xml:lang="en">A state where the bonds between entities transmit shear forces.</skos:definition>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020118 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020118">
-        <rdfs:label xml:lang="en">aggregate state liquid</rdfs:label>
-        <skos:definition xml:lang="en">A state where the bonds of the entities transmit no shear force.</skos:definition>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020119 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020119">
-        <rdfs:label xml:lang="en">aggregate state gaseous</rdfs:label>
-        <skos:definition xml:lang="en">A state where the entities have no bonding.</skos:definition>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020120 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020120">
-        <rdfs:label xml:lang="en">aggregate state plasma</rdfs:label>
-        <skos:definition xml:lang="en">An aggregate state where the entities are atom nuclei and have no bonds.</skos:definition>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020121 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020121">
-        <rdfs:label xml:lang="en">aggregate state atom gas</rdfs:label>
-        <skos:definition xml:lang="en">A gaseous state where the gas entities are atoms.</skos:definition>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020122 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020122">
-        <rdfs:label xml:lang="en">aggregate state supercritical fluid</rdfs:label>
-        <skos:definition xml:lang="en">A state with strong bindings between entities that do not transmit shear force.</skos:definition>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020123 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020123">
-        <rdfs:label xml:lang="en">aggregate state mesomorphic</rdfs:label>
-        <skos:definition xml:lang="en">A state where some bonds transmit shear stresses and some do not.</skos:definition>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020124 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020124">
-        <rdfs:label xml:lang="en">aggregate state suprafluid</rdfs:label>
-        <skos:definition xml:lang="en">A state with frictionless binding that transmits no shear force between entities.</skos:definition>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020125 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020125">
-        <rdfs:label xml:lang="en">aggregate state suprasolid</rdfs:label>
-        <skos:definition xml:lang="en">A state that exhibits suprafluid and solid properties.</skos:definition>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020217 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020217">
-        <rdfs:label xml:lang="en">short range order</rdfs:label>
-        <skos:definition xml:lang="en">periodic arrangement of structural features up to a few entities</skos:definition>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020218 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020218">
-        <rdfs:label xml:lang="en">medium range order</rdfs:label>
-        <skos:definition xml:lang="en">periodic arrangement of structural features of many entities</skos:definition>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020219 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020219">
-        <rdfs:label xml:lang="en">long range order</rdfs:label>
-        <skos:definition xml:lang="en">periodic arrangement of structural features of virtually all entities</skos:definition>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020242 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020242">
-        <rdfs:label xml:lang="en">no range order</rdfs:label>
-        <skos:definition xml:lang="en">no periodic arrangement of structural features of entites</skos:definition>
+    <!-- https://w3id.org/pmd/co/PMD_0020368 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020368">
+        <rdfs:label xml:lang="en">avogadro number</rdfs:label>
+        <skos:definition xml:lang="en">The Avogadro number</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -3673,19 +5024,48 @@ Note: Stress rate is only used in the elastic part of the test.</skos:definition
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:Class>
-        <owl:unionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000773"/>
-            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000952"/>
-        </owl:unionOf>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
-    </owl:Class>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000006"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000029"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000140"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000008"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000011"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000035"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000553"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000619"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020132"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020133"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020142"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020161"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020364"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020365"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020366"/>
         </owl:members>
     </rdf:Description>
     
