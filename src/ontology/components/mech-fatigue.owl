@@ -951,6 +951,42 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
+    <!-- https://w3id.org/pmd/mech/MECH_0002003 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002003">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000583"/>
+        <rdfs:label xml:lang="en">fatigue test evaluation process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0002004 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002004">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0002003"/>
+        <rdfs:label xml:lang="en">S-N curve parameter estimation process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0002005 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002005">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0002004"/>
+        <rdfs:label xml:lang="en">S-N curve parameter estimation removing UHCF data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0002006 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
+        <rdfs:label xml:lang="en">Jurojin software</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/mech/MECH_0025001 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0025001"/>
@@ -1059,7 +1095,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/mech/MECH_0000005">
         <rdfs:label xml:lang="en">torsional loading</rdfs:label>
         <skos:altLabel xml:lang="en">twist loading</skos:altLabel>
-        <skos:definition xml:lang="en">During a fatigue test with torsional loading type the specimen is twisted and experienced shear stress.</skos:definition>
+        <skos:definition xml:lang="en">During a fatigue test with torsional loading type the specimen is twisted and experiences shear stress.</skos:definition>
     </owl:NamedIndividual>
     
 
