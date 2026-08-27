@@ -92,6 +92,7 @@ WARN	missing_definition	fatigue test evaluation process	definition
 WARN	missing_definition	S-N curve parameter estimation process	definition	
 WARN	missing_definition	S-N curve parameter estimation removing UHCF data	definition	
 WARN	missing_definition	Jurojin software	definition	
+WARN	missing_definition	carbon equivalent value	definition	
 WARN	missing_definition	hot tensile testing process	definition	
 WARN	missing_definition	fracture strength	definition	
 WARN	missing_definition	strain hardening exponent	definition	
