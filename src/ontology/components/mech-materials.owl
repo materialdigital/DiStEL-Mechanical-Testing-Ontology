@@ -39,6 +39,23 @@
         <skos:altLabel xml:lang="en">CEV</skos:altLabel>
         <skos:definition xml:lang="en">Carbon equivalent value is a single number that qualifies the chemical composition of a steel by turning the effects of all alloying elements into an equivalent percentage of carbon to measure how easily steel can be welded</skos:definition>
     </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0002008 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002008">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020353"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0025999"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <qudt:symbol xml:lang="en">K_t</qudt:symbol>
+        <rdfs:label xml:lang="en">stress concentration factor</rdfs:label>
+        <skos:definition xml:lang="en">A stress concentration factor (\(K_{t}\)) is a relational quality of an object that defines how much higher the peak local stress is compared to the nominal reference stress near a geometric discontinuity</skos:definition>
+    </owl:Class>
 </rdf:RDF>
 
 

@@ -1,1 +1,2 @@
 https://w3id.org/pmd/vto/VTO_0000001 # vickers hardness
+https://w3id.org/pmd/vto/HV5 # HV5
