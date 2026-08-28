@@ -17,11 +17,11 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/pmd/mech/mech-full.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/mech/releases/2026-08-27/mech-full.owl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/mech/releases/2026-08-28/mech-full.owl"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>Mechanical Testing Ontology</dcterms:title>
-        <owl:versionInfo>2026-08-27</owl:versionInfo>
+        <owl:versionInfo>2026-08-28</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -14849,6 +14849,75 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     
 
 
+    <!-- https://w3id.org/pmd/mech/MECH_0002008 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002008">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020317"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020353"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0025999"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <qudt:symbol xml:lang="en">K_t</qudt:symbol>
+        <rdfs:label xml:lang="en">stress concentration factor</rdfs:label>
+        <skos:definition xml:lang="en">A stress concentration factor (\(K_{t}\)) is a relational quality of an object that defines how much higher the peak local stress is compared to the nominal reference stress near a geometric discontinuity</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0002009 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002009">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020308"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020353"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000965"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <qudt:symbol xml:lang="en">Rz</qudt:symbol>
+        <rdfs:label xml:lang="en">Rz</rdfs:label>
+        <skos:definition xml:lang="en">Rz is a surface property of an object which is the average maximum height of a surface profile, calculated by measuring the vertical distance from the highest peak to the lowest valley within individual sampling lengths and averaging them</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0002010 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002010">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020308"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000965"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://w3id.org/pmd/mech/MECH_0002011"/>
+        <rdfs:label xml:lang="en">surface hardness</rdfs:label>
+        <skos:definition xml:lang="en">The surface hardness is a hardness measured on the surface of an object</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0002011 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002011">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020307"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000538"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">core hardness</rdfs:label>
+        <skos:definition xml:lang="en">The core hardness is a hardness measured on the bulk or core of an object</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/mech/MECH_0025001 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0025001">
@@ -17177,6 +17246,10 @@ TODO</skos:definition>
   &lt;/p&gt;</dcterms:description>
         <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt"/>
         <rdfs:label>Derived Unit</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/pmd/vto/HV5">
+        <rdfs:comment>a Vickers hardness unit label that indicates a hardness value measured in a Vickers hardness test using a test force greater than 49.03 N (5 kgf).</rdfs:comment>
+        <rdfs:label xml:lang="en">HV 5</rdfs:label>
     </rdf:Description>
     
 

@@ -13,12 +13,12 @@
 @base <https://w3id.org/pmd/mech/mech-base.ttl> .
 
 <https://w3id.org/pmd/mech/mech-base.ttl> rdf:type owl:Ontology ;
-                                           owl:versionIRI <https://w3id.org/pmd/mech/releases/2026-08-27/mech-base.ttl> ;
+                                           owl:versionIRI <https://w3id.org/pmd/mech/releases/2026-08-28/mech-base.ttl> ;
                                            dce:type obo:IAO_8000001 ;
                                            dcterms:description "None" ;
                                            dcterms:license <https://creativecommons.org/licenses/unspecified> ;
                                            dcterms:title "Mechanical Testing Ontology" ;
-                                           owl:versionInfo "2026-08-27" .
+                                           owl:versionInfo "2026-08-28" .
 
 #################################################################
 #    Annotation properties
@@ -8851,6 +8851,55 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
                                          skos:definition "Carbon equivalent value is a single number that qualifies the chemical composition of a steel by turning the effects of all alloying elements into an equivalent percentage of carbon to measure how easily steel can be welded"@en .
 
 
+###  https://w3id.org/pmd/mech/MECH_0002008
+<https://w3id.org/pmd/mech/MECH_0002008> rdf:type owl:Class ;
+                                         rdfs:subClassOf co:PMD_0020317 ,
+                                                         co:PMD_0020353 ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty co:PMD_0025999 ;
+                                                           owl:someValuesFrom obo:BFO_0000030
+                                                         ] ;
+                                         qudt:symbol "K_t"@en ;
+                                         rdfs:label "stress concentration factor"@en ;
+                                         skos:definition "A stress concentration factor (\\(K_{t}\\)) is a relational quality of an object that defines how much higher the peak local stress is compared to the nominal reference stress near a geometric discontinuity"@en .
+
+
+###  https://w3id.org/pmd/mech/MECH_0002009
+<https://w3id.org/pmd/mech/MECH_0002009> rdf:type owl:Class ;
+                                         rdfs:subClassOf co:PMD_0020308 ,
+                                                         co:PMD_0020353 ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty obo:RO_0000052 ;
+                                                           owl:someValuesFrom co:PMD_0000965
+                                                         ] ;
+                                         qudt:symbol "Rz"@en ;
+                                         rdfs:label "Rz"@en ;
+                                         skos:definition "Rz is a surface property of an object which is the average maximum height of a surface profile, calculated by measuring the vertical distance from the highest peak to the lowest valley within individual sampling lengths and averaging them"@en .
+
+
+###  https://w3id.org/pmd/mech/MECH_0002010
+<https://w3id.org/pmd/mech/MECH_0002010> rdf:type owl:Class ;
+                                         rdfs:subClassOf co:PMD_0020308 ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty obo:RO_0000052 ;
+                                                           owl:someValuesFrom co:PMD_0000965
+                                                         ] ;
+                                         owl:disjointWith <https://w3id.org/pmd/mech/MECH_0002011> ;
+                                         rdfs:label "surface hardness"@en ;
+                                         skos:definition "The surface hardness is a hardness measured on the surface of an object"@en .
+
+
+###  https://w3id.org/pmd/mech/MECH_0002011
+<https://w3id.org/pmd/mech/MECH_0002011> rdf:type owl:Class ;
+                                         rdfs:subClassOf co:PMD_0020307 ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty obo:RO_0000052 ;
+                                                           owl:someValuesFrom co:PMD_0000538
+                                                         ] ;
+                                         rdfs:label "core hardness"@en ;
+                                         skos:definition "The core hardness is a hardness measured on the bulk or core of an object"@en .
+
+
 ###  https://w3id.org/pmd/mech/MECH_0025001
 <https://w3id.org/pmd/mech/MECH_0025001> rdf:type owl:Class ;
                                          owl:equivalentClass [ owl:intersectionOf ( co:PMD_0000974
@@ -10239,6 +10288,14 @@ TODO""" .
 ###  https://w3id.org/pmd/mech/MECH_0002000
 <https://w3id.org/pmd/mech/MECH_0002000> rdf:type owl:NamedIndividual ;
                                          rdfs:label "multiaxial loading"@en .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<https://w3id.org/pmd/vto/HV5> rdfs:comment "a Vickers hardness unit label that indicates a hardness value measured in a Vickers hardness test using a test force greater than 49.03 N (5 kgf)." ;
+                               rdfs:label "HV 5"@en .
 
 
 #################################################################

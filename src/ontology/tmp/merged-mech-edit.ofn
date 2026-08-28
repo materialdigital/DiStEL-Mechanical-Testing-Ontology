@@ -557,6 +557,10 @@ Declaration(Class(<https://w3id.org/pmd/mech/MECH_0002004>))
 Declaration(Class(<https://w3id.org/pmd/mech/MECH_0002005>))
 Declaration(Class(<https://w3id.org/pmd/mech/MECH_0002006>))
 Declaration(Class(<https://w3id.org/pmd/mech/MECH_0002007>))
+Declaration(Class(<https://w3id.org/pmd/mech/MECH_0002008>))
+Declaration(Class(<https://w3id.org/pmd/mech/MECH_0002009>))
+Declaration(Class(<https://w3id.org/pmd/mech/MECH_0002010>))
+Declaration(Class(<https://w3id.org/pmd/mech/MECH_0002011>))
 Declaration(Class(<https://w3id.org/pmd/mech/MECH_0025001>))
 Declaration(Class(<https://w3id.org/pmd/mech/MECH_0025002>))
 Declaration(Class(<https://w3id.org/pmd/mech/MECH_0025004>))
@@ -3286,7 +3290,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000552> <https://w3id.org/pmd/co/PMD_0000957>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000552> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009006> <https://w3id.org/pmd/co/PMD_0000551>))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000553> (chemisches Potential)
+# Class: <https://w3id.org/pmd/co/PMD_0000553> (chemical potential)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000553> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0000553> "PERSON: Joerg Waitelonis")
@@ -3616,7 +3620,7 @@ AnnotationAssertion(owl:deprecated <https://w3id.org/pmd/co/PMD_0000848> "true"^
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000848> "DEPRECATED A mechanical property is a material property which is a characteristic of material M. Mechanical property has realization in a stimulating process (in most cases, application of mechanical load), and the stimulating process is an occurent part of another process, in which an object O that is an instance of M participates."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000848> "DEPRECATED Eine mechanische Eigenschaft ist eine Materialeigenschaft, die eine Eigenschaft des Materials M ist. Eine mechanische Eigenschaft wird in einem stimulierenden Prozess (in den meisten Fällen durch Anwendung einer mechanischen Belastung) verwirklicht, und der stimulierende Prozess ist ein stattfindender Teil eines anderen Prozesses, an dem ein Objekt O, das eine Instanz von M ist, teilnimmt."@de)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000849> (mechanical property analyzing process)
+# Class: <https://w3id.org/pmd/co/PMD_0000849> (Mechanische Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000849> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0000849> "PERSON: Joerg Waitelonis")
@@ -3759,7 +3763,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000957> "Eine Analyse, die die äußere und innere Struktur und Morphologie von Materialien untersucht, einschließlich der Anordnung von Atomen, Kristallen, Körnern und Phasen, oft unter Verwendung von Techniken wie Mikroskopie und Beugung."@de)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000957> <http://purl.obolibrary.org/obo/OBI_0000070>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000965> (Oberflächenschicht (Fiat-Objektteil))
+# Class: <https://w3id.org/pmd/co/PMD_0000965> (surface layer (fiat object part))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000965> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0000965> "PERSON: Joerg Waitelonis")
@@ -5173,7 +5177,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0025017> "Outer diameter is a length of a straight line from one outer surface of an object or space to the other side of its outer surface through the center of an object or space when it has the inside and outside surface."@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0025017> <https://w3id.org/pmd/co/PMD_0050051>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0025018> (geometric relational quality)
+# Class: <https://w3id.org/pmd/co/PMD_0025018> (geometrische relationale Qualität)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0025018> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0025018> "PERSON: Kamilla Zaripova")
@@ -6217,6 +6221,35 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/mech/MECH_0002007> "Carbon equivalent value is a single number that qualifies the chemical composition of a steel by turning the effects of all alloying elements into an equivalent percentage of carbon to measure how easily steel can be welded"@en)
 SubClassOf(<https://w3id.org/pmd/mech/MECH_0002007> <https://w3id.org/pmd/co/PMD_0000551>)
 
+# Class: <https://w3id.org/pmd/mech/MECH_0002008> (stress concentration factor)
+
+AnnotationAssertion(<http://qudt.org/schema/qudt/symbol> <https://w3id.org/pmd/mech/MECH_0002008> "K_t"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/mech/MECH_0002008> "stress concentration factor"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/mech/MECH_0002008> "A stress concentration factor (\\(K_{t}\\)) is a relational quality of an object that defines how much higher the peak local stress is compared to the nominal reference stress near a geometric discontinuity"@en)
+SubClassOf(<https://w3id.org/pmd/mech/MECH_0002008> <https://w3id.org/pmd/co/PMD_0020353>)
+SubClassOf(<https://w3id.org/pmd/mech/MECH_0002008> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0025999> <http://purl.obolibrary.org/obo/BFO_0000030>))
+
+# Class: <https://w3id.org/pmd/mech/MECH_0002009> (Rz)
+
+AnnotationAssertion(<http://qudt.org/schema/qudt/symbol> <https://w3id.org/pmd/mech/MECH_0002009> "Rz"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/mech/MECH_0002009> "Rz"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/mech/MECH_0002009> "Rz is a surface property of an object which is the average maximum height of a surface profile, calculated by measuring the vertical distance from the highest peak to the lowest valley within individual sampling lengths and averaging them"@en)
+SubClassOf(<https://w3id.org/pmd/mech/MECH_0002009> <https://w3id.org/pmd/co/PMD_0020353>)
+SubClassOf(<https://w3id.org/pmd/mech/MECH_0002009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000965>))
+
+# Class: <https://w3id.org/pmd/mech/MECH_0002010> (surface hardness)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/mech/MECH_0002010> "surface hardness"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/mech/MECH_0002010> "The surface hardness is a hardness measured on the surface of an object"@en)
+SubClassOf(<https://w3id.org/pmd/mech/MECH_0002010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000965>))
+DisjointClasses(<https://w3id.org/pmd/mech/MECH_0002010> <https://w3id.org/pmd/mech/MECH_0002011>)
+
+# Class: <https://w3id.org/pmd/mech/MECH_0002011> (core hardness)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/mech/MECH_0002011> "core hardness"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/mech/MECH_0002011> "The core hardness is a hardness measured on the bulk or core of an object"@en)
+SubClassOf(<https://w3id.org/pmd/mech/MECH_0002011> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000538>))
+
 # Class: <https://w3id.org/pmd/mech/MECH_0025001> (hot tensile testing process)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/mech/MECH_0025001> "hot tensile testing process"@en)
@@ -6372,7 +6405,7 @@ AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org
 AnnotationAssertion(<https://w3id.org/pmd/co/symbol> <https://w3id.org/pmd/tto/TTO_0000016> "e^._L_c"@en)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000016> <https://w3id.org/pmd/co/PMD_0000008>)
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000017> (extensometer gauge length)
+# Class: <https://w3id.org/pmd/tto/TTO_0000017> (Extensometer-Messlänge)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000017> <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000017> "Extensometer-Messlänge"@de)
@@ -6499,7 +6532,7 @@ AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org
 AnnotationAssertion(<https://w3id.org/pmd/co/symbol> <https://w3id.org/pmd/tto/TTO_0000028> "L_o"@en)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000028> <https://w3id.org/pmd/tto/TTO_0000019>)
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000029> (Anfangs-Dicke)
+# Class: <https://w3id.org/pmd/tto/TTO_0000029> (original thickness)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000029> <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000029> "Anfangs-Dicke"@de)
@@ -6587,7 +6620,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000035> "DIN EN ISO 6892-1:2019"@en)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000035> <https://w3id.org/pmd/tto/TTO_0000004>)
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000036> (percentage permanent extension)
+# Class: <https://w3id.org/pmd/tto/TTO_0000036> (Bleibende Extensometer-Dehnung)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000036> <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000036> "Bleibende Extensometer-Dehnung"@de)

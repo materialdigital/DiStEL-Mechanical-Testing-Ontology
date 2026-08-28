@@ -723,6 +723,10 @@ https://w3id.org/pmd/mech/MECH_0002004
 https://w3id.org/pmd/mech/MECH_0002005
 https://w3id.org/pmd/mech/MECH_0002006
 https://w3id.org/pmd/mech/MECH_0002007
+https://w3id.org/pmd/mech/MECH_0002008
+https://w3id.org/pmd/mech/MECH_0002009
+https://w3id.org/pmd/mech/MECH_0002010
+https://w3id.org/pmd/mech/MECH_0002011
 https://w3id.org/pmd/mech/MECH_0025001
 https://w3id.org/pmd/mech/MECH_0025002
 https://w3id.org/pmd/mech/MECH_0025004
