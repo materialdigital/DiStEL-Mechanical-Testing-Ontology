@@ -104,7 +104,6 @@ $(IMPORTDIR)/vto_import.owl: $(MIRRORDIR)/vto.owl $(IMPORTDIR)/vto_terms.txt $(I
 			extract --term-file $(IMPORTDIR)/vto_terms.txt \
 						--force true \
 						--copy-ontology-annotations true \
-						--individuals exclude \
 						--intermediates all \
 						--method BOT \
 			remove --term "https://w3id.org/pmd/co/relatesTo" \
