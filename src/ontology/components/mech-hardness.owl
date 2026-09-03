@@ -76,6 +76,56 @@
         <rdfs:label xml:lang="en">core hardness</rdfs:label>
         <skos:definition xml:lang="en">The core hardness is a hardness measured on the bulk or core of an object</skos:definition>
     </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0002012 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002012">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0025012"/>
+        <rdfs:label xml:lang="en">vickers hardness to tensile strength conversion</rdfs:label>
+        <skos:definition xml:lang="en">An analytical calculation that computes tensile strength from vickers hardness value.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0002013 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002013">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0025012"/>
+        <rdfs:label xml:lang="en">rockwell hardness to tensile strength conversion</rdfs:label>
+        <skos:definition xml:lang="en">An analytical calculation that computes tensile strength from rockwell hardness value.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0002014 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002014">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0025012"/>
+        <rdfs:label xml:lang="en">tensile strength to vickers hardness conversion</rdfs:label>
+        <skos:definition xml:lang="en">An analytical calculation that computes vickers hardness from tensile strength value.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0002015 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002015">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0025012"/>
+        <rdfs:label xml:lang="en">brinell hardness to vickers hardness conversion</rdfs:label>
+        <skos:definition xml:lang="en">An analytical calculation that computes vickers hardness from brinell hardness value.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0002016 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002016">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0025012"/>
+        <rdfs:label xml:lang="en">rockwell hardness to vickers hardness conversion</rdfs:label>
+        <skos:definition xml:lang="en">An analytical calculation that computes vickers hardness from rockwell hardness value.</skos:definition>
+    </owl:Class>
 </rdf:RDF>
 
 
