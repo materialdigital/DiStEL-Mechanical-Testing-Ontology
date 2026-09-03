@@ -50,6 +50,7 @@ https://w3id.org/pmd/co/PMD_0000581  # compression testing process
 https://w3id.org/pmd/co/PMD_0000638  # fatigue testing process
 https://w3id.org/pmd/co/PMD_0025020  # single fafigue testing process
 https://w3id.org/pmd/co/PMD_0000776  # hardness testing process
+https://w3id.org/pmd/co/PMD_0000103 # hardening
 
 https://w3id.org/pmd/co/PMD_0000823  # marching geometrically undefined
 https://w3id.org/pmd/co/PMD_0000822  # marching geometrically defined
@@ -116,6 +117,7 @@ http://purl.obolibrary.org/obo/IAO_0000419 # 'quality is specified as'
 http://purl.obolibrary.org/obo/IAO_0000039 # has measurement unit label
 https://w3id.org/pmd/co/PMD_0001026  # complies with
 https://w3id.org/pmd/co/PMD_0020114 # medium role
+https://w3id.org/pmd/co/PMD_0060002 # represented by value
 
 
 
