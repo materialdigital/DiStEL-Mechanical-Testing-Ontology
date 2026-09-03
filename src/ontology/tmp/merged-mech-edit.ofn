@@ -2753,7 +2753,7 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0020010> ObjectIntersectio
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020010> <http://purl.obolibrary.org/obo/COB_0000035>)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/IAO_0020000>))
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (homo sapiens)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (Homo sapiens)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "Homo sapiens")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "homo sapiens")
@@ -3799,7 +3799,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000953> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000953> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000957> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0000957> "PERSON: Joerg Waitelonis")
@@ -3809,7 +3809,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000957> "Eine Analyse, die die äußere und innere Struktur und Morphologie von Materialien untersucht, einschließlich der Anordnung von Atomen, Kristallen, Körnern und Phasen, oft unter Verwendung von Techniken wie Mikroskopie und Beugung."@de)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000957> <http://purl.obolibrary.org/obo/OBI_0000070>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000965> (surface layer (fiat object part))
+# Class: <https://w3id.org/pmd/co/PMD_0000965> (Oberflächenschicht (Fiat-Objektteil))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000965> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0000965> "PERSON: Joerg Waitelonis")
@@ -6719,7 +6719,7 @@ AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org
 AnnotationAssertion(<https://w3id.org/pmd/co/symbol> <https://w3id.org/pmd/tto/TTO_0000028> "L_o"@en)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000028> <https://w3id.org/pmd/tto/TTO_0000019>)
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000029> (Anfangs-Dicke)
+# Class: <https://w3id.org/pmd/tto/TTO_0000029> (original thickness)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000029> <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000029> "Anfangs-Dicke"@de)
@@ -7158,7 +7158,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/OMO_0001000> "https://github.com/information-artifact-ontology/ontology-metadata/issues/77")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMO_0001000> "out of scope")
 
-# Individual: <http://qudt.org/vocab/unit/HZ> (हर्ट्ज)
+# Individual: <http://qudt.org/vocab/unit/HZ> (Hertz)
 
 AnnotationAssertion(dcterms:description <http://qudt.org/vocab/unit/HZ> "$\\textit{Hertz}$ (symbol $Hz$) is the SI unit of frequency defined as the number of cycles per second of
     a periodic phenomenon. One of its most common uses is the description of the sine wave, particularly those used in radio and

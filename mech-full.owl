@@ -1477,17 +1477,6 @@ derivative === (&apos;has differential numerator&apos; only entity) and (&apos;h
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0001030 -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/PMD_0001030">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
-        <rdfs:range rdf:resource="https://w3id.org/pmd/co/PMD_0000950"/>
-        <rdfs:label xml:lang="en">stimulated by</rdfs:label>
-        <skos:definition xml:lang="en">inverse of stimulates</skos:definition>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/pmd/co/PMD_0020127 -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/PMD_0020127">
@@ -3647,11 +3636,7 @@ for now.</obo:IAO_0000116>
 
     <!-- http://purl.obolibrary.org/obo/OBI_0001930 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001930">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
-        <obo:IAO_0000115 xml:lang="en">A value specification that is specifies one category out of a fixed number of nominal categories</obo:IAO_0000115>
-        <rdfs:label>categorical value specification</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001930"/>
     
 
 
@@ -4070,7 +4055,6 @@ More formally, the value of a physical quantity Q with respect to a unit (U) is 
         </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000117>PERSON: Joerg Waitelonis</obo:IAO_0000117>
-        <rdfs:comment xml:lang="en">Instances of Portions Of Matter whose shape is relevant for their dispostion to participate in a Manufacturing Process may be SemiFinishedProdcuts.</rdfs:comment>
         <rdfs:comment xml:lang="en">Instances of Portions Of Matter whose shape is relevant for their dispostion to participate in a manufacturing process may be (subclasses of) objects that bear a &apos;blank role&apos; in the context of the manufacturing process.</rdfs:comment>
         <rdfs:comment xml:lang="en">Material is defined in terms of the three main perspectives that material specifications rely on: the structure of the material (&quot;intensive quality&quot;), the performance of the material (&quot;behavoiral material property&quot;) and the processing the material must have undergone (&quot;output of some process&quot;).
 
@@ -4079,7 +4063,6 @@ When defining specific materials/material taxonomies, these three aspects shall 
         <rdfs:label xml:lang="de">Material</rdfs:label>
         <rdfs:label xml:lang="en">material</rdfs:label>
         <skos:altLabel xml:lang="en">Portion of Material</skos:altLabel>
-        <skos:definition xml:lang="en">A Material is a Portion Of Matter that may participate in some Manifacturing Process and whose shape is not relevant for its participation in the Manifacuring Process.</skos:definition>
         <skos:definition xml:lang="en">A material is a portion of matter that may participate in some manufacturing process and whose shape is not relevant for its participation in the manufacturing process.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
@@ -4136,16 +4119,9 @@ granularity. At these coarser levels, the individual molecules cannot be differe
     <!-- https://w3id.org/pmd/co/PMD_0000005 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000005">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020353"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0023004"/>
         <rdfs:subClassOf rdf:nodeID="genid172"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000117>PERSON: Joerg Waitelonis</obo:IAO_0000117>
         <rdfs:comment xml:lang="en">A property is a material trait in terms of the kind and magnitude of response to a specific imposed stimulus. Generally, definitions of properties are made independent of material shape and size.
@@ -4156,17 +4132,8 @@ As a consequence, material properties in the ontology are differeciated accordin
  The &apos;unit idenifieres&apos; of such properties (e.g. &quot;HV1&quot;, &quot;HV10&quot;, &quot;HBW&quot;) are strictly speaking not units but rather references to the measurement methodology used to determine a numeric value that quantifies the property.
 
 Extensive properties that depend on the object being tested rather than on the portion of matter are (extensive) object- or system-properties.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Technical materials are complex object aggregates. The properties that are determined for those object aggregates are intrinsically associated with the methodologies employed in the measurement process. This is in contrast to typical &apos;physical&apos; properties, which like e.g. mass that can be determined to high accuracy independently of the measurement process. 
-As a consequence, the behavoiral material properties in the ontology are differeciated according to their measurement method, e.g. Brinell hardness and Vickers hardness are different types of indentation hardness rather than different measures/quantification (GDC) of the materials property &apos;indentation hardness&apos;.
- The &apos;unit idenifieres&apos; of such properties (e.g. &quot;HV1&quot;, &quot;HV10&quot;, &quot;HBW&quot;) are strictly speaking not units but rather references to the measurement methodology used to determine a numeric value that quantifies the property.</rdfs:comment>
         <rdfs:label xml:lang="de">Materialeigenschaft</rdfs:label>
-        <rdfs:label xml:lang="en">behavioral material property</rdfs:label>
         <rdfs:label xml:lang="en">material performance property</rdfs:label>
-        <skos:definition xml:lang="en">A property is a material trait in terms of the kind and magnitude of response to a specific imposed stimulus. Generally, definitions of properties are made independent of material shape and size.
-
-(Callister, W.D., Rethwisch, D.G., Materials Science and Engineering, Wiley, 2014)
-
-We only deal with intensive (system-size independent) materrial properties. Extensive properties that depend on the testpiece/specimen/probe size should be found in the respective testing method modules.</skos:definition>
         <skos:definition xml:lang="en">a disposition of a portion of matter that is realized in a compatible process and whose realization is grounded in the portions intensive qualities</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
@@ -4330,16 +4297,6 @@ Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subcl
         <skos:definition xml:lang="de">Die ASTM-Korngröße ist eine Qualität, die durch ein Verfahren gemessen wird, das dem ASTM-Standard folgt.</skos:definition>
         <skos:definition xml:lang="en">The ASTM grain size is a quality that is measured through a process that follows the ASTM standard.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0000522 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000522">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000950"/>
-        <rdfs:label xml:lang="en">application of mechanical load</rdfs:label>
-        <skos:definition xml:lang="en">An application of mechanical load is the process of applying force or stress to a material to observe its response or measure its properties.</skos:definition>
     </owl:Class>
     
 
@@ -4970,7 +4927,7 @@ process and (&apos;has participant&apos; some
     <!-- https://w3id.org/pmd/co/PMD_0000773 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000773">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0023004"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -5141,25 +5098,13 @@ A manufacturing process is always a transformative process.</skos:definition>
     <!-- https://w3id.org/pmd/co/PMD_0000848 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000848">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000005"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0001030"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000522"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">DEPRECATED The axiom that mechanical property has realization some application of mechanical load treats only conventional materials and not such effects as magnetostriction etc.</rdfs:comment>
         <rdfs:label xml:lang="en">DEPRECATED mechanical property</rdfs:label>
         <rdfs:label xml:lang="de">DEPRECATED mechanische Eigenschaft</rdfs:label>
-        <rdfs:label xml:lang="en">mechanical property</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/co/PMD_0020311"/>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-        <skos:definition xml:lang="en">A mechanical property is a material property that inheres in a material M when an object O_target that consists of M is stimulated in a process through an interaction with an object O_stimulus and M changes its stress/strain/..(mechanical?) SDCs.
-
-TODO: Check general class axiom and defintion altogether !!!</skos:definition>
         <skos:definition xml:lang="en">DEPRECATED A mechanical property is a material property which is a characteristic of material M. Mechanical property has realization in a stimulating process (in most cases, application of mechanical load), and the stimulating process is an occurent part of another process, in which an object O that is an instance of M participates.</skos:definition>
         <skos:definition xml:lang="de">DEPRECATED Eine mechanische Eigenschaft ist eine Materialeigenschaft, die eine Eigenschaft des Materials M ist. Eine mechanische Eigenschaft wird in einem stimulierenden Prozess (in den meisten Fällen durch Anwendung einer mechanischen Belastung) verwirklicht, und der stimulierende Prozess ist ein stattfindender Teil eines anderen Prozesses, an dem ein Objekt O, das eine Instanz von M ist, teilnimmt.</skos:definition>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
     
 
@@ -5359,16 +5304,12 @@ TODO: Check general class axiom and defintion altogether !!!</skos:definition>
     <!-- https://w3id.org/pmd/co/PMD_0000950 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000950">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:comment>Might come back later with appropriate axioms</rdfs:comment>
         <rdfs:label xml:lang="de">DEPRECATED anregender Prozess</rdfs:label>
         <rdfs:label xml:lang="en">DEPRECATED stimulating process</rdfs:label>
-        <rdfs:label xml:lang="en">stimulating process</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
         <skos:definition xml:lang="de">DEPRECATED Der Stimulationsprozess ist ein Prozess, der die Anwendung eines äußeren Einflusses wie Kraft, Wärme oder Strahlung beschreibt, um die materielle Reaktion zu untersuchen.</skos:definition>
         <skos:definition xml:lang="en">DEPRECATED The stimulating process is a process describing the application of an external influence, such as force, heat, or radiation, to study material response.</skos:definition>
-        <skos:definition xml:lang="en">The stimulating process is a process describing the application of an external influence, such as force, heat, or radiation, to study material response.</skos:definition>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
     
 
@@ -5376,8 +5317,8 @@ TODO: Check general class axiom and defintion altogether !!!</skos:definition>
     <!-- https://w3id.org/pmd/co/PMD_0000952 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000952">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020335"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0023004"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -5421,7 +5362,6 @@ TODO: Check general class axiom and defintion altogether !!!</skos:definition>
         <obo:IAO_0000117>PERSON: Joerg Waitelonis</obo:IAO_0000117>
         <rdfs:label xml:lang="de">Festigkeit</rdfs:label>
         <rdfs:label xml:lang="en">strength</rdfs:label>
-        <skos:definition xml:lang="en">The strength is a mechanical property describing the maximum stress a material can withstand before failure.</skos:definition>
         <skos:definition xml:lang="en">is a material property describing the stress before a characteristic (failure-) event occurs.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
@@ -5780,30 +5720,6 @@ To understand the difference between the composition and the composition data it
         <skos:definition xml:lang="de">Bei einem Zusammensetzungsdatenelement handelt es sich um eine Informationsinhaltseinheit, die sich mit der Zusammensetzung einer materiellen Einheit befasst. Es verfügt über Bruchwertspezifikationen für Mitglieder, die Werte von Anteilen von Verbindungen angeben, die Teile der materiellen Einheit sind.</skos:definition>
         <skos:definition xml:lang="en">Composition data entity is an information content entity that is about composition of a material enity. It has members fraction value specifications which specifiy values of propotions of compounds, which are parts of the material enity.</skos:definition>
         <skos:example xml:lang="en">Nitric acid solution has quality  composition, and  the composition data item is about this composition.The composition data item has members fraction specifications of nitric acid, e.g., 4 vol.%, and distilled water. These fraction specifications specify value of pure substances of nitric acid and distilled water, respectively. Furthermore, these fraction specifications specify values of relational qualities (volume) proportion of nitric acid and (volume) proportion of distilled water.</skos:example>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020023 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020023">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:oneOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020027"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020097"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020100"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020107"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020109"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020110"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020111"/>
-                </owl:oneOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
-        <rdfs:label xml:lang="en">metallic grain structures</rdfs:label>
-        <skos:definition xml:lang="en">Metallic grain structures are descriptors for the morphology of polycrystalline metallic materials. Polycrystalline metallic materials will typically form their grain structures as one of those categories or a transition or mixture state of those.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
     
@@ -7337,41 +7253,6 @@ To understand the difference between the composition and the composition data it
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0020099 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020099">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:oneOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020006"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020007"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020008"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020009"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020010"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020011"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020012"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020013"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020014"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020015"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020016"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020017"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020018"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020019"/>
-                </owl:oneOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
-        <rdfs:label xml:lang="en">bravais lattice (3d)</rdfs:label>
-        <skos:definition xml:lang="en">The Bravais Lattice is a nature constant that describes the possible geometric arrangement of lattice points in a crystal. The present descriptor is limited to the 14 possible three-dimensional arrangements. 
-
-TODO: possibly extend for 2D (Graphene etc)
-
-More elaborate crystal descriptions may be found in http://emmo.info/domain-crystallography/crystallography or https://purls.helmholtz-metadaten.de/disos/cso</skos:definition>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/pmd/co/PMD_0020101 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020101">
@@ -7502,32 +7383,6 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
         <rdfs:label xml:lang="en">medium role</rdfs:label>
         <skos:definition xml:lang="en">Medium role is a role beared by an object which implies that the object serves as an intermediary for the transmission of something else, like energy, force, or information.</skos:definition>
         <skos:example xml:lang="en">Air in the air cooling process, N2 atmosphere in a furnace cooling process, oil in a quenching process, crystal lattice in a solid state diffusion</skos:example>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020116 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020116">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:oneOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020117"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020118"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020119"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020120"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020121"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020122"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020123"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020124"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020125"/>
-                </owl:oneOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
-        <rdfs:label xml:lang="en">aggregate state value</rdfs:label>
-        <skos:definition xml:lang="en">The aggregate state type is a nature constant that concretizes the aggregatge state quality.</skos:definition>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
     
 
@@ -10628,6 +10483,7 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000053"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -11869,6 +11725,7 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0002002"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -11991,6 +11848,7 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0002002"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -12113,6 +11971,7 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0002002"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -12235,6 +12094,7 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0002002"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -12357,6 +12217,7 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0002002"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -12479,6 +12340,7 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0002002"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -12885,8 +12747,8 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0080108">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020311"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0023004"/>
-        <rdfs:subClassOf rdf:nodeID="genid2167"/>
-        <rdfs:subClassOf rdf:nodeID="genid2173"/>
+        <rdfs:subClassOf rdf:nodeID="genid2132"/>
+        <rdfs:subClassOf rdf:nodeID="genid2138"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
@@ -12900,7 +12762,7 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
         <skos:example xml:lang="en">A cross-section of a loaded steel column bears a compressive stress of 150 MPa</skos:example>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
-    <owl:Class rdf:nodeID="genid2167">
+    <owl:Class rdf:nodeID="genid2132">
         <owl:intersectionOf rdf:parseType="Collection">
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002328"/>
@@ -12912,7 +12774,7 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
             </owl:Restriction>
         </owl:intersectionOf>
     </owl:Class>
-    <owl:Class rdf:nodeID="genid2173">
+    <owl:Class rdf:nodeID="genid2138">
         <owl:intersectionOf rdf:parseType="Collection">
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002328"/>
@@ -12927,13 +12789,13 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/pmd/co/PMD_0080108"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid2167"/>
+        <owl:annotatedTarget rdf:nodeID="genid2132"/>
         <rdfs:comment xml:lang="en">Mechanical view on stress</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/pmd/co/PMD_0080108"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid2173"/>
+        <owl:annotatedTarget rdf:nodeID="genid2138"/>
         <rdfs:comment xml:lang="en">Thermodynamic view on stress</rdfs:comment>
     </owl:Axiom>
     
@@ -12943,14 +12805,14 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0080116">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <rdfs:subClassOf rdf:nodeID="genid2180"/>
+        <rdfs:subClassOf rdf:nodeID="genid2145"/>
         <obo:IAO_0000117>Philipp von Hartrott</obo:IAO_0000117>
         <rdfs:comment xml:lang="en">Every potential in physics is the same mathematical object — a partial derivative of energy with respect to its conjugate extensive quantity. The differences are only in which extensive quality you&apos;re considering.</rdfs:comment>
         <rdfs:label xml:lang="en">potential</rdfs:label>
         <skos:definition xml:lang="en">a partial derivative of energy with respect to its conjugate extensive quantity</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
-    <owl:Class rdf:nodeID="genid2180">
+    <owl:Class rdf:nodeID="genid2145">
         <owl:intersectionOf rdf:parseType="Collection">
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002328"/>
@@ -12965,7 +12827,7 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/pmd/co/PMD_0080116"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid2180"/>
+        <owl:annotatedTarget rdf:nodeID="genid2145"/>
         <rdfs:comment xml:lang="en">In field theories (e.g., gravity, electrostatics), the potential becomes a field ϕ(r⃗), and the force is recovered via:
 F=−∇ϕ(r⃗)F
 This is the spatial analogue: instead of asking &quot;how does energy change per unit carrier added?&quot;, you ask &quot;how does energy change per unit carrier moved in space?&quot;</rdfs:comment>
@@ -15476,6 +15338,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     <!-- https://w3id.org/pmd/tto/TTO_0000004 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -16551,6 +16414,17 @@ Note: Stress rate is only used in the elastic part of the test.</skos:definition
     
 
 
+    <!-- https://w3id.org/pmd/vto/VTO_0000002 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/vto/VTO_0000002">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/vto/VTO_0000001"/>
+        <obo:IAO_0000119>https://www.iso.org/obp/ui#iso:std:iso:14705:ed-3:v1:en:term:3.1</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Vickers HV 5 ISO 6507</rdfs:label>
+        <skos:definition>Vickers hardness test when test force is more than 49.03 N</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -16926,285 +16800,6 @@ Note: Stress rate is only used in the elastic part of the test.</skos:definition
 
     <owl:NamedIndividual rdf:about="http://qudt.org/vocab/unit/PER-MOL">
         <rdf:type rdf:resource="http://qudt.org/schema/qudt/Unit"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020006 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020006">
-        <rdfs:label xml:lang="en">bravais lattice triclinic primitve</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020007 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020007">
-        <rdfs:label xml:lang="en">bravais lattice monoclinic primitive</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020008 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020008">
-        <rdfs:label xml:lang="en">bravais lattice monoclinic base-centered</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020009 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020009">
-        <rdfs:label xml:lang="en">bravais lattice orthorombic primitive</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020010 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020010">
-        <rdfs:label xml:lang="en">bravais lattice orthorhombic base-centered</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020011 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020011">
-        <rdfs:label xml:lang="en">bravais lattice orthorhombic body-centered</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020012 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020012">
-        <rdfs:label xml:lang="en">bravais lattice orthorhombic face-centered</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020013 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020013">
-        <rdfs:label xml:lang="en">bravais lattice tetragonal primitive</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020014 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020014">
-        <rdfs:label xml:lang="en">bravais lattice tetragonal body-centered</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020015 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020015">
-        <rdfs:label xml:lang="en">bravais lattice hexagonal rhombohedral primitive</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020016 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020016">
-        <rdfs:label xml:lang="en">bravais lattice hexagonal hexagonal primitive</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020017 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020017">
-        <rdfs:label xml:lang="en">bravais lattice cubic primitive</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020018 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020018">
-        <rdfs:label xml:lang="en">bravais lattice cubic body-centered</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020019 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020019">
-        <rdfs:label xml:lang="en">bravais lattice cubic face-centered</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020027 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020027">
-        <rdfs:label xml:lang="en">bainite</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020097 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020097">
-        <rdfs:label xml:lang="en">austenite</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020100 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020100">
-        <rdfs:label xml:lang="en">ferrite</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020107 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020107">
-        <rdfs:label xml:lang="en">ledeburite</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020109 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020109">
-        <rdfs:label xml:lang="en">pearlite</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020110 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020110">
-        <rdfs:label xml:lang="en">widmanstatten structure</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020111 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020111">
-        <rdfs:label xml:lang="en">martensite</rdfs:label>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020117 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020117">
-        <rdfs:label xml:lang="en">aggregate state solid</rdfs:label>
-        <skos:definition xml:lang="en">A state where the bonds between entites trasmit shear forces.</skos:definition>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020118 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020118">
-        <rdfs:label xml:lang="en">aggregate state liquid</rdfs:label>
-        <skos:definition xml:lang="en">A state where the bonds of the entites transmit no shear force.</skos:definition>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020119 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020119">
-        <rdfs:label xml:lang="en">aggregate state gasous</rdfs:label>
-        <skos:definition xml:lang="en">A state where the entities have no bonding.</skos:definition>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020120 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020120">
-        <rdfs:label xml:lang="en">aggregate state plasma</rdfs:label>
-        <skos:definition xml:lang="en">An aggregate state where the entites are atom nuclei and have no bonds.</skos:definition>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020121 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020121">
-        <rdfs:label xml:lang="en">aggregate state atom gas</rdfs:label>
-        <skos:definition xml:lang="en">A gaseous state where the gas entities are atoms.</skos:definition>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020122 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020122">
-        <rdfs:label xml:lang="en">aggregate state supercritical fluid</rdfs:label>
-        <skos:definition xml:lang="en">A state with strong bindings between entites that do not transmit shear force.</skos:definition>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020123 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020123">
-        <rdfs:label xml:lang="en">aggregate state mesomorphic</rdfs:label>
-        <skos:definition xml:lang="en">A state where some bonds transmit shear stresses and some do not.</skos:definition>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020124 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020124">
-        <rdfs:label xml:lang="en">aggregate state suprafluid</rdfs:label>
-        <skos:definition xml:lang="en">A state with frictionless binding that transmits no shear force between entites.</skos:definition>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0020125 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020125">
-        <rdfs:label xml:lang="en">aggregate state suprasolid</rdfs:label>
-        <skos:definition xml:lang="en">A state that exhibits suprafluid and solid properties.</skos:definition>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:NamedIndividual>
     
 
@@ -17610,13 +17205,6 @@ TODO</skos:definition>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:Class>
-        <owl:unionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000773"/>
-            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000952"/>
-        </owl:unionOf>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
-    </owl:Class>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">

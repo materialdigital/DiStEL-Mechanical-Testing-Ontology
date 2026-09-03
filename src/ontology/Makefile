@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                6751ea9025ac8ba14e443adcb69a8b4df5625695fe4f0a158e4369f4f773545f
+CONFIG_HASH=                fddb62cd2b6ec87d5768e3b5c934f6b0b54ec51609e02f269a41dd4781b3b3b1
 
 
 # ----------------------------------------
@@ -569,7 +569,7 @@ mirror-iao: | $(TMPDIR)
 .PHONY: mirror-vto
 .PRECIOUS: $(MIRRORDIR)/vto.owl
 mirror-vto: | $(TMPDIR)
-	$(ROBOT) convert -I https://raw.githubusercontent.com/materialdigital/vickers-testing-ontology/refs/heads/main/vto.owl -o $(TMPDIR)/$@.owl
+	$(ROBOT) convert -I https://raw.githubusercontent.com/materialdigital/vickers-testing-ontology/refs/heads/main/vto-base.owl -o $(TMPDIR)/$@.owl
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)
