@@ -561,6 +561,15 @@ Declaration(Class(<https://w3id.org/pmd/mech/MECH_0002008>))
 Declaration(Class(<https://w3id.org/pmd/mech/MECH_0002009>))
 Declaration(Class(<https://w3id.org/pmd/mech/MECH_0002010>))
 Declaration(Class(<https://w3id.org/pmd/mech/MECH_0002011>))
+Declaration(Class(<https://w3id.org/pmd/mech/MECH_0002012>))
+Declaration(Class(<https://w3id.org/pmd/mech/MECH_0002013>))
+Declaration(Class(<https://w3id.org/pmd/mech/MECH_0002014>))
+Declaration(Class(<https://w3id.org/pmd/mech/MECH_0002015>))
+Declaration(Class(<https://w3id.org/pmd/mech/MECH_0002016>))
+Declaration(Class(<https://w3id.org/pmd/mech/MECH_0002017>))
+Declaration(Class(<https://w3id.org/pmd/mech/MECH_0002018>))
+Declaration(Class(<https://w3id.org/pmd/mech/MECH_0002019>))
+Declaration(Class(<https://w3id.org/pmd/mech/MECH_0002020>))
 Declaration(Class(<https://w3id.org/pmd/mech/MECH_0025001>))
 Declaration(Class(<https://w3id.org/pmd/mech/MECH_0025002>))
 Declaration(Class(<https://w3id.org/pmd/mech/MECH_0025004>))
@@ -1654,7 +1663,7 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025006> "process at
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0025006> "A relation between a process attribute and a process, which \"bears\" the attribute."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0025006> "Tensile rate is a process attribute of tensile test"@en)
 
-# Object Property: <https://w3id.org/pmd/co/PMD_0025998> (hat relationale Qualität)
+# Object Property: <https://w3id.org/pmd/co/PMD_0025998> (has relational quality)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0025998> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0025998> "PERSON: Kamilla Zaripova")
@@ -2729,7 +2738,7 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0020010> ObjectIntersectio
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020010> <http://purl.obolibrary.org/obo/COB_0000035>)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/IAO_0020000>))
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (Homo sapiens)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (homo sapiens)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "Homo sapiens")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "homo sapiens")
@@ -3218,7 +3227,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000502> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000502> <http://purl.obolibrary.org/obo/IAO_0000027>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000503> (OBSOLETE ASTM grainsize)
+# Class: <https://w3id.org/pmd/co/PMD_0000503> (ASTM grainsize)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000503> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <https://w3id.org/pmd/co/PMD_0000503> "TODO: axiom needs refinement"@en)
@@ -3263,7 +3272,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000549> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000549> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000551> (chemische Zusammensetzung)
+# Class: <https://w3id.org/pmd/co/PMD_0000551> (chemical composition)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000551> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0000551> "PERSON: Joerg Waitelonis")
@@ -3333,7 +3342,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0000581> "Compression testing of concrete samples to ensure they meet the required strength standards for construction."@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000581> <https://w3id.org/pmd/co/PMD_0000849>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000583> (Rechenprozess)
+# Class: <https://w3id.org/pmd/co/PMD_0000583> (Datenverarbeitung)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000583> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <https://w3id.org/pmd/co/PMD_0000583> "The subclass trees of \"Computing Process\" are currently still proposals and serve as a working basis for the discussion round with the simulation/workflow domain experts."@en)
@@ -3356,7 +3365,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000587> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000587> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000591> (Kristallstruktur)
+# Class: <https://w3id.org/pmd/co/PMD_0000591> (crystal structure)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000591> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <https://w3id.org/pmd/co/PMD_0000591> "will move to CryO")
@@ -3400,7 +3409,7 @@ process and ('has participant' some
 ('temporally qualified continuant' and ('has quality' some 'dimension quality')))") <https://w3id.org/pmd/co/PMD_0000596> <http://purl.obolibrary.org/obo/BFO_0000015>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000596> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000068> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000108> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000202> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000063> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000202> ObjectSomeValuesFrom(ObjectInverseOf(<http://purl.obolibrary.org/obo/BFO_0000108>) ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000068> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <https://w3id.org/pmd/co/PMD_0020132>))))))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <https://w3id.org/pmd/co/PMD_0020132>))))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000597> (mass density)
+# Class: <https://w3id.org/pmd/co/PMD_0000597> (density)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000597> "mass density"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000597> "fundamental property of matter representing the mass of a portion of matter per unit volume"@en)
@@ -3753,7 +3762,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000953> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000953> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000957> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0000957> "PERSON: Joerg Waitelonis")
@@ -3817,7 +3826,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0000974> ObjectSomeValuesFrom(<http://pu
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000974> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000087> ObjectUnionOf(<https://w3id.org/pmd/tto/TTO_0000006> <https://w3id.org/pmd/tto/TTO_0000007>)))))
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000974> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <https://w3id.org/pmd/co/PMD_0000973>))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000975> (DEPRECATED Proben-Rolle)
+# Class: <https://w3id.org/pmd/co/PMD_0000975> (test piece role)
 
 AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/co/PMD_0000975> "Duplicate")
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000975> "DEPRECATED Proben-Rolle"@de)
@@ -3890,7 +3899,7 @@ AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020003> <http://purl.obolibrary.org/obo/BFO_0000030>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <https://w3id.org/pmd/co/PMD_0000591>))
 
-# Class: <https://w3id.org/pmd/co/PMD_0020004> (composition data item)
+# Class: <https://w3id.org/pmd/co/PMD_0020004> (composition specification)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0020004> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <https://w3id.org/pmd/co/PMD_0020004> "See editior note of composition to underatand the difference between composition and chemical composition data items.
@@ -4544,7 +4553,7 @@ EquivalentClasses(<https://w3id.org/pmd/co/PMD_0020128> ObjectIntersectionOf(<ht
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020128> <http://purl.obolibrary.org/obo/BFO_0000040>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020128> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <https://w3id.org/pmd/co/PMD_0020313>))
 
-# Class: <https://w3id.org/pmd/co/PMD_0020132> (spatial extend)
+# Class: <https://w3id.org/pmd/co/PMD_0020132> (size)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0020132> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0020132> "PERSON: Philipp von Hartrott")
@@ -5036,7 +5045,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0023043> <https://w3id.org/pmd/co/PMD_00
 SubClassOf(<https://w3id.org/pmd/co/PMD_0023043> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> <https://w3id.org/pmd/co/PMD_0000001>))
 DisjointUnion(<https://w3id.org/pmd/co/PMD_0023043> <https://w3id.org/pmd/co/PMD_0000597> <https://w3id.org/pmd/co/PMD_0000896> <https://w3id.org/pmd/co/PMD_0000967>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0025001> (Zusammensetzung)
+# Class: <https://w3id.org/pmd/co/PMD_0025001> (composition)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0025001> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <https://w3id.org/pmd/co/PMD_0025001> "There's a dfference between composition and chemical compositon for the following reason: chemical compositon is relevant when the mass/volume/mole proportions of chemical elements(!) are identified, whlist composition includes proportions of molecules, other pure chemical substances, or even proptions of objects (in an object aggregate)."@en)
@@ -5053,7 +5062,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0025001> <https://w3id.org/pmd/co/PMD_00
 SubClassOf(<https://w3id.org/pmd/co/PMD_0025001> <https://w3id.org/pmd/co/PMD_0023004>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0025001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <https://w3id.org/pmd/co/PMD_0000001>))))
 
-# Class: <https://w3id.org/pmd/co/PMD_0025002> (chemical composition data item)
+# Class: <https://w3id.org/pmd/co/PMD_0025002> (chemical composition specification)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0025002> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0025002> "PERSON: Kamilla Zaripova")
@@ -5177,7 +5186,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0025017> "Outer diameter is a length of a straight line from one outer surface of an object or space to the other side of its outer surface through the center of an object or space when it has the inside and outside surface."@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0025017> <https://w3id.org/pmd/co/PMD_0050051>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0025018> (geometric relational quality)
+# Class: <https://w3id.org/pmd/co/PMD_0025018> (geometrische relationale Qualität)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0025018> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0025018> "PERSON: Kamilla Zaripova")
@@ -5840,21 +5849,22 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/mech/MECH_0000050> "single fatigue testing process with run out"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/mech/MECH_0000050> "Single fatigue testing process with run out is a single fatigue testing process in which the specimen did not fail when the fatigue cycle limit is reached."@en)
 SubClassOf(<https://w3id.org/pmd/mech/MECH_0000050> <https://w3id.org/pmd/co/PMD_0025020>)
+SubClassOf(<https://w3id.org/pmd/mech/MECH_0000050> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000087> <https://w3id.org/pmd/mech/MECH_0002018>))))
 DisjointClasses(<https://w3id.org/pmd/mech/MECH_0000050> <https://w3id.org/pmd/mech/MECH_0000052>)
 
-# Class: <https://w3id.org/pmd/mech/MECH_0000051> (fatigue specimen failure)
+# Class: <https://w3id.org/pmd/mech/MECH_0000051> (fatigue failure)
 
 AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/mech/MECH_0000051> "The \"failure\" is defined based on the free text failure criterion from process attributes"@en)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/mech/MECH_0000051> "fatigue specimen failure"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/mech/MECH_0000051> "Fatigue specimen failure is a process which is an occurent part of a sinlge fatigue testing process. If fatigue specimen failure took place, it means that the defined failure criterion has been satisfied."@en)
-SubClassOf(<https://w3id.org/pmd/mech/MECH_0000051> <http://purl.obolibrary.org/obo/BFO_0000015>)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/mech/MECH_0000051> "fatigue failure"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/mech/MECH_0000051> "Fatigue failure is a process which is an occurent part of a sinlge fatigue testing process. If fatigue failure took place, it means that the defined failure criterion has been satisfied."@en)
+SubClassOf(<https://w3id.org/pmd/mech/MECH_0000051> <https://w3id.org/pmd/co/PMD_0020258>)
 SubClassOf(<https://w3id.org/pmd/mech/MECH_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000132> <https://w3id.org/pmd/co/PMD_0025020>))
 
-# Class: <https://w3id.org/pmd/mech/MECH_0000052> (single fatigue testing process with failed specimen)
+# Class: <https://w3id.org/pmd/mech/MECH_0000052> (single fatigue testing process with failure)
 
 AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/mech/MECH_0000052> "For determining the S-N curve for a specific material, the query must contain outputs and/or process attributes of instances of this class!"@en)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/mech/MECH_0000052> "single fatigue testing process with failed specimen"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/mech/MECH_0000052> "Single fatigue testing process with failed specimen is a process of determining number of cycles a sinlge specimen can withstand under given load. The prerequisite for this process is a failed specimen, i.e., the fatigue specimen failure must be an occurent part of the single fatigue testing process."@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/mech/MECH_0000052> "single fatigue testing process with failure"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/mech/MECH_0000052> "Single fatigue testing process with failure is a process of determining number of cycles a sinlge specimen can withstand under given load. The prerequisite for this process is a failure, i.e., the fatigue failure must be an occurent part of the single fatigue testing process."@en)
 EquivalentClasses(<https://w3id.org/pmd/mech/MECH_0000052> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0025020> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000117> <https://w3id.org/pmd/mech/MECH_0000051>)))
 SubClassOf(<https://w3id.org/pmd/mech/MECH_0000052> <https://w3id.org/pmd/co/PMD_0025020>)
 
@@ -6250,6 +6260,60 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/mech/MECH_0002011> "core ha
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/mech/MECH_0002011> "The core hardness is a hardness measured on the bulk or core of an object"@en)
 SubClassOf(<https://w3id.org/pmd/mech/MECH_0002011> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000538>))
 
+# Class: <https://w3id.org/pmd/mech/MECH_0002012> (vickers hardness to tensile strength conversion)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/mech/MECH_0002012> "vickers hardness to tensile strength conversion"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/mech/MECH_0002012> "An analytical calculation that computes tensile strength from vickers hardness value."@en)
+SubClassOf(<https://w3id.org/pmd/mech/MECH_0002012> <https://w3id.org/pmd/co/PMD_0025012>)
+
+# Class: <https://w3id.org/pmd/mech/MECH_0002013> (rockwell hardness to tensile strength conversion)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/mech/MECH_0002013> "rockwell hardness to tensile strength conversion"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/mech/MECH_0002013> "An analytical calculation that computes tensile strength from rockwell hardness value."@en)
+SubClassOf(<https://w3id.org/pmd/mech/MECH_0002013> <https://w3id.org/pmd/co/PMD_0025012>)
+
+# Class: <https://w3id.org/pmd/mech/MECH_0002014> (tensile strength to vickers hardness conversion)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/mech/MECH_0002014> "tensile strength to vickers hardness conversion"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/mech/MECH_0002014> "An analytical calculation that computes vickers hardness from tensile strength value."@en)
+SubClassOf(<https://w3id.org/pmd/mech/MECH_0002014> <https://w3id.org/pmd/co/PMD_0025012>)
+
+# Class: <https://w3id.org/pmd/mech/MECH_0002015> (brinell hardness to vickers hardness conversion)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/mech/MECH_0002015> "brinell hardness to vickers hardness conversion"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/mech/MECH_0002015> "An analytical calculation that computes vickers hardness from brinell hardness value."@en)
+SubClassOf(<https://w3id.org/pmd/mech/MECH_0002015> <https://w3id.org/pmd/co/PMD_0025012>)
+
+# Class: <https://w3id.org/pmd/mech/MECH_0002016> (rockwell hardness to vickers hardness conversion)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/mech/MECH_0002016> "rockwell hardness to vickers hardness conversion"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/mech/MECH_0002016> "An analytical calculation that computes vickers hardness from rockwell hardness value."@en)
+SubClassOf(<https://w3id.org/pmd/mech/MECH_0002016> <https://w3id.org/pmd/co/PMD_0025012>)
+
+# Class: <https://w3id.org/pmd/mech/MECH_0002017> (mechanical testing specimen role)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/mech/MECH_0002017> "mechanical testing specimen role"@en)
+SubClassOf(<https://w3id.org/pmd/mech/MECH_0002017> <http://purl.obolibrary.org/obo/BFO_0000023>)
+
+# Class: <https://w3id.org/pmd/mech/MECH_0002018> (run out role)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/mech/MECH_0002018> "run out role"@en)
+SubClassOf(<https://w3id.org/pmd/mech/MECH_0002018> <https://w3id.org/pmd/mech/MECH_0002017>)
+SubClassOf(<https://w3id.org/pmd/mech/MECH_0002018> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000081> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <https://w3id.org/pmd/co/PMD_0025020>))))
+
+# Class: <https://w3id.org/pmd/mech/MECH_0002019> (failed specimen role)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/mech/MECH_0002019> "failed specimen role"@en)
+SubClassOf(<https://w3id.org/pmd/mech/MECH_0002019> <https://w3id.org/pmd/mech/MECH_0002017>)
+SubClassOf(<https://w3id.org/pmd/mech/MECH_0002019> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000081> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000183> <https://w3id.org/pmd/co/PMD_0020258>))))
+
+# Class: <https://w3id.org/pmd/mech/MECH_0002020> (fatigue load-cycle number point)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/mech/MECH_0002020> "fatigue load-cycle number point"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/pmd/mech/MECH_0002020> "S-N point"@en)
+SubClassOf(<https://w3id.org/pmd/mech/MECH_0002020> <http://purl.obolibrary.org/obo/IAO_0000027>)
+SubClassOf(<https://w3id.org/pmd/mech/MECH_0002020> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <https://w3id.org/pmd/mech/MECH_0000018>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <https://w3id.org/pmd/mech/MECH_0000049>)))
+
 # Class: <https://w3id.org/pmd/mech/MECH_0025001> (hot tensile testing process)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/mech/MECH_0025001> "hot tensile testing process"@en)
@@ -6405,7 +6469,7 @@ AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org
 AnnotationAssertion(<https://w3id.org/pmd/co/symbol> <https://w3id.org/pmd/tto/TTO_0000016> "e^._L_c"@en)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000016> <https://w3id.org/pmd/co/PMD_0000008>)
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000017> (extensometer gauge length)
+# Class: <https://w3id.org/pmd/tto/TTO_0000017> (Extensometer-Messlänge)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000017> <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000017> "Extensometer-Messlänge"@de)
@@ -6532,7 +6596,7 @@ AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org
 AnnotationAssertion(<https://w3id.org/pmd/co/symbol> <https://w3id.org/pmd/tto/TTO_0000028> "L_o"@en)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000028> <https://w3id.org/pmd/tto/TTO_0000019>)
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000029> (original thickness)
+# Class: <https://w3id.org/pmd/tto/TTO_0000029> (Anfangs-Dicke)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000029> <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000029> "Anfangs-Dicke"@de)
@@ -6620,7 +6684,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000035> "DIN EN ISO 6892-1:2019"@en)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000035> <https://w3id.org/pmd/tto/TTO_0000004>)
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000036> (Bleibende Extensometer-Dehnung)
+# Class: <https://w3id.org/pmd/tto/TTO_0000036> (percentage permanent extension)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000036> <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000036> "Bleibende Extensometer-Dehnung"@de)

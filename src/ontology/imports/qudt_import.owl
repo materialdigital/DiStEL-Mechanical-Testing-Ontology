@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<https://w3id.org/pmd/mech/imports/qudt_import.owl>
-<https://w3id.org/pmd/mech/releases/2026-08-28/imports/qudt_import.owl>
-Annotation(owl:versionInfo "2026-08-28")
+<https://w3id.org/pmd/mech/releases/2026-09-03/imports/qudt_import.owl>
+Annotation(owl:versionInfo "2026-09-03")
 
 Declaration(Class(<http://qudt.org/schema/qudt/DerivedUnit>))
 Declaration(Class(<http://qudt.org/schema/qudt/Unit>))
@@ -56,7 +56,7 @@ AnnotationAssertion(rdfs:label <http://qudt.org/schema/qudt/Unit> "Unit")
 #   Named Individuals
 ############################
 
-# Individual: <http://qudt.org/vocab/unit/HZ> (हर्ट्ज)
+# Individual: <http://qudt.org/vocab/unit/HZ> (Hertz)
 
 AnnotationAssertion(<http://purl.org/dc/terms/description> <http://qudt.org/vocab/unit/HZ> "$\\textit{Hertz}$ (symbol $Hz$) is the SI unit of frequency defined as the number of cycles per second of
     a periodic phenomenon. One of its most common uses is the description of the sine wave, particularly those used in radio and

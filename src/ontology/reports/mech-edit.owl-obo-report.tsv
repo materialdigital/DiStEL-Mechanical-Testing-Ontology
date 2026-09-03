@@ -38,8 +38,8 @@ WARN	missing_definition	rolling contact fatigue testing process	definition
 WARN	missing_definition	tensile fatigue testing process	definition	
 WARN	missing_definition	number of sustained loading cycles	definition	
 WARN	missing_definition	single fatigue testing process with run out	definition	
-WARN	missing_definition	fatigue specimen failure	definition	
-WARN	missing_definition	single fatigue testing process with failed specimen	definition	
+WARN	missing_definition	fatigue failure	definition	
+WARN	missing_definition	single fatigue testing process with failure	definition	
 WARN	missing_definition	fatigue test run out	definition	
 WARN	missing_definition	range of motion specification	definition	
 WARN	missing_definition	evaluation software	definition	
@@ -97,6 +97,15 @@ WARN	missing_definition	stress concentration factor	definition
 WARN	missing_definition	Rz	definition	
 WARN	missing_definition	surface hardness	definition	
 WARN	missing_definition	core hardness	definition	
+WARN	missing_definition	vickers hardness to tensile strength conversion	definition	
+WARN	missing_definition	rockwell hardness to tensile strength conversion	definition	
+WARN	missing_definition	tensile strength to vickers hardness conversion	definition	
+WARN	missing_definition	brinell hardness to vickers hardness conversion	definition	
+WARN	missing_definition	rockwell hardness to vickers hardness conversion	definition	
+WARN	missing_definition	mechanical testing specimen role	definition	
+WARN	missing_definition	run out role	definition	
+WARN	missing_definition	failed specimen role	definition	
+WARN	missing_definition	fatigue load-cycle number point	definition	
 WARN	missing_definition	hot tensile testing process	definition	
 WARN	missing_definition	fracture strength	definition	
 WARN	missing_definition	strain hardening exponent	definition	

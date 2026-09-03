@@ -17,11 +17,11 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/pmd/mech/mech-full.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/mech/releases/2026-08-28/mech-full.owl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/mech/releases/2026-09-03/mech-full.owl"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>Mechanical Testing Ontology</dcterms:title>
-        <owl:versionInfo>2026-08-28</owl:versionInfo>
+        <owl:versionInfo>2026-09-03</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -13699,7 +13699,24 @@ This is the spatial analogue: instead of asking &quot;how does energy change per
     <!-- https://w3id.org/pmd/mech/MECH_0000050 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000050">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000833"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0025020"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0002018"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="https://w3id.org/pmd/mech/MECH_0000052"/>
         <rdfs:comment xml:lang="en">The axioms about NOT having a failure: 
 Option 1 (easy): SHACL Shape specifically for this class, stating that it cannot have fatigue specimen failure as occurent part.
@@ -13713,7 +13730,7 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
     <!-- https://w3id.org/pmd/mech/MECH_0000051 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0000051">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020258"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000132"/>
@@ -13721,8 +13738,8 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">The &quot;failure&quot; is defined based on the free text failure criterion from process attributes</rdfs:comment>
-        <rdfs:label xml:lang="en">fatigue specimen failure</rdfs:label>
-        <skos:definition xml:lang="en">Fatigue specimen failure is a process which is an occurent part of a sinlge fatigue testing process. If fatigue specimen failure took place, it means that the defined failure criterion has been satisfied.</skos:definition>
+        <rdfs:label xml:lang="en">fatigue failure</rdfs:label>
+        <skos:definition xml:lang="en">Fatigue failure is a process which is an occurent part of a sinlge fatigue testing process. If fatigue failure took place, it means that the defined failure criterion has been satisfied.</skos:definition>
     </owl:Class>
     
 
@@ -13749,8 +13766,8 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">For determining the S-N curve for a specific material, the query must contain outputs and/or process attributes of instances of this class!</rdfs:comment>
-        <rdfs:label xml:lang="en">single fatigue testing process with failed specimen</rdfs:label>
-        <skos:definition xml:lang="en">Single fatigue testing process with failed specimen is a process of determining number of cycles a sinlge specimen can withstand under given load. The prerequisite for this process is a failed specimen, i.e., the fatigue specimen failure must be an occurent part of the single fatigue testing process.</skos:definition>
+        <rdfs:label xml:lang="en">single fatigue testing process with failure</rdfs:label>
+        <skos:definition xml:lang="en">Single fatigue testing process with failure is a process of determining number of cycles a sinlge specimen can withstand under given load. The prerequisite for this process is a failure, i.e., the fatigue failure must be an occurent part of the single fatigue testing process.</skos:definition>
     </owl:Class>
     
 
@@ -15300,6 +15317,141 @@ Option 2 (ontology advanced): make an equv. class axiom with some and only to ma
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">core hardness</rdfs:label>
         <skos:definition xml:lang="en">The core hardness is a hardness measured on the bulk or core of an object</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0002012 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002012">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0025012"/>
+        <rdfs:label xml:lang="en">vickers hardness to tensile strength conversion</rdfs:label>
+        <skos:definition xml:lang="en">An analytical calculation that computes tensile strength from vickers hardness value.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0002013 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002013">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0025012"/>
+        <rdfs:label xml:lang="en">rockwell hardness to tensile strength conversion</rdfs:label>
+        <skos:definition xml:lang="en">An analytical calculation that computes tensile strength from rockwell hardness value.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0002014 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002014">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0025012"/>
+        <rdfs:label xml:lang="en">tensile strength to vickers hardness conversion</rdfs:label>
+        <skos:definition xml:lang="en">An analytical calculation that computes vickers hardness from tensile strength value.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0002015 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002015">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0025012"/>
+        <rdfs:label xml:lang="en">brinell hardness to vickers hardness conversion</rdfs:label>
+        <skos:definition xml:lang="en">An analytical calculation that computes vickers hardness from brinell hardness value.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0002016 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002016">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0025012"/>
+        <rdfs:label xml:lang="en">rockwell hardness to vickers hardness conversion</rdfs:label>
+        <skos:definition xml:lang="en">An analytical calculation that computes vickers hardness from rockwell hardness value.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0002017 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:label xml:lang="en">mechanical testing specimen role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0002018 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002018">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020317"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0002017"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0025020"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">run out role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0002019 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002019">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020317"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/mech/MECH_0002017"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000183"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020258"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">failed specimen role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/mech/MECH_0002020 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/mech/MECH_0002020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0000018"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/mech/MECH_0000049"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">fatigue load-cycle number point</rdfs:label>
+        <skos:altLabel xml:lang="en">S-N point</skos:altLabel>
     </owl:Class>
     
 
