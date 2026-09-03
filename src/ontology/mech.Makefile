@@ -105,7 +105,7 @@ $(IMPORTDIR)/vto_import.owl: $(MIRRORDIR)/vto.owl $(IMPORTDIR)/vto_terms.txt $(I
 						--force true \
 						--copy-ontology-annotations true \
 						--intermediates all \
-						--method TOP \
+						--method BOT \
 						--individuals exclude \
 			remove --term "https://w3id.org/pmd/co/relatesTo" \
 				   --select "self" \
