@@ -67,6 +67,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000233 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000233"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0100001 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0100001"/>
@@ -589,6 +595,41 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
         <skos:definition xml:lang="en">a relation between a relational quality and an independent continuant (the bearer), in which the quality specifically depends on the bearer for its existence</skos:definition>
         <skos:definition xml:lang="de">eine Beziehung zwischen einer relationalen Qualität und einem unabhängigen Kontinuum (dem Träger), bei der die Existenz der Qualität speziell vom Träger abhängt</skos:definition>
         <skos:example xml:lang="en">mass proportion m is relational qualitiy of material, and the same mass proportion m is relational qualitiy of portion of iron</skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0060001 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/PMD_0060001">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/pmd/co/PMD_0060002"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000008"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117>PERSON: Hossein Beygi Nasrabadi</obo:IAO_0000117>
+        <obo:IAO_0000233>https://github.com/materialdigital/core-ontology/issues/105</obo:IAO_0000233>
+        <rdfs:label xml:lang="en">represents value of</rdfs:label>
+        <skos:definition>A relation between an information content entity and an specifically dependent continuant or process attribute which the representation is about.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0060002 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/PMD_0060002">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/co/PMD_0000004"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117>PERSON: Hossein Beygi Nasrabadi</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">represented by value</rdfs:label>
+        <skos:definition>A relation between a specifically dependent continuant or process attribute and an information content entity which is about.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -1399,7 +1440,7 @@ granularity. At these coarser levels, the individual molecules cannot be differe
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000005">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020353"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0023004"/>
-        <rdfs:subClassOf rdf:nodeID="genid22"/>
+        <rdfs:subClassOf rdf:nodeID="genid25"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000117>PERSON: Joerg Waitelonis</obo:IAO_0000117>
         <rdfs:comment xml:lang="en">A property is a material trait in terms of the kind and magnitude of response to a specific imposed stimulus. Generally, definitions of properties are made independent of material shape and size.
@@ -1415,7 +1456,7 @@ Extensive properties that depend on the object being tested rather than on the p
         <skos:definition xml:lang="en">a disposition of a portion of matter that is realized in a compatible process and whose realization is grounded in the portions intensive qualities</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid22">
+    <owl:Restriction rdf:nodeID="genid25">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
         <owl:someValuesFrom>
             <owl:Class>
@@ -1432,7 +1473,7 @@ Extensive properties that depend on the object being tested rather than on the p
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/pmd/co/PMD_0000005"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid22"/>
+        <owl:annotatedTarget rdf:nodeID="genid25"/>
         <rdfs:comment xml:lang="en">Due to the duality of object and portion of matter this axiom can not be an equivalent class axiom.</rdfs:comment>
     </owl:Axiom>
     
@@ -1533,6 +1574,17 @@ Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subcl
         <rdfs:label xml:lang="en-us">mold</rdfs:label>
         <rdfs:label xml:lang="en">mould</rdfs:label>
         <skos:definition xml:lang="en">A device consisting of a hollowed-out cavity that shapes fluid or plastic material into a specific form through the process of solidification or cooling.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0000103 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000103">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000833"/>
+        <rdfs:label xml:lang="en">hardening</rdfs:label>
+        <skos:altLabel>toughening</skos:altLabel>
+        <skos:definition xml:lang="en">A manufacturing process that increases the strength and hardness of a material.</skos:definition>
     </owl:Class>
     
 
@@ -9998,8 +10050,8 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0080108">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020311"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0023004"/>
-        <rdfs:subClassOf rdf:nodeID="genid1963"/>
-        <rdfs:subClassOf rdf:nodeID="genid1969"/>
+        <rdfs:subClassOf rdf:nodeID="genid1966"/>
+        <rdfs:subClassOf rdf:nodeID="genid1972"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
@@ -10013,7 +10065,7 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
         <skos:example xml:lang="en">A cross-section of a loaded steel column bears a compressive stress of 150 MPa</skos:example>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
-    <owl:Class rdf:nodeID="genid1963">
+    <owl:Class rdf:nodeID="genid1966">
         <owl:intersectionOf rdf:parseType="Collection">
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002328"/>
@@ -10025,7 +10077,7 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
             </owl:Restriction>
         </owl:intersectionOf>
     </owl:Class>
-    <owl:Class rdf:nodeID="genid1969">
+    <owl:Class rdf:nodeID="genid1972">
         <owl:intersectionOf rdf:parseType="Collection">
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002328"/>
@@ -10040,13 +10092,13 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/pmd/co/PMD_0080108"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid1963"/>
+        <owl:annotatedTarget rdf:nodeID="genid1966"/>
         <rdfs:comment xml:lang="en">Mechanical view on stress</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/pmd/co/PMD_0080108"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid1969"/>
+        <owl:annotatedTarget rdf:nodeID="genid1972"/>
         <rdfs:comment xml:lang="en">Thermodynamic view on stress</rdfs:comment>
     </owl:Axiom>
     
@@ -10056,14 +10108,14 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0080116">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <rdfs:subClassOf rdf:nodeID="genid1976"/>
+        <rdfs:subClassOf rdf:nodeID="genid1979"/>
         <obo:IAO_0000117>Philipp von Hartrott</obo:IAO_0000117>
         <rdfs:comment xml:lang="en">Every potential in physics is the same mathematical object — a partial derivative of energy with respect to its conjugate extensive quantity. The differences are only in which extensive quality you&apos;re considering.</rdfs:comment>
         <rdfs:label xml:lang="en">potential</rdfs:label>
         <skos:definition xml:lang="en">a partial derivative of energy with respect to its conjugate extensive quantity</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
-    <owl:Class rdf:nodeID="genid1976">
+    <owl:Class rdf:nodeID="genid1979">
         <owl:intersectionOf rdf:parseType="Collection">
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002328"/>
@@ -10078,7 +10130,7 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/pmd/co/PMD_0080116"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid1976"/>
+        <owl:annotatedTarget rdf:nodeID="genid1979"/>
         <rdfs:comment xml:lang="en">In field theories (e.g., gravity, electrostatics), the potential becomes a field ϕ(r⃗), and the force is recovered via:
 F=−∇ϕ(r⃗)F
 This is the spatial analogue: instead of asking &quot;how does energy change per unit carrier added?&quot;, you ask &quot;how does energy change per unit carrier moved in space?&quot;</rdfs:comment>

@@ -44,6 +44,10 @@ obo:IAO_0000117 rdf:type owl:AnnotationProperty .
 obo:IAO_0000119 rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.obolibrary.org/obo/IAO_0000233
+obo:IAO_0000233 rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.obolibrary.org/obo/IAO_0100001
 obo:IAO_0100001 rdf:type owl:AnnotationProperty .
 
@@ -408,6 +412,32 @@ RO's 'quality of' is functional i.e., a->b, a->c => b=c. The functionality is re
                skos:definition "a relation between a relational quality and an independent continuant (the bearer), in which the quality specifically depends on the bearer for its existence"@en ,
                                "eine Beziehung zwischen einer relationalen Qualität und einem unabhängigen Kontinuum (dem Träger), bei der die Existenz der Qualität speziell vom Träger abhängt"@de ;
                skos:example "mass proportion m is relational qualitiy of material, and the same mass proportion m is relational qualitiy of portion of iron"@en .
+
+
+###  https://w3id.org/pmd/co/PMD_0060001
+co:PMD_0060001 rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf obo:IAO_0000136 ;
+               owl:inverseOf co:PMD_0060002 ;
+               rdfs:domain obo:IAO_0000030 ;
+               rdfs:range [ rdf:type owl:Class ;
+                            owl:unionOf ( obo:BFO_0000020
+                                          co:PMD_0000008
+                                        )
+                          ] ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Hossein Beygi Nasrabadi" ;
+               obo:IAO_0000233 "https://github.com/materialdigital/core-ontology/issues/105" ;
+               rdfs:label "represents value of"@en ;
+               skos:definition "A relation between an information content entity and an specifically dependent continuant or process attribute which the representation is about." .
+
+
+###  https://w3id.org/pmd/co/PMD_0060002
+co:PMD_0060002 rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf co:PMD_0000004 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Hossein Beygi Nasrabadi" ;
+               rdfs:label "represented by value"@en ;
+               skos:definition "A relation between a specifically dependent continuant or process attribute and an information content entity which is about." .
 
 
 #################################################################
@@ -953,7 +983,7 @@ co:PMD_0000002 rdf:type owl:Class ;
 co:PMD_0000005 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020353 ,
                                co:PMD_0023004 ,
-                               _:genid22 ;
+                               _:genid25 ;
                obo:IAO_0000114 obo:IAO_0000122 ;
                obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:comment """A property is a material trait in terms of the kind and magnitude of response to a specific imposed stimulus. Generally, definitions of properties are made independent of material shape and size.
@@ -969,7 +999,7 @@ Extensive properties that depend on the object being tested rather than on the p
                skos:definition "a disposition of a portion of matter that is realized in a compatible process and whose realization is grounded in the portions intensive qualities"@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
-_:genid22 rdf:type owl:Restriction ;
+_:genid25 rdf:type owl:Restriction ;
            owl:onProperty obo:RO_0000052 ;
            owl:someValuesFrom [ owl:intersectionOf ( co:PMD_0000001
                                                      [ rdf:type owl:Restriction ;
@@ -983,7 +1013,7 @@ _:genid22 rdf:type owl:Restriction ;
 [ rdf:type owl:Axiom ;
    owl:annotatedSource co:PMD_0000005 ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid22 ;
+   owl:annotatedTarget _:genid25 ;
    rdfs:comment "Due to the duality of object and portion of matter this axiom can not be an equivalent class axiom."@en
  ] .
 
@@ -1061,6 +1091,14 @@ co:PMD_0000075 rdf:type owl:Class ;
                rdfs:label "mold"@en-us ,
                           "mould"@en ;
                skos:definition "A device consisting of a hollowed-out cavity that shapes fluid or plastic material into a specific form through the process of solidification or cooling."@en .
+
+
+###  https://w3id.org/pmd/co/PMD_0000103
+co:PMD_0000103 rdf:type owl:Class ;
+               rdfs:subClassOf co:PMD_0000833 ;
+               rdfs:label "hardening"@en ;
+               skos:altLabel "toughening" ;
+               skos:definition "A manufacturing process that increases the strength and hardness of a material."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0000501
@@ -7335,8 +7373,8 @@ co:PMD_0080100 rdf:type owl:Class ;
 co:PMD_0080108 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020311 ,
                                co:PMD_0023004 ,
-                               _:genid1963 ,
-                               _:genid1969 ,
+                               _:genid1966 ,
+                               _:genid1972 ,
                                [ rdf:type owl:Restriction ;
                                  owl:onProperty obo:RO_0000052 ;
                                  owl:someValuesFrom co:PMD_0000001
@@ -7348,7 +7386,7 @@ co:PMD_0080108 rdf:type owl:Class ;
                skos:example "A cross-section of a loaded steel column bears a compressive stress of 150 MPa"@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
-_:genid1963 owl:intersectionOf ( [ rdf:type owl:Restriction ;
+_:genid1966 owl:intersectionOf ( [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:RO_0002328 ;
                                     owl:someValuesFrom co:PMD_0020200
                                   ]
@@ -7359,7 +7397,7 @@ _:genid1963 owl:intersectionOf ( [ rdf:type owl:Restriction ;
                                 ) ;
              rdf:type owl:Class .
 
-_:genid1969 owl:intersectionOf ( [ rdf:type owl:Restriction ;
+_:genid1972 owl:intersectionOf ( [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:RO_0002328 ;
                                     owl:someValuesFrom co:PMD_0020352
                                   ]
@@ -7373,14 +7411,14 @@ _:genid1969 owl:intersectionOf ( [ rdf:type owl:Restriction ;
 [ rdf:type owl:Axiom ;
    owl:annotatedSource co:PMD_0080108 ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid1963 ;
+   owl:annotatedTarget _:genid1966 ;
    rdfs:comment "Mechanical view on stress"@en
  ] .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource co:PMD_0080108 ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid1969 ;
+   owl:annotatedTarget _:genid1972 ;
    rdfs:comment "Thermodynamic view on stress"@en
  ] .
 
@@ -7388,14 +7426,14 @@ _:genid1969 owl:intersectionOf ( [ rdf:type owl:Restriction ;
 ###  https://w3id.org/pmd/co/PMD_0080116
 co:PMD_0080116 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000019 ,
-                               _:genid1976 ;
+                               _:genid1979 ;
                obo:IAO_0000117 "Philipp von Hartrott" ;
                rdfs:comment "Every potential in physics is the same mathematical object — a partial derivative of energy with respect to its conjugate extensive quantity. The differences are only in which extensive quality you're considering."@en ;
                rdfs:label "potential"@en ;
                skos:definition "a partial derivative of energy with respect to its conjugate extensive quantity"@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
-_:genid1976 owl:intersectionOf ( [ rdf:type owl:Restriction ;
+_:genid1979 owl:intersectionOf ( [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:RO_0002328 ;
                                     owl:someValuesFrom co:PMD_0020142
                                   ]
@@ -7409,7 +7447,7 @@ _:genid1976 owl:intersectionOf ( [ rdf:type owl:Restriction ;
 [ rdf:type owl:Axiom ;
    owl:annotatedSource co:PMD_0080116 ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid1976 ;
+   owl:annotatedTarget _:genid1979 ;
    rdfs:comment """In field theories (e.g., gravity, electrostatics), the potential becomes a field ϕ(r⃗), and the force is recovered via:
 F=−∇ϕ(r⃗)F
 This is the spatial analogue: instead of asking \"how does energy change per unit carrier added?\", you ask \"how does energy change per unit carrier moved in space?\""""@en

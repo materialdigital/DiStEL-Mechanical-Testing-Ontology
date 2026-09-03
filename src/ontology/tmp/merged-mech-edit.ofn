@@ -203,6 +203,7 @@ Declaration(Class(<https://w3id.org/pmd/co/PMD_0000005>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000008>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000068>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000075>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0000103>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000501>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000502>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000503>))
@@ -711,6 +712,8 @@ Declaration(ObjectProperty(<https://w3id.org/pmd/co/PMD_0020127>))
 Declaration(ObjectProperty(<https://w3id.org/pmd/co/PMD_0025006>))
 Declaration(ObjectProperty(<https://w3id.org/pmd/co/PMD_0025998>))
 Declaration(ObjectProperty(<https://w3id.org/pmd/co/PMD_0025999>))
+Declaration(ObjectProperty(<https://w3id.org/pmd/co/PMD_0060001>))
+Declaration(ObjectProperty(<https://w3id.org/pmd/co/PMD_0060002>))
 Declaration(DataProperty(<http://purl.obolibrary.org/obo/OBI_0001937>))
 Declaration(DataProperty(<http://purl.obolibrary.org/obo/OBI_0002135>))
 Declaration(DataProperty(<https://w3id.org/pmd/co/PMD_0000006>))
@@ -1703,6 +1706,26 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0025999> "eine Beziehung zwischen einer relationalen Qualität und einem unabhängigen Kontinuum (dem Träger), bei der die Existenz der Qualität speziell vom Träger abhängt"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0025999> "mass proportion m is relational qualitiy of material, and the same mass proportion m is relational qualitiy of portion of iron"@en)
 
+# Object Property: <https://w3id.org/pmd/co/PMD_0060001> (represents value of)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0060001> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0060001> "PERSON: Hossein Beygi Nasrabadi")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <https://w3id.org/pmd/co/PMD_0060001> "https://github.com/materialdigital/core-ontology/issues/105")
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0060001> "represents value of"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0060001> "A relation between an information content entity and an specifically dependent continuant or process attribute which the representation is about.")
+SubObjectPropertyOf(<https://w3id.org/pmd/co/PMD_0060001> <http://purl.obolibrary.org/obo/IAO_0000136>)
+InverseObjectProperties(<https://w3id.org/pmd/co/PMD_0060001> <https://w3id.org/pmd/co/PMD_0060002>)
+ObjectPropertyDomain(<https://w3id.org/pmd/co/PMD_0060001> <http://purl.obolibrary.org/obo/IAO_0000030>)
+ObjectPropertyRange(<https://w3id.org/pmd/co/PMD_0060001> ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000020> <https://w3id.org/pmd/co/PMD_0000008>))
+
+# Object Property: <https://w3id.org/pmd/co/PMD_0060002> (represented by value)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0060002> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0060002> "PERSON: Hossein Beygi Nasrabadi")
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0060002> "represented by value"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0060002> "A relation between a specifically dependent continuant or process attribute and an information content entity which is about.")
+SubObjectPropertyOf(<https://w3id.org/pmd/co/PMD_0060002> <https://w3id.org/pmd/co/PMD_0000004>)
+
 
 ############################
 #   Data Properties
@@ -2588,7 +2611,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000010> "software"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000010> <http://purl.obolibrary.org/obo/IAO_0000104>)
 
-# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (data item)
+# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (data entity)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/IAO_0000027> "Data items include counts of things, analyte concentrations, and statistical summaries."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000027> "An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements."@en)
@@ -2753,7 +2776,7 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0020010> ObjectIntersectio
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020010> <http://purl.obolibrary.org/obo/COB_0000035>)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/IAO_0020000>))
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (Homo sapiens)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (homo sapiens)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "Homo sapiens")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "homo sapiens")
@@ -3224,6 +3247,13 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000075> "mould"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000075> "A device consisting of a hollowed-out cavity that shapes fluid or plastic material into a specific form through the process of solidification or cooling."@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000075> <https://w3id.org/pmd/co/PMD_0000602>)
 
+# Class: <https://w3id.org/pmd/co/PMD_0000103> (hardening)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000103> "hardening"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/pmd/co/PMD_0000103> "toughening")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000103> "A manufacturing process that increases the strength and hardness of a material."@en)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000103> <https://w3id.org/pmd/co/PMD_0000833>)
+
 # Class: <https://w3id.org/pmd/co/PMD_0000501> (1D)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000501> <http://purl.obolibrary.org/obo/IAO_0000122>)
@@ -3314,7 +3344,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000552> <https://w3id.org/pmd/co/PMD_0000957>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000552> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009006> <https://w3id.org/pmd/co/PMD_0000551>))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000553> (chemical potential)
+# Class: <https://w3id.org/pmd/co/PMD_0000553> (chemisches Potential)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000553> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0000553> "PERSON: Joerg Waitelonis")
@@ -3809,7 +3839,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000957> "Eine Analyse, die die äußere und innere Struktur und Morphologie von Materialien untersucht, einschließlich der Anordnung von Atomen, Kristallen, Körnern und Phasen, oft unter Verwendung von Techniken wie Mikroskopie und Beugung."@de)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000957> <http://purl.obolibrary.org/obo/OBI_0000070>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000965> (Oberflächenschicht (Fiat-Objektteil))
+# Class: <https://w3id.org/pmd/co/PMD_0000965> (surface layer (fiat object part))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000965> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0000965> "PERSON: Joerg Waitelonis")
@@ -5309,7 +5339,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0025017> "Outer diameter is a length of a straight line from one outer surface of an object or space to the other side of its outer surface through the center of an object or space when it has the inside and outside surface."@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0025017> <https://w3id.org/pmd/co/PMD_0050051>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0025018> (geometrische relationale Qualität)
+# Class: <https://w3id.org/pmd/co/PMD_0025018> (geometric relational quality)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0025018> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0025018> "PERSON: Kamilla Zaripova")
@@ -6592,7 +6622,7 @@ AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org
 AnnotationAssertion(<https://w3id.org/pmd/co/symbol> <https://w3id.org/pmd/tto/TTO_0000016> "e^._L_c"@en)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000016> <https://w3id.org/pmd/co/PMD_0000008>)
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000017> (extensometer gauge length)
+# Class: <https://w3id.org/pmd/tto/TTO_0000017> (Extensometer-Messlänge)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000017> <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000017> "Extensometer-Messlänge"@de)
@@ -6719,7 +6749,7 @@ AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org
 AnnotationAssertion(<https://w3id.org/pmd/co/symbol> <https://w3id.org/pmd/tto/TTO_0000028> "L_o"@en)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000028> <https://w3id.org/pmd/tto/TTO_0000019>)
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000029> (original thickness)
+# Class: <https://w3id.org/pmd/tto/TTO_0000029> (Anfangs-Dicke)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000029> <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000029> "Anfangs-Dicke"@de)
@@ -6807,7 +6837,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/definitionSource> <https://w3id.org/pmd/tto/TTO_0000035> "DIN EN ISO 6892-1:2019"@en)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000035> <https://w3id.org/pmd/tto/TTO_0000004>)
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000036> (percentage permanent extension)
+# Class: <https://w3id.org/pmd/tto/TTO_0000036> (Bleibende Extensometer-Dehnung)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000036> <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000036> "Bleibende Extensometer-Dehnung"@de)
@@ -7158,7 +7188,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/OMO_0001000> "https://github.com/information-artifact-ontology/ontology-metadata/issues/77")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMO_0001000> "out of scope")
 
-# Individual: <http://qudt.org/vocab/unit/HZ> (Hertz)
+# Individual: <http://qudt.org/vocab/unit/HZ> (हर्ट्ज)
 
 AnnotationAssertion(dcterms:description <http://qudt.org/vocab/unit/HZ> "$\\textit{Hertz}$ (symbol $Hz$) is the SI unit of frequency defined as the number of cycles per second of
     a periodic phenomenon. One of its most common uses is the description of the sine wave, particularly those used in radio and

@@ -165,6 +165,7 @@ Declaration(Class(<https://w3id.org/pmd/co/PMD_0000005>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000008>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000068>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000075>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0000103>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000501>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000502>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000503>))
@@ -486,6 +487,8 @@ Declaration(ObjectProperty(<https://w3id.org/pmd/co/PMD_0020127>))
 Declaration(ObjectProperty(<https://w3id.org/pmd/co/PMD_0025006>))
 Declaration(ObjectProperty(<https://w3id.org/pmd/co/PMD_0025998>))
 Declaration(ObjectProperty(<https://w3id.org/pmd/co/PMD_0025999>))
+Declaration(ObjectProperty(<https://w3id.org/pmd/co/PMD_0060001>))
+Declaration(ObjectProperty(<https://w3id.org/pmd/co/PMD_0060002>))
 Declaration(DataProperty(<http://purl.obolibrary.org/obo/OBI_0001937>))
 Declaration(DataProperty(<http://purl.obolibrary.org/obo/OBI_0002135>))
 Declaration(DataProperty(<https://w3id.org/pmd/co/PMD_0000006>))
@@ -1399,6 +1402,26 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025999> "relational
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0025999> "a relation between a relational quality and an independent continuant (the bearer), in which the quality specifically depends on the bearer for its existence"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0025999> "eine Beziehung zwischen einer relationalen Qualität und einem unabhängigen Kontinuum (dem Träger), bei der die Existenz der Qualität speziell vom Träger abhängt"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0025999> "mass proportion m is relational qualitiy of material, and the same mass proportion m is relational qualitiy of portion of iron"@en)
+
+# Object Property: <https://w3id.org/pmd/co/PMD_0060001> (represents value of)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0060001> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0060001> "PERSON: Hossein Beygi Nasrabadi")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <https://w3id.org/pmd/co/PMD_0060001> "https://github.com/materialdigital/core-ontology/issues/105")
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0060001> "represents value of"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0060001> "A relation between an information content entity and an specifically dependent continuant or process attribute which the representation is about.")
+SubObjectPropertyOf(<https://w3id.org/pmd/co/PMD_0060001> <http://purl.obolibrary.org/obo/IAO_0000136>)
+InverseObjectProperties(<https://w3id.org/pmd/co/PMD_0060001> <https://w3id.org/pmd/co/PMD_0060002>)
+ObjectPropertyDomain(<https://w3id.org/pmd/co/PMD_0060001> <http://purl.obolibrary.org/obo/IAO_0000030>)
+ObjectPropertyRange(<https://w3id.org/pmd/co/PMD_0060001> ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000020> <https://w3id.org/pmd/co/PMD_0000008>))
+
+# Object Property: <https://w3id.org/pmd/co/PMD_0060002> (represented by value)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0060002> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0060002> "PERSON: Hossein Beygi Nasrabadi")
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0060002> "represented by value"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0060002> "A relation between a specifically dependent continuant or process attribute and an information content entity which is about.")
+SubObjectPropertyOf(<https://w3id.org/pmd/co/PMD_0060002> <https://w3id.org/pmd/co/PMD_0000004>)
 
 
 ############################
@@ -2610,6 +2633,13 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000075> "mould"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000075> "A device consisting of a hollowed-out cavity that shapes fluid or plastic material into a specific form through the process of solidification or cooling."@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000075> <https://w3id.org/pmd/co/PMD_0000602>)
 
+# Class: <https://w3id.org/pmd/co/PMD_0000103> (hardening)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000103> "hardening"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/pmd/co/PMD_0000103> "toughening")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000103> "A manufacturing process that increases the strength and hardness of a material."@en)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000103> <https://w3id.org/pmd/co/PMD_0000833>)
+
 # Class: <https://w3id.org/pmd/co/PMD_0000501> (1D)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000501> <http://purl.obolibrary.org/obo/IAO_0000122>)
@@ -2700,7 +2730,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000552> <https://w3id.org/pmd/co/PMD_0000957>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000552> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009006> <https://w3id.org/pmd/co/PMD_0000551>))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000553> (chemisches Potential)
+# Class: <https://w3id.org/pmd/co/PMD_0000553> (chemical potential)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000553> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0000553> "PERSON: Joerg Waitelonis")
@@ -3042,7 +3072,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0000833> <http://purl.obolibrary.org/obo
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000833> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000027> <http://purl.obolibrary.org/obo/BFO_0000030>)))
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000833> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000027> <http://purl.obolibrary.org/obo/BFO_0000030>)))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000849> (Mechanische Eigenschaften Analyseverfahren)
+# Class: <https://w3id.org/pmd/co/PMD_0000849> (mechanical property analyzing process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000849> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0000849> "PERSON: Joerg Waitelonis")
@@ -3175,7 +3205,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000953> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000953> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000957> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0000957> "PERSON: Joerg Waitelonis")
@@ -4638,7 +4668,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0025017> "Outer diameter is a length of a straight line from one outer surface of an object or space to the other side of its outer surface through the center of an object or space when it has the inside and outside surface."@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0025017> <https://w3id.org/pmd/co/PMD_0050051>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0025018> (geometrische relationale Qualität)
+# Class: <https://w3id.org/pmd/co/PMD_0025018> (geometric relational quality)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0025018> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0025018> "PERSON: Kamilla Zaripova")
