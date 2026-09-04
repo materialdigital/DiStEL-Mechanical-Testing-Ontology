@@ -38,7 +38,7 @@ import_group:
       mirror_from: https://raw.githubusercontent.com/materialdigital/vickers-testing-ontology/refs/heads/main/vto-base.owl 
       module_type: custom
     - id: hto
-      mirror_from: https://raw.githubusercontent.com/materialdigital/heat-treatment-application-ontology/refs/heads/main/hto-base.owl 
+      mirror_from: https://raw.githubusercontent.com/materialdigital/heat-treatment-application-ontology/refs/heads/main/hto.owl 
       module_type: custom
 
 # Components
