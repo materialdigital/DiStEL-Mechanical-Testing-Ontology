@@ -17,11 +17,11 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/pmd/mech.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/mech/releases/2026-09-03/mech.owl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/mech/releases/2026-09-04/mech.owl"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>Mechanical Testing Ontology</dcterms:title>
-        <owl:versionInfo>2026-09-03</owl:versionInfo>
+        <owl:versionInfo>2026-09-04</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -201,6 +201,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
     <!-- http://purl.org/dc/terms/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title">
@@ -257,6 +263,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    
+
+
     <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
@@ -266,6 +278,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://www.w3.org/2004/02/skos/core#definition -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#editorialNote -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#editorialNote"/>
     
 
 
@@ -5004,6 +5022,12 @@ process and (&apos;has participant&apos; some
         <skos:definition xml:lang="de">Ein Mechanische Eigenschaften Analyseverfahren, das den Widerstand eines Materials gegen Verformung misst und typischerweise Eindringverfahren verwendet, um die Härte zu bestimmen.</skos:definition>
         <skos:example xml:lang="en">Hardness testing of steel using the Rockwell method to classify its grade for industrial applications.</skos:example>
     </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0000779 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000779"/>
     
 
 
@@ -12652,6 +12676,18 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
     
 
 
+    <!-- https://w3id.org/pmd/co/PMD_0060008 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0060008"/>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0060009 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0060009"/>
+    
+
+
     <!-- https://w3id.org/pmd/co/PMD_0080019 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0080019">
@@ -12875,6 +12911,346 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
 F=−∇ϕ(r⃗)F
 This is the spatial analogue: instead of asking &quot;how does energy change per unit carrier added?&quot;, you ask &quot;how does energy change per unit carrier moved in space?&quot;</rdfs:comment>
     </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/pmd/hto/HTO_0000002 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/hto/HTO_0000002">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0060008"/>
+        <rdfs:label xml:lang="en">hardening recipe</rdfs:label>
+        <skos:definition>A hardeing recipe describing the steps and conditions for carrying out a hardening process.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/hto/HTO_0000003 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/hto/HTO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/hto/HTO_0000032"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/hto/HTO_0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dcterms:source>DIN 17022-1:1994, §3.1.1</dcterms:source>
+        <dcterms:source>DIN 17022-1:1994, §5.2.2</dcterms:source>
+        <rdfs:label xml:lang="en">temperature change rate specification</rdfs:label>
+        <skos:definition>A setpoint which - as part of plan specifications (e.g. recipes) - specifies the rate at which temparature is to be changed.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/hto/HTO_0000004 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/hto/HTO_0000004">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0060008"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/hto/HTO_0000003"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/hto/HTO_0000006"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <dcterms:source>DIN 17022-1:1994, §3.1.1</dcterms:source>
+        <rdfs:label xml:lang="en">heating recipe</rdfs:label>
+        <skos:definition xml:lang="en">A heat treatment recipe describing the steps and parameters for carrying out a heating process.</skos:definition>
+        <skos:definition xml:lang="de">Wärmebehandlungsrezept mit dem die Schritte und Parameter zur Durchführung eines Aufheizprozesses beschrieben werden.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/hto/HTO_0000005 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/hto/HTO_0000005">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
+        <dcterms:source>DIN 17022-1:1994, §3.1.1</dcterms:source>
+        <dcterms:source>DIN 17022-1:1994, §5.2.2 (incl. kritische Abkühlgeschwindigkeit K_k)</dcterms:source>
+        <rdfs:label xml:lang="en">temperature change rate</rdfs:label>
+        <skos:definition xml:lang="en">A process attribute defining the change of temperature per time unit within a process.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/hto/HTO_0000006 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/hto/HTO_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/hto/HTO_0000032"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/hto/HTO_0000010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000967"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0002135"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dcterms:source>DIN 17022-1:1994, §5 (generic process-target temperature)</dcterms:source>
+        <oboInOwl:hasRelatedSynonym xml:lang="en">target temperature specification</oboInOwl:hasRelatedSynonym>
+        <rdfs:label xml:lang="en">target temperature</rdfs:label>
+        <skos:definition xml:lang="en">A setpoint defining the temperature that is to be reached/held within a process that involves a defined temperature.</skos:definition>
+        <skos:editorialNote>needs work</skos:editorialNote>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/hto/HTO_0000008 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/hto/HTO_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/hto/HTO_0000032"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/hto/HTO_0000009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dcterms:source>DIN 17022-1:1994, Bild 1 (Verweildauer / Erwärm-/Anwärm-/Durchwärm-/Haltedauer)</dcterms:source>
+        <dcterms:source>DIN 17022-1:1994, §5.2.1</dcterms:source>
+        <dcterms:source>DIN EN ISO 683-2:2018, Tab.11 Fn d, f</dcterms:source>
+        <rdfs:label xml:lang="en">duration specification</rdfs:label>
+        <skos:definition>Device specification as part of a plan specification which specifies the duration of a given process.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/hto/HTO_0000009 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/hto/HTO_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000202"/>
+        <dcterms:source>DIN 17022-1:1994, Bild 1 (Verweildauer/Erwärm-/Anwärm-/Durchwärm-/Haltedauer)</dcterms:source>
+        <dcterms:source>DIN EN ISO 683-2:2018, Tab.11 (Anlassdauer / Aust.-dauer)</dcterms:source>
+        <rdfs:label xml:lang="en">duration</rdfs:label>
+        <skos:definition xml:lang="en">a temporal interval that describes the temporal extent of a process which is demarcated by the distance of two temporal instants</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/hto/HTO_0000010 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/hto/HTO_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+        <dcterms:source>DIN EN ISO 4885:2018 (generic, °C usage throughout)</dcterms:source>
+        <rdfs:comment>working variable, used for testing only</rdfs:comment>
+        <rdfs:label xml:lang="en">temperature unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/hto/HTO_0000013 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/hto/HTO_0000013">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/hto/HTO_0000002"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/hto/HTO_0000004"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/hto/HTO_0000014"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/hto/HTO_0000015"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/hto/HTO_0000016"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <dcterms:source>DIN 17022-1:1994, §3.1</dcterms:source>
+        <dcterms:source>DIN EN ISO 683-2:2018, Tab.11</dcterms:source>
+        <dcterms:source>DIN EN ISO 683-3:2022, Tab.8</dcterms:source>
+        <rdfs:comment>add target temperature in axioms, combine it with austenitisation temperature</rdfs:comment>
+        <rdfs:label xml:lang="en">hardening heat treatment recipe</rdfs:label>
+        <skos:definition xml:lang="en">A heat treatment recipe describing the steps and conditions for carrying out a hardening heat treatment process.</skos:definition>
+        <skos:definition xml:lang="de">Wärmebehandlungsrezept mit dem Schritte und Parameter für die Durchführung eines Härtungsprozesses beschrieben werden.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/hto/HTO_0000014 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/hto/HTO_0000014">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0060008"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/hto/HTO_0000006"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/hto/HTO_0000008"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <dcterms:source>DIN 17022-1:1994, §5.2.1</dcterms:source>
+        <dcterms:source>DIN EN ISO 4885:2018, §3.185</dcterms:source>
+        <rdfs:label xml:lang="en">holding recipe</rdfs:label>
+        <skos:definition xml:lang="en">A heat treatment recipe outlining the steps and parameters for carrying out a holding process.</skos:definition>
+        <skos:definition xml:lang="de">Wärmebehandlungsrezept, in dem die Schritte und Parameter zur Durchführung eines Halteprozesses beschrieben werden.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/hto/HTO_0000015 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/hto/HTO_0000015">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0060008"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/hto/HTO_0000006"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/hto/HTO_0000008"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <dcterms:source>DIN 17022-1:1994, Bild 1 (Durchwärmdauer)</dcterms:source>
+        <dcterms:source>DIN EN ISO 4885:2018, §3.185</dcterms:source>
+        <rdfs:label xml:lang="en">soaking recipe</rdfs:label>
+        <skos:definition xml:lang="en">A heat treatment recipe outlining the steps and parameters for carrying out a soaking process.</skos:definition>
+        <skos:definition xml:lang="de">Wärmebehandlungsrezept, in dem die Schritte und Parameter zur Durchführung eines Durchwärmprozesses beschrieben werden.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/hto/HTO_0000016 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/hto/HTO_0000016">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/hto/HTO_0000017"/>
+        <dcterms:source>DIN 17022-1:1994, §5.2.2</dcterms:source>
+        <dcterms:source>DIN EN ISO 4885:2018, §3.168</dcterms:source>
+        <rdfs:label xml:lang="en">quenching recipe</rdfs:label>
+        <skos:definition xml:lang="en">A heat treatment recipe describing the steps and conditions for carrying out a quenching process.</skos:definition>
+        <skos:definition xml:lang="de">Wärmebehandlungsrezept mit dem Schritte und Parameter für die Durchführung eines Abschreckprozesses beschrieben werden.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/hto/HTO_0000017 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/hto/HTO_0000017">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0060008"/>
+        <dcterms:source>DIN 17022-1:1994, §5.2.2</dcterms:source>
+        <dcterms:source>DIN EN ISO 4885:2018, §3.45</dcterms:source>
+        <rdfs:label xml:lang="de">Wärmebehandlungsrezept mit dem Schritte und Parameter für die Durchführung eines Abkühlungsprozesses beschrieben werden.</rdfs:label>
+        <rdfs:label xml:lang="en">cooling recipe</rdfs:label>
+        <skos:definition xml:lang="en">A heat treatment recipe describing the steps and parameters for carrying out a cooling process.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/hto/HTO_0000019 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/hto/HTO_0000019">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/hto/HTO_0000040"/>
+        <dcterms:source>DIN 17022-5:2000, §1</dcterms:source>
+        <dcterms:source>DIN 17022-5:2000, §4</dcterms:source>
+        <dcterms:source>DIN EN ISO 4885:2018, §3.200</dcterms:source>
+        <rdfs:label xml:lang="de">Oberflächenhärtung</rdfs:label>
+        <rdfs:label xml:lang="en">surface hardening</rdfs:label>
+        <skos:altLabel xml:lang="de">Oberflächenhärtung</skos:altLabel>
+        <skos:altLabel xml:lang="de">Randschichthärtung</skos:altLabel>
+        <skos:definition xml:lang="de">Auf die Randschicht beschränkte Härtung (3.167).</skos:definition>
+        <skos:definition xml:lang="en">Hardening (3.167) restricted to the surface layer.</skos:definition>
+        <skos:definition>Hardening process where only the surface of a part and not its entire volume is hardened.</skos:definition>
+        <skos:editorialNote xml:lang="en">DIN audit fix (2026-06-09): DIN EN ISO 4885 §3.200 lemma is &apos;Randschichthärten&apos;; DIN 17022-5 uses &apos;Randschichthärten&apos; exclusively in its title. The hto-edit.owl DE label &apos;Oberflächenhärtung&apos; is a DIN-10052 / legacy synonym (already retained in hto-edit.owl as skos:altLabel — preserved here). The DIN-canonical &apos;Randschichthärten&apos; is hoisted to skos:prefLabel.</skos:editorialNote>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/hto/HTO_0000032 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/hto/HTO_0000032">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0060009"/>
+        <dcterms:creator>thonagel</dcterms:creator>
+        <dcterms:source>DIN 17022-1:1994, §5 (Sollwert / Solltemperatur, procedural usage)</dcterms:source>
+        <rdfs:comment>Internally (within the devices&apos; logic) a process is run to reach and maintain the given setpoint.</rdfs:comment>
+        <rdfs:label xml:lang="de">Sollwert</rdfs:label>
+        <rdfs:label xml:lang="en">setpoint</rdfs:label>
+        <skos:definition xml:lang="en">A Set Point is a specification datum that assigns a desired quantitative value to a controlled process parameter, serving as the normative reference for process execution and control.</skos:definition>
+        <skos:definition xml:lang="de">Ein Sollwert ist ein Spezifikationswert, der einem geregelten Prozessparameter einen gewünschten quantitativen Wert zuweist und als normgebende Referenz für die Prozessausführung und -steuerung dient.</skos:definition>
+        <skos:editorialNote xml:lang="en">DIN audit (2026-06-09): DIN EN ISO 4885 does not enumerate &apos;Sollwert&apos; as a §3 lemma; PMDco owns the generic &apos;setpoint&apos; concept upstream. The DIN procedural anchor is DIN 17022-1 §5 (Sollwert / Solltemperatur operational usage). Provenance is therefore procedural rather than terminological.</skos:editorialNote>
+        <skos:example>The flow rate for a mass flow controller.
+The target temperature in the furnace chamber for a given process step.
+The rotational speed of a fan.</skos:example>
+        <co:PMD_0000064>tdb</co:PMD_0000064>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/hto/HTO_0000040 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/hto/HTO_0000040">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000103"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000779"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/hto/HTO_0000013"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dcterms:source>DIN 17022-1:1994, §3.1</dcterms:source>
+        <dcterms:source>DIN EN ISO 4885:2018, §3.167</dcterms:source>
+        <rdfs:label xml:lang="de">Härtung durch Wärmebehandlung</rdfs:label>
+        <rdfs:label xml:lang="en">hardening heat treatment</rdfs:label>
+        <skos:definition xml:lang="en">Heat treatment process to increase the strength and hardness of the material by cooling it so that its microstructure transforms to the hardening structure.</skos:definition>
+        <skos:definition xml:lang="de">Prozess zur Härtung eines zuvor austenitisierten (3.14) Werkstückes, durch Abkühlen (3.45) unter Bedingungen erreicht, die geeignet sind, den Austenit (3.12) nahezu vollständig in Martensit (3.137) und gegebenenfalls Bainit (3.17) umzuwandeln.</skos:definition>
+        <skos:definition xml:lang="de">Wärmebehandlungprozess durch den eine Härte- und Festigkeitssteigerung erreicht wird, in dem das Material mit solcher Geschwindikeit abgekühlt wird, dass ein Härtungsgefüge enstehen kann.</skos:definition>
+        <skos:example xml:lang="de">Randschichthärten
+
+Einsatzhärten
+Nitrierhärten</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/hto/HTO_0000072 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/hto/HTO_0000072">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/hto/HTO_0000019"/>
+        <obo:IAO_0000116 xml:lang="en">this is really not connected to the phenomenon of case hardening found in mangos</obo:IAO_0000116>
+        <dcterms:source>DIN EN ISO 4885:2018, §3.37 (Einsatzhärten = Aufkohlen + Härten)</dcterms:source>
+        <rdfs:label xml:lang="de">Einsatzhärten</rdfs:label>
+        <rdfs:label xml:lang="en">case hardening</rdfs:label>
+        <skos:definition xml:lang="de">Behandlung bestehend aus Aufkohlen (3.36) oder Carbonitrieren (3.35) mit anschließender Härtung (3.167).</skos:definition>
+        <skos:definition xml:lang="en">Surface hardening process comprised of carburising, hardening and tempering of case hardnening steels.</skos:definition>
+        <skos:definition xml:lang="en">Treatment consisting of carburising (3.36) or carbonitriding (3.35) followed by hardening (3.167).</skos:definition>
+        <skos:editorialNote xml:lang="en">DIN audit (2026-06-09, γ refinement): HTO_0000072 (recently added upstream as case-hardening PROCESS) is overlaid here with DE label &apos;Einsatzhärten&apos; and verbatim 4885 §3.37 wording. Earlier draft had a twin class hto:HTO_0000106; removed in favour of this overlay to keep upstream IRIs intact (Q2c style). HTO_0000106 slot vacated for Divya to re-claim. The depth measure CHD is the separate HTO_0000089 — do not conflate process with depth.</skos:editorialNote>
+    </owl:Class>
     
 
 

@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                fddb62cd2b6ec87d5768e3b5c934f6b0b54ec51609e02f269a41dd4781b3b3b1
+CONFIG_HASH=                951a4fcd529aa576e699373418b737fbaf9de9b67b647a7f53ba6eb266657ed8
 
 
 # ----------------------------------------
@@ -187,7 +187,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  pmdco tto uo qudt iao vto
+IMPORTS =  pmdco tto uo qudt iao vto hto
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -445,6 +445,12 @@ $(IMPORTDIR)/vto_import.owl: $(MIRRORDIR)/vto.owl
 	@echo "       This rule needs to be overwritten in mech.Makefile!"
 	@false
 
+## Module for ontology: hto (custom)
+$(IMPORTDIR)/hto_import.owl: $(MIRRORDIR)/hto.owl
+	@echo "ERROR: You have configured hto as a custom module;"
+	@echo "       This rule needs to be overwritten in mech.Makefile!"
+	@false
+
 endif # IMP=true
 
 .PHONY: refresh-imports
@@ -570,6 +576,13 @@ mirror-iao: | $(TMPDIR)
 .PRECIOUS: $(MIRRORDIR)/vto.owl
 mirror-vto: | $(TMPDIR)
 	$(ROBOT) convert -I https://raw.githubusercontent.com/materialdigital/vickers-testing-ontology/refs/heads/main/vto-base.owl -o $(TMPDIR)/$@.owl
+
+
+## ONTOLOGY: hto
+.PHONY: mirror-hto
+.PRECIOUS: $(MIRRORDIR)/hto.owl
+mirror-hto: | $(TMPDIR)
+	$(ROBOT) convert -I https://raw.githubusercontent.com/materialdigital/heat-treatment-application-ontology/refs/heads/main/hto-base.owl -o $(TMPDIR)/$@.owl
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)
