@@ -115,7 +115,7 @@ $(IMPORTDIR)/vto_import.owl: $(MIRRORDIR)/vto.owl $(IMPORTDIR)/vto_terms.txt $(I
 			annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 			convert -f owl --output $@.tmp.owl && mv $@.tmp.owl $@
 
-$(IMPORTDIR)/hto_import.owl: $(MIRRORDIR)/hto.ttl $(IMPORTDIR)/hto_terms.txt $(IMPORTSEED) | all_robot_plugins
+$(IMPORTDIR)/hto_import.owl: $(MIRRORDIR)/hto.owl $(IMPORTDIR)/hto_terms.txt $(IMPORTSEED) | all_robot_plugins
 	@echo "Generating import module from HTO mirror..."
 	$(ROBOT) annotate --input $< --remove-annotations \
 			odk:normalize --add-source true \
