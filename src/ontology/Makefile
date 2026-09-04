@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                951a4fcd529aa576e699373418b737fbaf9de9b67b647a7f53ba6eb266657ed8
+CONFIG_HASH=                d650d35eb1fc879b57aff7181ee175c7823d23dddd1d26871f1b6664ec62811d
 
 
 # ----------------------------------------
@@ -582,7 +582,7 @@ mirror-vto: | $(TMPDIR)
 .PHONY: mirror-hto
 .PRECIOUS: $(MIRRORDIR)/hto.owl
 mirror-hto: | $(TMPDIR)
-	$(ROBOT) convert -I https://raw.githubusercontent.com/materialdigital/heat-treatment-application-ontology/refs/heads/main/hto-base.owl -o $(TMPDIR)/$@.owl
+	$(ROBOT) convert -I https://raw.githubusercontent.com/materialdigital/heat-treatment-application-ontology/refs/heads/main/hto.owl -o $(TMPDIR)/$@.owl
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)

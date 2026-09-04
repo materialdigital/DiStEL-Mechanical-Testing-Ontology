@@ -44,8 +44,11 @@ obo:IAO_0000114 rdf:type owl:AnnotationProperty .
 ###  http://purl.obolibrary.org/obo/IAO_0000115
 obo:IAO_0000115 rdf:type owl:AnnotationProperty ;
                 obo:IAO_0000114 obo:IAO_0000122 ;
-                obo:IAO_0000115 "The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en ,
-                                "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en ;
+                obo:IAO_0000115 "A property representing the English language definitions of what NCI means by the concept. They may also include information about the definition's source and attribution in a form that can easily be interpreted by software." ,
+                                "English language definitions of what NCI means by the concept. These are limited to 1024 characters. They may also include information about the definition's source and attribution in a form that can easily be interpreted by software." ,
+                                "The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en ,
+                                "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en ,
+                                "The official definition." ;
                 obo:IAO_0000116 """2012-04-05: 
 Barry Smith
 
@@ -292,7 +295,8 @@ obo:BFO_0000050 rdf:type owl:ObjectProperty ;
                                 """Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)
 
 A continuant cannot be part of an occurrent: use 'participates in'. An occurrent cannot be part of a continuant: use 'has participant'. A material entity cannot be part of an immaterial entity: use 'has location'. A specifically dependent continuant cannot be part of an independent continuant: use 'inheres in'. An independent continuant cannot be part of a specifically dependent continuant: use 'bearer of'."""@en ;
-                rdfs:label "part of"@en .
+                rdfs:label "part of" ,
+                           "part of"@en .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000051
@@ -601,6 +605,8 @@ obo:OBI_0000295 rdf:type owl:ObjectProperty ;
 
 ###  http://purl.obolibrary.org/obo/OBI_0000299
 obo:OBI_0000299 rdf:type owl:ObjectProperty ;
+                owl:equivalentProperty [ owl:inverseOf obo:OBI_0000312
+                                       ] ;
                 rdfs:subPropertyOf obo:RO_0000057 ;
                 owl:inverseOf obo:OBI_0000312 ;
                 rdfs:domain obo:COB_0000035 ;
@@ -1754,8 +1760,7 @@ obo:CHEBI_25016 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/CHEBI_25107
 obo:CHEBI_25107 rdf:type owl:Class ;
-                rdfs:subClassOf obo:CHEBI_23367 ,
-                                obo:CHEBI_33521 ;
+                rdfs:subClassOf obo:CHEBI_33521 ;
                 rdfs:label "magnesium atom" .
 
 
@@ -1786,8 +1791,7 @@ obo:CHEBI_25805 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/CHEBI_26216
 obo:CHEBI_26216 rdf:type owl:Class ;
-                rdfs:subClassOf obo:CHEBI_23367 ,
-                                obo:CHEBI_33521 ;
+                rdfs:subClassOf obo:CHEBI_33521 ;
                 rdfs:label "potassium atom" .
 
 
@@ -1837,8 +1841,7 @@ obo:CHEBI_27563 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/CHEBI_27568
 obo:CHEBI_27568 rdf:type owl:Class ;
-                rdfs:subClassOf obo:CHEBI_23367 ,
-                                obo:CHEBI_25585 ,
+                rdfs:subClassOf obo:CHEBI_25585 ,
                                 obo:CHEBI_33303 ;
                 rdfs:label "selenium atom" .
 
@@ -1852,8 +1855,7 @@ obo:CHEBI_27573 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/CHEBI_27594
 obo:CHEBI_27594 rdf:type owl:Class ;
-                rdfs:subClassOf obo:CHEBI_23367 ,
-                                obo:CHEBI_25585 ;
+                rdfs:subClassOf obo:CHEBI_25585 ;
                 rdfs:label "carbon atom" .
 
 
@@ -1922,8 +1924,7 @@ obo:CHEBI_29287 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/CHEBI_30145
 obo:CHEBI_30145 rdf:type owl:Class ;
-                rdfs:subClassOf obo:CHEBI_23367 ,
-                                obo:CHEBI_33521 ;
+                rdfs:subClassOf obo:CHEBI_33521 ;
                 rdfs:label "lithium atom" .
 
 
@@ -1983,8 +1984,7 @@ obo:CHEBI_30513 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/CHEBI_30514
 obo:CHEBI_30514 rdf:type owl:Class ;
-                rdfs:subClassOf obo:CHEBI_23367 ,
-                                obo:CHEBI_33521 ;
+                rdfs:subClassOf obo:CHEBI_33521 ;
                 rdfs:label "caesium atom" .
 
 
@@ -2002,8 +2002,7 @@ obo:CHEBI_30687 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/CHEBI_32594
 obo:CHEBI_32594 rdf:type owl:Class ;
-                rdfs:subClassOf obo:CHEBI_23367 ,
-                                obo:CHEBI_33521 ;
+                rdfs:subClassOf obo:CHEBI_33521 ;
                 rdfs:label "barium atom" .
 
 
@@ -2110,8 +2109,7 @@ obo:CHEBI_33363 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/CHEBI_33364
 obo:CHEBI_33364 rdf:type owl:Class ;
-                rdfs:subClassOf obo:CHEBI_23367 ,
-                                obo:CHEBI_33521 ;
+                rdfs:subClassOf obo:CHEBI_33521 ;
                 rdfs:label "platinum" .
 
 
@@ -2374,8 +2372,7 @@ obo:IAO_0000100 rdf:type owl:Class ;
                 obo:IAO_0000116 "2009/10/23 Alan Ruttenberg. The intention is that this term represent collections of like data. So this isn't for, e.g. the whole contents of a cel file, which includes parameters, metadata etc. This is more like java arrays of a certain rather specific type"@en ,
                                 "2014-05-05: Data sets are aggregates and thus must include two or more data items. We have chosen not to add logical axioms to make this restriction." ;
                 obo:IAO_0000119 "group:OBI"@en ;
-                rdfs:label "data set"@en ,
-                           "homogenous data collection"@en .
+                rdfs:label "homogenous data collection"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000101
@@ -2735,7 +2732,10 @@ obo:OBI_0000835 rdf:type owl:Class ;
 
 
 ###  http://purl.obolibrary.org/obo/OBI_0001930
-obo:OBI_0001930 rdf:type owl:Class .
+obo:OBI_0001930 rdf:type owl:Class ;
+                rdfs:subClassOf obo:OBI_0001933 ;
+                obo:IAO_0000115 "A value specification that is specifies one category out of a fixed number of nominal categories"@en ;
+                rdfs:label "categorical value specification" .
 
 
 ###  http://purl.obolibrary.org/obo/OBI_0001931
@@ -3088,9 +3088,14 @@ co:PMD_0000002 rdf:type owl:Class ;
 
 ###  https://w3id.org/pmd/co/PMD_0000005
 co:PMD_0000005 rdf:type owl:Class ;
-               rdfs:subClassOf co:PMD_0020353 ,
+               rdfs:subClassOf obo:BFO_0000016 ,
+                               co:PMD_0020353 ,
                                co:PMD_0023004 ,
-                               _:genid175 ;
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty obo:BFO_0000054 ;
+                                 owl:someValuesFrom co:PMD_0000950
+                               ] ,
+                               _:genid177 ;
                obo:IAO_0000114 obo:IAO_0000122 ;
                obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:comment """A property is a material trait in terms of the kind and magnitude of response to a specific imposed stimulus. Generally, definitions of properties are made independent of material shape and size.
@@ -3102,11 +3107,12 @@ As a consequence, material properties in the ontology are differeciated accordin
 
 Extensive properties that depend on the object being tested rather than on the portion of matter are (extensive) object- or system-properties."""@en ;
                rdfs:label "Materialeigenschaft"@de ,
-                          "material performance property"@en ;
+                          "material performance property"@en ,
+                          "material property"@en ;
                skos:definition "a disposition of a portion of matter that is realized in a compatible process and whose realization is grounded in the portions intensive qualities"@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
-_:genid175 rdf:type owl:Restriction ;
+_:genid177 rdf:type owl:Restriction ;
             owl:onProperty obo:RO_0000052 ;
             owl:someValuesFrom [ owl:intersectionOf ( co:PMD_0000001
                                                       [ rdf:type owl:Restriction ;
@@ -3120,7 +3126,7 @@ _:genid175 rdf:type owl:Restriction ;
 [ rdf:type owl:Axiom ;
    owl:annotatedSource co:PMD_0000005 ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid175 ;
+   owl:annotatedTarget _:genid177 ;
    rdfs:comment "Due to the duality of object and portion of matter this axiom can not be an equivalent class axiom."@en
  ] .
 
@@ -3202,7 +3208,24 @@ co:PMD_0000075 rdf:type owl:Class ;
 
 ###  https://w3id.org/pmd/co/PMD_0000103
 co:PMD_0000103 rdf:type owl:Class ;
-               rdfs:subClassOf co:PMD_0000833 ;
+               owl:equivalentClass [ owl:intersectionOf ( co:PMD_0000833
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty obo:RO_0000059 ;
+                                                            owl:someValuesFrom <https://w3id.org/pmd/hto/HTO_0000002>
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:subClassOf co:PMD_0000833 ,
+                               co:PMD_0000950 ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty obo:BFO_0000055 ;
+                                 owl:someValuesFrom co:PMD_0010013
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty obo:RO_0000059 ;
+                                 owl:someValuesFrom <https://w3id.org/pmd/hto/HTO_0000002>
+                               ] ;
                rdfs:label "hardening"@en ;
                skos:altLabel "toughening" ;
                skos:definition "A manufacturing process that increases the strength and hardness of a material."@en .
@@ -3282,6 +3305,18 @@ co:PMD_0000549 rdf:type owl:Class ;
                skos:definition "Temperaturänderung ist ein Prozess, bei dem ein Teilnehmer seine Temperatur ändert"@de ,
                                "change of temperature is a process in which a particpant changes its temperature"@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0000550
+co:PMD_0000550 rdf:type owl:Class ;
+               rdfs:subClassOf co:PMD_0000833 ;
+               rdfs:label "Stoffeigenschaft Ändern"@de ,
+                          "changing properties of material"@en ;
+               skos:altLabel "Changing Of Material  Properties"@en ,
+                             "Property Alteration"@en ;
+               skos:definition "A manufacturing process that modifies the characteristics of the material from which a workpiece is made, including by processes at the submicroscopic or atomic scale, such as atomic diffusion, dislocation formation and movement in the atomic lattice or chemical reactions, whereby the resulting shape changes are not characteristic of these processes."@en ,
+                               "Ein Herstellungsprozess, der die Merkmale des Materials, aus dem ein Werkstück gefertigt ist, modifiziert, was unter anderem durch Vorgänge im submikroskopischen oder atomaren Bereich erfolgt, wie etwa durch Atomdiffusion, die Versetzungsentstehung und -bewegung im Atomgitter oder durch chemische Reaktionen, wobei die dabei auftretenden Formveränderungen nicht charakteristisch für diese Verfahren sind."@de ;
+               skos:example "Heat Treatment"@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0000551
@@ -3750,7 +3785,14 @@ co:PMD_0000776 rdf:type owl:Class ;
 
 
 ###  https://w3id.org/pmd/co/PMD_0000779
-co:PMD_0000779 rdf:type owl:Class .
+co:PMD_0000779 rdf:type owl:Class ;
+               rdfs:subClassOf co:PMD_0000550 ;
+               rdfs:label "Wärmebehandlung"@de ,
+                          "heat treatment"@en ;
+               skos:altLabel "Wärmebehandeln"@de ;
+               skos:definition "A changing properties of material process in which a solid (ferrous) product is fully or partially exposed to specific time-temperature sequences through a series of process steps with the aim of modifying its properties and/or its internal structure."@en ,
+                               "Ein Stoffeigenschaft Ändern Prozess, bei dem durch eine Reihe von Verfahrensschritten ein festes (Eisen-)Produkt ganz oder teilweise bestimmten Zeit-Temperatur-Abfolgen ausgesetzt wird, mit dem Ziel, seine Eigenschaften und/oder seine innere Struktur zu modifizieren."@de ;
+               skos:example "Annealing, Ageing, Hardening"@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0000789
@@ -4009,12 +4051,50 @@ co:PMD_0000946 rdf:type owl:Class ;
 
 ###  https://w3id.org/pmd/co/PMD_0000950
 co:PMD_0000950 rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( obo:BFO_0000015
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty obo:BFO_0000055 ;
+                                                            owl:someValuesFrom [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                                                                        owl:unionOf ( obo:BFO_0000016
+                                                                                                                      co:PMD_0000005
+                                                                                                                    )
+                                                                                                      ]
+                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                        owl:onProperty obo:RO_0000052 ;
+                                                                                                        owl:someValuesFrom co:PMD_0000001
+                                                                                                      ]
+                                                                                                    ) ;
+                                                                                 rdf:type owl:Class
+                                                                               ]
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:subClassOf obo:BFO_0000015 ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty obo:BFO_0000055 ;
+                                 owl:someValuesFrom [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                                             owl:unionOf ( obo:BFO_0000016
+                                                                                           co:PMD_0000005
+                                                                                         )
+                                                                           ]
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty obo:RO_0000052 ;
+                                                                             owl:someValuesFrom co:PMD_0000001
+                                                                           ]
+                                                                         ) ;
+                                                      rdf:type owl:Class
+                                                    ]
+                               ] ;
                rdfs:comment "Might come back later with appropriate axioms" ;
                rdfs:label "DEPRECATED anregender Prozess"@de ,
-                          "DEPRECATED stimulating process"@en ;
+                          "DEPRECATED stimulating process"@en ,
+                          "stimulating process"@en ;
                owl:deprecated "true"^^xsd:boolean ;
                skos:definition "DEPRECATED Der Stimulationsprozess ist ein Prozess, der die Anwendung eines äußeren Einflusses wie Kraft, Wärme oder Strahlung beschreibt, um die materielle Reaktion zu untersuchen."@de ,
-                               "DEPRECATED The stimulating process is a process describing the application of an external influence, such as force, heat, or radiation, to study material response."@en .
+                               "DEPRECATED The stimulating process is a process describing the application of an external influence, such as force, heat, or radiation, to study material response."@en ,
+                               "The stimulating process is a process describing the application of an external influence, such as force, heat, or radiation, to study material response."@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
 
 
 ###  https://w3id.org/pmd/co/PMD_0000952
@@ -4107,7 +4187,8 @@ co:PMD_0000965 rdf:type owl:Class ;
 
 ###  https://w3id.org/pmd/co/PMD_0000967
 co:PMD_0000967 rdf:type owl:Class ;
-               rdfs:subClassOf co:PMD_0023043 ;
+               rdfs:subClassOf co:PMD_0020131 ,
+                               co:PMD_0023043 ;
                obo:IAO_0000114 obo:IAO_0000122 ;
                obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
                rdfs:comment "The concept refers to an absolute temperature, not to be mistaken with temperature difference."@en ,
@@ -4240,6 +4321,13 @@ co:PMD_0001998 rdf:type owl:Class ;
                skos:definition "A device designed to cut, slice, divide, or sever objects."@en .
 
 
+###  https://w3id.org/pmd/co/PMD_0010013
+co:PMD_0010013 rdf:type owl:Class ;
+               rdfs:subClassOf co:PMD_0000005 ;
+               rdfs:label "hardenable" ;
+               skos:definition "a disposition to gain a greatly increased hardness at the surface or entire volume by the process of hardening" .
+
+
 ###  https://w3id.org/pmd/co/PMD_0010020
 co:PMD_0010020 rdf:type owl:Class ;
                owl:equivalentClass [ owl:intersectionOf ( co:PMD_0020140
@@ -4325,6 +4413,24 @@ To understand the difference between the composition and the composition data it
                skos:definition "Bei einem Zusammensetzungsdatenelement handelt es sich um eine Informationsinhaltseinheit, die sich mit der Zusammensetzung einer materiellen Einheit befasst. Es verfügt über Bruchwertspezifikationen für Mitglieder, die Werte von Anteilen von Verbindungen angeben, die Teile der materiellen Einheit sind."@de ,
                                "Composition data entity is an information content entity that is about composition of a material enity. It has members fraction value specifications which specifiy values of propotions of compounds, which are parts of the material enity."@en ;
                skos:example "Nitric acid solution has quality  composition, and  the composition data item is about this composition.The composition data item has members fraction specifications of nitric acid, e.g., 4 vol.%, and distilled water. These fraction specifications specify value of pure substances of nitric acid and distilled water, respectively. Furthermore, these fraction specifications specify values of relational qualities (volume) proportion of nitric acid and (volume) proportion of distilled water."@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0020023
+co:PMD_0020023 rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Class ;
+                                     owl:oneOf ( co:PMD_0020027
+                                                 co:PMD_0020097
+                                                 co:PMD_0020100
+                                                 co:PMD_0020107
+                                                 co:PMD_0020109
+                                                 co:PMD_0020110
+                                                 co:PMD_0020111
+                                               )
+                                   ] ;
+               rdfs:subClassOf obo:OBI_0001930 ;
+               rdfs:label "metallic grain structures"@en ;
+               skos:definition "The metallic grain structures is a categorical value specification that specifies value of the  metallic grain structure quality. It describes the morphology of polycrystalline metallic materials. Polycrystalline metallic materials will typically form their grain structures as one of those categories or a transition or mixture state of those."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -5439,6 +5545,31 @@ co:PMD_0020096 rdf:type owl:Class ;
                skos:definition "ferrous metal that consists of iron and carbon and possibly other alloying elements (and possibly impurities)"@en .
 
 
+###  https://w3id.org/pmd/co/PMD_0020099
+co:PMD_0020099 rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Class ;
+                                     owl:oneOf ( co:PMD_0020006
+                                                 co:PMD_0020007
+                                                 co:PMD_0020008
+                                                 co:PMD_0020009
+                                                 co:PMD_0020010
+                                                 co:PMD_0020011
+                                                 co:PMD_0020012
+                                                 co:PMD_0020013
+                                                 co:PMD_0020014
+                                                 co:PMD_0020015
+                                                 co:PMD_0020016
+                                                 co:PMD_0020017
+                                                 co:PMD_0020018
+                                                 co:PMD_0020019
+                                               )
+                                   ] ;
+               rdfs:subClassOf obo:OBI_0001930 ;
+               rdfs:label "bravais lattice (3D)"@en ;
+               skos:definition "The bravais lattice is a categorical value specification that specifies value of the crystal structure quality. It describes the possible geometric arrangement of lattice points in a crystal. The present descriptor is limited to the 14 possible three-dimensional arrangements."@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
 ###  https://w3id.org/pmd/co/PMD_0020101
 co:PMD_0020101 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020353 ,
@@ -5542,6 +5673,26 @@ co:PMD_0020114 rdf:type owl:Class ;
                skos:example "Air in the air cooling process, N2 atmosphere in a furnace cooling process, oil in a quenching process, crystal lattice in a solid state diffusion"@en .
 
 
+###  https://w3id.org/pmd/co/PMD_0020116
+co:PMD_0020116 rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Class ;
+                                     owl:oneOf ( co:PMD_0020117
+                                                 co:PMD_0020118
+                                                 co:PMD_0020119
+                                                 co:PMD_0020120
+                                                 co:PMD_0020121
+                                                 co:PMD_0020122
+                                                 co:PMD_0020123
+                                                 co:PMD_0020124
+                                                 co:PMD_0020125
+                                               )
+                                   ] ;
+               rdfs:subClassOf obo:OBI_0001930 ;
+               rdfs:label "aggregate state value"@en ;
+               skos:definition "The aggregate state value is a categorical value specification that specifies value of the aggregate state quality."@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
 ###  https://w3id.org/pmd/co/PMD_0020128
 co:PMD_0020128 rdf:type owl:Class ;
                owl:equivalentClass [ owl:intersectionOf ( obo:BFO_0000040
@@ -5559,6 +5710,20 @@ co:PMD_0020128 rdf:type owl:Class ;
                                ] ;
                rdfs:label "thermodynamic system"@en ;
                skos:definition "A thermodynamic system is a material entity whose parts are bearer of thermodynamic properties. A thermodynamic system environs a thermodynamic process by which the thermodynamic properties of the objects of the thermodynamic system change over time."@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0020131
+co:PMD_0020131 rdf:type owl:Class ;
+               rdfs:subClassOf obo:BFO_0000019 ,
+                               co:PMD_0023004 ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty obo:RO_0000080 ;
+                                 owl:someValuesFrom co:PMD_0000001
+                               ] ;
+               rdfs:label "intensive quality"@en ;
+               skos:altLabel "Point property"@en ;
+               skos:definition "An intensive quality is a quality that inheres in only portion of matter and thus is independent of the bearers (system-) size."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -5809,11 +5974,21 @@ co:PMD_0020210 rdf:type owl:Class ;
 
 ###  https://w3id.org/pmd/co/PMD_0020216
 co:PMD_0020216 rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Class ;
+                                     owl:oneOf ( co:PMD_0020217
+                                                 co:PMD_0020218
+                                                 co:PMD_0020219
+                                                 co:PMD_0020242
+                                               )
+                                   ] ;
+               rdfs:subClassOf obo:OBI_0001930 ;
                rdfs:comment "Use appropriate class from crystall ontology instead" ;
-               rdfs:label "DEPRECATED order scale value"@en ;
+               rdfs:label "DEPRECATED order scale value"@en ,
+                          "order scale value"@en ;
                owl:deprecated "true"^^xsd:boolean ;
                skos:definition "DEPRECATED Mögliche Werte der charakteristischen Länge, über die strukturelle Zusammenhänge in einem Material bestehen bleiben"@de ,
-                               "DEPRECATED possible values of characteristic length over which structural correlations persist in a material"@en .
+                               "DEPRECATED possible values of characteristic length over which structural correlations persist in a material"@en ,
+                               "possible values of characteristic length over which structural correlations persist in a material"@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020227
@@ -9398,11 +9573,19 @@ co:PMD_0060006 rdf:type owl:Class ;
 
 
 ###  https://w3id.org/pmd/co/PMD_0060008
-co:PMD_0060008 rdf:type owl:Class .
+co:PMD_0060008 rdf:type owl:Class ;
+               rdfs:subClassOf obo:IAO_0000104 ;
+               rdfs:label "recipe"@en ;
+               skos:definition "A plan specification that outlines the ingredients, proportions, and procedural steps required to prepare a specific product, typically in cooking, manufacturing, or chemical processes."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0060009
-co:PMD_0060009 rdf:type owl:Class .
+co:PMD_0060009 rdf:type owl:Class ;
+               rdfs:subClassOf obo:IAO_0000033 ;
+               rdfs:label "specification datum"@en ;
+               skos:definition "A directive information entity that provides information of a setpoint of some value, i.e., it is an intended value."@en ;
+               skos:example "The setpoint value of a ultimate tensile strength of some steel material"@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
 
 
 ###  https://w3id.org/pmd/co/PMD_0080019
@@ -9515,8 +9698,8 @@ co:PMD_0080100 rdf:type owl:Class ;
 co:PMD_0080108 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020311 ,
                                co:PMD_0023004 ,
-                               _:genid2135 ,
-                               _:genid2141 ,
+                               _:genid2201 ,
+                               _:genid2207 ,
                                [ rdf:type owl:Restriction ;
                                  owl:onProperty obo:RO_0000052 ;
                                  owl:someValuesFrom co:PMD_0000001
@@ -9528,7 +9711,7 @@ co:PMD_0080108 rdf:type owl:Class ;
                skos:example "A cross-section of a loaded steel column bears a compressive stress of 150 MPa"@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
-_:genid2135 owl:intersectionOf ( [ rdf:type owl:Restriction ;
+_:genid2201 owl:intersectionOf ( [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:RO_0002328 ;
                                     owl:someValuesFrom co:PMD_0020200
                                   ]
@@ -9539,7 +9722,7 @@ _:genid2135 owl:intersectionOf ( [ rdf:type owl:Restriction ;
                                 ) ;
              rdf:type owl:Class .
 
-_:genid2141 owl:intersectionOf ( [ rdf:type owl:Restriction ;
+_:genid2207 owl:intersectionOf ( [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:RO_0002328 ;
                                     owl:someValuesFrom co:PMD_0020352
                                   ]
@@ -9553,14 +9736,14 @@ _:genid2141 owl:intersectionOf ( [ rdf:type owl:Restriction ;
 [ rdf:type owl:Axiom ;
    owl:annotatedSource co:PMD_0080108 ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid2135 ;
+   owl:annotatedTarget _:genid2201 ;
    rdfs:comment "Mechanical view on stress"@en
  ] .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource co:PMD_0080108 ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid2141 ;
+   owl:annotatedTarget _:genid2207 ;
    rdfs:comment "Thermodynamic view on stress"@en
  ] .
 
@@ -9568,14 +9751,14 @@ _:genid2141 owl:intersectionOf ( [ rdf:type owl:Restriction ;
 ###  https://w3id.org/pmd/co/PMD_0080116
 co:PMD_0080116 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000019 ,
-                               _:genid2148 ;
+                               _:genid2214 ;
                obo:IAO_0000117 "Philipp von Hartrott" ;
                rdfs:comment "Every potential in physics is the same mathematical object — a partial derivative of energy with respect to its conjugate extensive quantity. The differences are only in which extensive quality you're considering."@en ;
                rdfs:label "potential"@en ;
                skos:definition "a partial derivative of energy with respect to its conjugate extensive quantity"@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
-_:genid2148 owl:intersectionOf ( [ rdf:type owl:Restriction ;
+_:genid2214 owl:intersectionOf ( [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:RO_0002328 ;
                                     owl:someValuesFrom co:PMD_0020142
                                   ]
@@ -9589,7 +9772,7 @@ _:genid2148 owl:intersectionOf ( [ rdf:type owl:Restriction ;
 [ rdf:type owl:Axiom ;
    owl:annotatedSource co:PMD_0080116 ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid2148 ;
+   owl:annotatedTarget _:genid2214 ;
    rdfs:comment """In field theories (e.g., gravity, electrostatics), the potential becomes a field ϕ(r⃗), and the force is recovered via:
 F=−∇ϕ(r⃗)F
 This is the spatial analogue: instead of asking \"how does energy change per unit carrier added?\", you ask \"how does energy change per unit carrier moved in space?\""""@en
@@ -9605,8 +9788,7 @@ This is the spatial analogue: instead of asking \"how does energy change per uni
 
 ###  https://w3id.org/pmd/hto/HTO_0000003
 <https://w3id.org/pmd/hto/HTO_0000003> rdf:type owl:Class ;
-                                       rdfs:subClassOf obo:IAO_0000030 ,
-                                                       <https://w3id.org/pmd/hto/HTO_0000032> ,
+                                       rdfs:subClassOf <https://w3id.org/pmd/hto/HTO_0000032> ,
                                                        [ rdf:type owl:Restriction ;
                                                          owl:onProperty obo:IAO_0000136 ;
                                                          owl:someValuesFrom <https://w3id.org/pmd/hto/HTO_0000005>
@@ -9648,8 +9830,7 @@ This is the spatial analogue: instead of asking \"how does energy change per uni
 
 ###  https://w3id.org/pmd/hto/HTO_0000006
 <https://w3id.org/pmd/hto/HTO_0000006> rdf:type owl:Class ;
-                                       rdfs:subClassOf obo:IAO_0000030 ,
-                                                       <https://w3id.org/pmd/hto/HTO_0000032> ,
+                                       rdfs:subClassOf <https://w3id.org/pmd/hto/HTO_0000032> ,
                                                        [ rdf:type owl:Restriction ;
                                                          owl:onProperty obo:IAO_0000039 ;
                                                          owl:someValuesFrom <https://w3id.org/pmd/hto/HTO_0000010>
@@ -9671,8 +9852,7 @@ This is the spatial analogue: instead of asking \"how does energy change per uni
 
 ###  https://w3id.org/pmd/hto/HTO_0000008
 <https://w3id.org/pmd/hto/HTO_0000008> rdf:type owl:Class ;
-                                       rdfs:subClassOf obo:IAO_0000030 ,
-                                                       <https://w3id.org/pmd/hto/HTO_0000032> ,
+                                       rdfs:subClassOf <https://w3id.org/pmd/hto/HTO_0000032> ,
                                                        [ rdf:type owl:Restriction ;
                                                          owl:onProperty obo:IAO_0000136 ;
                                                          owl:someValuesFrom <https://w3id.org/pmd/hto/HTO_0000009>
@@ -12835,44 +13015,241 @@ qudt:DerivedUnit rdf:type owl:NamedIndividual .
                                               qudt:Unit .
 
 
+###  https://w3id.org/pmd/co/PMD_0020006
+co:PMD_0020006 rdf:type owl:NamedIndividual ;
+               rdfs:label "bravais lattice triclinic primitive"@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0020007
+co:PMD_0020007 rdf:type owl:NamedIndividual ;
+               rdfs:label "bravais lattice monoclinic primitive"@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0020008
+co:PMD_0020008 rdf:type owl:NamedIndividual ;
+               rdfs:label "bravais lattice monoclinic base-centered"@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0020009
+co:PMD_0020009 rdf:type owl:NamedIndividual ;
+               rdfs:label "bravais lattice orthorombic primitive"@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0020010
+co:PMD_0020010 rdf:type owl:NamedIndividual ;
+               rdfs:label "bravais lattice orthorhombic base-centered"@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0020011
+co:PMD_0020011 rdf:type owl:NamedIndividual ;
+               rdfs:label "bravais lattice orthorhombic body-centered"@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0020012
+co:PMD_0020012 rdf:type owl:NamedIndividual ;
+               rdfs:label "bravais lattice orthorhombic face-centered"@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0020013
+co:PMD_0020013 rdf:type owl:NamedIndividual ;
+               rdfs:label "bravais lattice tetragonal primitive"@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0020014
+co:PMD_0020014 rdf:type owl:NamedIndividual ;
+               rdfs:label "bravais lattice tetragonal body-centered"@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0020015
+co:PMD_0020015 rdf:type owl:NamedIndividual ;
+               rdfs:label "bravais lattice hexagonal rhombohedral primitive"@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0020016
+co:PMD_0020016 rdf:type owl:NamedIndividual ;
+               rdfs:label "bravais lattice hexagonal hexagonal primitive"@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0020017
+co:PMD_0020017 rdf:type owl:NamedIndividual ;
+               rdfs:label "bravais lattice cubic primitive"@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0020018
+co:PMD_0020018 rdf:type owl:NamedIndividual ;
+               rdfs:label "bravais lattice cubic body-centered"@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0020019
+co:PMD_0020019 rdf:type owl:NamedIndividual ;
+               rdfs:label "bravais lattice cubic face-centered"@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0020027
+co:PMD_0020027 rdf:type owl:NamedIndividual ;
+               rdfs:label "bainite"@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0020097
+co:PMD_0020097 rdf:type owl:NamedIndividual ;
+               rdfs:label "austenite"@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0020100
+co:PMD_0020100 rdf:type owl:NamedIndividual ;
+               rdfs:label "ferrite"@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0020107
+co:PMD_0020107 rdf:type owl:NamedIndividual ;
+               rdfs:label "ledeburite"@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0020109
+co:PMD_0020109 rdf:type owl:NamedIndividual ;
+               rdfs:label "pearlite"@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0020110
+co:PMD_0020110 rdf:type owl:NamedIndividual ;
+               rdfs:label "widmanstatten structure"@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0020111
+co:PMD_0020111 rdf:type owl:NamedIndividual ;
+               rdfs:label "martensite"@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0020117
+co:PMD_0020117 rdf:type owl:NamedIndividual ;
+               rdfs:label "aggregate state solid"@en ;
+               skos:definition "A state where the bonds between entities transmit shear forces."@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0020118
+co:PMD_0020118 rdf:type owl:NamedIndividual ;
+               rdfs:label "aggregate state liquid"@en ;
+               skos:definition "A state where the bonds of the entities transmit no shear force."@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0020119
+co:PMD_0020119 rdf:type owl:NamedIndividual ;
+               rdfs:label "aggregate state gaseous"@en ;
+               skos:definition "A state where the entities have no bonding."@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0020120
+co:PMD_0020120 rdf:type owl:NamedIndividual ;
+               rdfs:label "aggregate state plasma"@en ;
+               skos:definition "An aggregate state where the entities are atom nuclei and have no bonds."@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0020121
+co:PMD_0020121 rdf:type owl:NamedIndividual ;
+               rdfs:label "aggregate state atom gas"@en ;
+               skos:definition "A gaseous state where the gas entities are atoms."@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0020122
+co:PMD_0020122 rdf:type owl:NamedIndividual ;
+               rdfs:label "aggregate state supercritical fluid"@en ;
+               skos:definition "A state with strong bindings between entities that do not transmit shear force."@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0020123
+co:PMD_0020123 rdf:type owl:NamedIndividual ;
+               rdfs:label "aggregate state mesomorphic"@en ;
+               skos:definition "A state where some bonds transmit shear stresses and some do not."@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0020124
+co:PMD_0020124 rdf:type owl:NamedIndividual ;
+               rdfs:label "aggregate state suprafluid"@en ;
+               skos:definition "A state with frictionless binding that transmits no shear force between entities."@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0020125
+co:PMD_0020125 rdf:type owl:NamedIndividual ;
+               rdfs:label "aggregate state suprasolid"@en ;
+               skos:definition "A state that exhibits suprafluid and solid properties."@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
+
+
 ###  https://w3id.org/pmd/co/PMD_0020217
 co:PMD_0020217 rdf:type owl:NamedIndividual ,
                         co:PMD_0020216 ;
                rdfs:comment "Use appropriate class from crystall ontology instead" ;
-               rdfs:label "DEPRECATED short range order"@en ;
+               rdfs:label "DEPRECATED short range order"@en ,
+                          "short range order"@en ;
                owl:deprecated "true"^^xsd:boolean ;
                skos:definition "DEPRECATED periodic arrangement of structural features up to a few entities"@en ,
-                               "DEPRECATED periodische Anordnung von Strukturmerkmalen bis hin zu wenigen Einheiten"@de .
+                               "DEPRECATED periodische Anordnung von Strukturmerkmalen bis hin zu wenigen Einheiten"@de ,
+                               "periodic arrangement of structural features up to a few entities"@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020218
 co:PMD_0020218 rdf:type owl:NamedIndividual ,
                         co:PMD_0020216 ;
                rdfs:comment "Use appropriate class from crystall ontology instead" ;
-               rdfs:label "DEPRECATED medium range order"@en ;
+               rdfs:label "DEPRECATED medium range order"@en ,
+                          "medium range order"@en ;
                owl:deprecated "true"^^xsd:boolean ;
                skos:definition "DEPRECATED periodic arrangement of structural features of many entities"@en ,
-                               "DEPRECATED periodische Anordnung struktureller Merkmale vieler Entitäten"@de .
+                               "DEPRECATED periodische Anordnung struktureller Merkmale vieler Entitäten"@de ,
+                               "periodic arrangement of structural features of many entities"@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020219
 co:PMD_0020219 rdf:type owl:NamedIndividual ,
                         co:PMD_0020216 ;
                rdfs:comment "Use appropriate class from crystall ontology instead" ;
-               rdfs:label "DEPRECATED long range order"@en ;
+               rdfs:label "DEPRECATED long range order"@en ,
+                          "long range order"@en ;
                owl:deprecated "true"^^xsd:boolean ;
                skos:definition "DEPRECATED periodic arrangement of structural features of virtually all entities"@en ,
-                               "DEPRECATED periodische Anordnung struktureller Merkmale praktisch aller Entitäten"@de .
+                               "DEPRECATED periodische Anordnung struktureller Merkmale praktisch aller Entitäten"@de ,
+                               "periodic arrangement of structural features of virtually all entities"@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020242
 co:PMD_0020242 rdf:type owl:NamedIndividual ,
                         co:PMD_0020216 ;
                rdfs:comment "Use appropriate class from crystall ontology instead" ;
-               rdfs:label "DEPRECATED no range order"@en ;
+               rdfs:label "DEPRECATED no range order"@en ,
+                          "no range order"@en ;
                owl:deprecated "true"^^xsd:boolean ;
                skos:definition "DEPRECATED keine periodische Anordnung struktureller Merkmale von Entitäten"@de ,
-                               "DEPRECATED no periodic arrangement of structural features of entites"@en .
+                               "DEPRECATED no periodic arrangement of structural features of entites"@en ,
+                               "no periodic arrangement of structural features of entites"@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020368

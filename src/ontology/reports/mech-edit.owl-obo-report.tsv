@@ -1,115 +1,115 @@
 Level	Rule Name	Subject	Property	Value
-WARN	missing_definition	fatigue loading type value	definition	
-WARN	missing_definition	fatigue loading type	definition	
-WARN	missing_definition	control type value	definition	
-WARN	missing_definition	control type of a mechanical test	definition	
-WARN	missing_definition	fatigue waveform	definition	
-WARN	missing_definition	fatigue testing frequency	definition	
-WARN	missing_definition	fatigue strength	definition	
-WARN	missing_definition	loading amplitude	definition	
-WARN	missing_definition	fatigue mean stress	definition	
-WARN	missing_definition	loading ratio	definition	
-WARN	missing_definition	stress ratio	definition	
-WARN	missing_definition	strain ratio	definition	
-WARN	missing_definition	load ratio	definition	
-WARN	missing_definition	stress amplitude	definition	
-WARN	missing_definition	strain amplitude	definition	
-WARN	missing_definition	fatigue maximum stress	definition	
-WARN	missing_definition	fatigue minimum stress	definition	
-WARN	missing_definition	loading ratio type value	definition	
-WARN	missing_definition	fatigue cycle limit	definition	
-WARN	missing_definition	fatigue strength at cycle limit	definition	
-WARN	missing_definition	fatigue endurance limit	definition	
-WARN	missing_definition	knee point	definition	
-WARN	missing_definition	slope of S-N curve	definition	
-WARN	missing_definition	failure criterion	definition	
-WARN	missing_definition	tensile fatigue testing machine	definition	
-WARN	missing_definition	ultrasonic fatigue testing machine	definition	
-WARN	missing_definition	S-N curve	definition	
-WARN	missing_definition	axis label of fatigue curve	definition	
-WARN	missing_definition	y-axis label of fatigue curve	definition	
-WARN	missing_definition	x-axis label of fatigue curve	definition	
-WARN	missing_definition	semi-log S-N curve	definition	
-WARN	missing_definition	log-log S-N curve	definition	
-WARN	missing_definition	linear S-N curve	definition	
-WARN	missing_definition	fatigue life curve	definition	
-WARN	missing_definition	ε-N curve	definition	
-WARN	missing_definition	rolling contact fatigue testing process	definition	
-WARN	missing_definition	tensile fatigue testing process	definition	
-WARN	missing_definition	number of sustained loading cycles	definition	
-WARN	missing_definition	single fatigue testing process with run out	definition	
-WARN	missing_definition	fatigue failure	definition	
-WARN	missing_definition	single fatigue testing process with failure	definition	
-WARN	missing_definition	fatigue test run out	definition	
-WARN	missing_definition	range of motion specification	definition	
-WARN	missing_definition	evaluation software	definition	
-WARN	missing_definition	fatigue test control software	definition	
-WARN	missing_definition	actuator	definition	
-WARN	missing_definition	piezo actuator	definition	
-WARN	missing_definition	initial crack length	definition	
-WARN	missing_definition	engineering stress-strain curve	definition	
-WARN	missing_definition	true stress-strain curve	definition	
-WARN	missing_definition	true stress-compression curve	definition	
-WARN	missing_definition	hot compression testing process	definition	
-WARN	missing_definition	compressive yield strength	definition	
-WARN	missing_definition	compressive proof strength	definition	
-WARN	missing_definition	compressive proof strength dp02	definition	
-WARN	missing_definition	compressive strength	definition	
-WARN	missing_definition	ductility	definition	
-WARN	missing_definition	height reduction	definition	
-WARN	missing_definition	strain rate sensitivity	definition	
-WARN	missing_definition	deformation activation energy	definition	
-WARN	missing_definition	dynamic recrystallization onset	definition	
-WARN	missing_definition	load step cycles	definition	
-WARN	missing_definition	energy dissipation under cyclic loading	definition	
-WARN	missing_definition	stress-strain hysteresis curve	definition	
-WARN	missing_definition	plastic strain vs number of cycles curve	definition	
-WARN	missing_definition	fatigue damage indicator	definition	
-WARN	missing_definition	fatigue strength coefficient	definition	
-WARN	missing_definition	fatigue strength exponent	definition	
-WARN	missing_definition	crack propagation fatigue testing process	definition	
-WARN	missing_definition	crack length vs number of cycles curve	definition	
-WARN	missing_definition	crack growth rate	definition	
-WARN	missing_definition	scaling factor of Paris law	definition	
-WARN	missing_definition	slope of Paris law	definition	
-WARN	missing_definition	threshold stress intensity factor	definition	
-WARN	missing_definition	stress intensity factor range	definition	
-WARN	missing_definition	fracture toughness	definition	
-WARN	missing_definition	scatter band of a fatigue curve	definition	
-WARN	missing_definition	fatigue scatter bandwidth	definition	
-WARN	missing_definition	crack length	definition	
-WARN	missing_definition	yield strength at 1050°C and argon atmosphere	definition	
-WARN	missing_definition	yield strength at 1100°C and argon atmosphere	definition	
-WARN	missing_definition	yield strength at 1150°C and argon atmosphere	definition	
-WARN	missing_definition	yield strength at 1050°C and air atmosphere	definition	
-WARN	missing_definition	motor	definition	
-WARN	missing_definition	yield strength at 1150°C and air atmosphere	definition	
-WARN	missing_definition	yield strength at 1100°C and air atmosphere	definition	
-WARN	missing_definition	air	definition	
-WARN	missing_definition	fatigue alternating strength	definition	
-WARN	missing_definition	percentage reduction of area at fracture	definition	
-WARN	missing_definition	fatigue test evaluation process	definition	
-WARN	missing_definition	S-N curve parameter estimation process	definition	
-WARN	missing_definition	S-N curve parameter estimation removing UHCF data	definition	
-WARN	missing_definition	Jurojin software	definition	
-WARN	missing_definition	carbon equivalent value	definition	
-WARN	missing_definition	stress concentration factor	definition	
-WARN	missing_definition	Rz	definition	
-WARN	missing_definition	surface hardness	definition	
-WARN	missing_definition	core hardness	definition	
-WARN	missing_definition	vickers hardness to tensile strength conversion	definition	
-WARN	missing_definition	rockwell hardness to tensile strength conversion	definition	
-WARN	missing_definition	tensile strength to vickers hardness conversion	definition	
-WARN	missing_definition	brinell hardness to vickers hardness conversion	definition	
-WARN	missing_definition	rockwell hardness to vickers hardness conversion	definition	
-WARN	missing_definition	mechanical testing specimen role	definition	
-WARN	missing_definition	run out role	definition	
-WARN	missing_definition	failed specimen role	definition	
-WARN	missing_definition	fatigue load-cycle number point	definition	
-WARN	missing_definition	hot tensile testing process	definition	
-WARN	missing_definition	fracture strength	definition	
-WARN	missing_definition	strain hardening exponent	definition	
-WARN	missing_definition	target strain	definition	
-WARN	missing_definition	load increasing fatigue testing process	definition	
-WARN	missing_definition	initial loading amplitute	definition	
-WARN	missing_definition	loading amplitude increment	definition	
+WARN	missing_definition	fatigue loading type value	textual definition	
+WARN	missing_definition	fatigue loading type	textual definition	
+WARN	missing_definition	control type value	textual definition	
+WARN	missing_definition	control type of a mechanical test	textual definition	
+WARN	missing_definition	fatigue waveform	textual definition	
+WARN	missing_definition	fatigue testing frequency	textual definition	
+WARN	missing_definition	fatigue strength	textual definition	
+WARN	missing_definition	loading amplitude	textual definition	
+WARN	missing_definition	fatigue mean stress	textual definition	
+WARN	missing_definition	loading ratio	textual definition	
+WARN	missing_definition	stress ratio	textual definition	
+WARN	missing_definition	strain ratio	textual definition	
+WARN	missing_definition	load ratio	textual definition	
+WARN	missing_definition	stress amplitude	textual definition	
+WARN	missing_definition	strain amplitude	textual definition	
+WARN	missing_definition	fatigue maximum stress	textual definition	
+WARN	missing_definition	fatigue minimum stress	textual definition	
+WARN	missing_definition	loading ratio type value	textual definition	
+WARN	missing_definition	fatigue cycle limit	textual definition	
+WARN	missing_definition	fatigue strength at cycle limit	textual definition	
+WARN	missing_definition	fatigue endurance limit	textual definition	
+WARN	missing_definition	knee point	textual definition	
+WARN	missing_definition	slope of S-N curve	textual definition	
+WARN	missing_definition	failure criterion	textual definition	
+WARN	missing_definition	tensile fatigue testing machine	textual definition	
+WARN	missing_definition	ultrasonic fatigue testing machine	textual definition	
+WARN	missing_definition	S-N curve	textual definition	
+WARN	missing_definition	axis label of fatigue curve	textual definition	
+WARN	missing_definition	y-axis label of fatigue curve	textual definition	
+WARN	missing_definition	x-axis label of fatigue curve	textual definition	
+WARN	missing_definition	semi-log S-N curve	textual definition	
+WARN	missing_definition	log-log S-N curve	textual definition	
+WARN	missing_definition	linear S-N curve	textual definition	
+WARN	missing_definition	fatigue life curve	textual definition	
+WARN	missing_definition	ε-N curve	textual definition	
+WARN	missing_definition	rolling contact fatigue testing process	textual definition	
+WARN	missing_definition	tensile fatigue testing process	textual definition	
+WARN	missing_definition	number of sustained loading cycles	textual definition	
+WARN	missing_definition	single fatigue testing process with run out	textual definition	
+WARN	missing_definition	fatigue failure	textual definition	
+WARN	missing_definition	single fatigue testing process with failure	textual definition	
+WARN	missing_definition	fatigue test run out	textual definition	
+WARN	missing_definition	range of motion specification	textual definition	
+WARN	missing_definition	evaluation software	textual definition	
+WARN	missing_definition	fatigue test control software	textual definition	
+WARN	missing_definition	actuator	textual definition	
+WARN	missing_definition	piezo actuator	textual definition	
+WARN	missing_definition	initial crack length	textual definition	
+WARN	missing_definition	engineering stress-strain curve	textual definition	
+WARN	missing_definition	true stress-strain curve	textual definition	
+WARN	missing_definition	true stress-compression curve	textual definition	
+WARN	missing_definition	hot compression testing process	textual definition	
+WARN	missing_definition	compressive yield strength	textual definition	
+WARN	missing_definition	compressive proof strength	textual definition	
+WARN	missing_definition	compressive proof strength dp02	textual definition	
+WARN	missing_definition	compressive strength	textual definition	
+WARN	missing_definition	ductility	textual definition	
+WARN	missing_definition	height reduction	textual definition	
+WARN	missing_definition	strain rate sensitivity	textual definition	
+WARN	missing_definition	deformation activation energy	textual definition	
+WARN	missing_definition	dynamic recrystallization onset	textual definition	
+WARN	missing_definition	load step cycles	textual definition	
+WARN	missing_definition	energy dissipation under cyclic loading	textual definition	
+WARN	missing_definition	stress-strain hysteresis curve	textual definition	
+WARN	missing_definition	plastic strain vs number of cycles curve	textual definition	
+WARN	missing_definition	fatigue damage indicator	textual definition	
+WARN	missing_definition	fatigue strength coefficient	textual definition	
+WARN	missing_definition	fatigue strength exponent	textual definition	
+WARN	missing_definition	crack propagation fatigue testing process	textual definition	
+WARN	missing_definition	crack length vs number of cycles curve	textual definition	
+WARN	missing_definition	crack growth rate	textual definition	
+WARN	missing_definition	scaling factor of Paris law	textual definition	
+WARN	missing_definition	slope of Paris law	textual definition	
+WARN	missing_definition	threshold stress intensity factor	textual definition	
+WARN	missing_definition	stress intensity factor range	textual definition	
+WARN	missing_definition	fracture toughness	textual definition	
+WARN	missing_definition	scatter band of a fatigue curve	textual definition	
+WARN	missing_definition	fatigue scatter bandwidth	textual definition	
+WARN	missing_definition	crack length	textual definition	
+WARN	missing_definition	yield strength at 1050°C and argon atmosphere	textual definition	
+WARN	missing_definition	yield strength at 1100°C and argon atmosphere	textual definition	
+WARN	missing_definition	yield strength at 1150°C and argon atmosphere	textual definition	
+WARN	missing_definition	yield strength at 1050°C and air atmosphere	textual definition	
+WARN	missing_definition	motor	textual definition	
+WARN	missing_definition	yield strength at 1150°C and air atmosphere	textual definition	
+WARN	missing_definition	yield strength at 1100°C and air atmosphere	textual definition	
+WARN	missing_definition	air	textual definition	
+WARN	missing_definition	fatigue alternating strength	textual definition	
+WARN	missing_definition	percentage reduction of area at fracture	textual definition	
+WARN	missing_definition	fatigue test evaluation process	textual definition	
+WARN	missing_definition	S-N curve parameter estimation process	textual definition	
+WARN	missing_definition	S-N curve parameter estimation removing UHCF data	textual definition	
+WARN	missing_definition	Jurojin software	textual definition	
+WARN	missing_definition	carbon equivalent value	textual definition	
+WARN	missing_definition	stress concentration factor	textual definition	
+WARN	missing_definition	Rz	textual definition	
+WARN	missing_definition	surface hardness	textual definition	
+WARN	missing_definition	core hardness	textual definition	
+WARN	missing_definition	vickers hardness to tensile strength conversion	textual definition	
+WARN	missing_definition	rockwell hardness to tensile strength conversion	textual definition	
+WARN	missing_definition	tensile strength to vickers hardness conversion	textual definition	
+WARN	missing_definition	brinell hardness to vickers hardness conversion	textual definition	
+WARN	missing_definition	rockwell hardness to vickers hardness conversion	textual definition	
+WARN	missing_definition	mechanical testing specimen role	textual definition	
+WARN	missing_definition	run out role	textual definition	
+WARN	missing_definition	failed specimen role	textual definition	
+WARN	missing_definition	fatigue load-cycle number point	textual definition	
+WARN	missing_definition	hot tensile testing process	textual definition	
+WARN	missing_definition	fracture strength	textual definition	
+WARN	missing_definition	strain hardening exponent	textual definition	
+WARN	missing_definition	target strain	textual definition	
+WARN	missing_definition	load increasing fatigue testing process	textual definition	
+WARN	missing_definition	initial loading amplitute	textual definition	
+WARN	missing_definition	loading amplitude increment	textual definition	

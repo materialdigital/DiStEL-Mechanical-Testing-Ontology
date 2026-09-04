@@ -8,7 +8,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<https://w3id.org/pmd/mech/imports/pmdco_import.owl>
 <https://w3id.org/pmd/mech/releases/2026-09-04/imports/pmdco_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <https://w3id.org/pmd/co/3.1.0>)
+Annotation(<http://purl.org/dc/elements/1.1/source> <https://w3id.org/pmd/co/3.1.1>)
 Annotation(owl:versionInfo "2026-09-04")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
@@ -165,7 +165,6 @@ Declaration(Class(<https://w3id.org/pmd/co/PMD_0000005>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000008>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000068>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000075>))
-Declaration(Class(<https://w3id.org/pmd/co/PMD_0000103>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000501>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000502>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000503>))
@@ -540,11 +539,14 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000112> "example of usage"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000112> "example of usage")
 
-# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000115> (definition)
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000115> (textual definition)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000115> "The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000115> "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000115> "A property representing the English language definitions of what NCI means by the concept. They may also include information about the definition's source and attribution in a form that can easily be interpreted by software.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000115> "English language definitions of what NCI means by the concept. These are limited to 1024 characters. They may also include information about the definition's source and attribution in a form that can easily be interpreted by software.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000115> "The official definition.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000115> "2012-04-05: 
 Barry Smith
 
@@ -657,6 +659,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.ob
 
 A continuant cannot be part of an occurrent: use 'participates in'. An occurrent cannot be part of a continuant: use 'has participant'. A material entity cannot be part of an immaterial entity: use 'has location'. A specifically dependent continuant cannot be part of an independent continuant: use 'inheres in'. An independent continuant cannot be part of a specifically dependent continuant: use 'bearer of'."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000050> "part of"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000050> "part of")
 InverseObjectProperties(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BFO_0000051>)
 TransitiveObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>)
 
@@ -1787,7 +1790,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_25016> <http://purl.obolibrary.
 # Class: <http://purl.obolibrary.org/obo/CHEBI_25107> (magnesium atom)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_25107> "magnesium atom")
-SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_25107> <http://purl.obolibrary.org/obo/CHEBI_23367>)
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_25107> <http://purl.obolibrary.org/obo/CHEBI_33521>)
 
 # Class: <http://purl.obolibrary.org/obo/CHEBI_25195> (mercury atom)
@@ -1814,7 +1816,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_25805> <http://purl.obolibrary.
 # Class: <http://purl.obolibrary.org/obo/CHEBI_26216> (potassium atom)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_26216> "potassium atom")
-SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_26216> <http://purl.obolibrary.org/obo/CHEBI_23367>)
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_26216> <http://purl.obolibrary.org/obo/CHEBI_33521>)
 
 # Class: <http://purl.obolibrary.org/obo/CHEBI_26708> (sodium atom)
@@ -1857,7 +1858,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_27563> <http://purl.obolibrary.
 # Class: <http://purl.obolibrary.org/obo/CHEBI_27568> (selenium atom)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_27568> "selenium atom")
-SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_27568> <http://purl.obolibrary.org/obo/CHEBI_23367>)
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_27568> <http://purl.obolibrary.org/obo/CHEBI_25585>)
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_27568> <http://purl.obolibrary.org/obo/CHEBI_33303>)
 
@@ -1870,7 +1870,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_27573> <http://purl.obolibrary.
 # Class: <http://purl.obolibrary.org/obo/CHEBI_27594> (carbon atom)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_27594> "carbon atom")
-SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_27594> <http://purl.obolibrary.org/obo/CHEBI_23367>)
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_27594> <http://purl.obolibrary.org/obo/CHEBI_25585>)
 
 # Class: <http://purl.obolibrary.org/obo/CHEBI_27638> (cobalt atom)
@@ -1929,7 +1928,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_29287> <http://purl.obolibrary.
 # Class: <http://purl.obolibrary.org/obo/CHEBI_30145> (lithium atom)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_30145> "lithium atom")
-SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_30145> <http://purl.obolibrary.org/obo/CHEBI_23367>)
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_30145> <http://purl.obolibrary.org/obo/CHEBI_33521>)
 
 # Class: <http://purl.obolibrary.org/obo/CHEBI_30217> (helium atom)
@@ -1981,7 +1979,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_30513> <http://purl.obolibrary.
 # Class: <http://purl.obolibrary.org/obo/CHEBI_30514> (caesium atom)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_30514> "caesium atom")
-SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_30514> <http://purl.obolibrary.org/obo/CHEBI_23367>)
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_30514> <http://purl.obolibrary.org/obo/CHEBI_33521>)
 
 # Class: <http://purl.obolibrary.org/obo/CHEBI_30682> (ruthenium atom)
@@ -1997,7 +1994,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_30687> <http://purl.obolibrary.
 # Class: <http://purl.obolibrary.org/obo/CHEBI_32594> (barium atom)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_32594> "barium atom")
-SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_32594> <http://purl.obolibrary.org/obo/CHEBI_23367>)
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_32594> <http://purl.obolibrary.org/obo/CHEBI_33521>)
 
 # Class: <http://purl.obolibrary.org/obo/CHEBI_33250> (atom)
@@ -2088,7 +2084,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_33363> <http://purl.obolibrary.
 # Class: <http://purl.obolibrary.org/obo/CHEBI_33364> (platinum)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_33364> "platinum")
-SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_33364> <http://purl.obolibrary.org/obo/CHEBI_23367>)
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_33364> <http://purl.obolibrary.org/obo/CHEBI_33521>)
 
 # Class: <http://purl.obolibrary.org/obo/CHEBI_33369> (cerium)
@@ -2238,7 +2233,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000010> "software"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000010> <http://purl.obolibrary.org/obo/IAO_0000104>)
 
-# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (data entity)
+# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (data item)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/IAO_0000027> "Data items include counts of things, analyte concentrations, and statistical summaries."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000027> "An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements."@en)
@@ -2290,7 +2285,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000100> "2009/10/23 Alan Ruttenberg. The intention is that this term represent collections of like data. So this isn't for, e.g. the whole contents of a cel file, which includes parameters, metadata etc. This is more like java arrays of a certain rather specific type"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000100> "2014-05-05: Data sets are aggregates and thus must include two or more data items. We have chosen not to add logical axioms to make this restriction.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000100> "group:OBI"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000100> "data set"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000100> "homogenous data collection"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000100> <http://purl.obolibrary.org/obo/IAO_0001000>)
 
@@ -2632,13 +2626,6 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000075> "mold"@en-u
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000075> "mould"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000075> "A device consisting of a hollowed-out cavity that shapes fluid or plastic material into a specific form through the process of solidification or cooling."@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000075> <https://w3id.org/pmd/co/PMD_0000602>)
-
-# Class: <https://w3id.org/pmd/co/PMD_0000103> (hardening)
-
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000103> "hardening"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/pmd/co/PMD_0000103> "toughening")
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000103> "A manufacturing process that increases the strength and hardness of a material."@en)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0000103> <https://w3id.org/pmd/co/PMD_0000833>)
 
 # Class: <https://w3id.org/pmd/co/PMD_0000501> (1D)
 
@@ -3205,7 +3192,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000953> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000953> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000957> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0000957> "PERSON: Joerg Waitelonis")
@@ -3215,7 +3202,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000957> "Eine Analyse, die die äußere und innere Struktur und Morphologie von Materialien untersucht, einschließlich der Anordnung von Atomen, Kristallen, Körnern und Phasen, oft unter Verwendung von Techniken wie Mikroskopie und Beugung."@de)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000957> <http://purl.obolibrary.org/obo/OBI_0000070>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000965> (surface layer (fiat object part))
+# Class: <https://w3id.org/pmd/co/PMD_0000965> (Oberflächenschicht (Fiat-Objektteil))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000965> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0000965> "PERSON: Joerg Waitelonis")
